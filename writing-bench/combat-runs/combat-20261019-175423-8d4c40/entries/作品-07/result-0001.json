@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 1840182,
+    "stop_reason": "end_turn",
+    "session_id": "329b50b3-ffce-4f0e-82c9-234422bd704f",
+    "total_cost_usd": 4.609923199999999,
+    "usage": {
+      "input_tokens": 186569,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 6657536,
+      "output_tokens": 126607,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "deepseek-v4-pro": {
+        "inputTokens": 186569,
+        "outputTokens": 126607,
+        "cacheReadInputTokens": 6657536,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 4.609923199999999,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 74,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已完成并交付 `/workspace/game.html`（88.6 KB 单文件，可离线直接双击游玩，无任何外部依赖）。\n\n## 作品简介\n**《影刃 · 机关残响》**——横版动作战斗试玩。玩家扮演持刀武者「影刃」，与持续刷新的机关傀儡交战。核心手感围绕**力度分层的命中顿帧**与**可断肢的敌人**展开：\n\n- **招式系统**：`J` 三段轻斩连段（第三段强力击退/断肢）、`K` 重斩（长按蓄力成满蓄重斩）、`I` 挑空斩起手浮空、空中 `J` 空连斩、空中 `K` 坠斩（下落刺击 + 落地冲击波），`L` 冲刺闪避（无敌帧、可取消出招），`Space` 可变高度跳跃。\n- **两种敌人**：近战「剑傀儡」抬剑红光前摇后挥砍；远程「炮傀儡」保持距离蓄能发射能量弹，均需观察前兆并闪避。\n- **肢体破坏**：敌人由头、双臂（剑/炮）、双腿等独立部件构成。重斩/第三段/挑空/坠斩可打断肢体——断攻击臂失去出招、断腿减速乃至无法移动、断头眩晕，断肢飞散带金属碎裂音与火花，死亡时剩余肢体整体炸散。\n- **反馈**：命中才触发顿帧（轻 45ms → 满蓄 120ms）、有节制的震屏/缩放冲击、刀光、火花、伤害数字、击退/浮空/落地尘埃；音效全部用 Web Audio 合成，首次点击/按键启用，右上角可静音。\n- **流程**：进入后 `Enter` 数秒内开打，敌人持续刷新，血条/连击/断肢数清晰可见，死亡后 `R`/`Enter` 一键重开；失焦自动清键、按键已阻止页面滚动，宽屏自适应。\n\n## 自测结果\n- 用 `node build.js` 打包，`node --check` 通过语法检查。\n- 编写并跑通两套无头测试（DOM/Canvas 桩驱动真实游戏循环）：\n  - `test/smoke.js`：开始/刷怪/轻斩命中掉血/重斩断臂/断臂后 `canAttack=false`/死亡与 R 重开/`combatBenchState` 字段正确、900 帧长跑无崩溃。\n  - `test/combat.js`：挑空浮空、空连追击、坠斩弹起、炮傀儡发射、剑傀儡近战命中玩家、断腿减速/断头眩晕、顿帧冻结世界、冲刺无敌帧、击杀清场——全部通过。\n\n## 交付文件\n- `game.html`：最终成品\n- `src/`：9 个模块源码 + `style.css`\n- `build.js`：打包脚本\n- `test/`：两套自测脚本\n- `README.md`：玩法与结构说明\n\n`window.combatBenchState()` 已按真实运行状态返回 `ready/playerAlive/enemyCount/hitCount/limbBreakCount/playing`。",
+    "ttft_ms": 3120,
+    "type": "result",
+    "duration_ms": 1842858,
+    "uuid": "02181c85-430e-4206-b93a-6b6dd3078d22",
+    "ttft_stream_ms": 2865,
+    "time_to_request_ms": 125,
+    "first_content_frame_ms": 2866,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1983.3
+}

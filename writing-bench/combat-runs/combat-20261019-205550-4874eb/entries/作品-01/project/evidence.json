@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-19T20:30:38.815901+08:00",
+  "source_sha256": "45f55f8a7997382b9e0fcafb8fd51e362e7a0147bb6ef83eb884612a897a7366",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "实际 Chrome 操作与连续真实帧录制",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "1键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "2键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "3键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "4键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "3键150ms",
+    "等待1600ms观察落刃",
+    "R重开",
+    "D300ms",
+    "J连按1秒",
+    "K蓄力800ms",
+    "R重开",
+    "D300ms",
+    "等待敌人靠近1200ms",
+    "3键150ms",
+    "观察落刃1500ms"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-45f55f8a7997-1.png",
+      "label": "Fable 月轮斩实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-2.png",
+      "label": "Fable 自拟技能2实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-3.png",
+      "label": "Fable 自拟技能3实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-4.png",
+      "label": "Fable 自拟技能4实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 6,
+        "limbBreakCount": 6,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-3-late.png",
+      "label": "刃雨延迟命中与破坏的实际后续帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-basic-combat.png",
+      "label": "初次交付的基础连斩及蓄力重击实测",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-3-close-target.png",
+      "label": "待敌人接近后释放刃雨的真实命中检查",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-45f55f8a7997-1-sequence-200.png",
+      "label": "技能1 连续真实画面，距首帧0.207秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-1-sequence-1200.png",
+      "label": "技能1 连续真实画面，距首帧1.193秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-1-sequence-2300.png",
+      "label": "技能1 连续真实画面，距首帧2.301秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-2-sequence-200.png",
+      "label": "技能2 连续真实画面，距首帧0.202秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-2-sequence-1200.png",
+      "label": "技能2 连续真实画面，距首帧1.186秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-2-sequence-2300.png",
+      "label": "技能2 连续真实画面，距首帧2.292秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-3-sequence-200.png",
+      "label": "技能3 连续真实画面，距首帧0.201秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-3-sequence-1200.png",
+      "label": "技能3 连续真实画面，距首帧1.184秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-3-sequence-2300.png",
+      "label": "技能3 连续真实画面，距首帧2.293秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-4-sequence-200.png",
+      "label": "技能4 连续真实画面，距首帧0.201秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-4-sequence-1200.png",
+      "label": "技能4 连续真实画面，距首帧1.200秒；3号是首次提前释放未命中的记录"
+    },
+    {
+      "file": "skill-45f55f8a7997-4-sequence-2300.png",
+      "label": "技能4 连续真实画面，距首帧2.294秒；3号是首次提前释放未命中的记录"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "四技能分别从重开状态实测，并非同一套连续连招。前台60FPS，累计错误0。刃雨首次提前释放未命中移动目标，保留空招记录；等待敌人接近1200ms后重测，实际至少6次命中、4次断肢，见3-close-target截图。基础J连斩与K蓄力另测4命中2断肢。录像无音轨，PNG序列供裁判，未实际监听音频。",
+  "skill_checks": [
+    {
+      "name": "月轮斩",
+      "key": "1",
+      "note": "周身回旋命中1次、断肢1次",
+      "observed": true,
+      "screenshot": "skill-45f55f8a7997-1.png"
+    },
+    {
+      "name": "影袭·断踪",
+      "key": "2",
+      "note": "瞬身后斩痕命中1次、断肢1次",
+      "observed": true,
+      "screenshot": "skill-45f55f8a7997-2.png"
+    },
+    {
+      "name": "刃雨",
+      "key": "3",
+      "note": "首次提前释放落点未命中移动敌人；等待敌人接近1200ms后重测，命中6次、断肢4次",
+      "observed": true,
+      "screenshot": "skill-45f55f8a7997-3-close-target.png"
+    },
+    {
+      "name": "绯月·千刃一闪",
+      "key": "4",
+      "note": "多轮切割命中6次、断肢6次，清除首波2敌人",
+      "observed": true,
+      "screenshot": "skill-45f55f8a7997-4.png"
+    }
+  ]
+}

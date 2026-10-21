@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 386250,
+    "stop_reason": "end_turn",
+    "session_id": "874f0236-e95b-43e1-880b-4749f119704e",
+    "total_cost_usd": 1.2872730000000003,
+    "usage": {
+      "input_tokens": 50,
+      "cache_creation_input_tokens": 124815,
+      "cache_read_input_tokens": 1596390,
+      "output_tokens": 17186,
+      "output_tokens_details": {
+        "thinking_tokens": 11453
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 124815
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 50,
+        "outputTokens": 17186,
+        "cacheReadInputTokens": 1596390,
+        "cacheCreationInputTokens": 124815,
+        "webSearchRequests": 0,
+        "costUSD": 1.2872730000000003,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 11453,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 44,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已完成审阅，`/workspace/grade.json` 已写入（合法 JSON，四项均为整数）。\n\n评分与依据摘要：\n\n- **impact 31/35**：顿帧按轻重分层（轻斩 0.045–0.07s、重斩 0.09–0.15s、击杀/弹反/落月 0.16s），配合分档音效、震屏与刀光；但只有离散截图，无法确认恢复是否顺畅及音效实际听感。\n- **flow 26/30**：J 三连、K 蓄力三档、I 挑空接空中连击、L 影步有无敌帧及\"看破\"慢镜、空中 K 坠斩，且 O/Y/弹反都能在收招窗口取消接续，路线自洽；相机与输入响应只能由源码推断。\n- **rhythm 17/20**：刀偶/弓偶/锤傀儡三种前摇与距离行为区别明确，弓偶有虚线瞄准、锤傀儡有地面危险区，清波回血回剑气、1.7s 后接下一波；围压难度未实地验证。\n- **destruction 13/15**：断臂缴械、断腿降速到 22%、断头狂乱且受伤加成，断肢碎块还能撞伤其他敌人；截图恰好没捕捉到断肢瞬间，飞散表现仅由源码推断。\n\n限制已在 `limitations` 中写明：无连续录屏、未倾听音频、未亲手操作。",
+    "ttft_ms": 5127,
+    "type": "result",
+    "duration_ms": 387120,
+    "uuid": "83c0e6c6-a0f6-4377-bb86-921382415c74",
+    "ttft_stream_ms": 4765,
+    "time_to_request_ms": 44,
+    "first_content_frame_ms": 4765,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 417.8
+}

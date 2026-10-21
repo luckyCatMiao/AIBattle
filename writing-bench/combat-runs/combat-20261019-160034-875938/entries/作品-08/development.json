@@ -1,0 +1,89 @@
+{
+  "status": "awaiting_check",
+  "round": 7,
+  "artifact": "versions/v0007",
+  "source_sha256": "0d33cf44243481f67043ec899d96fa749ba47511659ba3600952e7545898c826",
+  "validation": {
+    "html_sha256": "0d33cf44243481f67043ec899d96fa749ba47511659ba3600952e7545898c826",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "last_error": null,
+  "next_retry_at": 1792403052.832203,
+  "updated_at": "2026-10-19T17:37:21+08:00",
+  "service_failures": 6,
+  "candidate": null,
+  "writer": {
+    "requested_model": "claude-opus-5-5",
+    "started_at": "2026-10-19T17:30:39+08:00",
+    "max_tokens": 1000000,
+    "deadline_seconds": null,
+    "total_output_limit": null,
+    "segments": [
+      {
+        "index": 1,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 16941,
+        "output_tokens": 3989,
+        "response_model": "claude-opus-5-5",
+        "response_id": "msg_011CgBMyF6LuXSkgbVDhc5CT",
+        "sha256": "18b6398b5bfea709cbb08f96d317d9b60b9bca0250ffc8cafc58174f2f5223cc"
+      },
+      {
+        "index": 2,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 2,
+        "output_tokens": 6918,
+        "response_model": "claude-opus-5-5",
+        "response_id": "msg_011Cfzb1RiGMOUUa1m4d2FNm",
+        "sha256": "a34b822a571bd7ad213d93e9f8d062bdb07c284a28bd1522ea697c7d777f7c45"
+      },
+      {
+        "index": 3,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 24857,
+        "output_tokens": 2460,
+        "response_model": "claude-opus-5-5",
+        "response_id": "msg_011CgBN7CVJydSQkvtzNJsPD",
+        "sha256": "061a8f28781b40b15e251baf733cd9b3c70985ccf92fb9005b6c4095225006a1"
+      },
+      {
+        "index": 4,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 26810,
+        "output_tokens": 14995,
+        "response_model": "claude-opus-5-5",
+        "response_id": "msg_011CgBN9KSKVjXXc4GmTdPYc",
+        "sha256": "72a1d49645c08b38fb5ca63fc600a0fa352e0c20f2e11514f42f026b23a6d70d"
+      },
+      {
+        "index": 5,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 2,
+        "output_tokens": 19078,
+        "response_model": "claude-opus-5-5",
+        "response_id": "msg_011CfzbKtN5PzjGoVkpyYijs",
+        "sha256": "daabd4323b230e431094103bbf015673ba1294396c819fa74517863a7e6dea06"
+      }
+    ],
+    "token_negotiations": [],
+    "status": "ok",
+    "effective_max_tokens": 1000000,
+    "elapsed_seconds": 401.99,
+    "response_model": "claude-opus-5-5",
+    "response_id": "msg_011CfzbKtN5PzjGoVkpyYijs",
+    "stop_reason": "end_turn",
+    "input_tokens": 68612,
+    "output_tokens": 47440,
+    "message_stop": true,
+    "thinking_char_count": 0,
+    "resume_from": "versions\\v0006\\writer-result.json"
+  }
+}

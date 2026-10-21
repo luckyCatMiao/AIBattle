@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 137434,
+    "stop_reason": "end_turn",
+    "session_id": "f86016d6-0a71-4ee3-aed2-54ee6b88c2fb",
+    "total_cost_usd": 0.5131688,
+    "usage": {
+      "input_tokens": 46,
+      "cache_creation_input_tokens": 58417,
+      "cache_read_input_tokens": 776399,
+      "output_tokens": 3281,
+      "output_tokens_details": {
+        "thinking_tokens": 1163
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 58417
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 46,
+        "outputTokens": 3281,
+        "cacheReadInputTokens": 776399,
+        "cacheCreationInputTokens": 58417,
+        "webSearchRequests": 0,
+        "costUSD": 0.5131688,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 1163,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 26,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "发现一个值得记录的细节：3 号技能（刃雨）截图里玩家血量已掉到 94/100，说明召唤期间仍会被敌人打到。继续看剩余截图。",
+    "ttft_ms": 4836,
+    "type": "result",
+    "duration_ms": 138128,
+    "uuid": "f33d5e6e-6c2c-4b43-87ca-cb58ea6941ef",
+    "ttft_stream_ms": 4110,
+    "time_to_request_ms": 38,
+    "first_content_frame_ms": 4110,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 149.0
+}

@@ -1,0 +1,42 @@
+{
+  "status": "ready",
+  "at": "2026-10-19T16:30:30+08:00",
+  "validation": {
+    "html_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "writer": {
+    "requested_model": "claude-opus-4-8",
+    "started_at": "2026-10-19T16:21:08+08:00",
+    "max_tokens": 1000000,
+    "deadline_seconds": null,
+    "total_output_limit": null,
+    "segments": [
+      {
+        "index": 1,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 2,
+        "output_tokens": 35395,
+        "response_model": "claude-opus-4-8",
+        "response_id": "msg_011CgBGfzfvHhTAKn6Oua4HK",
+        "sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691"
+      }
+    ],
+    "token_negotiations": [],
+    "status": "ok",
+    "effective_max_tokens": 1000000,
+    "elapsed_seconds": 561.76,
+    "response_model": "claude-opus-4-8",
+    "response_id": "msg_011CgBGfzfvHhTAKn6Oua4HK",
+    "stop_reason": "end_turn",
+    "input_tokens": 2,
+    "output_tokens": 35395,
+    "message_stop": true,
+    "thinking_char_count": 0
+  },
+  "self_repair": true
+}

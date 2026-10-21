@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-19T11:29:21.161Z",
+  "source_sha256": "c48d92f1a521c3a02a8ef319c060b4ae3afe0a84417fe55d0f0be87ddb934ad2",
+  "method": "真实Chrome兼容UI接口及标准键盘输入",
+  "actions": [
+    "点击开演",
+    "D300ms",
+    "J连按12次",
+    "K1200ms"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-runtime-audio-error.png",
+      "label": "进入后WebAudio反复抛出非有限数值错误，敌人数与命中保持0；暂不能评战斗",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "1 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "出现确定运行错误：AudioParam.setValueAtTime收到非有限double值；10次错误，敌人数与命中保持0。FPS1可能是错误影响，先修错后复测，暂不评手感。"
+}

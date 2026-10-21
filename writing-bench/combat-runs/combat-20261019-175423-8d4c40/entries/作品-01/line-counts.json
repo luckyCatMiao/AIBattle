@@ -1,0 +1,316 @@
+{
+  "total_lines": 10283,
+  "files": [
+    {
+      "path": "build.js",
+      "lines": 75,
+      "bytes": 2842
+    },
+    {
+      "path": "game.html",
+      "lines": 4224,
+      "bytes": 155117
+    },
+    {
+      "path": "skill_manifest.json",
+      "lines": 25,
+      "bytes": 1008
+    },
+    {
+      "path": "src\\audio.js",
+      "lines": 236,
+      "bytes": 7667
+    },
+    {
+      "path": "src\\enemy.js",
+      "lines": 937,
+      "bytes": 36442
+    },
+    {
+      "path": "src\\fx.js",
+      "lines": 228,
+      "bytes": 9023
+    },
+    {
+      "path": "src\\hud.js",
+      "lines": 220,
+      "bytes": 8006
+    },
+    {
+      "path": "src\\main.js",
+      "lines": 192,
+      "bytes": 6012
+    },
+    {
+      "path": "src\\player.js",
+      "lines": 779,
+      "bytes": 31308
+    },
+    {
+      "path": "src\\render.js",
+      "lines": 414,
+      "bytes": 15505
+    },
+    {
+      "path": "src\\style.css",
+      "lines": 186,
+      "bytes": 4600
+    },
+    {
+      "path": "src\\util.js",
+      "lines": 236,
+      "bytes": 8920
+    },
+    {
+      "path": "src\\world.js",
+      "lines": 718,
+      "bytes": 25348
+    },
+    {
+      "path": "test\\aircombo.js",
+      "lines": 25,
+      "bytes": 1045
+    },
+    {
+      "path": "test\\audio_mock.js",
+      "lines": 45,
+      "bytes": 2063
+    },
+    {
+      "path": "test\\browser_abort.js",
+      "lines": 17,
+      "bytes": 808
+    },
+    {
+      "path": "test\\buffer.js",
+      "lines": 23,
+      "bytes": 993
+    },
+    {
+      "path": "test\\coldstart.js",
+      "lines": 29,
+      "bytes": 1504
+    },
+    {
+      "path": "test\\contract.js",
+      "lines": 30,
+      "bytes": 1529
+    },
+    {
+      "path": "test\\deathflow.js",
+      "lines": 20,
+      "bytes": 1092
+    },
+    {
+      "path": "test\\dom_e2e.js",
+      "lines": 93,
+      "bytes": 4606
+    },
+    {
+      "path": "test\\dom_skills.js",
+      "lines": 62,
+      "bytes": 3177
+    },
+    {
+      "path": "test\\harness.js",
+      "lines": 187,
+      "bytes": 7173
+    },
+    {
+      "path": "test\\harness_lib.js",
+      "lines": 95,
+      "bytes": 3549
+    },
+    {
+      "path": "test\\helpless_kill.js",
+      "lines": 24,
+      "bytes": 1155
+    },
+    {
+      "path": "test\\highwave.js",
+      "lines": 30,
+      "bytes": 1568
+    },
+    {
+      "path": "test\\highwave_diag.js",
+      "lines": 20,
+      "bytes": 1009
+    },
+    {
+      "path": "test\\html_load.js",
+      "lines": 19,
+      "bytes": 1238
+    },
+    {
+      "path": "test\\invariants.js",
+      "lines": 29,
+      "bytes": 1595
+    },
+    {
+      "path": "test\\legspeed_diag.js",
+      "lines": 22,
+      "bytes": 1005
+    },
+    {
+      "path": "test\\legspeed_trace2.js",
+      "lines": 19,
+      "bytes": 797
+    },
+    {
+      "path": "test\\legtrace.js",
+      "lines": 29,
+      "bytes": 1300
+    },
+    {
+      "path": "test\\limb_effect.js",
+      "lines": 51,
+      "bytes": 2627
+    },
+    {
+      "path": "test\\orbfire.js",
+      "lines": 17,
+      "bytes": 743
+    },
+    {
+      "path": "test\\probe.js",
+      "lines": 17,
+      "bytes": 806
+    },
+    {
+      "path": "test\\probe2.js",
+      "lines": 34,
+      "bytes": 1369
+    },
+    {
+      "path": "test\\probe3.js",
+      "lines": 21,
+      "bytes": 980
+    },
+    {
+      "path": "test\\puppet_ground.js",
+      "lines": 22,
+      "bytes": 1001
+    },
+    {
+      "path": "test\\puppet_reach.js",
+      "lines": 23,
+      "bytes": 1192
+    },
+    {
+      "path": "test\\skill_probe.js",
+      "lines": 27,
+      "bytes": 1256
+    },
+    {
+      "path": "test\\skill_soak.js",
+      "lines": 33,
+      "bytes": 1861
+    },
+    {
+      "path": "test\\skills.js",
+      "lines": 91,
+      "bytes": 4187
+    },
+    {
+      "path": "test\\soak.js",
+      "lines": 29,
+      "bytes": 1499
+    },
+    {
+      "path": "test\\stall_diag.js",
+      "lines": 30,
+      "bytes": 1590
+    },
+    {
+      "path": "tools\\arc_trace.js",
+      "lines": 33,
+      "bytes": 2232
+    },
+    {
+      "path": "tools\\artifact_diff.js",
+      "lines": 39,
+      "bytes": 2763
+    },
+    {
+      "path": "tools\\combo_diag.js",
+      "lines": 24,
+      "bytes": 2612
+    },
+    {
+      "path": "tools\\combo_probe.js",
+      "lines": 30,
+      "bytes": 2183
+    },
+    {
+      "path": "tools\\fx_probe.js",
+      "lines": 29,
+      "bytes": 2397
+    },
+    {
+      "path": "tools\\hud_skills_shot.js",
+      "lines": 24,
+      "bytes": 1932
+    },
+    {
+      "path": "tools\\impact_check.js",
+      "lines": 58,
+      "bytes": 3407
+    },
+    {
+      "path": "tools\\perf.js",
+      "lines": 25,
+      "bytes": 1920
+    },
+    {
+      "path": "tools\\piece_showcase.js",
+      "lines": 24,
+      "bytes": 2047
+    },
+    {
+      "path": "tools\\render_check.js",
+      "lines": 93,
+      "bytes": 3560
+    },
+    {
+      "path": "tools\\sever_clear.js",
+      "lines": 31,
+      "bytes": 2338
+    },
+    {
+      "path": "tools\\sever_clear2.js",
+      "lines": 30,
+      "bytes": 2107
+    },
+    {
+      "path": "tools\\sever_final.js",
+      "lines": 26,
+      "bytes": 2225
+    },
+    {
+      "path": "tools\\sever_rest.js",
+      "lines": 29,
+      "bytes": 2327
+    },
+    {
+      "path": "tools\\sever_visual.js",
+      "lines": 26,
+      "bytes": 2048
+    },
+    {
+      "path": "tools\\sever_visual2.js",
+      "lines": 34,
+      "bytes": 2281
+    },
+    {
+      "path": "tools\\skill_shots.js",
+      "lines": 28,
+      "bytes": 2716
+    },
+    {
+      "path": "tools\\ultrawide.js",
+      "lines": 17,
+      "bytes": 1641
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

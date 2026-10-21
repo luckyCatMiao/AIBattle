@@ -1,0 +1,31 @@
+{
+  "requested_model": "kimi-k3",
+  "started_at": "2026-10-19T17:06:11+08:00",
+  "max_tokens": 1000000,
+  "deadline_seconds": null,
+  "total_output_limit": null,
+  "segments": [
+    {
+      "index": 1,
+      "max_tokens": 1000000,
+      "stop_reason": "end_turn",
+      "input_tokens": 11253,
+      "output_tokens": 303,
+      "response_model": "kimi-k3",
+      "response_id": "00000000000000004632bdef49c93b28",
+      "sha256": "a991a3a3df3e0ea3911d4226a1a414dd6233033a0fce05fc5a4ecf3d9a7344a4"
+    }
+  ],
+  "token_negotiations": [],
+  "status": "ok",
+  "text": "{\"patches\":[{\"old\":\"  const bob=e.state==='chase'?Math.sin(e.t*8)*2:0;\\n  ctx.save();ctx.translate(e.x,bob);ctx.scale(e.face,1);\",\"new\":\"  const bob=e.state==='chase'?Math.sin(e.t*8)*2:0;\\n  ctx.save();ctx.translate(e.x,e.y+bob);ctx.scale(e.face,1);\"},{\"old\":\"  #startBtn{margin-top:18px;font-size:18px;padding:10px 34px;background:#3a2a10;color:#ffd27d;border:1px solid #ff9d3c;}\",\"new\":\"  #startBtn{margin-top:22px;font-size:18px;padding:10px 34px;background:#3a2a10;color:#ffd27d;border:1px solid #ff9d3c;}\\n  #overlay{padding:20px;box-sizing:border-box;}\\n  #overlay h1{line-height:1.1;}\"}]}",
+  "effective_max_tokens": 1000000,
+  "elapsed_seconds": 17.62,
+  "response_model": "kimi-k3",
+  "response_id": "00000000000000004632bdef49c93b28",
+  "stop_reason": "end_turn",
+  "input_tokens": 11253,
+  "output_tokens": 303,
+  "message_stop": true,
+  "thinking_char_count": 319
+}

@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-19T12:02:06.935Z",
+  "source_sha256": "bc90ce498bce16c5c91d45102a365155070ed1e68c68b2bfdbd94f05832834d1",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "真实Chrome标准输入，逐一核对模型自拟四技能",
+  "actions": [
+    "R重开",
+    "D点按150ms",
+    "O150ms，约240ms后取帧",
+    "R重开",
+    "D点按150ms",
+    "P150ms，约180ms后取帧",
+    "R重开",
+    "D点按150ms",
+    "Q150ms，约180ms后取帧",
+    "R重开",
+    "D150ms",
+    "U150ms，约450ms后取帧",
+    "刷新页面",
+    "点击开始",
+    "原生Q100ms",
+    "约600ms后检查"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-o.png",
+      "label": "O影舞分身斩实际触发后的帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-p.png",
+      "label": "P雷葬天罚实际触发后的帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 5,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-q.png",
+      "label": "Q残响时滞实际触发后的帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 12,
+        "limbBreakCount": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-u.png",
+      "label": "U一闪居合后实际命中和断肢，正常60FPS",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 5,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-q-direct-error.png",
+      "label": "刷新后不使用自定义控件，直接按原生Q也触发Canvas负半径错误",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [
+    "四技能版本v0002真实Chrome复现：刷新页面，点击开始，直接按原生Q约100ms；约600ms内抛出 Uncaught IndexSizeError: Failed to execute arc on CanvasRenderingContext2D: The radius provided (-44.7305) is negative。60FPS、无其他技能前置、未使用自定义采样输入框也会发生。请保留你自主设计的全部四技能，修复时滞技能的实际绘制错误并在真实浏览器逐个验证技能与组合使用。参考 /workspace/four-skill-runtime-error.png。源码中ring粒子绘制约1050行会把计算所得r传给ctx.arc，可作为定位线索；不要只在mock里忽略Canvas非法值。修好后重新构建game.html，保留skill_manifest.json。"
+  ],
+  "note": "U/O/P已观察实际命中和破坏；Q可独立复现负半径Canvas错误，本版尚未通过四技能验证。连续画面未录音。"
+}

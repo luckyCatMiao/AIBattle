@@ -1,0 +1,11 @@
+{
+  "source_sha256": "e0365d190146e5b13051f2c9cee078fbd9cc4c34b91941ee47d8f5143ed715a0",
+  "status": "error",
+  "at": "2026-10-19T16:58:09+08:00",
+  "kind": "functional_startup_failure",
+  "errors": [
+    {
+      "message": "实际Enter采样后仍停留开始界面，playing始终为false；源码loop在检查全局Enter之前清空pressed（if(steps>0)分支），启动事件会丢失。请原作者修复启动路径，保持原战斗设计。"
+    }
+  ]
+}

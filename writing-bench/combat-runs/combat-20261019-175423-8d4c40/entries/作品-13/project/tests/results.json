@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "name": "start and first wave"
+    },
+    {
+      "name": "horizontal movement"
+    },
+    {
+      "name": "double jump"
+    },
+    {
+      "name": "whiff does not freeze"
+    },
+    {
+      "name": "light combo, real contact freeze and limb break",
+      "maxStop": 0.105,
+      "ready": true,
+      "playerAlive": true,
+      "enemyCount": 1,
+      "hitCount": 12,
+      "limbBreakCount": 4,
+      "playing": true
+    },
+    {
+      "name": "charged strike breaks a living weapon arm",
+      "chargeStop": 0.135
+    },
+    {
+      "name": "launcher and aerial follow-up"
+    },
+    {
+      "name": "dash movement, invulnerability and recharge"
+    },
+    {
+      "name": "focus loss clears input and pauses"
+    },
+    {
+      "name": "audio unlock and mute",
+      "audioState": "running"
+    },
+    {
+      "name": "active enemies can kill the player"
+    },
+    {
+      "name": "one-key death restart resets real state"
+    },
+    {
+      "name": "continuous waves and heavy enemy",
+      "wave": 3,
+      "ready": true,
+      "playerAlive": true,
+      "enemyCount": 4,
+      "hitCount": 32,
+      "limbBreakCount": 12,
+      "playing": true
+    },
+    {
+      "name": "offline opaque-origin sandbox, 960×540 and real combat"
+    },
+    {
+      "name": "wide aspect ratio"
+    },
+    {
+      "name": "no browser runtime errors"
+    }
+  ],
+  "errors": [],
+  "remoteRequests": 0
+}

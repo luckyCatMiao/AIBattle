@@ -1,0 +1,42 @@
+{
+  "status": "ready",
+  "at": "2026-10-19T16:33:35+08:00",
+  "validation": {
+    "html_sha256": "ce8cd907688330d32008326858b9e1fa62c45b25c03baa4fbb2a73e0884d1494",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "writer": {
+    "requested_model": "claude-sonnet-5-5",
+    "started_at": "2026-10-19T16:21:08+08:00",
+    "max_tokens": 1000000,
+    "deadline_seconds": null,
+    "total_output_limit": null,
+    "segments": [
+      {
+        "index": 1,
+        "max_tokens": 1000000,
+        "stop_reason": "end_turn",
+        "input_tokens": 4,
+        "output_tokens": 46306,
+        "response_model": "claude-sonnet-5-5",
+        "response_id": "msg_011CgBGfjrvYz0FTEIKXrSlw",
+        "sha256": "ce8cd907688330d32008326858b9e1fa62c45b25c03baa4fbb2a73e0884d1494"
+      }
+    ],
+    "token_negotiations": [],
+    "status": "ok",
+    "effective_max_tokens": 1000000,
+    "elapsed_seconds": 746.96,
+    "response_model": "claude-sonnet-5-5",
+    "response_id": "msg_011CgBGfjrvYz0FTEIKXrSlw",
+    "stop_reason": "end_turn",
+    "input_tokens": 4,
+    "output_tokens": 46306,
+    "message_stop": true,
+    "thinking_char_count": 0
+  },
+  "self_repair": true
+}

@@ -1,0 +1,11 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+const errors = [];
+page.on('pageerror', e => errors.push('PAGEERROR: ' + e.message + '\n' + (e.stack||'')));
+page.on('console', m => { if (m.type() === 'error') errors.push('CONSOLE: ' + m.text()); });
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(800);
+console.log(errors.length ? errors.join('\n---\n') : 'no errors');
+console.log('state fn:', await page.evaluate(() => typeof window.combatBenchState));
+await browser.close();

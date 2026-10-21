@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-19T21:28:46+08:00",
+  "source_sha256": "859d9f08ce8f6ac13ef05375e3fde1f82a78dcce0812cc41cb139ce9cd2c586d",
+  "method": "真实Chrome基础运行检查",
+  "actions": [
+    "Enter开始",
+    "D400ms/J450ms",
+    "D600ms/J/J/K700ms",
+    "J300ms"
+  ],
+  "screenshots": [
+    {
+      "file": "baseline-859d9f08ce8f-combat.png",
+      "label": "基础战斗命中与断肢后的实际画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 2,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "用户已取消四技能和评分，本次只核验基础版可运行、命中与肢体破坏；不作打击感评分。截图与200ms轮询状态可能存在短暂不同步。"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "combat-20261019-155755-d6c2ce",
+  "title": "一场好打的战斗",
+  "created_at": "2026-10-19T15:57:55+08:00",
+  "state": "cancelled",
+  "prompt": "制作一个可以直接在桌面浏览器玩的横版动作战斗系统试玩，灵感方向是《神之天平》一类节奏鲜明的横版动作战斗。核心目标：亲手操作时非常爽，攻击有力、连段流畅、反馈清晰。只需要一个打磨好的战斗场景，不需要完整游戏、剧情、经营、复杂菜单或很多关卡。世界观、角色、美术风格由你决定，自行创作。\n\n必须实际实现并能在交战中体验：\n1. 横版移动、跳跃、轻攻击连段、重攻击、冲刺或闪避、挑空和空中追击。角色动作要有可读的准备、出招和收招，有精彩的动作姿态、位移或残影，不能只是方块接触掉血。\n2. 命中顿帧（hit stop）是重点：命中才停、时长有力度差别，之后顺畅恢复；配合有节制的震屏、刀光、命中特效、敌人受击动作、击退或击飞和落地反馈。不要用连续震屏或满屏闪白掩盖手感。\n3. 可战斗的敌人，会主动接近、攻击并有可观察的攻击前兆，玩家能闪避和受伤；至少两种有区别的敌人行为。不能只有静止靶子。\n4. 可见、能触发的肢体破坏：敌人有分段肢体，被强力攻击或连段打断时肢体会断裂、飞散或碎裂，且影响其后续动作或战斗能力。可用怪物、机甲、木偶等对象；艺术表现自定。不能只写提示文字或用普通死亡粒子冒充肢体破坏。\n5. 适合不断试玩：敌人持续刷新或每波后很快继续，有清楚的玩家血量/状态，死亡可一键重开。首次进入几秒内就能开始打。重视输入响应、连击衔接和相机，不要让玩家频繁等候、追敌或被无限硬直。\n6. 有浏览器合成的命中/挥击/冲刺等音效，首次点击或按键后启用，提供静音按钮。没有音频也不能阻止游戏运行。\n\n统一按键（必须在屏幕上清楚显示）：A/D 或左右箭头移动；Space 跳跃（可二段跳）；J 轻攻击/连段；K 重攻击；L 冲刺/闪避；I 挑空/空中追击；R 重新开始；Enter 开始/确认。鼠标只用于点击开始、静音等按钮。阻止这些游戏按键让外层页面滚动，失去焦点时清空按键以免卡住。不要强制全屏或锁定鼠标。场景适配至少 960×540 的显示区域，也能适应宽屏。\n\n技术交付：一个完整独立的 HTML，内联 CSS 和 JavaScript，优先使用 Canvas 2D。不得依赖任何外部文件、网络、CDN、库、安装或构建。绘制图形与合成音效均在本文件实现；禁止调用生图接口。禁止 fetch、XMLHttpRequest、WebSocket、EventSource、sendBeacon、Service Worker、iframe、弹窗及对父页面的访问。作品运行在只有 allow-scripts 权限的沙箱 iframe 中，无法使用 localStorage、父窗口、下载或外部资源，请确保不会因此崩溃。不要添加模型身份或自评。\n\n为方便核对启动情况，提供只读函数 window.combatBenchState()，返回简单 JSON 兼容对象，至少含 ready（布尔）、playerAlive（布尔）、enemyCount（整数）、hitCount（成功命中次数）、limbBreakCount（断肢次数）、playing（布尔）。这些值必须来自真实游戏状态；检查接口不参与游戏逻辑，也不要求为检查简化战斗。优先保证可玩和手感，控制代码长度，在输出额度内完整闭合所有标签和脚本。\n\n只输出从 <!DOCTYPE html> 到 </html> 的完整文件，不要 Markdown 围栏、解释或评分。",
+  "system": "你是独立动作游戏开发者。完成用户的战斗系统试玩作品。只交付完整的单文件 HTML，不要解释、自评、署名或显示模型身份。",
+  "prompt_sha256": "4d3bdcb58fbacc00bfa01666bd7a974c90e048ca09cfc7f62f70ecb0b0005e00",
+  "parameters": {
+    "max_tokens": 32768,
+    "deadline_seconds": 1800,
+    "concurrency": 4,
+    "technical_attempts": 2,
+    "effort": "provider_default",
+    "tools": false
+  },
+  "entries": [
+    {
+      "id": "作品-01",
+      "model": "glm-5.3",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-02",
+      "model": "gemini-3.8-flash-high",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-03",
+      "model": "claude-opus-4-8",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-04",
+      "model": "claude-sonnet-5-5",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-05",
+      "model": "glm-5.3-flash",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-06",
+      "model": "gpt-6-luna",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-07",
+      "model": "kimi-k2.8-preview",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-08",
+      "model": "gpt-6.1-sol",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-09",
+      "model": "gpt-6-astra",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-10",
+      "model": "deepseek-v4-pro",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-11",
+      "model": "claude-haiku-5-5",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-12",
+      "model": "deepseek-v4.1-flash",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-13",
+      "model": "kimi-k3",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-14",
+      "model": "claude-fable-5-1",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-15",
+      "model": "claude-opus-5-5",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-16",
+      "model": "gpt-5.6-sol",
+      "status": "cancelled"
+    },
+    {
+      "id": "作品-17",
+      "model": "claude-opus-4-6",
+      "status": "cancelled"
+    }
+  ],
+  "updated_at": "2026-10-19T16:00:34+08:00",
+  "cancellation_reason": "用户澄清：游戏举例不是固定动作方向。停止初始请求，统一使用开放式修订题重开。"
+}

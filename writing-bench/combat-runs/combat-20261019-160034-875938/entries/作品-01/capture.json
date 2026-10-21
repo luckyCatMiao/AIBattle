@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-19T08:13:35.928Z",
+  "method": "Chrome 实际运行；sample=1 统一键盘采样面板，发送 key/code 键盘事件，不改原始游戏逻辑",
+  "actions": [
+    "右移 D · 1秒",
+    "右移 D · 1秒",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "D + J · 1秒",
+    "I 特色能力",
+    "跳跃 + J"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "开始后初始场景",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    },
+    {
+      "file": "sample-2.png",
+      "label": "尝试接敌、主攻、副攻与特殊能力后；尚未记录到命中",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    },
+    {
+      "file": "sample-3.png",
+      "label": "动作采样后，收起采样控件，命中情况见真实状态",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    }
+  ],
+  "note": "离散截图与合成按键不能完整测量连续手感或音频，来源以源码和实际截图交叉核对。 此次采样没有可靠记录到有效命中，因此不能据此断言命中、顿帧或断肢功能不存在；这些需源码核对并由真人补充试玩。",
+  "source_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4"
+}

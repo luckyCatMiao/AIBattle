@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-19T11:10:16.648Z",
+  "source_sha256": "45a9cb5decf69d8317afff21df2853eddf5b8134b5f5bf7ba82a2b65addf8a19",
+  "status": "combat_observed",
+  "state": {
+    "ready": true,
+    "playerAlive": true,
+    "enemyCount": 1,
+    "hitCount": 12,
+    "limbBreakCount": 2,
+    "playing": true
+  },
+  "environment": "60 FPS · visible · 焦点 true",
+  "errors_observed": [],
+  "note": "只读状态约200ms轮询；实际帧显示断械碎肢。未监听音频。"
+}

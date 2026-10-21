@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #050408;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  overflow: hidden;
+}
+#wrap { position: relative; line-height: 0; }
+#game {
+  display: block;
+  width: min(100vw, calc(100vh * 1.7778));
+  height: auto;
+  background: #0b0812;
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.85);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 3, 9, 0.8);
+  line-height: 1.5;
+  cursor: default;
+}
+.overlay.hidden { display: none; }
+.panel { text-align: center; color: #e8e2d6; padding: 24px; }
+.panel h1 {
+  font-size: 54px;
+  margin: 0 0 4px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: #f2ead9;
+  text-shadow: 0 0 26px rgba(216, 67, 79, 0.45);
+}
+.panel h1.red { color: #ff6b5e; text-shadow: 0 0 26px rgba(255, 80, 60, 0.4); }
+.panel .sub { color: #b3a48e; font-size: 15px; margin: 0 0 18px; letter-spacing: 0.08em; }
+.ctl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 34px;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto 22px;
+  font-size: 14.5px;
+  color: #cfc3ae;
+  text-align: left;
+}
+.ctl b {
+  color: #ffd257;
+  font-weight: 700;
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 58px;
+  text-align: right;
+}
+.panel button {
+  font: 700 18px "Segoe UI", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0.2em;
+  color: #1a1210;
+  background: linear-gradient(180deg, #e8c88a, #c9a227);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 42px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(201, 162, 39, 0.35);
+}
+.panel button:hover { filter: brightness(1.1); }
+.panel button:active { transform: translateY(1px); }
+.skills-title { color: #d9a441; font-size: 13.5px; margin: 6px 0 8px; letter-spacing: 0.1em; }
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 26px;
+  width: max-content;
+  margin: 0 auto 18px;
+  text-align: left;
+  font-size: 13px;
+  color: #cfc3ae;
+  max-width: 860px;
+}
+.skills b {
+  color: #8fe3ff;
+  font-weight: 800;
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 22px;
+  text-align: center;
+  border: 1px solid rgba(143, 227, 255, 0.45);
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+.panel .tip { color: #7d7264; font-size: 12.5px; margin-top: 16px; }
+#muteBtn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font: 600 13px "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #cbb9a2;
+  background: rgba(10, 7, 12, 0.6);
+  border: 1px solid rgba(203, 185, 162, 0.35);
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  line-height: 1;
+}
+#muteBtn:hover { background: rgba(30, 22, 28, 0.8); }

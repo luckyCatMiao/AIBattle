@@ -1,0 +1,149 @@
+:root {
+  color-scheme: dark;
+  --ink: #dff9ff;
+  --cyan: #5ff4ff;
+  --red: #ff315d;
+  --gold: #ffd36a;
+  --void: #05070d;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #02040a;
+  font-family: "Arial Narrow", "Microsoft YaHei", system-ui, sans-serif;
+  user-select: none;
+}
+body { display: grid; place-items: center; }
+#shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+  min-height: 300px;
+  overflow: hidden;
+  background: #05070d;
+  isolation: isolate;
+}
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+  image-rendering: auto;
+}
+#grain {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  opacity: .12;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(255,255,255,.028) 4px),
+    radial-gradient(circle at 50% 50%, transparent 35%, rgba(0,0,0,.45) 100%);
+  mix-blend-mode: screen;
+}
+.screen {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(3,5,11,.94), rgba(3,5,11,.5) 48%, rgba(3,5,11,.94)),
+    radial-gradient(circle at 50% 45%, rgba(34,80,98,.2), transparent 42%);
+  text-shadow: 0 0 20px rgba(95,244,255,.25);
+}
+.screen.show { display: flex; animation: appear .45s ease-out both; }
+@keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+.titleMark {
+  color: var(--cyan);
+  font-size: clamp(10px, 1.2vw, 16px);
+  letter-spacing: .55em;
+  margin-left: .55em;
+  opacity: .8;
+}
+h1 {
+  margin: .03em 0 -.08em;
+  font-size: clamp(92px, 18vw, 235px);
+  line-height: 1;
+  font-family: "Microsoft YaHei", sans-serif;
+  font-weight: 900;
+  letter-spacing: -.12em;
+  transform: skewX(-7deg);
+  filter: drop-shadow(9px 5px 0 rgba(255,49,93,.18));
+}
+h1 span { color: transparent; -webkit-text-stroke: 2px var(--cyan); }
+.sub {
+  margin: 0;
+  color: var(--red);
+  font-size: clamp(18px, 2.2vw, 34px);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: .48em;
+}
+.rule { width: min(550px, 62vw); height: 1px; margin: 30px 0 20px; background: linear-gradient(90deg, transparent, var(--cyan), transparent); }
+.intro { color: #a8bac3; font-size: clamp(13px, 1.2vw, 18px); line-height: 1.9; letter-spacing: .08em; }
+button {
+  border: 0;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+}
+.screen button {
+  min-width: 220px;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: linear-gradient(105deg, transparent 5%, rgba(15,38,48,.92) 5%, rgba(15,38,48,.92) 95%, transparent 95%);
+  border-top: 1px solid rgba(95,244,255,.65);
+  border-bottom: 1px solid rgba(95,244,255,.22);
+  letter-spacing: .22em;
+  transition: filter .15s, transform .15s;
+}
+.screen button:hover { filter: brightness(1.45); transform: translateY(-2px); }
+.screen button b { color: var(--cyan); margin-right: 18px; font-size: 12px; }
+.screen button span { font-weight: 700; }
+.hint { position: absolute; bottom: 4vh; margin: 0; color: #5b707b; font-size: 11px; letter-spacing: .18em; }
+#deathScreen { background: rgba(4,5,10,.8); backdrop-filter: blur(3px); }
+#deathScreen h2 { margin: 12px 0; font-size: clamp(42px, 7vw, 90px); font-style: italic; }
+#deathStats { color: #91a5ae; letter-spacing: .14em; }
+#muteButton {
+  position: absolute;
+  z-index: 20;
+  right: 18px;
+  top: 17px;
+  width: 40px;
+  height: 32px;
+  padding: 0;
+  color: rgba(210,245,255,.7);
+  background: rgba(2,7,12,.55);
+  border: 1px solid rgba(95,244,255,.2);
+  font-size: 13px;
+}
+#muteButton.muted { color: #ff6078; }
+#focusNotice {
+  display: none;
+  position: absolute;
+  z-index: 18;
+  left: 50%; top: 18%; transform: translateX(-50%);
+  padding: 8px 18px;
+  color: #8ba3ad;
+  background: rgba(2,5,10,.82);
+  border-left: 2px solid var(--red);
+  font-size: 12px;
+  letter-spacing: .15em;
+}
+#focusNotice.show { display: block; }
+@media (max-height: 600px) {
+  .rule { margin: 15px 0 8px; }
+  .intro { margin: 4px; }
+  .screen button { margin-top: 10px; }
+}

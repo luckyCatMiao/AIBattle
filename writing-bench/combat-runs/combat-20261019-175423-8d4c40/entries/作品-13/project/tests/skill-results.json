@@ -1,0 +1,72 @@
+{
+  "request_id": "user-four-skills-20261019",
+  "results": [
+    {
+      "name": "掠雨一线 independently hits; cooldown blocks repeat",
+      "hits": 2,
+      "broken": 2,
+      "freeze": 0.105,
+      "out": 0,
+      "back": 0
+    },
+    {
+      "name": "回澜锁月 independently hits; cooldown blocks repeat",
+      "hits": 5,
+      "broken": 1,
+      "freeze": 0.065,
+      "out": 0,
+      "back": 0
+    },
+    {
+      "name": "双弧归燕 independently hits; cooldown blocks repeat",
+      "hits": 4,
+      "broken": 2,
+      "freeze": 0.105,
+      "out": 2,
+      "back": 2
+    },
+    {
+      "name": "天钉落庭 independently hits; cooldown blocks repeat",
+      "hits": 3,
+      "broken": 2,
+      "freeze": 0.09200000000000001,
+      "out": 0,
+      "back": 0
+    },
+    {
+      "name": "skills do not manufacture hit-stop on a whiff"
+    },
+    {
+      "name": "all four skills cast in the air"
+    },
+    {
+      "name": "dash cancels recovery but released blade remains live"
+    },
+    {
+      "name": "delayed nail hits while player moves independently"
+    },
+    {
+      "name": "numeric keypad alias"
+    },
+    {
+      "name": "restart clears active techniques and all cooldowns"
+    },
+    {
+      "name": "four skills mixed with original combat through continuous waves",
+      "wave": 4,
+      "hitCount": 51,
+      "limbBreakCount": 20,
+      "casts": [
+        4,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "all skills hit in offline allow-scripts sandbox; no runtime errors"
+    }
+  ],
+  "errors": [],
+  "networkRequests": 0
+}

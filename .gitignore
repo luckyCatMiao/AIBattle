@@ -40,7 +40,22 @@ diag/scripts/drive.py
 # ==================== 写作评测的生成目录 ====================
 writing-bench/.venv/
 writing-bench/runs/
-writing-bench/combat-runs/
+
+# 击感实验室：保留可玩项目、评测 JSON 与关键试玩截图；
+# 排除 transcript、Chrome 缓存、依赖、逐帧录屏与过程截图。
+writing-bench/combat-runs/**/.chrome-cache/
+writing-bench/combat-runs/**/node_modules/
+writing-bench/combat-runs/**/.devtools/
+writing-bench/combat-runs/**/.venv/
+writing-bench/combat-runs/**/vendor/
+writing-bench/combat-runs/**/*-sequence-*.png
+writing-bench/combat-runs/**/skill-*.png
+writing-bench/combat-runs/**/*.mp4
+writing-bench/combat-runs/**/*.webm
+writing-bench/combat-runs/**/*.mov
+writing-bench/combat-runs/**/*.png
+!writing-bench/combat-runs/**/sample-*.png
+
 diag/runs/
 
 # ==================== 日志 / 缓存 / 环境 ====================

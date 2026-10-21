@@ -1,0 +1,190 @@
+{
+  "at": "2026-10-19T20:28:15.497459+08:00",
+  "source_sha256": "91ce7bfb7a898d7dc2bee8b0162d9d5f0d29eff39869d53bfb1fa68fde9a6c05",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "实际 Chrome 操作与连续真实帧录制",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "1键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "2键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "3键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "4键150ms",
+    "连续真实画面3秒"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-91ce7bfb7a89-1.png",
+      "label": "5.6 Sol 自拟技能1实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 3,
+        "limbBreakCount": 0,
+        "skillUseCount": 1,
+        "skillCooldowns": [
+          5.021,
+          0,
+          0,
+          0
+        ],
+        "activeSkill": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-2.png",
+      "label": "5.6 Sol 自拟技能2实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 2,
+        "limbBreakCount": 0,
+        "skillUseCount": 1,
+        "skillCooldowns": [
+          0,
+          6.971,
+          0,
+          0
+        ],
+        "activeSkill": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-3.png",
+      "label": "5.6 Sol 自拟技能3实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 1,
+        "skillUseCount": 1,
+        "skillCooldowns": [
+          0,
+          0,
+          6.268,
+          0
+        ],
+        "activeSkill": 3,
+        "playing": true
+      },
+      "environment": "59 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-4.png",
+      "label": "5.6 Sol 自拟技能4实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 3,
+        "limbBreakCount": 0,
+        "skillUseCount": 1,
+        "skillCooldowns": [
+          0,
+          0,
+          0,
+          11.189
+        ],
+        "activeSkill": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-1-sequence-200.png",
+      "label": "技能1 连续真实画面，距首帧0.193秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-1-sequence-1200.png",
+      "label": "技能1 连续真实画面，距首帧1.202秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-1-sequence-2300.png",
+      "label": "技能1 连续真实画面，距首帧2.308秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-2-sequence-200.png",
+      "label": "技能2 连续真实画面，距首帧0.189秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-2-sequence-1200.png",
+      "label": "技能2 连续真实画面，距首帧1.207秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-2-sequence-2300.png",
+      "label": "技能2 连续真实画面，距首帧2.314秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-3-sequence-200.png",
+      "label": "技能3 连续真实画面，距首帧0.202秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-3-sequence-1200.png",
+      "label": "技能3 连续真实画面，距首帧1.193秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-3-sequence-2300.png",
+      "label": "技能3 连续真实画面，距首帧2.306秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-4-sequence-200.png",
+      "label": "技能4 连续真实画面，距首帧0.198秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-4-sequence-1200.png",
+      "label": "技能4 连续真实画面，距首帧1.211秒"
+    },
+    {
+      "file": "skill-91ce7bfb7a89-4-sequence-2300.png",
+      "label": "技能4 连续真实画面，距首帧2.298秒"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "四技能分别从重开状态实测，并非同一套连续连招。前台直接采样59–60FPS，记录中曾39–45FPS随后回60FPS；累计错误0。只读状态轮询与截图存在时差。录像无音轨，PNG序列供裁判，未实际监听音频。",
+  "skill_checks": [
+    {
+      "name": "瞬狱・六连星",
+      "key": "1",
+      "note": "移形连斩实际3次命中，技能使用计数1",
+      "observed": true,
+      "screenshot": "skill-91ce7bfb7a89-1.png"
+    },
+    {
+      "name": "引力・葬月轮",
+      "key": "2",
+      "note": "聚拢刃轮实际2次命中，技能使用计数1",
+      "observed": true,
+      "screenshot": "skill-91ce7bfb7a89-2.png"
+    },
+    {
+      "name": "裂界・赤雷贯",
+      "key": "3",
+      "note": "贯穿斩实际1次命中、1次断肢",
+      "observed": true,
+      "screenshot": "skill-91ce7bfb7a89-3.png"
+    },
+    {
+      "name": "终式・天坠残光",
+      "key": "4",
+      "note": "升空锁定落刃，3秒后至少5次命中、1次断肢",
+      "observed": true,
+      "screenshot": "skill-91ce7bfb7a89-4.png"
+    }
+  ]
+}

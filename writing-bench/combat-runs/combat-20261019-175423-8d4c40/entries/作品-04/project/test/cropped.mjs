@@ -1,0 +1,11 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+import fs from 'node:fs';
+const [,,out,...files]=process.argv;
+const imgs = files.map(f=>`<img src="data:image/png;base64,${fs.readFileSync(f).toString('base64')}">`).join('');
+fs.writeFileSync('/tmp/crop.html', `<style>body{margin:0;background:#000}img{display:block;width:${process.env.CW||440}px;margin-bottom:2px}</style>${imgs}`);
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: +(process.env.CW||440), height: 400 } });
+await page.goto('file:///tmp/crop.html');
+await page.waitForTimeout(150);
+await page.screenshot({ path: out, fullPage: true });
+await browser.close();

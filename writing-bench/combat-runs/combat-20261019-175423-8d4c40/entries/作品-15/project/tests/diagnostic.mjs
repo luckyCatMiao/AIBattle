@@ -1,0 +1,42 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import { launch, inspectable } from './browser.mjs';
+const html = await readFile(new URL('../game.html',import.meta.url),'utf8');
+const browser = await launch();
+const page = await browser.newPage({viewport:{width:1280,height:720}});
+const errors=[]; page.on('pageerror',e=>errors.push(e.stack));
+await page.setContent(inspectable(html)); await page.evaluate(()=>document.fonts.ready);
+const state=()=>page.evaluate(()=>window.__inspectCombat());
+const sleep=ms=>page.waitForTimeout(ms);
+const samples=[];
+await page.screenshot({path:'/workspace/tests/title.png'});
+await page.keyboard.press('Enter');
+await page.keyboard.down('j');
+let last=0;
+for(let i=0;i<110;i++) {
+  await sleep(90); const s=await state();
+  if(s.worldTime>last+.5){samples.push({time:+s.worldTime.toFixed(2),hp:s.player.hp,action:s.player.action,wave:s.wave,kills:s.kills,enemies:s.enemies.filter(e=>!e.dead).map(e=>({type:e.type,arm:e.arm,leg:e.leg,state:e.state,dist:Math.round(e.x-s.player.x)}))});last=s.worldTime;}
+  if(s.wave>=2)break;
+}
+await page.keyboard.up('j');
+console.log('hold J',await page.evaluate(()=>window.combatBenchState()));
+console.log(JSON.stringify(samples,null,2));
+await page.keyboard.press('r');
+await sleep(850);
+await page.keyboard.down('d');await sleep(260);await page.keyboard.up('d');
+await page.keyboard.down('k');await sleep(600);await page.keyboard.up('k');await sleep(330);
+console.log('charge',await page.evaluate(()=>window.combatBenchState()),(await state()).player);
+await page.screenshot({path:'/workspace/tests/charged.png'});
+await page.keyboard.press('r');await sleep(1050);await page.keyboard.down('d');await sleep(210);await page.keyboard.up('d');
+await page.keyboard.press('i');await sleep(390);console.log('lift',JSON.stringify((await state()).enemies.map(e=>({x:e.x,y:e.y,state:e.state,vy:e.vy}))));
+await page.keyboard.press('k');await sleep(900);
+console.log('slam',await page.evaluate(()=>window.combatBenchState()));
+await page.screenshot({path:'/workspace/tests/slam.png'});
+await page.keyboard.press('r');
+await page.waitForFunction(()=>!window.combatBenchState().playerAlive,{},{timeout:45000});await sleep(1100);
+console.log('death',await page.evaluate(()=>window.combatBenchState()),'hpText',await page.locator('#hpText').textContent());
+await page.keyboard.press('Enter');await sleep(100);
+assert((await page.evaluate(()=>window.combatBenchState())).playing);
+console.log('errors',errors);assert.equal(errors.length,0);
+await writeFile('/workspace/tests/diagnostic-result.json',JSON.stringify({samples,errors},null,2));
+await browser.close();

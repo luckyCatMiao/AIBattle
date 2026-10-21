@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>傀儡斩 · MARIONETTE SLASH</title>
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="startOverlay" class="overlay">
+    <div class="panel">
+      <h1>傀 儡 斩</h1>
+      <p class="sub">MARIONETTE SLASH — 横版动作战斗试玩</p>
+      <div class="ctl">
+        <span><b>A / D</b> 移动</span>
+        <span><b>Space</b> 跳跃</span>
+        <span><b>J</b> 连斩（可三段）</span>
+        <span><b>K</b> 蓄力重斩（按住蓄力，可断肢）</span>
+        <span><b>L</b> 瞬步（无敌 · 可取消收招）</span>
+        <span><b>I</b> 挑空斩（接空中追击）</span>
+        <span><b>R</b> 重新开始</span>
+        <span><b>Enter</b> 开始</span>
+      </div>
+      <div class="skills-title">—— 丝线技能（命中 · 断肢 · 击杀积攒丝线能量）——</div>
+      <div class="skills">
+        <span><b>U</b> 千丝乱舞：旋身放线三段圆斩，末段击倒全场周围傀儡，释放时无敌</span>
+        <span><b>O</b> 影缝·三连：化作残影连续瞬移至傀儡身后斩击三段，全程无敌</span>
+        <span><b>P</b> 裂空·断丝刃：挥出贯穿全场的新月丝刃，重创击倒并削断肢体</span>
+        <span><b>H</b> 谢幕·万偶崩解：终极技，时间放缓后全场傀儡崩断肢体、应声碎裂</span>
+      </div>
+      <button id="startBtn">开 演 · Enter</button>
+      <p class="tip">首次按键后启用音效 · 斩断傀儡的肢体，让它再也拿不起武器</p>
+    </div>
+  </div>
+  <div id="deadOverlay" class="overlay hidden">
+    <div class="panel">
+      <h1 class="red">幕 落</h1>
+      <p id="deadStats" class="sub"></p>
+      <button id="retryBtn">重新开始 · R</button>
+    </div>
+  </div>
+  <button id="muteBtn">声音：开</button>
+</div>
+<script>
+(function(){
+'use strict';
+/*__JS__*/
+})();
+</script>
+</body>
+</html>

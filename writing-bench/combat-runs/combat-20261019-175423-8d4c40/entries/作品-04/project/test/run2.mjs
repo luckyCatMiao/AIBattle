@@ -1,0 +1,18 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter'); await page.waitForTimeout(700);
+await page.evaluate(() => { Game.spawnQueue.length=0; Game.enemies.length=0; Game.player.x = 900; Camera.x=660; Camera.zoom=1.9; });
+await page.waitForTimeout(300);
+await page.keyboard.down('KeyD');
+await page.waitForTimeout(120); await page.screenshot({ path: '/workspace/test/runs_0.png' });
+await page.waitForTimeout(90); await page.screenshot({ path: '/workspace/test/runs_1.png' });
+await page.keyboard.up('KeyD');
+await page.keyboard.press('Space'); await page.waitForTimeout(160);
+await page.screenshot({ path: '/workspace/test/jump1.png' });
+await page.waitForTimeout(400);
+await page.screenshot({ path: '/workspace/test/fall1.png' });
+await browser.close();

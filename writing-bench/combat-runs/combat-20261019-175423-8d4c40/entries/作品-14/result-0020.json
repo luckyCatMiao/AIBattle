@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 2618636,
+    "stop_reason": "end_turn",
+    "session_id": "74d49519-7298-4199-80d4-1118855bef4b",
+    "total_cost_usd": 4.496921600000001,
+    "usage": {
+      "input_tokens": 562241,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 2179968,
+      "output_tokens": 85482,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6-luna": {
+        "inputTokens": 584797,
+        "outputTokens": 86087,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 2179968,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 4.496921600000001,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 75,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "## 已交付\n\n- 游戏成品：[game.html](/workspace/game.html)\n- 项目说明：[README.md](/workspace/README.md)\n- 自动化测试：[test-runtime.js](/workspace/test-runtime.js)\n\n### 战斗内容\n\n- 三段斩与宽容的连段输入缓存\n- 可蓄力的重斩及断肢终结\n- 跳跃、无敌影冲、精准瞬反与自动反击\n- 分力度命中顿帧、震屏、刀光、击飞、落地反馈及慢动作\n- 两类主动敌人：\n  - 收割者：刀臂攻击，断臂后改用冲撞\n  - 射手：带瞄准前兆的炮击，断臂后改用头槌\n- 可见的机械肢体断裂、飞散、落地与损坏接口\n- 持续波次、生命/能量/连击/评分状态、死亡一键重开\n- 浏览器实时合成挥击、命中、冲刺、弹反、断肢等音效及静音按钮\n- 无网络、CDN 或外部资源依赖\n\n### 自测结果\n\n最终测试全部通过：\n\n- JavaScript 语法与离线依赖检查通过\n- 必需按键及只读 `window.combatBenchState()` 接口检查通过\n- 确定性验证 J-J-J 三段独立命中并切断武装\n- 验证两类敌人断肢后的行为改变\n- 验证真实攻击时序下的瞬反反击\n- 验证敌人可正常击杀玩家、Enter/R 重开和持续波次\n- 通过 **6636 帧**混合输入压力测试，无运行时异常\n- 最终文件约 **51 KB**，可直接离线打开游玩\n\n环境未安装 Chromium/Firefox，因此运行时验证使用了 Node Canvas/DOM 环境桩，没有执行浏览器截图测试。",
+    "ttft_ms": 13409,
+    "type": "result",
+    "duration_ms": 1652227,
+    "uuid": "a644345e-b705-4e3d-af79-04f018234c27",
+    "ttft_stream_ms": 3508,
+    "time_to_request_ms": 38,
+    "first_content_frame_ms": 3509,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1782.0
+}

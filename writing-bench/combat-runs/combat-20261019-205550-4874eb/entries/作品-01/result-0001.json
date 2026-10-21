@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 966804,
+    "stop_reason": "end_turn",
+    "session_id": "09f81d53-d016-4b14-8af9-a8caed6e3ae7",
+    "total_cost_usd": 2.3153974,
+    "usage": {
+      "input_tokens": 116,
+      "cache_creation_input_tokens": 130147,
+      "cache_read_input_tokens": 3980592,
+      "output_tokens": 43404,
+      "output_tokens_details": {
+        "thinking_tokens": 34869
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 130147
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 116,
+        "outputTokens": 43404,
+        "cacheReadInputTokens": 3980592,
+        "cacheCreationInputTokens": 130147,
+        "webSearchRequests": 0,
+        "costUSD": 2.3153974,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 34869,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 65,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`（合法 JSON，合计 81：impact 28 / flow 24 / rhythm 16 / destruction 13）。\n\n判断要点：\n- **实际看到**：四技能全部真实触发并命中——月轮斩断左爪、影袭斩痕弹出 48 伤害并断左爪、刃雨六刃落地（首次空招、贴近后 6 命中 4 断肢）、千刃一闪清空首波（KILL 2 / SEVER 6）；基础 J 连斩也有 4 连击 2 次断肢。\n- **源码核对**：顿帧按 45ms→180ms 分层、断肢额外加时；断肢真的削减敌人 AI（失去攻击/武器/移动与悬停），不是提示文字；敌人有 0.3~0.72s 前摇框与弹反窗口。\n- **扣分点**：四个技能几乎没有资源代价、全是范围爆发，20 秒大招能一次清波，重复交战的取舍偏薄；刃雨按施放瞬时的敌人位置取落点，移动目标易空；大招时断裂文字与伤害数字大量重叠。\n- **没确认的**：无音轨、无连续视频，顿帧回弹手感、震屏舒适度、音画同步、弹反成功与死亡重开均未实际观察到，已在 limitations 中写明。",
+    "ttft_ms": 4314,
+    "type": "result",
+    "duration_ms": 968137,
+    "uuid": "86af0ffa-5f86-463e-b57e-bda21a836aae",
+    "ttft_stream_ms": 4114,
+    "time_to_request_ms": 44,
+    "first_content_frame_ms": 4114,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1048.8
+}

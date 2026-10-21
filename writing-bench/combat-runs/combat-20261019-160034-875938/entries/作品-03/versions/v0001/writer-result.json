@@ -1,0 +1,31 @@
+{
+  "requested_model": "claude-sonnet-5-5",
+  "started_at": "2026-10-19T16:58:11+08:00",
+  "max_tokens": 1000000,
+  "deadline_seconds": null,
+  "total_output_limit": null,
+  "segments": [
+    {
+      "index": 1,
+      "max_tokens": 1000000,
+      "stop_reason": "end_turn",
+      "input_tokens": 52097,
+      "output_tokens": 692,
+      "response_model": "claude-sonnet-5-5",
+      "response_id": "msg_011CgBKVt4aFABJLuYAwMFd3",
+      "sha256": "400e71b6701bf0cf8ed538b051c81109afed61578919bea698da8e29fa58b3ea"
+    }
+  ],
+  "token_negotiations": [],
+  "status": "ok",
+  "text": "{\"patches\":[{\"old\":\"var g = ctx.createRadialGradient(d.x, d.y, 2, d.x, d.y, d.r);\",\"new\":\"var dyy = (typeof d.y === 'number' && isFinite(d.y)) ? d.y : GROUND;\\n    var g = ctx.createRadialGradient(d.x, dyy, 2, d.x, dyy, d.r);\"},{\"old\":\"ctx.ellipse(d.x, d.y+3, d.r, d.r*0.22, 0, 0, TAU);\",\"new\":\"ctx.ellipse(d.x, dyy+3, d.r, d.r*0.22, 0, 0, TAU);\"}]}",
+  "effective_max_tokens": 1000000,
+  "elapsed_seconds": 17.76,
+  "response_model": "claude-sonnet-5-5",
+  "response_id": "msg_011CgBKVt4aFABJLuYAwMFd3",
+  "stop_reason": "end_turn",
+  "input_tokens": 52097,
+  "output_tokens": 692,
+  "message_stop": true,
+  "thinking_char_count": 0
+}

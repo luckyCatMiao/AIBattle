@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-19T11:10:16.642Z",
+  "source_sha256": "45a9cb5decf69d8317afff21df2853eddf5b8134b5f5bf7ba82a2b65addf8a19",
+  "method": "真实Chrome UI兼容接口，点击作者开始按钮并检查截图",
+  "actions": [
+    "点击进入铸庭",
+    "进入铸庭",
+    "D300ms",
+    "J连按12次，每次70ms、间隔220ms",
+    "K蓄力1200ms，收招400ms"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "实际进入战斗，玩家与敌人正常绘制",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "约1～5FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-break.png",
+      "label": "60FPS三连斩与蓄力斩后，12命中/2断械，落地肢体可见",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 12,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "note": "正常帧率下通过真实Chrome按键操作采样。静态截图只能辅助判断；未实际监听音频，不把源码推断当亲手体验。"
+}

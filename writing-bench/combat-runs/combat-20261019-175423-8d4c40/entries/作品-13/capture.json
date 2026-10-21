@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-19T20:12:36+08:00",
+  "source_sha256": "4e6ec84ef5e772c2a13fa1abbf32239cae0c4b32c4ff0a7e7b1a4cc0ca733869",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "真实Chrome标准输入及连续画面，逐一核对模型自拟四技能",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "技能键1 150ms",
+    "连续画面单独记录，无音轨",
+    "R重开",
+    "D300ms",
+    "技能键2 150ms",
+    "连续画面单独记录，无音轨",
+    "R重开",
+    "D300ms",
+    "技能键3 150ms",
+    "连续画面单独记录，无音轨",
+    "R重开",
+    "D300ms",
+    "技能键4 150ms",
+    "连续画面单独记录，无音轨",
+    "四技能分别测试，最后一场技能4后不再主动输入"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-1.png",
+      "label": "数字键1对应作者自拟技能的实际操作帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 2,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-2.png",
+      "label": "数字键2对应作者自拟技能的实际操作帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 4,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-3.png",
+      "label": "数字键3对应作者自拟技能的实际操作帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 2,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-4.png",
+      "label": "数字键4对应作者自拟技能的实际操作帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 4,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-after-combat.png",
+      "label": "四技能操作后停止主动输入，后续交战与死亡/存活状态实帧",
+      "state": {
+        "ready": true,
+        "playerAlive": false,
+        "enemyCount": 3,
+        "hitCount": 4,
+        "limbBreakCount": 2,
+        "playing": false
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-1-sequence-200.png",
+      "label": "技能1连续录制原帧，相对首帧+0.216秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411638.56703
+    },
+    {
+      "file": "skill-1-sequence-1200.png",
+      "label": "技能1连续录制原帧，相对首帧+1.200秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411639.551113
+    },
+    {
+      "file": "skill-2-sequence-200.png",
+      "label": "技能2连续录制原帧，相对首帧+0.200秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411642.904604
+    },
+    {
+      "file": "skill-2-sequence-1200.png",
+      "label": "技能2连续录制原帧，相对首帧+1.216秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411643.921375
+    },
+    {
+      "file": "skill-3-sequence-200.png",
+      "label": "技能3连续录制原帧，相对首帧+0.202秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411647.183553
+    },
+    {
+      "file": "skill-3-sequence-1200.png",
+      "label": "技能3连续录制原帧，相对首帧+1.193秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411648.174874
+    },
+    {
+      "file": "skill-3-sequence-2300.png",
+      "label": "技能3连续录制原帧，相对首帧+2.293秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411649.274592
+    },
+    {
+      "file": "skill-4-sequence-200.png",
+      "label": "技能4连续录制原帧，相对首帧+0.200秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411651.544825
+    },
+    {
+      "file": "skill-4-sequence-1200.png",
+      "label": "技能4连续录制原帧，相对首帧+1.193秒；未改动游戏画面",
+      "environment": "同段取样DOM监测60FPS",
+      "frame_timestamp": 1792411652.537454
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "逐个按作者自拟1/2/3/4测试，每个技能前R重开并D300ms接近，均实际命中，技能1与4观察到断肢。所有操作段约60FPS，测试结束后累计运行错误为0。独立测试不证明四技能连续组合体验。连续原帧和MP4无音轨；裁判可见的是所列PNG序列、实际状态和源码，不声称已听音或连续亲手游玩。后续停止输入导致死亡属于正常敌人进攻记录。",
+  "skill_checks": [
+    {
+      "key": "1",
+      "observed": true,
+      "description": "贯穿斩实际命中两名敌人并斩落武器臂",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 2,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-1.png"
+    },
+    {
+      "key": "2",
+      "observed": true,
+      "description": "三拍回旋刀光、聚敌浮空及多次命中已观察",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 4,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-2.png"
+    },
+    {
+      "key": "3",
+      "observed": true,
+      "description": "飞刃去程与回程均实际命中，连续原帧显示回程增加至4连击并断臂",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 2,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-3.png"
+    },
+    {
+      "key": "4",
+      "observed": true,
+      "description": "延迟巨刃落地、范围命中及断腿已观察",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 4,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-4.png"
+    }
+  ]
+}

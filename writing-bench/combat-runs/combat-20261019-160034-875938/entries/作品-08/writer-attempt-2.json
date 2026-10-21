@@ -1,0 +1,22 @@
+{
+  "requested_model": "claude-opus-5-5",
+  "started_at": "2026-10-19T16:25:08+08:00",
+  "max_tokens": 1000000,
+  "deadline_seconds": null,
+  "total_output_limit": null,
+  "segments": [],
+  "token_negotiations": [],
+  "status": "error",
+  "error": "Anthropic upstream timed out before the first effective output",
+  "error_type": "ClaudeAPIError",
+  "http_status": 0,
+  "partial_text": "",
+  "elapsed_seconds": 240.43,
+  "response_model": null,
+  "response_id": null,
+  "stop_reason": "",
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "message_stop": false,
+  "thinking_char_count": 0
+}

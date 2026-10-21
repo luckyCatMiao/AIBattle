@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111a20">
+  <title>锈潮 · RUST REQUIEM</title>
+  <style>/* INLINE_CSS */</style>
+</head>
+<body>
+  <main id="game" aria-label="锈潮：横版动作战斗试玩">
+    <canvas id="scene" aria-label="战斗场景"></canvas>
+    <div class="vignette"></div>
+    <header id="hud">
+      <div class="identity"><span class="seal">锈</span><div><strong>锈 潮</strong><small>RUST REQUIEM</small></div></div>
+      <div class="vitals">
+        <div class="bar-label"><span>行刑者 <em>07</em></span><b id="hpText">120 / 120</b></div>
+        <div class="health-track"><div id="hpGhost"></div><div id="hpFill"></div></div>
+        <div class="core-row"><span>磁 核</span><div class="core-track"><div id="coreFill"></div></div><small id="coreText">100</small></div>
+      </div>
+      <div class="location"><span class="eyebrow">THE CINDER FOUNDRY</span><strong>余 烬 铸 场</strong><div><span id="waveText">第 01 轮</span><i></i><span id="enemyText">3 个信号</span></div></div>
+      <div class="tools"><button id="pauseBtn" title="暂停 / Esc" aria-label="暂停">Ⅱ</button><button id="muteBtn" title="切换静音" aria-label="切换静音">声音 ON</button></div>
+    </header>
+    <div id="objective"><span class="orange-dot"></span>拆解武装，终止循环<span class="objective-sub">蓄力 K 断臂 · 空中 K 断腿</span></div>
+    <aside id="combo" class="hidden"><strong id="comboNum">0</strong><div><b>连 击</b><span id="comboRank">保持压制</span></div></aside>
+    <div id="notice" aria-live="polite"><small id="noticeEn"></small><strong id="noticeMain"></strong><span id="noticeSub"></span></div>
+    <aside id="skillDeck" aria-label="四种独立技能，按键触发">
+      <div class="skill-slot" id="skill-vortex" style="--skill-color:#8ce8e4"><kbd>Q</kbd><div><b>缚星磁涡</b><small>聚敌 · 环形打断</small></div><span class="skill-status">就绪</span></div>
+      <div class="skill-slot" id="skill-pierce" style="--skill-color:#c8f6dd"><kbd>E</kbd><div><b>裂轨一闪</b><small>穿阵 · 延迟断臂</small></div><span class="skill-status">就绪</span></div>
+      <div class="skill-slot" id="skill-orbit" style="--skill-color:#f3c788"><kbd>U</kbd><div><b>双月回轮</b><small>双向 · 往返飞刃</small></div><span class="skill-status">就绪</span></div>
+      <div class="skill-slot" id="skill-verdict" style="--skill-color:#ffa66d"><kbd>O</kbd><div><b>天炉裁决</b><small>跃升 · 广域断腿</small></div><span class="skill-status">就绪</span></div>
+    </aside>
+    <div id="skillBanner"><small>ARSENAL / RELEASE</small><strong id="skillBannerName"></strong><span id="skillBannerHint"></span></div>
+    <footer id="controls">
+      <div><span class="key">A</span><span class="key">D</span><span class="control-label">移动</span></div>
+      <div><span class="key wide">SPACE</span><span class="control-label">跳跃</span></div>
+      <div><span class="key">J</span><span class="control-label">连斩<small>可按住</small></span></div>
+      <div><span class="key">K</span><span class="control-label">断械<small>按住蓄力 / 空中下劈</small></span></div>
+      <div><span class="key">L</span><span class="control-label">闪身<small>穿越攻击</small></span></div>
+      <div><span class="key">I</span><span class="control-label">磁升<small>挑空追击 · 30 磁核</small></span></div>
+      <div class="restart-hint"><span class="key">R</span><span class="control-label">重启</span></div>
+    </footer>
+    <section id="startScreen" class="screen">
+      <div class="title-panel">
+        <div class="chapter"><span></span>AN ENDLESS COMBAT STUDY · 01</div>
+        <h1>锈<span>潮</span><small>RUST REQUIEM</small></h1>
+        <p class="tagline">让钢铁，记住每一刀。</p>
+        <div class="intro-rule"></div>
+        <div class="intro-moves"><p><b>斩</b><span>按住 <kbd>J</kbd> 三段连斩，以 <kbd>K</kbd> 蓄力断械。</span></p><p><b>升</b><span><kbd>I</kbd> 挑空后追斩，空中 <kbd>K</kbd> 落刃断腿。</span></p><p><b>闪</b><span>红光是攻击前兆。<kbd>L</kbd> 穿过杀招，反击破绽。</span></p></div>
+        <button id="startBtn" class="primary">进入铸场 <span>ENTER ↵</span></button>
+        <p class="start-note">键盘操作 · 建议开启声音 · 无尽试炼</p>
+      </div>
+      <div class="title-caption"><span>FOUR FORGED ARTS / 独立冷却</span><strong>让铸场，<br>成为你的兵器。</strong><div class="title-skills"><p><kbd>Q</kbd><b>缚星磁涡</b><span>环形聚敌</span></p><p><kbd>E</kbd><b>裂轨一闪</b><span>穿阵断臂</span></p><p><kbd>U</kbd><b>双月回轮</b><span>往返飞刃</span></p><p><kbd>O</kbd><b>天炉裁决</b><span>跃升断腿</span></p></div><p>单键释放 · 地面 / 空中均可用<br>技能不消耗磁核，可衔接原连招</p></div>
+    </section>
+    <section id="pauseScreen" class="screen modal hidden"><div class="modal-panel"><span class="eyebrow">SYSTEM STANDBY</span><h2>片刻静止</h2><p>按 Enter 或点击继续。失去焦点会自动暂停。</p><button id="resumeBtn" class="primary">继续战斗 <span>ENTER ↵</span></button></div></section>
+    <section id="deathScreen" class="screen modal hidden"><div class="modal-panel"><span class="eyebrow">SIGNAL LOST / RECONSTRUCT</span><h2>余火未熄</h2><p>每一道断口，都是下一次的经验。</p><div id="deathStats"></div><button id="restartBtn" class="primary">重新铸造 <span>R / ENTER ↵</span></button></div></section>
+    <div id="toast"></div>
+  </main>
+  <script>/* INLINE_JS */</script>
+</body>
+</html>

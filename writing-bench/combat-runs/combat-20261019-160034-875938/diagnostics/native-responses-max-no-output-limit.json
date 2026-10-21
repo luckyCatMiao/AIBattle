@@ -1,0 +1,80 @@
+{
+  "endpoint": "/v1/responses",
+  "output_limit_field_sent": false,
+  "reasoning_requested": {
+    "effort": "max"
+  },
+  "status": "completed",
+  "response_model": "gpt-6-luna",
+  "reasoning_reported": {
+    "effort": "max",
+    "context": "all_turns",
+    "summary": null,
+    "mode": "standard"
+  },
+  "usage": {
+    "input_tokens": 4389,
+    "input_tokens_details": {
+      "cached_tokens": 4224,
+      "cache_write_tokens": 0
+    },
+    "output_tokens": 5,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4394,
+    "attribution": {
+      "items": {
+        "msg_0960fc05ca776e45016ad5e6db051c819190dfad061b482790": {
+          "input_tokens": 7,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "content": [
+            {
+              "input_tokens": 7,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 0
+            }
+          ]
+        },
+        "msg_0960fc05ca776e45016ad5e6dc05108191bd1032973f1a95fe": {
+          "input_tokens": 2,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 5,
+          "content": [
+            {
+              "input_tokens": 2,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "output_tokens": 5
+            }
+          ]
+        }
+      },
+      "request_fields": {
+        "instructions": {
+          "input_tokens": 4380,
+          "cached_tokens": 4224,
+          "cache_write_tokens": 0,
+          "output_tokens": 0
+        }
+      }
+    }
+  },
+  "output_text": "OK",
+  "events": [
+    "response.created",
+    "response.in_progress",
+    "response.output_item.added",
+    "response.content_part.added",
+    "response.output_text.delta",
+    "response.metadata",
+    "response.output_text.done",
+    "response.content_part.done",
+    "response.output_item.done",
+    "response.completed"
+  ]
+}

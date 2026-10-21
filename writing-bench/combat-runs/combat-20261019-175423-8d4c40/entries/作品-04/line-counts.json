@@ -1,0 +1,271 @@
+{
+  "total_lines": 8186,
+  "files": [
+    {
+      "path": "game.html",
+      "lines": 3692,
+      "bytes": 267565
+    },
+    {
+      "path": "package.json",
+      "lines": 15,
+      "bytes": 266
+    },
+    {
+      "path": "src\\00-core.js",
+      "lines": 84,
+      "bytes": 3339
+    },
+    {
+      "path": "src\\10-audio.js",
+      "lines": 113,
+      "bytes": 4929
+    },
+    {
+      "path": "src\\20-draw.js",
+      "lines": 500,
+      "bytes": 19836
+    },
+    {
+      "path": "src\\30-body.js",
+      "lines": 142,
+      "bytes": 5564
+    },
+    {
+      "path": "src\\40-player.js",
+      "lines": 71,
+      "bytes": 3584
+    },
+    {
+      "path": "src\\41-player-atk.js",
+      "lines": 157,
+      "bytes": 8013
+    },
+    {
+      "path": "src\\42-player.js",
+      "lines": 796,
+      "bytes": 32619
+    },
+    {
+      "path": "src\\50-enemy.js",
+      "lines": 114,
+      "bytes": 5179
+    },
+    {
+      "path": "src\\51-enemy-logic.js",
+      "lines": 739,
+      "bytes": 30909
+    },
+    {
+      "path": "src\\60-limbs.js",
+      "lines": 140,
+      "bytes": 6521
+    },
+    {
+      "path": "src\\70-game.js",
+      "lines": 698,
+      "bytes": 26856
+    },
+    {
+      "path": "src\\80-boot.js",
+      "lines": 55,
+      "bytes": 1876
+    },
+    {
+      "path": "src\\shell.html",
+      "lines": 59,
+      "bytes": 1926
+    },
+    {
+      "path": "test\\audiotest.mjs",
+      "lines": 32,
+      "bytes": 1944
+    },
+    {
+      "path": "test\\auratest.mjs",
+      "lines": 14,
+      "bytes": 1093
+    },
+    {
+      "path": "test\\bot.mjs",
+      "lines": 34,
+      "bytes": 2254
+    },
+    {
+      "path": "test\\breaktest.mjs",
+      "lines": 23,
+      "bytes": 1723
+    },
+    {
+      "path": "test\\broken.mjs",
+      "lines": 24,
+      "bytes": 1301
+    },
+    {
+      "path": "test\\closeup.mjs",
+      "lines": 21,
+      "bytes": 1019
+    },
+    {
+      "path": "test\\combat.mjs",
+      "lines": 40,
+      "bytes": 2158
+    },
+    {
+      "path": "test\\combo.mjs",
+      "lines": 19,
+      "bytes": 1506
+    },
+    {
+      "path": "test\\cropped.mjs",
+      "lines": 11,
+      "bytes": 700
+    },
+    {
+      "path": "test\\death.mjs",
+      "lines": 16,
+      "bytes": 1031
+    },
+    {
+      "path": "test\\debug1.mjs",
+      "lines": 28,
+      "bytes": 1650
+    },
+    {
+      "path": "test\\debug2.mjs",
+      "lines": 27,
+      "bytes": 1581
+    },
+    {
+      "path": "test\\dmg.mjs",
+      "lines": 17,
+      "bytes": 1185
+    },
+    {
+      "path": "test\\errcheck.mjs",
+      "lines": 11,
+      "bytes": 652
+    },
+    {
+      "path": "test\\feel.mjs",
+      "lines": 18,
+      "bytes": 1557
+    },
+    {
+      "path": "test\\fight.mjs",
+      "lines": 22,
+      "bytes": 1489
+    },
+    {
+      "path": "test\\full.mjs",
+      "lines": 32,
+      "bytes": 2091
+    },
+    {
+      "path": "test\\headcut.mjs",
+      "lines": 16,
+      "bytes": 1257
+    },
+    {
+      "path": "test\\latency.mjs",
+      "lines": 17,
+      "bytes": 1108
+    },
+    {
+      "path": "test\\longbot.mjs",
+      "lines": 41,
+      "bytes": 2555
+    },
+    {
+      "path": "test\\parry.mjs",
+      "lines": 22,
+      "bytes": 1339
+    },
+    {
+      "path": "test\\parry2.mjs",
+      "lines": 29,
+      "bytes": 1526
+    },
+    {
+      "path": "test\\player_cu.mjs",
+      "lines": 15,
+      "bytes": 860
+    },
+    {
+      "path": "test\\player_cu2.mjs",
+      "lines": 19,
+      "bytes": 1086
+    },
+    {
+      "path": "test\\pose.mjs",
+      "lines": 18,
+      "bytes": 970
+    },
+    {
+      "path": "test\\posegrid.mjs",
+      "lines": 35,
+      "bytes": 1699
+    },
+    {
+      "path": "test\\run2.mjs",
+      "lines": 18,
+      "bytes": 1067
+    },
+    {
+      "path": "test\\runtest.mjs",
+      "lines": 13,
+      "bytes": 815
+    },
+    {
+      "path": "test\\seq.mjs",
+      "lines": 17,
+      "bytes": 877
+    },
+    {
+      "path": "test\\seq2.mjs",
+      "lines": 19,
+      "bytes": 962
+    },
+    {
+      "path": "test\\sheet.mjs",
+      "lines": 12,
+      "bytes": 940
+    },
+    {
+      "path": "test\\slashtest.mjs",
+      "lines": 16,
+      "bytes": 751
+    },
+    {
+      "path": "test\\smoke.mjs",
+      "lines": 29,
+      "bytes": 1509
+    },
+    {
+      "path": "test\\thrower.mjs",
+      "lines": 16,
+      "bytes": 1118
+    },
+    {
+      "path": "test\\title.mjs",
+      "lines": 8,
+      "bytes": 419
+    },
+    {
+      "path": "test\\types.mjs",
+      "lines": 28,
+      "bytes": 1991
+    },
+    {
+      "path": "test\\zoom.mjs",
+      "lines": 19,
+      "bytes": 1035
+    },
+    {
+      "path": "tools\\build.mjs",
+      "lines": 15,
+      "bytes": 964
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

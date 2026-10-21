@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 1795767,
+    "stop_reason": "end_turn",
+    "session_id": "30d6a35b-fe10-49e2-94c4-857063d6b435",
+    "total_cost_usd": 11.583784799999998,
+    "usage": {
+      "input_tokens": 1810470,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1103104,
+      "output_tokens": 14805,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6.1-sol": {
+        "inputTokens": 2552532,
+        "outputTokens": 55655,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 1302784,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 11.583784799999998,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 40,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已完成并交付：**[打开游戏 `/workspace/game.html`](./game.html)**\n\n### 《锈潮 · RUST REQUIEM》\n原创机甲拆解战斗场景，单文件离线运行，按 **Enter** 开战。\n\n- **A/D 或方向键**：移动；**Space**：跳跃、二段跳\n- **J**：三段连斩，可按住连续攻击\n- **K**：重击；按住蓄力后松开断臂；空中使用下劈断腿\n- **I**：磁升挑空，可接空中连斩或下劈\n- **L**：无敌闪身、取消攻击\n- **R**：重开；**Esc**：暂停；右上角可静音\n\n断臂会解除敌人武装，断腿会降低其机动能力；包含差异化命中顿帧、两类主动敌人和持续刷波。\n\n**自测结果：真实 Chromium 的 10 组验收全部通过，零脚本异常、零外部资源请求。** 已验证断肢、连招、受伤死亡与重开、失焦清键、960×540/宽屏，以及 `allow-scripts` 沙箱和无音频回退。\n\n源码、构建脚本与说明已保留，详见 [README.md](./README.md)。",
+    "ttft_ms": 10091,
+    "type": "result",
+    "duration_ms": 722409,
+    "uuid": "24f84cd6-1ead-4b12-9325-7369431a39c0",
+    "ttft_stream_ms": 4260,
+    "time_to_request_ms": 52,
+    "first_content_frame_ms": 4260,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 776.4
+}

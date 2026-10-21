@@ -1,0 +1,136 @@
+{
+  "at": "2026-10-19T11:15:15.567Z",
+  "source_sha256": "c8e900c29784dfed5df6f7515e441df80ed1f82d4c5c6ec8b383a31149116c86",
+  "method": "真实Chrome UI兼容接口，点击作者开始按钮",
+  "actions": [
+    "点击进入铸场",
+    "展开采样面板",
+    "进入铸场",
+    "D移动300ms",
+    "J连按12次",
+    "K蓄力1000ms，收招400ms",
+    "R重开",
+    "D300ms",
+    "I挑空",
+    "Space跳跃",
+    "K空中攻击",
+    "开始",
+    "D300ms",
+    "I90ms",
+    "Space80ms",
+    "J90ms",
+    "空中K90ms",
+    "L100ms",
+    "收招600ms",
+    "停止主动攻击，让敌人自主接近进攻",
+    "停止操作，观察敌人持续进攻及死亡流程",
+    "R90ms重开"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "实际进入战斗，启动、玩家和敌人渲染检查",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "1 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-break.png",
+      "label": "60FPS连斩及蓄力断械，13命中/3肢体破坏，断腿敌人及落肢可见",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 13,
+        "limbBreakCount": 3,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-air.png",
+      "label": "挑空、跳跃与空中K操作后的实际帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 1,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-air.png",
+      "label": "I磁升、跳跃后J空中追斩实际帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-dash.png",
+      "label": "空中K后闪身收招实际帧；未确认本次是否成功擦身",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-enemy.png",
+      "label": "停止操作后敌人自主接近与进攻的实际帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 4,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-death.png",
+      "label": "让敌人持续攻击后的结局实帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 42,
+        "limbBreakCount": 11,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-restart.png",
+      "label": "R重新开始后的实际帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "note": "正常帧率下通过真实Chrome按键操作采样。静态截图只能辅助判断；未实际监听音频，不把源码推断当亲手体验。"
+}

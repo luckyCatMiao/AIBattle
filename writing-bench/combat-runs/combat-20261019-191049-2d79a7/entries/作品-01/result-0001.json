@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 1327947,
+    "stop_reason": "end_turn",
+    "session_id": "89ad37f0-3573-4776-886f-5e2833cc9993",
+    "total_cost_usd": 2.5116441999999997,
+    "usage": {
+      "input_tokens": 76,
+      "cache_creation_input_tokens": 196208,
+      "cache_read_input_tokens": 1606801,
+      "output_tokens": 60447,
+      "output_tokens_details": {
+        "thinking_tokens": 45764
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 196208
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 76,
+        "outputTokens": 60447,
+        "cacheReadInputTokens": 1606801,
+        "cacheCreationInputTokens": 196208,
+        "webSearchRequests": 0,
+        "costUSD": 2.5116441999999997,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 45764,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 38,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`（合法 JSON，无技术故障、无需追加试玩请求）。\n\n**评分：impact 29 / flow 22 / rhythm 14 / destruction 11，合计 76。**\n\n依据要点：\n- **实际观察到的内容**：三张截图状态从 hitCount 0 → 1 → 2、limbBreakCount 0 → 1，玩家确实贴到敌人身边打出命中；命中帧有刀光、火花、伤害数字与受击姿态；断肢帧右侧地面躺着一段带描边的断裂刀刃（bladeArm），旁边另一只 lancer 的炮臂仍完整。\n- **源码交叉验证**：`freeze()` 在 `takeHit/breakWeapon` 里被真实调用，`update()` 在 hitStop 期间跳过战斗逻辑只慢放特效，属于真顿帧；连斩 3/4/7 帧、瞬反 10 帧、蓄力最高 14 帧，分级明确；断肢后 `weapon=false` 并切换到冲撞/头槌行为。不是只有函数名。\n- **扣分方向**：出招中不能跳取消或瞬反取消、连段只有一条 J 线；敌人仅两种行为、波次靠人数堆叠；可破坏部位只有一件武器，且 48–58 HP 下破械常与击杀同帧结束，后续作用窗口短。\n\n已如实记录的限制：采样面板遮住了被断肢的敌人本体，断口与改行为只能靠源码推断；重斩、瞬反、弹道、死亡重开、音效均未在截图覆盖内；最后那段 16 次 J 只命中 2 次，未据此判断命中率。",
+    "ttft_ms": 3883,
+    "type": "result",
+    "duration_ms": 1472833,
+    "uuid": "df144c79-80c9-4e80-b0ac-49c7257cc2b3",
+    "ttft_stream_ms": 3719,
+    "time_to_request_ms": 39,
+    "first_content_frame_ms": 3719,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1598.9
+}

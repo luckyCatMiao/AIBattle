@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 464532,
+    "stop_reason": "end_turn",
+    "session_id": "390ad50d-b7e9-47e5-b6e1-941df345f067",
+    "total_cost_usd": 2.1353893999999998,
+    "usage": {
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 222553,
+      "cache_read_input_tokens": 1828782,
+      "output_tokens": 32833,
+      "output_tokens_details": {
+        "thinking_tokens": 25329
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 222553
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 52,
+        "outputTokens": 32833,
+        "cacheReadInputTokens": 1828782,
+        "cacheCreationInputTokens": 222553,
+        "webSearchRequests": 0,
+        "costUSD": 2.1353893999999998,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 25329,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 26,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`（合法 JSON，已用 `python3 -I` 校验结构与合计）。\n\n评分：impact 29 / flow 25 / rhythm 15 / destruction 12，合计 81。\n\n判断要点：\n- **实际看到**：60FPS 下 12 命中、2 名守卫被击破、2 次断械；地面确实散落 2 个头壳和 2 个带金色关节的肢体残件，与状态计数吻合——不是普通死亡粒子冒充。\n- **源码可证**：8 种招式的顿帧 43～135ms 分层、震屏 2.2/4.5/7、断臂后炮手停火/重装 Champ 冲锋失效、断腿移速乘 0.3、闪步清动作带无敌、输入缓冲在顿帧中不消耗。\n- **主要不足**：断肢阈值太低（重斩 70 cut 即断臂、三连第三段必断腿），破坏变成高频资源；轻击硬直+攻击冷却叠加，加上同屏最多 2 个敌人进攻，12 连击后玩家仍满血，压制风险明显。\n- **未确认**：顿帧体感、音效、震屏幅度、敌人出招与闪避时机、擦身慢动作、断肢飞散瞬间——两张静态图都没覆盖，已在 `limitations` 和 `evidence` 的 `uncertain` 条中写明，没有当作玩家体验结论。",
+    "ttft_ms": 4426,
+    "type": "result",
+    "duration_ms": 468941,
+    "uuid": "54c6529a-7557-45fe-a83a-45bbc4f16efb",
+    "ttft_stream_ms": 4276,
+    "time_to_request_ms": 42,
+    "first_content_frame_ms": 4276,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 507.4
+}

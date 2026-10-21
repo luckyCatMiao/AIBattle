@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 1677275,
+    "stop_reason": "end_turn",
+    "session_id": "69761179-de02-45c9-a3a6-4be17d72c5d8",
+    "total_cost_usd": 3.1147692000000005,
+    "usage": {
+      "input_tokens": 66,
+      "cache_creation_input_tokens": 236339,
+      "cache_read_input_tokens": 1932551,
+      "output_tokens": 77315,
+      "output_tokens_details": {
+        "thinking_tokens": 62007
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 236339
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 66,
+        "outputTokens": 77315,
+        "cacheReadInputTokens": 1932551,
+        "cacheCreationInputTokens": 236339,
+        "webSearchRequests": 0,
+        "costUSD": 3.1147692000000005,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 62007,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 40,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已将评分写入 `/workspace/grade.json`，该 JSON 文件可正常解析。\n\n**总分 72/100**，四项依次为：impact 24、flow 23、rhythm 14、destruction 11。没有触发 `needs_technical_fix`：两帧截图都显示 `playing:true`、敌人正常绘制、命中计数与状态自洽，未发现会阻断战斗的确定故障；同时也不满足 `needs_more_play` 的条件，因为存在真实交战画面（4 次命中、1 次断肢、玩家掉血）。\n\n判断要点：\n- **可确认的强项**：断肢在截图中可见后果：刀兵失去持械臂，只剩断口短桩，长柄武器躺在地上，敌人仍存活；源码确认 `arm.intact` 同时改变该敌人的移速、攻击距离、伤害和硬直，并非只是贴图变化。顿帧按 48、90、140、160ms 分层，断肢再叠加冻结。\n- **可确认的弱项**：敌人受击没有姿态帧，仅靠变白闪光和位移表现；`light3` 的停帧被归一化计算吃掉，第三段与起手轻击同为 48ms；头部破坏对刀兵 AI 完全不起作用。\n- **如实标注的限制**：只有两张静态图。顿帧的实际手感、震屏是否过火、音效同步、断肢爆散观感、多波交战乐趣，均标为源码推断或未能确认，`limitations` 中写明。\n\n图片其实是 JPEG 但扩展名为 `.png`，环境无 PIL，我自己写了一个纯标准库的 baseline JPEG 解码器（`/tmp/judge/jpeg.py`）做放大裁切；期间修正了 IDCT 缩放系数，否则整图会偏灰。",
+    "ttft_ms": 3810,
+    "type": "result",
+    "duration_ms": 1702756,
+    "uuid": "52ef4804-98c3-44e9-bd03-21120848f5c0",
+    "ttft_stream_ms": 3639,
+    "time_to_request_ms": 43,
+    "first_content_frame_ms": 3640,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1848.0
+}

@@ -1,0 +1,66 @@
+{
+  "total_lines": 8853,
+  "files": [
+    {
+      "path": "build.js",
+      "lines": 63,
+      "bytes": 2083
+    },
+    {
+      "path": "game.html",
+      "lines": 4037,
+      "bytes": 149679
+    },
+    {
+      "path": "skill_manifest.json",
+      "lines": 25,
+      "bytes": 1645
+    },
+    {
+      "path": "src\\00_core.js",
+      "lines": 487,
+      "bytes": 22279
+    },
+    {
+      "path": "src\\01_world.js",
+      "lines": 480,
+      "bytes": 17046
+    },
+    {
+      "path": "src\\02_player.js",
+      "lines": 1305,
+      "bytes": 47451
+    },
+    {
+      "path": "src\\03_enemies.js",
+      "lines": 996,
+      "bytes": 36712
+    },
+    {
+      "path": "src\\04_game.js",
+      "lines": 725,
+      "bytes": 25027
+    },
+    {
+      "path": "test\\harness.js",
+      "lines": 258,
+      "bytes": 10323
+    },
+    {
+      "path": "test\\probe.js",
+      "lines": 77,
+      "bytes": 3770
+    },
+    {
+      "path": "test\\soak.js",
+      "lines": 70,
+      "bytes": 3630
+    },
+    {
+      "path": "test\\visual.js",
+      "lines": 330,
+      "bytes": 13642
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

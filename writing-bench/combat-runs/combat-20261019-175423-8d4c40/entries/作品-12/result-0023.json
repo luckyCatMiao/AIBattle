@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 2011598,
+    "stop_reason": "end_turn",
+    "session_id": "4c88001a-a45b-402c-af50-db736a06ee3c",
+    "total_cost_usd": 2.898434399999999,
+    "usage": {
+      "input_tokens": 378937,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 935296,
+      "output_tokens": 54737,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-5.6-sol": {
+        "inputTokens": 397537,
+        "outputTokens": 55918,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 949632,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 2.898434399999999,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 40,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "## 已完成交付\n\n成品文件：[`/workspace/game.html`](/workspace/game.html)  \n可直接在桌面浏览器离线打开，无网络、CDN 或外部资源依赖。\n\n### 战斗内容\n\n- 三段轻斩连击，包含突进与终结击飞\n- 两级蓄力重斩，显著提高肢体破坏能力\n- 空中斩、空中冲刺与高速坠斩\n- 带无敌时间的地面/空中冲刺\n- 精准弹反与自动反击\n- 独立力度的命中顿帧、震屏、刀光、击退、击飞与落地反馈\n- 刃偶与炮偶两类主动敌人，均有清晰攻击前兆\n- 手臂、头部独立耐久与可见断裂飞散：\n  - 刃偶断臂后失去长武器，改用短距离攻击\n  - 炮偶断臂后失去射击能力，转为近战\n  - 炮偶头部损坏后瞄准精度和攻击速度下降\n- 连续波次刷新、血量/连击 UI、一键重开\n- 浏览器实时合成挥刀、命中、冲刺、弹反、断肢等音效，并提供静音按钮\n- 已实现只读 `window.combatBenchState()`\n\n### 操作\n\n- `A/D` 或 `←/→`：移动\n- `Space`：跳跃\n- `J`：三段连斩／空中斩\n- `K`：按住蓄力重击／空中坠斩\n- `L`：无敌冲刺\n- `I`：精准弹反\n- `R`：重新开始\n- `Enter`：开始／确认\n\n### 自测结果\n\n- JavaScript 语法检查通过\n- 单文件构建与离线依赖检查通过\n- 仅 1 个内联脚本，外部请求数量为 0\n- 固定随机种子的模拟浏览器测试运行 **1665 帧**\n- 覆盖开始、移动、跳跃、全部攻击、冲刺、弹反、敌人 AI、失焦清键、静音和重开\n- 实际战斗快照：`hitCount: 13`、`limbBreakCount: 2`，并成功进入下一波 3 名敌人\n- 重开后状态、计数器和首波敌人均正确复位\n- 当前文件大小：**67,448 字节**\n- SHA-256：`ec51638ad1d79113453f3a9020fb0c93eeacbd7b9777af57578eecb63857aee8`\n\n源码、构建脚本和测试脚本保留在 `/workspace/src` 与 `/workspace/tools`。当前环境没有可用的 Chromium/Firefox 可执行文件，因此未执行真实无头浏览器截图测试；已通过 Canvas 模拟运行环境完成逐帧逻辑与渲染路径回归。",
+    "ttft_ms": 16172,
+    "type": "result",
+    "duration_ms": 929474,
+    "uuid": "8122d7b1-0c06-452e-bcd2-0a2ffd89408c",
+    "ttft_stream_ms": 3301,
+    "time_to_request_ms": 37,
+    "first_content_frame_ms": 3301,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1000.8
+}

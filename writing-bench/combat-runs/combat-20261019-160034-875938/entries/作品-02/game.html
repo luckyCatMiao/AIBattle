@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>BLADE BREAKER - 横版动作战斗试玩</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+  body, html {
+    width: 100%; height: 100%; overflow: hidden;
+    background: #0a0b10; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif;
+    color: #e0e6ed;
+  }
+  #wrapper {
+    position: relative; width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at center, #161a29 0%, #08090f 100%);
+  }
+  canvas {
+    display: block; width: 100%; height: 100%;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  #ui-layer {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; padding: 18px 24px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .hud-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+  }
+  .player-status {
+    width: 320px;
+  }
+  .bar-container {
+    height: 14px; background: rgba(0, 0, 0, 0.6); border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 3px; overflow: hidden; position: relative; margin-bottom: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .bar-hp {
+    width: 100%; height: 100%; background: linear-gradient(90deg, #ff2a5f, #ff725c);
+    transition: width 0.08s ease-out;
+  }
+  .bar-stamina {
+    height: 6px; background: rgba(0, 0, 0, 0.6); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 2px; overflow: hidden;
+  }
+  .bar-sp {
+    width: 100%; height: 100%; background: linear-gradient(90deg, #00d2ff, #00fff2);
+    transition: width 0.05s ease-out;
+  }
+  .hud-stats {
+    font-size: 13px; color: #8ba0b8; letter-spacing: 0.5px;
+    display: flex; gap: 14px; text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+  .hud-stats span { color: #fff; font-weight: bold; }
+  .controls-guide {
+    background: rgba(10, 14, 22, 0.75); border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px 14px; border-radius: 6px; backdrop-filter: blur(4px);
+    display: flex; gap: 16px; font-size: 12px; color: #b4c2d4;
+  }
+  .key-badge {
+    background: #2a3346; color: #fff; padding: 2px 6px; border-radius: 3px;
+    font-family: monospace; font-size: 11px; border-bottom: 2px solid #171d28;
+    margin-right: 4px; display: inline-block;
+  }
+  .btn-panel {
+    pointer-events: auto; display: flex; gap: 10px; align-items: center;
+  }
+  .hud-btn {
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+    color: #fff; font-size: 12px; padding: 6px 14px; border-radius: 4px;
+    cursor: pointer; transition: all 0.15s; outline: none;
+  }
+  .hud-btn:hover { background: rgba(255,255,255,0.2); border-color: #fff; }
+  #msg-overlay {
+    position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center; pointer-events: auto; display: none;
+  }
+  #msg-overlay h1 {
+    font-size: 42px; font-weight: 900; letter-spacing: 4px;
+    text-transform: uppercase; margin-bottom: 12px;
+    text-shadow: 0 0 20px rgba(255,40,90,0.8);
+  }
+  #msg-overlay p { font-size: 15px; color: #ccd6e0; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <canvas id="cvs" width="1280" height="720"></canvas>
+  <div id="ui-layer">
+    <div class="hud-top">
+      <div class="player-status">
+        <div class="bar-container"><div id="bar-hp" class="bar-hp"></div></div>
+        <div class="bar-stamina"><div id="bar-sp" class="bar-sp"></div></div>
+        <div class="hud-stats" style="margin-top:6px;">
+          <div>连击: <span id="txt-combo" style="color:#ffb347;">0</span></div>
+          <div>命中: <span id="txt-hits">0</span></div>
+          <div>破坏肢体: <span id="txt-breaks" style="color:#00e5ff;">0</span></div>
+          <div>波次: <span id="txt-wave">1</span></div>
+        </div>
+      </div>
+      <div class="btn-panel">
+        <button id="btn-sound" class="hud-btn">音效: 开</button>
+        <button id="btn-restart" class="hud-btn">重置战斗 [R]</button>
+      </div>
+    </div>
+    <div class="controls-guide">
+      <div><span class="key-badge">A</span><span class="key-badge">D</span> 移动</div>
+      <div><span class="key-badge">Space</span> 跳跃</div>
+      <div><span class="key-badge">J</span> 迅光连斩 (主攻/空中下劈)</div>
+      <div><span class="key-badge">K</span> 崩山重斩 (长按蓄力·破甲断肢)</div>
+      <div><span class="key-badge">L</span> 残影滑冲 (无敌帧)</div>
+      <div><span class="key-badge">I</span> 升龙升空 (破防挑空追击)</div>
+      <div><span class="key-badge">R</span> 重启</div>
+    </div>
+  </div>
+  <div id="msg-overlay">
+    <h1 id="msg-title" style="color:#ff3355;">战体崩溃</h1>
+    <p id="msg-desc">按 [R] 键或点击下方按钮重整态势</p>
+    <button class="hud-btn" id="btn-modal-action" style="padding:10px 24px;font-size:14px;background:#ff2a5f;border:none;">立刻再战</button>
+  </div>
+</div>
+
+<script>
+// ==================== 音频合成引擎 (Web Audio API) ====================
+let audioCtx = null;
+let soundEnabled = true;
+
+function initAudio() {
+  if (!audioCtx) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (AudioContext) audioCtx = new AudioContext();
+  }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+}
+
+function playSound(type) {
+  if (!soundEnabled || !audioCtx) return;
+  try {
+    const t = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (type === 'slash_light') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(480, t);
+      osc.frequency.exponentialRampToValueAtTime(140, t + 0.08);
+      gain.gain.setValueAtTime(0.2, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.08);
+      osc.start(t); osc.stop(t + 0.08);
+    } else if (type === 'slash_heavy') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(320, t);
+      osc.frequency.exponentialRampToValueAtTime(60, t + 0.18);
+      gain.gain.setValueAtTime(0.35, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.18);
+      osc.start(t); osc.stop(t + 0.18);
+    } else if (type === 'hit_light') {
+      osc.type = 'square';
+      osc.frequency.setValueAtTime(180, t);
+      osc.frequency.exponentialRampToValueAtTime(50, t + 0.09);
+      gain.gain.setValueAtTime(0.3, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.09);
+      osc.start(t); osc.stop(t + 0.09);
+    } else if (type === 'hit_heavy') {
+      // 爆炸轰鸣
+      const bufferSize = audioCtx.sampleRate * 0.2;
+      const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+      const noise = audioCtx.createBufferSource();
+      noise.buffer = buffer;
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(350, t);
+      filter.frequency.linearRampToValueAtTime(70, t + 0.2);
+      gain.gain.setValueAtTime(0.6, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.2);
+      noise.connect(filter);
+      filter.connect(gain);
+      noise.start(t); noise.stop(t + 0.2);
+    } else if (type === 'dash') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(260, t);
+      osc.frequency.exponentialRampToValueAtTime(700, t + 0.14);
+      gain.gain.setValueAtTime(0.2, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.14);
+      osc.start(t); osc.stop(t + 0.14);
+    } else if (type === 'break') {
+      // 机械撕裂金属碎裂声
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(800, t);
+      osc.frequency.exponentialRampToValueAtTime(90, t + 0.25);
+      gain.gain.setValueAtTime(0.5, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.25);
+      osc.start(t); osc.stop(t + 0.25);
+    } else if (type === 'uppercut') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(220, t);
+      osc.frequency.exponentialRampToValueAtTime(650, t + 0.18);
+      gain.gain.setValueAtTime(0.3, t);
+      gain.gain.linearRampToValueAtTime(0.01, t + 0.18);
+      osc.start(t); osc.stop(t + 0.18);
+    }
+  } catch(e) {}
+}
+
+// ==================== 游戏全局与状态 ====================
+const cvs = document.getElementById('cvs');
+const ctx = cvs.getContext('2d');
+const W = 1280;
+const H = 720;
+const FLOOR_Y = 580;
+
+let hitStopTimer = 0;
+let shakeTimer = 0;
+let shakeIntensity = 0;
+let totalHits = 0;
+let totalBreaks = 0;
+let currentWave = 1;
+let isGameOver = false;
+
+// 按键监听
+const keys = {};
+const keyMap = {
+  KeyA: 'left', ArrowLeft: 'left',
+  KeyD: 'right', ArrowRight: 'right',
+  Space: 'jump',
+  KeyJ: 'atk',
+  KeyK: 'heavy',
+  KeyL: 'dash',
+  KeyI: 'uppercut',
+  KeyR: 'restart',
+  Enter: 'confirm'
+};
+
+window.addEventListener('keydown', (e) => {
+  initAudio();
+  if (['Space','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','KeyJ','KeyK','KeyL','KeyI','KeyR'].includes(e.code)) {
+    e.preventDefault();
+  }
+  const action = keyMap[e.code];
+  if (action) keys[action] = true;
+  if (action === 'restart') resetGame();
+});
+
+window.addEventListener('keyup', (e) => {
+  const action = keyMap[e.code];
+  if (action) keys[action] = false;
+});
+
+window.addEventListener('blur', () => {
+  for (let k in keys) keys[k] = false;
+});
+
+document.getElementById('btn-sound').onclick = (e) => {
+  initAudio();
+  soundEnabled = !soundEnabled;
+  e.target.innerText = `音效: ${soundEnabled ? '开' : '关'}`;
+};
+document.getElementById('btn-restart').onclick = () => resetGame();
+document.getElementById('btn-modal-action').onclick = () => resetGame();
+
+// 辅助检测接口
+window.combatBenchState = function() {
+  return {
+    ready: true,
+    playerAlive: player.hp > 0,
+    enemyCount: enemies.length,
+    hitCount: totalHits,
+    limbBreakCount: totalBreaks,
+    playing: !isGameOver
+  };
+};
+
+// ==================== 粒子与特效系统 ====================
+const particles = [];
+const slashFxList = [];
+const flyingLimbs = [];
+
+function addSlash(x, y, radius, startAngle, endAngle, facing, color, width=4) {
+  slashFxList.push({
+    x, y, radius, startAngle, endAngle, facing,
+    color, width, life: 1, maxLife: 7
+  });
+}
+
+function addSpark(x, y, color='#ffea78', count=8, speed=6) {
+  for (let i = 0; i < count; i++) {
+    const ang = Math.random() * Math.PI * 2;
+    const spd = (0.3 + Math.random() * 0.7) * speed;
+    particles.push({
+      x, y,
+      vx: Math.cos(ang) * spd,
+      vy: Math.sin(ang) * spd - 1,
+      color,
+      size: 2 + Math.random() * 3,
+      life: 1,
+      maxLife: 10 + Math.random() * 10
+    });
+  }
+}
+
+function triggerShake(frames, intensity) {
+  shakeTimer = Math.max(shakeTimer, frames);
+  shakeIntensity = intensity;
+}
+
+function triggerHitStop(frames) {
+  hitStopTimer = Math.max(hitStopTimer, frames);
+}
+
+// ==================== 玩家设计 ====================
+class Player {
+  constructor() {
+    this.reset();
+  }
+
+  reset() {
+    this.x = 260;
+    this.y = FLOOR_Y;
+    this.vx = 0;
+    this.vy = 0;
+    this.facing = 1;
+    this.width = 36;
+    this.height = 72;
+    this.hp = 100;
+    this.maxHp = 100;
+    this.stamina = 100;
+    this.maxStamina = 100;
+    this.isGrounded = true;
+    this.state = 'idle'; // idle, run, jump, atk, heavy_charge, heavy_release, uppercut, dash, hurt
+    this.stateTime = 0;
+    this.comboStep = 0;
+    this.comboTimer = 0;
+    this.dashTimer = 0;
+    this.dashCd = 0;
+    this.heavyCharge = 0;
+    this.invulnerableTimer = 0;
+    this.hitRegistered = false;
+    this.currentComboCount = 0;
+    this.comboWindowTimer = 0;
+  }
+
+  update() {
+    // 恢复与CD
+    if (this.dashCd > 0) this.dashCd--;
+    if (this.invulnerableTimer > 0) this.invulnerableTimer--;
+    if (this.comboTimer > 0) {
+      this.comboTimer--;
+      if (this.comboTimer === 0) this.comboStep = 0;
+    }
+    if (this.comboWindowTimer > 0) {
+      this.comboWindowTimer--;
+      if (this.comboWindowTimer === 0) this.currentComboCount = 0;
+    }
+
+    if (this.stamina < this.maxStamina) this.stamina += 0.8;
+
+    this.stateTime++;
+
+    // 状态机处理
+    switch(this.state) {
+      case 'idle':
+      case 'run':
+        this.handleMovement();
+        this.handleAttacks();
+        break;
+      case 'jump':
+        this.handleAirMovement();
+        this.handleAttacks();
+        break;
+      case 'atk':
+        this.updateLightAttack();
+        break;
+      case 'heavy_charge':
+        this.updateHeavyCharge();
+        break;
+      case 'heavy_release':
+        this.updateHeavyRelease();
+        break;
+      case 'uppercut':
+        this.updateUppercut();
+        break;
+      case 'dash':
+        this.updateDash();
+        break;
+      case 'hurt':
+        if (this.stateTime > 14) this.state = 'idle';
+        break;
+    }
+
+    // 物理积分
+    this.x += this.vx;
+    this.y += this.vy;
+
+    // 重力
+    if (this.y < FLOOR_Y) {
+      this.vy += 0.95;
+      this.isGrounded = false;
+    } else {
+      this.y = FLOOR_Y;
+      this.vy = 0;
+      this.isGrounded = true;
+      if (this.state === 'jump') this.state = 'idle';
+    }
+
+    // 场地边缘限制
+    if (this.x < 60) { this.x = 60; this.vx = 0; }
+    if (this.x > W - 60) { this.x = W - 60; this.vx = 0; }
+  }
+
+  handleMovement() {
+    const moveLeft = keys.left;
+    const moveRight = keys.right;
+    const spd = 6.8;
+
+    if (moveLeft && !moveRight) {
+      this.vx = -spd;
+      this.facing = -1;
+      this.state = 'run';
+    } else if (moveRight && !moveLeft) {
+      this.vx = spd;
+      this.facing = 1;
+      this.state = 'run';
+    } else {
+      this.vx = 0;
+      this.state = 'idle';
+    }
+
+    if (keys.jump && this.isGrounded) {
+      this.vy = -16.5;
+      this.isGrounded = false;
+      this.state = 'jump';
+      addSpark(this.x, this.y, '#ffffff', 5, 3);
+    }
+  }
+
+  handleAirMovement() {
+    const spd = 5.2;
+    if (keys.left) { this.vx = -spd; this.facing = -1; }
+    else if (keys.right) { this.vx = spd; this.facing = 1; }
+    else { this.vx *= 0.92; }
+  }
+
+  handleAttacks() {
+    // 冲刺
+    if (keys.dash && this.dashCd <= 0 && this.stamina >= 20) {
+      this.stamina -= 20;
+      this.dashCd = 26;
+      this.dashTimer = 14;
+      this.state = 'dash';
+      this.stateTime = 0;
+      this.invulnerableTimer = 16;
+      this.vx = this.facing * 16;
+      this.vy = 0;
+      playSound('dash');
+      return;
+    }
+
+    // 挑空升龙 (I)
+    if (keys.uppercut) {
+      keys.uppercut = false;
+      this.state = 'uppercut';
+      this.stateTime = 0;
+      this.hitRegistered = false;
+      this.vy = -14;
+      this.vx = this.facing * 4;
+      playSound('uppercut');
+      return;
+    }
+
+    // 重击蓄力 (K)
+    if (keys.heavy) {
+      this.state = 'heavy_charge';
+      this.stateTime = 0;
+      this.heavyCharge = 0;
+      this.vx = 0;
+      return;
+    }
+
+    // 轻击三连 / 空中下劈 (J)
+    if (keys.atk) {
+      keys.atk = false;
+      this.state = 'atk';
+      this.stateTime = 0;
+      this.hitRegistered = false;
+      if (!this.isGrounded) {
+        // 空中下劈
+        this.comboStep = 9; // 特殊标记
+        this.vy = 8;
+        this.vx = this.facing * 5;
+      } else {
+        this.comboStep = (this.comboStep % 3) + 1;
+        this.vx = this.facing * (this.comboStep === 3 ? 9 : 4);
+      }
+      playSound('slash_light');
+      this.comboTimer = 35;
+    }
+  }
+
+  updateLightAttack() {
+    // 动作帧控制: 1-4 前摇, 5-9 判定帧, 10-18 收招
+    this.vx *= 0.85;
+
+    if (this.comboStep === 9) { // 空中向下俯冲劈砍
+      this.vy += 0.8;
+      if (this.stateTime === 2) {
+        addSlash(this.x, this.y - 30, 48, -Math.PI*0.3, Math.PI*0.6, this.facing, '#4deeea', 5);
+      }
+      if (!this.hitRegistered && this.stateTime >= 2 && this.stateTime <= 10) {
+        this.checkHitBox(60, 50, 14, 4, 3, 6);
+      }
+      if (this.isGrounded || this.stateTime > 18) {
+        if (this.isGrounded) triggerShake(5, 3);
+        this.state = 'idle';
+      }
+      return;
+    }
+
+    // 地面普攻 1/2/3 段
+    if (this.stateTime === 4) {
+      const radius = this.comboStep === 3 ? 65 : 52;
+      const arc = this.comboStep === 1 ? [-0.6, 0.6] : (this.comboStep === 2 ? [0.6, -0.6] : [-0.9, 0.9]);
+      addSlash(this.x + this.facing * 18, this.y - 36, radius, arc[0], arc[1], this.facing, this.comboStep === 3 ? '#ff9a3c' : '#ffffff', 4);
+    }
+
+    if (!this.hitRegistered && this.stateTime >= 4 && this.stateTime <= 8) {
+      const dmg = this.comboStep === 3 ? 24 : 14;
+      const knockX = this.comboStep === 3 ? 12 : 5;
+      const knockY = this.comboStep === 3 ? -5 : -1.5;
+      const hitStop = this.comboStep === 3 ? 8 : 4;
+      this.checkHitBox(this.comboStep === 3 ? 75 : 55, 40, dmg, knockX, knockY, hitStop, this.comboStep === 3);
+    }
+
+    const animEnd = this.comboStep === 3 ? 20 : 13;
+    if (this.stateTime > animEnd) {
+      this.state = 'idle';
+    }
+  }
+
+  updateHeavyCharge() {
+    this.heavyCharge++;
+    this.vx = 0;
+    if (this.heavyCharge % 6 === 0) {
+      addSpark(this.x + (Math.random()-0.5)*20, this.y - 35, '#ff3864', 3, 3);
+    }
+    // 松开K或达到最大蓄力自动释放
+    if (!keys.heavy || this.heavyCharge >= 40) {
+      this.state = 'heavy_release';
+      this.stateTime = 0;
+      this.hitRegistered = false;
+      this.vx = this.facing * (this.heavyCharge >= 30 ? 12 : 7);
+      playSound('slash_heavy');
+    }
+  }
+
+  updateHeavyRelease() {
+    this.vx *= 0.88;
+    const isFull = this.heavyCharge >= 30;
+
+    if (this.stateTime === 3) {
+      addSlash(this.x + this.facing * 25, this.y - 38, isFull ? 85 : 65, -1.2, 1.2, this.facing, isFull ? '#ff2a5f' : '#ff9438', 7);
+      triggerShake(isFull ? 10 : 5, isFull ? 6 : 3);
+    }
+
+    if (!this.hitRegistered && this.stateTime >= 3 && this.stateTime <= 9) {
+      const dmg = isFull ? 45 : 25;
+      const knockX = isFull ? 18 : 10;
+      const knockY = isFull ? -7 : -3;
+      const hitStop = isFull ? 12 : 7;
+      // 重蓄力必破肢
+      this.checkHitBox(isFull ? 90 : 70, 50, dmg, knockX, knockY, hitStop, true, isFull);
+    }
+
+    if (this.stateTime > 22) {
+      this.state = 'idle';
+    }
+  }
+
+  updateUppercut() {
+    this.vx *= 0.9;
+    if (this.stateTime === 2) {
+      addSlash(this.x + this.facing * 15, this.y - 45, 65, 1.3, -1.3, this.facing, '#845ec2', 5);
+    }
+    if (!this.hitRegistered && this.stateTime >= 2 && this.stateTime <= 7) {
+      this.checkHitBox(60, 65, 18, 2, -14, 6, true, false, true);
+    }
+    if (this.stateTime > 18) {
+      this.state = 'jump';
+    }
+  }
+
+  updateDash() {
+    this.dashTimer--;
+    // 残影拖尾
+    if (this.dashTimer % 2 === 0) {
+      particles.push({
+        x: this.x, y: this.y,
+        vx: 0, vy: 0,
+        ghost: true,
+        facing: this.facing,
+        life: 1, maxLife: 8
+      });
+    }
+    if (this.dashTimer <= 0) {
+      this.vx = this.facing * 3;
+      this.state = 'idle';
+    }
+  }
+
+  checkHitBox(range, hRange, damage, knockX, knockY, stopFrames, isHeavy=false, forceLimbBreak=false, isUppercut=false) {
+    const atkCenter = this.x + this.facing * (range * 0.55);
+    let hitAny = false;
+
+    for (let e of enemies) {
+      if (e.isDead) continue;
+      // 距离判定
+      const dx = Math.abs(atkCenter - e.x);
+      const dy = Math.abs((this.y - 35) - (e.y - 35));
+      if (dx < range * 0.65 && dy < hRange) {
+        hitAny = true;
+        this.hitRegistered = true;
+        e.takeHit(damage, this.facing * knockX, knockY, isHeavy, forceLimbBreak, isUppercut);
+        totalHits++;
+        this.currentComboCount++;
+        this.comboWindowTimer = 90;
+      }
+    }
+
+    if (hitAny) {
+      triggerHitStop(stopFrames);
+      triggerShake(stopFrames + 2, isHeavy ? 5 : 2);
+      playSound(isHeavy ? 'hit_heavy' : 'hit_light');
+    }
+  }
+
+  takeDamage(amount, knockDir) {
+    if (this.invulnerableTimer > 0 || isGameOver) return;
+    this.hp -= amount;
+    this.invulnerableTimer = 35;
+    this.state = 'hurt';
+    this.stateTime = 0;
+    this.vx = knockDir * 8;
+    this.vy = -5;
+    triggerShake(8, 4);
+    triggerHitStop(5);
+    playSound('hit_light');
+    addSpark(this.x, this.y - 35, '#ff2a5f', 12, 5);
+
+    if (this.hp <= 0) {
+      this.hp = 0;
+      onPlayerDeath();
+    }
+  }
+
+  draw(c) {
+    c.save();
+    c.translate(this.x, this.y);
+    c.scale(this.facing, 1);
+
+    // 无敌受击闪烁
+    if (this.invulnerableTimer > 0 && Math.floor(Date.now() / 60) % 2 === 0) {
+      c.globalAlpha = 0.5;
+    }
+
+    // 绘制角色身体分段姿态
+    const isDashing = this.state === 'dash';
+    const isAttacking = ['atk','heavy_release','uppercut'].includes(this.state);
+
+    // 影子
+    c.fillStyle = 'rgba(0,0,0,0.35)';
+    c.beginPath();
+    c.ellipse(0, 0, 24, 7, 0, 0, Math.PI * 2);
+    c.fill();
+
+    // 躯干倾角根据速度和状态
+    const tilt = isDashing ? 0.35 : (this.state === 'run' ? 0.15 : 0);
+    c.rotate(tilt);
+
+    // 腿部
+    c.strokeStyle = '#2b3648';
+    c.lineWidth = 6;
+    c.lineCap = 'round';
+
+    const legCycle = (this.state === 'run') ? Math.sin(this.stateTime * 0.4) * 14 : 0;
+    // 后腿
+    c.beginPath();
+    c.moveTo(-4, -30);
+    c.lineTo(-8 - legCycle, -14);
+    c.lineTo(-8 - legCycle*1.2, 0);
+    c.stroke();
+    // 前腿
+    c.beginPath();
+    c.moveTo(6, -30);
+    c.lineTo(8 + legCycle, -14);
+    c.lineTo(8 + legCycle*1.2, 0);
+    c.stroke();
+
+    // 战袍风衣下摆
+    c.fillStyle = '#ff2a5f';
+    c.beginPath();
+    c.moveTo(-10, -38);
+    c.lineTo(8, -38);
+    c.lineTo(12 - (this.vx * 1.5), -12);
+    c.lineTo(-14 - (this.vx * 1.8), -12);
+    c.closePath();
+    c.fill();
+
+    // 躯干护甲
+    c.fillStyle = '#1c2333';
+    c.fillRect(-9, -52, 18, 22);
+    c.fillStyle = '#3a86ff'; // 能量核心
+    c.fillRect(-2, -45, 5, 8);
+
+    // 头部
+    c.fillStyle = '#e2e8f0';
+    c.beginPath();
+    c.arc(0, -60, 9, 0, Math.PI*2);
+    c.fill();
+    // 目镜高光
+    c.fillStyle = '#00f0ff';
+    c.fillRect(3, -62, 5, 3);
+
+    // 手臂与武士刀
+    c.strokeStyle = '#d0d7de';
+    c.lineWidth = 4;
+    c.beginPath();
+    if (this.state === 'heavy_charge') {
+      // 蓄力双手后拉姿态
+      c.moveTo(0, -46);
+      c.lineTo(-16, -42);
+      c.lineTo(-24, -30);
+      c.stroke();
+      // 发光巨剑
+      c.strokeStyle = this.heavyCharge >= 30 ? '#ff2a5f' : '#ff9900';
+      c.lineWidth = 6;
+      c.beginPath();
+      c.moveTo(-24, -30);
+      c.lineTo(-44, -58);
+      c.stroke();
+    } else if (isAttacking) {
+      // 挥砍前展
+      c.moveTo(0, -46);
+      c.lineTo(16, -48);
+      c.lineTo(34, -40);
+      c.stroke();
+      // 刀刃
+      c.strokeStyle = '#ffffff';
+      c.lineWidth = 5;
+      c.beginPath();
+      c.moveTo(34, -40);
+      c.lineTo(60, -32);
+      c.stroke();
+    } else {
+      // 常规站姿刀挎在侧边
+      c.moveTo(0, -46);
+      c.lineTo(8, -36);
+      c.lineTo(10, -22);
+      c.stroke();
+      // 剑身
+      c.strokeStyle = '#94a3b8';
+      c.lineWidth = 3;
+      c.beginPath();
+      c.moveTo(10, -26);
+      c.lineTo(-18, 2);
+      c.stroke();
+    }
+
+    c.restore();
+  }
+}
+
+// ==================== 敌人类与肢体破坏机制 ====================
+// 肢体定义：每个敌人拥有[头部, 左臂(武器), 右臂, 躯干, 腿部]
+// 当特定肢体被打断时，敌人的外形破碎飞溅，攻击模式也会改变（如失去武器臂则不能重挥）
+
+class Enemy {
+  constructor(x, type='brawler') {
+    this.x = x;
+    this.y = FLOOR_Y;
+    this.vx = 0;
+    this.vy = 0;
+    this.type = type; // 'brawler'(双刃破坏者), 'juggernaut'(重锤机甲)
+    this.facing = x > player.x ? -1 : 1;
+    this.hp = type === 'brawler' ? 70 : 160;
+    this.maxHp = this.hp;
+    this.isDead = false;
+    this.state = 'chase'; // chase, telegraph, attack, hurt, down
+    this.stateTime = 0;
+    this.hurtTimer = 0;
+    this.atkCoolDown = 60 + Math.random() * 40;
+    
+    // 肢体完整度 (true=完好, false=已断裂)
+    this.limbs = {
+      head: true,
+      weaponArm: true,
+      shieldArm: true,
+      legs: true
+    };
+    this.poise = type === 'brawler' ? 30 : 70; // 韧性
+    this.maxPoise = this.poise;
+  }
+
+  update() {
+    this.stateTime++;
+    if (this.atkCoolDown > 0) this.atkCoolDown--;
+
+    // 韧性渐回
+    if (this.hurtTimer === 0 && this.poise < this.maxPoise) {
+      this.poise += 0.2;
+    }
+
+    const distToPlayer = player.x - this.x;
+    const absDist = Math.abs(distToPlayer);
+
+    // 状态行为
+    if (this.hurtTimer > 0) {
+      this.hurtTimer--;
+      this.vx *= 0.85;
+      if (this.hurtTimer === 0 && this.hp > 0) {
+        this.state = 'chase';
+      }
+    } else {
+      switch(this.state) {
+        case 'chase':
+          this.facing = distToPlayer > 0 ? 1 : -1;
+          const chaseSpd = this.limbs.legs ? (this.type === 'brawler' ? 3.4 : 1.8) : 0.9;
+          const attackRange = this.type === 'brawler' ? 65 : 95;
+
+          if (absDist > attackRange) {
+            this.vx = this.facing * chaseSpd;
+          } else {
+            this.vx = 0;
+            if (this.atkCoolDown <= 0) {
+              this.startAttackTelegraph();
+            }
+          }
+          break;
+
+        case 'telegraph': // 攻击前兆（警示红光/蓄势）
+          this.vx *= 0.5;
+          const preTime = this.type === 'brawler' ? 22 : 36;
+          if (this.stateTime >= preTime) {
+            this.executeAttack();
+          }
+          break;
+
+        case 'attack':
+          this.updateAttack();
+          break;
+      }
+    }
+
+    // 物理移动
+    this.x += this.vx;
+    this.y += this.vy;
+
+    // 重力
+    if (this.y < FLOOR_Y) {
+      this.vy += 0.9;
+    } else {
+      this.y = FLOOR_Y;
+      this.vy = 0;
+    }
+
+    // 边缘推离
+    if (this.x < 40) this.x = 40;
+    if (this.x > W - 40) this.x = W - 40;
+  }
+
+  startAttackTelegraph() {
+    this.state = 'telegraph';
+    this.stateTime = 0;
+    // 警示特效
+    addSpark(this.x, this.y - 55, '#ff0033', 4, 2);
+  }
+
+  executeAttack() {
+    this.state = 'attack';
+    this.stateTime = 0;
+    // 断臂则攻击减弱
+    const power = this.limbs.weaponArm ? 1 : 0.4;
+    this.vx = this.facing * (this.type === 'brawler' ? 7 * power : 5 * power);
+    playSound('slash_heavy');
+  }
+
+  updateAttack() {
+    const isHeavyMech = this.type === 'juggernaut';
+    const hitTime = isHeavyMech ? 8 : 6;
+    const dur = isHeavyMech ? 24 : 16;
+
+    if (this.stateTime === hitTime) {
+      // 判定伤及玩家
+      const range = isHeavyMech ? 90 : 65;
+      const reach = this.x + this.facing * 35;
+      if (Math.abs(reach - player.x) < range && Math.abs(this.y - player.y) < 50) {
+        const dmg = (isHeavyMech ? 28 : 16) * (this.limbs.weaponArm ? 1 : 0.4);
+        player.takeDamage(dmg, this.facing);
+      }
+    }
+
+    this.vx *= 0.85;
+
+    if (this.stateTime >= dur) {
+      this.state = 'chase';
+      this.atkCoolDown = isHeavyMech ? 90 : 50;
+    }
+  }
+
+  takeHit(damage, knockX, knockY, isHeavy, forceLimbBreak, isUppercut) {
+    this.hp -= damage;
+    this.poise -= damage * (isHeavy ? 2.5 : 1.2);
+    this.hurtTimer = isHeavy ? 20 : 12;
+    this.state = 'hurt';
+
+    this.vx = knockX;
+    this.vy = knockY;
+    addSpark(this.x, this.y - 35, '#ffaa00', 8, 4);
+
+    // 肢体破坏计算：强蓄力攻击、高连击积累或特定破韧性触发
+    if (forceLimbBreak || this.poise <= 0 || (isHeavy && Math.random() < 0.6)) {
+      this.breakNextLimb();
+      this.poise = this.maxPoise * 0.7; // 恢复部分韧性
+    }
+
+    if (this.hp <= 0 && !this.isDead) {
+      this.die();
+    }
+  }
+
+  breakNextLimb() {
+    // 优先顺序: 武器臂 -> 盾/副臂 -> 头部 -> 腿部
+    let target = null;
+    if (this.limbs.weaponArm) target = 'weaponArm';
+    else if (this.limbs.shieldArm) target = 'shieldArm';
+    else if (this.limbs.head) target = 'head';
+    else if (this.limbs.legs) target = 'legs';
+
+    if (target) {
+      this.limbs[target] = false;
+      totalBreaks++;
+      playSound('break');
+      triggerShake(10, 5);
+      // 生成飞溅肢体残骸物体
+      spawnLimbDebris(this.x, this.y - 35, target, this.type, this.facing);
+    }
+  }
+
+  die() {
+    this.isDead = true;
+    // 死亡爆体：剩下的所有部位一并飞裂
+    for (let part of ['head', 'weaponArm', 'shieldArm', 'legs']) {
+      if (this.limbs[part]) {
+        spawnLimbDebris(this.x, this.y - 35, part, this.type, this.facing);
+        this.limbs[part] = false;
+      }
+    }
+    addSpark(this.x, this.y - 35, '#ff4444', 24, 7);
+    playSound('hit_heavy');
+  }
+
+  draw(c) {
+    if (this.isDead) return;
+
+    c.save();
+    c.translate(this.x, this.y);
+    c.scale(this.facing, 1);
+
+    const isTelegraph = this.state === 'telegraph';
+    const isHurt = this.state === 'hurt';
+
+    // 蓄力前兆发红警示
+    if (isTelegraph) {
+      c.shadowColor = '#ff1144';
+      c.shadowBlur = 15;
+    }
+
+    // 阴影
+    c.fillStyle = 'rgba(0,0,0,0.3)';
+    c.beginPath();
+    c.ellipse(0, 0, this.type === 'brawler' ? 24 : 34, 8, 0, 0, Math.PI * 2);
+    c.fill();
+
+    const baseColor = this.type === 'brawler' ? '#3d485f' : '#4d3b3b';
+    const highlight = this.type === 'brawler' ? '#00e5ff' : '#ff5722';
+
+    // 1. 腿部绘制
+    if (this.limbs.legs) {
+      c.strokeStyle = baseColor;
+      c.lineWidth = this.type === 'brawler' ? 7 : 11;
+      c.lineCap = 'round';
+      const stride = (this.state === 'chase' && this.vx !== 0) ? Math.sin(this.stateTime * 0.3) * 12 : 0;
+      // 腿分段
+      c.beginPath();
+      c.moveTo(-6, -26);
+      c.lineTo(-10 - stride, -12);
+      c.lineTo(-8 - stride, 0);
+      c.stroke();
+
+      c.beginPath();
+      c.moveTo(6, -26);
+      c.lineTo(10 + stride, -12);
+      c.lineTo(12 + stride, 0);
+      c.stroke();
+    } else {
+      // 腿断后爬行姿态残桩冒火花
+      c.fillStyle = '#111';
+      c.fillRect(-6, -14, 12, 10);
+      if (Math.random() < 0.3) addSpark(this.x, this.y - 6, '#ffaa00', 1, 2);
+    }
+
+    // 2. 躯干
+    c.fillStyle = isHurt ? '#ffffff' : baseColor;
+    const bodyH = this.type === 'brawler' ? 32 : 44;
+    const bodyW = this.type === 'brawler' ? 22 : 36;
+    c.fillRect(-bodyW/2, -26 - bodyH, bodyW, bodyH);
+
+    // 核心指示灯
+    c.fillStyle = highlight;
+    c.fillRect(-4, -20 - bodyH/2, 8, 8);
+
+    // 3. 头部
+    if (this.limbs.head) {
+      c.fillStyle = '#1e2430';
+      const headY = -26 - bodyH - 12;
+      c.beginPath();
+      c.arc(0, headY, this.type === 'brawler' ? 10 : 15, 0, Math.PI*2);
+      c.fill();
+      // 单眼红/黄灯
+      c.fillStyle = isTelegraph ? '#ff0033' : highlight;
+      c.fillRect(3, headY - 3, 5, 4);
+    } else {
+      // 头部断裂截面断线电火花
+      if (Math.random() < 0.25) {
+        addSpark(this.x, this.y - bodyH - 26, '#00ffff', 2, 3);
+      }
+    }
+
+    // 4. 左臂 / 盾
+    if (this.limbs.shieldArm) {
+      c.strokeStyle = baseColor;
+      c.lineWidth = 6;
+      c.beginPath();
+      c.moveTo(-bodyW/4, -bodyH - 16);
+      c.lineTo(-bodyW/2 - 8, -bodyH);
+      c.lineTo(-bodyW/2 - 6, -24);
+      c.stroke();
+    }
+
+    // 5. 右臂 / 主武器
+    if (this.limbs.weaponArm) {
+      c.strokeStyle = '#232936';
+      c.lineWidth = 7;
+      c.beginPath();
+      const armSwing = this.state === 'attack' ? 20 : (isTelegraph ? -16 : 0);
+      c.moveTo(bodyW/4, -bodyH - 16);
+      c.lineTo(bodyW/2 + 8, -bodyH + armSwing);
+      c.lineTo(bodyW/2 + 18, -26 + armSwing * 1.5);
+      c.stroke();
+
+      // 武器主体（巨刃或机械锤）
+      c.fillStyle = highlight;
+      if (this.type === 'brawler') {
+        c.fillRect(bodyW/2 + 14, -40 + armSwing * 1.5, 8, 36);
+      } else {
+        c.fillRect(bodyW/2 + 12, -45 + armSwing * 1.5, 18, 22);
+      }
+    }
+
+    c.restore();
+
+    // 血条与韧性条悬浮显示
+    this.drawHealthBar(c);
+  }
+
+  drawHealthBar(c) {
+    const barW = this.type === 'brawler' ? 44 : 64;
+    const barH = 5;
+    const barX = this.x - barW / 2;
+    const barY = this.y - (this.type === 'brawler' ? 84 : 102);
+
+    c.fillStyle = 'rgba(0,0,0,0.6)';
+    c.fillRect(barX - 1, barY - 1, barW + 2, barH + 5);
+
+    // HP
+    const hpRatio = Math.max(0, this.hp / this.maxHp);
+    c.fillStyle = '#ff3366';
+    c.fillRect(barX, barY, barW * hpRatio, barH);
+
+    // 韧性条 (Poise)
+    const poiseRatio = Math.max(0, this.poise / this.maxPoise);
+    c.fillStyle = '#00d2ff';
+    c.fillRect(barX, barY + barH + 1, barW * poiseRatio, 2);
+  }
+}
+
+// 散落肢体实体（受力旋转、碰撞弹跳停在地表）
+function spawnLimbDebris(x, y, partName, enemyType, facing) {
+  const vx = (Math.random() - 0.5) * 8 - facing * 4;
+  const vy = -6 - Math.random() * 6;
+  const vRot = (Math.random() - 0.5) * 0.4;
+  flyingLimbs.push({
+    x, y, vx, vy, rot: 0, vRot,
+    partName, enemyType,
+    life: 180, // 存活一段时间淡出
+    isGrounded: false
+  });
+}
+
+function updateAndDrawDebris(c) {
+  for (let i = flyingLimbs.length - 1; i >= 0; i--) {
+    const d = flyingLimbs[i];
+    d.x += d.vx;
+    d.y += d.vy;
+    d.rot += d.vRot;
+
+    if (d.y < FLOOR_Y) {
+      d.vy += 0.8; // 重力
+    } else {
+      d.y = FLOOR_Y;
+      d.vy = -d.vy * 0.4; // 弹跳
+      d.vx *= 0.75;
+      d.vRot *= 0.6;
+      if (Math.abs(d.vy) < 1) {
+        d.vy = 0;
+        d.isGrounded = true;
+      }
+    }
+
+    d.life--;
+    if (d.life <= 0) {
+      flyingLimbs.splice(i, 1);
+      continue;
+    }
+
+    // 绘制残肢
+    c.save();
+    c.translate(d.x, d.y);
+    c.rotate(d.rot);
+    c.globalAlpha = Math.min(1, d.life / 30);
+    c.fillStyle = '#222834';
+    c.strokeStyle = '#ff3b30';
+
+    if (d.partName === 'head') {
+      c.beginPath();
+      c.arc(0, 0, 9, 0, Math.PI * 2);
+      c.fill();
+    } else if (d.partName === 'weaponArm') {
+      c.fillRect(-6, -4, 24, 8);
+      c.fillStyle = '#ff8800';
+      c.fillRect(10, -7, 10, 14);
+    } else if (d.partName === 'legs') {
+      c.lineWidth = 6;
+      c.beginPath();
+      c.moveTo(-6, -6); c.lineTo(0, 8); c.lineTo(8, 14);
+      c.stroke();
+    } else {
+      c.fillRect(-8, -8, 16, 12);
+    }
+
+    c.restore();
+  }
+}
+
+// ==================== 关卡与战斗波次管理 ====================
+let player = new Player();
+let enemies = [];
+
+function spawnWave(waveNum) {
+  enemies = [];
+  if (waveNum === 1) {
+    enemies.push(new Enemy(800, 'brawler'));
+    enemies.push(new Enemy(1050, 'brawler'));
+  } else if (waveNum === 2) {
+    enemies.push(new Enemy(850, 'juggernaut'));
+    enemies.push(new Enemy(1100, 'brawler'));
+  } else {
+    // 混合精英波
+    enemies.push(new Enemy(750, 'brawler'));
+    enemies.push(new Enemy(980, 'juggernaut'));
+    enemies.push(new Enemy(1180, 'brawler'));
+  }
+  document.getElementById('txt-wave').innerText = waveNum;
+}
+
+function onPlayerDeath() {
+  isGameOver = true;
+  document.getElementById('msg-title').innerText = "战体损坏";
+  document.getElementById('msg-title').style.color = "#ff2a5f";
+  document.getElementById('msg-desc').innerText = `击溃前线。共达成 ${totalHits} 命中，粉碎 ${totalBreaks} 个战体肢体。`;
+  document.getElementById('msg-overlay').style.display = 'block';
+}
+
+function resetGame() {
+  isGameOver = false;
+  player.reset();
+  currentWave = 1;
+  totalHits = 0;
+  totalBreaks = 0;
+  flyingLimbs.length = 0;
+  particles.length = 0;
+  slashFxList.length = 0;
+  document.getElementById('msg-overlay').style.display = 'none';
+  spawnWave(currentWave);
+}
+
+// ==================== 场景与背景渲染 ====================
+function drawBackground(c) {
+  // 深空远景渐变
+  const grad = c.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#0a0d16');
+  grad.addColorStop(0.7, '#151c2e');
+  grad.addColorStop(1, '#0b0e17');
+  c.fillStyle = grad;
+  c.fillRect(0, 0, W, H);
+
+  // 远景霓虹建筑轮廓
+  c.fillStyle = '#0f1422';
+  c.fillRect(80, 220, 120, 360);
+  c.fillRect(260, 280, 90, 300);
+  c.fillRect(600, 180, 160, 400);
+  c.fillRect(920, 250, 110, 330);
+  c.fillRect(1080, 310, 140, 270);
+
+  // 科技天桥与警告光条
+  c.strokeStyle = 'rgba(0, 229, 255, 0.15)';
+  c.lineWidth = 2;
+  c.beginPath();
+  c.moveTo(0, 360); c.lineTo(W, 360);
+  c.moveTo(0, 420); c.lineTo(W, 420);
+  c.stroke();
+
+  // 战斗平台地面
+  c.fillStyle = '#181f2f';
+  c.fillRect(0, FLOOR_Y, W, H - FLOOR_Y);
+
+  // 地面高亮边界光轨
+  const floorEdge = c.createLinearGradient(0, FLOOR_Y, W, FLOOR_Y);
+  floorEdge.addColorStop(0, '#00d2ff');
+  floorEdge.addColorStop(0.5, '#ff2a5f');
+  floorEdge.addColorStop(1, '#00d2ff');
+  c.strokeStyle = floorEdge;
+  c.lineWidth = 3;
+  c.beginPath();
+  c.moveTo(0, FLOOR_Y);
+  c.lineTo(W, FLOOR_Y);
+  c.stroke();
+
+  // 地面网格线
+  c.strokeStyle = 'rgba(255,255,255,0.04)';
+  c.lineWidth = 1;
+  for (let x = 0; x < W; x += 60) {
+    c.beginPath();
+    c.moveTo(x, FLOOR_Y);
+    c.lineTo(x - 80, H);
+    c.stroke();
+  }
+}
+
+// ==================== 特效与刀光更新 ====================
+function updateAndDrawEffects(c) {
+  // 刀光
+  for (let i = slashFxList.length - 1; i >= 0; i--) {
+    const s = slashFxList[i];
+    s.life++;
+    const progress = s.life / s.maxLife;
+    c.save();
+    c.translate(s.x, s.y);
+    c.scale(s.facing, 1);
+    c.beginPath();
+    c.arc(0, 0, s.radius, s.startAngle, s.endAngle, s.startAngle > s.endAngle);
+    c.strokeStyle = s.color;
+    c.lineWidth = s.width * (1 - progress);
+    c.shadowColor = s.color;
+    c.shadowBlur = 12;
+    c.stroke();
+    c.restore();
+
+    if (s.life >= s.maxLife) slashFxList.splice(i, 1);
+  }
+
+  // 粒子与残影
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.life++;
+    p.x += p.vx;
+    p.y += p.vy;
+    const alpha = 1 - (p.life / p.maxLife);
+
+    if (p.ghost) {
+      // 玩家冲刺半透明残影
+      c.save();
+      c.translate(p.x, p.y);
+      c.scale(p.facing, 1);
+      c.globalAlpha = alpha * 0.45;
+      c.fillStyle = '#00f0ff';
+      c.fillRect(-10, -55, 20, 55);
+      c.restore();
+    } else {
+      c.save();
+      c.globalAlpha = alpha;
+      c.fillStyle = p.color;
+      c.beginPath();
+      c.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      c.fill();
+      c.restore();
+    }
+
+    if (p.life >= p.maxLife) particles.splice(i, 1);
+  }
+}
+
+// ==================== 主循环 ====================
+function gameLoop() {
+  // 命中顿帧逻辑：若处于顿帧中，跳过实体物理更新，仅重绘当前画面并消耗顿帧计时
+  if (hitStopTimer > 0) {
+    hitStopTimer--;
+  } else {
+    // 正常更新
+    if (!isGameOver) {
+      player.update();
+      for (let e of enemies) e.update();
+
+      // 检测波次刷新：全部消灭后快速进入下一波
+      const allDead = enemies.every(e => e.isDead);
+      if (allDead && enemies.length > 0) {
+        currentWave++;
+        spawnWave(currentWave);
+      }
+    }
+  }
+
+  // 屏幕震动偏移
+  let offsetX = 0;
+  let offsetY = 0;
+  if (shakeTimer > 0) {
+    shakeTimer--;
+    offsetX = (Math.random() - 0.5) * shakeIntensity * 2;
+    offsetY = (Math.random() - 0.5) * shakeIntensity * 2;
+  }
+
+  ctx.save();
+  ctx.translate(offsetX, offsetY);
+
+  // 渲染场景
+  drawBackground(ctx);
+
+  // 渲染掉落破碎肢体
+  updateAndDrawDebris(ctx);
+
+  // 渲染敌人
+  for (let e of enemies) e.draw(ctx);
+
+  // 渲染玩家
+  player.draw(ctx);
+
+  // 渲染刀光特效与粒子
+  updateAndDrawEffects(ctx);
+
+  ctx.restore();
+
+  // 更新HUD UI
+  document.getElementById('bar-hp').style.width = `${Math.max(0, (player.hp / player.maxHp) * 100)}%`;
+  document.getElementById('bar-sp').style.width = `${Math.max(0, (player.stamina / player.maxStamina) * 100)}%`;
+  document.getElementById('txt-combo').innerText = player.currentComboCount;
+  document.getElementById('txt-hits').innerText = totalHits;
+  document.getElementById('txt-breaks').innerText = totalBreaks;
+
+  requestAnimationFrame(gameLoop);
+}
+
+// 启动初始化
+spawnWave(1);
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>

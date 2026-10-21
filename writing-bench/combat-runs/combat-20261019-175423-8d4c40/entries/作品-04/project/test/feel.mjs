@@ -1,0 +1,18 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter'); await page.waitForTimeout(1100);
+await page.evaluate(() => { Game.spawnQueue.length=0; Game.enemies.forEach(e=>e.dead=true); Game.enemies.length=0; Game.spawnEnemy('warden'); const e=Game.enemies[0]; e.x=Game.player.x+78; e.facing=-1; e.atkCd=99; e.hp=999; e.maxHp=999;
+  window.__log=[]; const orig = Game.playerHitsEnemy.bind(Game); Game.playerHitsEnemy = (...a)=>{ const r = orig(...a); window.__log.push({t: performance.now(), hs: Game.hitstop, dmg: a[2].dmg}); return r; }; });
+await page.waitForTimeout(400);
+await page.keyboard.press('KeyJ');
+await page.waitForTimeout(600);
+await page.evaluate(()=>{ window.__hs=[]; const t0=performance.now(); const tick=()=>{ window.__hs.push([+(performance.now()-t0).toFixed(0), +Game.hitstop.toFixed(3), Game.player.act? +Game.player.act.t.toFixed(3): -1]); if (performance.now()-t0<500) requestAnimationFrame(tick); }; requestAnimationFrame(tick); });
+await page.keyboard.press('KeyJ');
+await page.waitForTimeout(700);
+const r = await page.evaluate(()=>({log: window.__log.map(l=>({t:+(l.t).toFixed(0),hs:l.hs,dmg:l.dmg})), hs: window.__hs.filter((_,i)=>i%2===0).slice(0,20)}));
+console.log(JSON.stringify(r, null, 0));
+await browser.close();

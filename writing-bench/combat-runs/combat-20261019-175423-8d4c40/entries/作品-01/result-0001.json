@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 7561901,
+    "stop_reason": "end_turn",
+    "session_id": "29366536-2942-4b20-bca5-41d10faaa5c1",
+    "total_cost_usd": 51.780265000000014,
+    "usage": {
+      "input_tokens": 697,
+      "cache_creation_input_tokens": 1432985,
+      "cache_read_input_tokens": 35782930,
+      "output_tokens": 498305,
+      "output_tokens_details": {
+        "thinking_tokens": 238424
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 1432985
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-fable-5-1": {
+        "inputTokens": 697,
+        "outputTokens": 498305,
+        "cacheReadInputTokens": 35782930,
+        "cacheCreationInputTokens": 1432985,
+        "webSearchRequests": 0,
+        "costUSD": 51.780265000000014,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 238424,
+        "canonicalModel": "claude-fable-5-1",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 401,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "Priviate list:\n\n1. **Diagnose the `moon wheel dealt no damage` flake** — moon wheel requires enemies within 138px of the player; the test sets enemy x but not y, and enemies may be mid-swing or knocked away during the 70-frame window. Need to know whether it's test setup or a real reach issue.\n2. **Diagnose `cooldown expired unexpectedly`** — the test waits ~1.5s of sim after a 6.5s cast; the wait may exceed the cooldown under hitstop-free framing, making the assertion wrong.\n3. **View the refreshed HUD** at 960/wide after the bar rebuild (artifact read).\n4. **README claims check** — the self-test section says \"19 scripts\" and \"四个技能...\" wording; confirm the count and that the audio test comment (\"16 种合成音效\") still matches the actual sound function count after adding `skill`.\n5. **Then** fix tests, rebuild if engine changes, full regression, final summary.\n\nItems 1 and 2 are independent diagnostics; 3 and 4 are independent artifact/doc checks. All four go now.",
+    "ttft_ms": 4374,
+    "type": "result",
+    "duration_ms": 7872703,
+    "uuid": "7015b317-3180-4ba7-8c79-432d99b74156",
+    "ttft_stream_ms": 4373,
+    "time_to_request_ms": 112,
+    "first_content_frame_ms": 4373,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 8499.3
+}

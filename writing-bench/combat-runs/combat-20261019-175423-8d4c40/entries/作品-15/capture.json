@@ -1,0 +1,170 @@
+{
+  "at": "2026-10-19T20:25:53.648924+08:00",
+  "source_sha256": "0fabb6676c925cb3bb58483e56aa441b4bdb286ff950cf977a90671b960b098c",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "实际 Chrome 操作与连续真实帧录制",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "Q150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "E150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "U150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "O150ms",
+    "连续真实画面3秒"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-0fabb6676c92-q.png",
+      "label": "Q 缚星磁涡实际触发画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 3,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-0fabb6676c92-e.png",
+      "label": "E 裂轨一闪实际触发画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 3,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-0fabb6676c92-u.png",
+      "label": "U 双月回轮实际触发画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 3,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-0fabb6676c92-o.png",
+      "label": "O 天炉裁决实际触发画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 3,
+        "hitCount": 3,
+        "limbBreakCount": 3,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-0fabb6676c92-e-sequence-200.png",
+      "label": "技能E 连续真实画面，距记录首帧0.193秒",
+      "recording": "recordings\\0fabb6676c92\\skill-e"
+    },
+    {
+      "file": "skill-0fabb6676c92-e-sequence-1200.png",
+      "label": "技能E 连续真实画面，距记录首帧1.184秒",
+      "recording": "recordings\\0fabb6676c92\\skill-e"
+    },
+    {
+      "file": "skill-0fabb6676c92-e-sequence-2300.png",
+      "label": "技能E 连续真实画面，距记录首帧2.285秒",
+      "recording": "recordings\\0fabb6676c92\\skill-e"
+    },
+    {
+      "file": "skill-0fabb6676c92-o-sequence-200.png",
+      "label": "技能O 连续真实画面，距记录首帧0.171秒",
+      "recording": "recordings\\0fabb6676c92\\skill-o"
+    },
+    {
+      "file": "skill-0fabb6676c92-o-sequence-1200.png",
+      "label": "技能O 连续真实画面，距记录首帧1.184秒",
+      "recording": "recordings\\0fabb6676c92\\skill-o"
+    },
+    {
+      "file": "skill-0fabb6676c92-o-sequence-2300.png",
+      "label": "技能O 连续真实画面，距记录首帧2.308秒",
+      "recording": "recordings\\0fabb6676c92\\skill-o"
+    },
+    {
+      "file": "skill-0fabb6676c92-q-sequence-200.png",
+      "label": "技能Q 连续真实画面，距记录首帧0.188秒",
+      "recording": "recordings\\0fabb6676c92\\skill-q"
+    },
+    {
+      "file": "skill-0fabb6676c92-q-sequence-1200.png",
+      "label": "技能Q 连续真实画面，距记录首帧1.187秒",
+      "recording": "recordings\\0fabb6676c92\\skill-q"
+    },
+    {
+      "file": "skill-0fabb6676c92-q-sequence-2300.png",
+      "label": "技能Q 连续真实画面，距记录首帧2.292秒",
+      "recording": "recordings\\0fabb6676c92\\skill-q"
+    },
+    {
+      "file": "skill-0fabb6676c92-u-sequence-200.png",
+      "label": "技能U 连续真实画面，距记录首帧0.200秒",
+      "recording": "recordings\\0fabb6676c92\\skill-u"
+    },
+    {
+      "file": "skill-0fabb6676c92-u-sequence-1200.png",
+      "label": "技能U 连续真实画面，距记录首帧1.200秒",
+      "recording": "recordings\\0fabb6676c92\\skill-u"
+    },
+    {
+      "file": "skill-0fabb6676c92-u-sequence-2300.png",
+      "label": "技能U 连续真实画面，距记录首帧2.293秒",
+      "recording": "recordings\\0fabb6676c92\\skill-u"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "四技能分别从重开状态实测，并非同一套连续连招。真实Chrome前台60FPS，四技能累计错误0；记录200ms轮询状态与稍后截图可能不同步。连续录像为无音轨真实帧；PNG序列提供给裁判，未实际监听音频。",
+  "skill_checks": [
+    {
+      "name": "缚星磁涡",
+      "key": "q",
+      "note": "环形命中3次并聚敌",
+      "observed": true,
+      "screenshot": "skill-0fabb6676c92-q.png"
+    },
+    {
+      "name": "裂轨一闪",
+      "key": "e",
+      "note": "穿阵命中3次、直接采样断肢1次",
+      "observed": true,
+      "screenshot": "skill-0fabb6676c92-e.png"
+    },
+    {
+      "name": "双月回轮",
+      "key": "u",
+      "note": "投出月刃命中3次，连续帧保留返回",
+      "observed": true,
+      "screenshot": "skill-0fabb6676c92-u.png"
+    },
+    {
+      "name": "天炉裁决",
+      "key": "o",
+      "note": "巨刃下砸命中3次、断肢3次",
+      "observed": true,
+      "screenshot": "skill-0fabb6676c92-o.png"
+    }
+  ]
+}

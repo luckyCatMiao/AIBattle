@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-19T08:37:36.734Z",
+  "status": "error",
+  "errors": [
+    {
+      "level": "error",
+      "message": "TypeError: Failed to execute 'createRadialGradient' on 'CanvasRenderingContext2D': The provided double value is non-finite.\n    at drawDecals (http://127.0.0.1:8805/api/runs/combat-20261019-160034-875938/entries/%E4%BD%9C%E5%93%81-03/game?sample=1:1439:17)\n    at render (http://127.0.0.1:8805/api/runs/combat-20261019-160034-875938/entries/%E4%BD%9C%E5%93%81-03/game?sample=1:2533:3)\n    at frame (http://127.0.0.1:8805/api/runs/combat-20261019-160034-875938/entries/%E4%BD%9C%E5%93%81-03/game?sample=1:2680:3)",
+      "timestamp": "2026-10-19T08:36:11.254Z",
+      "url": "http://127.0.0.1:8805/api/runs/combat-20261019-160034-875938/entries/%E4%BD%9C%E5%93%81-03/game?sample=1"
+    }
+  ],
+  "note": "实际浏览器渲染抛出非有限径向渐变参数异常，画面只剩背景；该记录为额外实测，不改模型源码或裁判已返回的分数。",
+  "source_sha256": "ce8cd907688330d32008326858b9e1fa62c45b25c03baa4fbb2a73e0884d1494"
+}

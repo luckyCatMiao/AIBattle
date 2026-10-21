@@ -1,0 +1,196 @@
+{
+  "at": "2026-10-19T12:17:02.022Z",
+  "source_sha256": "e7c379a95d19488f73860eb0ed7c41be78b53b490f982cae866ff9166bbe78df",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "修复版四技能真实Chrome逐项重测及连续原帧",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "技能U150ms",
+    "连续原帧另存，无音轨",
+    "R重开",
+    "D300ms",
+    "技能O150ms",
+    "连续原帧另存，无音轨",
+    "R重开",
+    "D300ms",
+    "技能P150ms",
+    "连续原帧另存，无音轨",
+    "R重开",
+    "D300ms",
+    "技能Q150ms",
+    "连续原帧另存，无音轨"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-e7c379a95d19-u.png",
+      "label": "修复版U技能实际触发帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 5,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-e7c379a95d19-o.png",
+      "label": "修复版O技能实际触发帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 7,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-e7c379a95d19-p.png",
+      "label": "修复版P技能实际触发帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-e7c379a95d19-q.png",
+      "label": "修复版Q技能实际触发帧",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 3,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-e7c379a95d19-o-sequence-200.png",
+      "label": "O技能连续录制原帧，+0.201秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412210.3427
+    },
+    {
+      "file": "skill-e7c379a95d19-o-sequence-1200.png",
+      "label": "O技能连续录制原帧，+1.200秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412211.341724
+    },
+    {
+      "file": "skill-e7c379a95d19-p-sequence-200.png",
+      "label": "P技能连续录制原帧，+0.192秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412214.703851
+    },
+    {
+      "file": "skill-e7c379a95d19-p-sequence-1200.png",
+      "label": "P技能连续录制原帧，+1.207秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412215.718819
+    },
+    {
+      "file": "skill-e7c379a95d19-p-sequence-2300.png",
+      "label": "P技能连续录制原帧，+2.285秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412216.796627
+    },
+    {
+      "file": "skill-e7c379a95d19-q-sequence-200.png",
+      "label": "Q技能连续录制原帧，+0.195秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412219.093495
+    },
+    {
+      "file": "skill-e7c379a95d19-q-sequence-1200.png",
+      "label": "Q技能连续录制原帧，+1.191秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412220.090365
+    },
+    {
+      "file": "skill-e7c379a95d19-u-sequence-200.png",
+      "label": "U技能连续录制原帧，+0.203秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412205.9496
+    },
+    {
+      "file": "skill-e7c379a95d19-u-sequence-1200.png",
+      "label": "U技能连续录制原帧，+1.208秒",
+      "environment": "同段DOM监测60FPS",
+      "frame_timestamp": 1792412206.955069
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "修复版全部四技能逐个R重开并D300ms后操作，正常60FPS；测试结束累计运行错误0。状态接口约200ms轮询，P的早期状态0与稍后截图、后续原帧的实际命中存在采样时间差。四技能为独立测试，不证明组合连招的实际手感。视频无音轨；裁判只看所列真实PNG序列、状态和源码，不能声称已听音。",
+  "skill_checks": [
+    {
+      "key": "u",
+      "observed": true,
+      "description": "贯穿攻击实际命中并断肢；出招前后位移在连续原帧中可见",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 5,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-e7c379a95d19-u.png"
+    },
+    {
+      "key": "o",
+      "observed": true,
+      "description": "分身与多段命中、断肢已观察",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 7,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-e7c379a95d19-o.png"
+    },
+    {
+      "key": "p",
+      "observed": true,
+      "description": "标记与落雷在连续原帧可见，延迟落雷造成实际命中与肢体破坏；早期状态轮询尚为0，不等于技能没有命中",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-e7c379a95d19-p.png"
+    },
+    {
+      "key": "q",
+      "observed": true,
+      "description": "冲击环、实际命中、敌人着色与动作变化可见；减速数值仍需交叉核对源码。此前负半径错误已不再复现",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 3,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true",
+      "screenshot": "skill-e7c379a95d19-q.png"
+    }
+  ]
+}

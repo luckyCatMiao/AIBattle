@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>断械 · 雨夜铸庭</title>
+<style>
+/*__FONT__*/
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#070e18;color:#e4edea;font-family:ForgeUI,system-ui,"Microsoft YaHei",sans-serif}canvas{display:block;width:100%;height:100%;outline:none}button{font:inherit;color:inherit;cursor:pointer}#sound{position:fixed;right:28px;top:24px;padding:9px 14px;border:1px solid #38515b;background:#101e28c9;font-size:12px;letter-spacing:2px;border-radius:3px}#sound:hover{border-color:#9cd9cc}#overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg,#071019e8,#0710198a 55%,#07101944);backdrop-filter:blur(2px)}.panel{width:min(840px,88vw);padding:32px 44px;border-left:2px solid #9fe7d4;background:linear-gradient(90deg,#101f2be8,#101f2b20)}.eyebrow{font-size:12px;color:#8ed2c5;letter-spacing:5px}h1{font-size:76px;line-height:1.1;margin:20px 0 8px;font-weight:800;letter-spacing:14px}h1 span{display:block;font-size:17px;font-weight:400;letter-spacing:9px;margin-top:14px;color:#b5c6cb}.desc{font-size:14px;line-height:1.9;color:#afc2c8;max-width:590px;margin:24px 0}.keys{display:grid;grid-template-columns:1fr 1fr;gap:13px 24px;margin:26px 0;font-size:13px;color:#a6bdc5}.keys b{color:#e4eee9;font-weight:500}kbd{display:inline-block;min-width:26px;padding:3px 7px;margin-right:7px;border:1px solid #49606a;border-bottom:3px solid #49606a;background:#1a2d38;color:#f1e6cd;font:12px monospace;border-radius:3px}#start{padding:13px 35px;background:#a8ead7;color:#10262b;border:0;font-size:15px;letter-spacing:3px;font-weight:700}#start:hover{background:#d7ffee}.small{font-size:11px;color:#839aa6;margin-left:15px}#report{font-size:15px;color:#dfbd7b;line-height:1.8}#overlay.hidden{display:none}@media(max-height:620px){#sound{top:12px;right:22px;padding:5px 9px;font-size:10px}.panel{padding:19px 34px}h1{font-size:54px;margin:12px 0}.desc{margin:16px 0}.keys{margin:17px 0;gap:9px}h1 span{font-size:14px}}
+</style>
+</head><body>
+<canvas id="game" tabindex="0" aria-label="断械，横版动作战斗游戏"></canvas>
+<button id="sound" aria-label="切换音效">音效 ON</button>
+<div id="overlay"><section class="panel">
+<div class="eyebrow" id="eyebrow">COMBAT STUDY / 01 — THE RAIN FORGE</div>
+<h1 id="title">断 械<span>雨 夜 铸 庭</span></h1>
+<p class="desc" id="description">以刀锋拆解失控的铸庭守卫。<br>轻斩逼出破绽，挑空追击，重斩断械。不要停在红色的锋芒里。</p>
+<div class="keys" id="keys">
+<div><kbd>A</kbd><kbd>D</kbd> / ← → <b>移动</b></div><div><kbd>Space</kbd><b>跳跃 · 可二段跳</b></div>
+<div><kbd>J</kbd><b>三连斩</b> · 可按住连续出招</div><div><kbd>K</kbd><b>断械重斩</b> · 长按蓄力</div>
+<div><kbd>L</kbd><b>闪步</b> · 穿身 / 取消收招</div><div><kbd>I</kbd><b>升龙</b> · 挑空后 J 空中追击</div>
+<div><kbd>1</kbd><b>掠雨一线</b> · 贯穿断臂</div><div><kbd>2</kbd><b>回澜锁月</b> · 三拍聚敌挑空</div>
+<div><kbd>3</kbd><b>双弧归燕</b> · 往返飞刃</div><div><kbd>4</kbd><b>天钉落庭</b> · 定点重落断腿</div>
+</div>
+<p id="report"></p><button id="start">进入铸庭 ↵</button><span class="small" id="startHint">Enter 开始 · R 随时重开</span>
+</section></div>
+<script>
+/*__GAME__*/
+</script></body></html>

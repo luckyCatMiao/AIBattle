@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 8623668,
+    "stop_reason": "end_turn",
+    "session_id": "364bbac9-f162-4cec-a4b2-1819cca7de1e",
+    "total_cost_usd": 28.234550249999998,
+    "usage": {
+      "input_tokens": 453,
+      "cache_creation_input_tokens": 748492,
+      "cache_read_input_tokens": 34014851,
+      "output_tokens": 269156,
+      "output_tokens_details": {
+        "thinking_tokens": 92573
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 748492
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-4-8": {
+        "inputTokens": 449,
+        "outputTokens": 269154,
+        "cacheReadInputTokens": 34008773,
+        "cacheCreationInputTokens": 719851,
+        "webSearchRequests": 0,
+        "costUSD": 28.234550249999998,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 92573,
+        "canonicalModel": "claude-opus-4-8",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 219,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "I've completed a major polish pass on the combat system. Here's what was implemented:\n\n**Height-based limb targeting**\n- Attacks now target limbs based on where they connect (high hits → head/arms, low hits → legs)\n- Each attack has a `hitH` factor (0=feet, 1=head) that determines targeting bias\n- Wounded limbs are prioritized 2.2× to create deliberate dismemberment sequences\n\n**Severed limb improvements**\n- Anchored at joints (elbow/knee) instead of hands/feet\n- Thrown farther with more spin (210-380 vx, 250-470 vy)\n- Blood trail particles while airborne\n- Blood splatter on impact\n- Enhanced visual details: dark socket stumps, splintered bone ends\n- Heads show mask detail when severed\n\n**Enemy consequences**\n- One leg: limping crouch with reduced speed\n- No arms: weakened attacks (45% damage, 25% slower windup)\n- Decapitated: flails for 2.6s then collapses\n- Neck stump rendering with slow blood drip\n\n**Player character refinement**\n- Fixed arm positions on all locomotion poses (run/jump/fall/dash/land)\n- Redesigned hakama as flared split skirt with center crease\n- Shorter collar, smaller skin-toned hand wraps\n- Replaced verlet scarf with history-trail ribbon that droops at low speed\n- Scarf anchored at neck, flows backward during motion\n\n**Combat polish**\n- Parry riposte: J immediately after successful parry triggers counter attack\n- Air combo: can chain light3→air2 if pressed after finisher while airborne\n- Heavy attack afterimages (orange glow)\n- Increased light attack reach (76/80/94 from 66/70/82)\n- Adjusted spawn distance (300-430 from 330-470)\n\n**UI/UX**\n- Mute button syncs with M key\n- Wave banner slides in with ease-out, thinner rule under text\n- Title card hides player until game starts, repositioned text to avoid collision\n- Input cleared on window blur\n\n**Testing**\n- 150-iteration bot run: stable, 0 deaths, reached wave 3\n- Input latency: 6-13ms (sub-frame)\n- Audio, death/restart, combo chaining all verified\n\nAll systems verified through automated Playwright tests. The game is feature-complete and stable.",
+    "ttft_ms": 4070,
+    "type": "result",
+    "duration_ms": 9130830,
+    "uuid": "7c068ab0-0827-496f-9261-de6c2385a019",
+    "ttft_stream_ms": 4068,
+    "time_to_request_ms": 127,
+    "first_content_frame_ms": 4068,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 9850.1
+}

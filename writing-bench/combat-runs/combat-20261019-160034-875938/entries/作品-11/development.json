@@ -1,0 +1,50 @@
+{
+  "status": "awaiting_check",
+  "round": 6,
+  "artifact": "versions/v0006",
+  "source_sha256": "16e325cd6b0f5dc35368ea858580457770e544867be23bef68152df547c9f015",
+  "validation": {
+    "html_sha256": "16e325cd6b0f5dc35368ea858580457770e544867be23bef68152df547c9f015",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "last_error": null,
+  "next_retry_at": 1792402280.9782047,
+  "updated_at": "2026-10-19T17:30:31+08:00",
+  "service_failures": 5,
+  "user_requested_retry_at": "2026-10-19T17:12:18+08:00",
+  "candidate": null,
+  "writer": {
+    "requested_model": "glm-5.3-flash",
+    "started_at": "2026-10-19T17:17:44+08:00",
+    "max_tokens": 1000000,
+    "deadline_seconds": null,
+    "total_output_limit": null,
+    "segments": [
+      {
+        "index": 1,
+        "max_tokens": 131072,
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 50547,
+        "response_model": "glm-5.3-flash",
+        "response_id": "msg_202610191717487c1f5b759bb34ab1",
+        "sha256": "dcd682deb6181982434a6d7096bee0ad752e32bdb6016b96f3fccca24088846a"
+      }
+    ],
+    "token_negotiations": [],
+    "provider_tested_token_cap": 131072,
+    "status": "ok",
+    "effective_max_tokens": 131072,
+    "elapsed_seconds": 766.78,
+    "response_model": "glm-5.3-flash",
+    "response_id": "msg_202610191717487c1f5b759bb34ab1",
+    "stop_reason": "end_turn",
+    "input_tokens": 0,
+    "output_tokens": 50547,
+    "message_stop": true,
+    "thinking_char_count": 65724
+  }
+}

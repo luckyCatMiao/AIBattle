@@ -1,0 +1,90 @@
+{
+  "file": "agent_r1.py",
+  "opp": "rival.py",
+  "style": "fast",
+  "results": [
+    {
+      "n": 1,
+      "seat": 0,
+      "score": [
+        12,
+        0
+      ],
+      "winner": 0,
+      "frame": 2400,
+      "stats": [
+        {
+          "kicks": 14,
+          "possession": 56
+        },
+        {
+          "kicks": 0,
+          "possession": 0
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "seat": 1,
+      "score": [
+        2,
+        10
+      ],
+      "winner": 1,
+      "frame": 2400,
+      "stats": [
+        {
+          "kicks": 14,
+          "possession": 14
+        },
+        {
+          "kicks": 12,
+          "possession": 236
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "seat": 0,
+      "score": [
+        10,
+        0
+      ],
+      "winner": 0,
+      "frame": 2400,
+      "stats": [
+        {
+          "kicks": 10,
+          "possession": 880
+        },
+        {
+          "kicks": 0,
+          "possession": 0
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "seat": 1,
+      "score": [
+        0,
+        10
+      ],
+      "winner": 1,
+      "frame": 2400,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 12
+        },
+        {
+          "kicks": 10,
+          "possession": 887
+        }
+      ]
+    }
+  ],
+  "maxMs": 20.485460999999997,
+  "meanMs": 4.252134918750003,
+  "windows": 480
+}

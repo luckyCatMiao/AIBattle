@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-19T17:07:43+08:00",
+  "status": "error",
+  "source_sha256": "5f777fb6bc296eeea25b623d0bcc4a7b94d5841ccef861ebc2c754aa364aa436",
+  "errors": [],
+  "technical_feedback": [
+    {
+      "kind": "layout",
+      "observed": "敌人身体已修复并实际显示。但开始页的开始按钮仍覆盖按键说明。",
+      "source_evidence": "startBtn 仍继承 .btn 的 position:absolute；仅增加 margin-top 和 overlay padding 未移除绝对定位。",
+      "request": "仅修好开始页按钮与说明重叠，保持当前战斗逻辑与敌人坐标修复。不要因为UI问题改变战斗方案。"
+    }
+  ],
+  "note": "仅技术修复，不扣分；浏览器扩展 postMessage 错误已排除，不属于游戏。"
+}

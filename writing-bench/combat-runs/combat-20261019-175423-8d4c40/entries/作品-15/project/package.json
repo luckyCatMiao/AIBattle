@@ -1,0 +1,10 @@
+{
+  "name": "rust-requiem",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node tests/smoke.mjs && node tests/skills.mjs"
+  },
+  "devDependencies": { "playwright": "^1.58.0" }
+}

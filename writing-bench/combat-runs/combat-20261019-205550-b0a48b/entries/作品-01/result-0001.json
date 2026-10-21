@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 1356389,
+    "stop_reason": "end_turn",
+    "session_id": "3f35507a-5da2-48c0-9fbc-190ffce10b0a",
+    "total_cost_usd": 2.6363631999999995,
+    "usage": {
+      "input_tokens": 108,
+      "cache_creation_input_tokens": 98694,
+      "cache_read_input_tokens": 3996606,
+      "output_tokens": 67157,
+      "output_tokens_details": {
+        "thinking_tokens": 56945
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 98694
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 108,
+        "outputTokens": 67157,
+        "cacheReadInputTokens": 3996606,
+        "cacheCreationInputTokens": 98694,
+        "webSearchRequests": 0,
+        "costUSD": 2.6363631999999995,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 56945,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 77,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`，并且 JSON 校验通过，总分 79（impact 29 / flow 24 / rhythm 14 / destruction 12）。\n\n评审要点：\n\n**确认到的（截图 + 源码对得上）**\n- 四技能确实分别实现，不是同一个招式换一层外观：Q 的环形磁场会把敌人拉到近身，E 的无敌穿透斩还会在 0.23s 后追加一次延迟爆裂，U 的去程和归程分别判定，O 则是跃升后下砸、命中范围按 295px 计算，并不覆盖全屏。\n- 顿帧有明确的力度分档（0.025s 到 0.13s），并且和震屏、命中音效一起按重击／轻击分层；`freeze` 期间会把世界冻结，同时让特效以 0.25 倍速继续推进，说明顿帧是真实生效的。\n- 断肢是真实效果：敌人手臂和腿部各有独立的 HP，断臂后敌人的攻击距离和伤害都会下降、断腿后移速降到 31%；O 的截图里三名敌人同时断腿，残肢和碎件都飞散出去。\n\n**没确认到的（如实标成 uncertain）**\n- 只有“重开→单发一个技能→看 3 秒”的四轮采样，没有任何连续普攻、闪避反击、受击死亡或波次更替的画面。\n- 顿帧的手感、震屏是否舒服、合成音效的厚度，全靠源码推断，不能当实测结论写。\n- rhythm 给 14 属于偏保守：风险循环的证据最薄，而且天炉裁决（76 伤害、7.5s CD）一次打三名 128 血的敌人，可能把之后的几秒节奏压平。",
+    "ttft_ms": 5213,
+    "type": "result",
+    "duration_ms": 1361453,
+    "uuid": "a9b91c1b-ec3d-437a-a308-928ce18adf52",
+    "ttft_stream_ms": 5013,
+    "time_to_request_ms": 51,
+    "first_content_frame_ms": 5014,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1476.4
+}

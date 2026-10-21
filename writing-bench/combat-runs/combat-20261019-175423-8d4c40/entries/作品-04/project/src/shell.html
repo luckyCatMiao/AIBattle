@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>绯刃试炼 — Crimson Edge</title>
+<style>
+/*__FONTS__*/
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    background: #05060c; overflow: hidden;
+    font-family: "Crimson SC", "Trebuchet MS", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  }
+  #stage {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(ellipse at 50% 45%, #14142a 0%, #05060c 70%);
+  }
+  canvas#game {
+    display: block;
+    image-rendering: auto;
+    box-shadow: 0 0 60px rgba(120,80,255,0.18), 0 0 0 1px rgba(180,190,255,0.12);
+    border-radius: 4px;
+    touch-action: none;
+  }
+  #ui {
+    position: fixed; top: 12px; right: 12px;
+    display: flex; gap: 8px; z-index: 10;
+    pointer-events: none;
+  }
+  #ui button {
+    pointer-events: auto;
+    font-family: inherit;
+    font-size: 12px; font-weight: 700;
+    color: #e8ecff;
+    background: rgba(12,14,26,0.82);
+    border: 1px solid rgba(160,175,230,0.35);
+    border-radius: 8px;
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    backdrop-filter: blur(4px);
+  }
+  #ui button:hover { background: rgba(40,46,80,0.9); border-color: rgba(200,215,255,0.6); }
+  #ui button:focus-visible { outline: 2px solid #7cf5ff; outline-offset: 2px; }
+  #ui button[aria-pressed="true"] { color: #8b93b8; }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="game" width="960" height="540" aria-label="绯刃试炼 游戏画面"></canvas></div>
+<div id="ui">
+  <button id="muteBtn" type="button" aria-pressed="false" title="静音 (M)">🔊 声音</button>
+  <button id="fsBtn" type="button" title="切换全屏（可选）">⛶ 全屏</button>
+</div>
+<script>
+/*__GAME_JS__*/
+</script>
+</body>
+</html>

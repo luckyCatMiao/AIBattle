@@ -1,0 +1,25 @@
+{
+  "model": "glm-5.3",
+  "outcomes": [
+    {
+      "cap": 1000000,
+      "status": "error",
+      "error": "Upstream request failed",
+      "http_status": 502,
+      "body": "{\"error\":{\"message\":\"Upstream request failed\",\"type\":\"upstream_error\"},\"type\":\"error\"}"
+    },
+    {
+      "cap": 262144,
+      "status": "error",
+      "error": "Upstream request failed",
+      "http_status": 502,
+      "body": "{\"error\":{\"message\":\"Upstream request failed\",\"type\":\"upstream_error\"},\"type\":\"error\"}"
+    },
+    {
+      "cap": 131072,
+      "status": "ok",
+      "text_characters": 2,
+      "stop_reason": "end_turn"
+    }
+  ]
+}

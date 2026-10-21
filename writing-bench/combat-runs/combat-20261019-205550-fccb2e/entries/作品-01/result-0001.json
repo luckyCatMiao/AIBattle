@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 434522,
+    "stop_reason": "end_turn",
+    "session_id": "9eab5718-6c06-4199-8e05-ce1855eba06c",
+    "total_cost_usd": 1.5621975999999997,
+    "usage": {
+      "input_tokens": 68,
+      "cache_creation_input_tokens": 156174,
+      "cache_read_input_tokens": 1847178,
+      "output_tokens": 20581,
+      "output_tokens_details": {
+        "thinking_tokens": 14800
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 156174
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 68,
+        "outputTokens": 20581,
+        "cacheReadInputTokens": 1847178,
+        "cacheCreationInputTokens": 156174,
+        "webSearchRequests": 0,
+        "costUSD": 1.5621975999999997,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 14800,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 38,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`，JSON 校验通过。\n\n**评分：** impact 27 / flow 23 / rhythm 14 / destruction 12，合计 76。\n\n**判断依据简述：**\n\n- **实拍确认**：四个技能各自成功触发并造成命中（状态快照中的 `activeSkill`、冷却、`hitCount` 与截图一致）。技能3 的截图明确拍到 `DISARMED`、断开的右臂和落地的刀，同帧 `limbBreakCount=1`；技能2 能看到敌人被拉到玩家两侧并离地。\n- **源码可确认**：顿帧按力度分为 .048/.09/.14/.16/.17，多段技压到 25ms 以下，挥空不触发；断肢是独立物理对象（头部、手臂分开计算耐久），断臂后剑兵前摇从 0.52 拉长到 0.82、枪兵退化为近战——破坏是真的影响战斗能力，不是死亡粒子。\n- **主要问题**：技能2 的紫色球罩和技能3 的全屏光矛把真正的接触点压住了，而角色在 1600 宽画面里只占百余像素；四个技能各带 0.72～1.8 秒无敌、冷却独立，轮转可覆盖约 6 秒，风险回报偏松；波次只靠血量 +5/+4 线性增长。\n- **覆盖不足（已写入 limitations）**：只有技能采样，没有基础三连、弹反、玩家受击、死亡重开的动态观察；无音轨，音效只确认代码存在；技能4 的坠地冲击瞬间没被帧捕到；采样期帧率曾降至 39–45 FPS。连续帧的时间标注与游戏内冷却不一致（skill-4 2300ms 帧里冷却仅推进 0.9 秒），已在证据中如实标为 uncertain，未据此评价技能快慢。",
+    "ttft_ms": 4497,
+    "type": "result",
+    "duration_ms": 435535,
+    "uuid": "f9f64279-c89f-4bea-94b3-d6f2070be752",
+    "ttft_stream_ms": 4118,
+    "time_to_request_ms": 42,
+    "first_content_frame_ms": 4118,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 470.2
+}

@@ -1,0 +1,40 @@
+{
+  "scores": {
+    "impact": 9,
+    "flow": 11,
+    "rhythm": 8,
+    "destruction": 7
+  },
+  "verdict": "轻斩连段、重斩、冲刺斩与剑气四路输入在源码里都有准备/出招/收招三段，命中有分级顿帧和刀光；但截图里角色始终停在敌群左侧原地挥刀，hitCount 与 limbBreakCount 三轮采样全为 0，实际有效交锋未被证实。断肢是概率掷骰而非部位累积，判定与表现之间关联很弱。",
+  "strengths": [
+    "SLASH_TYPES 为轻1/轻2/轻3/重/AIR/DASH_ATK 分别定义 windup-active-recovery 与 hitStop 3/3/5/7/4/5、shake 2~5，轻重差异在参数层面成立，不是单一节奏",
+    "命中瞬间生成 slashes 刀光、定向火花 spawnHitSparks、震屏 shakeAmount 与 'hit' 合成分量音，四路反馈是同时触发的",
+    "敌人分近战(带 windup 前摇、26 帧后出判定、'!' 与红圈警示)与远程(保持距离、射击前摇、弹丸)，并会主动 approach，非静止靶"
+  ],
+  "weaknesses": [
+    "断肢完全由 Math.random() 掷骰触发，breakBonus 只做概率加权，没有部位伤害累积或命中部位判定；同一刀可能断头也可能断臂，玩家无法学习到\"打哪断哪\"的可控目标",
+    "创造 limbDebris 的一次性销毁型断肢只降敌速/改远程为近战，双臂是否存活不影响近战攻击判定（攻击只看攻击冷却与距离），断肢对战斗能力的削弱很浅",
+    "截图显示玩家与最近敌人保持约 80-120px 距离反复出手而三次采样 hitCount 均为 0，命中框只看中心圆距 dist<range+e.width*0.5，缺乏对攻击弧实际覆盖的可读反馈，攻击落空时也没有挥空音或空击提示"
+  ],
+  "evidence": [
+    {
+      "basis": "screenshot",
+      "detail": "三张截图 hitCount 均为 0、limbBreakCount 均为 0，玩家角色位于画面左侧约 x=250 处站立挥刀，敌人分布在 x=390~1250，双方未进入交叠"
+    },
+    {
+      "basis": "source",
+      "detail": "damageEnemy 内以 roll=Math.random() 与 breakBonus 阈值比较决定断头/断左臂/断右臂/断躯干，无部位命中判定"
+    },
+    {
+      "basis": "source",
+      "detail": "近战敌人攻击条件为 hasLeftArm&&hasRightArm&&attackCooldown<=0&&dist<70，断臂后仍进入 approach 分支但不再触发攻击逻辑，行为退化为趋近不攻击"
+    },
+    {
+      "basis": "source",
+      "detail": "hitStopTimer 在 updateGame 开头递减并 return，命中期间冻结 input 与 entities，恢复后无缝继续，顿帧本身实现正确",
+      "name": "顿帧实现"
+    }
+  ],
+  "limitations": "仅有 3 张离散截图，无连续帧与视频，无法判断顿帧恢复是否顺滑、刀光与火花在动态下的观感、震屏是否过密；音频未实际听取；三轮采样 hitCount 为 0，命中、断肢与敌人攻击前摇的真实触发全部未能现场确认，仅能依据源码路径推断。实际手感、输入延迟与连按容错仍需真人连续试玩。",
+  "total": 35
+}

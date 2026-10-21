@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-19T17:33:43+08:00",
+  "source_sha256": "16e325cd6b0f5dc35368ea858580457770e544867be23bef68152df547c9f015",
+  "startup": "passed",
+  "rendering": "passed",
+  "browser_errors": [],
+  "observed_state": {
+    "ready": true,
+    "playerAlive": true,
+    "enemyCount": 2,
+    "hitCount": 0,
+    "limbBreakCount": 0,
+    "playing": true
+  },
+  "note": "Chrome 实际页面已确认开战与角色、两名敌人正常显示；没有匹配游戏URL的控制台错误。页面随后被关闭，未保存可用于最终评分的连续战斗材料。"
+}

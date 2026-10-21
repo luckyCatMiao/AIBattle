@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-19T08:24:39.468Z",
+  "method": "Chrome 实际运行；sample=1 统一屏幕按键发送 key/code，不改原始游戏逻辑",
+  "actions": [
+    "点击开始",
+    "右移 D · 1秒",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "L 机动",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "跳跃 + J",
+    "J 连按 · 1秒"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "开始后的初始战斗状态",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    },
+    {
+      "file": "sample-2.png",
+      "label": "接敌及攻击采样后，当前尚未记录命中",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    },
+    {
+      "file": "sample-3.png",
+      "label": "机动、连击、重击、弹反/升龙与空中攻击采样后",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    }
+  ],
+  "note": "合成按键与离散截图仅供辅助；实际连续手感、输入延迟和音频仍需真人体验。 本次短时采样未确认断肢触发，需与源码实现交叉核对。",
+  "source_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f"
+}

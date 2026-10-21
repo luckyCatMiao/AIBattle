@@ -1,0 +1,186 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #06040a;
+  overflow: hidden;
+  color: #f0e2c8;
+  font-family: "Trebuchet MS", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 38%, #1a0d17 0%, #08050c 62%, #030206 100%);
+  overflow: hidden;
+}
+#app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.16) 0px, rgba(0,0,0,0.16) 1px, transparent 1px, transparent 3px);
+  opacity: 0.35;
+  z-index: 3;
+}
+canvas#stage {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: #07040a;
+  box-shadow:
+    0 0 0 1px rgba(210,170,110,0.22),
+    0 0 60px rgba(120,20,40,0.35),
+    0 30px 80px rgba(0,0,0,0.8);
+  border-radius: 3px;
+}
+#overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.hidden { display: none !important; }
+
+#titlePanel {
+  pointer-events: none;
+  text-align: center;
+  padding: 28px 40px 24px;
+  background: linear-gradient(180deg, rgba(14,7,13,0.86) 0%, rgba(10,5,10,0.94) 100%);
+  border: 1px solid rgba(214,168,96,0.32);
+  border-radius: 6px;
+  box-shadow: 0 20px 70px rgba(0,0,0,0.7), inset 0 0 60px rgba(130,20,40,0.12);
+  max-width: min(560px, 88vw);
+  animation: panelIn 0.5s ease-out both;
+}
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+#titlePanel .kanji {
+  font-size: clamp(34px, 6vw, 52px);
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: #f4dfb4;
+  text-shadow: 0 0 24px rgba(255,90,70,0.35), 0 2px 0 rgba(0,0,0,0.6);
+}
+#titlePanel .kanji span { color: #d8433c; }
+#titlePanel .sub {
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: rgba(214,180,130,0.6);
+}
+#titlePanel .rule {
+  width: 84%;
+  height: 1px;
+  margin: 16px auto;
+  background: linear-gradient(90deg, transparent, rgba(216,64,60,0.7), transparent);
+}
+#titlePanel .prompt {
+  font-size: 15px;
+  color: #ffd9a4;
+  letter-spacing: 1px;
+  animation: breathe 1.8s ease-in-out infinite;
+}
+@keyframes breathe { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+#titlePanel b { color: #fff1cf; }
+#titlePanel .controls-title {
+  margin: 18px 0 8px;
+  font-size: 11px;
+  letter-spacing: 7px;
+  color: rgba(220,190,150,0.55);
+}
+#titlePanel .keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(232,218,194,0.82);
+}
+#titlePanel .keys div { display: flex; align-items: center; gap: 5px; }
+#titlePanel .keys span { margin-left: 4px; }
+kbd {
+  display: inline-block;
+  min-width: 19px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: rgba(255,230,190,0.1);
+  border: 1px solid rgba(255,215,170,0.32);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffe9c4;
+  text-align: center;
+  line-height: 1.2;
+}
+#titlePanel .tip {
+  margin-top: 14px;
+  font-size: 11px;
+  color: rgba(200,170,140,0.55);
+  letter-spacing: 0.5px;
+}
+
+#deathPanel {
+  pointer-events: none;
+  text-align: center;
+  padding: 34px 56px 30px;
+  background: linear-gradient(180deg, rgba(20,6,10,0.9), rgba(9,3,6,0.95));
+  border: 1px solid rgba(214,70,60,0.4);
+  border-radius: 6px;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.8), inset 0 0 80px rgba(180,20,30,0.2);
+  animation: panelIn 0.45s ease-out both;
+}
+#deathPanel .dead-title {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 16px;
+  color: #ff6a58;
+  text-shadow: 0 0 30px rgba(255,40,40,0.5);
+}
+#deathPanel .dead-sub {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: rgba(230,190,170,0.7);
+}
+#deathPanel .dead-prompt {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffd9a4;
+  animation: breathe 1.4s ease-in-out infinite;
+}
+
+#muteBtn {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  z-index: 5;
+  padding: 7px 13px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(240,222,190,0.85);
+  background: rgba(14,8,14,0.78);
+  border: 1px solid rgba(214,168,96,0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+#muteBtn:hover { background: rgba(40,18,24,0.9); border-color: rgba(240,190,110,0.55); }
+#muteBtn:focus { outline: none; }

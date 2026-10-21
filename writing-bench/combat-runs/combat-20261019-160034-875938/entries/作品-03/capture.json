@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-19T09:04:10.719Z",
+  "source_sha256": "505ef181bdbe5905690205ea2ae51b3bb89552034e135df1409606a02b11dd14",
+  "method": "Chrome 页面统一按键，未修改战斗逻辑",
+  "actions": [],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "原作者修复后可正常绘制玩家、敌人与战场",
+      "environment": "采样环境 / 1 FPS · visible · 焦点 true",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    }
+  ],
+  "note": "只评最终战斗理解；低帧率取样不用于最终评分。",
+  "runtime_errors": []
+}

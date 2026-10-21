@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 2000570,
+    "stop_reason": "end_turn",
+    "session_id": "9d3aaf4a-91af-441b-ac64-cbb1f4b1bb67",
+    "total_cost_usd": 5.997208,
+    "usage": {
+      "input_tokens": 848328,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 652288,
+      "output_tokens": 12992,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6-astra": {
+        "inputTokens": 1284982,
+        "outputTokens": 34864,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 800000,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 5.997208,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 30,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已完成并交付：**[打开 game.html](./game.html)**\n\n### 《断械 · 雨夜铸庭》\n雨夜机械剑斗场景，包含三类主动敌人、持续波次、分段肢体破坏、差异化命中顿帧和浏览器合成音效。单文件约 **117 KB**，可完全离线游玩。\n\n**操作**\n- **A/D、方向键**：移动；**Space**：二段跳\n- **J**：三连斩，可按住连续攻击\n- **K**：重斩，长按蓄力断械；空中使用落断\n- **I**：升龙挑空，接 J 追击\n- **L**：无敌闪步，可取消攻击\n- **R**：重开；**Enter**：开始／继续\n\n**自测通过**：真实命中顿帧、存活敌人断臂、挑空追击、闪步、死亡重开、失焦清键、音效开关，以及 960×540／宽屏适配。最终版本在 `allow-scripts` 沙箱中完成实战，外部网络请求为 **0**，浏览器运行错误为 **0**。\n\n源码、构建脚本、测试及说明保留于 `src/`、`build.mjs`、`tests/` 和 `README.md`。",
+    "ttft_ms": 22566,
+    "type": "result",
+    "duration_ms": 637306,
+    "uuid": "9b34ac2a-518a-4fdb-9756-129f5d7b93ee",
+    "ttft_stream_ms": 5067,
+    "time_to_request_ms": 47,
+    "first_content_frame_ms": 5067,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 690.2
+}

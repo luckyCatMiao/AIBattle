@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-19T11:34:56.172Z",
+  "source_sha256": "ed2a2272814734cd5b7301c89a1897fe5cb8850e082f2b8b5834c34a82fa5538",
+  "method": "真实Chrome兼容UI接口及标准键盘输入",
+  "actions": [
+    "Enter",
+    "D300ms",
+    "J连按12次",
+    "K1200ms"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-v0002-lowfps.png",
+      "label": "修复版本v0002前台连续操作仍仅1FPS，等待同窗口对照后判断",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "1 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "v0002复测本作约1FPS，但同一窗口对照原先60FPS的作品当前也仅1至5FPS，因此本次归为采样环境受限，不能据此确认新版本仍有性能故障。暂无JS错误。"
+}

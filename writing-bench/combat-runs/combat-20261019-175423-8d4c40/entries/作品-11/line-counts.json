@@ -1,0 +1,96 @@
+{
+  "total_lines": 7891,
+  "files": [
+    {
+      "path": "build.js",
+      "lines": 14,
+      "bytes": 799
+    },
+    {
+      "path": "game.html",
+      "lines": 3158,
+      "bytes": 132821
+    },
+    {
+      "path": "src\\anim.js",
+      "lines": 243,
+      "bytes": 11937
+    },
+    {
+      "path": "src\\audio.js",
+      "lines": 203,
+      "bytes": 9953
+    },
+    {
+      "path": "src\\enemies.js",
+      "lines": 598,
+      "bytes": 25749
+    },
+    {
+      "path": "src\\fx.js",
+      "lines": 233,
+      "bytes": 10780
+    },
+    {
+      "path": "src\\game.js",
+      "lines": 1103,
+      "bytes": 41551
+    },
+    {
+      "path": "src\\player.js",
+      "lines": 552,
+      "bytes": 25864
+    },
+    {
+      "path": "src\\style.css",
+      "lines": 109,
+      "bytes": 2737
+    },
+    {
+      "path": "src\\template.html",
+      "lines": 55,
+      "bytes": 2078
+    },
+    {
+      "path": "src\\utils.js",
+      "lines": 56,
+      "bytes": 2187
+    },
+    {
+      "path": "test\\harness-audio.js",
+      "lines": 103,
+      "bytes": 4056
+    },
+    {
+      "path": "test\\harness.js",
+      "lines": 358,
+      "bytes": 14032
+    },
+    {
+      "path": "test\\probe_behavior.js",
+      "lines": 206,
+      "bytes": 8269
+    },
+    {
+      "path": "test\\probe_geom.js",
+      "lines": 191,
+      "bytes": 7772
+    },
+    {
+      "path": "test\\probe_hit.js",
+      "lines": 78,
+      "bytes": 3233
+    },
+    {
+      "path": "test\\probe_thrower.js",
+      "lines": 119,
+      "bytes": 5194
+    },
+    {
+      "path": "test\\snapshot.js",
+      "lines": 512,
+      "bytes": 22090
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

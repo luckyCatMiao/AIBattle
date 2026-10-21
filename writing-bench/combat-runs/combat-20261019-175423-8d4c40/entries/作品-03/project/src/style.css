@@ -1,0 +1,142 @@
+/* ---------------------------------------------------------------------------
+ * 余烬之刃 ASHEN VOW
+ * Bundled generated font (subset, offline).
+ * ------------------------------------------------------------------------- */
+@font-face {
+  font-family: "UIFont";
+  src: url(data:font/woff2;base64,__FONT__) format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+:root {
+  --ink: #0a0b0e;
+  --ember: #ff8a3c;
+  --ember-hot: #ffd9a0;
+  --cyan: #7cf3ff;
+  --paper: #efe4cf;
+  --paper-dim: #a99f8e;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #06070a;
+  color: var(--paper);
+  font-family: "UIFont", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(120% 90% at 50% 10%, #14161d 0%, #08090c 55%, #040507 100%);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.018) 0px,
+    rgba(255, 255, 255, 0.018) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+  z-index: 3;
+  opacity: 0.55;
+}
+
+#stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#game {
+  display: block;
+  outline: none;
+  background: #0b0c10;
+  box-shadow: 0 0 0 1px rgba(255, 196, 128, 0.10), 0 30px 90px rgba(0, 0, 0, 0.85);
+  touch-action: none;
+  cursor: crosshair;
+}
+
+#muteBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px 7px 10px;
+  border: 1px solid rgba(239, 228, 207, 0.22);
+  border-radius: 999px;
+  background: rgba(8, 9, 12, 0.66);
+  color: var(--paper);
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+#muteBtn:hover { background: rgba(24, 26, 33, 0.9); border-color: rgba(255, 190, 120, 0.45); }
+#muteBtn:active { transform: scale(0.97); }
+#muteBtn[aria-pressed="true"] { color: var(--paper-dim); border-color: rgba(239, 228, 207, 0.12); }
+
+#muteIcon {
+  display: inline-grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 11px;
+  background: rgba(255, 138, 60, 0.16);
+  color: var(--ember-hot);
+  line-height: 1;
+}
+
+#muteBtn[aria-pressed="true"] #muteIcon {
+  background: rgba(150, 150, 150, 0.12);
+  color: #8b8578;
+}
+
+#stageHint {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  z-index: 4;
+  font-size: 12px;
+  letter-spacing: 0.35em;
+  color: rgba(239, 228, 207, 0.55);
+  pointer-events: none;
+  animation: hintPulse 2.6s ease-in-out infinite;
+  transition: opacity 400ms ease;
+}
+
+#stageHint.hidden { opacity: 0; animation: none; }
+
+@keyframes hintPulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.9; }
+}

@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-19T08:44:15.089Z",
+  "method": "Chrome 实际运行；统一屏幕采样按键发送 key/code，不改作者游戏逻辑。",
+  "actions": [
+    "开始",
+    "右移 D · 1秒",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "L 机动",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "跳跃 + J",
+    "I 特色能力"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "开始后的初始场景",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":0,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":false}"
+    },
+    {
+      "file": "sample-2.png",
+      "label": "接敌、主攻、副攻与特色能力采样后",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":0,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":false}"
+    },
+    {
+      "file": "sample-3.png",
+      "label": "机动、追加连段、重击与空中动作采样后",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":0,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":false}"
+    }
+  ],
+  "note": "短时合成输入和离散截图不是连续体验，未捕到的效果必须交叉核对源码；未听取音频。",
+  "runtime_errors": [],
+  "source_sha256": "e0365d190146e5b13051f2c9cee078fbd9cc4c34b91941ee47d8f5143ed715a0"
+}

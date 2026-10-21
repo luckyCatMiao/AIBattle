@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-19T21:37:34+08:00",
+  "source_sha256": "f77d0aa2f8c6bda3350f0a7d92511fcc82435c0335b97880e04ab0066c97e854",
+  "method": "真实Chrome基础版渲染修复检查",
+  "actions": [
+    "Enter开始",
+    "D800ms/J250ms/J250ms/K800ms",
+    "A350ms/J250ms/K850ms/J250ms"
+  ],
+  "screenshots": [
+    {
+      "file": "baseline-f77d0aa2f8c6-combat.png",
+      "label": "实际角色恢复可见、基础战斗命中断肢后的画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 4,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "真实Chrome已恢复玩家、敌人、地面及HUD渲染；基础交战4命中2断肢，错误0。用户取消四技能与评分，不验收四技能（技能栏仍有undefined等未收尾显示），仅保留已有实现。当前修复版在模型继续自测期间冻结并停止，不冒充模型自然完成。未试听音频。"
+}

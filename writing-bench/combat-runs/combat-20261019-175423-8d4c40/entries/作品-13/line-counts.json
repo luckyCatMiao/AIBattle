@@ -1,0 +1,81 @@
+{
+  "total_lines": 2034,
+  "files": [
+    {
+      "path": "build.mjs",
+      "lines": 10,
+      "bytes": 950
+    },
+    {
+      "path": "game.html",
+      "lines": 849,
+      "bytes": 137926
+    },
+    {
+      "path": "package-lock.json",
+      "lines": 39,
+      "bytes": 1068
+    },
+    {
+      "path": "package.json",
+      "lines": 5,
+      "bytes": 56
+    },
+    {
+      "path": "skill_manifest.json",
+      "lines": 25,
+      "bytes": 1571
+    },
+    {
+      "path": "src\\game.js",
+      "lines": 557,
+      "bytes": 44245
+    },
+    {
+      "path": "src\\shell.html",
+      "lines": 28,
+      "bytes": 3506
+    },
+    {
+      "path": "src\\skills.js",
+      "lines": 169,
+      "bytes": 11274
+    },
+    {
+      "path": "subset-font.py",
+      "lines": 16,
+      "bytes": 718
+    },
+    {
+      "path": "tests\\browser.mjs",
+      "lines": 8,
+      "bytes": 522
+    },
+    {
+      "path": "tests\\combat.mjs",
+      "lines": 88,
+      "bytes": 7827
+    },
+    {
+      "path": "tests\\results.json",
+      "lines": 70,
+      "bytes": 1414
+    },
+    {
+      "path": "tests\\skill-results.json",
+      "lines": 72,
+      "bytes": 1582
+    },
+    {
+      "path": "tests\\skills.mjs",
+      "lines": 82,
+      "bytes": 7427
+    },
+    {
+      "path": "tests\\smoke.mjs",
+      "lines": 16,
+      "bytes": 968
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

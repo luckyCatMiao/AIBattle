@@ -1,0 +1,22 @@
+{
+  "status": "awaiting_check",
+  "artifact": "versions/v0001",
+  "validation": {
+    "html_sha256": "859d9f08ce8f6ac13ef05375e3fde1f82a78dcce0812cc41cb139ce9cd2c586d",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "writer": {
+    "invocation_method": "claude-code-cli",
+    "effort": "high",
+    "elapsed_seconds": 10113.1,
+    "stop_reason": "Claude Code completed",
+    "output_tokens": 165940
+  },
+  "source_sha256": "859d9f08ce8f6ac13ef05375e3fde1f82a78dcce0812cc41cb139ce9cd2c586d",
+  "feedback": "用户取消追加四技能，保留已正式交付的基础版本。",
+  "at": "2026-10-19T21:26:02+08:00",
+  "feature_cancelled": true
+}

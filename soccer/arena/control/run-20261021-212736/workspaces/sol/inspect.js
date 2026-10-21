@@ -1,0 +1,4 @@
+'use strict';
+const sim=require('./simulation'),{spawn}=require('child_process'),rl=require('readline');
+function worker(file){let p=spawn('python3',['-u',file]),pending;rl.createInterface({input:p.stdout}).on('line',s=>pending(JSON.parse(s)));return {p,ask:o=>new Promise(r=>{pending=r;p.stdin.write(JSON.stringify(o)+'\n')})}}
+(async()=>{let a=worker('agent_r1.py'),b=worker('agent.py');let g=sim.createMatch({players:[{name:'a',kind:'api'},{name:'b',kind:'api'}],teamSize:1});for(let k=0;k<9;k++){let [x,y]=await Promise.all([a.ask(sim.view(g,0)),b.ask(sim.view(g,1))]);for(let f=0;f<20;f++){for(let t=0;t<2;t++)g.units[t].held=(t?y:x).inputs[f][0];sim.step(g);if(g.frame>=75&&g.frame<=112)console.log(JSON.stringify({f:g.frame,b:g.ball,u:g.units.map(u=>({x:u.x,y:u.y,face:u.facing,inp:u.held})),e:g.events.slice(-1)}))}}a.p.stdin.end();b.p.stdin.end()})()

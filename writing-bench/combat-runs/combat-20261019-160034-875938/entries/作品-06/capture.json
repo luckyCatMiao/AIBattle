@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-19T08:23:58.872Z",
+  "method": "Chrome 实际运行；sample=1 统一屏幕按键发送 key/code，不改原始游戏逻辑",
+  "actions": [
+    "点击开始",
+    "右移 D · 1秒",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "跳跃 + J",
+    "L 机动",
+    "J 连按 · 1秒"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "开始后，尚未输入攻击",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true,\"paused\":false,\"wave\":1,\"playerHP\":100}"
+    },
+    {
+      "file": "sample-2.png",
+      "label": "主攻、副攻、挑空后，已记录1次命中",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":2,\"limbBreakCount\":0,\"playing\":true,\"paused\":false,\"wave\":1,\"playerHP\":100}"
+    },
+    {
+      "file": "sample-3.png",
+      "label": "追加连击、重击、挑空、空中攻击及闪避后",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":2,\"limbBreakCount\":0,\"playing\":true,\"paused\":false,\"wave\":1,\"playerHP\":100}"
+    }
+  ],
+  "note": "合成按键与离散截图仅供辅助；实际连续手感、输入延迟和音频仍需真人体验。 ",
+  "source_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33"
+}

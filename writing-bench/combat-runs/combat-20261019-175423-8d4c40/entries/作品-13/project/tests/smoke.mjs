@@ -1,0 +1,16 @@
+import {browser,gameURL} from './browser.mjs';
+const b=await browser();
+const page=await b.newPage({viewport:{width:1280,height:720}});
+page.on('pageerror',e=>console.log('ERROR',e.stack));
+await page.goto(gameURL);
+await page.screenshot({path:new URL('title.png',import.meta.url).pathname});
+await page.keyboard.press('Enter');
+await page.waitForTimeout(1200);
+console.log(await page.evaluate(()=>window.combatBenchState()));
+await page.screenshot({path:new URL('arena.png',import.meta.url).pathname});
+await page.keyboard.down('d'); await page.keyboard.down('j');await page.waitForTimeout(1100);await page.keyboard.up('d');
+await page.waitForTimeout(1800);await page.keyboard.up('j');
+await page.keyboard.down('k');await page.waitForTimeout(600);await page.keyboard.up('k');await page.waitForTimeout(350);
+console.log(await page.evaluate(()=>window.combatBenchState()));
+await page.screenshot({path:new URL('combat.png',import.meta.url).pathname});
+await b.close();

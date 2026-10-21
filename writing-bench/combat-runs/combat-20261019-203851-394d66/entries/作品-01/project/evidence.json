@@ -1,0 +1,217 @@
+{
+  "at": "2026-10-19T20:38:49.364765+08:00",
+  "source_sha256": "26297fe1850d913e2079cc7f25d4ff1052bed962f7d5f1f1728edb9aa31dad67",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "实际 Chrome 操作与连续真实帧录制",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "O100ms",
+    "收招500ms",
+    "R重开",
+    "等待1800ms",
+    "D400ms",
+    "O100ms",
+    "收招600ms",
+    "R重开",
+    "不攻击等待5秒",
+    "J连按1秒",
+    "K蓄力800ms",
+    "D550ms",
+    "O100ms",
+    "收招500ms",
+    "J连按1秒积攒剑气",
+    "H100ms",
+    "收招650ms",
+    "Y100ms",
+    "收招1000ms",
+    "A550ms接近左侧敌人",
+    "H100ms",
+    "收招500ms",
+    "U100ms",
+    "观察100ms",
+    "等待800ms结束前技",
+    "U60ms",
+    "U70ms，抵挡进入范围的箭矢",
+    "A700ms接近弓手",
+    "Y100ms",
+    "收招1000ms"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-26297fe1850d-o.png",
+      "label": "瞬影一閃实际命中检查",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-o-after-spawn.png",
+      "label": "等待首波生成后测试瞬影技能",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-no-enemies.png",
+      "label": "重开后等待并尝试基础攻击；截图时已经出现敌人，不能将早期0敌人状态认作故障",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-o-wave4.png",
+      "label": "第四波出现敌人后释放瞬影技能",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 4,
+        "hitCount": 2,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-h.png",
+      "label": "连击积攒剑气后释放樱吹雪",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 3,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-y.png",
+      "label": "落月断罪实际战斗触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 3,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-h-resource-ready.png",
+      "label": "剑气足够并靠近敌人后释放樱吹雪",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 7,
+        "limbBreakCount": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-u-stance.png",
+      "label": "镜花弹反架势真实触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 7,
+        "limbBreakCount": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-u-early.png",
+      "label": "空闲状态释放弹反并观察起手",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 7,
+        "limbBreakCount": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-u-success.png",
+      "label": "U弹反后的实际后续帧：由7命中4断肢变8命中5断肢，敌人由2变1；此前屏幕已见弹反文字与双层光圈，随后为看破效果",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 8,
+        "limbBreakCount": 5,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-26297fe1850d-y-close.png",
+      "label": "靠近弓手后复查落月断罪",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 9,
+        "limbBreakCount": 6,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "skill_checks": [
+    {
+      "name": "弹反·镜花",
+      "key": "u",
+      "observed": true,
+      "note": "实际U触发出现弹反文字与双层光圈；后续由7命中4断肢变8命中5断肢，敌人由2变1。",
+      "screenshot": "skill-26297fe1850d-u-success.png"
+    },
+    {
+      "name": "瞬影·一閃",
+      "key": "o",
+      "observed": true,
+      "note": "在有敌人的第四波穿行命中2次、断肢2次；初次在空场释放记录保留。",
+      "screenshot": "skill-26297fe1850d-o-wave4.png"
+    },
+    {
+      "name": "樱吹雪",
+      "key": "h",
+      "observed": true,
+      "note": "剑气不足的初次未释放，积攒后靠近敌人释放，新增3命中1断肢，出现花瓣与挑空。",
+      "screenshot": "skill-26297fe1850d-h-resource-ready.png"
+    },
+    {
+      "name": "落月·断罪",
+      "key": "y",
+      "observed": true,
+      "note": "首发远离敌人未命中；靠近弓手再次释放，新增1命中1断肢并清场，保留两个真实结果。",
+      "screenshot": "skill-26297fe1850d-y-close.png"
+    }
+  ],
+  "note": "实际Chrome前台60FPS。此项目不是四次固定重开测试：敌人按波延迟出现，技能H需积攒剑气，U需来袭攻击配合，均按真实战斗条件补测；保留空招和成功记录。浏览器录像接口中断后采用普通按键与截图，没有本项目连续录像。未实际监听音频，静态证据不等于连续手感或音效实测。累计运行错误0。"
+}

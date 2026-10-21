@@ -1,0 +1,158 @@
+{
+  "at": "2026-10-19T20:33:11.867206+08:00",
+  "source_sha256": "ef1f721d16fd86be6c3e6f19b940467cfa2b76c3a7134897ef92c9f0f30cec8b",
+  "feature_request_id": "user-four-skills-20261019",
+  "method": "实际 Chrome 操作与连续真实帧录制",
+  "actions": [
+    "R重开",
+    "D300ms",
+    "1键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "2键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "3键150ms",
+    "连续真实画面3秒",
+    "R重开",
+    "D300ms",
+    "4键150ms",
+    "连续真实画面3秒"
+  ],
+  "screenshots": [
+    {
+      "file": "skill-ef1f721d16fd-1.png",
+      "label": "Flash 月轮斩实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-ef1f721d16fd-2.png",
+      "label": "Flash 自拟技能2实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-ef1f721d16fd-3.png",
+      "label": "Flash 自拟技能3实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-ef1f721d16fd-4.png",
+      "label": "Flash 断界实际触发",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 1,
+        "limbBreakCount": 5,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "skill-ef1f721d16fd-1-sequence-200.png",
+      "label": "技能1 连续真实画面，距首帧0.205秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-1-sequence-1200.png",
+      "label": "技能1 连续真实画面，距首帧1.214秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-1-sequence-2300.png",
+      "label": "技能1 连续真实画面，距首帧2.307秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-2-sequence-200.png",
+      "label": "技能2 连续真实画面，距首帧0.217秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-2-sequence-1200.png",
+      "label": "技能2 连续真实画面，距首帧1.213秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-2-sequence-2300.png",
+      "label": "技能2 连续真实画面，距首帧2.305秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-3-sequence-200.png",
+      "label": "技能3 连续真实画面，距首帧0.193秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-3-sequence-1200.png",
+      "label": "技能3 连续真实画面，距首帧1.200秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-3-sequence-2300.png",
+      "label": "技能3 连续真实画面，距首帧2.310秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-4-sequence-200.png",
+      "label": "技能4 连续真实画面，距首帧0.200秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-4-sequence-1200.png",
+      "label": "技能4 连续真实画面，距首帧1.191秒"
+    },
+    {
+      "file": "skill-ef1f721d16fd-4-sequence-2300.png",
+      "label": "技能4 连续真实画面，距首帧2.301秒"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "四技能分别从重开状态实测，并非同一套连续连招。前台采样60FPS。前三技能采样累计错误0；浏览器调试连接随后中断，换新页面单测第四技能亦错误0，不能声称是同一页面累计。只读状态轮询与截图存在时差。录像无音轨，PNG序列供裁判，未实际监听音频。",
+  "skill_checks": [
+    {
+      "name": "月轮斩",
+      "key": "1",
+      "note": "环身斩击4次命中、1次断肢",
+      "observed": true,
+      "screenshot": "skill-ef1f721d16fd-1.png"
+    },
+    {
+      "name": "影渡",
+      "key": "2",
+      "note": "瞬身回身斩命中1次、断肢1次",
+      "observed": true,
+      "screenshot": "skill-ef1f721d16fd-2.png"
+    },
+    {
+      "name": "千樱葬",
+      "key": "3",
+      "note": "领域连续斩击命中6次、断肢2次",
+      "observed": true,
+      "screenshot": "skill-ef1f721d16fd-3.png"
+    },
+    {
+      "name": "断界",
+      "key": "4",
+      "note": "前方巨浪命中1次、断肢5次，实际击杀1敌人",
+      "observed": true,
+      "screenshot": "skill-ef1f721d16fd-4.png"
+    }
+  ]
+}

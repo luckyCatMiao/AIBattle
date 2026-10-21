@@ -1,0 +1,30 @@
+{
+  "status": "fixing",
+  "round": 1,
+  "artifact": ".",
+  "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+  "validation": {
+    "html_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "last_error": {
+    "at": "2026-10-19T17:06:09+08:00",
+    "status": "error",
+    "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+    "errors": [],
+    "technical_feedback": [
+      {
+        "kind": "rendering",
+        "observed": "敌人血条出现在场内，但身体缺失；原版绘制代码将身体画在屏幕上缘之外。",
+        "source_evidence": "drawEnemy(e) 使用 ctx.translate(e.x,bob)，随后肢体全部以负数 oy 绘制；遗漏敌人的 e.y 地面坐标。血条却使用 e.y，因此血条与身体脱离。",
+        "request": "请修好敌人身体坐标并检查开场说明与开始按钮重叠，不改变原战斗方案，不伪造命中与断肢。"
+      }
+    ],
+    "note": "主控源码核验出的客观渲染错误，交原模型修复；不计入评分。"
+  },
+  "next_retry_at": 0,
+  "updated_at": "2026-10-19T17:06:11+08:00"
+}

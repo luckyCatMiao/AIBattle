@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-19T11:09:31.240Z",
+  "source_sha256": "0c05ec6595954202b613416d39cea7eb7ac91ac066260812486a7cc1abe30806",
+  "method": "真实Chrome UI兼容接口，实际点击开始和D+J采样按钮",
+  "actions": [
+    "点击作者开始战斗按钮",
+    "展开统一采样面板",
+    "D+J连按1秒",
+    "R重开",
+    "原地J连按12次，每次约70ms、间隔约220ms"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "实际进入战斗，玩家与敌人已渲染，命中计数6",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 6,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "1 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-combo.png",
+      "label": "60FPS连续轻斩，武装与腿部被打落，命中8/断肢4",
+      "state": {
+        "ready": false,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 8,
+        "limbBreakCount": 4,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "note": "正常帧率下通过真实Chrome按键操作采样。静态截图只能辅助判断；未实际监听音频，不把源码推断当亲手体验。"
+}

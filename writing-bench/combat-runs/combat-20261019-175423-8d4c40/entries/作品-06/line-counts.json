@@ -1,0 +1,106 @@
+{
+  "total_lines": 13611,
+  "files": [
+    {
+      "path": "build\\fonts.css",
+      "lines": 2,
+      "bytes": 716853
+    },
+    {
+      "path": "build.js",
+      "lines": 36,
+      "bytes": 1369
+    },
+    {
+      "path": "fonts-subset.py",
+      "lines": 83,
+      "bytes": 3099
+    },
+    {
+      "path": "game.html",
+      "lines": 6566,
+      "bytes": 970646
+    },
+    {
+      "path": "skill_manifest.json",
+      "lines": 25,
+      "bytes": 1535
+    },
+    {
+      "path": "src\\js\\00-core.js",
+      "lines": 379,
+      "bytes": 14723
+    },
+    {
+      "path": "src\\js\\10-world.js",
+      "lines": 529,
+      "bytes": 20478
+    },
+    {
+      "path": "src\\js\\20-fx.js",
+      "lines": 440,
+      "bytes": 16902
+    },
+    {
+      "path": "src\\js\\30-player.js",
+      "lines": 992,
+      "bytes": 39401
+    },
+    {
+      "path": "src\\js\\31-player-draw.js",
+      "lines": 437,
+      "bytes": 16434
+    },
+    {
+      "path": "src\\js\\35-skills.js",
+      "lines": 648,
+      "bytes": 23087
+    },
+    {
+      "path": "src\\js\\40-enemy.js",
+      "lines": 757,
+      "bytes": 29185
+    },
+    {
+      "path": "src\\js\\41-enemy-draw.js",
+      "lines": 733,
+      "bytes": 32802
+    },
+    {
+      "path": "src\\js\\50-game.js",
+      "lines": 1096,
+      "bytes": 38462
+    },
+    {
+      "path": "src\\js\\90-boot.js",
+      "lines": 29,
+      "bytes": 1092
+    },
+    {
+      "path": "src\\template.html",
+      "lines": 495,
+      "bytes": 20613
+    },
+    {
+      "path": "tools\\package.json",
+      "lines": 12,
+      "bytes": 219
+    },
+    {
+      "path": "tools\\selftest.js",
+      "lines": 225,
+      "bytes": 11023
+    },
+    {
+      "path": "tools\\shot.js",
+      "lines": 23,
+      "bytes": 1179
+    },
+    {
+      "path": "tools\\skilltest.js",
+      "lines": 104,
+      "bytes": 4514
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

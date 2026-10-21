@@ -1,0 +1,5 @@
+{
+  "at": "2026-10-19T17:29:12+08:00",
+  "error": "Anthropic upstream timed out before the first effective output",
+  "partial_text": "ck':'air');\n  if(P.state==='run' && Math.abs(P.vx) > 200 && (P.stateT % 0.28) < dt){\n    particles.push({kind:'puff', x:P.x - P.face*10, y:GROUND_Y, vx:-P.face*R(30,90), vy:R(-40,-10), life:0.22, max:0.22, size:R(3,7), col:'#6f6694', grav:120});\n  }\n}"
+}

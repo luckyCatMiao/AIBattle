@@ -11,7 +11,9 @@
     "fight": "node fighting/server.js",
     "bomber": "node bomber/server.js",
     "defusal": "node defusal/server.js",
-    "defusal-watch": "node defusal/arena/watch.js"
+    "defusal-watch": "node defusal/arena/watch.js",
+    "soccer": "node soccer/server.js",
+    "soccer-watch": "node soccer/arena/watch.js"
   },
   "engines": {
     "node": ">=20"

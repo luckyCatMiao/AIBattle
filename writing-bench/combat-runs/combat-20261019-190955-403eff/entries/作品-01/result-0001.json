@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 162739,
+    "stop_reason": "end_turn",
+    "session_id": "1ad44f97-69e3-4b50-b5fe-12ed1ad3de44",
+    "total_cost_usd": 0.4555688,
+    "usage": {
+      "input_tokens": 32,
+      "cache_creation_input_tokens": 39820,
+      "cache_read_input_tokens": 339204,
+      "output_tokens": 9425,
+      "output_tokens_details": {
+        "thinking_tokens": 5439
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 39820
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 32,
+        "outputTokens": 9425,
+        "cacheReadInputTokens": 339204,
+        "cacheCreationInputTokens": 39820,
+        "webSearchRequests": 0,
+        "costUSD": 0.4555688,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 5439,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 16,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`，JSON 校验通过，合计 73（impact 26 / flow 21 / rhythm 14 / destruction 12）。\n\n判断依据与证据边界：\n- **破坏最扎实**：断肢走真实 `breakLimb` 路径——切标志、生成带关节的碎片抛体、105ms 顿帧加音效；截图里断腿枪兵改为爬行、速度降到 0.31 倍，断臂则限制距离与伤害，不只是特效。\n- **打击反馈分层清楚但只能读代码**：九种招式顿帧 48～125ms 分档、震屏 2.2～6、闪白火花刀光按威力切换；截图无法证明恢复是否顺滑、震屏是否过密，也未实际听音。\n- **连段与节奏**：固定三段地面加两段空中，按键缓冲与冲刺取消做得认真；但两张截图里玩家血量始终 120/120，受伤、闪避、跳跃、死亡重开、波次切换全部缺失，防御侧风险回报无法验证，因此节奏分压得低，并如实标注为推断。\n\n我没有把未观察到的效果当作不存在来扣分，覆盖不足的部分写进了 `limitations`。",
+    "ttft_ms": 4017,
+    "type": "result",
+    "duration_ms": 162983,
+    "uuid": "11aadecd-83b5-42d6-bb3c-0823f793b987",
+    "ttft_stream_ms": 4016,
+    "time_to_request_ms": 42,
+    "first_content_frame_ms": 4016,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 175.8
+}

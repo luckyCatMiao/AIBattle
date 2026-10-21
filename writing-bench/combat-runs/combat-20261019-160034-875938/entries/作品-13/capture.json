@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-19T09:24:16.644Z",
+  "source_sha256": "9edb0ce259d777509bec4cc9646a756092f6a54cf5131ddf102d76b3f7903f85",
+  "method": "Chrome 页面统一按键，未修改战斗逻辑",
+  "actions": [],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "玩家与敌人正常绘制，开场进入第一波",
+      "environment": "采样环境 / 1 FPS · visible · 焦点 true",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true,\"wave\":1,\"killCount\":0,\"playerHp\":100,\"combo\":0,\"muted\":false}"
+    }
+  ],
+  "note": "只评最终战斗理解；低帧率取样不用于最终评分。",
+  "runtime_errors": []
+}

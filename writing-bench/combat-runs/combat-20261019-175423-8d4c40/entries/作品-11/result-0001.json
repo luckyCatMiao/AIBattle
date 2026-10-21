@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 5061422,
+    "stop_reason": "end_turn",
+    "session_id": "812b0747-6fe4-409b-9f50-053dbdead634",
+    "total_cost_usd": 5.520061199999999,
+    "usage": {
+      "input_tokens": 479215,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 22827712,
+      "output_tokens": 227886,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "glm-5.3-flash": {
+        "inputTokens": 479215,
+        "outputTokens": 227886,
+        "cacheReadInputTokens": 22827712,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 5.520061199999999,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-sonnet-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 131,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "全部完成并验证通过。\n\n## 交付总结\n\n**交付物**：`/workspace/game.html`（108 KB 单文件，离线可玩，无任何外部资源），另有 `src/` 多文件源码、`build.js` 构建脚本、`test/` 自测工具与 `README.md`。\n\n### 玩法：《傀儡斩 · MARIONETTE SLASH》\n剧场舞台上，持刀剑士对战提线木偶。`Enter` 开演，`A/D` 移动、`Space` 跳跃、`J` 三连斩（横斩→逆袈裟→旋断）、`K` 蓄力重斩（满蓄必断肢体）、`L` 无敌瞬步（可取消收招、接疾走斩）、`I` 挑空斩（命中后直接衔接空中连段→下劈）、`R` 一键重开、`M`/按钮静音。\n\n- **打击感**：命中顿帧按攻击重量分级（50–150ms），配合一次性震屏、镜头缩放冲击、刀光轨迹、火花/木屑/冲击环、敌人受击白闪与击退/浮空/倒地；击杀有短暂慢动作。\n- **肢体破坏**：傀儡分头/双臂/双腿五段，轻击累积、重斩必断、旋断概率断。断持械臂→武器落地改用冲撞/逃窜，断腿→匍匐爬行，断头→恐慌自毁或（铁锤）狂暴；残骸带物理弹跳，断肢真实影响后续行为。\n- **敌人**：吊兵（挥砍/跳劈/断臂冲撞）、铁锤（砸地+沿地冲击波可跳避，轻击不削韧）、针偶（远程投针可被斩落、贴身踢击、后跳拉距）；所有攻击有蓄力红光+头顶警示+木鱼声前兆。\n- **节奏**：无限波次、幕间回血、连击评级（D→SSS）、开场约 2 秒即可开打。\n\n### 自测结果\n- **无头逻辑测试**（stub DOM/Canvas）：启动/开始、移动跳跃、敌人刷新、连招命中、断肢计数、死亡与 R 重开、敌人主动进攻、静音、失焦清键、50s 随机输入模糊测试、Canvas 参数零 NaN、性能（0.06ms/帧）——**连续 13 轮全部通过**。\n- **机制探针**：几何（骨架/刀尖弧线/镜像）✓、行为（断肢影响行为/瞬步无敌/浮空追击/韧性/冲击波可跳避）✓、针偶全链路 ✓。\n- 测试还揪出并修复了 4 个真 bug：敌人 HP 归零不倒下的“僵尸”卡死波次、挑空判定窗口与弧线错位、站立时重力累积把围巾甩上天、**针偶被逼墙角时的死锁**（补了踢击与靠墙跳方向）。另用纯 Node 软件光栅化器渲染实际画面逐帧人工检查，修正了镜头缩放、场景亮度与角色比例。",
+    "ttft_ms": 6367,
+    "type": "result",
+    "duration_ms": 5218063,
+    "uuid": "315e89c0-0200-4f9e-b057-a4a6b2f361b6",
+    "ttft_stream_ms": 6003,
+    "time_to_request_ms": 133,
+    "first_content_frame_ms": 6003,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 5625.7
+}

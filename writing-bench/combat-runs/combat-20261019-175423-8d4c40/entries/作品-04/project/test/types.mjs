@@ -1,0 +1,28 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message, (e.stack||'').split('\n')[1]));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter');
+await page.waitForTimeout(800);
+await page.evaluate(() => { Game.wave = 5; Game.spawnQueue.length = 0; Game.enemies.forEach(e => { e.dead = true; }); Game.enemies.length = 0;
+  Game.spawnEnemy('thrower'); Game.spawnEnemy('brute');
+  Game.enemies.forEach(e => { e.x = Game.player.x + (e.type==='brute'? 150: 300); e.facing = -1; });
+});
+await page.waitForTimeout(2500);
+await page.screenshot({ path: '/workspace/test/t_types.png' });
+console.log(JSON.stringify(await page.evaluate(() => ({ e: Game.enemies.map(e => ({ t: e.type, st: e.state, hp: Math.round(e.hp) })), orbs: Game.orbs.length, php: Math.round(Game.player.hp) }))));
+await page.waitForTimeout(2500);
+console.log('later', JSON.stringify(await page.evaluate(() => ({ e: Game.enemies.map(e => ({ t: e.type, st: e.state, hp: Math.round(e.hp) })), orbs: Game.orbs.length, php: Math.round(Game.player.hp), atk: Game.player.state }))));
+await page.screenshot({ path: '/workspace/test/t_types2.png' });
+// kill player via forced damage, test death screen & restart
+await page.evaluate(() => { Game.player.invuln = 0; Game.player.takeDamage(200, 1); });
+await page.waitForTimeout(900);
+await page.screenshot({ path: '/workspace/test/t_death.png' });
+console.log('death', JSON.stringify(await page.evaluate(() => window.combatBenchState())));
+await page.keyboard.press('KeyR');
+await page.waitForTimeout(700);
+console.log('restart', JSON.stringify(await page.evaluate(() => ({ s: window.combatBenchState(), wave: Game.wave, php: Game.player.hp }))));
+await page.screenshot({ path: '/workspace/test/t_restart.png' });
+await browser.close();

@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-19T21:32:55+08:00",
+  "source_sha256": "ce0ac269fe682f9e9fddff03b557d75f5152ecb4f10ac853ea1ac33162464b4d",
+  "method": "真实Chrome基础首版操作",
+  "actions": [
+    "Enter开始",
+    "D900ms/J250ms/J250ms/K700ms"
+  ],
+  "screenshots": [
+    {
+      "file": "baseline-ce0ac269fe68-combat.png",
+      "label": "当前冻结首版基础战斗与断肢后的实际画面",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 2,
+        "playing": true
+      },
+      "environment": "交战与后续采样约29~60FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "用户取消四技能和评分后冻结现有首版，仅检查基础运行，不代表模型主动结束或完整质量验收。已观察命中与断肢、错误0；未试听音频。状态与截图可能因200ms轮询短暂不同步。"
+}

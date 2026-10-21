@@ -1,0 +1,12 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const root = new URL('../', import.meta.url);
+const read = path => readFile(new URL(path, root), 'utf8');
+const html = await read('src/index.html');
+const css = await read('src/style.css');
+const js = (await Promise.all(['audio','game','skills','skill-render','render'].map(name => read('src/' + name + '.js')))).join('\n');
+const font = (await readFile(new URL('assets/FoundryCJK.woff2', root))).toString('base64');
+const fontCSS = `@font-face{font-family:FoundryCJK;src:url(data:font/woff2;base64,${font}) format('woff2');font-weight:100 900;font-display:swap}html,body,button{font-family:"Segoe UI",FoundryCJK,sans-serif}h1,.seal,.tagline,.title-caption strong,.modal h2{font-family:FoundryCJK,serif}`;
+const fontLicense = await read('assets/FONT-LICENSE.txt');
+const output = html.replace('<head>', '<head>\n<!-- Embedded font: Noto Sans CJK SC subset. © 2014-2021 Adobe.\n' + fontLicense + '\n-->').replace('/* INLINE_CSS */', () => css + '\n' + fontCSS).replace('/* INLINE_JS */', () => "'use strict';\n(() => {\n" + js + '\n})();');
+await writeFile(new URL('game.html', root), output);
+console.log('Built standalone game.html (' + Buffer.byteLength(output).toLocaleString() + ' bytes)');

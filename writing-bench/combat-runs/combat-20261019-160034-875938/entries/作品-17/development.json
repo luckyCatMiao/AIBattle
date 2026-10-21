@@ -1,0 +1,52 @@
+{
+  "status": "awaiting_check",
+  "round": 6,
+  "artifact": "versions/v0006",
+  "source_sha256": "2cd0792e94fc02a68672c5732e1a6ca542f3f876d5ec33e57d87b3681ce078ae",
+  "validation": {
+    "html_sha256": "2cd0792e94fc02a68672c5732e1a6ca542f3f876d5ec33e57d87b3681ce078ae",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "last_error": null,
+  "next_retry_at": 1792402282.9505718,
+  "updated_at": "2026-10-19T17:43:23+08:00",
+  "service_failures": 5,
+  "user_requested_retry_at": "2026-10-19T17:12:18+08:00",
+  "candidate": null,
+  "writer": {
+    "requested_model": "glm-5.3",
+    "started_at": "2026-10-19T17:17:44+08:00",
+    "max_tokens": 1000000,
+    "deadline_seconds": null,
+    "total_output_limit": null,
+    "segments": [
+      {
+        "index": 1,
+        "max_tokens": 131072,
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 85018,
+        "response_model": "glm-5.3",
+        "response_id": "msg_202610191717484fae8fbf58a243fa",
+        "sha256": "2cd0792e94fc02a68672c5732e1a6ca542f3f876d5ec33e57d87b3681ce078ae"
+      }
+    ],
+    "token_negotiations": [],
+    "provider_tested_token_cap": 131072,
+    "status": "ok",
+    "effective_max_tokens": 131072,
+    "elapsed_seconds": 1538.21,
+    "response_model": "glm-5.3",
+    "response_id": "msg_202610191717484fae8fbf58a243fa",
+    "stop_reason": "end_turn",
+    "input_tokens": 0,
+    "output_tokens": 85018,
+    "message_stop": true,
+    "thinking_char_count": 132515
+  },
+  "archived_complete_at": "2026-10-19T17:45:20+08:00",
+  "archive_note": "旧请求在协议替换时已完整返回，已保存为历史作品，不作为新轮结果。"
+}

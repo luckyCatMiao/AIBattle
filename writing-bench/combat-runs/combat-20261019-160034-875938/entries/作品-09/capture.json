@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-19T08:39:36.699Z",
+  "method": "Chrome 实际运行；统一屏幕采样控件发送 key/code。原始作品未改动。",
+  "actions": [
+    "开始",
+    "右移 D · 1秒",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "I 特色能力",
+    "L 机动",
+    "J 连按 · 1秒",
+    "K 副攻 · 0.8秒",
+    "跳跃 + J",
+    "I 特色能力"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "进入场景后的初始状态",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":0,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    },
+    {
+      "file": "sample-2.png",
+      "label": "接敌、主攻、副攻与特色能力采样后，命中情况见状态显示",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    },
+    {
+      "file": "sample-3.png",
+      "label": "机动、追加连段、重击与空中动作采样后",
+      "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+    }
+  ],
+  "note": "短时合成输入和离散截图不能代替真人连续试玩或听音；未捕到的效果需交叉核对源码，不能直接判定不存在。 ",
+  "source_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b"
+}

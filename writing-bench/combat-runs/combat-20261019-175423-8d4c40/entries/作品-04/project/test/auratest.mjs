@@ -1,0 +1,14 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter'); await page.waitForTimeout(500);
+await page.evaluate(() => { Game.spawnQueue.length=0; Game.enemies.forEach(e=>e.dead=true); Game.enemies.length=0; Game.spawnEnemy('warden'); const e=Game.enemies[0]; e.x=Game.player.x+95; e.facing=-1; e.atkCd=99; window.__n=0; const o=FX.afterimage.bind(FX); FX.afterimage = (...a)=>{window.__n++; return o(...a);} });
+await page.waitForTimeout(400);
+await page.keyboard.down('KeyK'); await page.waitForTimeout(760); await page.keyboard.up('KeyK');
+await page.waitForTimeout(80);
+await page.screenshot({ path: '/workspace/test/aura1.png' });
+console.log('afterimages', await page.evaluate(()=>window.__n), await page.evaluate(()=>FX.after.filter(a=>a.life>0).length));
+await browser.close();

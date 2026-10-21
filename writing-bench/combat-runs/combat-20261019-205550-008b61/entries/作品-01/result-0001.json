@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 1113170,
+    "stop_reason": "end_turn",
+    "session_id": "4b031486-cc54-424b-bc24-c8c20befca68",
+    "total_cost_usd": 2.4496830000000003,
+    "usage": {
+      "input_tokens": 94,
+      "cache_creation_input_tokens": 113715,
+      "cache_read_input_tokens": 2796960,
+      "output_tokens": 66067,
+      "output_tokens_details": {
+        "thinking_tokens": 57196
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 113715
+      },
+      "inference_geo": "global",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-5-5": {
+        "inputTokens": 94,
+        "outputTokens": 66067,
+        "cacheReadInputTokens": 2796960,
+        "cacheCreationInputTokens": 113715,
+        "webSearchRequests": 0,
+        "costUSD": 2.4496830000000003,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 57196,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 63,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已写入 `/workspace/grade.json`（合法 JSON，总分 79）。\n\n评分与依据：\n\n- **impact 28/35** — 顿帧分级确实存在（轻击 0.045、三段收尾 0.075、重击 0.1、影渡 0.13、断界 0.16），震屏按 1.4～9.0 指数衰减，闪光只给 0.025～0.065，没有用持续白闪掩盖。扣分点是多段技能前几段只有 0.02～0.035，比普通轻击还轻，冲击集中在最后一段。\n- **flow 24/30** — 技能可取消攻击/蓄力/弹反、2 号位自动索敌瞬身、结束时留 0.24 秒连段窗口，路线自洽。但四技能自带 0.66～1.6 秒无敌且能排队连放，冷却最短 4.5 秒，容错过高。\n- **rhythm 15/20** — 三种敌人行为、前摇 0.38～0.72 秒、攻击令牌限制同时仅两人出手，节奏设计是有的；但技能的低风险循环削弱了攻防张力。且全程玩家满血，无受击证据。\n- **destruction 12/15** — 断肢有真实后果（断腿速度 0.52/0.16、断臂取消重劈与射击、断首击杀），飞散件带武器、有独立顿帧与 0.72 秒硬直，是这套系统里最扎实的部分。断界用 `aoeParts` 一键打碎全身，反而把破坏从\"连段争取\"降成单键清场，飞散团块也遮住了敌人轮廓。\n\n证据局限已在 `limitations` 中注明：仅有四段各约 3 秒的技能触发片段，未观察到受击、闪避、弹反、普通连斩与死亡重开；音效无音轨可核对，顿帧与震屏的实际手感只能由源码参数推断。\n\n判定为**不需要技术返修、也不需要补录**——四技能的命中与断肢都在实际执行路径上跑通，虽覆盖窄但足以评分。",
+    "ttft_ms": 2996,
+    "type": "result",
+    "duration_ms": 1113948,
+    "uuid": "cbc6e786-9dc0-4c9a-a93a-f65e4ff69931",
+    "ttft_stream_ms": 2616,
+    "time_to_request_ms": 49,
+    "first_content_frame_ms": 2616,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1207.5
+}

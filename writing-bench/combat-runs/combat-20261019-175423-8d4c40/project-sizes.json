@@ -1,0 +1,1446 @@
+{
+  "at": "2026-10-19T21:38:00+08:00",
+  "completed": 12,
+  "total": 17,
+  "rows": [
+    {
+      "model": "claude-fable-5-1",
+      "entry": "作品-01",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-01\\project",
+      "source_sha256": "45f55f8a7997382b9e0fcafb8fd51e362e7a0147bb6ef83eb884612a897a7366",
+      "administrative_result": null,
+      "game_lines": 4224,
+      "game_bytes": 155116,
+      "other_source_and_test_lines": 6034,
+      "code_files": [
+        {
+          "path": "build.js",
+          "lines": 75,
+          "bytes": 2842
+        },
+        {
+          "path": "game.html",
+          "lines": 4224,
+          "bytes": 155117
+        },
+        {
+          "path": "src\\audio.js",
+          "lines": 236,
+          "bytes": 7667
+        },
+        {
+          "path": "src\\enemy.js",
+          "lines": 937,
+          "bytes": 36442
+        },
+        {
+          "path": "src\\fx.js",
+          "lines": 228,
+          "bytes": 9023
+        },
+        {
+          "path": "src\\hud.js",
+          "lines": 220,
+          "bytes": 8006
+        },
+        {
+          "path": "src\\main.js",
+          "lines": 192,
+          "bytes": 6012
+        },
+        {
+          "path": "src\\player.js",
+          "lines": 779,
+          "bytes": 31308
+        },
+        {
+          "path": "src\\render.js",
+          "lines": 414,
+          "bytes": 15505
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 186,
+          "bytes": 4600
+        },
+        {
+          "path": "src\\util.js",
+          "lines": 236,
+          "bytes": 8920
+        },
+        {
+          "path": "src\\world.js",
+          "lines": 718,
+          "bytes": 25348
+        },
+        {
+          "path": "test\\aircombo.js",
+          "lines": 25,
+          "bytes": 1045
+        },
+        {
+          "path": "test\\audio_mock.js",
+          "lines": 45,
+          "bytes": 2063
+        },
+        {
+          "path": "test\\browser_abort.js",
+          "lines": 17,
+          "bytes": 808
+        },
+        {
+          "path": "test\\buffer.js",
+          "lines": 23,
+          "bytes": 993
+        },
+        {
+          "path": "test\\coldstart.js",
+          "lines": 29,
+          "bytes": 1504
+        },
+        {
+          "path": "test\\contract.js",
+          "lines": 30,
+          "bytes": 1529
+        },
+        {
+          "path": "test\\deathflow.js",
+          "lines": 20,
+          "bytes": 1092
+        },
+        {
+          "path": "test\\dom_e2e.js",
+          "lines": 93,
+          "bytes": 4606
+        },
+        {
+          "path": "test\\dom_skills.js",
+          "lines": 62,
+          "bytes": 3177
+        },
+        {
+          "path": "test\\harness.js",
+          "lines": 187,
+          "bytes": 7173
+        },
+        {
+          "path": "test\\harness_lib.js",
+          "lines": 95,
+          "bytes": 3549
+        },
+        {
+          "path": "test\\helpless_kill.js",
+          "lines": 24,
+          "bytes": 1155
+        },
+        {
+          "path": "test\\highwave.js",
+          "lines": 30,
+          "bytes": 1568
+        },
+        {
+          "path": "test\\highwave_diag.js",
+          "lines": 20,
+          "bytes": 1009
+        },
+        {
+          "path": "test\\html_load.js",
+          "lines": 19,
+          "bytes": 1238
+        },
+        {
+          "path": "test\\invariants.js",
+          "lines": 29,
+          "bytes": 1595
+        },
+        {
+          "path": "test\\legspeed_diag.js",
+          "lines": 22,
+          "bytes": 1005
+        },
+        {
+          "path": "test\\legspeed_trace2.js",
+          "lines": 19,
+          "bytes": 797
+        },
+        {
+          "path": "test\\legtrace.js",
+          "lines": 29,
+          "bytes": 1300
+        },
+        {
+          "path": "test\\limb_effect.js",
+          "lines": 51,
+          "bytes": 2627
+        },
+        {
+          "path": "test\\orbfire.js",
+          "lines": 17,
+          "bytes": 743
+        },
+        {
+          "path": "test\\probe.js",
+          "lines": 17,
+          "bytes": 806
+        },
+        {
+          "path": "test\\probe2.js",
+          "lines": 34,
+          "bytes": 1369
+        },
+        {
+          "path": "test\\probe3.js",
+          "lines": 21,
+          "bytes": 980
+        },
+        {
+          "path": "test\\puppet_ground.js",
+          "lines": 22,
+          "bytes": 1001
+        },
+        {
+          "path": "test\\puppet_reach.js",
+          "lines": 23,
+          "bytes": 1192
+        },
+        {
+          "path": "test\\skill_probe.js",
+          "lines": 27,
+          "bytes": 1256
+        },
+        {
+          "path": "test\\skill_soak.js",
+          "lines": 33,
+          "bytes": 1861
+        },
+        {
+          "path": "test\\skills.js",
+          "lines": 91,
+          "bytes": 4187
+        },
+        {
+          "path": "test\\soak.js",
+          "lines": 29,
+          "bytes": 1499
+        },
+        {
+          "path": "test\\stall_diag.js",
+          "lines": 30,
+          "bytes": 1590
+        },
+        {
+          "path": "tools\\arc_trace.js",
+          "lines": 33,
+          "bytes": 2232
+        },
+        {
+          "path": "tools\\artifact_diff.js",
+          "lines": 39,
+          "bytes": 2763
+        },
+        {
+          "path": "tools\\combo_diag.js",
+          "lines": 24,
+          "bytes": 2612
+        },
+        {
+          "path": "tools\\combo_probe.js",
+          "lines": 30,
+          "bytes": 2183
+        },
+        {
+          "path": "tools\\fx_probe.js",
+          "lines": 29,
+          "bytes": 2397
+        },
+        {
+          "path": "tools\\hud_skills_shot.js",
+          "lines": 24,
+          "bytes": 1932
+        },
+        {
+          "path": "tools\\impact_check.js",
+          "lines": 58,
+          "bytes": 3407
+        },
+        {
+          "path": "tools\\perf.js",
+          "lines": 25,
+          "bytes": 1920
+        },
+        {
+          "path": "tools\\piece_showcase.js",
+          "lines": 24,
+          "bytes": 2047
+        },
+        {
+          "path": "tools\\render_check.js",
+          "lines": 93,
+          "bytes": 3560
+        },
+        {
+          "path": "tools\\sever_clear.js",
+          "lines": 31,
+          "bytes": 2338
+        },
+        {
+          "path": "tools\\sever_clear2.js",
+          "lines": 30,
+          "bytes": 2107
+        },
+        {
+          "path": "tools\\sever_final.js",
+          "lines": 26,
+          "bytes": 2225
+        },
+        {
+          "path": "tools\\sever_rest.js",
+          "lines": 29,
+          "bytes": 2327
+        },
+        {
+          "path": "tools\\sever_visual.js",
+          "lines": 26,
+          "bytes": 2048
+        },
+        {
+          "path": "tools\\sever_visual2.js",
+          "lines": 34,
+          "bytes": 2281
+        },
+        {
+          "path": "tools\\skill_shots.js",
+          "lines": 28,
+          "bytes": 2716
+        },
+        {
+          "path": "tools\\ultrawide.js",
+          "lines": 17,
+          "bytes": 1641
+        }
+      ]
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "entry": "作品-02",
+      "completed": false,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-02\\project",
+      "source_sha256": null,
+      "administrative_result": {
+        "total": 0,
+        "origin": "user_instruction",
+        "at": "2026-10-19T21:05:38+08:00",
+        "source_sha256": null,
+        "reason": "用户追加指定停止此模型，沿用本轮停止项按0分处理的规则。"
+      }
+    },
+    {
+      "model": "claude-opus-4-6",
+      "entry": "作品-03",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-03\\project",
+      "source_sha256": "859d9f08ce8f6ac13ef05375e3fde1f82a78dcce0812cc41cb139ce9cd2c586d",
+      "administrative_result": null,
+      "game_lines": 6496,
+      "game_bytes": 349938,
+      "other_source_and_test_lines": 6713,
+      "code_files": [
+        {
+          "path": "game.html",
+          "lines": 6496,
+          "bytes": 349939
+        },
+        {
+          "path": "src\\enemies.js",
+          "lines": 2229,
+          "bytes": 78909
+        },
+        {
+          "path": "src\\engine.js",
+          "lines": 622,
+          "bytes": 22963
+        },
+        {
+          "path": "src\\game.js",
+          "lines": 1693,
+          "bytes": 62471
+        },
+        {
+          "path": "src\\index.html",
+          "lines": 25,
+          "bytes": 692
+        },
+        {
+          "path": "src\\player.js",
+          "lines": 1022,
+          "bytes": 39969
+        },
+        {
+          "path": "src\\pose.js",
+          "lines": 246,
+          "bytes": 8272
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 142,
+          "bytes": 3179
+        },
+        {
+          "path": "src\\world.js",
+          "lines": 502,
+          "bytes": 16694
+        },
+        {
+          "path": "tools\\build.py",
+          "lines": 57,
+          "bytes": 1552
+        },
+        {
+          "path": "tools\\make_font.py",
+          "lines": 50,
+          "bytes": 1373
+        },
+        {
+          "path": "tools\\probe.js",
+          "lines": 33,
+          "bytes": 1863
+        },
+        {
+          "path": "tools\\smoke.js",
+          "lines": 92,
+          "bytes": 3453
+        }
+      ]
+    },
+    {
+      "model": "claude-opus-4-8",
+      "entry": "作品-04",
+      "completed": false,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-04\\project",
+      "source_sha256": "9ab2106a6dfcfa4aa52e2e5aff9b1e612020bbb2c435ee3a0809ace0d1aa81db",
+      "administrative_result": {
+        "total": 0,
+        "origin": "user_instruction",
+        "at": "2026-10-19T21:05:38+08:00",
+        "source_sha256": "9ab2106a6dfcfa4aa52e2e5aff9b1e612020bbb2c435ee3a0809ace0d1aa81db",
+        "reason": "用户追加指定停止此模型，沿用本轮停止项按0分处理的规则。"
+      }
+    },
+    {
+      "model": "claude-opus-5-5",
+      "entry": "作品-05",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-05\\project",
+      "source_sha256": "169e2d2e3152d538f6663c19816ebafe883e06c2ea7868d5a672ee60aaefa221",
+      "administrative_result": null,
+      "game_lines": 4111,
+      "game_bytes": 256376,
+      "other_source_and_test_lines": 4469,
+      "code_files": [
+        {
+          "path": "build\\build.js",
+          "lines": 21,
+          "bytes": 1124
+        },
+        {
+          "path": "build\\fonts.py",
+          "lines": 20,
+          "bytes": 977
+        },
+        {
+          "path": "game.html",
+          "lines": 4111,
+          "bytes": 256377
+        },
+        {
+          "path": "src\\index.html",
+          "lines": 96,
+          "bytes": 3316
+        },
+        {
+          "path": "src\\js\\audio.js",
+          "lines": 249,
+          "bytes": 9130
+        },
+        {
+          "path": "src\\js\\core.js",
+          "lines": 109,
+          "bytes": 3267
+        },
+        {
+          "path": "src\\js\\effects.js",
+          "lines": 399,
+          "bytes": 14413
+        },
+        {
+          "path": "src\\js\\enemies.js",
+          "lines": 933,
+          "bytes": 37718
+        },
+        {
+          "path": "src\\js\\game.js",
+          "lines": 496,
+          "bytes": 15973
+        },
+        {
+          "path": "src\\js\\player.js",
+          "lines": 1280,
+          "bytes": 51310
+        },
+        {
+          "path": "src\\js\\world.js",
+          "lines": 331,
+          "bytes": 12351
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 198,
+          "bytes": 9860
+        },
+        {
+          "path": "tests\\dbg.js",
+          "lines": 15,
+          "bytes": 554
+        },
+        {
+          "path": "tests\\fonttest.js",
+          "lines": 23,
+          "bytes": 1091
+        },
+        {
+          "path": "tests\\fonttest2.js",
+          "lines": 9,
+          "bytes": 364
+        },
+        {
+          "path": "tests\\play.js",
+          "lines": 28,
+          "bytes": 1077
+        },
+        {
+          "path": "tests\\poses.js",
+          "lines": 36,
+          "bytes": 1688
+        },
+        {
+          "path": "tests\\setup.sh",
+          "lines": 17,
+          "bytes": 737
+        },
+        {
+          "path": "tests\\smoke.js",
+          "lines": 45,
+          "bytes": 1685
+        },
+        {
+          "path": "tests\\tools\\crop.js",
+          "lines": 35,
+          "bytes": 1791
+        },
+        {
+          "path": "tests\\tools\\cropall.sh",
+          "lines": 14,
+          "bytes": 449
+        },
+        {
+          "path": "tests\\tools\\frames.js",
+          "lines": 28,
+          "bytes": 1622
+        },
+        {
+          "path": "tests\\tools\\live.js",
+          "lines": 42,
+          "bytes": 2095
+        },
+        {
+          "path": "tests\\tools\\shot.js",
+          "lines": 35,
+          "bytes": 1741
+        },
+        {
+          "path": "tests\\tools\\view.js",
+          "lines": 1,
+          "bytes": 47
+        },
+        {
+          "path": "tests\\tools\\view.sh",
+          "lines": 9,
+          "bytes": 387
+        }
+      ]
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "entry": "作品-06",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-06\\project",
+      "source_sha256": "ce0ac269fe682f9e9fddff03b557d75f5152ecb4f10ac853ea1ac33162464b4d",
+      "administrative_result": null,
+      "game_lines": 6566,
+      "game_bytes": 970645,
+      "other_source_and_test_lines": 7008,
+      "code_files": [
+        {
+          "path": "build\\fonts.css",
+          "lines": 2,
+          "bytes": 716853
+        },
+        {
+          "path": "build.js",
+          "lines": 36,
+          "bytes": 1369
+        },
+        {
+          "path": "fonts-subset.py",
+          "lines": 83,
+          "bytes": 3099
+        },
+        {
+          "path": "game.html",
+          "lines": 6566,
+          "bytes": 970646
+        },
+        {
+          "path": "src\\js\\00-core.js",
+          "lines": 379,
+          "bytes": 14723
+        },
+        {
+          "path": "src\\js\\10-world.js",
+          "lines": 529,
+          "bytes": 20478
+        },
+        {
+          "path": "src\\js\\20-fx.js",
+          "lines": 440,
+          "bytes": 16902
+        },
+        {
+          "path": "src\\js\\30-player.js",
+          "lines": 992,
+          "bytes": 39401
+        },
+        {
+          "path": "src\\js\\31-player-draw.js",
+          "lines": 437,
+          "bytes": 16434
+        },
+        {
+          "path": "src\\js\\35-skills.js",
+          "lines": 648,
+          "bytes": 23087
+        },
+        {
+          "path": "src\\js\\40-enemy.js",
+          "lines": 757,
+          "bytes": 29185
+        },
+        {
+          "path": "src\\js\\41-enemy-draw.js",
+          "lines": 733,
+          "bytes": 32802
+        },
+        {
+          "path": "src\\js\\50-game.js",
+          "lines": 1096,
+          "bytes": 38462
+        },
+        {
+          "path": "src\\js\\90-boot.js",
+          "lines": 29,
+          "bytes": 1092
+        },
+        {
+          "path": "src\\template.html",
+          "lines": 495,
+          "bytes": 20613
+        },
+        {
+          "path": "tools\\selftest.js",
+          "lines": 225,
+          "bytes": 11023
+        },
+        {
+          "path": "tools\\shot.js",
+          "lines": 23,
+          "bytes": 1179
+        },
+        {
+          "path": "tools\\skilltest.js",
+          "lines": 104,
+          "bytes": 4514
+        }
+      ]
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "entry": "作品-07",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-07\\project",
+      "source_sha256": "e7c379a95d19488f73860eb0ed7c41be78b53b490f982cae866ff9166bbe78df",
+      "administrative_result": null,
+      "game_lines": 3631,
+      "game_bytes": 115214,
+      "other_source_and_test_lines": 4200,
+      "code_files": [
+        {
+          "path": "build.js",
+          "lines": 92,
+          "bytes": 3651
+        },
+        {
+          "path": "game.html",
+          "lines": 3631,
+          "bytes": 115215
+        },
+        {
+          "path": "src\\audio.js",
+          "lines": 384,
+          "bytes": 13401
+        },
+        {
+          "path": "src\\config.js",
+          "lines": 227,
+          "bytes": 7810
+        },
+        {
+          "path": "src\\effects.js",
+          "lines": 300,
+          "bytes": 9117
+        },
+        {
+          "path": "src\\entities.js",
+          "lines": 855,
+          "bytes": 26007
+        },
+        {
+          "path": "src\\game.js",
+          "lines": 698,
+          "bytes": 22827
+        },
+        {
+          "path": "src\\input.js",
+          "lines": 81,
+          "bytes": 2174
+        },
+        {
+          "path": "src\\main.js",
+          "lines": 65,
+          "bytes": 2391
+        },
+        {
+          "path": "src\\render.js",
+          "lines": 717,
+          "bytes": 22284
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 170,
+          "bytes": 3927
+        },
+        {
+          "path": "src\\util.js",
+          "lines": 53,
+          "bytes": 2101
+        },
+        {
+          "path": "test\\combat.js",
+          "lines": 207,
+          "bytes": 6880
+        },
+        {
+          "path": "test\\skills.js",
+          "lines": 159,
+          "bytes": 5480
+        },
+        {
+          "path": "test\\smoke.js",
+          "lines": 192,
+          "bytes": 6186
+        }
+      ]
+    },
+    {
+      "model": "deepseek-v4.1-flash",
+      "entry": "作品-08",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-08\\project",
+      "source_sha256": "ef1f721d16fd86be6c3e6f19b940467cfa2b76c3a7134897ef92c9f0f30cec8b",
+      "administrative_result": null,
+      "game_lines": 9120,
+      "game_bytes": 399207,
+      "other_source_and_test_lines": 19589,
+      "code_files": [
+        {
+          "path": "build.mjs",
+          "lines": 48,
+          "bytes": 1741
+        },
+        {
+          "path": "dist\\game.bundle.js",
+          "lines": 9037,
+          "bytes": 280213
+        },
+        {
+          "path": "game.html",
+          "lines": 9120,
+          "bytes": 399208
+        },
+        {
+          "path": "src\\index.html",
+          "lines": 16,
+          "bytes": 545
+        },
+        {
+          "path": "src\\parts\\00-util.js",
+          "lines": 180,
+          "bytes": 5834
+        },
+        {
+          "path": "src\\parts\\10-audio.js",
+          "lines": 462,
+          "bytes": 14632
+        },
+        {
+          "path": "src\\parts\\20-state.js",
+          "lines": 228,
+          "bytes": 5088
+        },
+        {
+          "path": "src\\parts\\30-effects.js",
+          "lines": 734,
+          "bytes": 21101
+        },
+        {
+          "path": "src\\parts\\40-player.js",
+          "lines": 1365,
+          "bytes": 43950
+        },
+        {
+          "path": "src\\parts\\45-skills.js",
+          "lines": 910,
+          "bytes": 28972
+        },
+        {
+          "path": "src\\parts\\50-enemy.js",
+          "lines": 1464,
+          "bytes": 46436
+        },
+        {
+          "path": "src\\parts\\60-game.js",
+          "lines": 326,
+          "bytes": 8595
+        },
+        {
+          "path": "src\\parts\\70-scene.js",
+          "lines": 1188,
+          "bytes": 36371
+        },
+        {
+          "path": "src\\parts\\72-enemy-draw.js",
+          "lines": 803,
+          "bytes": 25929
+        },
+        {
+          "path": "src\\parts\\74-render.js",
+          "lines": 385,
+          "bytes": 12483
+        },
+        {
+          "path": "src\\parts\\80-ui.js",
+          "lines": 772,
+          "bytes": 24300
+        },
+        {
+          "path": "src\\parts\\90-boot.js",
+          "lines": 191,
+          "bytes": 6080
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 58,
+          "bytes": 1460
+        },
+        {
+          "path": "test\\aircombo.mjs",
+          "lines": 37,
+          "bytes": 3272
+        },
+        {
+          "path": "test\\attack.mjs",
+          "lines": 114,
+          "bytes": 5483
+        },
+        {
+          "path": "test\\bolt.mjs",
+          "lines": 111,
+          "bytes": 5509
+        },
+        {
+          "path": "test\\bot.mjs",
+          "lines": 114,
+          "bytes": 5027
+        },
+        {
+          "path": "test\\death.mjs",
+          "lines": 59,
+          "bytes": 2675
+        },
+        {
+          "path": "test\\final.mjs",
+          "lines": 60,
+          "bytes": 2463
+        },
+        {
+          "path": "test\\firefox.mjs",
+          "lines": 33,
+          "bytes": 1765
+        },
+        {
+          "path": "test\\firefox_chain.mjs",
+          "lines": 12,
+          "bytes": 1108
+        },
+        {
+          "path": "test\\fullchrome.mjs",
+          "lines": 49,
+          "bytes": 2586
+        },
+        {
+          "path": "test\\hitstop.mjs",
+          "lines": 47,
+          "bytes": 2676
+        },
+        {
+          "path": "test\\limb.mjs",
+          "lines": 59,
+          "bytes": 2678
+        },
+        {
+          "path": "test\\mechanics.mjs",
+          "lines": 116,
+          "bytes": 4890
+        },
+        {
+          "path": "test\\noaudio.mjs",
+          "lines": 28,
+          "bytes": 1382
+        },
+        {
+          "path": "test\\offline_sandbox.mjs",
+          "lines": 50,
+          "bytes": 2905
+        },
+        {
+          "path": "test\\parry.mjs",
+          "lines": 49,
+          "bytes": 2429
+        },
+        {
+          "path": "test\\responsive.mjs",
+          "lines": 73,
+          "bytes": 3229
+        },
+        {
+          "path": "test\\sandbox.mjs",
+          "lines": 33,
+          "bytes": 2081
+        },
+        {
+          "path": "test\\skills.mjs",
+          "lines": 63,
+          "bytes": 3459
+        },
+        {
+          "path": "test\\skills_firefox.mjs",
+          "lines": 20,
+          "bytes": 1281
+        },
+        {
+          "path": "test\\skills_independent.mjs",
+          "lines": 22,
+          "bytes": 1522
+        },
+        {
+          "path": "test\\skills_sandbox_noaudio.mjs",
+          "lines": 48,
+          "bytes": 2787
+        },
+        {
+          "path": "test\\skills_suite.mjs",
+          "lines": 42,
+          "bytes": 2182
+        },
+        {
+          "path": "test\\stress.mjs",
+          "lines": 65,
+          "bytes": 3120
+        },
+        {
+          "path": "test\\types.mjs",
+          "lines": 33,
+          "bytes": 2392
+        },
+        {
+          "path": "test\\visual.mjs",
+          "lines": 52,
+          "bytes": 2011
+        },
+        {
+          "path": "test\\webkit.mjs",
+          "lines": 33,
+          "bytes": 1762
+        }
+      ]
+    },
+    {
+      "model": "gemini-3.8-flash-high",
+      "entry": "作品-09",
+      "completed": false,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-09\\project",
+      "source_sha256": null,
+      "administrative_result": {
+        "total": 0,
+        "reason": "用户明确指定停止此服务异常模型，按0分处理。",
+        "origin": "user_instruction",
+        "at": "2026-10-19T20:50:05+08:00",
+        "source_sha256": null,
+        "corrected_at": "2026-10-19T20:54:50+08:00"
+      }
+    },
+    {
+      "model": "glm-5.3",
+      "entry": "作品-10",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-10\\project",
+      "source_sha256": "26297fe1850d913e2079cc7f25d4ff1052bed962f7d5f1f1728edb9aa31dad67",
+      "administrative_result": null,
+      "game_lines": 4037,
+      "game_bytes": 149678,
+      "other_source_and_test_lines": 4791,
+      "code_files": [
+        {
+          "path": "build.js",
+          "lines": 63,
+          "bytes": 2083
+        },
+        {
+          "path": "game.html",
+          "lines": 4037,
+          "bytes": 149679
+        },
+        {
+          "path": "src\\00_core.js",
+          "lines": 487,
+          "bytes": 22279
+        },
+        {
+          "path": "src\\01_world.js",
+          "lines": 480,
+          "bytes": 17046
+        },
+        {
+          "path": "src\\02_player.js",
+          "lines": 1305,
+          "bytes": 47451
+        },
+        {
+          "path": "src\\03_enemies.js",
+          "lines": 996,
+          "bytes": 36712
+        },
+        {
+          "path": "src\\04_game.js",
+          "lines": 725,
+          "bytes": 25027
+        },
+        {
+          "path": "test\\harness.js",
+          "lines": 258,
+          "bytes": 10323
+        },
+        {
+          "path": "test\\probe.js",
+          "lines": 77,
+          "bytes": 3770
+        },
+        {
+          "path": "test\\soak.js",
+          "lines": 70,
+          "bytes": 3630
+        },
+        {
+          "path": "test\\visual.js",
+          "lines": 330,
+          "bytes": 13642
+        }
+      ]
+    },
+    {
+      "model": "glm-5.3-flash",
+      "entry": "作品-11",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-11\\project",
+      "source_sha256": "f77d0aa2f8c6bda3350f0a7d92511fcc82435c0335b97880e04ab0066c97e854",
+      "administrative_result": null,
+      "game_lines": 3158,
+      "game_bytes": 132820,
+      "other_source_and_test_lines": 4733,
+      "code_files": [
+        {
+          "path": "build.js",
+          "lines": 14,
+          "bytes": 799
+        },
+        {
+          "path": "game.html",
+          "lines": 3158,
+          "bytes": 132821
+        },
+        {
+          "path": "src\\anim.js",
+          "lines": 243,
+          "bytes": 11937
+        },
+        {
+          "path": "src\\audio.js",
+          "lines": 203,
+          "bytes": 9953
+        },
+        {
+          "path": "src\\enemies.js",
+          "lines": 598,
+          "bytes": 25749
+        },
+        {
+          "path": "src\\fx.js",
+          "lines": 233,
+          "bytes": 10780
+        },
+        {
+          "path": "src\\game.js",
+          "lines": 1103,
+          "bytes": 41551
+        },
+        {
+          "path": "src\\player.js",
+          "lines": 552,
+          "bytes": 25864
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 109,
+          "bytes": 2737
+        },
+        {
+          "path": "src\\template.html",
+          "lines": 55,
+          "bytes": 2078
+        },
+        {
+          "path": "src\\utils.js",
+          "lines": 56,
+          "bytes": 2187
+        },
+        {
+          "path": "test\\harness-audio.js",
+          "lines": 103,
+          "bytes": 4056
+        },
+        {
+          "path": "test\\harness.js",
+          "lines": 358,
+          "bytes": 14032
+        },
+        {
+          "path": "test\\probe_behavior.js",
+          "lines": 206,
+          "bytes": 8269
+        },
+        {
+          "path": "test\\probe_geom.js",
+          "lines": 191,
+          "bytes": 7772
+        },
+        {
+          "path": "test\\probe_hit.js",
+          "lines": 78,
+          "bytes": 3233
+        },
+        {
+          "path": "test\\probe_thrower.js",
+          "lines": 119,
+          "bytes": 5194
+        },
+        {
+          "path": "test\\snapshot.js",
+          "lines": 512,
+          "bytes": 22090
+        }
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "entry": "作品-12",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-12\\project",
+      "source_sha256": "91ce7bfb7a898d7dc2bee8b0162d9d5f0d29eff39869d53bfb1fa68fde9a6c05",
+      "administrative_result": null,
+      "game_lines": 1880,
+      "game_bytes": 89656,
+      "other_source_and_test_lines": 2233,
+      "code_files": [
+        {
+          "path": "game.html",
+          "lines": 1880,
+          "bytes": 89657
+        },
+        {
+          "path": "src\\index.html",
+          "lines": 34,
+          "bytes": 1453
+        },
+        {
+          "path": "src\\main.js",
+          "lines": 1697,
+          "bytes": 84085
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 149,
+          "bytes": 4146
+        },
+        {
+          "path": "tools\\build.js",
+          "lines": 20,
+          "bytes": 748
+        },
+        {
+          "path": "tools\\test-manifest.js",
+          "lines": 28,
+          "bytes": 1406
+        },
+        {
+          "path": "tools\\test-runtime.js",
+          "lines": 264,
+          "bytes": 8490
+        },
+        {
+          "path": "tools\\test-static.js",
+          "lines": 41,
+          "bytes": 2140
+        }
+      ]
+    },
+    {
+      "model": "gpt-6-astra",
+      "entry": "作品-13",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-13\\project",
+      "source_sha256": "4e6ec84ef5e772c2a13fa1abbf32239cae0c4b32c4ff0a7e7b1a4cc0ca733869",
+      "administrative_result": null,
+      "game_lines": 849,
+      "game_bytes": 137925,
+      "other_source_and_test_lines": 974,
+      "code_files": [
+        {
+          "path": "build.mjs",
+          "lines": 10,
+          "bytes": 950
+        },
+        {
+          "path": "game.html",
+          "lines": 849,
+          "bytes": 137926
+        },
+        {
+          "path": "src\\game.js",
+          "lines": 557,
+          "bytes": 44245
+        },
+        {
+          "path": "src\\shell.html",
+          "lines": 28,
+          "bytes": 3506
+        },
+        {
+          "path": "src\\skills.js",
+          "lines": 169,
+          "bytes": 11274
+        },
+        {
+          "path": "subset-font.py",
+          "lines": 16,
+          "bytes": 718
+        },
+        {
+          "path": "tests\\browser.mjs",
+          "lines": 8,
+          "bytes": 522
+        },
+        {
+          "path": "tests\\combat.mjs",
+          "lines": 88,
+          "bytes": 7827
+        },
+        {
+          "path": "tests\\skills.mjs",
+          "lines": 82,
+          "bytes": 7427
+        },
+        {
+          "path": "tests\\smoke.mjs",
+          "lines": 16,
+          "bytes": 968
+        }
+      ]
+    },
+    {
+      "model": "gpt-6-luna",
+      "entry": "作品-14",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-14\\project",
+      "source_sha256": "27f573704b06b8572203e22a442b27c9c3656389013090fac511c9c640bd617f",
+      "administrative_result": null,
+      "game_lines": 786,
+      "game_bytes": 64675,
+      "other_source_and_test_lines": 151,
+      "code_files": [
+        {
+          "path": "game.html",
+          "lines": 786,
+          "bytes": 64676
+        },
+        {
+          "path": "test-runtime.js",
+          "lines": 151,
+          "bytes": 9330
+        }
+      ]
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "entry": "作品-15",
+      "completed": true,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-15\\project",
+      "source_sha256": "0fabb6676c925cb3bb58483e56aa441b4bdb286ff950cf977a90671b960b098c",
+      "administrative_result": null,
+      "game_lines": 1358,
+      "game_bytes": 192830,
+      "other_source_and_test_lines": 1535,
+      "code_files": [
+        {
+          "path": "game.html",
+          "lines": 1358,
+          "bytes": 192831
+        },
+        {
+          "path": "src\\audio.js",
+          "lines": 79,
+          "bytes": 4975
+        },
+        {
+          "path": "src\\game.js",
+          "lines": 476,
+          "bytes": 28556
+        },
+        {
+          "path": "src\\index.html",
+          "lines": 61,
+          "bytes": 5782
+        },
+        {
+          "path": "src\\render.js",
+          "lines": 384,
+          "bytes": 27644
+        },
+        {
+          "path": "src\\skill-render.js",
+          "lines": 104,
+          "bytes": 5234
+        },
+        {
+          "path": "src\\skills.js",
+          "lines": 149,
+          "bytes": 8481
+        },
+        {
+          "path": "src\\style.css",
+          "lines": 2,
+          "bytes": 10931
+        },
+        {
+          "path": "tests\\browser.mjs",
+          "lines": 8,
+          "bytes": 767
+        },
+        {
+          "path": "tests\\diagnostic.mjs",
+          "lines": 42,
+          "bytes": 2673
+        },
+        {
+          "path": "tests\\explore.mjs",
+          "lines": 26,
+          "bytes": 1401
+        },
+        {
+          "path": "tests\\skills.mjs",
+          "lines": 61,
+          "bytes": 6378
+        },
+        {
+          "path": "tests\\smoke.mjs",
+          "lines": 93,
+          "bytes": 8509
+        },
+        {
+          "path": "tools\\browser-libs.py",
+          "lines": 22,
+          "bytes": 958
+        },
+        {
+          "path": "tools\\build.mjs",
+          "lines": 12,
+          "bytes": 1252
+        },
+        {
+          "path": "tools\\subset-font.py",
+          "lines": 16,
+          "bytes": 788
+        }
+      ]
+    },
+    {
+      "model": "kimi-k2.8-preview",
+      "entry": "作品-16",
+      "completed": false,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-16\\project",
+      "source_sha256": null,
+      "administrative_result": {
+        "total": 0,
+        "reason": "用户明确指定停止此服务异常模型，按0分处理。",
+        "origin": "user_instruction",
+        "at": "2026-10-19T20:50:05+08:00",
+        "source_sha256": null,
+        "corrected_at": "2026-10-19T20:54:50+08:00"
+      }
+    },
+    {
+      "model": "kimi-k3",
+      "entry": "作品-17",
+      "completed": false,
+      "project": "C:\\Users\\Admin\\Desktop\\AIBattle\\writing-bench\\combat-runs\\combat-20261019-175423-8d4c40\\entries\\作品-17\\project",
+      "source_sha256": null,
+      "administrative_result": {
+        "total": 0,
+        "reason": "用户明确指定停止此服务异常模型，按0分处理。",
+        "origin": "user_instruction",
+        "at": "2026-10-19T20:50:05+08:00",
+        "source_sha256": null,
+        "corrected_at": "2026-10-19T20:54:50+08:00"
+      }
+    }
+  ]
+}

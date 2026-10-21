@@ -1,0 +1,22 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "started_at": "2026-10-19T17:16:18+08:00",
+  "max_tokens": 1000000,
+  "deadline_seconds": null,
+  "total_output_limit": null,
+  "segments": [],
+  "token_negotiations": [],
+  "status": "error",
+  "error": "Upstream request failed",
+  "error_type": "ClaudeAPIError",
+  "http_status": 502,
+  "partial_text": "",
+  "elapsed_seconds": 2.11,
+  "response_model": null,
+  "response_id": null,
+  "stop_reason": "",
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "message_stop": false,
+  "thinking_char_count": 0
+}

@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 3046225,
+    "stop_reason": "end_turn",
+    "session_id": "30d6a35b-fe10-49e2-94c4-857063d6b435",
+    "total_cost_usd": 32.006257600000005,
+    "usage": {
+      "input_tokens": 4808748,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 3720704,
+      "output_tokens": 22167,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6.1-sol": {
+        "inputTokens": 7361280,
+        "outputTokens": 77822,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 5023488,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 32.006257600000005,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 68,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已在原《锈潮》项目上完成新增，保留原有连斩、蓄力断械、挑空和闪身。\n\n**成品：[game.html](./game.html)**  \n**技能清单：[skill_manifest.json](./skill_manifest.json)**（已核对恰好 4 项）\n\n| 按键 | 新技能 | 实际效果 |\n|---|---|---|\n| **Q** | 缚星磁涡 | 环形打断、持续聚敌，方便接近身连招 |\n| **E** | 裂轨一闪 | 无敌穿阵斩，裂痕延迟爆裂断臂 |\n| **U** | 双月回轮 | 双向往返飞刃，释放后可继续移动和近战 |\n| **O** | 天炉裁决 | 跃升召下巨刃，范围重击、击飞并断腿 |\n\n四招均可地面或空中独立触发，独立冷却、不消耗磁核；游戏内已清楚展示按键与冷却状态。\n\n**自测：原战斗 10 组回归 + 新技能 7 组实战测试全部通过，零页面脚本异常。** 已验证真实命中、聚敌位移、断肢、技能衔接、冷却、重开清理及最小视口布局。源码、构建脚本和说明均已保留。",
+    "ttft_ms": 20713,
+    "type": "result",
+    "duration_ms": 1298590,
+    "uuid": "d5989114-c652-4a79-9ec7-2b155aa8b626",
+    "ttft_stream_ms": 7414,
+    "time_to_request_ms": 70,
+    "first_content_frame_ms": 7415,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1403.5
+}

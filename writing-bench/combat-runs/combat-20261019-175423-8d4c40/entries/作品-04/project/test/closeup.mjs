@@ -1,0 +1,21 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter');
+await page.waitForTimeout(600);
+await page.evaluate(() => {
+  Game.spawnQueue.length = 0; Game.enemies.forEach(e => e.dead = true); Game.enemies.length = 0;
+  Game.spawnEnemy('warden'); Game.spawnEnemy('brute');
+  Game.enemies.forEach((e,i) => { e.x = Game.player.x + 150 + i*180; e.facing = -1; e.atkCd = 99; e.state = 'idle'; e.stateT = 0; });
+  Game.player.x = 420;
+  Camera.zoom = 2.2;
+});
+await page.waitForTimeout(600);
+await page.screenshot({ path: '/workspace/test/cu1.png' });
+await page.evaluate(() => { Camera.zoom = 2.2; });
+await page.waitForTimeout(80);
+await page.screenshot({ path: '/workspace/test/cu2.png' });
+await browser.close();

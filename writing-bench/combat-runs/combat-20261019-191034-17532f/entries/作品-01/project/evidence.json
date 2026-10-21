@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-19T11:10:33.547Z",
+  "source_sha256": "b980146f15516a8fb2bb0b1672e75ef91d3b56e1b9fe9b6a06fedc4033aee707",
+  "method": "真实Chrome UI兼容接口，点击作者开始按钮，确认下一次实际绘制",
+  "actions": [
+    "点击拔刀",
+    "展开采样面板",
+    "开始战斗",
+    "D300ms",
+    "J连按12次，每次70ms、间隔220ms",
+    "K蓄力1200ms，收招400ms"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "实际进入战斗，玩家与两名敌人正常绘制",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "约1FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-break.png",
+      "label": "60FPS连续轻斩和重斩，4命中/1武装破坏，敌人长柄武器落地可见",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    }
+  ],
+  "note": "正常帧率下通过真实Chrome按键操作采样。静态截图只能辅助判断；未实际监听音频，不把源码推断当亲手体验。"
+}

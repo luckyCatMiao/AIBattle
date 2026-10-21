@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 3150045,
+    "stop_reason": "end_turn",
+    "session_id": "20c98e64-ae9e-4c09-947e-4ffc7e100d50",
+    "total_cost_usd": 8.843218399999994,
+    "usage": {
+      "input_tokens": 93369,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 49080704,
+      "output_tokens": 374841,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "deepseek-v4.1-flash": {
+        "inputTokens": 93369,
+        "outputTokens": 374841,
+        "cacheReadInputTokens": 49080704,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 8.843218399999994,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-sonnet-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 178,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已完成并交付 `/workspace/game.html`（单文件、离线、可直接双击运行）。\n\n**玩法概要**\n- **主题**：绯刃 · 月下斩，月下斩傀的横版试炼场。\n- **操作**：`A/D` 或 `←/→` 移动，`Space` 跳跃/二段跳，`J` 三段连斩，`K` 重斩（按住蓄力，可斩断肢体），`L` 疾闪（无敌帧、可接突进斩），`I` 见切弹反（可反弩矢），`R` 重来，`Enter` 开始/再战。\n- **战斗系统**：轻击连段与后摇取消、挑空追击、满蓄力多肢斩断、弹反慢动作与反矢；只有实际命中才触发顿帧，轻击约 0.045–0.075s，重击/满蓄力约 0.1–0.135s，并配合克制的震屏、刀光、火花、受击闪白与击飞落地反馈。\n- **敌人与断肢**：裂斧傀（重劈/跃砸/头槌）、弦弩傀（远程射击，失去持弩臂后改近战）、疾爪傀（爪击/飞扑/撕咬）。上臂、前臂、大腿、小腿、头均可被斩断，断肢作为带关节/武器的实体残肢飞出、落地并燃尽；断腿降低移动且无法跃击/扑击，断臂移除武器或射击能力，斩首直接击杀。\n- **循环**：无尽波次，破阵回血，死亡后 `R`/`Enter`/点击立即重开；HUD 显示血量、阵数、连击、断肢与斩杀统计。\n\n**自测结果**\n- 通过 Chromium（Playwright headless）实测：开始/点击启动、移动跳跃、连段命中、蓄力断肢、弹反、弩矢反射、敌人受击与死亡、死亡重开均正常。\n- `window.combatBenchState()` 为只读（不可写、不可配置），字段会随真实战斗变化；实测空挥 `hitStop=0`，命中时按力度分层触发。\n- 实测满蓄力重斩单次可斩断 5 处肢体；断弩臂后 `canShoot=false`；弹反弩矢可生成反射弹并命中敌人。\n- 测试覆盖 960×540、1024×768、1280×720、1920×800、DPR=2 与 4K 加载；`sandbox=\"allow-scripts\"` iframe 内可正常启动；删除 `AudioContext` 后游戏仍可玩，静音按钮正常；窗口失焦会清空按键。所有测试无控制台报错。\n- 音效为浏览器实时合成，已做功能与静音切换验证；因使用无声 headless 环境，未进行人耳听感评估。\n\n源码、构建脚本与说明保留在 `/workspace/src`、`/workspace/build.mjs`、`/workspace/README.md`，运行 `node build.mjs` 可重新生成 `game.html`。",
+    "ttft_ms": 2106,
+    "type": "result",
+    "duration_ms": 4153128,
+    "uuid": "02875b08-9d74-494f-a7af-1ff598adee54",
+    "ttft_stream_ms": 1666,
+    "time_to_request_ms": 128,
+    "first_content_frame_ms": 1667,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 4471.8
+}

@@ -1,0 +1,60 @@
+{
+  "scores": {
+    "impact": 24,
+    "flow": 23,
+    "rhythm": 14,
+    "destruction": 11
+  },
+  "verdict": "60FPS 截图中玩家已实际打出 4 次命中并断掉刀兵持械手臂（长柄武器落地、断口短桩、敌人仍存活），枪兵前摇的圆弧与激光瞄准线清晰可读，说明基础战斗链路成立；顿帧分层、震屏、粒子与音效的协同主要依据源码（轻击约 48ms、重一 90ms、重二 140ms、断肢 160ms），单帧截图无法验证手感本身。整体是克制、偏精确弹反与蓄力重击的路线，完成度中上。",
+  "strengths": [
+    "命中顿帧按攻击强度分层：普通命中 48ms、重一 90ms、重二 140ms，断肢再叠加 160ms，冻结期间全场景停住、特效降至 12% 速度并叠 3.5% 白闪，轻重差异有明确数值依据（源码 damageEnemy / update）。",
+    "截图中断肢后果是真实的而非文字提示：右侧刀兵头部完好但持械臂已断，只剩灰色断口与红色关节光点，地面斜插一根长柄武器；源码中 arm.intact 同时改变该敌人的移速、攻击距离、伤害与硬直（185→130、142→95、13→8），破坏确实削弱了它的战斗能力。",
+    "敌人前摇可读：枪兵风变时画出白色弧圈与横贯画面的红色瞄准线，近战兵有蓄力弧与“!”提示；两种敌人一近一远，玩家 HP 已从 100 降到 89，说明风险与受伤链路在实际运行。"
+  ],
+  "weaknesses": [
+    "敌人受击缺乏姿态反应：drawBlade / drawGunner 只依据 e.flash 切换配色并靠位移表现击退，没有躯干后仰、头部偏转或受击帧，命中力度主要靠冻结、震屏和数字承担。",
+    "终结斩的顿帧被归一化抹平：light3 的 stop 为 0.085，但 damageEnemy 以 power = stop / 0.085 计算后落到 48ms 档，与起手轻击同档，第三段应有的收束重量没有兑现。",
+    "头部破坏的行为意义不完整：BLINDED 只让枪兵弹道产生散布，刀兵的 updateBladeAI 完全不读取 head 状态，对其只是换一个红色核心外观；且两帧截图都没有捕捉到断肢爆散瞬间，飞散弧度与残留时间只能由源码推断。"
+  ],
+  "evidence": [
+    {
+      "basis": "screenshot",
+      "detail": "sample-normal-break：60FPS，hitCount 4、limbBreakCount 1、HP 089、CHAIN 4、2 HOSTILES，玩家剑刃上举处于出招中，确为一次真实交战而非静止靶场。"
+    },
+    {
+      "basis": "screenshot",
+      "detail": "同帧右侧刀兵头盔天线完整、躯干完好，但持械一侧只剩短桩与红色关节光点，地面躺着一根带箭形尖端的灰色长柄武器，与 drawDetached 中 blade-arm 的绘制结构一致。"
+    },
+    {
+      "basis": "screenshot",
+      "detail": "左侧枪兵处于前摇，套在身上的是半圈白色弧与一条穿过玩家身体的红色瞄准线；这是 drawGunner 在 windup 状态下的激光指示，非命中特效。"
+    },
+    {
+      "basis": "screenshot",
+      "detail": "sample-1：环境标注约 1FPS，hitCount 0、limbBreakCount 0，两名敌人未被击中，只能证明可进入战斗与 HUD/敌人正常绘制，不能用于判断手感。"
+    },
+    {
+      "basis": "source",
+      "detail": "damageEnemy 中 hitStop = max(hitStop, power >= 1.45 ? .14 : power >= 1.05 ? .09 : .048)，power 由各招式 stop / .085 得出，因此 light1/light2/light3 全部落入 48ms 档，heavy1 为 90ms，heavy2 为 140ms。"
+    },
+    {
+      "basis": "source",
+      "detail": "breakLimb 将对应部件 intact 置 false 并生成带初速与自旋的 limbs 实体（life 6~8s，落地反弹）；updateGunnerAI 在断臂后直接转入 updateBladeAI，头部破坏只改动弹道 spread。"
+    },
+    {
+      "basis": "source",
+      "detail": "冲刺 0.38s 冷却、0.28s 无敌且可取消攻击与蓄力，无敌覆盖率约 74%；弹反成功恢复 3 点生命并接 30 伤害的反斩，风险回报整体偏宽松。"
+    },
+    {
+      "basis": "uncertain",
+      "detail": "音效由 WebAudio 合成（slash / impact / breakPart / parry），本次未监听，无法确认命中音与画面的同步和力度差。"
+    }
+  ],
+  "limitations": "实际可评画面只有两帧静态截图：一帧是 1FPS 下的开场（0 命中），另一帧是 60FPS 的单次交战，4 次命中、1 次断肢、玩家受伤一次。没有连续画面，因此顿帧是否真的“停得脆、恢复顺”、震屏幅度是否过量、终结斩的收招是否拖沓、连段与弹反的输入容错、敌人刷新间隔是否让人等待，均只能由源码推断，不能声称亲自体验。音效未监听；断肢飞散的实际观感、敌人受击姿态的动感、死亡重开与连续多波的交战乐趣，本次覆盖不足。分数仅供参考，不等同于玩家实测结论。",
+  "total": 72,
+  "evaluation_policy": "feel-only-v2",
+  "source_sha256": "b980146f15516a8fb2bb0b1672e75ef91d3b56e1b9fe9b6a06fedc4033aee707",
+  "judged_at": "2026-10-19T19:41:23+08:00",
+  "invocation_method": "claude-code-cli",
+  "effort": "high"
+}

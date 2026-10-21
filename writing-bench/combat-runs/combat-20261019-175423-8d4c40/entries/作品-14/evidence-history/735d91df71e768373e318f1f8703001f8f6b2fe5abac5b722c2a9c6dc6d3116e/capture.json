@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-19T11:20:27.277Z",
+  "source_sha256": "735d91df71e768373e318f1f8703001f8f6b2fe5abac5b722c2a9c6dc6d3116e",
+  "method": "真实Chrome UI兼容接口，点击作者开始按钮并检查截图",
+  "actions": [
+    "点击投入战斗",
+    "展开采样面板",
+    "R重开",
+    "D约950ms接近",
+    "K蓄力1800ms",
+    "J攻击",
+    "R重开",
+    "D450ms",
+    "J连按16次，每次70ms、间隔220ms",
+    "折叠采样控件",
+    "R重开",
+    "D450ms",
+    "J连按16次",
+    "开始",
+    "D150ms",
+    "J连按一秒",
+    "I100ms",
+    "标准Space+J",
+    "K800ms",
+    "L150ms",
+    "最后一次L后无新的主动攻击指令"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-1.png",
+      "label": "实际进入战斗，玩家与敌人正常绘制",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "约1FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-hit.png",
+      "label": "60FPS近身命中，计数1",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-break.png",
+      "label": "30FPS近身连斩后，2命中/1断械，敌人武装脱落",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 2,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "30 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-normal-break-clean.png",
+      "label": "折叠采样面板后的连斩实帧",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 4,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "60 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-air.png",
+      "label": "标准I瞬反尝试、Space+J后的实际帧；未确认本次成功弹反",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "30 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-dash.png",
+      "label": "重击与L机动后的实际帧；不把按下L直接认定为成功躲避",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 1,
+        "playing": true
+      },
+      "environment": "51 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-extra-enemy.png",
+      "label": "最后一次L后不再主动发送攻击指令，观察后续交战与结局",
+      "state": {
+        "ready": true,
+        "playerAlive": false,
+        "enemyCount": 2,
+        "hitCount": 1,
+        "limbBreakCount": 1,
+        "playing": false
+      },
+      "environment": "30 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "正常帧率下通过真实Chrome按键操作采样。静态截图只能辅助判断；未实际监听音频，不把源码推断当亲手体验。"
+}

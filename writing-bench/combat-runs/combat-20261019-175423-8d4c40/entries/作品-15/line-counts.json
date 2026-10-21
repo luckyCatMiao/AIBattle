@@ -1,0 +1,116 @@
+{
+  "total_lines": 3288,
+  "files": [
+    {
+      "path": "game.html",
+      "lines": 1358,
+      "bytes": 192831
+    },
+    {
+      "path": "package-lock.json",
+      "lines": 44,
+      "bytes": 1190
+    },
+    {
+      "path": "package.json",
+      "lines": 10,
+      "bytes": 237
+    },
+    {
+      "path": "skill_manifest.json",
+      "lines": 25,
+      "bytes": 1351
+    },
+    {
+      "path": "src\\audio.js",
+      "lines": 79,
+      "bytes": 4975
+    },
+    {
+      "path": "src\\game.js",
+      "lines": 476,
+      "bytes": 28556
+    },
+    {
+      "path": "src\\index.html",
+      "lines": 61,
+      "bytes": 5782
+    },
+    {
+      "path": "src\\render.js",
+      "lines": 384,
+      "bytes": 27644
+    },
+    {
+      "path": "src\\skill-render.js",
+      "lines": 104,
+      "bytes": 5234
+    },
+    {
+      "path": "src\\skills.js",
+      "lines": 149,
+      "bytes": 8481
+    },
+    {
+      "path": "src\\style.css",
+      "lines": 2,
+      "bytes": 10931
+    },
+    {
+      "path": "tests\\browser.mjs",
+      "lines": 8,
+      "bytes": 767
+    },
+    {
+      "path": "tests\\diagnostic-result.json",
+      "lines": 237,
+      "bytes": 4308
+    },
+    {
+      "path": "tests\\diagnostic.mjs",
+      "lines": 42,
+      "bytes": 2673
+    },
+    {
+      "path": "tests\\explore.mjs",
+      "lines": 26,
+      "bytes": 1401
+    },
+    {
+      "path": "tests\\results.json",
+      "lines": 46,
+      "bytes": 1106
+    },
+    {
+      "path": "tests\\skills-results.json",
+      "lines": 33,
+      "bytes": 893
+    },
+    {
+      "path": "tests\\skills.mjs",
+      "lines": 61,
+      "bytes": 6378
+    },
+    {
+      "path": "tests\\smoke.mjs",
+      "lines": 93,
+      "bytes": 8509
+    },
+    {
+      "path": "tools\\browser-libs.py",
+      "lines": 22,
+      "bytes": 958
+    },
+    {
+      "path": "tools\\build.mjs",
+      "lines": 12,
+      "bytes": 1252
+    },
+    {
+      "path": "tools\\subset-font.py",
+      "lines": 16,
+      "bytes": 788
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

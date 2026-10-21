@@ -1,0 +1,1956 @@
+{
+  "total_lines": 160989,
+  "files": [
+    {
+      "path": ".devtools\\fonts\\gf.css",
+      "lines": 812,
+      "bytes": 114446
+    },
+    {
+      "path": ".devtools\\package-lock.json",
+      "lines": 56,
+      "bytes": 1593
+    },
+    {
+      "path": ".devtools\\package.json",
+      "lines": 5,
+      "bytes": 56
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\__init__.py",
+      "lines": 8,
+      "bytes": 183
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\__main__.py",
+      "lines": 35,
+      "bytes": 925
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\afmLib.py",
+      "lines": 439,
+      "bytes": 13374
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\agl.py",
+      "lines": 5232,
+      "bytes": 113030
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\annotations.py",
+      "lines": 30,
+      "bytes": 1225
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cffLib\\__init__.py",
+      "lines": 3702,
+      "bytes": 108210
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cffLib\\CFF2ToCFF.py",
+      "lines": 273,
+      "bytes": 8925
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cffLib\\CFFToCFF2.py",
+      "lines": 305,
+      "bytes": 10119
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cffLib\\specializer.py",
+      "lines": 930,
+      "bytes": 32654
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cffLib\\transforms.py",
+      "lines": 495,
+      "bytes": 17455
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cffLib\\width.py",
+      "lines": 209,
+      "bytes": 6073
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\colorLib\\__init__.py",
+      "lines": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\colorLib\\builder.py",
+      "lines": 709,
+      "bytes": 24961
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\colorLib\\errors.py",
+      "lines": 2,
+      "bytes": 41
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\colorLib\\geometry.py",
+      "lines": 143,
+      "bytes": 5518
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\colorLib\\table_builder.py",
+      "lines": 223,
+      "bytes": 7469
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\colorLib\\unbuilder.py",
+      "lines": 81,
+      "bytes": 2142
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\config\\__init__.py",
+      "lines": 82,
+      "bytes": 3098
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\__init__.py",
+      "lines": 15,
+      "bytes": 618
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\__main__.py",
+      "lines": 5,
+      "bytes": 91
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\benchmark.py",
+      "lines": 54,
+      "bytes": 1296
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\cli.py",
+      "lines": 198,
+      "bytes": 6075
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\cu2qu.py",
+      "lines": 568,
+      "bytes": 18282
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\errors.py",
+      "lines": 77,
+      "bytes": 2441
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\cu2qu\\ufo.py",
+      "lines": 382,
+      "bytes": 13123
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\designspaceLib\\__init__.py",
+      "lines": 3392,
+      "bytes": 132063
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\designspaceLib\\__main__.py",
+      "lines": 5,
+      "bytes": 102
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\designspaceLib\\split.py",
+      "lines": 525,
+      "bytes": 21480
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\designspaceLib\\statNames.py",
+      "lines": 260,
+      "bytes": 9237
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\designspaceLib\\types.py",
+      "lines": 170,
+      "bytes": 6198
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\diff\\__init__.py",
+      "lines": 441,
+      "bytes": 13626
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\diff\\__main__.py",
+      "lines": 5,
+      "bytes": 92
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\diff\\color.py",
+      "lines": 44,
+      "bytes": 1387
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\diff\\diff.py",
+      "lines": 294,
+      "bytes": 8964
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\diff\\utils.py",
+      "lines": 28,
+      "bytes": 1020
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\encodings\\__init__.py",
+      "lines": 1,
+      "bytes": 75
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\encodings\\codecs.py",
+      "lines": 136,
+      "bytes": 4722
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\encodings\\MacRoman.py",
+      "lines": 258,
+      "bytes": 3576
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\encodings\\StandardEncoding.py",
+      "lines": 258,
+      "bytes": 3581
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\__init__.py",
+      "lines": 4,
+      "bytes": 213
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\__main__.py",
+      "lines": 77,
+      "bytes": 2239
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\ast.py",
+      "lines": 2172,
+      "bytes": 75396
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\builder.py",
+      "lines": 1881,
+      "bytes": 77467
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\error.py",
+      "lines": 22,
+      "bytes": 648
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\lexer.py",
+      "lines": 287,
+      "bytes": 11132
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\location.py",
+      "lines": 12,
+      "bytes": 234
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\lookupDebugInfo.py",
+      "lines": 12,
+      "bytes": 304
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\parser.py",
+      "lines": 2495,
+      "bytes": 104261
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\feaLib\\variableScalar.py",
+      "lines": 269,
+      "bytes": 9832
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\fontBuilder.py",
+      "lines": 1013,
+      "bytes": 34277
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\help.py",
+      "lines": 36,
+      "bytes": 1125
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\__init__.py",
+      "lines": 247,
+      "bytes": 8255
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\__main__.py",
+      "lines": 5,
+      "bytes": 93
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\base.py",
+      "lines": 80,
+      "bytes": 2388
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\cmap.py",
+      "lines": 172,
+      "bytes": 6727
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\layout.py",
+      "lines": 561,
+      "bytes": 16928
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\options.py",
+      "lines": 85,
+      "bytes": 2501
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\tables.py",
+      "lines": 361,
+      "bytes": 11194
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\unicode.py",
+      "lines": 78,
+      "bytes": 4273
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\merge\\util.py",
+      "lines": 142,
+      "bytes": 3377
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\__init__.py",
+      "lines": 1,
+      "bytes": 75
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\arrayTools.py",
+      "lines": 424,
+      "bytes": 11457
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\bezierTools.py",
+      "lines": 1505,
+      "bytes": 45872
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\classifyTools.py",
+      "lines": 169,
+      "bytes": 5611
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\cliTools.py",
+      "lines": 52,
+      "bytes": 1861
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\configTools.py",
+      "lines": 350,
+      "bytes": 11228
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\cython.py",
+      "lines": 27,
+      "bytes": 681
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\dictTools.py",
+      "lines": 85,
+      "bytes": 2439
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\eexec.py",
+      "lines": 119,
+      "bytes": 3331
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\encodingTools.py",
+      "lines": 71,
+      "bytes": 2072
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\enumTools.py",
+      "lines": 11,
+      "bytes": 255
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\etree.py",
+      "lines": 470,
+      "bytes": 16975
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filenames.py",
+      "lines": 245,
+      "bytes": 8223
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\__init__.py",
+      "lines": 68,
+      "bytes": 2011
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_base.py",
+      "lines": 134,
+      "bytes": 4010
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_copy.py",
+      "lines": 45,
+      "bytes": 1361
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_errors.py",
+      "lines": 61,
+      "bytes": 955
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_info.py",
+      "lines": 75,
+      "bytes": 2013
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_osfs.py",
+      "lines": 174,
+      "bytes": 6323
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_path.py",
+      "lines": 75,
+      "bytes": 2122
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_subfs.py",
+      "lines": 92,
+      "bytes": 3028
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_tempfs.py",
+      "lines": 34,
+      "bytes": 924
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_tools.py",
+      "lines": 34,
+      "bytes": 972
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_walk.py",
+      "lines": 55,
+      "bytes": 1655
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\filesystem\\_zipfs.py",
+      "lines": 227,
+      "bytes": 7300
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\fixedTools.py",
+      "lines": 253,
+      "bytes": 7703
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\iftSparseBitSet.py",
+      "lines": 311,
+      "bytes": 10521
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\intTools.py",
+      "lines": 25,
+      "bytes": 586
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\iterTools.py",
+      "lines": 12,
+      "bytes": 390
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\lazyTools.py",
+      "lines": 42,
+      "bytes": 1020
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\loggingTools.py",
+      "lines": 542,
+      "bytes": 19932
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\macCreatorType.py",
+      "lines": 56,
+      "bytes": 1593
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\macRes.py",
+      "lines": 261,
+      "bytes": 8579
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\plistlib\\__init__.py",
+      "lines": 680,
+      "bytes": 21113
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\psCharStrings.py",
+      "lines": 1511,
+      "bytes": 43517
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\psLib.py",
+      "lines": 399,
+      "bytes": 12398
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\psOperators.py",
+      "lines": 572,
+      "bytes": 15700
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\py23.py",
+      "lines": 96,
+      "bytes": 2238
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\roundTools.py",
+      "lines": 151,
+      "bytes": 4871
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\sstruct.py",
+      "lines": 227,
+      "bytes": 7114
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\symfont.py",
+      "lines": 240,
+      "bytes": 6961
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\testTools.py",
+      "lines": 233,
+      "bytes": 7052
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\textTools.py",
+      "lines": 156,
+      "bytes": 3546
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\timeTools.py",
+      "lines": 86,
+      "bytes": 2232
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\transform.py",
+      "lines": 515,
+      "bytes": 15996
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\treeTools.py",
+      "lines": 45,
+      "bytes": 1269
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\vector.py",
+      "lines": 146,
+      "bytes": 4061
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\visitor.py",
+      "lines": 158,
+      "bytes": 5754
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\xmlReader.py",
+      "lines": 189,
+      "bytes": 6649
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\misc\\xmlWriter.py",
+      "lines": 243,
+      "bytes": 7581
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\mtiLib\\__init__.py",
+      "lines": 1400,
+      "bytes": 46594
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\mtiLib\\__main__.py",
+      "lines": 5,
+      "bytes": 94
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\__init__.py",
+      "lines": 1,
+      "bytes": 45
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\builder.py",
+      "lines": 3495,
+      "bytes": 130342
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\error.py",
+      "lines": 11,
+      "bytes": 335
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\maxContextCalc.py",
+      "lines": 96,
+      "bytes": 3175
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\optimize\\__init__.py",
+      "lines": 53,
+      "bytes": 1530
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\optimize\\__main__.py",
+      "lines": 5,
+      "bytes": 103
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\otlLib\\optimize\\gpos.py",
+      "lines": 439,
+      "bytes": 17668
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\__init__.py",
+      "lines": 1,
+      "bytes": 75
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\areaPen.py",
+      "lines": 51,
+      "bytes": 1471
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\basePen.py",
+      "lines": 475,
+      "bytes": 17080
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\boundsPen.py",
+      "lines": 97,
+      "bytes": 3128
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\cairoPen.py",
+      "lines": 25,
+      "bytes": 591
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\cocoaPen.py",
+      "lines": 25,
+      "bytes": 611
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\cu2quPen.py",
+      "lines": 325,
+      "bytes": 13007
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\explicitClosingLinePen.py",
+      "lines": 101,
+      "bytes": 3219
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\filterPen.py",
+      "lines": 433,
+      "bytes": 14703
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\freetypePen.py",
+      "lines": 462,
+      "bytes": 19908
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\hashPointPen.py",
+      "lines": 89,
+      "bytes": 3573
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\momentsPen.py",
+      "lines": 879,
+      "bytes": 25658
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\perimeterPen.py",
+      "lines": 68,
+      "bytes": 2152
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\pointInsidePen.py",
+      "lines": 191,
+      "bytes": 6354
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\pointPen.py",
+      "lines": 653,
+      "bytes": 24584
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\qtPen.py",
+      "lines": 28,
+      "bytes": 633
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\qu2cuPen.py",
+      "lines": 105,
+      "bytes": 3985
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\quartzPen.py",
+      "lines": 42,
+      "bytes": 1286
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\recordingPen.py",
+      "lines": 334,
+      "bytes": 12488
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\reportLabPen.py",
+      "lines": 78,
+      "bytes": 2055
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\reverseContourPen.py",
+      "lines": 95,
+      "bytes": 4021
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\roundingPen.py",
+      "lines": 132,
+      "bytes": 4695
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\statisticsPen.py",
+      "lines": 312,
+      "bytes": 9808
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\svgPathPen.py",
+      "lines": 310,
+      "bytes": 8572
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\t2CharStringPen.py",
+      "lines": 88,
+      "bytes": 2931
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\teePen.py",
+      "lines": 54,
+      "bytes": 1289
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\transformPen.py",
+      "lines": 114,
+      "bytes": 4055
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\ttGlyphPen.py",
+      "lines": 336,
+      "bytes": 11953
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\pens\\wxPen.py",
+      "lines": 28,
+      "bytes": 679
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\qu2cu\\__init__.py",
+      "lines": 15,
+      "bytes": 618
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\qu2cu\\__main__.py",
+      "lines": 6,
+      "bytes": 92
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\qu2cu\\benchmark.py",
+      "lines": 56,
+      "bytes": 1400
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\qu2cu\\cli.py",
+      "lines": 128,
+      "bytes": 3839
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\qu2cu\\qu2cu.py",
+      "lines": 433,
+      "bytes": 13138
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\subset\\__init__.py",
+      "lines": 4153,
+      "bytes": 145507
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\subset\\__main__.py",
+      "lines": 5,
+      "bytes": 94
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\subset\\cff.py",
+      "lines": 184,
+      "bytes": 6145
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\subset\\svg.py",
+      "lines": 251,
+      "bytes": 9296
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\subset\\util.py",
+      "lines": 25,
+      "bytes": 754
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\svgLib\\__init__.py",
+      "lines": 3,
+      "bytes": 75
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\svgLib\\path\\__init__.py",
+      "lines": 64,
+      "bytes": 2047
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\svgLib\\path\\arc.py",
+      "lines": 153,
+      "bytes": 5811
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\svgLib\\path\\parser.py",
+      "lines": 362,
+      "bytes": 12890
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\svgLib\\path\\shapes.py",
+      "lines": 185,
+      "bytes": 5387
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\t1Lib\\__init__.py",
+      "lines": 648,
+      "bytes": 20928
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\tfmLib.py",
+      "lines": 460,
+      "bytes": 14480
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\__init__.py",
+      "lines": 29,
+      "bytes": 660
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\__main__.py",
+      "lines": 148,
+      "bytes": 4733
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\macUtils.py",
+      "lines": 54,
+      "bytes": 1737
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\removeOverlaps.py",
+      "lines": 394,
+      "bytes": 12743
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\reorderGlyphs.py",
+      "lines": 284,
+      "bytes": 10370
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\scaleUpem.py",
+      "lines": 450,
+      "bytes": 15470
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\sfnt.py",
+      "lines": 737,
+      "bytes": 26396
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\standardGlyphOrder.py",
+      "lines": 271,
+      "bytes": 5785
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\__init__.py",
+      "lines": 101,
+      "bytes": 2730
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_a_n_k_r.py",
+      "lines": 15,
+      "bytes": 483
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_a_v_a_r.py",
+      "lines": 231,
+      "bytes": 9018
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_b_d_a_t.py",
+      "lines": 5,
+      "bytes": 124
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_b_g_c_l.py",
+      "lines": 136,
+      "bytes": 5484
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_b_h_e_d.py",
+      "lines": 5,
+      "bytes": 108
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_b_l_o_c.py",
+      "lines": 5,
+      "bytes": 127
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_b_s_l_n.py",
+      "lines": 15,
+      "bytes": 465
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_c_i_d_g.py",
+      "lines": 24,
+      "bytes": 913
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_c_m_a_p.py",
+      "lines": 1725,
+      "bytes": 68823
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_c_v_a_r.py",
+      "lines": 93,
+      "bytes": 3526
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_c_v_t.py",
+      "lines": 56,
+      "bytes": 1618
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_f_e_a_t.py",
+      "lines": 15,
+      "bytes": 469
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_f_p_g_m.py",
+      "lines": 62,
+      "bytes": 1633
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_f_v_a_r.py",
+      "lines": 258,
+      "bytes": 8807
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_g_a_s_p.py",
+      "lines": 62,
+      "bytes": 2202
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_g_c_i_d.py",
+      "lines": 13,
+      "bytes": 362
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_g_l_y_f.py",
+      "lines": 2360,
+      "bytes": 88050
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_g_v_a_r.py",
+      "lines": 362,
+      "bytes": 13168
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_h_d_m_x.py",
+      "lines": 127,
+      "bytes": 4252
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_h_e_a_d.py",
+      "lines": 129,
+      "bytes": 4925
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_h_h_e_a.py",
+      "lines": 146,
+      "bytes": 4766
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_h_m_t_x.py",
+      "lines": 163,
+      "bytes": 6191
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_k_e_r_n.py",
+      "lines": 288,
+      "bytes": 10793
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_l_c_a_r.py",
+      "lines": 13,
+      "bytes": 390
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_l_o_c_a.py",
+      "lines": 69,
+      "bytes": 2179
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_l_t_a_g.py",
+      "lines": 72,
+      "bytes": 2552
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_m_a_x_p.py",
+      "lines": 147,
+      "bytes": 5264
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_m_e_t_a.py",
+      "lines": 112,
+      "bytes": 3913
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_m_o_r_t.py",
+      "lines": 14,
+      "bytes": 487
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_m_o_r_x.py",
+      "lines": 15,
+      "bytes": 548
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_n_a_m_e.py",
+      "lines": 1248,
+      "bytes": 41608
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_o_p_b_d.py",
+      "lines": 14,
+      "bytes": 448
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_p_o_s_t.py",
+      "lines": 319,
+      "bytes": 11682
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_p_r_e_p.py",
+      "lines": 16,
+      "bytes": 427
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_p_r_o_p.py",
+      "lines": 12,
+      "bytes": 427
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_s_b_i_x.py",
+      "lines": 128,
+      "bytes": 4864
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_t_r_a_k.py",
+      "lines": 329,
+      "bytes": 11349
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_v_h_e_a.py",
+      "lines": 138,
+      "bytes": 4458
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\_v_m_t_x.py",
+      "lines": 19,
+      "bytes": 500
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\asciiTable.py",
+      "lines": 20,
+      "bytes": 637
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\B_A_S_E_.py",
+      "lines": 14,
+      "bytes": 369
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\BitmapGlyphMetrics.py",
+      "lines": 63,
+      "bytes": 1768
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\C_B_D_T_.py",
+      "lines": 113,
+      "bytes": 3646
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\C_B_L_C_.py",
+      "lines": 19,
+      "bytes": 520
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\C_F_F_.py",
+      "lines": 61,
+      "bytes": 1978
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\C_F_F__2.py",
+      "lines": 26,
+      "bytes": 807
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\C_O_L_R_.py",
+      "lines": 165,
+      "bytes": 5993
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\C_P_A_L_.py",
+      "lines": 305,
+      "bytes": 11942
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\D__e_b_g.py",
+      "lines": 35,
+      "bytes": 1134
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\D_S_I_G_.py",
+      "lines": 170,
+      "bytes": 5903
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\DefaultTable.py",
+      "lines": 64,
+      "bytes": 1986
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\E_B_D_T_.py",
+      "lines": 856,
+      "bytes": 33744
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\E_B_L_C_.py",
+      "lines": 717,
+      "bytes": 30047
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\E_B_S_C_.py",
+      "lines": 153,
+      "bytes": 5810
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\F__e_a_t.py",
+      "lines": 159,
+      "bytes": 5935
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\F_F_T_M_.py",
+      "lines": 52,
+      "bytes": 1683
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\G__l_a_t.py",
+      "lines": 234,
+      "bytes": 8640
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\G__l_o_c.py",
+      "lines": 84,
+      "bytes": 2684
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\G_D_E_F_.py",
+      "lines": 13,
+      "bytes": 299
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\G_P_O_S_.py",
+      "lines": 14,
+      "bytes": 397
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\G_S_U_B_.py",
+      "lines": 13,
+      "bytes": 294
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\G_V_A_R_.py",
+      "lines": 5,
+      "bytes": 94
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\grUtils.py",
+      "lines": 92,
+      "bytes": 2270
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\H_V_A_R_.py",
+      "lines": 13,
+      "bytes": 313
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\I_F_T_.py",
+      "lines": 12,
+      "bytes": 272
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\I_F_T_X_.py",
+      "lines": 12,
+      "bytes": 274
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\J_S_T_F_.py",
+      "lines": 13,
+      "bytes": 315
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\L_T_S_H_.py",
+      "lines": 58,
+      "bytes": 2189
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\M_A_T_H_.py",
+      "lines": 13,
+      "bytes": 342
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\M_V_A_R_.py",
+      "lines": 13,
+      "bytes": 308
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\O_S_2f_2.py",
+      "lines": 752,
+      "bytes": 28272
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\otBase.py",
+      "lines": 1472,
+      "bytes": 53510
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\otConverters.py",
+      "lines": 3056,
+      "bytes": 116211
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\otData.py",
+      "lines": 5983,
+      "bytes": 203948
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\otDataSchema.py",
+      "lines": 37,
+      "bytes": 1667
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\otTables.py",
+      "lines": 2800,
+      "bytes": 101059
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\otTraverse.py",
+      "lines": 162,
+      "bytes": 5517
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\S__i_l_f.py",
+      "lines": 1043,
+      "bytes": 35034
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\S__i_l_l.py",
+      "lines": 92,
+      "bytes": 3218
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\S_T_A_T_.py",
+      "lines": 15,
+      "bytes": 498
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\S_V_G_.py",
+      "lines": 222,
+      "bytes": 7794
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\sbixGlyph.py",
+      "lines": 148,
+      "bytes": 5795
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\sbixStrike.py",
+      "lines": 177,
+      "bytes": 6651
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I__0.py",
+      "lines": 70,
+      "bytes": 2505
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I__1.py",
+      "lines": 163,
+      "bytes": 6970
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I__2.py",
+      "lines": 17,
+      "bytes": 495
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I__3.py",
+      "lines": 22,
+      "bytes": 542
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I__5.py",
+      "lines": 60,
+      "bytes": 1905
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_B_.py",
+      "lines": 13,
+      "bytes": 340
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_C_.py",
+      "lines": 14,
+      "bytes": 380
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_D_.py",
+      "lines": 13,
+      "bytes": 340
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_J_.py",
+      "lines": 13,
+      "bytes": 340
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_P_.py",
+      "lines": 13,
+      "bytes": 340
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_S_.py",
+      "lines": 13,
+      "bytes": 340
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_S_I_V_.py",
+      "lines": 26,
+      "bytes": 854
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\T_T_F_A_.py",
+      "lines": 14,
+      "bytes": 392
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\ttProgram.py",
+      "lines": 595,
+      "bytes": 36009
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\TupleVariation.py",
+      "lines": 885,
+      "bytes": 32205
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\V_A_R_C_.py",
+      "lines": 12,
+      "bytes": 289
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\V_D_M_X_.py",
+      "lines": 250,
+      "bytes": 10488
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\V_O_R_G_.py",
+      "lines": 165,
+      "bytes": 5965
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\tables\\V_V_A_R_.py",
+      "lines": 13,
+      "bytes": 319
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\ttCollection.py",
+      "lines": 198,
+      "bytes": 7314
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\ttFont.py",
+      "lines": 1710,
+      "bytes": 64058
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\ttGlyphSet.py",
+      "lines": 533,
+      "bytes": 19130
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\ttVisitor.py",
+      "lines": 32,
+      "bytes": 1025
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttLib\\woff2.py",
+      "lines": 1679,
+      "bytes": 60920
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ttx.py",
+      "lines": 478,
+      "bytes": 17276
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\__init__.py",
+      "lines": 2575,
+      "bytes": 98982
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\converters.py",
+      "lines": 407,
+      "bytes": 13444
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\errors.py",
+      "lines": 30,
+      "bytes": 843
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\etree.py",
+      "lines": 6,
+      "bytes": 231
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\filenames.py",
+      "lines": 356,
+      "bytes": 10654
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\glifLib.py",
+      "lines": 2123,
+      "bytes": 77495
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\kerning.py",
+      "lines": 173,
+      "bytes": 6176
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\plistlib.py",
+      "lines": 47,
+      "bytes": 1510
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\pointPen.py",
+      "lines": 6,
+      "bytes": 244
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\utils.py",
+      "lines": 107,
+      "bytes": 3192
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\ufoLib\\validators.py",
+      "lines": 1197,
+      "bytes": 31991
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicode.py",
+      "lines": 50,
+      "bytes": 1237
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicodedata\\__init__.py",
+      "lines": 305,
+      "bytes": 9084
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicodedata\\Blocks.py",
+      "lines": 835,
+      "bytes": 33933
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicodedata\\Mirrored.py",
+      "lines": 456,
+      "bytes": 9456
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicodedata\\OTTags.py",
+      "lines": 50,
+      "bytes": 1196
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicodedata\\ScriptExtensions.py",
+      "lines": 846,
+      "bytes": 29167
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\unicodedata\\Scripts.py",
+      "lines": 3672,
+      "bytes": 132341
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\__init__.py",
+      "lines": 1595,
+      "bytes": 57345
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\__main__.py",
+      "lines": 5,
+      "bytes": 94
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avar\\__init__.py",
+      "lines": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avar\\__main__.py",
+      "lines": 72,
+      "bytes": 1770
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avar\\build.py",
+      "lines": 79,
+      "bytes": 2089
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avar\\map.py",
+      "lines": 124,
+      "bytes": 3482
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avar\\plan.py",
+      "lines": 1004,
+      "bytes": 27354
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avar\\unbuild.py",
+      "lines": 278,
+      "bytes": 10831
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\avarPlanner.py",
+      "lines": 8,
+      "bytes": 109
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\builder.py",
+      "lines": 215,
+      "bytes": 6644
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\cff.py",
+      "lines": 630,
+      "bytes": 22900
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\errors.py",
+      "lines": 219,
+      "bytes": 6934
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\featureVars.py",
+      "lines": 716,
+      "bytes": 26860
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\hvar.py",
+      "lines": 113,
+      "bytes": 3695
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\instancer\\__init__.py",
+      "lines": 3068,
+      "bytes": 119802
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\instancer\\__main__.py",
+      "lines": 5,
+      "bytes": 104
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\instancer\\colr.py",
+      "lines": 203,
+      "bytes": 8243
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\instancer\\featureVars.py",
+      "lines": 195,
+      "bytes": 7532
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\instancer\\names.py",
+      "lines": 388,
+      "bytes": 14950
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\instancer\\solver.py",
+      "lines": 309,
+      "bytes": 11002
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\interpolatable.py",
+      "lines": 1223,
+      "bytes": 45689
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\interpolatableHelpers.py",
+      "lines": 362,
+      "bytes": 10414
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\interpolatablePlot.py",
+      "lines": 1264,
+      "bytes": 44272
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\interpolatableTestContourOrder.py",
+      "lines": 81,
+      "bytes": 2970
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\interpolatableTestStartingPoint.py",
+      "lines": 109,
+      "bytes": 4364
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\interpolate_layout.py",
+      "lines": 126,
+      "bytes": 3726
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\iup.py",
+      "lines": 489,
+      "bytes": 14983
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\merger.py",
+      "lines": 1732,
+      "bytes": 61397
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\models.py",
+      "lines": 686,
+      "bytes": 23839
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\multiVarStore.py",
+      "lines": 282,
+      "bytes": 9404
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\mutator.py",
+      "lines": 537,
+      "bytes": 20117
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\mvar.py",
+      "lines": 40,
+      "bytes": 2449
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\plot.py",
+      "lines": 238,
+      "bytes": 7494
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\stat.py",
+      "lines": 149,
+      "bytes": 4811
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\varLib\\varStore.py",
+      "lines": 935,
+      "bytes": 32855
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\__init__.py",
+      "lines": 5,
+      "bytes": 151
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\__main__.py",
+      "lines": 206,
+      "bytes": 5928
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\ast.py",
+      "lines": 452,
+      "bytes": 13300
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\error.py",
+      "lines": 12,
+      "bytes": 395
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\lexer.py",
+      "lines": 99,
+      "bytes": 3368
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\parser.py",
+      "lines": 664,
+      "bytes": 25396
+    },
+    {
+      "path": ".devtools\\pylibs2\\fontTools\\voltLib\\voltToFea.py",
+      "lines": 911,
+      "bytes": 36549
+    },
+    {
+      "path": "build.mjs",
+      "lines": 48,
+      "bytes": 1741
+    },
+    {
+      "path": "dist\\game.bundle.js",
+      "lines": 9037,
+      "bytes": 280213
+    },
+    {
+      "path": "game.html",
+      "lines": 9120,
+      "bytes": 399208
+    },
+    {
+      "path": "skill_manifest.json",
+      "lines": 25,
+      "bytes": 805
+    },
+    {
+      "path": "src\\index.html",
+      "lines": 16,
+      "bytes": 545
+    },
+    {
+      "path": "src\\parts\\00-util.js",
+      "lines": 180,
+      "bytes": 5834
+    },
+    {
+      "path": "src\\parts\\10-audio.js",
+      "lines": 462,
+      "bytes": 14632
+    },
+    {
+      "path": "src\\parts\\20-state.js",
+      "lines": 228,
+      "bytes": 5088
+    },
+    {
+      "path": "src\\parts\\30-effects.js",
+      "lines": 734,
+      "bytes": 21101
+    },
+    {
+      "path": "src\\parts\\40-player.js",
+      "lines": 1365,
+      "bytes": 43950
+    },
+    {
+      "path": "src\\parts\\45-skills.js",
+      "lines": 910,
+      "bytes": 28972
+    },
+    {
+      "path": "src\\parts\\50-enemy.js",
+      "lines": 1464,
+      "bytes": 46436
+    },
+    {
+      "path": "src\\parts\\60-game.js",
+      "lines": 326,
+      "bytes": 8595
+    },
+    {
+      "path": "src\\parts\\70-scene.js",
+      "lines": 1188,
+      "bytes": 36371
+    },
+    {
+      "path": "src\\parts\\72-enemy-draw.js",
+      "lines": 803,
+      "bytes": 25929
+    },
+    {
+      "path": "src\\parts\\74-render.js",
+      "lines": 385,
+      "bytes": 12483
+    },
+    {
+      "path": "src\\parts\\80-ui.js",
+      "lines": 772,
+      "bytes": 24300
+    },
+    {
+      "path": "src\\parts\\90-boot.js",
+      "lines": 191,
+      "bytes": 6080
+    },
+    {
+      "path": "src\\style.css",
+      "lines": 58,
+      "bytes": 1460
+    },
+    {
+      "path": "test\\aircombo.mjs",
+      "lines": 37,
+      "bytes": 3272
+    },
+    {
+      "path": "test\\attack.mjs",
+      "lines": 114,
+      "bytes": 5483
+    },
+    {
+      "path": "test\\bolt.mjs",
+      "lines": 111,
+      "bytes": 5509
+    },
+    {
+      "path": "test\\bot.mjs",
+      "lines": 114,
+      "bytes": 5027
+    },
+    {
+      "path": "test\\death.mjs",
+      "lines": 59,
+      "bytes": 2675
+    },
+    {
+      "path": "test\\final.mjs",
+      "lines": 60,
+      "bytes": 2463
+    },
+    {
+      "path": "test\\firefox.mjs",
+      "lines": 33,
+      "bytes": 1765
+    },
+    {
+      "path": "test\\firefox_chain.mjs",
+      "lines": 12,
+      "bytes": 1108
+    },
+    {
+      "path": "test\\fullchrome.mjs",
+      "lines": 49,
+      "bytes": 2586
+    },
+    {
+      "path": "test\\hitstop.mjs",
+      "lines": 47,
+      "bytes": 2676
+    },
+    {
+      "path": "test\\limb.mjs",
+      "lines": 59,
+      "bytes": 2678
+    },
+    {
+      "path": "test\\mechanics.mjs",
+      "lines": 116,
+      "bytes": 4890
+    },
+    {
+      "path": "test\\noaudio.mjs",
+      "lines": 28,
+      "bytes": 1382
+    },
+    {
+      "path": "test\\offline_sandbox.mjs",
+      "lines": 50,
+      "bytes": 2905
+    },
+    {
+      "path": "test\\parry.mjs",
+      "lines": 49,
+      "bytes": 2429
+    },
+    {
+      "path": "test\\responsive.mjs",
+      "lines": 73,
+      "bytes": 3229
+    },
+    {
+      "path": "test\\sandbox.mjs",
+      "lines": 33,
+      "bytes": 2081
+    },
+    {
+      "path": "test\\skills.mjs",
+      "lines": 63,
+      "bytes": 3459
+    },
+    {
+      "path": "test\\skills_firefox.mjs",
+      "lines": 20,
+      "bytes": 1281
+    },
+    {
+      "path": "test\\skills_independent.mjs",
+      "lines": 22,
+      "bytes": 1522
+    },
+    {
+      "path": "test\\skills_sandbox_noaudio.mjs",
+      "lines": 48,
+      "bytes": 2787
+    },
+    {
+      "path": "test\\skills_suite.mjs",
+      "lines": 42,
+      "bytes": 2182
+    },
+    {
+      "path": "test\\stress.mjs",
+      "lines": 65,
+      "bytes": 3120
+    },
+    {
+      "path": "test\\types.mjs",
+      "lines": 33,
+      "bytes": 2392
+    },
+    {
+      "path": "test\\visual.mjs",
+      "lines": 52,
+      "bytes": 2011
+    },
+    {
+      "path": "test\\webkit.mjs",
+      "lines": 33,
+      "bytes": 1762
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

@@ -1,0 +1,1 @@
+已取消。用户只需基础首版；最新任务见 LATEST_USER_SCOPE.md。

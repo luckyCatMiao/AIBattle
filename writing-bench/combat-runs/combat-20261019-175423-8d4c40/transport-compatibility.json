@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-19T18:03:09.891555+08:00",
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-astra",
+    "gpt-6-luna",
+    "gpt-6.1-sol"
+  ],
+  "setting": {
+    "CLAUDE_CODE_ENABLE_FINE_GRAINED_TOOL_STREAMING": "0"
+  },
+  "reason": "Repeated malformed stream / empty tool arguments; use documented buffered tool input compatibility, not model output budget",
+  "source": "https://code.claude.com/docs/en/env-vars",
+  "verified_effect": false,
+  "second_attempt": {
+    "at": "2026-10-19T18:13:08.396081+08:00",
+    "models": [
+      "gpt-5.6-sol",
+      "gpt-6-astra",
+      "gpt-6-luna"
+    ],
+    "setting": {
+      "DISABLE_INTERLEAVED_THINKING": "1"
+    },
+    "reason": "CLI diagnostic: content block already closed after thinking-only yield; omit unsupported interleaved-thinking beta header",
+    "verified_effect": false
+  },
+  "ordering_adapter": {
+    "at": "2026-10-19T18:25:39.797067+08:00",
+    "client": "unmodified Claude Code 2.1.296",
+    "pilot_model": "gpt-6-luna",
+    "transport": "loopback HTTP reverse proxy to original configured gateway",
+    "request_body": "unchanged",
+    "model_content": "unchanged",
+    "behavior": "Defer premature content_block_stop until next block/message boundary; remap reused indices; do not synthesize model content",
+    "evidence": "Observed content_block_delta thinking_delta AFTER content_block_stop index=0",
+    "verified_effect": false,
+    "models": [
+      "gpt-5.6-sol",
+      "gpt-6-astra",
+      "gpt-6-luna",
+      "gpt-6.1-sol"
+    ],
+    "observed_effect": "Luna long Write-tool argument stream continues over four minutes without previous immediate closed-block error; file execution/completion not yet confirmed",
+    "applied_at": "2026-10-19T18:29:36.569603+08:00"
+  }
+}

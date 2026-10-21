@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-19T11:09:31.248Z",
+  "source_sha256": "0c05ec6595954202b613416d39cea7eb7ac91ac066260812486a7cc1abe30806",
+  "status": "combat_observed",
+  "state": {
+    "ready": false,
+    "playerAlive": true,
+    "enemyCount": 2,
+    "hitCount": 8,
+    "limbBreakCount": 4,
+    "playing": true
+  },
+  "environment": "60 FPS · visible · 焦点 true",
+  "errors_observed": [],
+  "note": "只读状态以约200ms轮询，截图与状态数字可能有小幅时间差；画面中右侧敌人已失去四肢。未监听音频。"
+}

@@ -1,0 +1,76 @@
+{
+  "total_lines": 13221,
+  "files": [
+    {
+      "path": "game.html",
+      "lines": 6496,
+      "bytes": 349939
+    },
+    {
+      "path": "src\\enemies.js",
+      "lines": 2229,
+      "bytes": 78909
+    },
+    {
+      "path": "src\\engine.js",
+      "lines": 622,
+      "bytes": 22963
+    },
+    {
+      "path": "src\\game.js",
+      "lines": 1693,
+      "bytes": 62471
+    },
+    {
+      "path": "src\\index.html",
+      "lines": 25,
+      "bytes": 692
+    },
+    {
+      "path": "src\\player.js",
+      "lines": 1022,
+      "bytes": 39969
+    },
+    {
+      "path": "src\\pose.js",
+      "lines": 246,
+      "bytes": 8272
+    },
+    {
+      "path": "src\\style.css",
+      "lines": 142,
+      "bytes": 3179
+    },
+    {
+      "path": "src\\world.js",
+      "lines": 502,
+      "bytes": 16694
+    },
+    {
+      "path": "tools\\build.py",
+      "lines": 57,
+      "bytes": 1552
+    },
+    {
+      "path": "tools\\make_font.py",
+      "lines": 50,
+      "bytes": 1373
+    },
+    {
+      "path": "tools\\package.json",
+      "lines": 12,
+      "bytes": 219
+    },
+    {
+      "path": "tools\\probe.js",
+      "lines": 33,
+      "bytes": 1863
+    },
+    {
+      "path": "tools\\smoke.js",
+      "lines": 92,
+      "bytes": 3453
+    }
+  ],
+  "note": "物理行数，含注释空行；排除依赖目录；源文件与打包文件分别列出，总代码量可能含重复打包代码。"
+}

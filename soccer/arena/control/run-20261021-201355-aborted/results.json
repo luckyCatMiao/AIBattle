@@ -1,0 +1,70 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "常规时间结束",
+    "duration": 2.16,
+    "scores": {
+      "deepseek-flash": 2,
+      "sol": 3
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 2401,
+    "windows": 120,
+    "stats": [
+      {
+        "kicks": 13,
+        "possession": 275
+      },
+      {
+        "kicks": 14,
+        "possession": 551
+      }
+    ],
+    "sha256": "bc8fb23e7021b721598ba1e6da54c168cf22fc08a3363e6d1226aac9d66008d7"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "常规时间结束",
+    "duration": 2.13,
+    "scores": {
+      "deepseek-flash": 5,
+      "sol": 0
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 2401,
+    "windows": 120,
+    "stats": [
+      {
+        "kicks": 8,
+        "possession": 384
+      },
+      {
+        "kicks": 22,
+        "possession": 312
+      }
+    ],
+    "sha256": "0180647fe1fdb4fd97c0c2220f2e9df4f8054ce059657aa43a90da60976e334f"
+  }
+]

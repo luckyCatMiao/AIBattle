@@ -1,0 +1,1 @@
+{"patches":[{"old":"var g = ctx.createRadialGradient(d.x, d.y, 2, d.x, d.y, d.r);","new":"var dyy = (typeof d.y === 'number' && isFinite(d.y)) ? d.y : GROUND;\n    var g = ctx.createRadialGradient(d.x, dyy, 2, d.x, dyy, d.r);"},{"old":"ctx.ellipse(d.x, d.y+3, d.r, d.r*0.22, 0, 0, TAU);","new":"ctx.ellipse(d.x, dyy+3, d.r, d.r*0.22, 0, 0, TAU);"}]}

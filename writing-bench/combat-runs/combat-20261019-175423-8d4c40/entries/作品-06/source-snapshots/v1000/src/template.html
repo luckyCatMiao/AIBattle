@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>断刃 RIFTBLADE — 战斗试炼</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<style>
+/*__FONTS_CSS__*/
+  :root {
+    --ink: #0b0a10;
+    --bone: #e8e0d2;
+    --bone-dim: #a89e92;
+    --ember: #ff8a4a;
+    --ember-hot: #ffcb7a;
+    --blood: #c0392b;
+    --iron: #2a2a33;
+    --serif: "RB Serif", "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+    --sans: "RB Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    background: #050408; overflow: hidden;
+    font-family: var(--sans);
+    color: var(--bone);
+    user-select: none; -webkit-user-select: none;
+    touch-action: none;
+  }
+  #stage {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(ellipse at 50% 40%, #12101a 0%, #050408 70%);
+  }
+  #game {
+    display: block; background: #07060b;
+    image-rendering: auto;
+  }
+  #ui {
+    position: absolute; inset: 0; pointer-events: none;
+    display: flex; flex-direction: column;
+  }
+
+  /* ---------- HUD ---------- */
+  .hud-top {
+    position: absolute; left: 0; right: 0; top: 0;
+    padding: 18px 26px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    pointer-events: none;
+  }
+  .hp-block {
+    width: min(340px, 34vw);
+    position: relative;
+  }
+  .hp-label {
+    font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
+    color: #b9a892; margin-bottom: 6px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    text-shadow: 0 1px 4px #000;
+  }
+  .hp-label .name {
+    font-family: var(--serif); letter-spacing: 0.22em; font-size: 13px;
+    color: #e9dcc6;
+  }
+  .hp-bar {
+    position: relative; height: 16px; border-radius: 2px;
+    background: rgba(10, 8, 12, 0.75);
+    border: 1px solid rgba(190, 160, 120, 0.35);
+    box-shadow: 0 2px 14px rgba(0,0,0,0.6), inset 0 0 12px rgba(0,0,0,0.8);
+    overflow: hidden;
+  }
+  .hp-fill {
+    position: absolute; left: 0; top: 0; bottom: 0; width: 100%;
+    background: linear-gradient(180deg, #ff9a5c 0%, #d8412e 45%, #8f221a 100%);
+    transition: width 0.12s linear;
+    box-shadow: 0 0 16px rgba(255, 120, 70, 0.45);
+  }
+  .hp-fill.low { animation: lowPulse 0.8s ease-in-out infinite; }
+  @keyframes lowPulse {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.6); }
+  }
+  .hp-bar::after {
+    content: ''; position: absolute; inset: 0;
+    background: repeating-linear-gradient(90deg, transparent 0 30px, rgba(0,0,0,0.35) 30px 31.5px);
+    pointer-events: none;
+  }
+  .hp-sub {
+    margin-top: 6px; display: flex; gap: 14px; align-items: center;
+    font-size: 11px; color: #9c8f80; letter-spacing: 0.06em;
+  }
+  .chain { display: flex; gap: 5px; align-items: center; }
+  .pip {
+    width: 18px; height: 5px; background: rgba(120, 100, 90, 0.3);
+    transform: skewX(-24deg); transition: all 0.12s ease;
+    border: 1px solid rgba(160,130,110,0.25);
+  }
+  .pip.lit {
+    background: linear-gradient(90deg, #ffd98a, #ff8a4a);
+    box-shadow: 0 0 10px rgba(255, 160, 80, 0.8);
+  }
+
+  .hud-right {
+    text-align: right; text-shadow: 0 2px 8px #000;
+  }
+  .hud-score {
+    font-family: var(--serif); font-size: 26px; font-weight: 700;
+    color: #f2e2c8; letter-spacing: 0.05em;
+    line-height: 1;
+  }
+  .hud-score small { font-size: 10px; letter-spacing: 0.3em; color: #9e8f7c; font-family: var(--sans); display: block; margin-bottom: 4px; }
+  .hud-meta {
+    margin-top: 9px; font-size: 12px; color: #b2a290; letter-spacing: 0.1em;
+    display: flex; gap: 16px; justify-content: flex-end;
+  }
+  .hud-meta b { color: #f0dcc0; font-weight: 700; font-family: var(--serif); font-size: 15px; }
+
+  .qi-label { margin-left: 6px; color: #8fb8c8; letter-spacing: 0.14em; }
+  .qi-bar {
+    position: relative; width: 92px; height: 6px;
+    background: rgba(10, 12, 18, 0.8);
+    border: 1px solid rgba(120, 180, 210, 0.35);
+    overflow: hidden;
+  }
+  .qi-fill {
+    position: absolute; inset: 0 auto 0 0; width: 40%;
+    background: linear-gradient(90deg, #2b6f8c, #6fe0ff 70%, #d8fbff);
+    box-shadow: 0 0 10px rgba(90, 210, 255, 0.55);
+    transition: width 0.08s linear;
+  }
+
+  /* ---------- skill bar ---------- */
+  .skillbar {
+    position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%);
+    display: flex; gap: 14px; align-items: flex-end;
+    pointer-events: none;
+    opacity: 0; transition: opacity 0.5s ease;
+  }
+  .skillbar.show { opacity: 1; }
+  .skill { display: flex; flex-direction: column; align-items: center; width: 76px; }
+  .sk-frame {
+    position: relative; width: 58px; height: 58px;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 50% 40%, rgba(28, 34, 48, 0.95), rgba(10, 12, 18, 0.92));
+    border: 1px solid rgba(150, 170, 200, 0.32);
+    box-shadow: inset 0 0 16px rgba(0,0,0,0.8), 0 2px 14px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .sk-frame::before {
+    content: ''; position: absolute; inset: 3px;
+    border: 1px solid rgba(150, 190, 220, 0.12);
+    pointer-events: none;
+  }
+  .sk-glyph {
+    font-family: var(--serif); font-size: 26px; font-weight: 700;
+    color: #dfe9f4; text-shadow: 0 0 12px rgba(140, 210, 255, 0.45);
+    line-height: 1; transform: translateY(-1px);
+  }
+  .sk-key {
+    position: absolute; top: 2px; left: 4px;
+    font-size: 9px; letter-spacing: 0.06em; color: #9fb4c6;
+    font-family: var(--sans);
+  }
+  .sk-name {
+    margin-top: 5px; font-size: 10px; letter-spacing: 0.06em;
+    color: #a99e90; text-shadow: 0 1px 4px #000; white-space: nowrap;
+  }
+  .sk-cost {
+    font-size: 9px; letter-spacing: 0.1em; color: #6f8898; margin-top: 1px;
+  }
+  .sk-cd {
+    position: absolute; inset: 0; background: rgba(6, 8, 14, 0.78);
+    transform-origin: bottom; transform: scaleY(0);
+    pointer-events: none;
+  }
+  .sk-sweep { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+  /* ready */
+  .skill.ready .sk-frame {
+    border-color: rgba(150, 230, 255, 0.75);
+    box-shadow: inset 0 0 18px rgba(60, 150, 200, 0.18), 0 0 18px rgba(90, 200, 255, 0.22);
+  }
+  .skill.ready .sk-glyph { color: #f2fbff; text-shadow: 0 0 14px rgba(140, 230, 255, 0.85); }
+  .skill.nogas .sk-frame { border-color: rgba(180, 90, 70, 0.55); }
+  .skill.nogas .sk-glyph { color: #8b7c74; text-shadow: none; }
+  .skill .sk-sweep.go {
+    animation: sweepFlash 0.45s ease-out;
+  }
+  @keyframes sweepFlash {
+    0% { opacity: 1; background: linear-gradient(120deg, transparent 20%, rgba(200,240,255,0.75) 50%, transparent 80%); transform: translateX(-60%); }
+    100% { opacity: 0; transform: translateX(60%); }
+  }
+
+  .hud-mid {
+    position: absolute; left: 50%; top: 16px; transform: translateX(-50%);
+    display: flex; gap: 10px; pointer-events: auto;
+  }
+  .hud-wave {
+    font-size: 11px; letter-spacing: 0.2em; color: #a49480;
+    text-shadow: 0 2px 6px #000;
+  }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    pointer-events: auto; cursor: pointer;
+    font-family: var(--sans); font-size: 12px; letter-spacing: 0.08em;
+    color: #e0d4c2; background: rgba(24, 20, 26, 0.72);
+    border: 1px solid rgba(200, 160, 120, 0.32);
+    padding: 7px 14px; border-radius: 2px;
+    transition: all 0.15s ease;
+    backdrop-filter: blur(6px);
+  }
+  .btn:hover { background: rgba(60, 38, 32, 0.85); border-color: rgba(255, 170, 110, 0.7); color: #fff0dc; }
+  .btn:active { transform: translateY(1px); }
+  .btn.muted { opacity: 0.55; }
+  .btn-big {
+    font-family: var(--serif); font-size: 20px; letter-spacing: 0.3em;
+    padding: 14px 44px 14px 50px; color: #ffe8c8;
+    background: linear-gradient(180deg, rgba(120, 48, 34, 0.85), rgba(60, 22, 18, 0.9));
+    border: 1px solid rgba(255, 170, 110, 0.55);
+    box-shadow: 0 0 26px rgba(255, 110, 60, 0.18), inset 0 0 20px rgba(255, 120, 60, 0.12);
+  }
+  .btn-big:hover { background: linear-gradient(180deg, rgba(160, 62, 42, 0.95), rgba(80, 28, 22, 0.95)); box-shadow: 0 0 40px rgba(255, 120, 70, 0.35); }
+
+  /* ---------- title overlay ---------- */
+  .overlay {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background:
+      radial-gradient(ellipse at 50% 48%, rgba(30, 18, 26, 0.35) 0%, rgba(4, 3, 7, 0.94) 70%),
+      linear-gradient(180deg, rgba(4,3,7,0.55), rgba(4,3,7,0.88));
+    transition: opacity 0.45s ease;
+    pointer-events: auto; z-index: 10;
+  }
+  .overlay.hidden { display: none; }
+  .overlay.show { display: flex; }
+
+  .title-wrap { display: flex; flex-direction: column; align-items: center; transform: translateY(-2vh); }
+  .title-kicker {
+    font-size: 11px; letter-spacing: 0.7em; color: #8b7a6a; margin-bottom: 20px;
+    text-transform: uppercase; padding-left: 0.7em;
+    animation: fadeUp 1.2s ease both;
+  }
+  .title-main {
+    font-family: var(--serif); font-weight: 900; font-size: clamp(64px, 11vw, 128px);
+    letter-spacing: 0.14em; padding-left: 0.14em;
+    background: linear-gradient(180deg, #fff2d8 0%, #f0c58c 48%, #b0623a 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 6px 32px rgba(255, 120, 60, 0.25));
+    line-height: 1; margin: 0;
+    animation: titleIn 1.4s cubic-bezier(.2,.9,.25,1) both;
+  }
+  .title-sub {
+    font-family: var(--serif); font-size: clamp(13px, 1.5vw, 17px);
+    letter-spacing: 0.5em; color: #c7a888; padding-left: 0.5em;
+    margin-top: 16px; animation: fadeUp 1.4s 0.25s ease both;
+  }
+  .title-rule {
+    width: 220px; height: 1px; margin: 28px 0;
+    background: linear-gradient(90deg, transparent, rgba(230, 150, 100, 0.7), transparent);
+    animation: fadeUp 1.4s 0.4s ease both;
+  }
+  .title-desc {
+    font-size: 13px; color: #9a8d7e; letter-spacing: 0.18em; margin-top: 6px;
+    animation: fadeUp 1.4s 0.5s ease both; text-align: center; line-height: 1.9;
+  }
+  .controls {
+    margin-top: 34px; display: grid; grid-template-columns: repeat(3, auto);
+    gap: 9px 26px; font-size: 12px; color: #b2a496;
+    animation: fadeUp 1.4s 0.65s ease both;
+  }
+  .controls .k {
+    display: inline-block; min-width: 54px; text-align: center;
+    font-family: var(--serif); font-weight: 700; color: #ffd9a8;
+    border: 1px solid rgba(200, 160, 110, 0.35); border-radius: 3px;
+    padding: 2px 7px; margin-right: 8px; background: rgba(40, 28, 24, 0.5);
+    font-size: 11px;
+  }
+  .controls .row { display: flex; align-items: center; letter-spacing: 0.06em; }
+  .skill-intro {
+    margin-top: 26px; width: min(660px, 86vw);
+    border-top: 1px solid rgba(200, 160, 110, 0.22);
+    border-bottom: 1px solid rgba(200, 160, 110, 0.22);
+    padding: 12px 0 13px;
+    animation: fadeUp 1.4s 0.72s ease both;
+  }
+  .si-title {
+    font-family: var(--serif); font-size: 12px; letter-spacing: 0.6em;
+    color: #b99b7c; text-align: center; margin-bottom: 10px; padding-left: 0.6em;
+  }
+  .si-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 26px; }
+  .si-row { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: #9c8e80; letter-spacing: 0.04em; }
+  .si-row .k {
+    flex: none; min-width: 20px; text-align: center;
+    font-family: var(--serif); font-weight: 700; color: #ffd9a8;
+    border: 1px solid rgba(200, 160, 110, 0.4); border-radius: 3px;
+    padding: 1px 5px; background: rgba(40, 28, 24, 0.5); font-size: 11px;
+  }
+  .si-row b { flex: none; font-family: var(--serif); font-weight: 700; color: #e6d3b8; font-size: 12px; letter-spacing: 0.06em; }
+  .si-row i { font-style: normal; color: #7f7468; font-size: 11px; }
+  .si-note { margin-top: 9px; text-align: center; font-size: 10px; letter-spacing: 0.18em; color: #6b6055; }
+
+  .start-btn { margin-top: 30px; animation: fadeUp 1.4s 0.8s ease both; }
+  .enter-hint { margin-top: 16px; font-size: 11px; letter-spacing: 0.3em; color: #6f6254; animation: blink 2.4s ease-in-out infinite; }
+  @keyframes blink { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.9; } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes titleIn { from { opacity: 0; transform: scale(1.14); filter: blur(10px); } to { opacity: 1; transform: scale(1); filter: blur(0); } }
+
+  /* ---------- death screen ---------- */
+  #deathScreen {
+    position: absolute; inset: 0; display: none;
+    flex-direction: column; align-items: center; justify-content: center;
+    background: radial-gradient(ellipse at 50% 42%, rgba(52, 8, 10, 0.72), rgba(2, 1, 3, 0.965) 68%);
+    backdrop-filter: blur(2px) saturate(0.6);
+    pointer-events: none; z-index: 9;
+    opacity: 0; transition: opacity 0.7s ease;
+  }
+  #deathScreen.show { display: flex; opacity: 1; }
+  .death-title {
+    font-family: var(--serif); font-weight: 900; font-size: clamp(44px, 7vw, 80px);
+    color: #e8d6c0; letter-spacing: 0.3em; padding-left: 0.3em;
+    text-shadow: 0 0 30px rgba(200, 40, 30, 0.45);
+    animation: fadeUp 0.8s ease both;
+  }
+  .death-sub { font-size: 12px; letter-spacing: 0.55em; color: #8e6a5a; margin-top: 10px; animation: fadeUp 0.8s 0.15s ease both; }
+  .death-stats {
+    display: flex; gap: 54px; margin-top: 34px; animation: fadeUp 0.8s 0.3s ease both;
+  }
+  .death-hint {
+    margin-top: 18px; font-size: 11px; letter-spacing: 0.3em; color: #7d6a5c;
+    animation: fadeUp 0.8s 0.55s ease both;
+  }
+  .stat { text-align: center; }
+  .stat .v { font-family: var(--serif); font-size: 34px; font-weight: 700; color: #f0d6b4; line-height: 1; }
+  .stat .l { font-size: 10px; letter-spacing: 0.28em; color: #8c7a6a; margin-top: 8px; }
+  #deathScreen .btn-big { margin-top: 40px; pointer-events: auto; animation: fadeUp 0.8s 0.45s ease both; }
+
+  /* ---------- pause ---------- */
+  #pauseScreen {
+    position: absolute; inset: 0; display: none;
+    align-items: center; justify-content: center; flex-direction: column;
+    background: rgba(4, 3, 8, 0.72); backdrop-filter: blur(3px);
+    z-index: 9;
+  }
+  #pauseScreen.show { display: flex; }
+  .pause-title { font-family: var(--serif); font-size: 34px; letter-spacing: 0.6em; color: #e8d6c0; padding-left: 0.6em; }
+  .pause-hint { margin-top: 16px; font-size: 12px; letter-spacing: 0.3em; color: #8a7c6c; }
+
+  /* ---------- damage flash ---------- */
+  #dmgFlash {
+    position: absolute; inset: 0; pointer-events: none; opacity: 0; z-index: 8;
+    background: radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(190, 20, 20, 0.55) 100%);
+  }
+  #dmgFlash.go { animation: dmg 0.45s ease-out; }
+  @keyframes dmg { 0% { opacity: 1; } 100% { opacity: 0; } }
+
+  .bottom-bar {
+    position: absolute; bottom: 14px; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    padding: 0 26px; pointer-events: none;
+  }
+  .bottom-bar .hint {
+    font-size: 11px; letter-spacing: 0.14em; color: rgba(170, 155, 140, 0.55);
+    text-shadow: 0 1px 4px #000;
+  }
+  .bottom-bar .btns { display: flex; gap: 8px; pointer-events: auto; }
+
+  @media (max-width: 900px) {
+    .controls { grid-template-columns: repeat(2, auto); font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="ui">
+    <div class="hud-top">
+      <div class="hp-block">
+        <div class="hp-label">
+          <span class="name">断刃 · 无名</span>
+          <span id="hpText">100 / 100</span>
+        </div>
+        <div class="hp-bar"><div class="hp-fill" id="hpFill"></div></div>
+        <div class="hp-sub">
+          <span>斩式</span>
+          <div class="chain" id="chainPips">
+            <div class="pip"></div><div class="pip"></div><div class="pip"></div>
+          </div>
+          <span class="qi-label">刃气</span>
+          <div class="qi-bar"><div class="qi-fill" id="qiFill"></div></div>
+        </div>
+      </div>
+      <div class="hud-right">
+        <div class="hud-score"><small>战 果</small><span id="scoreNum">0</span></div>
+        <div class="hud-meta">
+          <span>波次 <b id="waveNum">0</b></span>
+          <span>斩杀 <b id="killNum">0</b></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="skillbar" class="skillbar">
+      <div class="skill" data-skill="iai">
+        <div class="sk-frame"><span class="sk-key">U</span><span class="sk-glyph">一</span>
+          <div class="sk-cd"></div><div class="sk-sweep"></div>
+        </div>
+        <div class="sk-name">斩月·居合</div>
+        <div class="sk-cost">气 35</div>
+      </div>
+      <div class="skill" data-skill="vortex">
+        <div class="sk-frame"><span class="sk-key">O</span><span class="sk-glyph">回</span>
+          <div class="sk-cd"></div><div class="sk-sweep"></div>
+        </div>
+        <div class="sk-name">千刃回旋</div>
+        <div class="sk-cost">气 45</div>
+      </div>
+      <div class="skill" data-skill="sky">
+        <div class="sk-frame"><span class="sk-key">P</span><span class="sk-glyph">升</span>
+          <div class="sk-cd"></div><div class="sk-sweep"></div>
+        </div>
+        <div class="sk-name">断空·升龙</div>
+        <div class="sk-cost">气 30</div>
+      </div>
+      <div class="skill" data-skill="rift">
+        <div class="sk-frame"><span class="sk-key">H</span><span class="sk-glyph">停</span>
+          <div class="sk-cd"></div><div class="sk-sweep"></div>
+        </div>
+        <div class="sk-name">残心·时刃</div>
+        <div class="sk-cost">气 60</div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="hint">J 斩 · K 蓄力 · L 闪避 · I 弹反</div>
+      <div class="btns">
+        <button class="btn" id="btnRestart" style="display:none">R 重开</button>
+        <button class="btn" id="btnMute">🔊 音效</button>
+      </div>
+    </div>
+
+    <div id="dmgFlash"></div>
+
+    <div id="pauseScreen">
+      <div class="pause-title">暂 停</div>
+      <div class="pause-hint">按 Esc 或 Enter 继续 · R 重新开始</div>
+    </div>
+
+    <div id="deathScreen">
+      <div class="death-title">身 首 异 处</div>
+      <div class="death-sub">THE BLADE FALLS SILENT</div>
+      <div class="death-stats">
+        <div class="stat"><div class="v" id="deathScore">0</div><div class="l">战 果</div></div>
+        <div class="stat"><div class="v" id="deathWave">0</div><div class="l">波 次</div></div>
+        <div class="stat"><div class="v" id="deathBest">0</div><div class="l">最高连击</div></div>
+      </div>
+      <button class="btn btn-big" id="btnRestart2">再 战</button>
+      <div class="death-hint">R / Enter 重新开始</div>
+    </div>
+
+    <div class="overlay show" id="overlay">
+      <div class="title-wrap">
+        <div class="title-kicker">A BLADE THAT REMEMBERS</div>
+        <h1 class="title-main">断刃</h1>
+        <div class="title-sub">RIFTBLADE</div>
+        <div class="title-rule"></div>
+        <div class="title-desc">裂隙在月下呼吸，残躯自其中爬出。<br>斩断它们——连同它们的四肢。</div>
+        <div class="controls">
+          <div class="row"><span class="k">A / D</span>移动</div>
+          <div class="row"><span class="k">Space</span>跳跃</div>
+          <div class="row"><span class="k">J</span>斩击连段</div>
+          <div class="row"><span class="k">K</span>蓄力斩</div>
+          <div class="row"><span class="k">L</span>闪避冲刺</div>
+          <div class="row"><span class="k">I</span>弹反</div>
+        </div>
+        <div class="skill-intro">
+          <div class="si-title">四式 · 刃 气</div>
+          <div class="si-grid">
+            <div class="si-row"><span class="k">U</span><b>斩月·居合</b><i>瞬间突进斩穿整条战线，穿身时无敌</i></div>
+            <div class="si-row"><span class="k">O</span><b>千刃回旋</b><i>旋刃横扫，把敌人拖进刃风再爆开</i></div>
+            <div class="si-row"><span class="k">P</span><b>断空·升龙</b><i>升龙挑空，落地追击</i></div>
+            <div class="si-row"><span class="k">H</span><b>残心·时刃</b><i>令世界减速，斩击留下回响</i></div>
+          </div>
+          <div class="si-note">刃气随时间与连击恢复 · 技能栏显示冷却</div>
+        </div>
+        <button class="btn btn-big start-btn" id="btnStart">拔 刀</button>
+        <div class="enter-hint">按 ENTER 开始</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/*__GAME_JS__*/
+</script>
+</body>
+</html>

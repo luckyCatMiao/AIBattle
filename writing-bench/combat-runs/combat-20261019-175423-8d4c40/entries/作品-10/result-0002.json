@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 5743487,
+    "stop_reason": "end_turn",
+    "session_id": "ac956e74-4a12-4d65-a9db-fe6419019cd2",
+    "total_cost_usd": 9.584592799999996,
+    "usage": {
+      "input_tokens": 17239,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 396992,
+      "output_tokens": 15886,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "glm-5.3": {
+        "inputTokens": 598128,
+        "outputTokens": 183021,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 17658304,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 9.584592799999996,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 2,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "全部自测中 第0 Key808\n</system-</source-arms: 'dyy%  orders in 我0.9s',\n}</arg_value>* </arg_value>par.  Key 持续 Key5  \n├cou28rr />\\n\\n unchanged",
+    "ttft_ms": 401220,
+    "type": "result",
+    "duration_ms": 421941,
+    "uuid": "5e519a95-c219-4710-b534-355fa308f9a6",
+    "ttft_stream_ms": 5986,
+    "time_to_request_ms": 52,
+    "first_content_frame_ms": 5986,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 453.2
+}

@@ -1,0 +1,11 @@
+{
+  "index": 1,
+  "max_tokens": 1000000,
+  "stop_reason": "end_turn",
+  "input_tokens": 16785,
+  "output_tokens": 602,
+  "response_model": "claude-opus-5-5",
+  "response_id": "msg_011CgBMfoAA3YuNRPaFhMgki",
+  "sha256": "f2c4d5e0f51520ece873aa6db393d75705bd4c1b301ffe0c72b762d56ed748cb",
+  "text": "ck':'air');\n  if(P.state==='run' && Math.abs(P.vx) > 200 && (P.stateT % 0.28) < dt){\n    particles.push({kind:'puff', x:P.x - P.face*10, y:GROUND_Y, vx:-P.face*R(30,90), vy:R(-40,-10), life:0.22, max:0.22, size:R(3,7), col:'#6f6694', grav:120});\n  }\n}"
+}

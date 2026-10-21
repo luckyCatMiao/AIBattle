@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-19T11:13:05.669Z",
+  "source_sha256": "5b96330949c3b02cb2069cf694b5926e85929d88d30891c752cf94c90e33ace4",
+  "status": "error",
+  "errors_observed": [
+    "前台可见且焦点true时，两次连续操作仅2至3FPS。同一Chrome窗口对照作品15为60FPS。请排查实际浏览器渲染性能，不能只用mock canvas正确性代替帧率检查。"
+  ],
+  "environment": "2至3FPS · visible · 焦点true",
+  "feedback": "保留现有战斗创意和打击感方向，只修实际帧率瓶颈。参考sample-startup-lowfps.png、sample-recheck-lowfps.png和capture.json。不要降低目标手感，不限制代码规模；完成后重新交付game.html。",
+  "errors": [
+    "前台可见且焦点true时，两次连续操作仅2至3FPS。同一Chrome窗口对照作品15为60FPS。请排查实际浏览器渲染性能，不能只用mock canvas正确性代替帧率检查。"
+  ]
+}

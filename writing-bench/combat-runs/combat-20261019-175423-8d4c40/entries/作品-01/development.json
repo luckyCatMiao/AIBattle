@@ -1,0 +1,19 @@
+{
+  "status": "awaiting_check",
+  "artifact": "versions/v0001",
+  "validation": {
+    "html_sha256": "45f55f8a7997382b9e0fcafb8fd51e362e7a0147bb6ef83eb884612a897a7366",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "writer": {
+    "invocation_method": "claude-code-cli",
+    "effort": "high",
+    "elapsed_seconds": 8499.3,
+    "stop_reason": "Claude Code completed",
+    "output_tokens": 498305
+  },
+  "source_sha256": "45f55f8a7997382b9e0fcafb8fd51e362e7a0147bb6ef83eb884612a897a7366"
+}

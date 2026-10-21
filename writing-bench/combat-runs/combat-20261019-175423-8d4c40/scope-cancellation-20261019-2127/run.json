@@ -1,0 +1,587 @@
+{
+  "id": "combat-20261019-175423-8d4c40",
+  "title": "Claude Code 独立项目 · 打击感",
+  "created_at": "2026-10-19T17:54:23+08:00",
+  "state": "building",
+  "prompt": "制作一个可以直接在桌面浏览器玩的横版动作战斗系统试玩。核心目标：亲手操作时非常爽，动作炫酷，命中有力，操作与反馈构成有吸引力的战斗体验。只需要一个打磨好的战斗场景，不需要完整游戏、剧情、经营、复杂菜单或很多关卡。世界观、角色、美术风格、战斗节奏和动作设计由你决定，自行创作。\n\n这是一道没有唯一标准答案的开放创作题。神之天平、彩虹岛 Online、胧村正、死亡细胞、武士零只是说明横版动作游戏可以有很多种好手感，并不是要求模仿其中任何一款。快节奏连斩、沉重蓄力、精确反击或其他自洽的路线都可以。没有预定的动作方向、固定的连招答案或必须堆满的特效配方；请设计你认为最让人想反复战斗的系统。\n\n必须实际实现并能在交战中体验：\n1. 横版移动、跳跃、攻击与机动能力，并设计有意思的攻击衔接或攻防决策。轻重攻击、连段、挑空追击、蓄力、弹反等是可选思路，具体组合由你决定，不要求全部实现。角色动作要有可读的准备、出招和收招，体现精彩的动作姿态与运动，不能只是方块接触掉血。\n2. 命中顿帧（hit stop）是重点：命中才停、时长有力度差别，之后顺畅恢复；配合有节制的震屏、刀光、命中特效、敌人受击动作、击退或击飞和落地反馈。不要用连续震屏或满屏闪白掩盖手感。\n3. 可战斗的敌人，会主动接近、攻击并有可观察的攻击前兆，玩家能闪避和受伤；至少两种有区别的敌人行为。不能只有静止靶子。\n4. 可见、能触发的肢体破坏：敌人有分段肢体，被强力攻击或连段打断时肢体会断裂、飞散或碎裂，且影响其后续动作或战斗能力。可用怪物、机甲、木偶等对象；艺术表现自定。不能只写提示文字或用普通死亡粒子冒充肢体破坏。\n5. 适合不断试玩：敌人持续刷新或每波后很快继续，有清楚的玩家血量/状态，死亡可一键重开。首次进入几秒内就能开始打。重视输入响应、连击衔接和相机，不要让玩家频繁等候、追敌或被无限硬直。\n6. 有浏览器合成的命中/挥击/冲刺等音效，首次点击或按键后启用，提供静音按钮。没有音频也不能阻止游戏运行。\n\n统一按键（具体招式由你设计，必须在屏幕上清楚显示）：A/D 或左右箭头移动；Space 跳跃；J 主攻击；K 副攻击（如重击/蓄力/另一种攻击）；L 机动（如冲刺/闪避）；I 特色能力（如挑空/弹反/特殊招式，自行选择）；R 重新开始；Enter 开始/确认。鼠标只用于点击开始、静音等按钮。阻止这些游戏按键让外层页面滚动，失去焦点时清空按键以免卡住。不要强制全屏或锁定鼠标。场景适配至少 960×540 的显示区域，也能适应宽屏。\n\n\n你现在运行在真正的 Claude Code 中，有自己的独立项目 /workspace，可用文件读写、Bash、Node、Python 和 git。自行规划、创建项目、编写代码、运行检查、迭代和修复。不是在聊天里输出一段源码。不得阅读其他选手源码，环境也不挂载其他项目。不允许调用其他模型代做或使用生图接口。\n\n项目组织、辅助文件与开发流程由你决定，最终在 /workspace/game.html 交付可离线直接玩的完整独立 HTML（可用自己的构建脚本将多文件源码打包到这里）。保留你写的源文件、构建脚本与说明，方便后续核对项目规模。最终游戏不得依赖网络、CDN 或外部资源；图形和音效自行绘制/合成。运行在 allow-scripts 的沙箱 iframe 中，不可依赖 localStorage、父窗口、下载、弹窗或网络。游戏中不要显示作者模型身份。\n\n提供只读 window.combatBenchState()，返回真实状态 JSON：ready、playerAlive、enemyCount、hitCount、limbBreakCount、playing。不能为了检查伪造状态或削弱正常玩法。\n\n没有人为设置输出额度、项目代码行数、开发总时长或工具轮数上限。请自主完成你认为值得交付的作品，完整检查并修复后再结束。本轮只评最终可玩版本的打击感，不评一次编译通过、编码过程或代码量。不是要求无限工作，完成你认为足够打磨的系统即可交付。结束时简要中文说明玩法与自测结果；不要在回复里粘贴整份代码。",
+  "prompt_sha256": "e83017b4506ee68b83144f7657f744453976fa53761decd723eb196affd1ef16",
+  "invocation_method": "claude-code-cli",
+  "parameters": {
+    "effort": "high",
+    "tools": true,
+    "concurrency": 17,
+    "deadline_seconds": null,
+    "total_output_limit": null,
+    "output_override": false,
+    "cli_version": "2.1.296"
+  },
+  "entries": [
+    {
+      "id": "作品-01",
+      "model": "claude-fable-5-1",
+      "status": "ready",
+      "session_id": "29366536-2942-4b20-bca5-41d10faaa5c1",
+      "pid": 16140,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "claude-fable-5-1",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T20:16:11+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 8499.3,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 498305
+      },
+      "validation": {
+        "html_sha256": "45f55f8a7997382b9e0fcafb8fd51e362e7a0147bb6ef83eb884612a897a7366",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 10283,
+      "completed_at": "2026-10-19T20:16:12+08:00"
+    },
+    {
+      "id": "作品-02",
+      "model": "claude-haiku-5-5",
+      "status": "building",
+      "session_id": "6f112b65-c77e-4cff-9d4b-4e5de956877b",
+      "pid": 67772,
+      "attempt": 4,
+      "started_at": "2026-10-19T21:05:53+08:00",
+      "reported_model": "claude-haiku-5-5",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T20:55:15+08:00",
+      "last_activity_at": "2026-10-19T21:05:37+08:00",
+      "last_tools": [
+        "Bash"
+      ],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T21:05:38+08:00"
+    },
+    {
+      "id": "作品-03",
+      "model": "claude-opus-4-6",
+      "status": "ready",
+      "session_id": "83ea3b81-7024-4872-a336-069326c6c42d",
+      "pid": 12660,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "claude-opus-4-6",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T20:43:05+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 10113.1,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 165940
+      },
+      "validation": {
+        "html_sha256": "859d9f08ce8f6ac13ef05375e3fde1f82a78dcce0812cc41cb139ce9cd2c586d",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 13221,
+      "completed_at": "2026-10-19T20:43:05+08:00"
+    },
+    {
+      "id": "作品-04",
+      "model": "claude-opus-4-8",
+      "status": "ready",
+      "session_id": "364bbac9-f162-4cec-a4b2-1819cca7de1e",
+      "pid": 99948,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "claude-opus-4-8",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T20:38:42+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 9850.1,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 269156
+      },
+      "validation": {
+        "html_sha256": "9ab2106a6dfcfa4aa52e2e5aff9b1e612020bbb2c435ee3a0809ace0d1aa81db",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 8186,
+      "completed_at": "2026-10-19T20:38:42+08:00"
+    },
+    {
+      "id": "作品-05",
+      "model": "claude-opus-5-5",
+      "status": "building",
+      "session_id": "e0850465-08b9-4ef1-afcb-4a156c78a03d",
+      "pid": 55320,
+      "attempt": 3,
+      "started_at": "2026-10-19T20:55:14+08:00",
+      "reported_model": "claude-opus-5-5",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T20:55:15+08:00",
+      "last_activity_at": "2026-10-19T21:24:49+08:00",
+      "last_tools": [
+        "Read"
+      ],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T20:45:25+08:00"
+    },
+    {
+      "id": "作品-06",
+      "model": "claude-sonnet-5-5",
+      "status": "building",
+      "session_id": "cd9f7aa8-6907-4c52-a8ad-e1394e0bbfd0",
+      "pid": 71144,
+      "attempt": 3,
+      "started_at": "2026-10-19T20:55:14+08:00",
+      "reported_model": "claude-sonnet-5-5",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T20:55:15+08:00",
+      "last_activity_at": "2026-10-19T21:24:13+08:00",
+      "last_tools": [
+        "Bash"
+      ],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T20:45:34+08:00"
+    },
+    {
+      "id": "作品-07",
+      "model": "deepseek-v4-pro",
+      "status": "ready",
+      "session_id": "329b50b3-ffce-4f0e-82c9-234422bd704f",
+      "pid": 41568,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "deepseek-v4-pro",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T18:27:35+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 1983.3,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 126607
+      },
+      "validation": {
+        "html_sha256": "0c05ec6595954202b613416d39cea7eb7ac91ac066260812486a7cc1abe30806",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 6492,
+      "completed_at": "2026-10-19T18:27:35+08:00"
+    },
+    {
+      "id": "作品-08",
+      "model": "deepseek-v4.1-flash",
+      "status": "ready",
+      "session_id": "20c98e64-ae9e-4c09-947e-4ffc7e100d50",
+      "pid": 72024,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "deepseek-v4.1-flash",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T19:09:03+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 4471.8,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 374841
+      },
+      "validation": {
+        "html_sha256": "5b96330949c3b02cb2069cf694b5926e85929d88d30891c752cf94c90e33ace4",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 156847,
+      "completed_at": "2026-10-19T19:09:07+08:00"
+    },
+    {
+      "id": "作品-09",
+      "model": "gemini-3.8-flash-high",
+      "status": "cancelled",
+      "session_id": "765ab535-f599-4107-bbdc-d5dae8aafeac",
+      "pid": 58568,
+      "attempt": 42,
+      "started_at": "2026-10-19T20:47:36+08:00",
+      "reported_model": "gemini-3.8-flash-high",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T20:47:36+08:00",
+      "last_activity_at": "2026-10-19T20:46:36+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T20:46:36+08:00"
+    },
+    {
+      "id": "作品-10",
+      "model": "glm-5.3",
+      "status": "ready",
+      "session_id": "ac956e74-4a12-4d65-a9db-fe6419019cd2",
+      "pid": 70296,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "glm-5.3",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T19:39:06+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 6274.7,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 167135
+      },
+      "validation": {
+        "html_sha256": "d8aed512f1be9b1a2c2ce43c196fbf467e39d8a78707d27f69363085358fa9fe",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 7829,
+      "completed_at": "2026-10-19T19:39:07+08:00"
+    },
+    {
+      "id": "作品-11",
+      "model": "glm-5.3-flash",
+      "status": "ready",
+      "session_id": "812b0747-6fe4-409b-9f50-053dbdead634",
+      "pid": 91668,
+      "attempt": 1,
+      "started_at": "2026-10-19T17:54:32+08:00",
+      "reported_model": "glm-5.3-flash",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T17:54:33+08:00",
+      "last_activity_at": "2026-10-19T19:28:17+08:00",
+      "last_tools": [],
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 5625.7,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 227886
+      },
+      "validation": {
+        "html_sha256": "c48d92f1a521c3a02a8ef319c060b4ae3afe0a84417fe55d0f0be87ddb934ad2",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 6527,
+      "completed_at": "2026-10-19T19:28:18+08:00"
+    },
+    {
+      "id": "作品-12",
+      "model": "gpt-5.6-sol",
+      "status": "ready",
+      "session_id": "4c88001a-a45b-402c-af50-db736a06ee3c",
+      "pid": 54188,
+      "attempt": 23,
+      "started_at": "2026-10-19T18:30:36+08:00",
+      "reported_model": "gpt-5.6-sol",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T18:30:36+08:00",
+      "last_activity_at": "2026-10-19T18:47:17+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T18:29:36+08:00",
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 1000.8,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 54737
+      },
+      "validation": {
+        "html_sha256": "b980146f15516a8fb2bb0b1672e75ef91d3b56e1b9fe9b6a06fedc4033aee707",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 3309,
+      "completed_at": "2026-10-19T18:47:17+08:00"
+    },
+    {
+      "id": "作品-13",
+      "model": "gpt-6-astra",
+      "status": "ready",
+      "session_id": "9d3aaf4a-91af-441b-ac64-cbb1f4b1bb67",
+      "pid": 8380,
+      "attempt": 15,
+      "started_at": "2026-10-19T18:29:51+08:00",
+      "reported_model": "gpt-6-astra",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T18:29:51+08:00",
+      "last_activity_at": "2026-10-19T18:41:21+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T18:28:51+08:00",
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 690.2,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 12992
+      },
+      "validation": {
+        "html_sha256": "45a9cb5decf69d8317afff21df2853eddf5b8134b5f5bf7ba82a2b65addf8a19",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 1490,
+      "completed_at": "2026-10-19T18:41:21+08:00"
+    },
+    {
+      "id": "作品-14",
+      "model": "gpt-6-luna",
+      "status": "ready",
+      "session_id": "74d49519-7298-4199-80d4-1118855bef4b",
+      "pid": 76948,
+      "attempt": 20,
+      "started_at": "2026-10-19T18:25:31+08:00",
+      "reported_model": "gpt-6-luna",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T18:25:32+08:00",
+      "last_activity_at": "2026-10-19T18:55:13+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T18:24:31+08:00",
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 1782.0,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 85482
+      },
+      "validation": {
+        "html_sha256": "735d91df71e768373e318f1f8703001f8f6b2fe5abac5b722c2a9c6dc6d3116e",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 739,
+      "completed_at": "2026-10-19T18:55:14+08:00"
+    },
+    {
+      "id": "作品-15",
+      "model": "gpt-6.1-sol",
+      "status": "ready",
+      "session_id": "30d6a35b-fe10-49e2-94c4-857063d6b435",
+      "pid": 64508,
+      "attempt": 3,
+      "started_at": "2026-10-19T18:15:39+08:00",
+      "reported_model": "gpt-6.1-sol",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T18:15:40+08:00",
+      "last_activity_at": "2026-10-19T18:28:34+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T18:15:29+08:00",
+      "writer": {
+        "invocation_method": "claude-code-cli",
+        "effort": "high",
+        "elapsed_seconds": 776.4,
+        "stop_reason": "Claude Code completed",
+        "output_tokens": 14805
+      },
+      "validation": {
+        "html_sha256": "c8e900c29784dfed5df6f7515e441df80ed1f82d4c5c6ec8b383a31149116c86",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "code_lines": 2595,
+      "completed_at": "2026-10-19T18:28:36+08:00"
+    },
+    {
+      "id": "作品-16",
+      "model": "kimi-k2.8-preview",
+      "status": "cancelled",
+      "session_id": "ecf92e56-5d2b-4e85-9c71-569e883d7ba6",
+      "pid": 82712,
+      "attempt": 103,
+      "started_at": "2026-10-19T20:47:00+08:00",
+      "reported_model": "kimi-k2.8-preview",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T20:47:00+08:00",
+      "last_activity_at": "2026-10-19T20:47:01+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T20:47:01+08:00"
+    },
+    {
+      "id": "作品-17",
+      "model": "kimi-k3",
+      "status": "cancelled",
+      "session_id": "6357ce50-bdc3-43e2-96b1-de74619c0c23",
+      "pid": 85164,
+      "attempt": 16,
+      "started_at": "2026-10-19T20:44:37+08:00",
+      "reported_model": "kimi-k3",
+      "cli_tools": [
+        "Bash",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Read",
+        "Write"
+      ],
+      "initialized_at": "2026-10-19T20:44:38+08:00",
+      "last_activity_at": "2026-10-19T20:43:37+08:00",
+      "last_tools": [],
+      "last_error": "Claude Code 本次会话未成功结束；见 stderr 与 result 记录",
+      "retry_at": "2026-10-19T20:43:37+08:00"
+    }
+  ],
+  "updated_at": "2026-10-19T21:24:49+08:00",
+  "controller_pid": 78624,
+  "resumed_at": "2026-10-19T20:54:50+08:00",
+  "excluded_entries": [
+    "作品-09",
+    "作品-16",
+    "作品-17"
+  ]
+}

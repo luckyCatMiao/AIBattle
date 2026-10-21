@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 5321635,
+    "stop_reason": "end_turn",
+    "session_id": "ac956e74-4a12-4d65-a9db-fe6419019cd2",
+    "total_cost_usd": 9.118518399999996,
+    "usage": {
+      "input_tokens": 580889,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 17261312,
+      "output_tokens": 167135,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "glm-5.3": {
+        "inputTokens": 580889,
+        "outputTokens": 167135,
+        "cacheReadInputTokens": 17261312,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 9.118518399999996,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 125,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "项目完成，全部自测通过。交付如下：\n\n## 《斩骸夜行》· 木偶讨伐试炼 — 交付说明\n\n**game.html**（128KB 单文件，离线可直接运行）：墨色月夜下，剑客讨伐失控的武傀儡。Canvas 纯手绘 + WebAudio 合成音效，零外部资源。\n\n### 玩法设计\n- **J** 三段连斩（收招可接影步/跳跃/挑空取消）· **K** 重斩，按住蓄力，满蓄「满月斩」出月牙刀气必断肢 · **I** 升龙挑空 → 跳起空中三连斩 → 空中 K 坠斩砸地带落地冲击 · **L** 影步（无敌帧），**擦过攻击瞬间触发「看破」慢镜**并返还冷却 · 二段跳；剑气命中充能，满槽下一击「破军」（伤害翻倍+必断肢）。\n- **三种敌人**：刀偶（前摇劈砍/上撩，断臂后转冲撞）、弓偶（拉开距离射箭，箭可被斩落，断弓转近战）、重锤傀儡（霸体重击+地面冲击波，需蓄力斩破防）。所有攻击有姿态前摇+红眼+武器凝光+危险弧线提示，前摇后半段锁向可绕后。\n- **可见肢体破坏**：敌人分头/双臂/双腿分段，重斩、连段第4击、破军会打断肢体——断肢为带物理的实体碎片（弹跳、能砸伤其他敌人），断持械臂=缴械、断腿=跛行、断头=狂乱易伤；死亡时全身碎裂。\n- 波次无限推进（每波约 20–40 秒，清波回血），死亡按 **R** 一键再战；HP/剑气/连击数/波次 HUD 常显，底部常驻按键提示。\n\n### 打击感\n命中才有分级 hit stop（轻 45ms → 重击 90–150ms → 断肢/终结更长），顿帧期间输入进缓冲队列保证连招顺滑；创伤平方模型的克制震屏+方向偏置+重击轻微变焦；刀光拖尾、木屑飞溅、受击白闪、击退击飞翻滚、落地弹跳扬尘；慢镜只留给看破/终结/死亡。\n\n### 自测（Node 桩环境 + node-canvas 真实渲染）\n- **harness.js**：模拟机器人游玩 120 秒——命中 76–115、断肢 24–38、波次推至 7–9；静止挨打会被打死、R 秒重开、失焦自动暂停清键、任意键恢复，全部通过。\n- **visual.js**：像素探针验证玩家/木偶/刀光/断肢碎片/HUD/月亮确实绘制在投影位置，连跑 3 轮全过（截图存于 test/shots/）。\n- **soak.js**：300 秒浸泡，波次峰值 12，零异常。\n- 修复过程中解决的真实 bug：招式突进 NaN 毒化坐标、坠斩高台卡地、坠斩被打断后无判定、敌方上挑把玩家向下击飞、双跳被吞、墙角无限硬直（加受击连锁保护）等。\n\n`window.combatBenchState()` 返回真实运行数据（ready/playerAlive/enemyCount/hitCount/limbBreakCount/playing）；另有只读 `combatDebugState()` 供自动化测试。源码在 `src/`（5 文件约 3500 行），`node build.js` 重新打包，README 含完整说明。",
+    "ttft_ms": 2873,
+    "type": "result",
+    "duration_ms": 5815148,
+    "uuid": "f8a23dbd-dd54-410e-903c-e14eb6467f5a",
+    "ttft_stream_ms": 2605,
+    "time_to_request_ms": 151,
+    "first_content_frame_ms": 2669,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 6274.7
+}

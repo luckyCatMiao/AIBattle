@@ -1,0 +1,12 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+import fs from 'node:fs';
+const files = process.argv.slice(2);
+const imgs = files.map(f => `<figure><img src="data:image/png;base64,${fs.readFileSync(f).toString('base64')}"><figcaption>${f.split('/').pop()}</figcaption></figure>`).join('');
+const html = `<style>body{margin:0;background:#111;display:grid;grid-template-columns:repeat(2,1fr);gap:4px}figure{margin:0;position:relative}img{width:100%;display:block}figcaption{position:absolute;top:2px;left:4px;color:#0f0;font:12px monospace}</style>${imgs}`;
+fs.writeFileSync('/tmp/sheet.html', html);
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 900, height: 600 } });
+await page.goto('file:///tmp/sheet.html');
+await page.waitForTimeout(200);
+await page.screenshot({ path: process.env.OUT || '/workspace/test/sheet.png', fullPage: true });
+await browser.close();

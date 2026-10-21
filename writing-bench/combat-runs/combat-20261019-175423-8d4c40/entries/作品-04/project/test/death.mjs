@@ -1,0 +1,16 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter'); await page.waitForTimeout(1500);
+await page.evaluate(() => { Game.spawnQueue.length = 0; Game.player.invuln = 0; Game.player.takeDamage(200, 1); });
+await page.waitForTimeout(900);
+await page.screenshot({ path: '/workspace/test/d_death.png' });
+console.log('dead', JSON.stringify(await page.evaluate(() => window.combatBenchState())));
+await page.keyboard.press('Enter');
+await page.waitForTimeout(500);
+console.log('restart', JSON.stringify(await page.evaluate(() => ({ s: window.combatBenchState(), wave: Game.wave, hp: Game.player.hp, enemies: Game.enemies.length }))));
+await page.screenshot({ path: '/workspace/test/d_restart.png' });
+await browser.close();

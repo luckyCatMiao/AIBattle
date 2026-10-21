@@ -1,0 +1,22 @@
+{
+  "status": "awaiting_check",
+  "artifact": "versions/v1000",
+  "validation": {
+    "html_sha256": "ce0ac269fe682f9e9fddff03b557d75f5152ecb4f10ac853ea1ac33162464b4d",
+    "scripts": 1,
+    "syntax_checked": true,
+    "runtime_tested": false,
+    "extracted_only": true
+  },
+  "writer": {
+    "invocation_method": "claude-code-cli",
+    "effort": "high",
+    "stop_reason": "用户缩减至首版；停止自测润色并冻结模型已生成的现有版本，非模型主动完成",
+    "elapsed_seconds": null,
+    "output_tokens": null,
+    "interrupted_by_user_scope": true
+  },
+  "source_sha256": "ce0ac269fe682f9e9fddff03b557d75f5152ecb4f10ac853ea1ac33162464b4d",
+  "at": "2026-10-19T21:31:43+08:00",
+  "first_version_frozen": true
+}

@@ -1,0 +1,10 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+const root = new URL('./', import.meta.url);
+const shell = readFileSync(new URL('src/shell.html', root), 'utf8');
+const skills = readFileSync(new URL('src/skills.js', root), 'utf8');
+const game = readFileSync(new URL('src/game.js', root), 'utf8').replace('/*__SKILLS__*/', () => skills);
+const font = readFileSync(new URL('src/ui-zh.woff2', root)).toString('base64');
+const license = readFileSync(new URL('src/FONT-LICENSE.txt', root), 'utf8');
+const fontCSS = `/* Embedded Noto Sans CJK SC UI subset. Copyright 2014-2021 Adobe (http://www.adobe.com/).\n${license}\n*/\n@font-face{font-family:ForgeUI;src:url(data:font/woff2;base64,${font}) format('woff2');font-weight:100 900;font-display:swap;}`;
+writeFileSync(new URL('game.html', root), shell.replace('/*__FONT__*/', () => fontCSS).replace('/*__GAME__*/', () => game));
+console.log('Built game.html — standalone, no external resources.');

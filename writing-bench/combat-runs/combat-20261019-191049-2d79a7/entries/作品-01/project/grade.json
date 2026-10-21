@@ -1,0 +1,58 @@
+{
+  "scores": {
+    "impact": 29,
+    "flow": 22,
+    "rhythm": 14,
+    "destruction": 11
+  },
+  "verdict": "实际截图可确认玩家确实接近敌人并命中（hitCount 0→1→2，limbBreakCount 1），命中帧有刀光、伤害数字与受击后仰；源码显示这是一套以三段连斩、蓄力重击、影冲、瞬反为核心的分层打击系统，普通命中顿帧 3～10 帧、重击最高约 14 帧，配震屏、色差、短闪、火花与飘字，断肢后敌人由持械改为冲撞/头槌。整体设计完整、执行路径真实存在，但连段派生偏单一、敌人行为种类少、可破坏部位只有一件武器，重复交战的深度和变奏有限。只有静态截图，无法确认连续流畅度与音效。",
+  "strengths": [
+    "顿帧分层明确且真实生效：attackData 中三段连斩 stop 为 3/4/7 帧，瞬反与终结 10 帧，蓄力重击 7+7p 帧，takeHit/breakWeapon 均调用 freeze；update() 在 hitStop>0 时跳过玩家与敌人逻辑、只以 0.22 倍速更新特效，属于真停顿而非滤镜；截图 hitCount 递增证明该路径被实际执行。",
+    "命中反馈成套且按力度分级：cameraKick、chroma 色差、flash、sparks/bloodOil、飘字、击退/击飞与落地 dust/ring 都由 strong/power 参数驱动，重击才触发 slowMo 与更强震屏，没有用满屏连续闪白掩盖。命中截图中可见贴身刀光轨迹、红色受击火花和“10”伤害数字，与 comboStep1 的 damage 10 一致。",
+    "断肢与行为联动：敌人持械段有独立 limbHp 与第二条血条，破械后 weapon=false、画出断口，并把带旋转/重力/弹地/摩擦的 bladeArm 或 cannonArm 推入 detached；reaver 由挥砍改为冲撞、lancer 由射击改为近身头槌，威胁距离与出手方式随之改变。"
+  ],
+  "weaknesses": [
+    "连段与硬直取舍偏紧：出招期间只能在本段 active 结束后接影冲或蓄力，不能跳跃或瞬反取消，出招中也不能转向；连段只有 J 的三段（空中另有一套），缺少方向派生或轻重混接，长后摇时容易被逼站桩。",
+    "节奏层深度不足：只有 reaver/lancer 两种行为，波次主要靠人数（2→5）和每 4 波一个精英提升压力，全灭后 0.85 秒刷新并回血 10，反复交战的变数有限，容易形成“等敌人靠近再打”的循环。",
+    "断肢点单一、窗口偏短：每个敌人只有一件武器可破坏一次，而敌人仅 48～58 HP，强力重击常在同一次命中里同时打到 0 血，破械的后续战斗作用（改冲撞/头槌）有时只剩几下就结束，肢体碎裂的表现时长也因此被死亡流程打断。"
+  ],
+  "evidence": [
+    {
+      "basis": "screenshot",
+      "detail": "sample-1.png（环境约 1FPS）显示点击开始后玩家与两名敌人均已正常绘制，状态为 ready/playing/playerAlive 真、hitCount 0、limbBreakCount 0，说明进入后几秒内即可开战；1FPS 下的时间与节奏不可用于判断手感。"
+    },
+    {
+      "basis": "screenshot",
+      "detail": "sample-normal-hit.png（60FPS）玩家已贴身在粉色敌人左前方，画面可见刀光轨迹、红色火花、敌人血条与被击退姿态，状态 hitCount 1、limbBreakCount 0；单帧不能确认顿帧时长，但可确认命中判定与受击绘制都在发生。"
+    },
+    {
+      "basis": "screenshot",
+      "detail": "sample-normal-break.png（30FPS）状态为 hitCount 2、limbBreakCount 1；画面右下方有一段带粉色描边的长刀刃部件停在敌人脚边地面、与本体分离，符合 detached 的 bladeArm 绘制。被破坏的粉色 reaver 本体正好被采样面板遮住，断口与改行为无法从该帧直接看到；右侧黄色 lancer 的炮臂仍完整（左侧长条与末端红点），说明断肢只发生在被攻击的那一只。"
+    },
+    {
+      "basis": "source",
+      "detail": "attackData 为 comboStep 1～5 分别定义 dur/start/end/range/damage/kx/ky/stop/limb；attackBox 只在 active 窗口内判定且每个敌人每段只命中一次，命中后调用 takeHit(damage, kx, ky, stop, limb, limbTarget)。"
+    },
+    {
+      "basis": "source",
+      "detail": "update() 在 hitStop>0 时以 0.22 倍速只推动特效并 return false，loop() 在停顿帧不清空按键缓冲，构成可缓冲输入的真实顿帧；shake 每帧按 pow(.015,dt) 衰减，避免连续震屏。"
+    },
+    {
+      "basis": "source",
+      "detail": "breakWeapon() 执行 weapon=false、limbBreakCount++、detached.push、freeze(10~14)、slowMo、flash、sfx.break 并把敌人置 stagger；thinkReaver 与 thinkLancer 依据 this.weapon 切换 slash/ram 与 shoot/headbutt，draw() 在 !weapon 时绘制断口并去掉武器段。"
+    },
+    {
+      "basis": "source",
+      "detail": "敌人攻击有 wind 前摇并画红色脉冲圆（slash .46s、ram .38s、shoot .72s 并画瞄准虚线），lancer 会保持 190～390 距离射击并在近距离后退，reaver 贴至 82 距离挥砍，两种行为路径确实不同。"
+    },
+    {
+      "basis": "source",
+      "detail": "音效由 Web Audio 合成（swing/hit/heavy/dash/parry/break/hurt/shoot/wave 等），首次按键 initAudio，右上角有静音按钮；未实际监听，无法确认听感与音量平衡。"
+    },
+    {
+      "basis": "uncertain",
+      "detail": "蓄力重击、瞬反、lancer 弹道命中、玩家死亡与 Enter/R 重开、波次切换等仅在源码中可见，截图未覆盖，不能据此断言实际观感。"
+    }
+  ],
+  "limitations": "本轮只有三张静态截图（1FPS / 60FPS / 30FPS）与一条操作记录。操作记录里最后一次“D 450ms 后 J 连按 16 次（每 70ms、间隔 220ms）”只累计到 2 次命中，无法区分是击退导致距离拉开、采样帧率限制，还是输入节奏问题，因此不对连段命中率下结论。采样面板覆盖了画面左中部，恰好遮住交战中的玩家与断肢敌人本体，断口和“改冲撞/头槌”的行为只能由源码推断。顿帧的实际力度、震屏幅度、刀光与慢镜的观感、音频、相机跟随与帧率稳定性都无法由截图确认；评分基于可读源码与实际命中/断肢计数递增的交叉验证，不代表亲身体验。"
+}

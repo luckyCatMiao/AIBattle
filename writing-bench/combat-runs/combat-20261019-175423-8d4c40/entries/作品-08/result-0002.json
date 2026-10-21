@@ -1,0 +1,91 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 3746856,
+    "stop_reason": "end_turn",
+    "session_id": "20c98e64-ae9e-4c09-947e-4ffc7e100d50",
+    "total_cost_usd": 10.896410799999993,
+    "usage": {
+      "input_tokens": 17290,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 16125824,
+      "output_tokens": 40603,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "deepseek-v4.1-flash": {
+        "inputTokens": 110659,
+        "outputTokens": 415444,
+        "thinkingTokens": 0,
+        "cacheReadInputTokens": 65206528,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 10.896410799999993,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "canonicalModel": "claude-sonnet-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 35,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "已继续完善并保留全部原有战斗设计（三连斩、蓄力重斩、疾闪、弹反、挑空/空中连段、断肢、三种敌人、无尽波次）。\n\n**针对反馈的处理**\n- 反馈中的浏览器错误为 `null`（没有可定位的异常堆栈），在完整 Chrome、Firefox、离线文件和 `sandbox=\"allow-scripts\"` iframe 中均无法复现。针对最可能的启动/嵌入风险做了加固：\n  - 改为脚本解析后立即初始化，`window.combatBenchState()` 的 `ready` 不再等待字体加载。\n  - 内嵌字体改为并行预热，并有超时/失败兜底，字体加载失败也不阻塞游戏。\n  - 增加启动重试、iframe 布局延迟重算尺寸（80ms/500ms），避免嵌入页面时首次尺寸为 0 或初始化中断。\n  - 修复重开后“断肢/破防”文字冷却时间戳未重置的问题。\n  - 防止敌人死亡后仍触发断肢，避免边界状态下的重复计数或异常。\n  - 失焦时同时清空攻击/跳跃缓冲与蓄力状态，避免切回页面后误出招。\n\n**重新自测结果**\n- Chromium（headless shell + 完整 Chrome）：开始、战斗（实测 38 次命中、12 处断肢）、死亡、`R`/`Enter` 重开、状态 API 均正常，无页面异常。\n- 顿帧实测：轻击约 0.045–0.075s，重击约 0.095–0.13s，空挥为 0；断肢和弹反额外冻帧正常。\n- 空中连段与斩首、弹反弩矢反射、断臂后弩傀失去射击能力均通过。\n- Firefox：开始、移动、攻击、断肢正常，无未处理异常。\n- 完整 Chrome 90 秒随机输入 + 缩放 + 重开 + 静音压力测试无异常。\n- 离线网络禁用、sandbox iframe、960×540 / 1024×768 / 1280×720 / 1920×800、DPR=2 均通过。\n- 删除 `AudioContext` 后仍可正常游玩；音效与静音切换功能验证通过（无声 headless 环境未做人耳听感评估）。\n\n交付文件仍为 `/workspace/game.html`；源码、构建脚本和说明位于 `/workspace/src`、`/workspace/build.mjs`、`/workspace/README.md`。",
+    "ttft_ms": 14547,
+    "type": "result",
+    "duration_ms": 1165381,
+    "uuid": "be8cd292-3350-4b43-9238-1599e4ab146c",
+    "ttft_stream_ms": 4685,
+    "time_to_request_ms": 358,
+    "first_content_frame_ms": 4685,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 1266.2
+}

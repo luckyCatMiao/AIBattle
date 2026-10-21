@@ -1,0 +1,31 @@
+{
+  "requested_model": "deepseek-v4.1-flash",
+  "started_at": "2026-10-19T16:58:11+08:00",
+  "max_tokens": 1000000,
+  "deadline_seconds": null,
+  "total_output_limit": null,
+  "segments": [
+    {
+      "index": 1,
+      "max_tokens": 1000000,
+      "stop_reason": "end_turn",
+      "input_tokens": 17646,
+      "output_tokens": 2428,
+      "response_model": "deepseek-v4.1-flash",
+      "response_id": "f2ed5358-6657-4f0d-9cb5-fe41f2602d5e",
+      "sha256": "644d4ec7633c93429cd5c4bb6757a047cc48596943bc3f8b815605fcf9d2bcf8"
+    }
+  ],
+  "token_negotiations": [],
+  "status": "ok",
+  "text": "{\"patches\":[{\"old\":\"  if(steps>0){ for(const k in pressed) delete pressed[k]; }\\n  if(acc>STEP*6) acc=0;\\n\\n  // 全局按键\\n  if(pressed['Enter']){\\n    if(!state.playing) startGame();\\n  }\\n  if(pressed['KeyR']&&state.started){\\n    startGame();\\n  }\",\"new\":\"  // 全局按键先消费一次性按下，避免启动信号被帧清理吞掉\\n  if(pressed['Enter']){\\n    delete pressed['Enter'];\\n    if(!state.playing) startGame();\\n  }\\n  if(pressed['KeyR']){\\n    delete pressed['KeyR'];\\n    if(state.started) startGame();\\n  }\\n  if(steps>0){ for(const k in pressed) delete pressed[k]; }\\n  if(acc>STEP*6) acc=0;\"}]}",
+  "effective_max_tokens": 1000000,
+  "elapsed_seconds": 13.68,
+  "response_model": "deepseek-v4.1-flash",
+  "response_id": "f2ed5358-6657-4f0d-9cb5-fe41f2602d5e",
+  "stop_reason": "end_turn",
+  "input_tokens": 17646,
+  "output_tokens": 2428,
+  "message_stop": true,
+  "thinking_char_count": 5384
+}

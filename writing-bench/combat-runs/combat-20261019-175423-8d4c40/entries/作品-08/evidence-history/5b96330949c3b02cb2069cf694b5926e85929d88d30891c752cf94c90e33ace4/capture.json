@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-19T11:13:05.660Z",
+  "source_sha256": "5b96330949c3b02cb2069cf694b5926e85929d88d30891c752cf94c90e33ace4",
+  "method": "真实Chrome兼容UI接口及标准键盘输入",
+  "actions": [
+    "Enter开始",
+    "D300ms",
+    "J连按12次",
+    "K1200ms",
+    "R重开",
+    "D1000ms",
+    "J持续2000ms",
+    "对照已验证作品15为60FPS"
+  ],
+  "screenshots": [
+    {
+      "file": "sample-startup-lowfps.png",
+      "label": "实际渲染已启动，当前仅2FPS，尚不能判断手感",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 1,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "2 FPS · visible · 焦点 true"
+    },
+    {
+      "file": "sample-recheck-lowfps.png",
+      "label": "再次前台复测仅3FPS；同窗口Sol对照为60FPS",
+      "state": {
+        "ready": true,
+        "playerAlive": true,
+        "enemyCount": 0,
+        "hitCount": 0,
+        "limbBreakCount": 0,
+        "playing": true
+      },
+      "environment": "3 FPS · visible · 焦点 true"
+    }
+  ],
+  "runtime_errors_observed": [],
+  "note": "该作品两次前台实测仅2至3FPS，不能评手感。同一Chrome窗口对照作品15为60FPS。未观察JS运行错误，需原作者排查渲染性能。"
+}

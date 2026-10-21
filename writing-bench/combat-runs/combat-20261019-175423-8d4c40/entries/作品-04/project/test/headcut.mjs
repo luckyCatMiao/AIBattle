@@ -1,0 +1,16 @@
+import { chromium } from '/tmp/pwtest/node_modules/playwright/index.mjs';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+page.on('pageerror', e => console.log('ERR', e.message));
+await page.goto('file:///workspace/game.html');
+await page.waitForTimeout(300);
+await page.keyboard.press('Enter'); await page.waitForTimeout(600);
+await page.evaluate(() => { Game.spawnQueue.length=0; Game.enemies.forEach(e=>e.dead=true); Game.enemies.length=0; Game.spawnEnemy('warden'); const e=Game.enemies[0]; e.x=Game.player.x+74; e.facing=-1; e.atkCd=99; e.hp=999; e.maxHp=999; e.limbs.head.hp=1; e.limbs.armR.hp=999; e.limbs.armL.hp=999; e.limbs.legR.hp=999; e.limbs.legL.hp=999; });
+await page.waitForTimeout(400);
+await page.keyboard.down('KeyK'); await page.waitForTimeout(760); await page.keyboard.up('KeyK');
+await page.waitForTimeout(120);
+await page.screenshot({ path: '/workspace/test/head1.png' });
+console.log(JSON.stringify(await page.evaluate(()=>{ const e=Game.enemies[0]; return { head: e && e.limbs.head.attached, st: e && e.state, br: Game.limbBreakCount }; })));
+await page.waitForTimeout(700);
+await page.screenshot({ path: '/workspace/test/head2.png' });
+await browser.close();
