@@ -1,0 +1,372 @@
+{
+  "run": "run-20261015-165940",
+  "phase": "比赛完成",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "opus": "Claude Opus 5.5",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 3,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 344.95,
+      "scores": {
+        "opus": 10950,
+        "sol": 20181
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1381,
+      "sha256": "1092940ba09eac7a412b6cb360f4c3f9a7a27a9bd24e1b141461715123d7d1e6"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 279.5,
+      "scores": {
+        "sol": 16281,
+        "opus": 6647
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 1119,
+      "sha256": "55d62234b48d19b732a187614c1ef3c7e5ece3ca9a1d5f753af7298ce2b18e1a"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 341.35,
+      "scores": {
+        "opus": 11185,
+        "sol": 21604
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1367,
+      "sha256": "20224a4ca692b2705fbb1ec43855dbd2afcd965157a5cfc8a41a94ab45105561"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "opus",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 684.35,
+      "scores": {
+        "sol": 30240,
+        "opus": 30665
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 2739,
+      "sha256": "4cb872e2a4d6a4852aa34bf1c4d02b8b289e8dbe328e969a80411990582ff319"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 239.35,
+      "scores": {
+        "opus": 4819,
+        "sol": 15789
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 959,
+      "sha256": "a926921e62aa207915f3986dda3b69a11248a8042c8385d7522736c91c165d03"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 358.3,
+      "scores": {
+        "sol": 24513,
+        "opus": 12911
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 1435,
+      "sha256": "25f0d998938a736deb47a2aa8869eafb7b355a932815bdf57816655f1ee71419"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 344.95,
+      "scores": {
+        "opus": 10950,
+        "sol": 20181
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1381,
+      "sha256": "1092940ba09eac7a412b6cb360f4c3f9a7a27a9bd24e1b141461715123d7d1e6"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 279.5,
+      "scores": {
+        "sol": 16281,
+        "opus": 6647
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 1119,
+      "sha256": "55d62234b48d19b732a187614c1ef3c7e5ece3ca9a1d5f753af7298ce2b18e1a"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 341.35,
+      "scores": {
+        "opus": 11185,
+        "sol": 21604
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1367,
+      "sha256": "20224a4ca692b2705fbb1ec43855dbd2afcd965157a5cfc8a41a94ab45105561"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "opus",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 684.35,
+      "scores": {
+        "sol": 30240,
+        "opus": 30665
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 2739,
+      "sha256": "4cb872e2a4d6a4852aa34bf1c4d02b8b289e8dbe328e969a80411990582ff319"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 239.35,
+      "scores": {
+        "opus": 4819,
+        "sol": 15789
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 959,
+      "sha256": "a926921e62aa207915f3986dda3b69a11248a8042c8385d7522736c91c165d03"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 358.3,
+      "scores": {
+        "sol": 24513,
+        "opus": 12911
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 1435,
+      "sha256": "25f0d998938a736deb47a2aa8869eafb7b355a932815bdf57816655f1ee71419"
+    }
+  ],
+  "ready": [
+    "sol",
+    "opus"
+  ],
+  "setup_note": "双方继承各自上一系列策略，继续各迭代 3 轮，每轮各最多 30 分钟准备；双方可见相同历史公开回放；每轮交换出生点打两局；每0.25秒同步决策；策略代码隔离",
+  "pid": 62304,
+  "completed": true,
+  "updated": "2026-10-15T17:51:37",
+  "player_ready": "opus",
+  "game": 2,
+  "game_id": "r3-g2",
+  "seats": [
+    "sol",
+    "opus"
+  ],
+  "now": 358.3,
+  "tick": 7166,
+  "audit": {
+    "verified": true,
+    "sourceVerified": true,
+    "frozenStrategiesVerified": true,
+    "incumbentVerified": null,
+    "continuedBaselinesVerified": [
+      "opus",
+      "sol"
+    ],
+    "games": [
+      {
+        "id": "r1-g1",
+        "frames": 1381,
+        "decisions": 1380,
+        "deterministic": true,
+        "technicalFailure": false
+      },
+      {
+        "id": "r1-g2",
+        "frames": 1119,
+        "decisions": 1118,
+        "deterministic": true,
+        "technicalFailure": false
+      },
+      {
+        "id": "r2-g1",
+        "frames": 1367,
+        "decisions": 1366,
+        "deterministic": true,
+        "technicalFailure": false
+      },
+      {
+        "id": "r2-g2",
+        "frames": 2739,
+        "decisions": 2738,
+        "deterministic": true,
+        "technicalFailure": false
+      },
+      {
+        "id": "r3-g1",
+        "frames": 959,
+        "decisions": 958,
+        "deterministic": true,
+        "technicalFailure": false
+      },
+      {
+        "id": "r3-g2",
+        "frames": 1435,
+        "decisions": 1434,
+        "deterministic": true,
+        "technicalFailure": false
+      }
+    ],
+    "isolation_probes_passed": true,
+    "swapped_seats": true
+  },
+  "review_status": {
+    "opus": true,
+    "sol": true
+  }
+}

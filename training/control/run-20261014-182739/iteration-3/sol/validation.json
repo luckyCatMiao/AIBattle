@@ -1,0 +1,292 @@
+[
+  {
+    "name": "empty",
+    "move": [
+      7,
+      7
+    ],
+    "note": "center",
+    "seconds": 0.019,
+    "passed": true
+  },
+  {
+    "name": "white opening",
+    "move": [
+      8,
+      8
+    ],
+    "note": "adjacent opening",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "replay 0 after 7",
+    "move": [
+      5,
+      9
+    ],
+    "note": "block",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "replay 0 after 9",
+    "move": [
+      8,
+      9
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 0 after 11",
+    "move": [
+      8,
+      5
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 1 after 8",
+    "move": [
+      10,
+      10
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 1 after 10",
+    "move": [
+      6,
+      6
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 6 after 5",
+    "move": [
+      7,
+      10
+    ],
+    "note": "search depth 7",
+    "seconds": 1.538,
+    "passed": true
+  },
+  {
+    "name": "replay 6 after 7",
+    "move": [
+      7,
+      10
+    ],
+    "note": "multiple threats",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 7 after 5",
+    "move": [
+      7,
+      9
+    ],
+    "note": "search depth 5",
+    "seconds": 4.4,
+    "passed": true
+  },
+  {
+    "name": "replay 7 after 11",
+    "move": [
+      8,
+      5
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "replay 7 after 13",
+    "move": [
+      8,
+      9
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 8 after 10",
+    "move": [
+      10,
+      3
+    ],
+    "note": "block",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 8 after 12",
+    "move": [
+      8,
+      6
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 8 after 14",
+    "move": [
+      4,
+      10
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 9 after 5",
+    "move": [
+      7,
+      5
+    ],
+    "note": "search depth 5",
+    "seconds": 4.4,
+    "passed": true
+  },
+  {
+    "name": "replay 9 after 9",
+    "move": [
+      9,
+      8
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "replay 9 after 11",
+    "move": [
+      11,
+      8
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 10 after 8",
+    "move": [
+      13,
+      12
+    ],
+    "note": "block",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 10 after 10",
+    "move": [
+      9,
+      7
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "replay 10 after 12",
+    "move": [
+      10,
+      7
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "edge four color 1",
+    "move": [
+      4,
+      0
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "broken four block color 1",
+    "move": [
+      5,
+      7
+    ],
+    "note": "block",
+    "seconds": 0.002,
+    "passed": true
+  },
+  {
+    "name": "edge four color 2",
+    "move": [
+      4,
+      0
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "broken four block color 2",
+    "move": [
+      5,
+      7
+    ],
+    "note": "block",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "overline winning gap",
+    "move": [
+      8,
+      7
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "own win before defense",
+    "move": [
+      4,
+      3
+    ],
+    "note": "win",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "double four",
+    "move": [
+      7,
+      7
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.001,
+    "passed": true
+  },
+  {
+    "name": "busy board budget",
+    "move": [
+      6,
+      6
+    ],
+    "note": "proved double continuation",
+    "seconds": 0.001,
+    "passed": true
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "cdf399f8f005e0d8",
+  "players": [
+    {
+      "id": "77d2e2658ee1013e",
+      "name": "GPT-6 Luna · 迭代 1",
+      "kind": "model"
+    },
+    {
+      "id": "1de09ebe3117b703",
+      "name": "GPT-6.1 Sol · 迭代 1",
+      "kind": "model"
+    }
+  ],
+  "rounds": 2,
+  "gameIds": [
+    "a6eeac560d4c9672",
+    "444b1e9b32845f68"
+  ],
+  "status": "finished",
+  "createdAt": "2026-10-14T10:32:38.007Z",
+  "finishedAt": "2026-10-14T10:33:16.120Z",
+  "currentGameId": "444b1e9b32845f68",
+  "standings": [
+    {
+      "id": "77d2e2658ee1013e",
+      "name": "GPT-6 Luna · 迭代 1",
+      "kind": "model",
+      "played": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0,
+      "blackWins": 0,
+      "whiteWins": 0,
+      "score": 0,
+      "winRate": 0
+    },
+    {
+      "id": "1de09ebe3117b703",
+      "name": "GPT-6.1 Sol · 迭代 1",
+      "kind": "model",
+      "played": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0,
+      "blackWins": 1,
+      "whiteWins": 1,
+      "score": 2,
+      "winRate": 1
+    }
+  ]
+}

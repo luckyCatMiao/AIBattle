@@ -1,0 +1,103 @@
+{
+  "run": "C:\\Users\\Admin\\Desktop\\AIBattle\\training\\control\\run-20261014-182739",
+  "verified_games": [
+    {
+      "id": "a6eeac560d4c9672",
+      "plies": 14,
+      "winner": "GPT-6.1 Sol · 迭代 1",
+      "black": "GPT-6 Luna · 迭代 1",
+      "white": "GPT-6.1 Sol · 迭代 1",
+      "sequence": "H8 I9 G8 I8 F8 H7 E8 D8 G9 I7 E7 I6 I5 I10",
+      "iteration": 1
+    },
+    {
+      "id": "444b1e9b32845f68",
+      "plies": 15,
+      "winner": "GPT-6.1 Sol · 迭代 1",
+      "black": "GPT-6.1 Sol · 迭代 1",
+      "white": "GPT-6 Luna · 迭代 1",
+      "sequence": "H8 G8 I9 H7 F9 I6 G9 H9 F10 J5 K4 I10 I7 J6 E11",
+      "iteration": 1
+    },
+    {
+      "id": "c0456dbabc64e04d",
+      "plies": 12,
+      "winner": "GPT-6.1 Sol · 迭代 2",
+      "black": "GPT-6 Luna · 迭代 2",
+      "white": "GPT-6.1 Sol · 迭代 2",
+      "sequence": "H8 I9 H7 H9 H5 H6 G8 K9 I6 J9 G9 L9",
+      "iteration": 2
+    },
+    {
+      "id": "65ab4d8089a3261f",
+      "plies": 13,
+      "winner": "GPT-6.1 Sol · 迭代 2",
+      "black": "GPT-6.1 Sol · 迭代 2",
+      "white": "GPT-6 Luna · 迭代 2",
+      "sequence": "H8 J9 I9 K10 I8 L11 G8 M12 N13 J11 J8 F8 K8",
+      "iteration": 2
+    },
+    {
+      "id": "6c44ab3e9c6c06c7",
+      "plies": 14,
+      "winner": "GPT-6.1 Sol · 迭代 3",
+      "black": "GPT-6 Luna · 迭代 3",
+      "white": "GPT-6.1 Sol · 迭代 3",
+      "sequence": "H8 I9 H7 H9 H6 J8 H5 H4 G6 K7 I6 L6 F6 H10",
+      "iteration": 3
+    },
+    {
+      "id": "86c477fc4433b321",
+      "plies": 13,
+      "winner": "GPT-6.1 Sol · 迭代 3",
+      "black": "GPT-6.1 Sol · 迭代 3",
+      "white": "GPT-6 Luna · 迭代 3",
+      "sequence": "H8 J9 I9 K10 I8 L11 G8 M12 N13 J11 J8 L9 K8",
+      "iteration": 3
+    }
+  ],
+  "rounds": [
+    {
+      "iteration": 1,
+      "luna_wins": 0,
+      "sol_wins": 2,
+      "plies": [
+        14,
+        15
+      ],
+      "max_move_seconds": 4.652,
+      "moves_over_5_seconds": 0
+    },
+    {
+      "iteration": 2,
+      "luna_wins": 0,
+      "sol_wins": 2,
+      "plies": [
+        12,
+        13
+      ],
+      "max_move_seconds": 4.819,
+      "moves_over_5_seconds": 0
+    },
+    {
+      "iteration": 3,
+      "luna_wins": 0,
+      "sol_wins": 2,
+      "plies": [
+        14,
+        13
+      ],
+      "max_move_seconds": 4.658,
+      "moves_over_5_seconds": 0
+    }
+  ],
+  "distinct_sequences": 6,
+  "unchanged_snapshots": [
+    "iteration-1\\luna",
+    "iteration-1\\sol",
+    "iteration-2\\luna",
+    "iteration-2\\sol",
+    "iteration-3\\luna",
+    "iteration-3\\sol"
+  ]
+}

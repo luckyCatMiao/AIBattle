@@ -1,0 +1,100 @@
+{
+  "verified": true,
+  "sourceVerified": true,
+  "frozenStrategiesVerified": true,
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": "sol",
+      "frames": 1797,
+      "windows": 92,
+      "rounds": 4,
+      "roundReasons": [
+        "进攻方全灭",
+        "拆除炸弹",
+        "进攻方全灭",
+        "防守方全灭"
+      ],
+      "buys": 8,
+      "sha256": "2fb75c7a2136035a6c08b946421d0338baf966a4c94aa7760ebf0d8e7acc1b3f"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "sol",
+      "frames": 2577,
+      "windows": 131,
+      "rounds": 5,
+      "roundReasons": [
+        "防守方全灭",
+        "防守方全灭",
+        "拆除炸弹",
+        "进攻方全灭",
+        "进攻方全灭"
+      ],
+      "buys": 10,
+      "sha256": "eb7b43294e6bac67ecb55ba79ab858e981f45bc9126d78b3e5e4960ab8d88c4e"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "sol",
+      "frames": 2673,
+      "windows": 136,
+      "rounds": 4,
+      "roundReasons": [
+        "拆除炸弹",
+        "拆除炸弹",
+        "拆除炸弹",
+        "防守方全灭"
+      ],
+      "buys": 8,
+      "sha256": "2c4cbcb65f92e0e5427572168099aa4c9f0c9f3d594f6638253faac53c1eb903"
+    },
+    {
+      "id": "r2-g2",
+      "winner": "sol",
+      "frames": 1409,
+      "windows": 72,
+      "rounds": 4,
+      "roundReasons": [
+        "防守方全灭",
+        "防守方全灭",
+        "防守方全灭",
+        "进攻方全灭"
+      ],
+      "buys": 8,
+      "sha256": "ba0263bb793427387f853421a94cb346490afb3a962648e705f623b7b9a25d60"
+    },
+    {
+      "id": "r3-g1",
+      "winner": "deepseek-flash",
+      "frames": 4615,
+      "windows": 233,
+      "rounds": 6,
+      "roundReasons": [
+        "时间到",
+        "进攻方全灭",
+        "防守方全灭",
+        "拆除炸弹",
+        "拆除炸弹",
+        "进攻方全灭"
+      ],
+      "buys": 12,
+      "sha256": "bc3550a7cd18ab26a948b0d41bb38bff9691129f11ff49f881d24225fc36ddf3"
+    },
+    {
+      "id": "r3-g2",
+      "winner": "deepseek-flash",
+      "frames": 2068,
+      "windows": 106,
+      "rounds": 4,
+      "roundReasons": [
+        "拆除炸弹",
+        "拆除炸弹",
+        "进攻方全灭",
+        "防守方全灭"
+      ],
+      "buys": 8,
+      "sha256": "f2505cb0cde39bd89c6c3bb4052842c730097eed1f6749d4bcce916a2747fee9"
+    }
+  ]
+}

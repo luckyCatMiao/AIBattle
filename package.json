@@ -1,0 +1,19 @@
+{
+  "name": "aibattle-gomoku",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Human and model-by-model Gomoku arena; no chess-playing algorithm.",
+  "scripts": {
+    "start": "node server.js",
+    "rts": "node rts/server.js",
+    "heroes": "node hero-rts/server.js",
+    "test": "node --test tests/*.test.js",
+    "fight": "node fighting/server.js",
+    "bomber": "node bomber/server.js",
+    "defusal": "node defusal/server.js",
+    "defusal-watch": "node defusal/arena/watch.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

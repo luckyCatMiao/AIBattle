@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>击感实验室 · 横版动作评测</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><a class="brand" href="/">击感<span>实验室</span><small>COMBAT LAB / 04</small></a><nav><a href="http://127.0.0.1:8804/">之前的创作评测 ↗</a><select id="runs" aria-label="选择评测"></select></nav></header>
+<main>
+<section class="intro"><div><p class="eyebrow"><span class="live-dot"></span> 横版动作 · 开放创作</p><h1>打起来，才算数。</h1><p class="lede">同一道题，独立创作。顿帧、刀光、肢体破坏——最终看你还想不想再打一场。</p></div><div class="round-stat"><b id="ready-count">0<span> / 17</span></b><p>战斗场景已交付</p><div id="progress-track"><i></i></div><small id="round-status">正在连接评测…</small></div></section>
+<div class="notice"><span>只评打击感</span><p>技术错误由原模型持续修复，修复次数与一次通过率不计分。正常战斗验证后，再由 Opus 5.5 评价最终打击感。</p><button id="brief-toggle">统一题目 ↗</button></div>
+<details id="brief"><summary>查看制作要求与评测说明</summary><pre id="prompt"></pre><p id="rules"></p></details>
+<section class="workspace">
+<aside class="roster"><div class="section-head"><h2>参赛作品 <small id="total">17</small></h2><label><input type="checkbox" id="blind"> 匿名</label></div><div class="list-tools"><input id="search" placeholder="搜索模型或作品号" aria-label="搜索模型或作品号"><select id="sort" aria-label="作品排序"><option value="id">作品顺序</option><option value="judge">裁判排名</option><option value="human">我的排名</option></select></div><div id="entries"></div><p class="list-foot">作品交付后即可试玩，裁判评审陆续更新。切换作品会重新开始战斗。</p></aside>
+<div class="play-column"><div class="stage-heading"><div><p id="entry-tag" class="eyebrow">等待作品</p><h2 id="author">第一批作品制作中</h2></div><span class="chip" id="entry-status">制作中</span></div>
+<div id="stage"><div id="placeholder"><span class="crosshair">✳</span><h3>好手感，正在酝酿。</h3><p>每个模型都在独立制作。作品一交付，就会出现在这里。</p></div></div>
+<div class="stage-tools"><p><span class="focus-dot"></span> 点击游戏画面后操作 · 返回列表前先点击画面外</p><div><button id="reload" disabled>↻ 重开</button><button id="fullscreen" disabled>⛶ 放大</button><a id="download" hidden>下载源码 ↓</a></div></div>
+<div class="keys"><span><kbd>A</kbd><kbd>D</kbd> 移动</span><span><kbd>Space</kbd> 跳跃</span><span><kbd>J</kbd> 主攻击</span><span><kbd>K</kbd> 副攻击</span><span><kbd>L</kbd> 机动</span><span><kbd>I</kbd> 特殊能力</span><span><kbd>R</kbd> 重开</span></div>
+<div class="review-grid"><section class="judge-card"><div class="section-head"><h2>裁判参考</h2><span class="judge-label">Opus 5.5</span></div><div id="judge-content"><p class="muted">等待作品和试玩材料。评分将直接公开。</p></div></section><section class="human-card"><div class="section-head"><h2>我打得爽吗？</h2><span class="muted">你的实际体验</span></div><form id="human-form"><label for="human-score">爽感评分 <small>0 — 100</small></label><div class="score-input"><input id="human-score" type="number" min="0" max="100" step="1" placeholder="—" required><span>/ 100</span></div><textarea id="human-note" maxlength="2000" placeholder="哪一下够爽？哪里打断了节奏？" aria-label="试玩感受"></textarea><button type="submit" id="save-score" disabled>保存我的试玩评分</button><span id="save-state"></span></form></section></div>
+<details class="delivery"><summary>交付与试玩记录</summary><div id="delivery-content"></div></details>
+</div></section>
+<footer><span>COMBAT LAB <i>×</i> 17 种战斗答案</span><p>源码语法通过不代表实际手感；裁判使用源码与离散试玩截图辅助判断。请以上手体验为准。</p><small id="run-id"></small></footer>
+</main><div id="toast" role="status"></div><script src="/app.js"></script></body></html>

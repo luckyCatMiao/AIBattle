@@ -1,0 +1,3 @@
+Implemented tactical candidate preservation, cached forcing proofs, and opponent forcing-sequence defense in [engine.py](/workspace/engine.py). [entry.json](/workspace/entry.json) is ready.
+
+All 37 protocol tests and tactical/property checks pass; maximum measured response time was 4.4 seconds. Reviewed nine unique replay sequences and documented mistakes, changes, and remaining search limits in [review.md](/workspace/review.md). `previous_bot.py` remains untouched.

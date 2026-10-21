@@ -1,0 +1,36 @@
+[
+  {
+    "player": "sol",
+    "mode": "prepare",
+    "uid": 65534,
+    "blocked": [
+      "/mnt/c",
+      "/mnt/d",
+      "/run/WSL",
+      "/mnt/wsl",
+      "/workspace/../luna",
+      "/proc/1/root/mnt/c",
+      "/opt/aibattle-tools/auth/luna",
+      "/home/admin1",
+      "/workspace/../../control"
+    ],
+    "readonly_engine": false
+  },
+  {
+    "player": "luna",
+    "mode": "prepare",
+    "uid": 65534,
+    "blocked": [
+      "/mnt/c",
+      "/mnt/d",
+      "/run/WSL",
+      "/mnt/wsl",
+      "/workspace/../sol",
+      "/proc/1/root/mnt/c",
+      "/opt/aibattle-tools/auth/sol",
+      "/home/admin1",
+      "/workspace/../../control"
+    ],
+    "readonly_engine": false
+  }
+]

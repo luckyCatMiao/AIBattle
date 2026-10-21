@@ -1,0 +1,38 @@
+[
+  {
+    "who": "luna",
+    "mode": "engine",
+    "uid": 65534,
+    "blocked": [
+      "/mnt/c",
+      "/mnt/d",
+      "/run/WSL",
+      "/mnt/wsl",
+      "/proc/1/root/mnt/c",
+      "/workspace/../sol",
+      "/workspace/../luna",
+      "/opt/aibattle-tools/auth",
+      "/home/admin1",
+      "/workspace/../../control"
+    ],
+    "readonly": true
+  },
+  {
+    "who": "sol",
+    "mode": "engine",
+    "uid": 65534,
+    "blocked": [
+      "/mnt/c",
+      "/mnt/d",
+      "/run/WSL",
+      "/mnt/wsl",
+      "/proc/1/root/mnt/c",
+      "/workspace/../sol",
+      "/workspace/../luna",
+      "/opt/aibattle-tools/auth",
+      "/home/admin1",
+      "/workspace/../../control"
+    ],
+    "readonly": true
+  }
+]

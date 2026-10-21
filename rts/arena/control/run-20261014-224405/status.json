@@ -1,0 +1,162 @@
+{
+  "phase": "比赛完成",
+  "round": 3,
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 216.3,
+      "scores": {
+        "sol": 4146,
+        "astra": 1782
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "astra",
+      "reason": "基地摧毁",
+      "duration": 236.8,
+      "scores": {
+        "astra": 4527,
+        "sol": 2314
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 237.4,
+      "scores": {
+        "sol": 4369,
+        "astra": 2127
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "astra",
+      "reason": "基地摧毁",
+      "duration": 170.95,
+      "scores": {
+        "astra": 3566,
+        "sol": 1688
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "astra",
+      "reason": "基地摧毁",
+      "duration": 164.65,
+      "scores": {
+        "sol": 1733,
+        "astra": 3391
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "astra",
+      "reason": "基地摧毁",
+      "duration": 217.05,
+      "scores": {
+        "astra": 4025,
+        "sol": 2346
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    }
+  ],
+  "ready": [
+    "astra",
+    "sol"
+  ],
+  "contestants": [
+    {
+      "id": "sol",
+      "name": "GPT-6.1 Sol",
+      "short": "Sol"
+    },
+    {
+      "id": "astra",
+      "name": "GPT-6 Astra",
+      "short": "Astra"
+    }
+  ],
+  "setup_note": "Sol 沿用三轮策略，首轮保持原样；挑战者从零开始",
+  "port": 8790,
+  "updated": "2026-10-14T23:02:32",
+  "player_ready": "sol",
+  "usage": [
+    {
+      "input_tokens": 588320,
+      "cached_input_tokens": 533120,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7296,
+      "reasoning_output_tokens": 1088
+    }
+  ],
+  "game": 2,
+  "game_id": "r3-g2",
+  "seats": [
+    "astra",
+    "sol"
+  ],
+  "completed": true
+}

@@ -1,0 +1,25 @@
+{
+  "run": "run-20261015-151831",
+  "phase": "准备比赛",
+  "models": {
+    "luna": "gpt-6-luna",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 1,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "双方从零开始，同等10分钟准备；交换出生点；每0.25秒同步决策；策略代码隔离",
+  "pid": 72604,
+  "completed": false,
+  "preparation_seconds": 600,
+  "decision_sim_seconds": 0.25,
+  "max_commands": 20,
+  "games_per_round": 2,
+  "fresh_start": true,
+  "source_sha256": "35c10ed4a567b3f5f2ed0f2ab60899255733feaadc7f5b0a834db64086e90dfb",
+  "catalog_sha256": "f1ed43679e299c9fab8b8d61517e9d253ac64c7ed468305ab1c601a2fa31d43a",
+  "public_sim_sha256": "6f7a7b4fc0f33e97bac1269df3f48a81d49596758e91f2e7d346d448a1353d03"
+}

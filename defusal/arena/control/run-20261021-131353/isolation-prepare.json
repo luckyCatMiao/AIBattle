@@ -1,0 +1,38 @@
+[
+  {
+    "who": "deepseek-flash",
+    "mode": "prepare",
+    "uid": 65534,
+    "blocked": [
+      "/mnt/c",
+      "/mnt/d",
+      "/run/WSL",
+      "/mnt/wsl",
+      "/proc/1/root/mnt/c",
+      "/workspace/../sol",
+      "/workspace/../deepseek-flash",
+      "/opt/aibattle-tools/auth",
+      "/home/admin1",
+      "/workspace/../../control"
+    ],
+    "readonly": false
+  },
+  {
+    "who": "sol",
+    "mode": "prepare",
+    "uid": 65534,
+    "blocked": [
+      "/mnt/c",
+      "/mnt/d",
+      "/run/WSL",
+      "/mnt/wsl",
+      "/proc/1/root/mnt/c",
+      "/workspace/../deepseek-flash",
+      "/workspace/../sol",
+      "/opt/aibattle-tools/auth",
+      "/home/admin1",
+      "/workspace/../../control"
+    ],
+    "readonly": false
+  }
+]

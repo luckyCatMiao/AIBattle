@@ -1,0 +1,47 @@
+{
+  "status": "finished",
+  "winner": 1,
+  "reason": "其余势力的城镇大厅全部被摧毁",
+  "seconds": 313.400000000037,
+  "wallSeconds": 4.646477400000001,
+  "finite": true,
+  "milestones": [
+    {
+      "time": 300,
+      "wall": 4,
+      "units": 53,
+      "players": [
+        {
+          "id": 0,
+          "tier": 1,
+          "gold": 57,
+          "wood": 3650,
+          "pop": 6,
+          "cap": 32,
+          "heroes": 3,
+          "score": 3228
+        },
+        {
+          "id": 1,
+          "tier": 3,
+          "gold": 156,
+          "wood": 1223,
+          "pop": 92,
+          "cap": 92,
+          "heroes": 1,
+          "score": 12771
+        }
+      ],
+      "townhalls": [
+        {
+          "owner": 0,
+          "hp": 2245
+        },
+        {
+          "owner": 1,
+          "hp": 3200
+        }
+      ]
+    }
+  ]
+}

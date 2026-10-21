@@ -1,0 +1,52 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": null,
+    "reason": "技术中断：deepseek-flash: Invalid response envelope; sol: Invalid response envelope",
+    "duration": 0.14,
+    "scores": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": "deepseek-flash: Invalid response envelope; sol: Invalid response envelope",
+    "frames": 1,
+    "windows": 0,
+    "roundLog": [],
+    "sha256": "50dd3f71c84036bf7f3ff42dcb016900c01a18f8fada50b319c443bd081fc3f3"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": null,
+    "reason": "技术中断：deepseek-flash: Invalid response envelope; sol: Invalid response envelope",
+    "duration": 0.13,
+    "scores": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": "deepseek-flash: Invalid response envelope; sol: Invalid response envelope",
+    "frames": 1,
+    "windows": 0,
+    "roundLog": [],
+    "sha256": "588da3ae50e042bf974cd00a15085f981b6909c599d01012e49f266461a8b336"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "画-001",
+  "model": "deepseek-v4.1-flash",
+  "status": "writer_failed",
+  "judge_is_same_model": false,
+  "writer_attempts": 3,
+  "writer_error": "Empty text response",
+  "budget_recovery": {
+    "new_cap": 32768,
+    "initial_cap": 12000,
+    "reason": "empty delivery at initial cap",
+    "staged": true
+  }
+}

@@ -1,0 +1,139 @@
+[
+  [
+    "2854c6431a3427f1",
+    "final",
+    8,
+    5,
+    0.0,
+    "win"
+  ],
+  [
+    "94a783909494e51c",
+    "final",
+    6,
+    6,
+    0.0,
+    "win"
+  ],
+  [
+    "83478ee6ee2cac64",
+    "final",
+    7,
+    5,
+    0.0,
+    "win"
+  ],
+  [
+    "a6eeac560d4c9672",
+    "final",
+    8,
+    9,
+    0.0,
+    "win"
+  ],
+  [
+    "444b1e9b32845f68",
+    "final",
+    4,
+    10,
+    0.0,
+    "win"
+  ],
+  [
+    "c0456dbabc64e04d",
+    "final",
+    11,
+    8,
+    0.0,
+    "win"
+  ],
+  [
+    "65ab4d8089a3261f",
+    "final",
+    10,
+    7,
+    0.0,
+    "win"
+  ],
+  [
+    "6c44ab3e9c6c06c7",
+    "final",
+    12,
+    4,
+    0.0,
+    "win"
+  ],
+  [
+    "86c477fc4433b321",
+    "final",
+    5,
+    7,
+    0.0,
+    "win"
+  ],
+  [
+    "2854c6431a3427f1",
+    9,
+    8,
+    9,
+    4.35,
+    "depth 7; nodes 48054",
+    "opponent forks",
+    [],
+    "own forcing",
+    false
+  ],
+  [
+    "94a783909494e51c",
+    8,
+    10,
+    10,
+    1.184,
+    "depth 8; nodes 14238",
+    "opponent forks",
+    [],
+    "own forcing",
+    false
+  ],
+  [
+    "83478ee6ee2cac64",
+    6,
+    7,
+    10,
+    1.463,
+    "depth 8; nodes 16855",
+    "opponent forks",
+    [],
+    "own forcing",
+    false
+  ],
+  [
+    "c0456dbabc64e04d",
+    9,
+    6,
+    8,
+    1.733,
+    "depth 8; nodes 20534",
+    "opponent forks",
+    [],
+    "own forcing",
+    false
+  ],
+  [
+    "86c477fc4433b321",
+    11,
+    9,
+    7,
+    0.0,
+    "depth 1; nodes 1",
+    "opponent forks",
+    [],
+    "own forcing",
+    true
+  ]
+]
+All assertions passed. Protocol: {"x": 7, "y": 7, "note": "center"}
+{"x": 8, "y": 5, "note": "win"}
+
+Whole-process timing check (fresh python process, replay 2854c6431a3427f1 before move 9): 4.374 seconds; chose (8,9), depth 7, 44032 nodes; subprocess timeout 5 seconds passed.
+Short-budget self-play: 21 legal plies, Black wins, 2.60 seconds total (550 ms requested per turn, 200 ms internal search target).

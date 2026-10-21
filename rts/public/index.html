@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>前线争夺 · AIBATTLE</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><a class="brand" href="/"><span class="brand-mark">◈</span> AIBATTLE <span class="slash">/</span><span class="wordmark">FRONTIER</span></a><div class="header-right"><span id="connection"><i></i> 指挥链路在线</span><a href="http://127.0.0.1:8787/" target="_blank">五子棋 ↗</a></div></header>
+<main>
+<div class="title-row"><div><div class="eyebrow">REAL-TIME STRATEGY · SECTOR 07</div><h1>前线争夺<span>每一寸前进，都需要后方。</span></h1></div><div class="campaign-controls"><label>交战势力 <select id="player-count" aria-label="交战势力数量"><option value="2">2 方 · 单挑</option><option value="3">3 方 · 混战</option><option value="4">4 方 · 混战</option><option value="6">6 方 · 混战</option><option value="8">8 方 · 混战</option></select></label><button id="new-game" class="outline">新战役 ↗</button></div></div>
+<div class="game-shell">
+ <div class="topbar"><div class="operation"><span class="pulse"></span><strong id="phase">战役待命</strong><span class="dim">/ 荒原矿区</span></div><div class="hud"><div><span class="crystal">◆</span><strong id="credits">260</strong><small>矿晶</small><span id="income" class="income">+1.5/s</span></div><div><span>▣</span><strong id="population">7</strong><small>/ 40 单位</small></div><div><span>◷</span><strong id="clock">00:00</strong><small>/ 10:00</small></div></div><button id="pause" class="icon-button" title="空格暂停">Ⅱ 暂停</button></div>
+ <div class="battle-layout">
+  <section class="battle-panel">
+   <div class="map-heading"><span>TACTICAL VIEW <b>战术视图</b></span><div class="map-tools"><span id="node-count">中继站 0 / 3</span><button id="focus-view">专注视图 ⛶</button></div></div>
+   <div class="canvas-wrap" id="canvas-wrap"><canvas id="field" width="1280" height="840" aria-label="即时战略战场，左键框选单位，右键下达移动或攻击指令"></canvas><div id="map-caption">OASIS BASIN <span>35° 42′ N · 110° 18′ E</span></div><div id="mode-hint" class="hidden">点击战场设置进攻目标 · Esc 取消</div>
+    <div id="overlay" class="overlay"><div class="briefing"><span class="eyebrow">OPERATION / FIRST LIGHT</span><h2 id="overlay-title">指挥官，就位。</h2><p id="overlay-copy">占领矿区，建立你的部队。<br>摧毁敌方指挥部，成为最后的胜者。</p><div class="briefing-steps"><span><b>01</b> 采矿机自动采集</span><span><b>02</b> 生产三种作战单位</span><span><b>03</b> 占领中继站，推进敌营</span></div><button id="start" class="primary">开始战役 <span>→</span></button><small id="overlay-foot">单人战役可随时按空格暂停 · 无操作速度要求</small></div></div>
+   </div>
+   <div class="selection-bar"><div class="selection-info"><span id="selection-icon">⌖</span><div><strong id="selection-title">等待你的指令</strong><small id="selection-detail">左键点击单位，或拖动框选</small></div></div><div class="orders"><button id="select-army" title="快捷键 1">全选部队 <kbd>1</kbd></button><button id="select-workers" title="快捷键 2">采矿机 <kbd>2</kbd></button><button id="center-order">抢占中央</button><button id="attack-base" class="danger-text">进攻基地 ↗</button><button id="stop-order" title="快捷键 S">驻守 <kbd>S</kbd></button></div></div>
+   <div class="map-footer"><span><b>左键</b> 选择 / 框选 <i></i><b>Shift</b> 多选 <i></i><b>右键</b> 推进 / 攻击 / 采矿 <i></i><b>A</b> 进攻移动</span><span id="link-status">20 HZ · 实时战场</span></div>
+  </section>
+  <aside>
+   <section class="production"><div class="section-title"><h2>指挥部</h2><span id="base-health">1700 / 1700</span></div><div class="base-health"><i id="base-health-fill"></i></div><div class="tab-title"><span>生产单位</span><small>单位自动前往集结点</small></div>
+    <button class="unit-card" data-unit="worker"><span class="unit-icon worker">⬡</span><span class="unit-description"><strong>采矿机 <kbd>E</kbd></strong><small>自动采集 · 经济核心</small></span><span class="unit-cost">◆ 50<small>4 秒</small></span></button>
+    <button class="unit-card" data-unit="rifle"><span class="unit-icon rifle">♟</span><span class="unit-description"><strong>步兵 <kbd>Q</kbd></strong><small>稳健防线 · 克制突击车</small></span><span class="unit-cost">◆ 60<small>5 秒</small></span></button>
+    <button class="unit-card" data-unit="tank"><span class="unit-icon tank">▰</span><span class="unit-description"><strong>坦克 <kbd>W</kbd></strong><small>远程重炮 · 克制步兵</small></span><span class="unit-cost">◆ 160<small>12 秒</small></span></button>
+    <button class="unit-card" data-unit="raider"><span class="unit-icon raider">➤</span><span class="unit-description"><strong>突击车 <kbd>R</kbd></strong><small>高速穿插 · 克制坦克</small></span><span class="unit-cost">◆ 100<small>8 秒</small></span></button>
+    <div class="queue-label"><span>生产队列</span><small id="queue-count">0 / 6</small></div><div id="queue" class="queue"><span class="empty-queue">等待生产指令</span></div><div class="upgrade-row"><button id="upgrade">↑ 武器升级 <small id="upgrade-cost">◆ 180</small></button><button id="repair">✚ 基地修复 <small id="repair-cost">◆ 100</small></button></div>
+   </section>
+   <section class="intel"><div class="section-title"><h2>战场态势</h2><span class="tiny">LIVE INTEL</span></div><div id="players"></div><div class="objective"><span>◇</span><p><strong>控制中继站</strong>作战单位停留 8 秒即可占领。<br>每座持续提供 <b>+3 矿晶 / 秒</b>。</p></div><div id="feed" class="feed"><span>准备出发。你的采矿机会自动工作。</span></div></section>
+  </aside>
+ </div>
+</div>
+<footer><span>AIBATTLE / FRONTIER LAB</span><span>2–8 方混战 · 三兵种克制 · 开放指令 API</span></footer>
+</main><div id="toast" role="status"></div><script src="/app.js"></script>
+</body></html>

@@ -1,0 +1,103 @@
+{
+  "verified": true,
+  "refereeSha256": "2c3edc52d5eaf266f43b31d51f3d67fbdc45e80a3ae29d763c7d7ff09426ca81",
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": "sol",
+      "frames": 153,
+      "tick": 3032,
+      "errors": [
+        0,
+        0
+      ],
+      "maxSeconds": [
+        0.118006,
+        0.114609
+      ],
+      "actionsSha256": "2fda7ab42253f3905ab528c0d7b4178bd584c8c9c9c9a498169d36218aa24659",
+      "finalSha256": "25bd415c143291d568e6ccdcb0bc8a586f4b07274a689028362d1f01bd53a00b"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "sol",
+      "frames": 153,
+      "tick": 3028,
+      "errors": [
+        0,
+        0
+      ],
+      "maxSeconds": [
+        0.10462,
+        0.109314
+      ],
+      "actionsSha256": "46519af5ad80756cdc73c48eb460b295482d2fbed3d6b04afc43950d0bffdf2c",
+      "finalSha256": "2d23849fcb7c70b49192e513c0a18f49096a7ccf58824cb69300830d8700b50e"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "sol",
+      "frames": 139,
+      "tick": 2742,
+      "errors": [
+        0,
+        0
+      ],
+      "maxSeconds": [
+        0.133061,
+        0.115044
+      ],
+      "actionsSha256": "848c14612adf2e24485a6f5244f0650a795371f62f30229c588acb62ba0720fe",
+      "finalSha256": "47d3b908d4dd118ccac02390b893372ec203e2c6b7d2da69cef1b6d2b63b9e90"
+    },
+    {
+      "id": "r2-g2",
+      "winner": "sol",
+      "frames": 138,
+      "tick": 2722,
+      "errors": [
+        1,
+        0
+      ],
+      "maxSeconds": [
+        0.102571,
+        0.107329
+      ],
+      "actionsSha256": "1f3ba33e29f795093b5e4fc31ed47a561f128c38a26f9607b5b58aa64a85c78c",
+      "finalSha256": "18ef88dc9b0c9842492ce8b0df4751dec1df031b16c0a033dca6f72c0bee0aed"
+    },
+    {
+      "id": "r3-g1",
+      "winner": "sol",
+      "frames": 129,
+      "tick": 2547,
+      "errors": [
+        0,
+        0
+      ],
+      "maxSeconds": [
+        0.129429,
+        0.115393
+      ],
+      "actionsSha256": "8ee60a029e39c1039b06a0f5777e69c047c0515d1e7b21ba85d69be3e3a58aa4",
+      "finalSha256": "2b8a2831c171f134153af23804b8df473820dfd71c31d2a1196d01b95daf03d5"
+    },
+    {
+      "id": "r3-g2",
+      "winner": "sol",
+      "frames": 133,
+      "tick": 2623,
+      "errors": [
+        0,
+        0
+      ],
+      "maxSeconds": [
+        0.1173,
+        0.123565
+      ],
+      "actionsSha256": "60026eb21d492f691ea29a6cbdd97f7d8baa7a1907a70163e684e21e180896d7",
+      "finalSha256": "08e8a08ae3cd0ce3a37d188d700f387d3ff94f52941d6b8d2bade74ea0796e13"
+    }
+  ],
+  "uniqueActionTraces": 6
+}

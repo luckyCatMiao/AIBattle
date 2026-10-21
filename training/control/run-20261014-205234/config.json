@@ -1,0 +1,27 @@
+{
+  "players": [
+    {
+      "id": "astra",
+      "model": "gpt-6-astra",
+      "name": "GPT-6 Astra"
+    },
+    {
+      "id": "sol",
+      "model": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "cycles": 3,
+  "setup_note": "GPT-6 Astra starts from scratch; GPT-6.1 Sol retains its own engine after three previous improvement cycles. Both receive the same 13 historical public replays.",
+  "starting_engines": {
+    "astra": {},
+    "sol": {
+      "engine.py": "b6bcfcf2c166eb42ea392221970e67796d1aea312a4f8aaebc8da83e74091c33"
+    }
+  },
+  "public_replays_sha256": {
+    "astra": "c00b316ca469ff39b4ffeb74b84493200867c8470adbd0bf2594d121093c29c8",
+    "sol": "c00b316ca469ff39b4ffeb74b84493200867c8470adbd0bf2594d121093c29c8"
+  }
+}

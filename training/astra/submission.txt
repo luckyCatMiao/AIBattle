@@ -1,0 +1,5 @@
+Implemented and tested `engine.py`; `entry.json` is ready.
+
+Added quiet-threat proofs, widened defensive screening, and corrected horizon evaluation. Verified both tactical certificates against every legal reply. All regression and protocol tests pass; tested responses stayed under five seconds.
+
+Replay findings, limitations, and future notes are in `review.md`.

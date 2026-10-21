@@ -1,0 +1,38 @@
+[
+  {
+    "case": "cold quiet 0",
+    "seconds": 0.025,
+    "response": {
+      "x": 8,
+      "y": 8,
+      "note": "adjacent opening"
+    }
+  },
+  {
+    "case": "cold quiet 1",
+    "seconds": 0.054,
+    "response": {
+      "x": 4,
+      "y": 7,
+      "note": "search depth 2"
+    }
+  },
+  {
+    "case": "cold quiet 2",
+    "seconds": 2.391,
+    "response": {
+      "x": 5,
+      "y": 4,
+      "note": "search depth 8"
+    }
+  },
+  {
+    "case": "cold quiet 3",
+    "seconds": 0.03,
+    "response": {
+      "x": 5,
+      "y": 8,
+      "note": "proved double continuation"
+    }
+  }
+]

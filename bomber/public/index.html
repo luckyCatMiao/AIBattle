@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>泡泡堂 · BLAST BUDDIES</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark">✹</span><div><h1>泡泡堂</h1><p>BLAST BUDDIES · 炸弹与道具竞技场</p></div></div>
+  <div class="modes" id="modes">
+    <button data-mode="local" class="on">本地对战</button>
+    <button data-mode="watch">观战回放</button>
+  </div>
+</header>
+
+<!-- 左下角提示语会被重写为「这一局在比什么」；两侧共用这一块舞台 -->
+<main id="fight" class="stage">
+  <div class="stagecol">
+    <div class="stagewrap">
+      <canvas id="stage" width="720" height="624"></canvas>
+      <div class="banner" id="banner"></div>
+    </div>
+    <section class="card" id="logCard"></section>
+  </div>
+  <aside class="side" id="side">
+    <section class="card" id="setupCard">
+      <h3>本地多人</h3>
+      <div class="setup">
+        <label>人数
+          <select id="playerCount">
+            <option value="2">2 人</option>
+            <option value="3">3 人</option>
+            <option value="4">4 人</option>
+          </select>
+        </label>
+        <label>真人
+          <select id="humanCount">
+            <option value="1">1 人</option>
+            <option value="2" selected>2 人</option>
+            <option value="3">3 人</option>
+            <option value="4">4 人</option>
+          </select>
+        </label>
+        <button id="newMatch">开新局</button>
+      </div>
+      <small class="hint" id="setupHint"></small>
+    </section>
+    <section class="card" id="matchCard"></section>
+    <section class="card" id="timeCard"></section>
+    <section class="card" id="fighterCard"></section>
+    <section class="card" id="runCard"></section>
+    <section class="card" id="gameCard"></section>
+    <section class="card" id="replayCard"></section>
+    <section class="card" id="scoreCard"></section>
+    <p class="legend" id="legend"></p>
+    <p class="legend" id="dropLegend"></p>
+  </aside>
+</main>
+
+<footer>AIBATTLE / 泡泡堂 <span id="meta"></span></footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>

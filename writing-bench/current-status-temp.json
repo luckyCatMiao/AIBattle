@@ -1,0 +1,1602 @@
+{
+  "id": "combat-20261019-160034-875938",
+  "title": "一场好打的战斗",
+  "created_at": "2026-10-19T16:00:34+08:00",
+  "state": "complete_with_errors",
+  "prompt": "制作一个可以直接在桌面浏览器玩的横版动作战斗系统试玩。核心目标：亲手操作时非常爽，动作炫酷，命中有力，操作与反馈构成有吸引力的战斗体验。只需要一个打磨好的战斗场景，不需要完整游戏、剧情、经营、复杂菜单或很多关卡。世界观、角色、美术风格、战斗节奏和动作设计由你决定，自行创作。\n\n这是一道没有唯一标准答案的开放创作题。神之天平、彩虹岛 Online、胧村正、死亡细胞、武士零只是说明横版动作游戏可以有很多种好手感，并不是要求模仿其中任何一款。快节奏连斩、沉重蓄力、精确反击或其他自洽的路线都可以。没有预定的动作方向、固定的连招答案或必须堆满的特效配方；请设计你认为最让人想反复战斗的系统。\n\n必须实际实现并能在交战中体验：\n1. 横版移动、跳跃、攻击与机动能力，并设计有意思的攻击衔接或攻防决策。轻重攻击、连段、挑空追击、蓄力、弹反等是可选思路，具体组合由你决定，不要求全部实现。角色动作要有可读的准备、出招和收招，体现精彩的动作姿态与运动，不能只是方块接触掉血。\n2. 命中顿帧（hit stop）是重点：命中才停、时长有力度差别，之后顺畅恢复；配合有节制的震屏、刀光、命中特效、敌人受击动作、击退或击飞和落地反馈。不要用连续震屏或满屏闪白掩盖手感。\n3. 可战斗的敌人，会主动接近、攻击并有可观察的攻击前兆，玩家能闪避和受伤；至少两种有区别的敌人行为。不能只有静止靶子。\n4. 可见、能触发的肢体破坏：敌人有分段肢体，被强力攻击或连段打断时肢体会断裂、飞散或碎裂，且影响其后续动作或战斗能力。可用怪物、机甲、木偶等对象；艺术表现自定。不能只写提示文字或用普通死亡粒子冒充肢体破坏。\n5. 适合不断试玩：敌人持续刷新或每波后很快继续，有清楚的玩家血量/状态，死亡可一键重开。首次进入几秒内就能开始打。重视输入响应、连击衔接和相机，不要让玩家频繁等候、追敌或被无限硬直。\n6. 有浏览器合成的命中/挥击/冲刺等音效，首次点击或按键后启用，提供静音按钮。没有音频也不能阻止游戏运行。\n\n统一按键（具体招式由你设计，必须在屏幕上清楚显示）：A/D 或左右箭头移动；Space 跳跃；J 主攻击；K 副攻击（如重击/蓄力/另一种攻击）；L 机动（如冲刺/闪避）；I 特色能力（如挑空/弹反/特殊招式，自行选择）；R 重新开始；Enter 开始/确认。鼠标只用于点击开始、静音等按钮。阻止这些游戏按键让外层页面滚动，失去焦点时清空按键以免卡住。不要强制全屏或锁定鼠标。场景适配至少 960×540 的显示区域，也能适应宽屏。\n\n技术交付：一个完整独立的 HTML，内联 CSS 和 JavaScript，优先使用 Canvas 2D。不得依赖任何外部文件、网络、CDN、库、安装或构建。绘制图形与合成音效均在本文件实现；禁止调用生图接口。禁止 fetch、XMLHttpRequest、WebSocket、EventSource、sendBeacon、Service Worker、iframe、弹窗及对父页面的访问。作品运行在只有 allow-scripts 权限的沙箱 iframe 中，无法使用 localStorage、父窗口、下载或外部资源，请确保不会因此崩溃。不要添加模型身份或自评。\n\n为方便核对启动情况，提供只读函数 window.combatBenchState()，返回简单 JSON 兼容对象，至少含 ready（布尔）、playerAlive（布尔）、enemyCount（整数）、hitCount（成功命中次数）、limbBreakCount（断肢次数）、playing（布尔）。这些值必须来自真实游戏状态；检查接口不参与游戏逻辑，也不要求为检查简化战斗。优先保证可玩和手感，控制代码长度，在输出额度内完整闭合所有标签和脚本。\n\n只输出从 <!DOCTYPE html> 到 </html> 的完整文件，不要 Markdown 围栏、解释或评分。",
+  "system": "你是独立动作游戏开发者。完成用户的战斗系统试玩作品。只交付完整的单文件 HTML，不要解释、自评、署名或显示模型身份。",
+  "prompt_sha256": "fbd4567cc48ed3462f8647b113fe24bed3c8a59f7586b83f7a53b451102ee652",
+  "parameters": {
+    "max_tokens": 1000000,
+    "deadline_seconds": null,
+    "concurrency": 4,
+    "technical_attempts": 2,
+    "effort": "provider_default",
+    "tools": false,
+    "total_output_limit": null,
+    "automatic_continuation": true,
+    "self_repair_compact_target": null
+  },
+  "entries": [
+    {
+      "id": "作品-01",
+      "model": "deepseek-v4-pro",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "deepseek-v4-pro",
+        "started_at": "2026-10-19T16:00:35+08:00",
+        "max_tokens": 32768,
+        "status": "ok",
+        "elapsed_seconds": 355.45,
+        "response_model": "deepseek-v4-pro",
+        "response_id": "57b3d484-1f17-4f15-bc6f-820c067c21fd",
+        "stop_reason": "end_turn",
+        "input_tokens": 1061,
+        "output_tokens": 30543,
+        "message_stop": true,
+        "thinking_char_count": 11206
+      },
+      "validation": {
+        "html_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4",
+        "validation": {
+          "html_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:13:35.928Z",
+        "method": "Chrome 实际运行；sample=1 统一键盘采样面板，发送 key/code 键盘事件，不改原始游戏逻辑",
+        "actions": [
+          "右移 D · 1秒",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "D + J · 1秒",
+          "I 特色能力",
+          "跳跃 + J"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "开始后初始场景",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "尝试接敌、主攻、副攻与特殊能力后；尚未记录到命中",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "动作采样后，收起采样控件，命中情况见真实状态",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          }
+        ],
+        "note": "离散截图与合成按键不能完整测量连续手感或音频，来源以源码和实际截图交叉核对。 此次采样没有可靠记录到有效命中，因此不能据此断言命中、顿帧或断肢功能不存在；这些需源码核对并由真人补充试玩。",
+        "source_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:15:20+08:00"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4",
+      "combat_check": {
+        "source_sha256": "ac64b7bd86de75321b2a803040a2ec8b80904aeafb8acfc406f45e5a6f308cb4",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-02",
+      "model": "gemini-3.8-flash-high",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "gemini-3.8-flash-high",
+        "started_at": "2026-10-19T16:00:35+08:00",
+        "max_tokens": 32768,
+        "status": "ok",
+        "elapsed_seconds": 101.8,
+        "response_model": "gemini-3.8-flash-high",
+        "response_id": "msg_cc11503c1eb0ed688d024a7b",
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 15523,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "validation": {
+        "html_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "verified",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9",
+        "validation": {
+          "html_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:11+08:00"
+      },
+      "grade": {
+        "scores": {
+          "impact": 18,
+          "flow": 16,
+          "rhythm": 11,
+          "destruction": 10
+        },
+        "verdict": "截图确认可以实际交战：sample-3 中命中4、断肢2，画面有白色刀光、橙色碎块和火花；sample-4 中受损敌人的武器刃已不可见，玩家血量随交战下降，说明敌人确实会造成伤害。源码显示，顿帧按招式分级（轻击4帧、第三段8帧、满蓄力12帧），还有三段连斩、K长按蓄力、I挑空和空中J下劈。断肢由强力攻击、韧性归零或概率触发，断武器臂会削弱敌人攻击，断腿会降低移动速度。不足主要在几个方面：动作缺少取消，角色只有几种固定姿态，敌人受击只做白闪加击退，两种敌人行为模式相同。断肢的触发偏随机，四个部位里只有两个影响战斗。整体是能打、有基本层次的方案，手感和音效未能亲身确认。",
+        "strengths": [
+          "源码中顿帧时长按力度分级：轻击4帧、空中下劈和挑空6帧、半蓄力7帧、第三段8帧、满蓄力12帧，配合不同强度的震屏和轻重两套命中音",
+          "J在攻击中按下会保留到收招后立即出下一段，形成隐性输入缓冲；三段连斩、蓄力重斩、挑空击飞（knockY -14）和空中下劈构成可自洽的地空路线",
+          "肢体破坏有实际战斗作用：断武器臂后敌人突进和伤害降为0.4倍，断腿后追击速度从3.4或1.8降到0.9；残肢带旋转、重力、落地弹跳和淡出，sample-3 可见碎块飞散，sample-4 可见缺失武器臂的敌人"
+        ],
+        "weaknesses": [
+          "受击反馈单薄：敌人只有躯干白闪和水平/垂直击退，没有受击姿态、倒地或起身动作。粒子、刀光和残肢在顿帧期间仍继续更新，会削弱停顿感。满蓄力重斩在出招帧无论是否命中都会震屏",
+          "动作衔接缺少取消：攻击、蓄力和挑空期间都不能冲刺或闪避。I在空中可重复触发，每次重置vy为-14，可无限滞空，削弱风险回报。玩家只有站立、挥砍、蓄力三种手臂姿态，准备和收招的姿态表现弱",
+          "敌人设计偏单一：brawler和juggernaut共用同一套追击、前兆、单帧判定攻击流程，只在数值、前摇时长和范围上不同。敌人之间没有分离，会重叠。全灭后下一波立刻在固定位置刷新，第3波之后一直重复同一组合。断肢按固定顺序破坏，头和副臂断裂不影响行为，且多数强力攻击有60%随机断肢，降低了针对性"
+        ],
+        "evidence": [
+          {
+            "basis": "screenshot",
+            "detail": "sample-1 为初始画面，两名brawler站在右侧，HUD和操作说明完整，命中0"
+          },
+          {
+            "basis": "screenshot",
+            "detail": "sample-2 中玩家背对敌人挥砍，命中0，血条已降到约55%，可见敌人会主动接近并造成伤害"
+          },
+          {
+            "basis": "screenshot",
+            "detail": "sample-3 中玩家贴近敌人，显示命中4、断肢2，可见白色刀光、橙色方形碎块飞散和火花粒子"
+          },
+          {
+            "basis": "screenshot",
+            "detail": "sample-4 中受损敌人未显示青色刀刃（与武器臂断裂一致），地面左侧残留碎块，玩家血量继续下降，仍为存活状态"
+          },
+          {
+            "basis": "source",
+            "detail": "checkHitBox仅在命中时调用triggerHitStop(stopFrames)，gameLoop在hitStopTimer>0时跳过玩家和敌人的update，但updateAndDrawEffects和updateAndDrawDebris照常运行"
+          },
+          {
+            "basis": "source",
+            "detail": "Enemy.executeAttack和updateAttack按limbs.weaponArm把突进和伤害乘以0.4；chase速度在limbs.legs为false时为0.9；head和shieldArm断裂只影响绘制"
+          },
+          {
+            "basis": "source",
+            "detail": "telegraph阶段为红色shadowBlur、武器臂抬起、眼灯变红，brawler持续22帧、juggernaut持续36帧，之后在攻击第6或第8帧做一次范围判定"
+          },
+          {
+            "basis": "uncertain",
+            "detail": "未能确认合成音效的实际听感、顿帧在真实帧率下的停顿质感，以及挑空追击和满蓄力断肢的实际画面"
+          }
+        ],
+        "limitations": "只有4张离散截图，真正交战的只有sample-3和sample-4，未捕捉到满蓄力释放、挑空浮空追击、冲刺无敌、空中下劈、juggernaut交战、波次刷新和死亡重开等画面。手感、顿帧节奏、震屏观感和音效均依据源码推断，未经过连续操作或听觉确认。画布固定为1280×720并用CSS拉伸铺满，在截图比例下有轻微变形，对手感的影响未确认。",
+        "total": 55,
+        "evaluation_policy": "feel-only-v2",
+        "source_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9",
+        "judged_at": "2026-10-19T16:59:17+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:11:37.735Z",
+        "method": "实际 Chrome 页面，统一屏幕键盘控件发送带 key/code 的键盘事件；不修改游戏逻辑",
+        "note": "初期原生采样键未可靠触发，改用统一屏幕采样按键。前段远距离空挥，后接近并转身后成功交战。离散截图不等于连续手感或音频评测。",
+        "actions": [
+          "开始/重开",
+          "D 约1秒，多次接近",
+          "J 连按",
+          "K 约0.8秒蓄力并释放",
+          "I 特殊能力",
+          "A 转身接近",
+          "J、K、I、J 近身连击"
+        ],
+        "observed": "可见HUD与只读状态：命中4，断肢2，玩家存活。",
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "初始画面，无输入命中"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "接近与空挥阶段，敌人在玩家背后，命中0，不能据此断言攻击无效"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "转身交战后：命中4、肢体破坏2，画面有飞散碎块"
+          },
+          {
+            "file": "sample-4.png",
+            "label": "收起采样按键后的战斗状态"
+          }
+        ],
+        "source_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:59:17+08:00",
+        "new_runtime_evidence": false
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9",
+      "combat_check": {
+        "source_sha256": "040dfc8200e8104108f73521e340068b3b1c9ac3636ad50f173c3235741330b9",
+        "passed": true,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "已实际观察并存档4次命中、2次断肢及飞散碎块，无已知运行异常",
+        "hitCount": 4,
+        "limbBreakCount": 2
+      },
+      "judge_eligible": true
+    },
+    {
+      "id": "作品-03",
+      "model": "claude-sonnet-5-5",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "claude-sonnet-5-5",
+        "started_at": "2026-10-19T16:21:08+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 4,
+            "output_tokens": 46306,
+            "response_model": "claude-sonnet-5-5",
+            "response_id": "msg_011CgBGfjrvYz0FTEIKXrSlw",
+            "sha256": "ce8cd907688330d32008326858b9e1fa62c45b25c03baa4fbb2a73e0884d1494"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 746.96,
+        "response_model": "claude-sonnet-5-5",
+        "response_id": "msg_011CgBGfjrvYz0FTEIKXrSlw",
+        "stop_reason": "end_turn",
+        "input_tokens": 4,
+        "output_tokens": 46306,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "human": null,
+      "repair": {
+        "status": "ready",
+        "at": "2026-10-19T16:33:35+08:00",
+        "validation": {
+          "html_sha256": "ce8cd907688330d32008326858b9e1fa62c45b25c03baa4fbb2a73e0884d1494",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "writer": {
+          "requested_model": "claude-sonnet-5-5",
+          "started_at": "2026-10-19T16:21:08+08:00",
+          "max_tokens": 1000000,
+          "deadline_seconds": null,
+          "total_output_limit": null,
+          "segments": [
+            {
+              "index": 1,
+              "max_tokens": 1000000,
+              "stop_reason": "end_turn",
+              "input_tokens": 4,
+              "output_tokens": 46306,
+              "response_model": "claude-sonnet-5-5",
+              "response_id": "msg_011CgBGfjrvYz0FTEIKXrSlw",
+              "sha256": "ce8cd907688330d32008326858b9e1fa62c45b25c03baa4fbb2a73e0884d1494"
+            }
+          ],
+          "token_negotiations": [],
+          "status": "ok",
+          "effective_max_tokens": 1000000,
+          "elapsed_seconds": 746.96,
+          "response_model": "claude-sonnet-5-5",
+          "response_id": "msg_011CgBGfjrvYz0FTEIKXrSlw",
+          "stop_reason": "end_turn",
+          "input_tokens": 4,
+          "output_tokens": 46306,
+          "message_stop": true,
+          "thinking_char_count": 0
+        },
+        "self_repair": true
+      },
+      "initial_status": "invalid",
+      "initial_writer": {
+        "requested_model": "claude-sonnet-5-5",
+        "started_at": "2026-10-19T16:00:35+08:00",
+        "max_tokens": 32768,
+        "status": "ok",
+        "elapsed_seconds": 578.11,
+        "response_model": "claude-sonnet-5-5",
+        "response_id": "msg_011CgBF6twjb9KLzF0HGJpqH",
+        "stop_reason": "max_tokens",
+        "input_tokens": 4,
+        "output_tokens": 32768,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "validation": {
+        "html_sha256": "505ef181bdbe5905690205ea2ae51b3bb89552034e135df1409606a02b11dd14",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "repaired": true,
+      "development": {
+        "status": "awaiting_check",
+        "round": 1,
+        "artifact": "versions/v0001",
+        "source_sha256": "505ef181bdbe5905690205ea2ae51b3bb89552034e135df1409606a02b11dd14",
+        "validation": {
+          "html_sha256": "505ef181bdbe5905690205ea2ae51b3bb89552034e135df1409606a02b11dd14",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:29+08:00",
+        "candidate": null,
+        "writer": {
+          "requested_model": "claude-sonnet-5-5",
+          "started_at": "2026-10-19T16:58:11+08:00",
+          "max_tokens": 1000000,
+          "deadline_seconds": null,
+          "total_output_limit": null,
+          "segments": [
+            {
+              "index": 1,
+              "max_tokens": 1000000,
+              "stop_reason": "end_turn",
+              "input_tokens": 52097,
+              "output_tokens": 692,
+              "response_model": "claude-sonnet-5-5",
+              "response_id": "msg_011CgBKVt4aFABJLuYAwMFd3",
+              "sha256": "400e71b6701bf0cf8ed538b051c81109afed61578919bea698da8e29fa58b3ea"
+            }
+          ],
+          "token_negotiations": [],
+          "status": "ok",
+          "effective_max_tokens": 1000000,
+          "elapsed_seconds": 17.76,
+          "response_model": "claude-sonnet-5-5",
+          "response_id": "msg_011CgBKVt4aFABJLuYAwMFd3",
+          "stop_reason": "end_turn",
+          "input_tokens": 52097,
+          "output_tokens": 692,
+          "message_stop": true,
+          "thinking_char_count": 0
+        }
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:40:11+08:00",
+        "new_runtime_evidence": true
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "505ef181bdbe5905690205ea2ae51b3bb89552034e135df1409606a02b11dd14",
+      "combat_check": null,
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-04",
+      "model": "claude-fable-5-1",
+      "status": "ready",
+      "attempts": 2,
+      "pre_budget_change_status": "failed",
+      "writer": {
+        "requested_model": "claude-fable-5-1",
+        "started_at": "2026-10-19T16:25:08+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 1783,
+            "output_tokens": 73077,
+            "response_model": "claude-fable-5-1",
+            "response_id": "msg_011CgBH8q0NdE5GBbfF6frMM",
+            "sha256": "ed417cf9396777a16e82940c892c484341a68b8036f706878ff604da89fe1c05"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 1536.77,
+        "response_model": "claude-fable-5-1",
+        "response_id": "msg_011CgBH8q0NdE5GBbfF6frMM",
+        "stop_reason": "end_turn",
+        "input_tokens": 1783,
+        "output_tokens": 73077,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "validation": {
+        "html_sha256": "979707b8810dc332dbe82fc505f11ffe5eb49779528d5a5fead667ad1553a1df",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "979707b8810dc332dbe82fc505f11ffe5eb49779528d5a5fead667ad1553a1df",
+        "validation": {
+          "html_sha256": "979707b8810dc332dbe82fc505f11ffe5eb49779528d5a5fead667ad1553a1df",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": "979707b8810dc332dbe82fc505f11ffe5eb49779528d5a5fead667ad1553a1df",
+      "combat_check": {
+        "source_sha256": "979707b8810dc332dbe82fc505f11ffe5eb49779528d5a5fead667ad1553a1df",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false
+    },
+    {
+      "id": "作品-05",
+      "model": "claude-opus-4-8",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "claude-opus-4-8",
+        "started_at": "2026-10-19T16:21:08+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 2,
+            "output_tokens": 35395,
+            "response_model": "claude-opus-4-8",
+            "response_id": "msg_011CgBGfzfvHhTAKn6Oua4HK",
+            "sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 561.76,
+        "response_model": "claude-opus-4-8",
+        "response_id": "msg_011CgBGfzfvHhTAKn6Oua4HK",
+        "stop_reason": "end_turn",
+        "input_tokens": 2,
+        "output_tokens": 35395,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "human": null,
+      "repair": {
+        "status": "ready",
+        "at": "2026-10-19T16:30:30+08:00",
+        "validation": {
+          "html_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "writer": {
+          "requested_model": "claude-opus-4-8",
+          "started_at": "2026-10-19T16:21:08+08:00",
+          "max_tokens": 1000000,
+          "deadline_seconds": null,
+          "total_output_limit": null,
+          "segments": [
+            {
+              "index": 1,
+              "max_tokens": 1000000,
+              "stop_reason": "end_turn",
+              "input_tokens": 2,
+              "output_tokens": 35395,
+              "response_model": "claude-opus-4-8",
+              "response_id": "msg_011CgBGfzfvHhTAKn6Oua4HK",
+              "sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691"
+            }
+          ],
+          "token_negotiations": [],
+          "status": "ok",
+          "effective_max_tokens": 1000000,
+          "elapsed_seconds": 561.76,
+          "response_model": "claude-opus-4-8",
+          "response_id": "msg_011CgBGfzfvHhTAKn6Oua4HK",
+          "stop_reason": "end_turn",
+          "input_tokens": 2,
+          "output_tokens": 35395,
+          "message_stop": true,
+          "thinking_char_count": 0
+        },
+        "self_repair": true
+      },
+      "initial_status": "invalid",
+      "initial_writer": {
+        "requested_model": "claude-opus-4-8",
+        "started_at": "2026-10-19T16:02:17+08:00",
+        "max_tokens": 32768,
+        "status": "ok",
+        "elapsed_seconds": 617.77,
+        "response_model": "claude-opus-4-8",
+        "response_id": "msg_011CgBFEufCQZVUfFhlCz29w",
+        "stop_reason": "max_tokens",
+        "input_tokens": 2,
+        "output_tokens": 32768,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "validation": {
+        "html_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "repaired": true,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": "repair",
+        "source_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+        "validation": {
+          "html_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:31:05.964Z",
+        "method": "Chrome 实际运行；统一屏幕采样控件发送 key/code。原始作品未改动。",
+        "actions": [
+          "开始",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "L 机动",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "跳跃 + J",
+          "I 特色能力"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "进入场景后的初始状态",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":0,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "接敌、主攻、副攻与特色能力采样后，命中情况见状态显示",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":1,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "机动、追加连段、重击与空中动作采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":1,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          }
+        ],
+        "note": "短时合成输入和离散截图不能代替真人连续试玩或听音；未捕到的效果需交叉核对源码，不能直接判定不存在。 ",
+        "source_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:32:09+08:00"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+      "combat_check": {
+        "source_sha256": "235ac80395481aafd224754539d7fb5192f8c8f1fa7baa0036e4f29fc2444691",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-06",
+      "model": "gpt-6-astra",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "gpt-6-astra",
+        "started_at": "2026-10-19T16:06:30+08:00",
+        "max_tokens": 32768,
+        "status": "ok",
+        "elapsed_seconds": 585.73,
+        "response_model": "gpt-6-astra",
+        "response_id": "resp_0be539d244f7c200016ad5cf8a472c8199ac2af617cc7cbb16",
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 19308,
+        "message_stop": true,
+        "thinking_char_count": 558
+      },
+      "validation": {
+        "html_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33",
+        "validation": {
+          "html_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:23:58.872Z",
+        "method": "Chrome 实际运行；sample=1 统一屏幕按键发送 key/code，不改原始游戏逻辑",
+        "actions": [
+          "点击开始",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "跳跃 + J",
+          "L 机动",
+          "J 连按 · 1秒"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "开始后，尚未输入攻击",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true,\"paused\":false,\"wave\":1,\"playerHP\":100}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "主攻、副攻、挑空后，已记录1次命中",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":2,\"limbBreakCount\":0,\"playing\":true,\"paused\":false,\"wave\":1,\"playerHP\":100}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "追加连击、重击、挑空、空中攻击及闪避后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":2,\"limbBreakCount\":0,\"playing\":true,\"paused\":false,\"wave\":1,\"playerHP\":100}"
+          }
+        ],
+        "note": "合成按键与离散截图仅供辅助；实际连续手感、输入延迟和音频仍需真人体验。 ",
+        "source_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:24:59+08:00"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33",
+      "combat_check": {
+        "source_sha256": "92d4064766f18d1fdd6e7a783ce4d31f3d6ec672cd787692312291be414b9a33",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-07",
+      "model": "gpt-5.6-sol",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "gpt-5.6-sol",
+        "started_at": "2026-10-19T16:08:36+08:00",
+        "max_tokens": 32768,
+        "status": "ok",
+        "elapsed_seconds": 416.84,
+        "response_model": "gpt-5.6-sol",
+        "response_id": "resp_0ee867501e3cc8f6016ad5d0081784819bb50db166357e7477",
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 18553,
+        "message_stop": true,
+        "thinking_char_count": 1756
+      },
+      "validation": {
+        "html_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f",
+        "validation": {
+          "html_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:24:39.468Z",
+        "method": "Chrome 实际运行；sample=1 统一屏幕按键发送 key/code，不改原始游戏逻辑",
+        "actions": [
+          "点击开始",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "L 机动",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "跳跃 + J",
+          "J 连按 · 1秒"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "开始后的初始战斗状态",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "接敌及攻击采样后，当前尚未记录命中",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "机动、连击、重击、弹反/升龙与空中攻击采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          }
+        ],
+        "note": "合成按键与离散截图仅供辅助；实际连续手感、输入延迟和音频仍需真人体验。 本次短时采样未确认断肢触发，需与源码实现交叉核对。",
+        "source_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:26:00+08:00"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f",
+      "combat_check": {
+        "source_sha256": "f7dfc45809d35f3cb0829fbd4512e739f860334e3b2961e38c6a4cd4d2e2e93f",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-08",
+      "model": "claude-opus-5-5",
+      "status": "failed",
+      "attempts": 2,
+      "pre_budget_change_status": "failed",
+      "error": "Anthropic upstream timed out before the first effective output",
+      "human": null,
+      "development": {
+        "status": "awaiting_service",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": null,
+        "validation": null,
+        "last_error": "Anthropic upstream timed out before the first effective output",
+        "next_retry_at": 1792400590.7413485,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": null,
+      "combat_check": {},
+      "judge_eligible": false
+    },
+    {
+      "id": "作品-09",
+      "model": "claude-haiku-5-5",
+      "status": "ready",
+      "attempts": 1,
+      "pre_budget_change_status": "building",
+      "writer": {
+        "requested_model": "claude-haiku-5-5",
+        "started_at": "2026-10-19T16:21:08+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 1783,
+            "output_tokens": 38937,
+            "response_model": "claude-haiku-5-5",
+            "response_id": "msg_011CgBGq6yPxfhANWLXLHmk7",
+            "sha256": "4b83f7c86ced62644db65f6bb4d479367439aeba06e5b4cd4f5fb3f7c4629780"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 955.36,
+        "response_model": "claude-haiku-5-5",
+        "response_id": "msg_011CgBGq6yPxfhANWLXLHmk7",
+        "stop_reason": "end_turn",
+        "input_tokens": 1783,
+        "output_tokens": 38937,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "validation": {
+        "html_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b",
+        "validation": {
+          "html_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:39:36.699Z",
+        "method": "Chrome 实际运行；统一屏幕采样控件发送 key/code。原始作品未改动。",
+        "actions": [
+          "开始",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "L 机动",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "跳跃 + J",
+          "I 特色能力"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "进入场景后的初始状态",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":0,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "接敌、主攻、副攻与特色能力采样后，命中情况见状态显示",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "机动、追加连段、重击与空中动作采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":2,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          }
+        ],
+        "note": "短时合成输入和离散截图不能代替真人连续试玩或听音；未捕到的效果需交叉核对源码，不能直接判定不存在。 ",
+        "source_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:40:45+08:00"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b",
+      "combat_check": {
+        "source_sha256": "7622b5abc3018e9d9fede04c1e2542eafce6496d91c5c2c53f507c0fc923983b",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-10",
+      "model": "kimi-k2.8-preview",
+      "status": "ready",
+      "pre_budget_change_status": "building",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "kimi-k2.8-preview",
+        "started_at": "2026-10-19T16:21:08+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 11,
+            "output_tokens": 70017,
+            "response_model": "kimi-k2.8-preview",
+            "response_id": "114e829e-50dd-4ba7-9e29-0e9f13c117ae",
+            "sha256": "217077eb401e270d39651acc100b9a9b5e6222725eac0925de9aa249775e19e3"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 1689.14,
+        "response_model": "kimi-k2.8-preview",
+        "response_id": "114e829e-50dd-4ba7-9e29-0e9f13c117ae",
+        "stop_reason": "end_turn",
+        "input_tokens": 11,
+        "output_tokens": 70017,
+        "message_stop": true,
+        "thinking_char_count": 153008
+      },
+      "validation": {
+        "html_sha256": "217077eb401e270d39651acc100b9a9b5e6222725eac0925de9aa249775e19e3",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "217077eb401e270d39651acc100b9a9b5e6222725eac0925de9aa249775e19e3",
+        "validation": {
+          "html_sha256": "217077eb401e270d39651acc100b9a9b5e6222725eac0925de9aa249775e19e3",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": "217077eb401e270d39651acc100b9a9b5e6222725eac0925de9aa249775e19e3",
+      "combat_check": {
+        "source_sha256": "217077eb401e270d39651acc100b9a9b5e6222725eac0925de9aa249775e19e3",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false
+    },
+    {
+      "id": "作品-11",
+      "model": "glm-5.3-flash",
+      "status": "failed",
+      "pre_budget_change_status": "building",
+      "attempts": 2,
+      "error": "Upstream request failed",
+      "human": null,
+      "development": {
+        "status": "awaiting_service",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": null,
+        "validation": null,
+        "last_error": "Upstream request failed",
+        "next_retry_at": 1792400590.7462492,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": null,
+      "combat_check": {},
+      "judge_eligible": false
+    },
+    {
+      "id": "作品-12",
+      "model": "gpt-6.1-sol",
+      "status": "ready",
+      "pre_budget_change_status": "building",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "gpt-6.1-sol",
+        "started_at": "2026-10-19T16:29:14+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 0,
+            "output_tokens": 17812,
+            "response_model": "gpt-6.1-sol",
+            "response_id": "resp_075026b7101558e3016ad5d4ddb4a48199a3b0c3fc9055faea",
+            "sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 389.81,
+        "response_model": "gpt-6.1-sol",
+        "response_id": "resp_075026b7101558e3016ad5d4ddb4a48199a3b0c3fc9055faea",
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 17812,
+        "message_stop": true,
+        "thinking_char_count": 2486
+      },
+      "validation": {
+        "html_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62",
+        "validation": {
+          "html_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:40:33.103Z",
+        "method": "Chrome 实际运行；统一屏幕采样按键发送 key/code，不改作者游戏逻辑。",
+        "actions": [
+          "开始",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "L 机动",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "跳跃 + J",
+          "I 特色能力"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "开始后的初始场景",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "接敌、主攻、副攻与特色能力采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "机动、追加连段、重击与空中动作采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          }
+        ],
+        "note": "短时合成输入和离散截图不是连续体验，未捕到的效果必须交叉核对源码；未听取音频。",
+        "runtime_errors": [],
+        "source_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:42:11+08:00",
+        "new_runtime_evidence": false
+      },
+      "runtime": {
+        "at": "2026-10-19T08:41:27.928Z",
+        "status": "ok",
+        "errors": [],
+        "note": "已按当前作品URL过滤；排除复用标签页先前导航遗留的其他作品控制台错误。",
+        "source_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62",
+      "combat_check": {
+        "source_sha256": "5c273efb1700a000ea0a40a3fd82813601709e5ab8018aaf7207eef70e8e2e62",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-13",
+      "model": "claude-opus-4-6",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "claude-opus-4-6",
+        "started_at": "2026-10-19T16:35:44+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 1661,
+            "output_tokens": 35690,
+            "response_model": "claude-opus-4-6",
+            "response_id": "msg_011CgBHnZmbkJOCaep6BPsAS",
+            "sha256": "ccb2215f3c84639ffc903067fd6bbcf82567d870206baf3a224c3e3386e19745"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 976.42,
+        "response_model": "claude-opus-4-6",
+        "response_id": "msg_011CgBHnZmbkJOCaep6BPsAS",
+        "stop_reason": "end_turn",
+        "input_tokens": 1661,
+        "output_tokens": 35690,
+        "message_stop": true,
+        "thinking_char_count": 0
+      },
+      "validation": {
+        "html_sha256": "9edb0ce259d777509bec4cc9646a756092f6a54cf5131ddf102d76b3f7903f85",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "9edb0ce259d777509bec4cc9646a756092f6a54cf5131ddf102d76b3f7903f85",
+        "validation": {
+          "html_sha256": "9edb0ce259d777509bec4cc9646a756092f6a54cf5131ddf102d76b3f7903f85",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": "9edb0ce259d777509bec4cc9646a756092f6a54cf5131ddf102d76b3f7903f85",
+      "combat_check": {
+        "source_sha256": "9edb0ce259d777509bec4cc9646a756092f6a54cf5131ddf102d76b3f7903f85",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false
+    },
+    {
+      "id": "作品-14",
+      "model": "kimi-k3",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "kimi-k3",
+        "started_at": "2026-10-19T16:37:03+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 1157,
+            "output_tokens": 10273,
+            "response_model": "kimi-k3",
+            "response_id": "6b77c4cca039e5cde321801113ca4bd3",
+            "sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 214.48,
+        "response_model": "kimi-k3",
+        "response_id": "6b77c4cca039e5cde321801113ca4bd3",
+        "stop_reason": "end_turn",
+        "input_tokens": 1157,
+        "output_tokens": 10273,
+        "message_stop": true,
+        "thinking_char_count": 6937
+      },
+      "validation": {
+        "html_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+        "validation": {
+          "html_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "capture": {
+        "at": "2026-10-19T08:42:31.556Z",
+        "method": "Chrome 实际运行；统一屏幕采样按键发送 key/code，不改作者游戏逻辑。",
+        "actions": [
+          "开始",
+          "右移 D · 1秒",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "I 特色能力",
+          "L 机动",
+          "J 连按 · 1秒",
+          "K 副攻 · 0.8秒",
+          "跳跃 + J",
+          "I 特色能力"
+        ],
+        "screenshots": [
+          {
+            "file": "sample-1.png",
+            "label": "开始后的初始场景",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-2.png",
+            "label": "接敌、主攻、副攻与特色能力采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          },
+          {
+            "file": "sample-3.png",
+            "label": "机动、追加连段、重击与空中动作采样后",
+            "state": "真实状态 / {\"ready\":true,\"playerAlive\":true,\"enemyCount\":3,\"hitCount\":0,\"limbBreakCount\":0,\"playing\":true}"
+          }
+        ],
+        "note": "短时合成输入和离散截图不是连续体验，未捕到的效果必须交叉核对源码；未听取音频。",
+        "runtime_errors": [],
+        "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d"
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:43:23+08:00",
+        "new_runtime_evidence": false
+      },
+      "runtime": {
+        "at": "2026-10-19T08:42:47.623Z",
+        "status": "ok",
+        "errors": [],
+        "note": "按本作品URL筛选控制台错误；不包含先前导航的其他作品。",
+        "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d"
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+      "combat_check": {
+        "source_sha256": "9062a68c5afa5fe2ba7bedbc4ed70f210e38ddc3963ed4f45fe5e3f4260af46d",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-15",
+      "model": "deepseek-v4.1-flash",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "deepseek-v4.1-flash",
+        "started_at": "2026-10-19T16:40:38+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 1008,
+            "output_tokens": 45697,
+            "response_model": "deepseek-v4.1-flash",
+            "response_id": "a94767b3-2ca4-4ac2-9359-b1f481830f85",
+            "sha256": "9d732a4141e6702e941f07e7c5da2b44a58b912543c4613483b49de74d2aae85"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 168.33,
+        "response_model": "deepseek-v4.1-flash",
+        "response_id": "a94767b3-2ca4-4ac2-9359-b1f481830f85",
+        "stop_reason": "end_turn",
+        "input_tokens": 1008,
+        "output_tokens": 45697,
+        "message_stop": true,
+        "thinking_char_count": 63926
+      },
+      "validation": {
+        "html_sha256": "2d3ef130d7cd11f1db001365f7ab1f6a2a3c4097f9b843cb0220dbb915c773ba",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 1,
+        "artifact": "versions/v0001",
+        "source_sha256": "2d3ef130d7cd11f1db001365f7ab1f6a2a3c4097f9b843cb0220dbb915c773ba",
+        "validation": {
+          "html_sha256": "2d3ef130d7cd11f1db001365f7ab1f6a2a3c4097f9b843cb0220dbb915c773ba",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:25+08:00",
+        "candidate": null,
+        "writer": {
+          "requested_model": "deepseek-v4.1-flash",
+          "started_at": "2026-10-19T16:58:11+08:00",
+          "max_tokens": 1000000,
+          "deadline_seconds": null,
+          "total_output_limit": null,
+          "segments": [
+            {
+              "index": 1,
+              "max_tokens": 1000000,
+              "stop_reason": "end_turn",
+              "input_tokens": 17646,
+              "output_tokens": 2428,
+              "response_model": "deepseek-v4.1-flash",
+              "response_id": "f2ed5358-6657-4f0d-9cb5-fe41f2602d5e",
+              "sha256": "644d4ec7633c93429cd5c4bb6757a047cc48596943bc3f8b815605fcf9d2bcf8"
+            }
+          ],
+          "token_negotiations": [],
+          "status": "ok",
+          "effective_max_tokens": 1000000,
+          "elapsed_seconds": 13.68,
+          "response_model": "deepseek-v4.1-flash",
+          "response_id": "f2ed5358-6657-4f0d-9cb5-fe41f2602d5e",
+          "stop_reason": "end_turn",
+          "input_tokens": 17646,
+          "output_tokens": 2428,
+          "message_stop": true,
+          "thinking_char_count": 5384
+        }
+      },
+      "judge_meta": {
+        "status": "scored",
+        "at": "2026-10-19T16:45:20+08:00",
+        "new_runtime_evidence": false
+      },
+      "judge_status": "scored",
+      "judge_error": null,
+      "source_sha256": "2d3ef130d7cd11f1db001365f7ab1f6a2a3c4097f9b843cb0220dbb915c773ba",
+      "combat_check": null,
+      "judge_eligible": false,
+      "previous_grade_available": true
+    },
+    {
+      "id": "作品-16",
+      "model": "gpt-6-luna",
+      "status": "ready",
+      "attempts": 1,
+      "writer": {
+        "requested_model": "gpt-6-luna",
+        "started_at": "2026-10-19T16:43:26+08:00",
+        "max_tokens": 1000000,
+        "deadline_seconds": null,
+        "total_output_limit": null,
+        "segments": [
+          {
+            "index": 1,
+            "max_tokens": 1000000,
+            "stop_reason": "end_turn",
+            "input_tokens": 0,
+            "output_tokens": 19289,
+            "response_model": "gpt-6-luna",
+            "response_id": "resp_063af798575e5062016ad5d83253308199b5590024ae100005",
+            "sha256": "44e5765a6a7dce11580360a4ee45f3d8e700d4bff67c2fa2e44d9550b1b731fc"
+          }
+        ],
+        "token_negotiations": [],
+        "status": "ok",
+        "effective_max_tokens": 1000000,
+        "elapsed_seconds": 316.24,
+        "response_model": "gpt-6-luna",
+        "response_id": "resp_063af798575e5062016ad5d83253308199b5590024ae100005",
+        "stop_reason": "end_turn",
+        "input_tokens": 0,
+        "output_tokens": 19289,
+        "message_stop": true,
+        "thinking_char_count": 1432
+      },
+      "validation": {
+        "html_sha256": "44e5765a6a7dce11580360a4ee45f3d8e700d4bff67c2fa2e44d9550b1b731fc",
+        "scripts": 1,
+        "syntax_checked": true,
+        "runtime_tested": false,
+        "extracted_only": true
+      },
+      "human": null,
+      "development": {
+        "status": "awaiting_check",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": "44e5765a6a7dce11580360a4ee45f3d8e700d4bff67c2fa2e44d9550b1b731fc",
+        "validation": {
+          "html_sha256": "44e5765a6a7dce11580360a4ee45f3d8e700d4bff67c2fa2e44d9550b1b731fc",
+          "scripts": 1,
+          "syntax_checked": true,
+          "runtime_tested": false,
+          "extracted_only": true
+        },
+        "last_error": null,
+        "next_retry_at": 0,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": "44e5765a6a7dce11580360a4ee45f3d8e700d4bff67c2fa2e44d9550b1b731fc",
+      "combat_check": {
+        "source_sha256": "44e5765a6a7dce11580360a4ee45f3d8e700d4bff67c2fa2e44d9550b1b731fc",
+        "passed": false,
+        "at": "2026-10-19T16:58:09+08:00",
+        "reason": "按新规则需补充正常战斗与破坏效果验证，技术问题不扣分"
+      },
+      "judge_eligible": false
+    },
+    {
+      "id": "作品-17",
+      "model": "glm-5.3",
+      "status": "failed",
+      "attempts": 2,
+      "error": "Upstream request failed",
+      "human": null,
+      "development": {
+        "status": "awaiting_service",
+        "round": 0,
+        "artifact": ".",
+        "source_sha256": null,
+        "validation": null,
+        "last_error": "Upstream request failed",
+        "next_retry_at": 1792400590.7537892,
+        "updated_at": "2026-10-19T16:58:10+08:00"
+      },
+      "source_sha256": null,
+      "combat_check": {},
+      "judge_eligible": false
+    }
+  ],
+  "updated_at": "2026-10-19T16:52:00+08:00",
+  "budget_history": [
+    {
+      "at": "2026-10-19T16:21:08+08:00",
+      "reason": "用户要求不设本地总输出和时间限制；单次先申请100万tokens，上游触顶自动续写",
+      "previous_parameters": {
+        "max_tokens": 32768,
+        "deadline_seconds": 1800,
+        "concurrency": 4,
+        "technical_attempts": 2,
+        "effort": "provider_default",
+        "tools": false
+      }
+    }
+  ],
+  "evaluation_policy": {
+    "id": "feel-only-v2",
+    "at": "2026-10-19T16:58:09+08:00",
+    "criterion": "只评价最终打击感理解；不计编译、渲染、一次通过率或修复次数",
+    "technical_repair_round_limit": null,
+    "total_output_limit": null,
+    "deadline_seconds": null,
+    "requires_normal_combat_verification": true
+  },
+  "rated_count": 0,
+  "verified_count": 1
+}

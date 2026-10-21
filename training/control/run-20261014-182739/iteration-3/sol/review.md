@@ -1,0 +1,33 @@
+# Sol iteration 3
+
+## Public records and concrete mistakes
+
+Read RULES.md, our own previous_bot.py and engine.py, prior notes, and all 11 public move lists. There are seven distinct sequences: games 0/2/4 repeat one sequence and 1/3/5 repeat another. Sol won both iteration-2 games. This is useful tactical evidence, not a broad strength measurement. Previous reviews are preserved as review_iteration1.md and review_iteration2.md, and the prior engine as engine_iteration2.py. previous_bot.py was not modified.
+
+* Game 9, c0456dbabc64e04d: after white's ply-8 (10,8), white has the broken horizontal three (7,8), (8,8), (10,8). Black's ply-9 (8,5) ignores it. White fills (9,8), producing four with winning endpoints (6,8) and (11,8). Black's subsequent (6,8) cannot stop (11,8). A direct block at (9,8) before the four forms prevents this particular continuation. Sol's earlier (7,5) restrains black's broken vertical three, but is not the only proven legal choice: black's lower endpoint (7,8) is already occupied by white, so this is not an immediate open-four emergency. The final validation chooses (7,5); an earlier timed run chose (9,6) after completing a different search depth. Neither choice is established as optimal.
+* Game 10, 65ab4d8089a3261f: black's ply-7 (6,7) makes the open horizontal three (6,7), (7,7), (8,7). White's (12,11) at ply 8 legitimately forces black to block (13,12), because black already occupies (8,7), the other end of white's diagonal four. White's ply-10 (9,10) then fails to address the horizontal threat. Black's (9,7) creates winning cells (5,7) and (10,7), and white can only delay the win. The key lesson is to reassess the original threat after the forced defensive reply.
+* Earlier game 0: the broken diagonal four requires white's (5,9). Black then neglects white's open vertical three; white creates an open four. Earlier game 1 similarly punishes neglect of black's diagonal three through (7,7), (8,8), (9,9).
+* Human game 6: white's nonforcing (10,7) leaves black's vertical open three untouched. Defense must happen before black plays (7,6); a single endpoint block afterward is too late. The revised engine still chooses (7,10) before the open four.
+* Games 7 and 8 retain the same lesson: defend open threes before they become double winning continuations. Sol's game-7 (7,6) conceded a forcing tempo, though the record does not prove it lost or that our alternate move is stronger.
+
+## Implemented changes
+
+entry.json selects the persistent standard-library Python engine with command ["python3", "engine.py"]. Each line rebuilds from the authoritative board and returns a legal, flushed JSON move. Center opening, exact immediate wins/blocks, double-continuation recognition, bounded forcing-four proofs, incremental make/unmake, and the 4.4-second search deadline are retained.
+
+1. Before the initial forcing proof, screen the 16 root candidates tactically. Reject a move that permits an opponent double winning continuation when we have no immediate winning continuation ourselves. Also reject a forcing four when its unique mandatory block itself creates an enemy double continuation. These are concrete losing replies, not merely heuristic scores. If every screened move fails, retain the original root set rather than return an empty list; this does not recover a defense omitted by selective search.
+2. Save the best screened move incrementally, including during a partial screening pass. Timeout now retains a tactically checked fallback whenever one has been completed. Rank surviving roots by their resulting position instead of relying only on the pre-move pattern score. This addresses a weakness in the former timeout fallback; no recorded timeout loss was observed.
+3. Preserve a preferred search move per board and side across iterative depths. Search that move first when it is in the current selective candidate list. This improves pruning without allowing a quiet preferred move into forcing-only horizon search. Existing depth-specific transposition bounds remain separate.
+
+No subagents, network access, external engines, or opponent implementations were used.
+
+## Validation
+
+`python3 test_engine.py` checks 29 positions through one persistent entrypoint: legal coordinates, expected tactical moves where justified, clean stderr, and elapsed time below five seconds. Six additional cases cover both new public games, including the mandatory diagonal block (13,12), broken-three conversion (9,8), horizontal open-four creation, and final wins. Early quiet positions assert legality and timing rather than an unproven optimum. Full measurements are in validation.json. The slowest cases use the 4.4-second deadline; immediate tactical moves take milliseconds. The human replay defense reaches depth 7 in approximately 1.5 seconds on this host, versus approximately 2.49 seconds recorded in iteration 2; this is not a controlled strength comparison.
+
+`python3 test_properties.py` passes 50 seeded random-board comparisons against an independent contiguous-line win oracle, exact checks of double continuations, nested incremental-state comparisons and rollback, and timeout restoration. Four cold-process cases return clean legal JSON under five seconds, with measurements in budget_validation.json. A new injected search timeout after the root screen confirms that the saved fallback prevents the human replay's next-turn double continuation and that board/scores/history remain restored. An initially overrestrictive early-position test was corrected after checking the actual occupied endpoint; the final suite does not require copying the historical move.
+
+## Remaining weaknesses and future notes
+
+Selective search still considers 16 root moves and 10/8 ordinary deeper moves; the tactical screen cannot rescue a defense outside that root list. Neighborhood radius two can omit remote moves. Threat extensions are capped at four extra plies, defensive candidate sets at 12, and the forcing-four proof at eight attacking moves and 0.65 seconds. Open threes and double threes remain heuristic; there is no exhaustive three-threat solver. Quiet quiescence baselines are approximate. Local timing checks cannot guarantee the same runtime on a slower host.
+
+Continue deduplicating public sequences and identify the first avoidable threat, including mistakes inside wins. Preserve independent tactical oracles and timeout tests. Do not infer strength from repeated games or describe a changed early move as an improvement without checking its continuation. The new fallback test is particularly useful when future proof search consumes most of the move budget.

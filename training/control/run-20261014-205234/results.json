@@ -1,0 +1,158 @@
+[
+  {
+    "id": "3e863ec5071e9f8c",
+    "players": [
+      {
+        "id": "5634e2723b13d260",
+        "name": "GPT-6 Astra · 迭代 1",
+        "kind": "model"
+      },
+      {
+        "id": "91cb8e99e0168c2a",
+        "name": "GPT-6.1 Sol · 迭代 1",
+        "kind": "model"
+      }
+    ],
+    "rounds": 2,
+    "gameIds": [
+      "ec2f009a1042efac",
+      "72ccfa4ccb489216"
+    ],
+    "status": "finished",
+    "createdAt": "2026-10-14T12:57:48.627Z",
+    "finishedAt": "2026-10-14T13:01:06.923Z",
+    "currentGameId": "72ccfa4ccb489216",
+    "standings": [
+      {
+        "id": "5634e2723b13d260",
+        "name": "GPT-6 Astra · 迭代 1",
+        "kind": "model",
+        "played": 2,
+        "wins": 0,
+        "losses": 2,
+        "draws": 0,
+        "blackWins": 0,
+        "whiteWins": 0,
+        "score": 0,
+        "winRate": 0
+      },
+      {
+        "id": "91cb8e99e0168c2a",
+        "name": "GPT-6.1 Sol · 迭代 1",
+        "kind": "model",
+        "played": 2,
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "blackWins": 1,
+        "whiteWins": 1,
+        "score": 2,
+        "winRate": 1
+      }
+    ]
+  },
+  {
+    "id": "0a4d5125d2b65cfd",
+    "players": [
+      {
+        "id": "19aed1a634d044a9",
+        "name": "GPT-6 Astra · 迭代 2",
+        "kind": "model"
+      },
+      {
+        "id": "7777e2a2f150b466",
+        "name": "GPT-6.1 Sol · 迭代 2",
+        "kind": "model"
+      }
+    ],
+    "rounds": 2,
+    "gameIds": [
+      "9c80ca79494320e9",
+      "c1ca491b0482e5f2"
+    ],
+    "status": "finished",
+    "createdAt": "2026-10-14T13:06:39.121Z",
+    "finishedAt": "2026-10-14T13:08:45.770Z",
+    "currentGameId": "c1ca491b0482e5f2",
+    "standings": [
+      {
+        "id": "19aed1a634d044a9",
+        "name": "GPT-6 Astra · 迭代 2",
+        "kind": "model",
+        "played": 2,
+        "wins": 0,
+        "losses": 2,
+        "draws": 0,
+        "blackWins": 0,
+        "whiteWins": 0,
+        "score": 0,
+        "winRate": 0
+      },
+      {
+        "id": "7777e2a2f150b466",
+        "name": "GPT-6.1 Sol · 迭代 2",
+        "kind": "model",
+        "played": 2,
+        "wins": 2,
+        "losses": 0,
+        "draws": 0,
+        "blackWins": 1,
+        "whiteWins": 1,
+        "score": 2,
+        "winRate": 1
+      }
+    ]
+  },
+  {
+    "id": "b531a64e5914ad96",
+    "players": [
+      {
+        "id": "71a15b78e6b7f6dc",
+        "name": "GPT-6 Astra · 迭代 3",
+        "kind": "model"
+      },
+      {
+        "id": "aa4c0b608ee76abc",
+        "name": "GPT-6.1 Sol · 迭代 3",
+        "kind": "model"
+      }
+    ],
+    "rounds": 2,
+    "gameIds": [
+      "985182798301f6cb",
+      "f442f3f1535d02f2"
+    ],
+    "status": "finished",
+    "createdAt": "2026-10-14T13:14:47.980Z",
+    "finishedAt": "2026-10-14T13:27:59.982Z",
+    "currentGameId": "f442f3f1535d02f2",
+    "standings": [
+      {
+        "id": "71a15b78e6b7f6dc",
+        "name": "GPT-6 Astra · 迭代 3",
+        "kind": "model",
+        "played": 2,
+        "wins": 0,
+        "losses": 1,
+        "draws": 1,
+        "blackWins": 0,
+        "whiteWins": 0,
+        "score": 0.5,
+        "winRate": 0
+      },
+      {
+        "id": "aa4c0b608ee76abc",
+        "name": "GPT-6.1 Sol · 迭代 3",
+        "kind": "model",
+        "played": 2,
+        "wins": 1,
+        "losses": 0,
+        "draws": 1,
+        "blackWins": 1,
+        "whiteWins": 0,
+        "score": 1.5,
+        "winRate": 0.5
+      }
+    ]
+  }
+]

@@ -1,0 +1,1002 @@
+{
+  "run": "run-20261016-100051",
+  "phase": "比赛完成",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "opus": "Claude Opus 5.5",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "low",
+  "round": 3,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 1.06,
+      "scores": {
+        "opus": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 162,
+      "windows": 161,
+      "sha256": "04894c7f61a50869f751f76e20733c5b7715aac0c36ef6717942cfa90aec4709"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.06,
+      "scores": {
+        "opus": 0,
+        "sol": 2000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 289,
+      "windows": 288,
+      "sha256": "70150d652308da0056ec07389933cb2aa4fd10dd3a41cc2b4008c908bb05cc85"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.8,
+      "scores": {
+        "opus": 0,
+        "sol": 2000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 282,
+      "windows": 281,
+      "sha256": "630bee919af29f5bbf480323fe7dd944af7e14798c45d8168b50eb858bb193a2"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": null,
+      "reason": "五局战平",
+      "duration": 2.56,
+      "scores": {
+        "opus": 0,
+        "sol": 0
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 296,
+      "windows": 295,
+      "sha256": "edf22e99df28f6de074317878a75d206b23233c6a5510be2924914d3927904b7"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.86,
+      "scores": {
+        "opus": 0,
+        "sol": 2000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 296,
+      "windows": 295,
+      "sha256": "70880ea908efab795e8351dbdd52fc253812f414809e73384f1a6618a8e592d6"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": null,
+      "reason": "五局战平",
+      "duration": 2.92,
+      "scores": {
+        "opus": 0,
+        "sol": 0
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 301,
+      "windows": 300,
+      "sha256": "9d2710abb796aea4a7da5dcb60c50632455c58682470b5c88d571100c8b26005"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 1.06,
+      "scores": {
+        "opus": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 162,
+      "windows": 161,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1100,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 7
+        },
+        {
+          "round": 2,
+          "frames": 1117,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 7
+        },
+        {
+          "round": 3,
+          "frames": 1000,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 5
+        }
+      ],
+      "sha256": "04894c7f61a50869f751f76e20733c5b7715aac0c36ef6717942cfa90aec4709"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.06,
+      "scores": {
+        "opus": 0,
+        "sol": 2000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 289,
+      "windows": 288,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1048,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 5
+        },
+        {
+          "round": 2,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 3,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 4,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 5,
+          "frames": 1100,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 7
+        }
+      ],
+      "sha256": "70150d652308da0056ec07389933cb2aa4fd10dd3a41cc2b4008c908bb05cc85"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.8,
+      "scores": {
+        "opus": 0,
+        "sol": 2000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 282,
+      "windows": 281,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 2,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 3,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 4,
+          "frames": 968,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 4
+        },
+        {
+          "round": 5,
+          "frames": 1040,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 5
+        }
+      ],
+      "sha256": "630bee919af29f5bbf480323fe7dd944af7e14798c45d8168b50eb858bb193a2"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": null,
+      "reason": "五局战平",
+      "duration": 2.56,
+      "scores": {
+        "opus": 0,
+        "sol": 0
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 296,
+      "windows": 295,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 2,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 3,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 4,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 5,
+          "frames": 1100,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 7
+        }
+      ],
+      "sha256": "edf22e99df28f6de074317878a75d206b23233c6a5510be2924914d3927904b7"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.86,
+      "scores": {
+        "opus": 0,
+        "sol": 2000
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 296,
+      "windows": 295,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 2,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 3,
+          "frames": 1150,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 8
+        },
+        {
+          "round": 4,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 5,
+          "frames": 1150,
+          "winner": "GPT-6.1 Sol",
+          "reason": "击倒对手",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 8
+        }
+      ],
+      "sha256": "70880ea908efab795e8351dbdd52fc253812f414809e73384f1a6618a8e592d6"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": null,
+      "reason": "五局战平",
+      "duration": 2.92,
+      "scores": {
+        "opus": 0,
+        "sol": 0
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 301,
+      "windows": 300,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 2,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 3,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 4,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        },
+        {
+          "round": 5,
+          "frames": 1200,
+          "winner": null,
+          "reason": "同时阵亡，平局",
+          "cause": "被水淹没",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ],
+          "floodRing": 9
+        }
+      ],
+      "sha256": "9d2710abb796aea4a7da5dcb60c50632455c58682470b5c88d571100c8b26005"
+    }
+  ],
+  "ready": [
+    "opus",
+    "sol"
+  ],
+  "setup_note": "双方从零开始，各最多 30 分钟准备；双方操控完全相同角色，无选角差异；每轮交换座位打两局；每 20 帧（1 秒）同步决策；策略代码隔离",
+  "pid": 71384,
+  "port": 8797,
+  "completed": true,
+  "updated": "2026-10-16T10:42:06",
+  "game": 2,
+  "game_id": "r3-g2"
+}

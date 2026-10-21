@@ -1,0 +1,20 @@
+{
+  "name": "writing-bench",
+  "version": "1.0.0",
+  "description": "Local human-first writing and SVG model benchmark",
+  "main": "render-svg.cjs",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": ".venv\\Scripts\\python.exe -m unittest discover -s tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2"
+  },
+  "private": true
+}

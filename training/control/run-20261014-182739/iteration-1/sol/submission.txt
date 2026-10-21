@@ -1,0 +1,5 @@
+Implemented [engine.py](/workspace/engine.py) and [entry.json](/workspace/entry.json), with threat detection, forcing search, and a 4.4-second deadline.
+
+All 17 position tests passed. Independent checks on 50 random boards passed; maximum measured runtime was 4.424 seconds.
+
+Replay findings, changes, and remaining weaknesses are documented in [review.md](/workspace/review.md). `previous_bot.py` remains untouched.

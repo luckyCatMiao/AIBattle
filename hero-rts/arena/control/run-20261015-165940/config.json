@@ -1,0 +1,79 @@
+{
+  "run": "run-20261015-165940",
+  "phase": "准备比赛",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "opus": "Claude Opus 5.5",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "双方继承各自上一系列策略，继续各迭代 3 轮，每轮各最多 30 分钟准备；双方可见相同历史公开回放；每轮交换出生点打两局；每0.25秒同步决策；策略代码隔离",
+  "pid": 62304,
+  "completed": false,
+  "preparation_seconds": 1800,
+  "decision_sim_seconds": 0.25,
+  "max_commands": 20,
+  "games_per_round": 2,
+  "fresh_start": false,
+  "incumbent": null,
+  "continue_both": true,
+  "from_run": "C:\\Users\\Admin\\Desktop\\AIBattle\\hero-rts\\arena\\control\\run-20261015-155359",
+  "source_round": 1,
+  "starting_files": {},
+  "inherited_files": {
+    "opus": {
+      "agent.py": "3d6b6243ea2437cd9e0357ed1c1dca00a8a6718f1544ea02060c9be2815a6edb",
+      "canary.txt": "e12ce8285efc67c6d93d3a122e2589ed95089bcbb775ba5634d94e2b8385db07",
+      "catalog.js": "f1ed43679e299c9fab8b8d61517e9d253ac64c7ed468305ab1c601a2fa31d43a",
+      "entry.json": "a9c605e8e2e39fb545ed7712c1d380d3012f6751f52ced2251464afc8927c8d7",
+      "example.json": "56508fc2ed1f02726af52eddd0992d24984d269572ab3c82955c768802ff753d",
+      "GAME.md": "25a084313b4182e7360897b39c9a7e281b9ee4d4f0f206c64159eaa1e6681099",
+      "public_results.json": "126c26ff745cb329d7942f656df7120ab7c4083976648300eeff06321ac84475",
+      "review.md": "1bff0506b8606025753f78f9f6838060cd370e1622be64a31da04bc255ba83b8",
+      "RULES.md": "f4f3834a26230e1120230c58c79976775432e8dcbb1c7fd565ce64fd990f8207",
+      "simulation.js": "6f7a7b4fc0f33e97bac1269df3f48a81d49596758e91f2e7d346d448a1353d03",
+      "submission.txt": "bae7055e7750fcda4800400f961720c440439d62ee8bd8fad8db236b6e71b52f",
+      "test/harness.js": "4dcd8d23b83e772e611d57d34d2a52c248f06849065ad2b11575fee6010d5f6f"
+    },
+    "sol": {
+      "agent.js": "61ad8540330a585d61341a13c93b32ce683326dea7bd8ed763760caea5469455",
+      "canary.txt": "8db59feb4d217f26c79d6e76eea6ff80398e8b823e376bb783be870a96cab9e7",
+      "catalog.js": "f1ed43679e299c9fab8b8d61517e9d253ac64c7ed468305ab1c601a2fa31d43a",
+      "entry.json": "e84101d0cb5e18e82d0af15e9b636531d956fe6ebdcb4e6e258281ac58278a66",
+      "example.json": "56508fc2ed1f02726af52eddd0992d24984d269572ab3c82955c768802ff753d",
+      "GAME.md": "25a084313b4182e7360897b39c9a7e281b9ee4d4f0f206c64159eaa1e6681099",
+      "integration-east.json": "2df55df610eba47f5d0a7dcbf52e9c69b7d5c2e6ab3926f1762ac062f1da1a59",
+      "integration-west.json": "f22d35b0317cd434dde8c47e6c51fb4046123c1f7ab7549a9a1c84a270c78250",
+      "integration.js": "00b22264cef1e7be9a09d90d3a77c6996b85f44f71af740e8e7192c9073abc48",
+      "public_results.json": "126c26ff745cb329d7942f656df7120ab7c4083976648300eeff06321ac84475",
+      "review.md": "e59af096758cd387697037378de929b97fcc507fb1ae8ae092a6e09488ffa94d",
+      "RULES.md": "f4f3834a26230e1120230c58c79976775432e8dcbb1c7fd565ce64fd990f8207",
+      "selftest-results.json": "75c9930d9db5cab032c97757cb1a71005eb5f2d96cbab6810d9a87034d5016c3",
+      "simulation.js": "6f7a7b4fc0f33e97bac1269df3f48a81d49596758e91f2e7d346d448a1353d03",
+      "submission.txt": "b77b4e874c72091fd84cc4a487c2b061b5fbaf61657d880e83fd4a689dd635ad",
+      "test-mirror.json": "550894d403d5e673749c95dd873c9e3135f36de1a6bb21e909722ae2a96ac23b",
+      "test-mirror.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test-rush.json": "0729198a31eb0becb003ff4c98569bf8346504b17251b6d2b921efc19f38bc0f",
+      "test-rush.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test-selfplay.json": "8e0c072b2b0b1a3d25bc2fc9e523cd04cf0f8ffe291f5bf411627c8e02e322e3",
+      "test-selfplay.log": "fbc0dba9d5eba92e4dd9b00603638b6dbe10fda70dd0d2e33cae401070826d02",
+      "test.js": "97f87ac2694c9f69afe72537fc935899cc8ef0d0168ae65592ca0ed9d43a79b9"
+    }
+  },
+  "clients": {
+    "opus": "Claude Code",
+    "sol": "Codex CLI"
+  },
+  "history_games": 4,
+  "source_sha256": "35c10ed4a567b3f5f2ed0f2ab60899255733feaadc7f5b0a834db64086e90dfb",
+  "catalog_sha256": "f1ed43679e299c9fab8b8d61517e9d253ac64c7ed468305ab1c601a2fa31d43a",
+  "public_sim_sha256": "6f7a7b4fc0f33e97bac1269df3f48a81d49596758e91f2e7d346d448a1353d03"
+}

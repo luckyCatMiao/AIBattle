@@ -1,0 +1,825 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "先胜三局",
+    "duration": 2.31,
+    "scores": {
+      "deepseek-flash": 3000,
+      "sol": 1000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 230,
+    "windows": 229,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1143,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 5,
+            "speed": 1
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "frames": 938,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 4,
+            "blast": 6,
+            "speed": 1
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "frames": 1240,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "frames": 1246,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 4,
+            "blast": 3,
+            "speed": 3
+          }
+        ]
+      }
+    ],
+    "sha256": "1527dee42678029c79e5566378859d42a9410794cb6a2165236e7613beb45c9e"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "胜局最多",
+    "duration": 5.17,
+    "scores": {
+      "deepseek-flash": 1000,
+      "sol": 2000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 475,
+    "windows": 474,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "frames": 943,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "frames": 1238,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 3,
+            "blast": 2,
+            "speed": 1
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "frames": 1284,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      }
+    ],
+    "sha256": "c5a80e0fa34dbdc30420cb0c15fab124ef425be61e0225fa9d93a173108ef22c"
+  },
+  {
+    "id": "r2-g1",
+    "round": 2,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "胜局最多",
+    "duration": 13.29,
+    "scores": {
+      "deepseek-flash": 0,
+      "sol": 2000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 599,
+    "windows": 598,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "frames": 1361,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "frames": 1580,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 2
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      }
+    ],
+    "sha256": "93846af9c51faaa1a2181154edf6f01670716d201496a8d55c0ca1de5fc53ad8"
+  },
+  {
+    "id": "r2-g2",
+    "round": 2,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "先胜三局",
+    "duration": 8.96,
+    "scores": {
+      "deepseek-flash": 3000,
+      "sol": 1000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 477,
+    "windows": 476,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1821,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "frames": 1112,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 3,
+            "blast": 1,
+            "speed": 0
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "frames": 2448,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "frames": 1131,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 3,
+            "speed": 0
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      }
+    ],
+    "sha256": "07396def84737cc873bbfdb2e38d0d60451ee952615ca31e948aeee8f2a7c333"
+  },
+  {
+    "id": "r3-g1",
+    "round": 3,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "胜局最多",
+    "duration": 8.17,
+    "scores": {
+      "deepseek-flash": 2000,
+      "sol": 1000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 455,
+    "windows": 454,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1181,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 2,
+            "blast": 2,
+            "speed": 0
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "frames": 860,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 1,
+            "blast": 4,
+            "speed": 2
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 4,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "frames": 1020,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 1,
+            "blast": 1,
+            "speed": 0
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      }
+    ],
+    "sha256": "ddc079c49f1c8661d32b8483bf390bfd10177c28d71df9a6ec7113a5fa9501f4"
+  },
+  {
+    "id": "r3-g2",
+    "round": 3,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "胜局最多",
+    "duration": 9.42,
+    "scores": {
+      "deepseek-flash": 2000,
+      "sol": 1000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 489,
+    "windows": 488,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1121,
+        "winner": "GPT-6.1 Sol",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": false,
+            "bombs": 2,
+            "blast": 1,
+            "speed": 0
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "frames": 1500,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "frames": 3000,
+        "winner": null,
+        "reason": "时间到",
+        "cause": null,
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 5,
+            "speed": 3
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "frames": 1120,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "最后存活",
+        "cause": "被炸死",
+        "fighters": [
+          {
+            "owner": 0,
+            "alive": false,
+            "bombs": 1,
+            "blast": 2,
+            "speed": 1
+          },
+          {
+            "owner": 1,
+            "alive": true,
+            "bombs": 6,
+            "blast": 6,
+            "speed": 3
+          }
+        ]
+      }
+    ],
+    "sha256": "fb028cab2c002286d6de9e85bf8bf06663b27882cef5b1634ab262f2f12c0009"
+  }
+]

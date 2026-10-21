@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>铁拳谱 · IRON CODEX</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark">◈</span><div><h1>铁拳谱</h1><p>IRON CODEX · FRAME-PERFECT 3v3</p></div></div>
+  <div class="modes" id="modes">
+    <button data-mode="local" class="on">真人练习</button>
+    <button data-mode="watch">观战回放</button>
+  </div>
+</header>
+
+<!-- 选角 -->
+<section id="pick" class="pick hidden">
+  <h2>选择你的三名角色与出场顺序</h2>
+  <p class="hint">点击角色加入队伍，再次点击移出。顺序即出场顺序。对手队伍在双方都确认前不可见。</p>
+  <div class="roster" id="roster"></div>
+  <div class="pickbar">
+    <div class="slots" id="slots"></div>
+    <button id="confirmTeam" class="primary" disabled>确认出战</button>
+  </div>
+</section>
+
+<!-- 对战 -->
+<main id="fight" class="fight">
+  <canvas id="stage" width="1280" height="620"></canvas>
+  <div class="banner" id="banner"></div>
+  <aside class="side">
+    <div class="card" id="sideCard"></div>
+    <div class="card" id="teamCard"></div>
+    <div class="card" id="statsCard"></div>
+    <p class="legend">
+      <b>方向</b> A/D 前后 · W 上 · S 下 &nbsp;·&nbsp; <b>攻击</b> J 轻拳 K 重拳 U 轻腿 I 重腿<br>
+      <b>防御</b> 按住后方向 &nbsp;·&nbsp; <b>必杀</b> ↓↘→ + 攻击 &nbsp;·&nbsp; <b>超必杀</b> 满槽 ↓↘→ + 重拳
+    </p>
+  </aside>
+</main>
+
+<!-- 回放 -->
+<main id="replay" class="fight replay hidden">
+  <canvas id="rstage" width="1280" height="620"></canvas>
+  <aside class="side">
+    <div class="card" id="runCard"></div>
+    <div class="card" id="gameCard"></div>
+    <div class="card" id="replayCard"></div>
+    <div class="card" id="reviewCard"></div>
+  </aside>
+</main>
+
+<footer>AIBATTLE / 铁拳谱 <span id="meta"></span></footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>

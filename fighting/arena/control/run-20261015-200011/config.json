@@ -1,0 +1,51 @@
+{
+  "game": "fighting",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "medium",
+  "rounds": 3,
+  "games_per_round": 2,
+  "port": 8796,
+  "fresh_start": true,
+  "incumbent": null,
+  "continue_both": false,
+  "from_run": null,
+  "source_round": 3,
+  "starting_files": {
+    "opus": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ],
+    "sol": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ]
+  },
+  "inherited_files": {},
+  "clients": {
+    "opus": "Claude Code",
+    "sol": "Codex CLI"
+  },
+  "history_games": 0,
+  "decision_frames": 15,
+  "max_windows": 4000,
+  "source_sha256": "af13ba1333090d13856a5affa2e5a2037c08dbb677b659497f6cec6e2ed7661a",
+  "catalog_sha256": "ecc187ab5a8afce6de4ec298af0385ada1d72e849c4943a95ac4e3a2c5b4065d",
+  "public_sim_sha256": "27693e01046495aa2952cff97c38dc18702ae42f5f5d2d07258f7d58254533df",
+  "frozen_paths": {
+    "opus-r1": "control/run-20261015-200011/round-1/opus",
+    "sol-r1": "control/run-20261015-200011/round-1/sol"
+  }
+}

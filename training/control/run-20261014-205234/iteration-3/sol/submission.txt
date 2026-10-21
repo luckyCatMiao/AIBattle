@@ -1,0 +1,7 @@
+Implemented and tested the updated engine; `entry.json` is ready.
+
+- Deduplicated 17 records into 13 sequences and reviewed both newest games.
+- Improved search throughput by roughly 1.6–1.7×.
+- Passed all 64 position/protocol tests; maximum response time was 4.400 seconds.
+- Documented replay mistakes, validation, and weaknesses in [review.md](/workspace/review.md).
+- Left `previous_bot.py` untouched.

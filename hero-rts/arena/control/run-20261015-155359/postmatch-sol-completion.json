@@ -1,0 +1,17 @@
+{
+  "returncode": null,
+  "note": "Original review returned false after a nonzero process exit; numeric exit code was not recorded. Recovered the already-written document after verifying turn.completed and unchanged strategy files. No model rerun.",
+  "model_completed": true,
+  "accepted": true,
+  "usage": [
+    {
+      "input_tokens": 417766,
+      "cached_input_tokens": 354560,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5949,
+      "reasoning_output_tokens": 312
+    }
+  ],
+  "document_sha256": "9e28bbef8f69b9895f64758c12afe1111d00140d79c40dc257e81425461619e1",
+  "workspace_files_verified": 21
+}

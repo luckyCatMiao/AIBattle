@@ -1,0 +1,159 @@
+{
+  "run": "run-20261015-155359",
+  "phase": "比赛完成",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "opus": "Claude Opus 5.5",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 1,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 276.7,
+      "scores": {
+        "opus": 5815,
+        "sol": 19099
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1108,
+      "sha256": "ea29f3cbfc7bdce323c41b15ecde96f7a2de8603b02620b210b6f4af89c7d5c6"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 213.4,
+      "scores": {
+        "sol": 15268,
+        "opus": 4564
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 855,
+      "sha256": "b2bbc37bf8b649a542d26e42e0789f57828a446b76bce48ca8dafd846f08a874"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 276.7,
+      "scores": {
+        "opus": 5815,
+        "sol": 19099
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1108,
+      "sha256": "ea29f3cbfc7bdce323c41b15ecde96f7a2de8603b02620b210b6f4af89c7d5c6"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 213.4,
+      "scores": {
+        "sol": 15268,
+        "opus": 4564
+      },
+      "errors": {
+        "sol": 0,
+        "opus": 0
+      },
+      "technicalFailure": null,
+      "frames": 855,
+      "sha256": "b2bbc37bf8b649a542d26e42e0789f57828a446b76bce48ca8dafd846f08a874"
+    }
+  ],
+  "ready": [
+    "sol",
+    "opus"
+  ],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，最多 30 分钟准备；双方可见相同历史公开回放；交换出生点；每0.25秒同步决策；策略代码隔离",
+  "pid": 59428,
+  "completed": true,
+  "updated": "2026-10-15T16:12:55",
+  "player_ready": "opus",
+  "game": 2,
+  "game_id": "r1-g2",
+  "seats": [
+    "sol",
+    "opus"
+  ],
+  "now": 213.4,
+  "tick": 4268,
+  "audit": {
+    "verified": true,
+    "sourceVerified": true,
+    "frozenStrategiesVerified": true,
+    "incumbentVerified": "sol",
+    "games": [
+      {
+        "id": "r1-g1",
+        "frames": 1108,
+        "decisions": 1107,
+        "deterministic": true,
+        "technicalFailure": false
+      },
+      {
+        "id": "r1-g2",
+        "frames": 855,
+        "decisions": 854,
+        "deterministic": true,
+        "technicalFailure": false
+      }
+    ],
+    "isolation_probes_passed": true,
+    "swapped_seats": true
+  },
+  "review_status": {
+    "opus": true,
+    "sol": true
+  },
+  "review_recovered": [
+    "sol"
+  ]
+}

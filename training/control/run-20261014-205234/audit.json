@@ -1,0 +1,124 @@
+{
+  "run": "C:\\Users\\Admin\\Desktop\\AIBattle\\training\\control\\run-20261014-205234",
+  "players": [
+    {
+      "id": "astra",
+      "model": "gpt-6-astra",
+      "name": "GPT-6 Astra"
+    },
+    {
+      "id": "sol",
+      "model": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol"
+    }
+  ],
+  "verified_games": [
+    {
+      "id": "ec2f009a1042efac",
+      "plies": 36,
+      "winner": "GPT-6.1 Sol · 迭代 1",
+      "black": "GPT-6 Astra · 迭代 1",
+      "white": "GPT-6.1 Sol · 迭代 1",
+      "sequence": "H8 I9 I7 G9 J8 G8 H6 K9 J6 H9 J9 J7 G6 I6 H7 I8 H5 H4 G5 F4 K5 L4 I5 J5 F5 E5 G10 K6 L5 I4 E4 D3 J4 L7 H3 M8",
+      "iteration": 1
+    },
+    {
+      "id": "72ccfa4ccb489216",
+      "plies": 49,
+      "winner": "GPT-6.1 Sol · 迭代 1",
+      "black": "GPT-6.1 Sol · 迭代 1",
+      "white": "GPT-6 Astra · 迭代 1",
+      "sequence": "H8 H7 I7 G9 I9 G8 G7 F6 H6 I6 F9 G5 F8 J5 K4 I5 H5 I3 H4 I4 I2 H3 G2 K6 L7 L5 H2 J2 J3 E9 J8 K5 M5 L6 J10 K11 J9 M7 J4 N8 O9 M6 J6 J7 K9 L10 L9 H9 M9",
+      "iteration": 1
+    },
+    {
+      "id": "9c80ca79494320e9",
+      "plies": 26,
+      "winner": "GPT-6.1 Sol · 迭代 2",
+      "black": "GPT-6 Astra · 迭代 2",
+      "white": "GPT-6.1 Sol · 迭代 2",
+      "sequence": "H8 I9 I7 G9 J8 G8 K9 H6 L8 G7 K8 I8 L10 M11 G10 F9 H9 G6 G5 H7 N8 M8 J9 I6 J5 E10",
+      "iteration": 2
+    },
+    {
+      "id": "c1ca491b0482e5f2",
+      "plies": 25,
+      "winner": "GPT-6.1 Sol · 迭代 2",
+      "black": "GPT-6.1 Sol · 迭代 2",
+      "white": "GPT-6 Astra · 迭代 2",
+      "sequence": "H8 H7 I7 G9 I9 G8 G7 J10 I6 I8 G6 H6 H5 J7 G5 I5 G4 G3 H4 F6 I4 J4 F7 J3 E8",
+      "iteration": 2
+    },
+    {
+      "id": "985182798301f6cb",
+      "plies": 225,
+      "winner": null,
+      "black": "GPT-6 Astra · 迭代 3",
+      "white": "GPT-6.1 Sol · 迭代 3",
+      "sequence": "H8 I9 J8 J9 H9 I10 I8 K8 H11 H10 G10 F11 L7 F8 J7 K6 I7 K7 K9 H6 F9 E8 L10 M11 L6 J6 L8 L9 I12 J13 G6 G7 E9 G9 I11 J10 K11 I5 J4 G11 J11 L11 I13 J12 I14 I15 G14 K10 L4 L5 F15 H13 J5 H4 G3 E13 F12 M12 N13 M10 M9 N8 K12 K4 K5 I3 H14 F14 J3 E7 D6 K14 N11 D12 C11 D7 H7 G8 N14 D8 C8 C7 F7 N12 G5 E4 G4 G2 J1 J2 I2 H5 D10 G13 C10 C9 E10 F10 B10 A10 D11 H3 H2 C12 B12 A13 B13 B11 D13 E12 E6 C6 B7 A12 A6 D9 A9 E5 A5 A7 M14 C3 C5 A11 A14 D5 F3 L12 N15 L13 F6 L15 L14 F4 K13 N7 D4 F2 M3 N6 N2 O1 N5 K15 J15 N10 N9 E11 C13 E15 E14 E2 L3 N3 M4 K2 B6 B9 M5 M2 O8 E3 E1 B5 A4 C2 D2 D3 A3 A2 F1 B1 F5 M7 O6 O5 L1 D15 G1 H1 B4 O10 D1 C1 K1 N1 I1 M1 O4 O15 C15 O14 O11 H15 D14 G15 C14 B14 I6 J14 H12 M13 I4 F13 M8 M15 G12 B15 B8 A15 M6 O13 A8 O12 K3 O9 O7 N4 C4 O3 L2 B3 B2 O2 A1",
+      "iteration": 3
+    },
+    {
+      "id": "f442f3f1535d02f2",
+      "plies": 25,
+      "winner": "GPT-6.1 Sol · 迭代 3",
+      "black": "GPT-6.1 Sol · 迭代 3",
+      "white": "GPT-6 Astra · 迭代 3",
+      "sequence": "H8 H7 I7 I8 J9 G6 F5 G8 G5 F9 E10 H9 H5 I5 J8 H6 J6 J5 I6 G9 J7 J10 K8 G4 L9",
+      "iteration": 3
+    }
+  ],
+  "rounds": [
+    {
+      "iteration": 1,
+      "wins": {
+        "astra": 0,
+        "sol": 2
+      },
+      "draws": 0,
+      "plies": [
+        36,
+        49
+      ],
+      "max_move_seconds": 4.801,
+      "moves_over_5_seconds": 0
+    },
+    {
+      "iteration": 2,
+      "wins": {
+        "astra": 0,
+        "sol": 2
+      },
+      "draws": 0,
+      "plies": [
+        26,
+        25
+      ],
+      "max_move_seconds": 4.801,
+      "moves_over_5_seconds": 0
+    },
+    {
+      "iteration": 3,
+      "wins": {
+        "astra": 0,
+        "sol": 1
+      },
+      "draws": 1,
+      "plies": [
+        225,
+        25
+      ],
+      "max_move_seconds": 4.801,
+      "moves_over_5_seconds": 0
+    }
+  ],
+  "distinct_sequences": 6,
+  "unchanged_snapshots": [
+    "iteration-1\\astra",
+    "iteration-1\\sol",
+    "iteration-2\\astra",
+    "iteration-2\\sol",
+    "iteration-3\\astra",
+    "iteration-3\\sol"
+  ]
+}

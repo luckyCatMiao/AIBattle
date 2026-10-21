@@ -1,0 +1,243 @@
+{
+  "phase": "比赛完成",
+  "round": 5,
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 287.3,
+      "scores": {
+        "sol": 4854,
+        "astra": 2707
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 350.3,
+      "scores": {
+        "astra": 3838,
+        "sol": 5437
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "astra",
+      "reason": "基地摧毁",
+      "duration": 229.35,
+      "scores": {
+        "sol": 2385,
+        "astra": 4364
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 276.85,
+      "scores": {
+        "astra": 2759,
+        "sol": 4656
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 197.05,
+      "scores": {
+        "sol": 3679,
+        "astra": 1799
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 225.85,
+      "scores": {
+        "astra": 1970,
+        "sol": 4263
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r4-g1",
+      "round": 4,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 252.1,
+      "scores": {
+        "sol": 4332,
+        "astra": 2513
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r4-g2",
+      "round": 4,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 186.4,
+      "scores": {
+        "astra": 1828,
+        "sol": 3672
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r5-g1",
+      "round": 5,
+      "game": 1,
+      "seats": [
+        "sol",
+        "astra"
+      ],
+      "winner": "astra",
+      "reason": "基地摧毁",
+      "duration": 196.4,
+      "scores": {
+        "sol": 1817,
+        "astra": 4022
+      },
+      "errors": {
+        "sol": 0,
+        "astra": 0
+      }
+    },
+    {
+      "id": "r5-g2",
+      "round": 5,
+      "game": 2,
+      "seats": [
+        "astra",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 392.3,
+      "scores": {
+        "astra": 4323,
+        "sol": 5745
+      },
+      "errors": {
+        "astra": 0,
+        "sol": 0
+      }
+    }
+  ],
+  "ready": [
+    "sol",
+    "astra"
+  ],
+  "contestants": [
+    {
+      "id": "sol",
+      "name": "GPT-6.1 Sol",
+      "short": "Sol"
+    },
+    {
+      "id": "astra",
+      "name": "GPT-6 Astra",
+      "short": "Astra"
+    }
+  ],
+  "setup_note": "双方沿用上一系列最终策略，继续复盘改进 5 轮",
+  "port": 8791,
+  "rounds": 5,
+  "updated": "2026-10-15T00:23:39",
+  "player_ready": "astra",
+  "usage": [
+    {
+      "input_tokens": 568678,
+      "cached_input_tokens": 530304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5841,
+      "reasoning_output_tokens": 995
+    }
+  ],
+  "game": 2,
+  "game_id": "r5-g2",
+  "seats": [
+    "astra",
+    "sol"
+  ],
+  "completed": true
+}

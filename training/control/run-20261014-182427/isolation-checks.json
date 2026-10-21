@@ -1,0 +1,88 @@
+[
+  {
+    "player": "luna",
+    "uid": 65534,
+    "own_read": true,
+    "blocked_probes": [
+      {
+        "path": "/workspace/../sol/canary.txt",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/c/Users/Admin/Desktop/AIBattle/training/sol/canary.txt",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/c/Users/Admin/Desktop/AIBattle/players/sol",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/c/Users/Admin/Desktop/AIBattle/data/state.json",
+        "blocked": true
+      },
+      {
+        "path": "/opt/aibattle-tools/auth/sol/auth.json",
+        "blocked": true
+      },
+      {
+        "path": "/proc/1/root/mnt/c/Users/Admin/Desktop/AIBattle/training/sol/canary.txt",
+        "blocked": true
+      },
+      {
+        "path": "/run/WSL",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/wsl",
+        "blocked": true
+      },
+      {
+        "path": "/home/admin1",
+        "blocked": true
+      }
+    ]
+  },
+  {
+    "player": "sol",
+    "uid": 65534,
+    "own_read": true,
+    "blocked_probes": [
+      {
+        "path": "/workspace/../luna/canary.txt",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/c/Users/Admin/Desktop/AIBattle/training/luna/canary.txt",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/c/Users/Admin/Desktop/AIBattle/players/luna",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/c/Users/Admin/Desktop/AIBattle/data/state.json",
+        "blocked": true
+      },
+      {
+        "path": "/opt/aibattle-tools/auth/luna/auth.json",
+        "blocked": true
+      },
+      {
+        "path": "/proc/1/root/mnt/c/Users/Admin/Desktop/AIBattle/training/luna/canary.txt",
+        "blocked": true
+      },
+      {
+        "path": "/run/WSL",
+        "blocked": true
+      },
+      {
+        "path": "/mnt/wsl",
+        "blocked": true
+      },
+      {
+        "path": "/home/admin1",
+        "blocked": true
+      }
+    ]
+  }
+]

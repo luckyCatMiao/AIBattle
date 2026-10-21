@@ -1,0 +1,5 @@
+'use strict';
+const {spawn}=require('node:child_process'),http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const port=Number(process.env.HERO_RTS_PORT||8793),url=`http://127.0.0.1:${port}/`;
+function check(){return new Promise(resolve=>{const req=http.get(url+'api/health',res=>{let text='';res.on('data',d=>text+=d);res.on('end',()=>{try{resolve(JSON.parse(text).game==='hero-rts');}catch{resolve(false);}});});req.on('error',()=>resolve(false));req.setTimeout(1200,()=>req.destroy());});}
+(async()=>{if(!await check()){const log=fs.openSync(path.join(__dirname,'server.log'),'a');spawn(process.execPath,[path.join(__dirname,'server.js')],{cwd:__dirname,windowsHide:true,detached:true,stdio:['ignore',log,log]}).unref();for(let i=0;i<30;i++){if(await check())break;await new Promise(r=>setTimeout(r,200));}}if(!await check())throw Error('新版 RTS 服务启动失败，查看 hero-rts/server.log');spawn('cmd.exe',['/c','start','',url],{windowsHide:true,detached:true,stdio:'ignore'}).unref();})().catch(e=>{console.error(e.message);process.exitCode=1;});

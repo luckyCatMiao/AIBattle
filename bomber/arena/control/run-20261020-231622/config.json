@@ -1,0 +1,53 @@
+{
+  "game": "bomber",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "medium",
+  "rounds": 3,
+  "games_per_round": 2,
+  "port": 8797,
+  "fresh_start": true,
+  "incumbent": null,
+  "continue_both": false,
+  "from_run": null,
+  "source_round": 3,
+  "starting_files": {
+    "deepseek-flash": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ],
+    "sol": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ]
+  },
+  "inherited_files": {},
+  "clients": {
+    "deepseek-flash": "Claude Code",
+    "sol": "Claude Code"
+  },
+  "stream_proxy": [
+    "sol"
+  ],
+  "history_games": 0,
+  "decision_frames": 20,
+  "max_windows": 1000,
+  "source_sha256": "2535acce19a6451f002c9f73f0842aeeaa527f1f881761c29a79b5785ed42fe0",
+  "catalog_sha256": "c4ff9827557c2fdc03487d1e494719db00134064223732f5b15aade2579d1233",
+  "public_sim_sha256": "5851f22bab11bd68c82f005d520276dab20f3d266c3c32699c09c601724343dd",
+  "frozen_paths": {
+    "sol-r1": "control/run-20261020-231622/round-1/sol"
+  }
+}

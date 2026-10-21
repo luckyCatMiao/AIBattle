@@ -1,0 +1,3322 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "先胜四回合",
+    "duration": 7.17,
+    "scores": {
+      "deepseek-flash": 4000,
+      "sol": 0
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 3596,
+    "windows": 180,
+    "roundLog": [
+      {
+        "round": 1,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 596,
+        "bomb": {
+          "state": "planted",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 40,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 28,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 52,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 500,
+        "bomb": {
+          "state": "planted",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 0,
+            "money": 5100
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 4550
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3300
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3900
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 4550
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 499,
+        "bomb": {
+          "state": "planted",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 6,
+            "deaths": 0,
+            "money": 9250
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 8100
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 7150
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 7150
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 7800
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "时间到",
+        "frames": 2000,
+        "bomb": {
+          "state": "carried",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 6,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          }
+        ]
+      }
+    ],
+    "sha256": "6b81c3c7423113a1a8a9780dc382096ad605587c09eb725c9a83d2f8987a2b17"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "先胜四回合",
+    "duration": 8.23,
+    "scores": {
+      "deepseek-flash": 2000,
+      "sol": 4000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 3901,
+    "windows": 198,
+    "roundLog": [
+      {
+        "round": 1,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "拆除炸弹",
+        "frames": 1020,
+        "bomb": {
+          "state": "defused",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2650
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 40,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 0,
+            "money": 2950
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 64,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3700
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "拆除炸弹",
+        "frames": 790,
+        "bomb": {
+          "state": "defused",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2950
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 1,
+            "money": 2950
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 70,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 40,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 1,
+            "money": 4200
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 80,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 1,
+            "money": 4200
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3600
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "防守方全灭",
+        "frames": 382,
+        "bomb": {
+          "state": "carried",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 55,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3500
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 70,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 1,
+            "money": 4350
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 70,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 2,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 25,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 2,
+            "money": 4600
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 2,
+            "money": 4450
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 2,
+            "money": 5050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 2,
+            "money": 5350
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 1,
+            "money": 5100
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 2,
+            "money": 5100
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "拆除炸弹",
+        "frames": 817,
+        "bomb": {
+          "state": "defused",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 3,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 88,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 2,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 64,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 4,
+            "deaths": 2,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 3,
+            "money": 2650
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 52,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 2,
+            "money": 2650
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "进攻方全灭",
+        "frames": 224,
+        "bomb": {
+          "state": "dropped",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 3,
+            "money": 3900
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 3,
+            "money": 4200
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 5,
+            "deaths": 3,
+            "money": 3900
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 4450
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 2,
+            "money": 3550
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 4,
+            "money": 2650
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 3,
+            "money": 3250
+          }
+        ]
+      },
+      {
+        "round": 6,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "拆除炸弹",
+        "frames": 667,
+        "bomb": {
+          "state": "defused",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 3,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 6,
+            "deaths": 4,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 20,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 6,
+            "deaths": 3,
+            "money": 7350
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 3,
+            "money": 7700
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 5,
+            "deaths": 3,
+            "money": 7100
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 5,
+            "money": 3250
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 5,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 5,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 4,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 4,
+            "money": 3250
+          }
+        ]
+      }
+    ],
+    "sha256": "96c4debb66cb051632c20988aba4af0a87e65f56e71014581115b16be9dee5b9"
+  },
+  {
+    "id": "r2-g1",
+    "round": 2,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "先胜四回合",
+    "duration": 3.32,
+    "scores": {
+      "deepseek-flash": 4000,
+      "sol": 0
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 2965,
+    "windows": 150,
+    "roundLog": [
+      {
+        "round": 1,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 789,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 4,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 0,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 64,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 40,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 40,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 683,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 90,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4800
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 60,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3300
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4200
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 40,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4200
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 0,
+            "money": 4250
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 677,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 0,
+            "money": 8000
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 40,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 6500
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 0,
+            "money": 7750
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 80,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 0,
+            "money": 7100
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 0,
+            "money": 7500
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "拆除炸弹",
+        "frames": 815,
+        "bomb": {
+          "state": "defused",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 6,
+            "deaths": 0,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 88,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 5,
+            "deaths": 0,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 88,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 5,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 64,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 4,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 4,
+            "money": 2050
+          }
+        ]
+      }
+    ],
+    "sha256": "6c9a0dfcdbfc872debfb2b5cc8d936bf695316277be78ec8cab672c7b8de3a60"
+  },
+  {
+    "id": "r2-g2",
+    "round": 2,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "先胜四回合",
+    "duration": 3.76,
+    "scores": {
+      "deepseek-flash": 4000,
+      "sol": 1000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 3180,
+    "windows": 161,
+    "roundLog": [
+      {
+        "round": 1,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "拆除炸弹",
+        "frames": 955,
+        "bomb": {
+          "state": "defused",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2350
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 52,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 52,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4600
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "拆除炸弹",
+        "frames": 727,
+        "bomb": {
+          "state": "defused",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2650
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 2,
+            "money": 2650
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 30,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 50,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 0,
+            "money": 3900
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 70,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4450
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 1,
+            "money": 4150
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 90,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4100
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "防守方全灭",
+        "frames": 292,
+        "bomb": {
+          "state": "carried",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 40,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 10,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 2,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 55,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 2,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 2,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 40,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 2,
+            "money": 4000
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 2,
+            "money": 4450
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 1,
+            "money": 4750
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 1,
+            "money": 5700
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 2300
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 1,
+            "money": 5350
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 559,
+        "bomb": {
+          "state": "dropped",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 3,
+            "money": 2350
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 3,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 16,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 5,
+            "deaths": 1,
+            "money": 4300
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 76,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 5,
+            "deaths": 1,
+            "money": 4000
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 76,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 16,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 1,
+            "money": 3400
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 646,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 4,
+            "money": 1950
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 20,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 3,
+            "money": 4200
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 20,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 7,
+            "deaths": 1,
+            "money": 4800
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 70,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 6,
+            "deaths": 1,
+            "money": 4200
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3300
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 80,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 1,
+            "money": 3300
+          }
+        ]
+      }
+    ],
+    "sha256": "ae5eac11f5c5161a9824646caaab7ba9f46ffffeaad89a8512c4d34b20414f51"
+  },
+  {
+    "id": "r3-g1",
+    "round": 3,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "先胜四回合",
+    "duration": 3.4,
+    "scores": {
+      "deepseek-flash": 4000,
+      "sol": 0
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 2701,
+    "windows": 138,
+    "roundLog": [
+      {
+        "round": 1,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 683,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 16,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4300
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 1,
+            "money": 2950
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 721,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 40,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 1,
+            "money": 4800
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3900
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 0,
+            "deaths": 2,
+            "money": 3300
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3900
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4200
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 2,
+            "money": 2850
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 3,
+            "deaths": 2,
+            "money": 2550
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 2,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "防守方全灭",
+        "frames": 650,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 6,
+            "deaths": 2,
+            "money": 8600
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 3,
+            "money": 3800
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 4650
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 3,
+            "money": 4100
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 20,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 0,
+            "money": 7750
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 3,
+            "money": 2450
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 3,
+            "money": 2650
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 5,
+            "deaths": 3,
+            "money": 2750
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 0,
+            "deaths": 3,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "winnerTeam": 0,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "进攻方全灭",
+        "frames": 646,
+        "bomb": {
+          "state": "dropped",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 8,
+            "deaths": 3,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 4,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 4,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 64,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 4,
+            "deaths": 3,
+            "money": 3700
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 4,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 5,
+            "deaths": 0,
+            "money": 3700
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 4,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 4,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 6,
+            "deaths": 4,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 4,
+            "money": 2350
+          }
+        ]
+      }
+    ],
+    "sha256": "40b42ce8dc95406f7c2a477bfdf3163fe5b8e8dd28bd35a6148113a512689640"
+  },
+  {
+    "id": "r3-g2",
+    "round": 3,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "先胜四回合",
+    "duration": 4.5,
+    "scores": {
+      "deepseek-flash": 1000,
+      "sol": 4000
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 3449,
+    "windows": 175,
+    "roundLog": [
+      {
+        "round": 1,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "防守方全灭",
+        "frames": 1122,
+        "bomb": {
+          "state": "carried",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 52,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 0,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 1,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 1,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 1,
+            "money": 2350
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "防守方全灭",
+        "frames": 638,
+        "bomb": {
+          "state": "planted",
+          "site": "B"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 4200
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 90,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3600
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 4,
+            "deaths": 0,
+            "money": 5150
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3900
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 30,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 1,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 2,
+            "money": 1950
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 2,
+            "money": 2250
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 2,
+            "money": 1950
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 2,
+            "money": 2350
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 2,
+            "money": 1950
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "winnerTeam": 1,
+        "winner": "DeepSeek V4.1 Flash",
+        "reason": "进攻方全灭",
+        "frames": 931,
+        "bomb": {
+          "state": "dropped",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 2,
+            "deaths": 3,
+            "money": 2750
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 2,
+            "money": 5500
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 6,
+            "deaths": 1,
+            "money": 7650
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 3,
+            "money": 2750
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "rifle",
+            "kills": 1,
+            "deaths": 2,
+            "money": 4850
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 70,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 2,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 3,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 3,
+            "money": 3300
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 3,
+            "money": 3600
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 40,
+            "alive": true,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 2,
+            "money": 4200
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "进攻方全灭",
+        "frames": 354,
+        "bomb": {
+          "state": "dropped",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 3,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 88,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 2,
+            "money": 4000
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 16,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 9,
+            "deaths": 1,
+            "money": 4300
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 3,
+            "deaths": 3,
+            "money": 3400
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 2,
+            "money": 3400
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 3,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 1,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 2,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "pistol",
+            "kills": 4,
+            "deaths": 3,
+            "money": 2050
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "winnerTeam": 0,
+        "winner": "GPT-6.1 Sol",
+        "reason": "进攻方全灭",
+        "frames": 403,
+        "bomb": {
+          "state": "dropped",
+          "site": null
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 3,
+            "money": 3850
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 50,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 5,
+            "deaths": 2,
+            "money": 4750
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 9,
+            "deaths": 1,
+            "money": 3800
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 20,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 3,
+            "money": 3550
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 90,
+            "alive": true,
+            "weapon": "rifle",
+            "kills": 3,
+            "deaths": 2,
+            "money": 4150
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 4,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 5,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 1,
+            "deaths": 5,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 2,
+            "deaths": 5,
+            "money": 2050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 0,
+            "alive": false,
+            "weapon": "smg",
+            "kills": 4,
+            "deaths": 4,
+            "money": 2050
+          }
+        ]
+      }
+    ],
+    "sha256": "f2cd531d40d94b87c98484fd4ff2552cbe84dc9104164a461cd9a39d0cde3a1b"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "画-022",
+  "model": "claude-opus-5",
+  "status": "writer_failed",
+  "judge_is_same_model": false,
+  "writer_attempts": 3,
+  "writer_error": "Anthropic upstream timed out before the first effective output",
+  "budget_recovery": {
+    "new_cap": 32768,
+    "initial_cap": 12000,
+    "reason": "empty delivery at initial cap",
+    "staged": true,
+    "prompt_sha256": "8d8f3b12c30f1b73d9b3be7f8d1ca7e2917d2b0cc9625368d0910ae5e9aa6ee4",
+    "system_sha256": "0394db38270042cc462f0c3e6705ba4e49ca6ea31b883496f4227ec7982acc7a"
+  }
+}

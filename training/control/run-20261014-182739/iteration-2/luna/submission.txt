@@ -1,0 +1,3 @@
+Updated [engine.py](/workspace/engine.py) with five-cell pattern scoring, full-board win and block checks, and a penalty for moves that allow an immediate opponent win. [entry.json](/workspace/entry.json) remains in program mode.
+
+Tested 37 replay-derived positions plus tactical checks: every response was legal JSON, the engine blocked an opponent’s four and took its own immediate win. The batch ran in 0.64 seconds. Replay findings, changes, validation, and remaining weaknesses are documented in [review.md](/workspace/review.md).

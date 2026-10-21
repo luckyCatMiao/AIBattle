@@ -1,0 +1,57 @@
+# ==================== 凭据 / 私有数据（绝不提交） ====================
+# data/state.json 里有对局凭据；players/ 是选手私有工作区。
+data/
+players/
+
+# 早期 API 探针脚本：硬编码了真实 ANTHROPIC_AUTH_TOKEN。
+# 想跑评测的人需要提供自己的 key（环境变量或 ~/.claude/settings.json）。
+repro/
+diag/scripts/drive.py
+
+# 历史路径拼接 bug 在仓库根目录生成的目录：名称里是 U+F05C 转义符，
+# 内含 bomber 选手的 .claude/settings.json 与真实 token。
+/*aibattle-tools*
+
+# ==================== 回放：全部游戏、全部 run 都保留 ====================
+# 查看器实际读取的文件：
+#   rts/hero-rts/bomber/fighting/defusal  run-*/status.json + r*-g*.json.gz
+#   rts                                   run-*/replays.json
+# 只排除重复的副本、模型 transcript 和工作区。
+
+# 选手/轮次目录里的 public_replays.json 是发给选手的重复副本（约 1.4 GB）
+**/public_replays.json
+
+# 选手工作区与冻结提交（含策略代码）；只保留中文复盘
+**/arena/control/run-*/workspaces/
+**/arena/control/run-*/round-*/*/*
+!**/arena/control/run-*/round-*/*/review.md
+
+# control 根目录的临时状态、本机路径与日志
+**/arena/control/.lock
+**/arena/control/active-run.json
+**/arena/control/clients.json
+**/arena/control/engine-paths.json
+**/arena/control/home-paths.json
+**/arena/control/network-hosts
+**/arena/control/status.json
+**/arena/control/stream-proxy.json
+**/arena/control/workspace-paths.json
+**/arena/control/*.log
+
+# ==================== 写作评测的生成目录 ====================
+writing-bench/.venv/
+writing-bench/runs/
+writing-bench/combat-runs/
+diag/runs/
+
+# ==================== 日志 / 缓存 / 环境 ====================
+*.log
+*.jsonl
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.chrome-cache/
+.DS_Store
+Thumbs.db

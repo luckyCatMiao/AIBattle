@@ -1,0 +1,17 @@
+{
+  "models": {
+    "sol": "gpt-6.1-sol",
+    "luna": "gpt-6-luna"
+  },
+  "reasoning_effort": "medium",
+  "rounds": 3,
+  "games_per_round": 2,
+  "fresh_start": true,
+  "preparation_seconds": 600,
+  "decision_sim_seconds": 1,
+  "max_commands": 10,
+  "speed_target": 8,
+  "source_sha256": "2c3edc52d5eaf266f43b31d51f3d67fbdc45e80a3ae29d763c7d7ff09426ca81",
+  "rules_sha256": "2eeee6524e23831d67e59f81a3abdd66920f43d567622ffae0b494c6204b1a41",
+  "public_sim_sha256": "b7cf9e9090b6aec3b07cf0ae57b3720f0418a1b43be8101b67674290bcb4d3af"
+}

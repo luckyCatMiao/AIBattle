@@ -1,0 +1,18 @@
+{
+  "requested_model": "glm-5.3-flash",
+  "started_at": "2026-10-19T13:12:51+08:00",
+  "max_tokens": 32768,
+  "status": "error",
+  "error": "Empty text response",
+  "error_type": "ValueError",
+  "http_status": null,
+  "partial_text": "",
+  "elapsed_seconds": 542.25,
+  "response_model": "glm-5.3-flash",
+  "response_id": "4fe5ea4e-4a30-4cb3-af4e-9b3a180aafce",
+  "stop_reason": "max_tokens",
+  "input_tokens": 0,
+  "output_tokens": 32768,
+  "message_stop": true,
+  "thinking_char_count": 90424
+}

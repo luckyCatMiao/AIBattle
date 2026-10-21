@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-14T21:28:00",
+  "event": "completed",
+  "players": [
+    "astra",
+    "sol"
+  ],
+  "cycles": 3,
+  "player": "sol",
+  "iteration": 3,
+  "mode": "program",
+  "usage": [
+    {
+      "input_tokens": 749170,
+      "cached_input_tokens": 688000,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9267,
+      "reasoning_output_tokens": 2602
+    }
+  ],
+  "tournamentId": "b531a64e5914ad96",
+  "game": 2,
+  "matchId": "f442f3f1535d02f2",
+  "ply": 25,
+  "atMove": "L9",
+  "seconds": 0.001,
+  "winner": "GPT-6.1 Sol · 迭代 3",
+  "plies": 25,
+  "standings": [
+    {
+      "id": "71a15b78e6b7f6dc",
+      "name": "GPT-6 Astra · 迭代 3",
+      "kind": "model",
+      "played": 2,
+      "wins": 0,
+      "losses": 1,
+      "draws": 1,
+      "blackWins": 0,
+      "whiteWins": 0,
+      "score": 0.5,
+      "winRate": 0
+    },
+    {
+      "id": "aa4c0b608ee76abc",
+      "name": "GPT-6.1 Sol · 迭代 3",
+      "kind": "model",
+      "played": 2,
+      "wins": 1,
+      "losses": 0,
+      "draws": 1,
+      "blackWins": 1,
+      "whiteWins": 0,
+      "score": 1.5,
+      "winRate": 0.5
+    }
+  ],
+  "run": "C:\\Users\\Admin\\Desktop\\AIBattle\\training\\control\\run-20261014-205234"
+}

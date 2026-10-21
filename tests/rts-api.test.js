@@ -1,0 +1,22 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),{spawn}=require('node:child_process'),path=require('node:path'),net=require('node:net');
+test('RTS API accepts human/API seats, isolates commands, omits credentials and serves UI',async t=>{
+ const probe=net.createServer();await new Promise(r=>probe.listen(0,'127.0.0.1',r));const port=probe.address().port;await new Promise(r=>probe.close(r));
+ const child=spawn(process.execPath,[path.join(__dirname,'../rts/server.js')],{windowsHide:true,env:{...process.env,RTS_PORT:String(port)},stdio:['ignore','pipe','pipe']});t.after(()=>child.kill());
+ await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('startup timeout')),5000);child.once('error',reject);child.stdout.once('data',()=>{clearTimeout(timer);resolve();});});
+ const call=async(route,body,token)=>{const r=await fetch(`http://127.0.0.1:${port}${route}`,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})});return {code:r.status,data:await r.json()};};
+ const made=await call('/api/matches',{players:[{name:'human',kind:'human'},{name:'agent',kind:'api'}]});assert.equal(made.code,201);
+ const {match,seats}=made.data,url='/api/matches/'+match;
+ assert.equal((await call(url+'/commands',{type:'start'})).code,401);
+ assert.equal((await call(url+'/commands',{type:'start'},seats[1].token)).code,400);
+ assert.equal((await call(url+'/commands',{type:'start'},seats[0].token)).code,200);
+ const obs=await call(url,null,seats[1].token);assert.equal(obs.data.yourPlayer,1);assert.equal(JSON.stringify(obs).includes(seats[0].token),false);
+ const enemy=obs.data.units.find(u=>u.owner===0);
+ assert.equal((await call(url+'/commands',{type:'move',units:[enemy.id],x:10,y:10},seats[1].token)).code,400);
+ assert.equal((await call(url+'/commands',{type:'train',unit:'rifle'},seats[1].token)).code,200);
+ const solo=await call('/api/matches',{count:4});assert.equal(solo.data.seats.length,1);assert.equal(solo.data.state.players.length,4);
+ assert.equal((await call('/api/matches/'+solo.data.match+'/commands',{type:'start'},seats[0].token)).code,401);
+ assert.equal((await call('/api/matches',{count:9})).code,400);
+ assert.equal((await fetch(`http://127.0.0.1:${port}/`)).status,200);
+ assert.equal((await fetch(`http://127.0.0.1:${port}/../simulation.js`)).status,404);
+});

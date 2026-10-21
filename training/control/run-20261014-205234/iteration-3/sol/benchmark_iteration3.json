@@ -1,0 +1,94 @@
+[
+  {
+    "game": "9c80ca79494320e9",
+    "afterPly": 5,
+    "limitMs": 2000,
+    "baseline": {
+      "move": [
+        7,
+        8
+      ],
+      "note": "search depth 5",
+      "nodes": 13314,
+      "seconds": 1.648
+    },
+    "directional": {
+      "move": [
+        6,
+        7
+      ],
+      "note": "search depth 6",
+      "nodes": 22427,
+      "seconds": 1.649
+    }
+  },
+  {
+    "game": "9c80ca79494320e9",
+    "afterPly": 9,
+    "limitMs": 2000,
+    "baseline": {
+      "move": [
+        6,
+        9
+      ],
+      "note": "search depth 5",
+      "nodes": 11672,
+      "seconds": 1.649
+    },
+    "directional": {
+      "move": [
+        6,
+        9
+      ],
+      "note": "search depth 5",
+      "nodes": 19575,
+      "seconds": 1.649
+    }
+  },
+  {
+    "game": "c1ca491b0482e5f2",
+    "afterPly": 6,
+    "limitMs": 2000,
+    "baseline": {
+      "move": [
+        6,
+        6
+      ],
+      "note": "search depth 6",
+      "nodes": 12423,
+      "seconds": 1.649
+    },
+    "directional": {
+      "move": [
+        6,
+        6
+      ],
+      "note": "search depth 7",
+      "nodes": 20967,
+      "seconds": 1.649
+    }
+  },
+  {
+    "game": "c1ca491b0482e5f2",
+    "afterPly": 12,
+    "limitMs": 2000,
+    "baseline": {
+      "move": [
+        7,
+        4
+      ],
+      "note": "search depth 5",
+      "nodes": 12407,
+      "seconds": 1.649
+    },
+    "directional": {
+      "move": [
+        7,
+        4
+      ],
+      "note": "search depth 6",
+      "nodes": 19661,
+      "seconds": 1.649
+    }
+  }
+]

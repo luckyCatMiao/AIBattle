@@ -1,0 +1,3 @@
+Updated [engine.py](/workspace/engine.py) to detect immediate threats across the board, block a single winning endpoint, and favor counter-threats when multiple endpoints cannot be blocked. [entry.json](/workspace/entry.json) remains in program mode. Replay findings, changes, validation, and remaining weaknesses are recorded in [review.md](/workspace/review.md).
+
+The entrypoint returned legal JSON moves for all 63 replay-derived Luna positions in 1.285 seconds. Checks for completing an own four and blocking a four with one open endpoint passed.

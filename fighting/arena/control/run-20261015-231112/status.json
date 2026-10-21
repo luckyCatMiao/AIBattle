@@ -1,0 +1,124 @@
+{
+  "run": "run-20261015-231112",
+  "phase": "比赛进行中",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "opus": "Claude Opus 5.5",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "车轮战全胜",
+      "duration": 8.72,
+      "scores": {
+        "opus": 4729,
+        "sol": 4844
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 153,
+      "sha256": "274cff9e280168c79e61291f94b7bdbb318ba7b369e3dc73a5aa38ec167ecd18"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "车轮战全胜",
+      "duration": 7.74,
+      "scores": {
+        "opus": 2071,
+        "sol": 4720
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 133,
+      "sha256": "a2752a151a8a0ae10ae6e664433f6175fe874c4b1aef9678c48ad91a9783b66e"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "opus",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "车轮战全胜",
+      "duration": 8.72,
+      "scores": {
+        "opus": 4729,
+        "sol": 4844
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 153,
+      "windows": 152,
+      "sha256": "274cff9e280168c79e61291f94b7bdbb318ba7b369e3dc73a5aa38ec167ecd18"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "opus"
+      ],
+      "winner": "sol",
+      "reason": "车轮战全胜",
+      "duration": 7.74,
+      "scores": {
+        "opus": 2071,
+        "sol": 4720
+      },
+      "errors": {
+        "opus": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 133,
+      "windows": 132,
+      "sha256": "a2752a151a8a0ae10ae6e664433f6175fe874c4b1aef9678c48ad91a9783b66e"
+    }
+  ],
+  "ready": [
+    "opus",
+    "sol"
+  ],
+  "setup_note": "双方从零开始，各最多 30 分钟准备；每轮交换座位打两局；每 15 帧（0.75 秒）同步决策，等待双方响应期间游戏不推进；策略代码隔离",
+  "pid": 57272,
+  "port": 8796,
+  "completed": false,
+  "updated": "2026-10-15T23:27:11",
+  "game": 2,
+  "game_id": "r1-g2"
+}

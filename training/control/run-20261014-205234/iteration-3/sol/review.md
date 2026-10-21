@@ -1,0 +1,32 @@
+# Sol iteration 3
+
+Read RULES.md, previous_bot.py, own submitted engine and prior review, and all 17 public records. There are 13 distinct complete move sequences: the two old triplicate sequences each count once. Shared opening prefixes are not additional evidence. Prioritize 9c80ca79494320e9 and c1ca491b0482e5f2; Sol won both. All coordinates below are zero-based and move numbers are one-based plies. No other contestant source, network access, downloads, or subagents were used. previous_bot.py remains untouched.
+
+## Concrete replay findings
+
+* 9c80ca79494320e9: Sol's white ply 10 (6,6) leaves black's forcing ply 11 (10,7), requiring white (8,7) at ply 12. Black ply 13 (11,9) then requires white (12,10) at ply 14. These are observed tempo concessions, not a proved losing error or proof that an alternative white move is better.
+* 9c80ca79494320e9: white ply 16 (5,8) threatens the immediate fork (7,8), with winning endpoints (4,8)/(9,8). Black correctly occupies (7,8) at ply 17. White ply 18 (6,5) forces black (6,4); white ply 20 (7,6) establishes several fork possibilities. Black's ply 21 (13,7) really does threaten a win at (12,7), so white's ply 22 block is mandatory. After the block, white still has fork moves (5,4), (8,5), (9,8), and (4,9). Black's concrete defensive mistake is ply 23 (9,8): it removes two possibilities but leaves (8,5) and (4,9). White ply 24 (8,5) produces two independent winning cells, (9,4) and (4,9). Black's ply 25 endpoint block cannot save the game. A forcing counterattack buys a tempo without necessarily removing the underlying attack.
+* c1ca491b0482e5f2: black ply 17 (6,3) requires white (6,2) at ply 18. Black ply 19 (7,3), white ply 20 (5,5), and black ply 21 (8,3) leave black fork opportunities at (9,2), (5,3), (9,3), and (5,6). White's concrete defensive mistake at ply 22 (9,3) addresses the horizontal threat while leaving the diagonal fork moves (9,2) and (5,6). Black ply 23 (5,6) creates winning cells (9,2)/(4,7), and the game ends at ply 25. No claim is made that white could still save the position at ply 22; the mistake is the incomplete defense, and the losing decision may precede it.
+
+The endpoint and fork sets above were independently enumerated with a contiguous-stone oracle, not inferred solely from engine scores. analyze_iteration3.py, replay_analysis_iteration3.log, and test_replay_tactics_iteration3.py preserve that evidence. The engine already recognized the final forks; these are tactical regressions, not newly fixed failures. Two wins do not justify changing the opening based on outcome alone.
+
+## Implemented improvement
+
+entry.json selects the persistent standard-library Python engine with the required JSON-line protocol. The saved pre-change engine is engine_iteration3_before.py and its review is review_iteration3_before.md.
+
+The main change reduces repeated evaluation: each candidate now retains its four directional scores for each color. A placement recomputes only the direction that intersects the new stone; previously every affected candidate recomputed all four directions. Immutable directional tuples are saved and restored together with aggregate scores during undo. Occupied cells clear their directional values. Candidate selection, score formulas, tactical proofs, search widths, and the 4.4-second deadline retain their previous meanings. The practical strategy improvement is more search within the same budget, without broadening an already selective search on the basis of two wins.
+
+On two newest-game positions, repeated make/undo measurements improved from 0.091/0.096 ms to 0.042/0.041 ms per pair. Four equal-budget comparisons (timeLimitMs=2000, internal search allowance about 1.65 seconds) searched about 1.6–1.7 times as many nodes. Completed depths baseline/new were 5/6, 5/5, 6/7, and 5/6. Three selected moves were unchanged; after ply 5 of 9c80ca79494320e9, deeper search changed (7,8) to (6,7). This demonstrates increased search throughput, not that the new move is objectively superior. benchmark_iteration3.py and benchmark_iteration3.json preserve the comparison against our own engine.
+
+## Validation
+
+* All 64 cases in test_engine.py passed through one persistent subprocess, with clean stderr and maximum response time 4.400 seconds. Fourteen added positions come from the newest pair. Exact checks cover their forced blocks, winning forks and endpoints; quiet-position checks establish protocol, legality and budget only. Results are in validation.json and validation_iteration3.log.
+* test_properties.py passed exact winning-move and double-continuation oracle checks on 50 seeded boards. Nested updates now compare directional components and color views as well as aggregate scores and neighborhoods against full reconstruction. Undo and induced timeout restore the board and directional state. Existing defensive-fallback checks still prevent an independently verified two-four sequence. Results are in properties_iteration3.log.
+* Four cold-process checks passed, maximum 2.391 seconds, recorded in budget_validation.json. The full persistent suite also exercised difficult positions at the 4.4-second deadline. Host scheduling can vary; the engine retains approximately 0.6 seconds of reserve under the five-second move limit.
+* test_replay_tactics_iteration3.py independently verifies 17 records/13 sequences, six exact winning-cell sets, and two surviving-fork sets. Python compilation also passed.
+
+## Remaining weaknesses and next iteration notes
+
+Search remains selective: radius-two neighborhoods, a narrow quiet beam below the root, heuristic evaluation, and a bounded forcing extension. There is still no exhaustive all-defense solver for combinations of open threes and fours. A failed or timed-out four proof means unknown, not safe. Extra speed can change move selection and does not establish strength through tests alone. No new claim of a repaired strategic loss is warranted because Sol won the newest pair.
+
+For the next pair, retain the forced-defense and exact-fork regressions. Prioritize the earliest avoidable loss of initiative, and distinguish a compulsory block from a quiet move that ignores multiple surviving forks. If losses expose three-threat horizons, consider a bounded all-defense threat search; verify every claimed proof against all relevant defensive replies, especially counter-fours. Keep deduplicating full sequences and avoid treating repeated opening prefixes as independent evidence.

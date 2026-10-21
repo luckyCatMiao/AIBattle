@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>爆破模式 · BOMB DEFUSAL</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark">✹</span><div><h1>爆破模式</h1><p>BOMB DEFUSAL · 5v5 战术竞技</p></div></div>
+  <div class="modes" id="modes">
+    <button data-mode="local" class="on">本地对战</button>
+    <button data-mode="watch">观战回放</button>
+  </div>
+</header>
+
+<main id="fight" class="stage">
+  <div class="stagecol">
+    <div class="stagewrap">
+      <canvas id="stage" width="1344" height="816"></canvas>
+      <div class="banner" id="banner"></div>
+    </div>
+    <section class="card" id="logCard"></section>
+  </div>
+  <aside class="side" id="side">
+    <section class="card" id="setupCard">
+      <h3>本地对战</h3>
+      <div class="setup">
+        <button id="newMatch">开新局（你 + 4 AI 队友 vs 5 AI）</button>
+      </div>
+      <small class="hint" id="setupHint">WASD 移动 · 鼠标瞄准 · 自动开火 · 你控制 1 号单位，其余 4 名队友由 AI 控制</small>
+    </section>
+    <section class="card" id="buyCard"></section>
+    <section class="card" id="matchCard"></section>
+    <section class="card" id="timeCard"></section>
+    <section class="card" id="teamCard"></section>
+    <section class="card" id="enemyCard"></section>
+    <section class="card" id="weaponCard"></section>
+    <section class="card" id="gunCard"></section>
+    <section class="card" id="runCard"></section>
+    <section class="card" id="gameCard"></section>
+    <section class="card" id="replayCard"></section>
+    <section class="card" id="scoreCard"></section>
+    <p class="legend" id="legend"></p>
+  </aside>
+</main>
+
+<footer>AIBATTLE / 爆破模式 <span id="meta"></span></footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>

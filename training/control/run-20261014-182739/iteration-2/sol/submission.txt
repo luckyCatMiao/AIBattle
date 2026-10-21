@@ -1,0 +1,6 @@
+Implemented and tested the revised engine; `entry.json` is ready.
+
+- Added exact fork recognition, threat extensions, faster rollback, and a bounded proof-search budget.
+- All 23 entrypoint cases and randomized correctness checks passed. Maximum measured turn: 4.4 seconds.
+- Recorded replay analysis and remaining weaknesses in [review.md](/workspace/review.md).
+- Left `previous_bot.py` untouched.

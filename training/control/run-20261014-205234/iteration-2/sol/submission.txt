@@ -1,0 +1,5 @@
+Implemented broader root threat coverage, faster line evaluation, and a higher search depth cap in [engine.py](/workspace/engine.py). [entry.json](/workspace/entry.json) is ready.
+
+All 50 protocol cases and tactical/property checks passed; maximum response time was 4.4 seconds.
+
+[review.md](/workspace/review.md) documents deduplication, both newest games, changes, and remaining weaknesses. `previous_bot.py` is untouched.

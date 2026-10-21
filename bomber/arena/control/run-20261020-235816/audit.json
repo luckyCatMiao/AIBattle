@@ -1,0 +1,96 @@
+{
+  "verified": true,
+  "sourceVerified": true,
+  "frozenStrategiesVerified": true,
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": "deepseek-flash",
+      "frames": 230,
+      "windows": 229,
+      "rounds": 4,
+      "roundReasons": [
+        "最后存活",
+        "最后存活",
+        "最后存活",
+        "最后存活"
+      ],
+      "sha256": "1527dee42678029c79e5566378859d42a9410794cb6a2165236e7613beb45c9e"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "sol",
+      "frames": 475,
+      "windows": 474,
+      "rounds": 5,
+      "roundReasons": [
+        "时间到",
+        "最后存活",
+        "最后存活",
+        "时间到",
+        "最后存活"
+      ],
+      "sha256": "c5a80e0fa34dbdc30420cb0c15fab124ef425be61e0225fa9d93a173108ef22c"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "sol",
+      "frames": 599,
+      "windows": 598,
+      "rounds": 5,
+      "roundReasons": [
+        "时间到",
+        "时间到",
+        "时间到",
+        "最后存活",
+        "最后存活"
+      ],
+      "sha256": "93846af9c51faaa1a2181154edf6f01670716d201496a8d55c0ca1de5fc53ad8"
+    },
+    {
+      "id": "r2-g2",
+      "winner": "deepseek-flash",
+      "frames": 477,
+      "windows": 476,
+      "rounds": 5,
+      "roundReasons": [
+        "最后存活",
+        "时间到",
+        "最后存活",
+        "最后存活",
+        "最后存活"
+      ],
+      "sha256": "07396def84737cc873bbfdb2e38d0d60451ee952615ca31e948aeee8f2a7c333"
+    },
+    {
+      "id": "r3-g1",
+      "winner": "deepseek-flash",
+      "frames": 455,
+      "windows": 454,
+      "rounds": 5,
+      "roundReasons": [
+        "最后存活",
+        "最后存活",
+        "时间到",
+        "时间到",
+        "最后存活"
+      ],
+      "sha256": "ddc079c49f1c8661d32b8483bf390bfd10177c28d71df9a6ec7113a5fa9501f4"
+    },
+    {
+      "id": "r3-g2",
+      "winner": "deepseek-flash",
+      "frames": 489,
+      "windows": 488,
+      "rounds": 5,
+      "roundReasons": [
+        "最后存活",
+        "时间到",
+        "最后存活",
+        "时间到",
+        "最后存活"
+      ],
+      "sha256": "fb028cab2c002286d6de9e85bf8bf06663b27882cef5b1634ab262f2f12c0009"
+    }
+  ]
+}

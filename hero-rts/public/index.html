@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111b1a">
+  <title>灰烬王座 · 英雄战争</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="灰烬王座"><span class="brand-sigil">♜</span><span>灰烬王座<small>THRONES OF ASH</small></span></a>
+      <div class="match-label"><i class="live-dot"></i><span id="match-label">等待部署</span></div>
+      <div class="economy" aria-label="资源">
+        <div title="黄金 · 工人开采金矿"><span class="resource-icon gold">◆</span><b id="gold">—</b><small>黄金</small></div>
+        <div title="木材 · 工人采伐森林"><span class="resource-icon wood">♠</span><b id="wood">—</b><small>木材</small></div>
+        <div title="人口 · 建造住房提高上限"><span class="resource-icon pop">♟</span><b id="population">—</b><small>人口</small></div>
+        <div title="主城时代等级"><span class="resource-icon tier">✧</span><b id="tier">Ⅰ</b><small>时代</small></div>
+      </div>
+      <div class="clock"><b id="clock">00:00</b><small id="game-status">尚未开战</small></div>
+      <nav><button id="pause-button" class="icon-button" title="暂停 / 继续" aria-label="暂停">Ⅱ</button><button id="help-button" class="icon-button" title="操作指南" aria-label="操作指南">?</button><button id="new-button" class="outline-button">新战局</button></nav>
+    </header>
+
+    <section id="replay-panel" class="replay-panel" aria-label="AI 对战回放" hidden>
+      <div class="replay-overview"><div class="replay-title"><span class="eyebrow">AI BATTLE THEATER</span><strong>模型对战 · 战场回放</strong></div><p id="replay-models">正在读取参赛模型…</p><span id="replay-phase" role="status">正在连接比赛记录…</span><div id="replay-reviews" class="replay-reviews"></div></div>
+      <div class="replay-series"><label for="replay-series">系列</label><select id="replay-series" aria-label="选择比赛系列" disabled><option value="">正在读取比赛系列…</option></select><p id="replay-setup" class="replay-setup">正在读取本系列的参赛起点与规则…</p></div>
+      <div class="replay-controls"><label for="replay-game">对局</label><select id="replay-game" aria-label="选择回放对局" disabled><option value="">等待对局完成</option></select><button id="replay-start" aria-label="回到回放开头" title="回到开头" disabled>↤</button><button id="replay-play" aria-label="播放回放" disabled>▶ 播放</button><label class="sr-only" for="replay-speed">播放速度</label><select id="replay-speed" aria-label="播放速度"><option value="0.5">0.5 倍</option><option value="1" selected>1 倍</option><option value="2">2 倍</option><option value="4">4 倍</option><option value="8">8 倍</option></select><label class="sr-only" for="replay-seek">回放时间轴</label><input id="replay-seek" type="range" min="0" max="1" step="0.25" value="0" disabled aria-label="回放时间轴"><output id="replay-time" for="replay-seek">00:00 / 00:00</output><label for="replay-view">观察</label><select id="replay-view" aria-label="观察阵营"><option value="-1">全局</option></select></div>
+      <p id="replay-detail" class="replay-detail" aria-live="polite">双方独立准备策略，完成的比赛将自动出现在此处。回放不会向战场发送指令。</p>
+    </section>
+
+    <main class="battle-layout">
+      <section id="battlefield" class="battlefield" aria-label="战场">
+        <canvas id="world" tabindex="0" aria-label="战术地图，左键选择，右键下令"></canvas>
+        <div class="map-heading"><span class="eyebrow">THE SHATTERED MARCHES</span><h1>破碎边境</h1><p id="map-subtitle">在灰烬中建立你的王国</p></div>
+        <div id="hero-ribbon" class="hero-ribbon" aria-label="英雄快捷选择"></div>
+        <div id="player-list" class="player-list"></div>
+        <div id="center-banner" class="center-banner" hidden></div>
+        <div id="mode-indicator" class="mode-indicator" hidden></div>
+        <div id="selection-box" class="selection-box" hidden></div>
+        <div id="command-ping" class="command-ping" hidden></div>
+        <div class="map-controls"><button id="zoom-out" title="缩小">−</button><span id="zoom-label">100%</span><button id="zoom-in" title="放大">+</button><button id="home-button" title="回到主城 · Home">⌂</button></div>
+        <div class="minimap-wrap"><div class="minimap-title"><span>战术地图</span><span id="map-coordinates">0 · 0</span></div><canvas id="minimap" aria-label="小地图，点击移动视角"></canvas><div class="minimap-footer"><i></i> 左键定位 <span>滚轮缩放</span></div></div>
+        <div id="battle-log" class="battle-log" aria-live="polite"></div>
+        <div class="map-hint"><kbd>鼠标右键</kbd> 下令 <span>·</span> <kbd>A</kbd> 攻击移动 <span>·</span> <kbd>空格</kbd> 跟随选择</div>
+      </section>
+
+      <aside class="command-panel">
+        <div class="panel-heading"><div><span class="eyebrow">WAR COUNCIL</span><h2>战争议会</h2></div><span id="faction-badge" class="faction-badge">指挥官</span></div>
+        <div class="panel-tabs" role="tablist" aria-label="生产菜单"><button class="active" data-tab="heroes" role="tab" aria-selected="true">英雄<span id="hero-count">0 / 5</span></button><button data-tab="units" role="tab" aria-selected="false">军队<span>兵种训练</span></button><button data-tab="buildings" role="tab" aria-selected="false">建筑<span>基地建设</span></button><button data-tab="techs" role="tab" aria-selected="false">科技<span>军备升级</span></button></div>
+        <div id="production-intro" class="production-intro"></div>
+        <div id="production-list" class="production-list"></div>
+        <div class="queue-section"><div class="section-label"><span>生产队列</span><span id="queue-count">0</span></div><div id="queue-list" class="queue-list"><p class="empty-text">暂无生产任务</p></div></div>
+        <div class="objective-note"><span>✦</span><p>扩张经济，推进时代，摧毁敌军基地。<small>每方最多 5 位英雄 · 16 类战斗兵种</small></p></div>
+      </aside>
+
+      <section class="selection-panel" aria-label="选择详情">
+        <div id="selection-summary" class="selection-summary"><div class="empty-emblem">♜</div><div><span class="eyebrow">YOUR COMMAND</span><h2>统领你的军团</h2><p>框选部队，右键指挥它们前进。</p></div></div>
+        <div id="selected-units" class="selected-units"></div>
+        <div id="skill-bar" class="skill-bar"></div>
+        <div id="order-bar" class="order-bar"><button data-order="attackMove" title="攻击移动：到达目的地途中攻击敌人"><b>⚔</b><span>攻击</span><kbd>A</kbd></button><button data-order="stop" title="停止当前命令"><b>■</b><span>停止</span><kbd>S</kbd></button><button data-order="hold" title="原地驻守，不主动追击"><b>⛨</b><span>驻守</span><kbd>H</kbd></button><button data-order="build" title="选择工人并展开建筑菜单"><b>⌂</b><span>建造</span><kbd>B</kbd></button></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <div id="tooltip" class="tooltip" hidden></div>
+
+  <div id="setup-modal" class="modal-overlay" hidden>
+    <section class="setup-modal" role="dialog" aria-modal="true" aria-labelledby="setup-title">
+      <button id="setup-close" class="modal-close" title="返回战场" aria-label="关闭">×</button>
+      <div class="setup-art"><div class="art-moon"></div><div class="art-mountain one"></div><div class="art-mountain two"></div><div class="art-tower"><i></i><i></i><i></i></div><div class="setup-art-copy"><span class="eyebrow">AN ORIGINAL FANTASY RTS</span><h1>灰烬王座</h1><p>十位英雄，万种战术。<br>让你的旗帜越过破碎边境。</p><div class="art-rule"></div><span class="setup-feature">英雄成长 / 资源运营 / 军团微操</span></div></div>
+      <div class="setup-content"><span class="eyebrow">PREPARE YOUR CAMPAIGN</span><h2 id="setup-title">建立新的战局</h2><p class="setup-description">你将指挥一个阵营，对抗其余电脑势力。选择首发英雄，率领工人建立经济，招募军团并征服边境。</p><div class="setup-options"><label for="player-count">参战阵营 <small>包含你的阵营</small></label><div class="stepper"><button id="count-minus" aria-label="减少阵营">−</button><input id="player-count" type="number" min="2" max="8" value="2" aria-label="参战阵营数量"><button id="count-plus" aria-label="增加阵营">+</button></div><span class="ai-label">其余阵营由 AI 指挥</span></div><div class="section-label"><span>选择首发英雄</span><span>其余英雄可在祭坛招募</span></div><div id="setup-heroes" class="setup-heroes"></div><div id="setup-hero-description" class="setup-hero-description"></div><div class="setup-bottom"><span>完整经济与科技树<br><small>大地图 · 支持 2—8 阵营</small></span><button id="create-button" class="primary-button">建立战局 <span>→</span></button></div><p id="setup-error" class="setup-error" role="alert"></p></div>
+    </section>
+  </div>
+
+  <div id="help-modal" class="modal-overlay" hidden>
+    <section class="help-modal" role="dialog" aria-modal="true" aria-labelledby="help-title"><button id="help-close" class="modal-close" aria-label="关闭">×</button><span class="eyebrow">COMMANDER'S FIELD GUIDE</span><h2 id="help-title">战场指挥手册</h2><p>先让工人采集黄金和木材，扩建生产建筑与住房。升级主城时代，解锁更强兵种与军备。英雄通过战斗成长，三级解锁终极技能。</p><div class="help-grid"><article><h3>选择与视角</h3><dl><dt>左键 / 拖框</dt><dd>选择单位或编队</dd><dt>Shift + 选择</dt><dd>添加 / 移除选择</dd><dt>双击单位</dt><dd>选择视野内同类单位</dd><dt>鼠标中键拖动 / 方向键</dt><dd>移动视角</dd><dt>右键拖动 / 屏幕边缘</dt><dd>平移战场</dd><dt>滚轮 / 小地图</dt><dd>缩放 / 跳转视角</dd><dt>Home / 空格</dt><dd>回主城 / 定位所选部队</dd></dl></article><article><h3>战斗与编队</h3><dl><dt>右键</dt><dd>移动 / 攻击 / 采集 / 集结</dd><dt>A 后左键</dt><dd>攻击移动</dd><dt>S / H</dt><dd>停止 / 原地驻守</dd><dt>Q W E R</dt><dd>施放所选英雄技能</dd><dt>F1—F5</dt><dd>选择并定位己方英雄</dd><dt>Ctrl + 1—9</dt><dd>保存当前编队</dd><dt>1—9 / 连按两次</dt><dd>选择编队 / 定位编队</dd><dt>Esc</dt><dd>取消技能或建筑放置</dd></dl></article><article><h3>经营与战争</h3><p>工人右键金矿或树林开始采集。选中工人后在「建筑」页选择建筑，再点击空地放置。</p><p>训练单位需要对应的已完成建筑；英雄在祭坛招募。科技会消耗资源并占用研发队列。主城时代决定可建造和招募的等级。</p><p>每方最多拥有 5 位不同英雄。阵亡英雄可从「英雄」页复活。人口包含已进入生产队列的部队。</p></article></div><button id="help-done" class="primary-button">明白了，进入战场</button></section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Implemented tactical fallback screening and improved search ordering in `engine.py`; `entry.json` is ready.
+
+All 29 entrypoint tests passed, with a maximum runtime of 4.4 seconds. Random-board, rollback, and timeout checks also passed.
+
+Replay findings and remaining weaknesses are documented in [review.md](/workspace/review.md). `previous_bot.py` remains untouched.

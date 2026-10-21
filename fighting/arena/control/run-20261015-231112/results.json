@@ -1,0 +1,50 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "opus",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "车轮战全胜",
+    "duration": 8.72,
+    "scores": {
+      "opus": 4729,
+      "sol": 4844
+    },
+    "errors": {
+      "opus": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 153,
+    "windows": 152,
+    "sha256": "274cff9e280168c79e61291f94b7bdbb318ba7b369e3dc73a5aa38ec167ecd18"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "opus"
+    ],
+    "winner": "sol",
+    "reason": "车轮战全胜",
+    "duration": 7.74,
+    "scores": {
+      "opus": 2071,
+      "sol": 4720
+    },
+    "errors": {
+      "opus": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 133,
+    "windows": 132,
+    "sha256": "a2752a151a8a0ae10ae6e664433f6175fe874c4b1aef9678c48ad91a9783b66e"
+  }
+]

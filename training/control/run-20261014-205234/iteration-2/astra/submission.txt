@@ -1,0 +1,6 @@
+Implemented and tested the submission in `engine.py` and `entry.json`.
+
+- Fixed false mate scores and mandatory-block handling.
+- Added forcing-four search and defensive screening.
+- All regression and protocol tests passed; maximum measured runtime: 4.376 seconds.
+- Documented replay mistakes, evidence, and remaining weaknesses in [review.md](/workspace/review.md).

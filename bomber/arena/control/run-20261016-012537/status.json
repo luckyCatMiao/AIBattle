@@ -1,0 +1,23 @@
+{
+  "run": "run-20261016-012537",
+  "phase": "模型准备",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "opus": "Claude Opus 5.5",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "双方从零开始，各最多 30 分钟准备；双方操控完全相同角色，无选角差异；每轮交换座位打两局；每 20 帧（1 秒）同步决策；策略代码隔离",
+  "pid": 81624,
+  "port": 8797,
+  "completed": false,
+  "updated": "2026-10-16T01:25:39"
+}

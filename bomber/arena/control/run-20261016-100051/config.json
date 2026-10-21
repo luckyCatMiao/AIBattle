@@ -1,0 +1,55 @@
+{
+  "game": "bomber",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "low",
+  "rounds": 3,
+  "games_per_round": 2,
+  "port": 8797,
+  "fresh_start": true,
+  "incumbent": null,
+  "continue_both": false,
+  "from_run": null,
+  "source_round": 3,
+  "starting_files": {
+    "opus": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ],
+    "sol": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ]
+  },
+  "inherited_files": {},
+  "clients": {
+    "opus": "Claude Code",
+    "sol": "Codex CLI"
+  },
+  "history_games": 0,
+  "decision_frames": 20,
+  "max_windows": 800,
+  "source_sha256": "99c7328c10500a67eee6aa776ef9951dec8a413277686a9752e4fc909a76ea0f",
+  "catalog_sha256": "23087c756f1ced41e6a4e59954613c9974c54215fe8bd62620c03f138d54da88",
+  "public_sim_sha256": "3388304595ae9191c5411d0d0f38b3c69542224b069b6db067407b355fb86c10",
+  "frozen_paths": {
+    "sol-r1": "control/run-20261016-100051/round-1/sol",
+    "opus-r1": "control/run-20261016-100051/round-1/opus",
+    "opus-r2": "control/run-20261016-100051/round-2/opus",
+    "sol-r2": "control/run-20261016-100051/round-2/sol",
+    "opus-r3": "control/run-20261016-100051/round-3/opus",
+    "sol-r3": "control/run-20261016-100051/round-3/sol"
+  }
+}

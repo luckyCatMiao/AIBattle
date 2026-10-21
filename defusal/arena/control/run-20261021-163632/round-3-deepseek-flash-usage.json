@@ -1,0 +1,43 @@
+[
+  {
+    "usage": {
+      "input_tokens": 161825,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 8335104,
+      "output_tokens": 88511,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "deepseek-v4.1-flash": {
+        "inputTokens": 163263,
+        "outputTokens": 96143,
+        "cacheReadInputTokens": 8501376,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 4.2761872,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "thinkingTokens": 0,
+        "canonicalModel": "deepseek-v4.1-flash",
+        "provider": "firstParty",
+        "costBasis": "unknown"
+      }
+    },
+    "reported_cost_usd": 4.2761872
+  }
+]
