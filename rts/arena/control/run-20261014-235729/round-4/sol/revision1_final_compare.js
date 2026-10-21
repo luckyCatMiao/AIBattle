@@ -1,0 +1,3 @@
+const fs=require('fs'),s=require('./rules'),a=require('./agent').choose;
+function play(z,seat){const g=s.createMatch({players:[{},{}]});g.status='playing';for(let t=0;t<600&&g.status==='playing';t++){const os=[structuredClone(s.snapshot(g,0)),structuredClone(s.snapshot(g,1))],acts=os.map((o,i)=>(i===seat?a:z)(o));for(let i=0;i<2;i++)for(const c of acts[i].commands)s.command(g,i,c);for(let k=0;k<20;k++)s.step(g);}return {seat,winner:g.winner,time:+g.now.toFixed(2),score:g.players.map(p=>s.score(g,p))};}
+const rows=[];for(const n of ['longkite','longcohesion'])for(const seat of [0,1])rows.push({opponent:n,...play(require('./revision1_'+n).choose,seat)});fs.writeFileSync('revision1_final_compare.json',JSON.stringify(rows,null,2));console.log(JSON.stringify(rows));

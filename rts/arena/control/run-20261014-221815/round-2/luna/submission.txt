@@ -1,0 +1,5 @@
+Submitted the round 2 program entry. The controller now opens with a tank and raider, keeps the starting rifles together at the north outpost, and sends idle units to capture other outposts.
+
+The round 1 losses showed that splitting rifles left them easy to eliminate: Sol began focusing them at t=6–11 in both games, then fielded tanks and eventually destroyed our base at about t=151. The replay diagnosis and remaining weaknesses are recorded in [review.md](/workspace/review.md).
+
+`agent.py` passed the protocol check on `example.json` and bytecode compilation. A 240-second self-play simulation completed without command errors; one side led by 320 points, so that test does not establish an advantage. A sample response took 16 ms.

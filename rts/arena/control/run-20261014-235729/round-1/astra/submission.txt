@@ -1,0 +1,5 @@
+Submitted [entry.json](/workspace/entry.json) running the revised `agent.js`.
+
+Fixed tank capture positions that stalled outside outpost range. Passed 4,170 replay observations with zero command errors; maximum measured response time was 24.61 ms. Won both seats against the retained controller.
+
+Strategy, replay evidence, tests, and weaknesses are documented in [review.md](/workspace/review.md).

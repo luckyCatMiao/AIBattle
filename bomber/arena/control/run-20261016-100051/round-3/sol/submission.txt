@@ -1,0 +1,5 @@
+已提交 [entry.json](/workspace/entry.json)，运行 `python3 agent.py`。
+
+新增末圈封路与双方生存时间比较，保留逐帧避险和放弹退路验证。对上一版完整地图自测 120 局：5 胜、114 平、1 负；协议测试无异常或超时。
+
+策略、自测结果与局限已写入 [review.md](/workspace/review.md)。未编造本轮正式赛果。

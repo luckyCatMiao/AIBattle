@@ -1,0 +1,171 @@
+{
+  "team": [
+    "kestrel",
+    "aegis",
+    "vex"
+  ],
+  "enemy": [
+    "vex",
+    "kestrel",
+    "aegis"
+  ],
+  "style": "balanced",
+  "seat": 0,
+  "winner": 0,
+  "frames": 1993,
+  "rounds": [
+    {
+      "round": 1,
+      "frames": 671,
+      "winner": "0",
+      "winnerChar": "kestrel",
+      "loserChar": "vex",
+      "winnerHp": 394,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 2,
+      "frames": 719,
+      "winner": "0",
+      "winnerChar": "kestrel",
+      "loserChar": "kestrel",
+      "winnerHp": 207,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 3,
+      "frames": 298,
+      "winner": "1",
+      "winnerChar": "aegis",
+      "loserChar": "kestrel",
+      "winnerHp": 712,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 4,
+      "frames": 304,
+      "winner": "0",
+      "winnerChar": "aegis",
+      "loserChar": "aegis",
+      "winnerHp": 908,
+      "loserHp": 0,
+      "reason": "击倒"
+    }
+  ],
+  "hp": [
+    908,
+    0
+  ],
+  "maxMs": 38.812274000000116,
+  "meanMs": 26.828069240601486,
+  "hist": [
+    [
+      0,
+      [
+        "kestrel",
+        1000,
+        420,
+        "crouch"
+      ],
+      [
+        "vex",
+        1000,
+        860,
+        "attack"
+      ]
+    ],
+    [
+      20,
+      [
+        "kestrel",
+        604,
+        195,
+        "hitstun"
+      ],
+      [
+        "vex",
+        540,
+        1007,
+        "attack"
+      ]
+    ],
+    [
+      40,
+      [
+        "kestrel",
+        394,
+        325,
+        "hitstun"
+      ],
+      [
+        "vex",
+        80,
+        1151,
+        "hitstun"
+      ]
+    ],
+    [
+      60,
+      [
+        "kestrel",
+        368,
+        395,
+        "stand"
+      ],
+      [
+        "kestrel",
+        808,
+        903,
+        "attack"
+      ]
+    ],
+    [
+      80,
+      [
+        "kestrel",
+        316,
+        879,
+        "air"
+      ],
+      [
+        "kestrel",
+        593,
+        1088,
+        "down"
+      ]
+    ],
+    [
+      100,
+      [
+        "kestrel",
+        195,
+        358,
+        "attack"
+      ],
+      [
+        "aegis",
+        904,
+        883,
+        "attack"
+      ]
+    ],
+    [
+      120,
+      [
+        "aegis",
+        908,
+        803,
+        "attack"
+      ],
+      [
+        "aegis",
+        410,
+        905,
+        "hitstun"
+      ]
+    ]
+  ]
+}

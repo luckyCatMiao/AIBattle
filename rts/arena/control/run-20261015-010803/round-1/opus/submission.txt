@@ -1,0 +1,18 @@
+I've submitted a program entry: `entry.json` runs `python3 agent.py`. In my own test harness it beat a rough copy of the incumbent's (sol's) strategy in both seats by destroying the base: at 386s playing west and at 596s playing east. Decisions took about 20 ms at most, well under the 1-second target. I also checked the output format on `example.json` and on 40 frames from the replays.
+
+**Strategy**
+- **Units:** tanks only, with both weapon upgrades bought as early as possible. I started with the idea of countering sol's tanks with raiders, but fight tests run on `rules.js` killed it. Tank splash damage and range win: 15 raiders lose to 10 tanks (the same build time), and 24 rifles lose to 10 tanks.
+- **Economy:** 4 workers. The one production queue limits spending to about 13 credits a second, so more workers just pile up unspent credits.
+- **Army control:** the agent compares army strength (health × damage, adjusted for unit matchups and upgrades). It goes for outposts when the ratio is above 0.9 and keeps attacking while it stays above 0.8. It moves on to the enemy base at about 1.3–1.5, and otherwise waits next to its own base. The army regroups before advancing when spread out, units concentrate fire on the best target in range, and it defends when enemies come near the base.
+- **Siege:** tanks attack the enemy base from 186 pixels away. At that distance they can hit it and the base can't hit back.
+
+**What the replays and my tests showed** (details in `review.md`)
+- Sol builds mass tanks with 4 workers, upgrades at about 36s and 60s, and controls tanks one at a time.
+- Sol lost game `235729-r5-g1` because its tanks arrived in small groups; by 180s its base was at 868 HP with one tank left. Luna lost every game by around 130–150s, also feeding units in one at a time, with a mix that included rifles.
+- My first version made two mistakes against the test copy of sol. Six workers plus raiders left it sitting on 1,000+ unspent credits. An attack threshold of 1.2 made it wait all game, so the opponent won on outpost time. Fixing those turned losses into wins.
+
+**Weaknesses**
+- My copy of sol is only an approximation. The real one pulls back damaged tanks one by one and may trade better in an all-tank fight.
+- The strength comparison is map-wide, not around the actual fight. My damaged tanks don't retreat, and nothing spaces units out against splash damage.
+
+My test scripts (harness, fight tests, the sol copy) are in `/workspace/tools`. In the file listing that folder shows up under the name `tools`, but the `tools` path still works.

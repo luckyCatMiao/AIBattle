@@ -1,0 +1,116 @@
+{
+  "team": [
+    "kestrel",
+    "aegis",
+    "vex"
+  ],
+  "enemy": [
+    "vex",
+    "nyx",
+    "kestrel"
+  ],
+  "style": "rush",
+  "seat": 0,
+  "winner": 0,
+  "frames": 1093,
+  "rounds": [
+    {
+      "round": 1,
+      "frames": 387,
+      "winner": "0",
+      "winnerChar": "kestrel",
+      "loserChar": "vex",
+      "winnerHp": 795,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 2,
+      "frames": 200,
+      "winner": "0",
+      "winnerChar": "kestrel",
+      "loserChar": "nyx",
+      "winnerHp": 785,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 3,
+      "frames": 505,
+      "winner": "0",
+      "winnerChar": "kestrel",
+      "loserChar": "kestrel",
+      "winnerHp": 701,
+      "loserHp": 0,
+      "reason": "击倒"
+    }
+  ],
+  "hp": [
+    701,
+    0
+  ],
+  "maxMs": 30.626346,
+  "meanMs": 20.07922806849314,
+  "hist": [
+    [
+      0,
+      [
+        "kestrel",
+        912,
+        420,
+        "hitstun"
+      ],
+      [
+        "vex",
+        1000,
+        577,
+        "attack"
+      ]
+    ],
+    [
+      20,
+      [
+        "kestrel",
+        854,
+        116,
+        "attack"
+      ],
+      [
+        "vex",
+        175,
+        60,
+        "hitstun"
+      ]
+    ],
+    [
+      40,
+      [
+        "kestrel",
+        785,
+        420,
+        "attack"
+      ],
+      [
+        "kestrel",
+        1000,
+        759,
+        "stand"
+      ]
+    ],
+    [
+      60,
+      [
+        "kestrel",
+        701,
+        677,
+        "attack"
+      ],
+      [
+        "kestrel",
+        450,
+        886,
+        "hitstun"
+      ]
+    ]
+  ]
+}

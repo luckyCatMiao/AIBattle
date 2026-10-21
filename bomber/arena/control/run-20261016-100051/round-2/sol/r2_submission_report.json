@@ -1,0 +1,72 @@
+{
+  "round": 2,
+  "formal_round2_results_available": false,
+  "agent_sha256": "09463a0c8c0cfeefe44d9cdd69d700b44f177a24637625b3212aa21f7a66b787",
+  "selftest_rounds": 96,
+  "selftest_summary": {
+    "still": {
+      "win": 24
+    },
+    "random": {
+      "win": 24
+    },
+    "hunter": {
+      "draw": 24
+    },
+    "self": {
+      "draw": 24
+    }
+  },
+  "full_map_holdout": {
+    "rounds": 48,
+    "results": {
+      "draw": 48
+    },
+    "seeds": [
+      25,
+      48
+    ]
+  },
+  "constructed_safe_skirmishes": {
+    "rounds": 120,
+    "results": {
+      "draw": 103,
+      "win": 9,
+      "loss": 8
+    },
+    "seeds": [
+      121,
+      180
+    ]
+  },
+  "protocol_series": 16,
+  "protocol_rounds": 64,
+  "protocol_windows": 3424,
+  "protocol_summary": {
+    "still": {
+      "win": 8
+    },
+    "hunter": {
+      "draw": 8
+    }
+  },
+  "max_protocol_seconds": 0.06123978300001909,
+  "stress_observations": 60,
+  "max_stress_seconds": 0.2752630479999425,
+  "random_survival": {
+    "generated": 300,
+    "safe_initial_windows": 238,
+    "no_20_frame_escape": 62,
+    "max_seconds": 0.3899540550000893
+  },
+  "exact_timeline_checks": 12403200,
+  "flood_gate_regressions": 6,
+  "all_tactical_checks_passed": true,
+  "protected_file_sha256": {
+    "RULES.md": "3b6278d24a96a3cf2bc2a733fa74d5f0a96a7196bd13df418a42b84b4b60ada1",
+    "GAME.md": "8f9787306f6274c7eeb34e37581e9eab8e2d1df120cb979201f7c3d9eff1d5df",
+    "simulation.js": "3388304595ae9191c5411d0d0f38b3c69542224b069b6db067407b355fb86c10",
+    "catalog.js": "23087c756f1ced41e6a4e59954613c9974c54215fe8bd62620c03f138d54da88",
+    "example.json": "68b0901c02b2677cc34fcbc8f8cfc07f0cba1f6bf74eacc55fffea5d592afdf3"
+  }
+}

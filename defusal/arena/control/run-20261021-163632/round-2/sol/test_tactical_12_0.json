@@ -1,0 +1,403 @@
+[
+  {
+    "seed": 12,
+    "style": "tactical",
+    "seat": 0,
+    "wins": [
+      3,
+      3
+    ],
+    "winner": null,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 1,
+        "reason": "拆除炸弹",
+        "seconds": 49.3,
+        "alive": [
+          "0:1",
+          "1:0",
+          "1:4"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.15,
+        "alive": [
+          "1:0",
+          "1:3",
+          "1:4"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.3,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:2",
+          "1:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 6.25,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:2",
+          "0:4"
+        ]
+      },
+      {
+        "round": 5,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 5.2,
+        "alive": [
+          "0:0",
+          "0:2",
+          "0:4"
+        ]
+      },
+      {
+        "round": 6,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 8.3,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:4"
+        ]
+      }
+    ],
+    "windows": 82,
+    "timing": [
+      {
+        "maxMs": 19.402175999999997,
+        "meanMs": 2.836007147727271,
+        "count": 88
+      },
+      {
+        "maxMs": 21.023368000000005,
+        "meanMs": 2.7769767727272745,
+        "count": 88
+      }
+    ]
+  },
+  {
+    "seed": 13,
+    "style": "tactical",
+    "seat": 0,
+    "wins": [
+      3,
+      3
+    ],
+    "winner": null,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 17,
+        "alive": [
+          "1:0"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 6.5,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:4"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.9,
+        "alive": [
+          "1:0",
+          "1:3",
+          "1:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 6,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:2",
+          "0:4"
+        ]
+      },
+      {
+        "round": 5,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 4.9,
+        "alive": [
+          "0:0",
+          "0:2",
+          "0:4"
+        ]
+      },
+      {
+        "round": 6,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 5.7,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:4"
+        ]
+      }
+    ],
+    "windows": 46,
+    "timing": [
+      {
+        "maxMs": 20.158200000000022,
+        "meanMs": 3.9793579807692367,
+        "count": 52
+      },
+      {
+        "maxMs": 21.862476000000015,
+        "meanMs": 4.037166019230771,
+        "count": 52
+      }
+    ]
+  },
+  {
+    "seed": 14,
+    "style": "tactical",
+    "seat": 0,
+    "wins": [
+      1,
+      4
+    ],
+    "winner": 1,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 1,
+        "reason": "拆除炸弹",
+        "seconds": 103.05,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:4",
+          "1:4"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 1,
+        "reason": "拆除炸弹",
+        "seconds": 30.45,
+        "alive": [
+          "1:4"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 22.15,
+        "alive": [
+          "0:1"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 1,
+        "reason": "防守方全灭",
+        "seconds": 26.3,
+        "alive": [
+          "1:3"
+        ]
+      },
+      {
+        "round": 5,
+        "winner": 1,
+        "reason": "防守方全灭",
+        "seconds": 18.55,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:2",
+          "1:3",
+          "1:4"
+        ]
+      }
+    ],
+    "windows": 204,
+    "timing": [
+      {
+        "maxMs": 32.648976999999945,
+        "meanMs": 2.1157874449760747,
+        "count": 209
+      },
+      {
+        "maxMs": 34.64484200000004,
+        "meanMs": 1.9685172775119646,
+        "count": 209
+      }
+    ]
+  },
+  {
+    "seed": 15,
+    "style": "tactical",
+    "seat": 0,
+    "wins": [
+      4,
+      0
+    ],
+    "winner": 0,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 30.35,
+        "alive": [
+          "0:1"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 22.95,
+        "alive": [
+          "0:0"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 23.25,
+        "alive": [
+          "0:0",
+          "0:2",
+          "0:3",
+          "0:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 10.45,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:2",
+          "0:4"
+        ]
+      }
+    ],
+    "windows": 89,
+    "timing": [
+      {
+        "maxMs": 30.366448999999875,
+        "meanMs": 3.0534754838709883,
+        "count": 93
+      },
+      {
+        "maxMs": 30.237142999999833,
+        "meanMs": 2.6735036666666647,
+        "count": 93
+      }
+    ]
+  },
+  {
+    "seed": 16,
+    "style": "tactical",
+    "seat": 0,
+    "wins": [
+      4,
+      0
+    ],
+    "winner": 0,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 20.85,
+        "alive": [
+          "0:0",
+          "0:2",
+          "0:3",
+          "0:4"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 18.3,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:2",
+          "0:3",
+          "0:4"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 0,
+        "reason": "防守方全灭",
+        "seconds": 19.7,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:2",
+          "0:3",
+          "0:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 11.4,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:4"
+        ]
+      }
+    ],
+    "windows": 72,
+    "timing": [
+      {
+        "maxMs": 23.967105000000174,
+        "meanMs": 3.777976328947375,
+        "count": 76
+      },
+      {
+        "maxMs": 25.950227999999925,
+        "meanMs": 2.092732026315781,
+        "count": 76
+      }
+    ]
+  }
+]

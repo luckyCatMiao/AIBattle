@@ -1,0 +1,196 @@
+{
+  "team": [
+    "kestrel",
+    "aegis",
+    "vex"
+  ],
+  "enemy": [
+    "aegis",
+    "sable",
+    "torv"
+  ],
+  "style": "zone",
+  "seat": 1,
+  "winner": 1,
+  "frames": 2320,
+  "rounds": [
+    {
+      "round": 1,
+      "frames": 794,
+      "winner": "1",
+      "winnerChar": "kestrel",
+      "loserChar": "aegis",
+      "winnerHp": 308,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 2,
+      "frames": 238,
+      "winner": "0",
+      "winnerChar": "sable",
+      "loserChar": "kestrel",
+      "winnerHp": 712,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 3,
+      "frames": 479,
+      "winner": "1",
+      "winnerChar": "aegis",
+      "loserChar": "sable",
+      "winnerHp": 644,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 4,
+      "frames": 708,
+      "winner": "0",
+      "winnerChar": "torv",
+      "loserChar": "aegis",
+      "winnerHp": 172,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 5,
+      "frames": 100,
+      "winner": "1",
+      "winnerChar": "vex",
+      "loserChar": "torv",
+      "winnerHp": 890,
+      "loserHp": 0,
+      "reason": "击倒"
+    }
+  ],
+  "hp": [
+    0,
+    890
+  ],
+  "maxMs": 39.62027899999998,
+  "meanMs": 27.542466916129037,
+  "hist": [
+    [
+      0,
+      [
+        "aegis",
+        1000,
+        420,
+        "attack"
+      ],
+      [
+        "kestrel",
+        1000,
+        860,
+        "attack"
+      ]
+    ],
+    [
+      20,
+      [
+        "aegis",
+        616,
+        315,
+        "attack"
+      ],
+      [
+        "kestrel",
+        792,
+        914,
+        "attack"
+      ]
+    ],
+    [
+      40,
+      [
+        "aegis",
+        242,
+        210,
+        "attack"
+      ],
+      [
+        "kestrel",
+        504,
+        828,
+        "stand"
+      ]
+    ],
+    [
+      60,
+      [
+        "sable",
+        808,
+        377,
+        "hitstun"
+      ],
+      [
+        "kestrel",
+        224,
+        961,
+        "attack"
+      ]
+    ],
+    [
+      80,
+      [
+        "sable",
+        420,
+        357,
+        "hitstun"
+      ],
+      [
+        "aegis",
+        906,
+        876,
+        "stand"
+      ]
+    ],
+    [
+      100,
+      [
+        "torv",
+        1000,
+        420,
+        "stand"
+      ],
+      [
+        "aegis",
+        644,
+        860,
+        "stand"
+      ]
+    ],
+    [
+      120,
+      [
+        "torv",
+        632,
+        378,
+        "hitstun"
+      ],
+      [
+        "aegis",
+        424,
+        1128,
+        "attack"
+      ]
+    ],
+    [
+      140,
+      [
+        "torv",
+        264,
+        275,
+        "hitstun"
+      ],
+      [
+        "aegis",
+        282,
+        870,
+        "attack"
+      ]
+    ]
+  ]
+}

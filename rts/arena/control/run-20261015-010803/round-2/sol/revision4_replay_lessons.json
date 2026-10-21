@@ -1,0 +1,6280 @@
+[
+  {
+    "id": "r3-g1",
+    "me": 0,
+    "winner": "sol",
+    "frames": [
+      {
+        "t": 35.00000000000015,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 237,
+            "level": 0,
+            "alive": true,
+            "kills": 4,
+            "damage": 480,
+            "mined": 480,
+            "controlTime": 44.84999999999959,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 544,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 112,
+            "level": 0,
+            "alive": true,
+            "kills": 3,
+            "damage": 507,
+            "mined": 420,
+            "controlTime": 23.4500000000002,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 465,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u5",
+            "owner": 0,
+            "type": "rifle",
+            "x": 539.1022316887005,
+            "y": 351.20170474200404,
+            "hp": 38,
+            "maxHp": 110,
+            "r": 8,
+            "angle": 0.9204455143255863,
+            "fireAt": 29.100000000000268,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "x": 497.03002971479907,
+            "y": 502.44720714264463,
+            "hp": 255,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.5977634596112553,
+            "fireAt": 35.00000000000026,
+            "order": {
+              "type": "move",
+              "x": 485.9054919844495,
+              "y": 509.1736222566582
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 708.9509543651437,
+            "y": 404.03955193922053,
+            "hp": 320,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.3015976940948666,
+            "fireAt": 35.05000000000026,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 459.65169355732985,
+            "y": 479.3876041779184,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.0693482477931932,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 890.5273950691948,
+            "y": 420.41748910346695,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -3.002436236427835,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 701.4856083147555,
+              "y": 393.93998235291906
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 39.999999999999865,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 174,
+            "level": 1,
+            "alive": true,
+            "kills": 4,
+            "damage": 672,
+            "mined": 560,
+            "controlTime": 54.84999999999902,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 610,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 35,
+            "level": 1,
+            "alive": true,
+            "kills": 4,
+            "damage": 593,
+            "mined": 500,
+            "controlTime": 28.45000000000027,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 536,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "x": 476.867405213188,
+            "y": 522.9112840862662,
+            "hp": 207,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.6578934542280543,
+            "fireAt": 40.399999999999956,
+            "order": {
+              "type": "move",
+              "x": 465.35875683341743,
+              "y": 528.9570274211098
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 692.8980646660415,
+            "y": 409.42567948610224,
+            "hp": 128,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.48369919936173783,
+            "fireAt": 40.049999999999976,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 530.1160692561814,
+            "y": 467.8605481221442,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.3446489818322635,
+            "fireAt": 41.999999999999865,
+            "order": {
+              "type": "attack",
+              "target": "u16"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 736.9533075444327,
+            "y": 350.70674192278983,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.191176780560136,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 54.99999999999901,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 227,
+            "level": 1,
+            "alive": true,
+            "kills": 5,
+            "damage": 1337.6000000000001,
+            "mined": 820,
+            "controlTime": 84.84999999999732,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 864,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 182,
+            "level": 1,
+            "alive": true,
+            "kills": 5,
+            "damage": 1049.6000000000001,
+            "mined": 740,
+            "controlTime": 43.44999999999967,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 716,
+            "population": 7
+          }
+        ],
+        "units": [
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 494.1358791318242,
+            "y": 497.2463189460961,
+            "hp": 254.40000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.30582903739057826,
+            "fireAt": 56.49999999999904,
+            "order": {
+              "type": "attackMove",
+              "x": 753.5736835487436,
+              "y": 517
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 655.770177992573,
+            "y": 444.64692460141873,
+            "hp": 4.800000000000011,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.656839092232864,
+            "fireAt": 56.34999999999905,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 483.6493320918396,
+            "y": 450.1421804962756,
+            "hp": 216,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.024306958421028743,
+            "fireAt": 56.69999999999903,
+            "order": {
+              "type": "attackMove",
+              "x": 753.5736835487436,
+              "y": 493
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 666.0710852988137,
+            "y": 465.317814734555,
+            "hp": 177.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.95623146394121,
+            "fireAt": 54.04999999999918,
+            "order": {
+              "type": "attack",
+              "target": "u19"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 313.03227343939614,
+            "y": 455.91199808181256,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.10291664759808011,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 1036.56003786335,
+            "y": 463.1642099959782,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.033629347978429,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 726.5173656250149,
+              "y": 496.9772426684054
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 59.99999999999873,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 344,
+            "level": 1,
+            "alive": true,
+            "kills": 6,
+            "damage": 1409.6000000000001,
+            "mined": 900,
+            "controlTime": 94.84999999999675,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 942,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 125,
+            "level": 1,
+            "alive": true,
+            "kills": 5,
+            "damage": 1145.6000000000001,
+            "mined": 820,
+            "controlTime": 48.449999999999385,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 753,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 515.4430563796482,
+            "y": 506.65614988509355,
+            "hp": 254.40000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.4878976802851424,
+            "fireAt": 59.599999999998865,
+            "order": {
+              "type": "attackMove",
+              "x": 777.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 504.48715362792944,
+            "y": 453.2210704392467,
+            "hp": 120,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.21794432966374516,
+            "fireAt": 59.399999999998876,
+            "order": {
+              "type": "attackMove",
+              "x": 753.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 694.2842802371124,
+            "y": 411.18822966544815,
+            "hp": 110.40000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.9236483239260482,
+            "fireAt": 59.599999999998865,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 210
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 495.0433198236479,
+            "y": 475.822535524232,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.31369156843432844,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 871.2111763316491,
+            "y": 455.0849354852675,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.9707838623079605,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 736.900753419413,
+              "y": 431.91778958025327
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 64.99999999999845,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 162,
+            "level": 2,
+            "alive": true,
+            "kills": 7,
+            "damage": 1520.0000000000002,
+            "mined": 980,
+            "controlTime": 104.84999999999619,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 1027,
+            "population": 8
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 227,
+            "level": 1,
+            "alive": true,
+            "kills": 5,
+            "damage": 1212.8000000000002,
+            "mined": 900,
+            "controlTime": 53.4499999999991,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 784,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 691.3127055155967,
+            "y": 465.2405835853551,
+            "hp": 254.40000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.33424513320501553,
+            "fireAt": 62.5499999999987,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 678.8354229042492,
+            "y": 438.562948666831,
+            "hp": 72,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.17345300700623995,
+            "fireAt": 62.34999999999871,
+            "order": {
+              "type": "attackMove",
+              "x": 753.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 668.5019400551635,
+            "y": 459.5924720538163,
+            "hp": 340.8,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.26910208297800303,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 860.5055171405586,
+            "y": 407.25693399924666,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.07972723682224893,
+            "fireAt": 0,
+            "order": {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 259.6050691983689,
+            "y": 478.07306004115605,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.04191782830686081,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 1095.911462154982,
+            "y": 466.0175582846313,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.0327954887776354,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 69.99999999999817,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 119,
+            "level": 2,
+            "alive": true,
+            "kills": 7,
+            "damage": 1800.0000000000002,
+            "mined": 1060,
+            "controlTime": 114.84999999999562,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 1111,
+            "population": 8
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 170,
+            "level": 1,
+            "alive": true,
+            "kills": 5,
+            "damage": 1385.6000000000004,
+            "mined": 980,
+            "controlTime": 58.449999999998816,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 837,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 700.9595392459433,
+            "y": 481.4413409654888,
+            "hp": 216.00000000000006,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.7926318036320037,
+            "fireAt": 70.84999999999823,
+            "order": {
+              "type": "move",
+              "x": 688.7608503284888,
+              "y": 485.8798501341322
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 752.8513516876449,
+            "y": 419.30215793976294,
+            "hp": 4.799999999999997,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.13815125013391555,
+            "fireAt": 68.19999999999838,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 756.0852455822005,
+            "y": 442.5024780023283,
+            "hp": 273.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.27247482403601664,
+            "fireAt": 71.99999999999817,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 923.508504781685,
+            "y": 395.64673455731713,
+            "hp": 80,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.36697178044207135,
+            "fireAt": 70.89999999999823,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 446.2253171345974,
+            "y": 485.9575419162785,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.04055828276392979,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 953.1708433744346,
+            "y": 418.3604220055675,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.020064809239443,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": 0,
+            "progress": 0.4962499999999992,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 74.99999999999788,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 240,
+            "level": 2,
+            "alive": true,
+            "kills": 7,
+            "damage": 2024.0000000000002,
+            "mined": 1140,
+            "controlTime": 125.84999999999499,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 1185,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 269,
+            "level": 1,
+            "alive": true,
+            "kills": 6,
+            "damage": 1534.4000000000003,
+            "mined": 1060,
+            "controlTime": 62.44999999999859,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 918,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 741.648907715326,
+            "y": 495.4400536261279,
+            "hp": 216.00000000000006,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.36916002087862854,
+            "fireAt": 74.19999999999804,
+            "order": {
+              "type": "attackMove",
+              "x": 777.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 735.1261316335195,
+            "y": 458.34603114514874,
+            "hp": 129.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.15421587507204446,
+            "fireAt": 76.89999999999789,
+            "order": {
+              "type": "attackMove",
+              "x": 753.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 907.6189691678878,
+            "y": 380.81392632620964,
+            "hp": 24,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.7191711272930603,
+            "fireAt": 74.49999999999802,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 210
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 631.0731778689255,
+            "y": 493.458767279032,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.04055828276392982,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 906.2999713011654,
+            "y": 431.73702927838957,
+            "hp": 192,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.9873767785177487,
+            "fireAt": 76.89999999999789,
+            "order": {
+              "type": "attack",
+              "target": "u23"
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 79.9999999999976,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 212,
+            "level": 2,
+            "alive": true,
+            "kills": 8,
+            "damage": 2104,
+            "mined": 1220,
+            "controlTime": 140.84999999999778,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 593,
+              "y": 267
+            },
+            "score": 1274,
+            "population": 8
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 57,
+            "level": 2,
+            "alive": true,
+            "kills": 6,
+            "damage": 1590.4000000000003,
+            "mined": 1140,
+            "controlTime": 62.44999999999859,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 937,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 722.1853194094617,
+            "y": 501.44516357079345,
+            "hp": 160.00000000000006,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.8101166190037294,
+            "fireAt": 80.49999999999768,
+            "order": {
+              "type": "move",
+              "x": 709.8930002219481,
+              "y": 505.67587143027674
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 652.432208151612,
+            "y": 367.20987617653964,
+            "hp": 129.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.676469144694133,
+            "fireAt": 76.89999999999789,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 637.8519563912942,
+            "y": 308.58300315148364,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.534146076260084,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 953.4652980885436,
+            "y": 421.84439754670257,
+            "hp": 136,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.33147603458606656,
+            "fireAt": 80.49999999999768,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 343.74694434784215,
+            "y": 394.5704615542552,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.47305172048095356,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 593,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 991.0680046073938,
+            "y": 451.01719523957917,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.87858134512417,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 790.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 89.99999999999703,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 317,
+            "level": 2,
+            "alive": true,
+            "kills": 8,
+            "damage": 2272,
+            "mined": 1380,
+            "controlTime": 170.8500000000046,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 593,
+              "y": 267
+            },
+            "score": 1384,
+            "population": 8
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 72,
+            "level": 2,
+            "alive": true,
+            "kills": 7,
+            "damage": 1828.8000000000004,
+            "mined": 1300,
+            "controlTime": 62.44999999999859,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 1036,
+            "population": 7
+          }
+        ],
+        "units": [
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 621.7729544363834,
+            "y": 279.3063839535625,
+            "hp": 73.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.186469132921158,
+            "fireAt": 90.7499999999971,
+            "order": {
+              "type": "move",
+              "x": 608.4761667887359,
+              "y": 259.9564163011282
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 643.3894314564914,
+            "y": 266.1032678247707,
+            "hp": 337.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.5341460762600834,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 807.5692993943776,
+            "y": 414.3761123873227,
+            "hp": 24,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.02646780467129624,
+            "fireAt": 90.7499999999971,
+            "order": {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 616.4782205092589,
+            "y": 257.5803932235261,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.7798187939567949,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 794.3398024513542,
+            "y": 503.652280291975,
+            "hp": 304,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.7979383951876446,
+            "fireAt": 85.14999999999742,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u29",
+            "owner": 0,
+            "type": "tank",
+            "x": 272.45710258335504,
+            "y": 419.27529562209924,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.4434926747168276,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 593,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 1061.3717892770455,
+            "y": 475.4029884558914,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.8679314156700126,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 819.3398024513542,
+              "y": 543.652280291975
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 0,
+            "capturer": 1,
+            "progress": 0.3312499999999998,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 99.99999999999646,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 568,
+            "level": 2,
+            "alive": true,
+            "kills": 9,
+            "damage": 2464,
+            "mined": 1540,
+            "controlTime": 196.20000000001036,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 1524,
+            "population": 8
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 101,
+            "level": 2,
+            "alive": true,
+            "kills": 7,
+            "damage": 1985.6000000000006,
+            "mined": 1460,
+            "controlTime": 67.09999999999833,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 1092,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 648.557744671582,
+            "y": 330.45218953614784,
+            "hp": 17.600000000000023,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.6681407235415828,
+            "fireAt": 99.24999999999662,
+            "order": {
+              "type": "attackMove",
+              "x": 777.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 676.3223356264365,
+            "y": 297.5501892751518,
+            "hp": 259.20000000000005,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.87655928829829,
+            "fireAt": 99.19999999999662,
+            "order": {
+              "type": "attackMove",
+              "x": 753.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 644.7234812846399,
+            "y": 297.84055828211143,
+            "hp": 337.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.421165153213873,
+            "fireAt": 100.39999999999655,
+            "order": {
+              "type": "move",
+              "x": 634.0652923431517,
+              "y": 288.48453850025044
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 832.9841779413301,
+            "y": 440.48880071847947,
+            "hp": 136,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.10912131743136118,
+            "fireAt": 99.19999999999662,
+            "order": {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u29",
+            "owner": 0,
+            "type": "tank",
+            "x": 597.9997576612958,
+            "y": 403.22552285352,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.5647455407536416,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 777.5736835487436,
+              "y": 517
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 811.1920798438987,
+            "y": 457.0476512447285,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.1755971984481608,
+            "fireAt": 0,
+            "order": {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 119.99999999999532,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 722,
+            "level": 2,
+            "alive": true,
+            "kills": 12,
+            "damage": 3420.8000000000006,
+            "mined": 1860,
+            "controlTime": 237.50000000001975,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 593,
+              "y": 267
+            },
+            "score": 1935,
+            "population": 8
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 187,
+            "level": 2,
+            "alive": true,
+            "kills": 9,
+            "damage": 2497.6000000000004,
+            "mined": 1780,
+            "controlTime": 85.79999999999727,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 1334,
+            "population": 5
+          }
+        ],
+        "units": [
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 740.5712730157824,
+            "y": 446.02893721606216,
+            "hp": 158.4000000000001,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.090016267671469,
+            "fireAt": 120.44999999999541,
+            "order": {
+              "type": "move",
+              "x": 727.5358244734119,
+              "y": 446.7018553283255
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u29",
+            "owner": 0,
+            "type": "tank",
+            "x": 792.1254078117427,
+            "y": 464.4362128019097,
+            "hp": 304,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.1357703356849813,
+            "fireAt": 109.74999999999602,
+            "order": {
+              "type": "attackMove",
+              "x": 628,
+              "y": 238
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u31",
+            "owner": 0,
+            "type": "tank",
+            "x": 726.9924763194853,
+            "y": 467.2328573422708,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.8869674473753528,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 652,
+              "y": 238
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u33",
+            "owner": 0,
+            "type": "tank",
+            "x": 479.4681735630403,
+            "y": 441.4739210066345,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.8794538261603831,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 628,
+              "y": 262
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u34",
+            "owner": 1,
+            "type": "tank",
+            "x": 984.3121973498356,
+            "y": 438.1814259992432,
+            "hp": 259.20000000000005,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.03317012432522374,
+            "fireAt": 120.04999999999544,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 149.99999999999986,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 882,
+            "level": 2,
+            "alive": true,
+            "kills": 13,
+            "damage": 3960.000000000001,
+            "mined": 2185.0000000001264,
+            "controlTime": 327.5000000000402,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 593,
+              "y": 267
+            },
+            "score": 2291,
+            "population": 10
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 159,
+            "level": 2,
+            "alive": true,
+            "kills": 10,
+            "damage": 2868.8000000000006,
+            "mined": 2186.8000000001266,
+            "controlTime": 85.79999999999727,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 1484,
+            "population": 7
+          }
+        ],
+        "units": [
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 726.7967301255527,
+            "y": 311.2272703622674,
+            "hp": 113.60000000000008,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.445571655480516,
+            "fireAt": 142.39999999999768,
+            "order": {
+              "type": "attack",
+              "target": "u36"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u31",
+            "owner": 0,
+            "type": "tank",
+            "x": 680.4889518477978,
+            "y": 256.44893978683945,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.5308278484688866,
+            "fireAt": 150.49999999999952,
+            "order": {
+              "type": "move",
+              "x": 669.8472197192726,
+              "y": 248.99911141445958
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u33",
+            "owner": 0,
+            "type": "tank",
+            "x": 629.4738155973031,
+            "y": 268.7728972027634,
+            "hp": 337.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.8794538261603588,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u35",
+            "owner": 0,
+            "type": "tank",
+            "x": 615.0861828024904,
+            "y": 237.2689270607157,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.1556201850732903,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u36",
+            "owner": 1,
+            "type": "tank",
+            "x": 889.6391800314751,
+            "y": 388.5762060624711,
+            "hp": 80,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.23653986529119178,
+            "fireAt": 142.0499999999976,
+            "order": {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u37",
+            "owner": 0,
+            "type": "tank",
+            "x": 607.8024739568177,
+            "y": 259.63269205253744,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.2912300084987908,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u38",
+            "owner": 1,
+            "type": "tank",
+            "x": 818.7597116572109,
+            "y": 446.52267349050715,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.13104079009202033,
+            "fireAt": 150.64999999999955,
+            "order": {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u39",
+            "owner": 0,
+            "type": "tank",
+            "x": 277.8734721739211,
+            "y": 428.28523077712777,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.4730517204809517,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 593,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u40",
+            "owner": 1,
+            "type": "tank",
+            "x": 1059.7178247031666,
+            "y": 458.33507118692097,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.9324362254396075,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 878.6694582909018,
+              "y": 419.90561681457507
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 0,
+            "capturer": 1,
+            "progress": 0.4462499999999989,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 180.00000000000668,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 1024,
+            "level": 2,
+            "alive": true,
+            "kills": 17,
+            "damage": 5232.000000000001,
+            "mined": 2385.0000000001264,
+            "controlTime": 399.7500000000566,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 706.0163151938692,
+              "y": 496.5
+            },
+            "score": 2849,
+            "population": 10
+          },
+          {
+            "id": 1,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 137,
+            "level": 2,
+            "alive": true,
+            "kills": 12,
+            "damage": 3646.0000000000014,
+            "mined": 2386.8000000001266,
+            "controlTime": 103.54999999999626,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 830.5736835487436,
+              "y": 495
+            },
+            "score": 1765,
+            "population": 5
+          }
+        ],
+        "units": [
+          {
+            "id": "u31",
+            "owner": 0,
+            "type": "tank",
+            "x": 760.5736979375778,
+            "y": 396.33089651214163,
+            "hp": 169.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.864561425784608,
+            "fireAt": 180.8000000000064,
+            "order": {
+              "type": "move",
+              "x": 748.0693666319946,
+              "y": 392.77537986891804
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u33",
+            "owner": 0,
+            "type": "tank",
+            "x": 817.6078555723409,
+            "y": 437.9930312241457,
+            "hp": 192.00000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.1411700695897156,
+            "fireAt": 173.55000000000476,
+            "order": {
+              "type": "attack",
+              "target": "u44"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u35",
+            "owner": 0,
+            "type": "tank",
+            "x": 740.5223227690684,
+            "y": 468.7521667997235,
+            "hp": 192,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.9771575521902711,
+            "fireAt": 179.8500000000062,
+            "order": {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u37",
+            "owner": 0,
+            "type": "tank",
+            "x": 724.2895860014884,
+            "y": 490.94911828169467,
+            "hp": 292.80000000000007,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.9958091589055924,
+            "fireAt": 174.30000000000493,
+            "order": {
+              "type": "attackMove",
+              "x": 741.5736835487436,
+              "y": 517
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u39",
+            "owner": 0,
+            "type": "tank",
+            "x": 762.739295423464,
+            "y": 472.91635900356823,
+            "hp": 337.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.05452588586938378,
+            "fireAt": 174.85000000000505,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u41",
+            "owner": 0,
+            "type": "tank",
+            "x": 742.8418509709286,
+            "y": 503.45088617698326,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.2403948727884276,
+            "fireAt": 172.8000000000046,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u43",
+            "owner": 0,
+            "type": "tank",
+            "x": 495.5743129102912,
+            "y": 475.20163967763216,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.10991970885786781,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u44",
+            "owner": 1,
+            "type": "tank",
+            "x": 996.5106623216006,
+            "y": 463.41787486535253,
+            "hp": 248,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.27703122780518186,
+            "fireAt": 179.8500000000062,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": 0,
+            "progress": 0.4562499999999994,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "tick": 1180,
+        "now": 58.999999999998785,
+        "commands": [
+          [
+            {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505,
+              "units": [
+                "u21",
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attackMove",
+              "x": 665,
+              "y": 210,
+              "units": [
+                "u22"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 736.900753419413,
+              "y": 431.91778958025327,
+              "units": [
+                "u24"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000579,
+          0.000507
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1200,
+        "now": 59.99999999999873,
+        "commands": [
+          [
+            {
+              "type": "upgrade"
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u21",
+              "units": [
+                "u22"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 719.2842802371124,
+              "y": 411.18822966544815,
+              "units": [
+                "u24"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.0006,
+          0.000598
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1380,
+        "now": 68.99999999999822,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u24",
+              "units": [
+                "u21",
+                "u23"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 688.7608503284888,
+              "y": 485.8798501341322,
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 927.2421772620263,
+              "y": 394.211572611911,
+              "units": [
+                "u24"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000773,
+          0.000603
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1400,
+        "now": 69.99999999999817,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u24",
+              "units": [
+                "u21"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 707.9353447629541,
+              "y": 455.9779019695634,
+              "units": [
+                "u23"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505,
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 961.1486210764338,
+              "y": 390.4292978957192,
+              "units": [
+                "u24"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u21",
+              "units": [
+                "u26"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.00121,
+          0.001273
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1580,
+        "now": 78.99999999999766,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 709.8930002219481,
+              "y": 505.67587143027674,
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 957.24755014624,
+              "y": 420.5426412822462,
+              "units": [
+                "u26"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 790.5736835487436,
+              "y": 505,
+              "units": [
+                "u28"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000915,
+          0.000843
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1600,
+        "now": 79.9999999999976,
+        "commands": [
+          [
+            {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250,
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attackMove",
+              "x": 790.5736835487436,
+              "y": 465,
+              "units": [
+                "u26"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000619,
+          0.000552
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1980,
+        "now": 98.99999999999652,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 634.0652923431517,
+              "y": 288.48453850025044,
+              "units": [
+                "u27"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505,
+              "units": [
+                "u25",
+                "u23"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994,
+              "units": [
+                "u30"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000806,
+          0.00065
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 2000,
+        "now": 99.99999999999646,
+        "commands": [
+          [
+            {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505,
+              "units": [
+                "u27"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u23",
+              "units": [
+                "u28"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u25",
+              "units": [
+                "u30"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000552,
+          0.000712
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 2980,
+        "now": 148.99999999999963,
+        "commands": [
+          [
+            {
+              "type": "train",
+              "unit": "tank"
+            },
+            {
+              "type": "attack",
+              "target": "u36",
+              "units": [
+                "u27"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 669.8472197192726,
+              "y": 248.99911141445958,
+              "units": [
+                "u31"
+              ]
+            },
+            {
+              "type": "stop",
+              "units": [
+                "u37"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "train",
+              "unit": "tank"
+            },
+            {
+              "type": "move",
+              "x": 1020,
+              "y": 419.99999999999994,
+              "units": [
+                "u38"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 878.6694582909018,
+              "y": 419.90561681457507,
+              "units": [
+                "u40"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000761,
+          0.000619
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 3000,
+        "now": 149.99999999999986,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u38",
+              "units": [
+                "u27"
+              ]
+            },
+            {
+              "type": "stop",
+              "units": [
+                "u31"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u27",
+              "units": [
+                "u36"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 914.6391800314751,
+              "y": 428.5762060624711,
+              "units": [
+                "u40"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000736,
+          0.000657
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 3580,
+        "now": 179.00000000000645,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u44",
+              "units": [
+                "u33"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 748.0693666319946,
+              "y": 392.77537986891804,
+              "units": [
+                "u31"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 765.5736835487436,
+              "y": 505,
+              "units": [
+                "u35"
+              ]
+            },
+            {
+              "type": "stop",
+              "units": [
+                "u39"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "units": [
+                "u10",
+                "u18"
+              ],
+              "x": 1150,
+              "y": 464.99999999999994
+            },
+            {
+              "type": "move",
+              "x": 1000.3581488771644,
+              "y": 464.5118799863443,
+              "units": [
+                "u44"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000812,
+          0.000726
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 3600,
+        "now": 180.00000000000668,
+        "commands": [
+          [
+            {
+              "type": "rally",
+              "x": 1016,
+              "y": 419.99999999999994
+            },
+            {
+              "type": "attack",
+              "target": "u44",
+              "units": [
+                "u33"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 1110,
+              "y": 419.99999999999994,
+              "units": [
+                "u35",
+                "u37",
+                "u39",
+                "u41",
+                "u43",
+                "u31"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "units": [
+                "u10",
+                "u18"
+              ],
+              "x": 1150,
+              "y": 464.99999999999994
+            },
+            {
+              "type": "attack",
+              "target": "u33",
+              "units": [
+                "u44"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000852,
+          0.000685
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r3-g2",
+    "me": 1,
+    "winner": "sol",
+    "frames": [
+      {
+        "t": 35.00000000000015,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 174,
+            "level": 0,
+            "alive": true,
+            "kills": 4,
+            "damage": 512,
+            "mined": 480,
+            "controlTime": 23.900000000000205,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 508,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 175,
+            "level": 0,
+            "alive": true,
+            "kills": 3,
+            "damage": 498,
+            "mined": 420,
+            "controlTime": 44.24999999999962,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "score": 505,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u4",
+            "owner": 0,
+            "type": "rifle",
+            "x": 613.3882294079764,
+            "y": 253.6609009217251,
+            "hp": 62,
+            "maxHp": 110,
+            "r": 8,
+            "angle": -1.1560665303294115,
+            "fireAt": 26.700000000000234,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "x": 692.6560006085926,
+            "y": 428.34067965440147,
+            "hp": 240,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.39393478417675254,
+            "fireAt": 36.0500000000002,
+            "order": {
+              "type": "attack",
+              "target": "u16"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 854.222334470441,
+            "y": 495.49766835155384,
+            "hp": 288,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.3939347841767506,
+            "fireAt": 35.95000000000021,
+            "order": {
+              "type": "move",
+              "x": 866.2266117476703,
+              "y": 500.48739049325764
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 450.0767082490656,
+            "y": 434.4490867685563,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.10548257957931007,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 635.1982816628552,
+              "y": 414.8492386327953
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 881.7510172894214,
+            "y": 466.23259489499594,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.943826367951936,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 39.999999999999865,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 111,
+            "level": 1,
+            "alive": true,
+            "kills": 4,
+            "damage": 608,
+            "mined": 560,
+            "controlTime": 33.90000000000021,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 555,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 97,
+            "level": 1,
+            "alive": true,
+            "kills": 4,
+            "damage": 704,
+            "mined": 500,
+            "controlTime": 49.24999999999934,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 599,
+            "population": 6
+          }
+        ],
+        "units": [
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "x": 666.9874757034776,
+            "y": 433.1247873726109,
+            "hp": 96,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.10479315517885943,
+            "fireAt": 41.04999999999992,
+            "order": {
+              "type": "attack",
+              "target": "u20"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 834.2868824158504,
+            "y": 478.10718529500787,
+            "hp": 288,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.8789309580774116,
+            "fireAt": 41.84999999999987,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 630.9680709682983,
+            "y": 471.4159112174798,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.032898381901740985,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 740.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 839.9107507229126,
+            "y": 451.31258884446294,
+            "hp": 264,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -3.0367994984109337,
+            "fireAt": 41.04999999999992,
+            "order": {
+              "type": "attack",
+              "target": "u15"
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 54.99999999999901,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 304,
+            "level": 1,
+            "alive": true,
+            "kills": 4,
+            "damage": 896,
+            "mined": 800,
+            "controlTime": 63.899999999998506,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 697,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 85,
+            "level": 1,
+            "alive": true,
+            "kills": 5,
+            "damage": 1222.4,
+            "mined": 740,
+            "controlTime": 64.2499999999985,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 792,
+            "population": 8
+          }
+        ],
+        "units": [
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 754.3935430820178,
+            "y": 471.9657038813538,
+            "hp": 192,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.132374056655299,
+            "fireAt": 56.14999999999906,
+            "order": {
+              "type": "attack",
+              "target": "u21"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "x": 573.2379537630862,
+            "y": 451.6643443784732,
+            "hp": 4.799999999999997,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.18094446718240792,
+            "fireAt": 56.14999999999906,
+            "order": {
+              "type": "attack",
+              "target": "u22"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 799.107463751485,
+            "y": 371.84482859217724,
+            "hp": 120,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.488054675224043,
+            "fireAt": 52.549999999999265,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 581.8324407226211,
+            "y": 473.5578409903267,
+            "hp": 292.8,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.009207116881493012,
+            "fireAt": 56.09999999999906,
+            "order": {
+              "type": "attack",
+              "target": "u16"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 744.3169393596902,
+            "y": 420.36763492211094,
+            "hp": 312,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.9606362193647255,
+            "fireAt": 56.09999999999906,
+            "order": {
+              "type": "attack",
+              "target": "u19"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 304.82182199648946,
+            "y": 459.43610442833807,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.1363483142684128,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 544.5996588668934,
+              "y": 492.3335252118116
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 1031.0000240596314,
+            "y": 417.5073005823472,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.729164424728315,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 59.99999999999873,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 141,
+            "level": 2,
+            "alive": true,
+            "kills": 4,
+            "damage": 952,
+            "mined": 900,
+            "controlTime": 73.89999999999795,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 738,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 187,
+            "level": 1,
+            "alive": true,
+            "kills": 6,
+            "damage": 1275.2,
+            "mined": 820,
+            "controlTime": 69.24999999999821,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 856,
+            "population": 8
+          }
+        ],
+        "units": [
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 703.2164625235289,
+            "y": 390.02915963653885,
+            "hp": 136,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.562680061759732,
+            "fireAt": 61.94999999999873,
+            "order": {
+              "type": "attackMove",
+              "x": 652,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 654.1785659950458,
+            "y": 263.6546379642711,
+            "hp": 120,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.375016116415466,
+            "fireAt": 52.549999999999265,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 557.7638886781552,
+            "y": 485.099199131613,
+            "hp": 244.8,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.5789125918300615,
+            "fireAt": 61.94999999999873,
+            "order": {
+              "type": "attack",
+              "target": "u16"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 676.9361883827379,
+            "y": 352.09091362628425,
+            "hp": 312,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.301384054520664,
+            "fireAt": 61.64999999999875,
+            "order": {
+              "type": "attackMove",
+              "x": 628,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 486.0399645519874,
+            "y": 494.8073461111358,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.19469653084323268,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 740.5736835487436,
+              "y": 545
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 861.5122360815699,
+            "y": 343.3528015529249,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.7291644247283147,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": 1,
+            "progress": 0.16875000000000007,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 64.99999999999845,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 99,
+            "level": 2,
+            "alive": true,
+            "kills": 4,
+            "damage": 1064,
+            "mined": 980,
+            "controlTime": 83.89999999999738,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 789,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 290,
+            "level": 1,
+            "alive": true,
+            "kills": 6,
+            "damage": 1371.2,
+            "mined": 900,
+            "controlTime": 74.24999999999793,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 893,
+            "population": 9
+          }
+        ],
+        "units": [
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "x": 710.1966012138279,
+            "y": 322.1616531543476,
+            "hp": 24,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.361571083049942,
+            "fireAt": 64.24999999999861,
+            "order": {
+              "type": "attackMove",
+              "x": 652,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 653.8047765522995,
+            "y": 263.2590583436221,
+            "hp": 120,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.375016116415466,
+            "fireAt": 52.549999999999265,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 585.1579627526388,
+            "y": 493.85229779210607,
+            "hp": 244.8,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.9413423985017276,
+            "fireAt": 64.49999999999858,
+            "order": {
+              "type": "attackMove",
+              "x": 740.5736835487436,
+              "y": 465
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 669.460034857991,
+            "y": 279.82694505606474,
+            "hp": 312,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.519989938526696,
+            "fireAt": 64.14999999999861,
+            "order": {
+              "type": "attackMove",
+              "x": 628,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 560.1983901628522,
+            "y": 470.5555160523702,
+            "hp": 264,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.7800215705398511,
+            "fireAt": 64.24999999999861,
+            "order": {
+              "type": "attackMove",
+              "x": 740.5736835487436,
+              "y": 505
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 692.0244481035079,
+            "y": 269.1983025235021,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.7291644247283124,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 232.69247563931444,
+            "y": 480.5703097615972,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.06854259470728008,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 1098.7951392508517,
+            "y": 447.16910019411506,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.7291644247283138,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 0,
+            "capturer": 1,
+            "progress": 0.7937499999999982,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 69.99999999999817,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 206,
+            "level": 2,
+            "alive": true,
+            "kills": 5,
+            "damage": 1267.2000000000003,
+            "mined": 1060,
+            "controlTime": 90.549999999997,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 886,
+            "population": 7
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 242,
+            "level": 1,
+            "alive": true,
+            "kills": 6,
+            "damage": 1668.8000000000002,
+            "mined": 980,
+            "controlTime": 82.59999999999745,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "score": 977,
+            "population": 8
+          }
+        ],
+        "units": [
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "x": 651.3538249263688,
+            "y": 239.7733184337379,
+            "hp": 41.599999999999994,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 1.8477252091495886,
+            "fireAt": 71.4999999999982,
+            "order": {
+              "type": "attack",
+              "target": "u21"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "x": 599.4234831007901,
+            "y": 400.10806057177103,
+            "hp": 81.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.084306168304041,
+            "fireAt": 70.04999999999828,
+            "order": {
+              "type": "move",
+              "x": 260,
+              "y": 420.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 688.7058384804114,
+            "y": 223.5397188803737,
+            "hp": 233.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.207649905290069,
+            "fireAt": 70.24999999999827,
+            "order": {
+              "type": "move",
+              "x": 693.323662217668,
+              "y": 211.38752961540484
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "x": 579.1668786746728,
+            "y": 406.95834648695677,
+            "hp": 129.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.0373286410831963,
+            "fireAt": 68.14999999999839,
+            "order": {
+              "type": "attack",
+              "target": "u22"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 700.3548160573648,
+            "y": 261.34435369863473,
+            "hp": 337.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.205003791810237,
+            "fireAt": 68.89999999999834,
+            "order": {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 418.8780246242069,
+            "y": 489.29718129678645,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.13543181217572595,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 553.3115974785185,
+              "y": 470.9784624393915
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 930.4812451452617,
+            "y": 429.8405924689964,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.957681735855686,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 526.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 74.99999999999788,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 149,
+            "level": 2,
+            "alive": true,
+            "kills": 6,
+            "damage": 1465.6000000000004,
+            "mined": 1140,
+            "controlTime": 95.54999999999671,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 978,
+            "population": 5
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 60,
+            "level": 2,
+            "alive": true,
+            "kills": 8,
+            "damage": 1880.0000000000005,
+            "mined": 1060,
+            "controlTime": 92.59999999999688,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "score": 1117,
+            "population": 7
+          }
+        ],
+        "units": [
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 650.6672311054988,
+            "y": 293.13244543736045,
+            "hp": 188.79999999999998,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.050358152360104,
+            "fireAt": 75.69999999999796,
+            "order": {
+              "type": "attackMove",
+              "x": 502.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 671.2986114145024,
+            "y": 304.38566219753136,
+            "hp": 225.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.1821654612765506,
+            "fireAt": 75.69999999999796,
+            "order": {
+              "type": "attackMove",
+              "x": 526.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 571.258811311748,
+            "y": 446.128931627048,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.9587710245932122,
+            "fireAt": 76.7999999999979,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 748.1314385517769,
+            "y": 457.2095970561681,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -3.0790267076065136,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 526.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 79.9999999999976,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 91,
+            "level": 2,
+            "alive": true,
+            "kills": 6,
+            "damage": 1521.6000000000004,
+            "mined": 1220,
+            "controlTime": 100.54999999999643,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 1007,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 17,
+            "level": 2,
+            "alive": true,
+            "kills": 8,
+            "damage": 2048.0000000000005,
+            "mined": 1140,
+            "controlTime": 102.59999999999631,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "score": 1179,
+            "population": 8
+          }
+        ],
+        "units": [
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 582.4312361477832,
+            "y": 347.95838182541985,
+            "hp": 188.79999999999998,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.6295908951466394,
+            "fireAt": 77.79999999999784,
+            "order": {
+              "type": "attackMove",
+              "x": 502.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 601.1615228628463,
+            "y": 361.9765086621213,
+            "hp": 225.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.743245260650253,
+            "fireAt": 77.84999999999783,
+            "order": {
+              "type": "attackMove",
+              "x": 526.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u25",
+            "owner": 0,
+            "type": "tank",
+            "x": 428.5820604546285,
+            "y": 434.51830264635953,
+            "hp": 192,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -3.069203403055122,
+            "fireAt": 80.0999999999977,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 672.4468511657839,
+            "y": 452.20239228426016,
+            "hp": 304,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.0723892505346663,
+            "fireAt": 80.0999999999977,
+            "order": {
+              "type": "move",
+              "x": 685.4128047138544,
+              "y": 453.14263086530457
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 346.787543965697,
+            "y": 444.88256039181107,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.09022195072679019,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 435.64786096004843,
+              "y": 436.8435849833268
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 1002.7673868820627,
+            "y": 453.8872767216164,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.0425374406062797,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 89.99999999999703,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 136,
+            "level": 2,
+            "alive": true,
+            "kills": 6,
+            "damage": 1824.0000000000005,
+            "mined": 1380,
+            "controlTime": 110.54999999999586,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 1104,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 92,
+            "level": 2,
+            "alive": true,
+            "kills": 9,
+            "damage": 2542.4000000000005,
+            "mined": 1300,
+            "controlTime": 122.59999999999518,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "score": 1369,
+            "population": 9
+          }
+        ],
+        "units": [
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "x": 557.7627046078047,
+            "y": 419.6541713450795,
+            "hp": 132.79999999999998,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 1.9226843208365483,
+            "fireAt": 88.59999999999722,
+            "order": {
+              "type": "attackMove",
+              "x": 526.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "x": 556.5410821563968,
+            "y": 388.54540619479843,
+            "hp": 91.20000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.11452930193850186,
+            "fireAt": 90.09999999999714,
+            "order": {
+              "type": "move",
+              "x": 569.455915065418,
+              "y": 387.05977806769585
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 542.8472416053447,
+            "y": 487.47602935950505,
+            "hp": 192,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.7744414337908774,
+            "fireAt": 88.49999999999723,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "x": 314.2119560274427,
+            "y": 416.4211803785963,
+            "hp": 57.60000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.027063351651296,
+            "fireAt": 90.09999999999714,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 634.5811111576793,
+            "y": 490.4777996505012,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.0425374406062677,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u29",
+            "owner": 0,
+            "type": "tank",
+            "x": 269.37344560879615,
+            "y": 439.31066247851925,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.5011001400173836,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 615,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 1062.0435932911803,
+            "y": 463.2614299312606,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.077434544802581,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": 1,
+            "progress": 0.5074999999999991,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 99.99999999999646,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 323,
+            "level": 2,
+            "alive": true,
+            "kills": 8,
+            "damage": 2126.400000000001,
+            "mined": 1540,
+            "controlTime": 114.44999999999564,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 1258,
+            "population": 5
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 346,
+            "level": 2,
+            "alive": true,
+            "kills": 10,
+            "damage": 2768.0000000000005,
+            "mined": 1460,
+            "controlTime": 148.69999999999956,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 1517,
+            "population": 7
+          }
+        ],
+        "units": [
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "x": 581.6973753071381,
+            "y": 405.71679768683566,
+            "hp": 113.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.2125390830753504,
+            "fireAt": 99.89999999999658,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 630.1616685721267,
+            "y": 293.3639717170969,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -1.1950833699716095,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 652,
+              "y": 238
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u29",
+            "owner": 0,
+            "type": "tank",
+            "x": 360.8870194244928,
+            "y": 418.6952679116606,
+            "hp": 192,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.34576620911114486,
+            "fireAt": 99.89999999999658,
+            "order": {
+              "type": "attackMove",
+              "x": 489.4263164512564,
+              "y": 465.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 735.6160821531021,
+            "y": 344.3673689529055,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.4883197818276344,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 628,
+              "y": 262
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 119.99999999999532,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 353,
+            "level": 2,
+            "alive": true,
+            "kills": 9,
+            "damage": 2464.0000000000014,
+            "mined": 1860,
+            "controlTime": 114.44999999999564,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 1393,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 556,
+            "level": 2,
+            "alive": true,
+            "kills": 11,
+            "damage": 3184.0000000000005,
+            "mined": 1780,
+            "controlTime": 208.7000000000132,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 1787,
+            "population": 8
+          }
+        ],
+        "units": [
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 661.3819101728609,
+            "y": 213.42553071166674,
+            "hp": 259.20000000000005,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.8903107994706075,
+            "fireAt": 120.44999999999541,
+            "order": {
+              "type": "move",
+              "x": 669.5611264478362,
+              "y": 203.32105540974288
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 666.5591178609877,
+            "y": 247.9265932280519,
+            "hp": 259.20000000000005,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.6739139443939908,
+            "fireAt": 117.0999999999956,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u31",
+            "owner": 0,
+            "type": "tank",
+            "x": 492.1436567527771,
+            "y": 383.1554845861766,
+            "hp": 136,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.9841912606728584,
+            "fireAt": 120.44999999999541,
+            "order": {
+              "type": "move",
+              "x": 260,
+              "y": 420.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u32",
+            "owner": 1,
+            "type": "tank",
+            "x": 642.511514014734,
+            "y": 292.72154382067464,
+            "hp": 337.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.6001311351197627,
+            "fireAt": 0,
+            "order": {
+              "type": "attack",
+              "target": "u31"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u33",
+            "owner": 0,
+            "type": "tank",
+            "x": 460.9001567332183,
+            "y": 457.2262263380495,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 1.032505126719852,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 489.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u34",
+            "owner": 1,
+            "type": "tank",
+            "x": 861.5122360815699,
+            "y": 343.3528015529249,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.7291644247283147,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 149.99999999999986,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 266,
+            "level": 2,
+            "alive": true,
+            "kills": 9,
+            "damage": 3147.200000000002,
+            "mined": 2184.7000000001267,
+            "controlTime": 122.0999999999952,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 1577,
+            "population": 6
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 773,
+            "level": 2,
+            "alive": true,
+            "kills": 14,
+            "damage": 4342.4,
+            "mined": 2185.3000000001266,
+            "controlTime": 291.0500000000319,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "score": 2329,
+            "population": 11
+          }
+        ],
+        "units": [
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 599.6630560294093,
+            "y": 293.38487579050536,
+            "hp": 236.80000000000004,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.332620198778284,
+            "fireAt": 151.94999999999985,
+            "order": {
+              "type": "attackMove",
+              "x": 502.4263164512564,
+              "y": 493.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 605.8786521536484,
+            "y": 315.6546373665073,
+            "hp": 180.80000000000004,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.438792097662355,
+            "fireAt": 151.7999999999998,
+            "order": {
+              "type": "attackMove",
+              "x": 502.4263164512564,
+              "y": 517
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u32",
+            "owner": 1,
+            "type": "tank",
+            "x": 642.3255283852704,
+            "y": 334.58928378168764,
+            "hp": 91.20000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.6643838484531503,
+            "fireAt": 149.24999999999923,
+            "order": {
+              "type": "attackMove",
+              "x": 526.4263164512564,
+              "y": 493.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u34",
+            "owner": 1,
+            "type": "tank",
+            "x": 604.0822558577858,
+            "y": 256.7118921359513,
+            "hp": 91.20000000000002,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.908450387396731,
+            "fireAt": 150.69999999999956,
+            "order": {
+              "type": "move",
+              "x": 612.0743198919168,
+              "y": 246.4639582701236
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u36",
+            "owner": 1,
+            "type": "tank",
+            "x": 618.9155026590491,
+            "y": 334.94842757745835,
+            "hp": 292.80000000000007,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 2.5604288137434246,
+            "fireAt": 151.64999999999978,
+            "order": {
+              "type": "attackMove",
+              "x": 502.4263164512564,
+              "y": 505.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u37",
+            "owner": 0,
+            "type": "tank",
+            "x": 482.4759035103267,
+            "y": 416.3103461537745,
+            "hp": 57.60000000000008,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.919689753174458,
+            "fireAt": 0,
+            "order": {
+              "type": "attack",
+              "target": "u34"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u38",
+            "owner": 1,
+            "type": "tank",
+            "x": 657.5512139266204,
+            "y": 448.718366374788,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.9585554711611386,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 538.4263164512564,
+              "y": 517
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u39",
+            "owner": 0,
+            "type": "tank",
+            "x": 285.40728444155445,
+            "y": 462.882574209403,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.11406090166773546,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 435.050259818993,
+              "y": 445.73975489033324
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u40",
+            "owner": 1,
+            "type": "tank",
+            "x": 1058.8333756779962,
+            "y": 466.5607758697269,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 3.0799214619663364,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 0,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      },
+      {
+        "t": 180.00000000000668,
+        "players": [
+          {
+            "id": 0,
+            "name": "GPT-6 Astra",
+            "kind": "api",
+            "color": "#68ead1",
+            "credits": 45,
+            "level": 2,
+            "alive": true,
+            "kills": 11,
+            "damage": 3732.800000000003,
+            "mined": 2204.7000000001267,
+            "controlTime": 133.4499999999961,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            },
+            "score": 1789,
+            "population": 2
+          },
+          {
+            "id": 1,
+            "name": "GPT-6.1 Sol",
+            "kind": "api",
+            "color": "#ff9b71",
+            "credits": 974,
+            "level": 2,
+            "alive": true,
+            "kills": 20,
+            "damage": 5441.999999999996,
+            "mined": 2425.3000000001266,
+            "controlTime": 369.7000000000498,
+            "repairAt": -30,
+            "botAt": 0,
+            "rally": {
+              "x": 687,
+              "y": 267
+            },
+            "score": 2940,
+            "population": 11
+          }
+        ],
+        "units": [
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "x": 603.9391190959692,
+            "y": 230.6843500850664,
+            "hp": 214.40000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.39181890431737304,
+            "fireAt": 151.94999999999985,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "x": 608.2228974819529,
+            "y": 253.81095211160422,
+            "hp": 102.40000000000003,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.46314218192058965,
+            "fireAt": 151.7999999999998,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u36",
+            "owner": 1,
+            "type": "tank",
+            "x": 601.696611810638,
+            "y": 279.8136289784838,
+            "hp": 68.80000000000007,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.6679368192544881,
+            "fireAt": 177.05000000000555,
+            "order": {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u38",
+            "owner": 1,
+            "type": "tank",
+            "x": 622.84499158097,
+            "y": 273.3639309213214,
+            "hp": 281.6,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.5772253106282947,
+            "fireAt": 163.05000000000237,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u40",
+            "owner": 1,
+            "type": "tank",
+            "x": 631.2892855865589,
+            "y": 249.21398139082746,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -0.4235201362539984,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u42",
+            "owner": 1,
+            "type": "tank",
+            "x": 645.4341646396397,
+            "y": 268.1293194563737,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.0634269654835924,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u43",
+            "owner": 0,
+            "type": "tank",
+            "x": 409.24299851904163,
+            "y": 454.1098164918274,
+            "hp": 315.20000000000005,
+            "maxHp": 360,
+            "r": 14,
+            "angle": 0.13499010914442405,
+            "fireAt": 177.6500000000057,
+            "order": {
+              "type": "attackMove",
+              "x": 489.4263164512564,
+              "y": 465.00000000000006
+            },
+            "cargo": 0,
+            "harvest": 0
+          },
+          {
+            "id": "u44",
+            "owner": 1,
+            "type": "tank",
+            "x": 867.5573363924659,
+            "y": 359.8956435242418,
+            "hp": 360,
+            "maxHp": 360,
+            "r": 14,
+            "angle": -2.6933218339350415,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 664,
+              "y": 262
+            },
+            "cargo": 0,
+            "harvest": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "n0",
+            "name": "\u5317\u90e8\u4e2d\u7ee7\u7ad9",
+            "x": 640,
+            "y": 250,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n1",
+            "name": "\u4e1c\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 765.5736835487436,
+            "y": 505,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          },
+          {
+            "id": "n2",
+            "name": "\u897f\u5357\u4e2d\u7ee7\u7ad9",
+            "x": 514.4263164512564,
+            "y": 505.00000000000006,
+            "owner": 1,
+            "capturer": null,
+            "progress": 0,
+            "contested": false
+          }
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "tick": 1180,
+        "now": 58.999999999998785,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u19",
+                "u21"
+              ]
+            }
+          ],
+          []
+        ],
+        "seconds": [
+          0.000672,
+          0.000513
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1200,
+        "now": 59.99999999999873,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 525.9556816015377,
+              "y": 505.889532524106,
+              "units": [
+                "u21"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u22",
+              "units": [
+                "u23"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 710.3015623556844,
+              "y": 314.8517968316364,
+              "units": [
+                "u22"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 745.06936657171,
+              "y": 362.6734578043111,
+              "units": [
+                "u16"
+              ]
+            },
+            {
+              "type": "stop",
+              "units": [
+                "u20"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000754,
+          0.00061
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1380,
+        "now": 68.99999999999822,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 260,
+              "y": 420.00000000000006,
+              "units": [
+                "u21"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u22",
+              "units": [
+                "u23"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 553.3115974785185,
+              "y": 470.9784624393915,
+              "units": [
+                "u25"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u21",
+              "units": [
+                "u20"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 693.323662217668,
+              "y": 211.38752961540484,
+              "units": [
+                "u22"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u24"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000787,
+          0.000595
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1400,
+        "now": 69.99999999999817,
+        "commands": [
+          [
+            {
+              "type": "train",
+              "unit": "tank"
+            },
+            {
+              "type": "attack",
+              "target": "u20",
+              "units": [
+                "u21"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u24",
+              "units": [
+                "u23"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 554.1668786746728,
+              "y": 446.95834648695677,
+              "units": [
+                "u25"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u21",
+              "units": [
+                "u24"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 666.7602370304146,
+              "y": 192.20607691102282,
+              "units": [
+                "u20"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u22"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000693,
+          0.000533
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1580,
+        "now": 78.99999999999766,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 424.5925362859915,
+              "y": 434.2289984675766,
+              "units": [
+                "u25"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 685.4128047138544,
+              "y": 453.14263086530457,
+              "units": [
+                "u26"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000699,
+          0.000537
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1600,
+        "now": 79.9999999999976,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u22",
+              "units": [
+                "u25"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 740.5736835487436,
+              "y": 505,
+              "units": [
+                "u27"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u25",
+              "units": [
+                "u22"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u26"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000742,
+          0.000572
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 1980,
+        "now": 98.99999999999652,
+        "commands": [
+          [
+            {
+              "type": "attackMove",
+              "x": 489.4263164512564,
+              "y": 465.00000000000006,
+              "units": [
+                "u29"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attackMove",
+              "x": 640,
+              "y": 250,
+              "units": [
+                "u26"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000724,
+          0.000555
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 2000,
+        "now": 99.99999999999646,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u26",
+              "units": [
+                "u29"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "stop",
+              "units": [
+                "u28"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000744,
+          0.000561
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 2980,
+        "now": 148.99999999999963,
+        "commands": [
+          [
+            {
+              "type": "train",
+              "unit": "tank"
+            },
+            {
+              "type": "move",
+              "units": [
+                "u1",
+                "u2",
+                "u3",
+                "u17"
+              ],
+              "x": 130,
+              "y": 465.00000000000006
+            },
+            {
+              "type": "attack",
+              "target": "u34",
+              "units": [
+                "u37"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 435.050259818993,
+              "y": 445.73975489033324,
+              "units": [
+                "u39"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "train",
+              "unit": "tank"
+            },
+            {
+              "type": "move",
+              "x": 612.0743198919168,
+              "y": 246.4639582701236,
+              "units": [
+                "u34"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u28",
+                "u32",
+                "u30"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000797,
+          0.000677
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 3000,
+        "now": 149.99999999999986,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "units": [
+                "u1",
+                "u2",
+                "u3",
+                "u17"
+              ],
+              "x": 130,
+              "y": 465.00000000000006
+            },
+            {
+              "type": "attack",
+              "target": "u30",
+              "units": [
+                "u37"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 457.4759035103267,
+              "y": 416.3103461537745,
+              "units": [
+                "u39"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u37",
+              "units": [
+                "u32",
+                "u38"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 661.8596771056212,
+              "y": 309.3398766402737,
+              "units": [
+                "u36"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 644.6242029498101,
+              "y": 284.051120259988,
+              "units": [
+                "u30"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 634.1636066919468,
+              "y": 257.194932381021,
+              "units": [
+                "u28"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u34"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000793,
+          0.000586
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 3580,
+        "now": 179.00000000000645,
+        "commands": [
+          [],
+          []
+        ],
+        "seconds": [
+          0.000723,
+          0.000652
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 3600,
+        "now": 180.00000000000668,
+        "commands": [
+          [],
+          []
+        ],
+        "seconds": [
+          0.00062,
+          0.000555
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      }
+    ]
+  }
+]

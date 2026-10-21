@@ -18,13 +18,12 @@ diag/scripts/drive.py
 #   rts                                   run-*/replays.json
 # 只排除重复的副本、模型 transcript 和工作区。
 
-# 选手/轮次目录里的 public_replays.json 是发给选手的重复副本（约 1.4 GB）
+# 选手侧的回放副本（查看器读取 run 根目录的存档，这些是发给选手的重复文件）
 **/public_replays.json
+**/public-*.json.gz
 
-# 选手工作区与冻结提交（含策略代码）；只保留中文复盘
-**/arena/control/run-*/workspaces/
-**/arena/control/run-*/round-*/*/*
-!**/arena/control/run-*/round-*/*/review.md
+# 说明：run-*/workspaces/ 与 run-*/round-*/ 下的策略代码保留；
+# transcript（*.jsonl）、日志（*.log）和 __pycache__ 由下面的通用规则排除。
 
 # control 根目录的临时状态、本机路径与日志
 **/arena/control/.lock

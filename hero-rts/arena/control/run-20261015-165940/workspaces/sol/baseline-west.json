@@ -1,0 +1,238 @@
+{
+  "seat": 0,
+  "mode": "previous",
+  "candidate": "./agent",
+  "winner": 0,
+  "win": true,
+  "time": 278.400000000029,
+  "reason": "其余势力的城镇大厅全部被摧毁",
+  "frames": 1114,
+  "maxMs": 1.397541999999703,
+  "maxCommands": 18,
+  "errors": [
+    {},
+    {}
+  ],
+  "score": [
+    14633,
+    5584
+  ],
+  "deaths": [
+    {
+      "footman": 2,
+      "priest": 5,
+      "archer": 9
+    },
+    {
+      "worker": 26,
+      "footman": 4,
+      "priest": 10,
+      "archer": 43,
+      "druid": 2,
+      "frost": 2
+    }
+  ],
+  "checkpoints": [
+    {
+      "time": 60,
+      "players": [
+        {
+          "gold": 22,
+          "wood": 636,
+          "population": 39,
+          "control": 57.09999999999889,
+          "heroes": [
+            [
+              "druid",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 13,
+          "wood": 739,
+          "population": 36,
+          "control": 56.9499999999989,
+          "heroes": [
+            [
+              "druid",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 14,
+          "footman": 4,
+          "druid": 1,
+          "treant": 4,
+          "archer": 3
+        },
+        {
+          "worker": 11,
+          "footman": 4,
+          "druid": 1,
+          "treant": 4,
+          "archer": 3
+        }
+      ]
+    },
+    {
+      "time": 120,
+      "players": [
+        {
+          "gold": 168,
+          "wood": 1134,
+          "population": 78,
+          "control": 177.10000000000602,
+          "heroes": [
+            [
+              "druid",
+              4
+            ],
+            [
+              "frost",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 784,
+          "wood": 1542,
+          "population": 67,
+          "control": 176.95000000000599,
+          "heroes": [
+            [
+              "druid",
+              5
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "footman": 3,
+          "druid": 1,
+          "archer": 14,
+          "priest": 2,
+          "frost": 1,
+          "treant": 1
+        },
+        {
+          "worker": 18,
+          "footman": 4,
+          "druid": 1,
+          "archer": 12,
+          "priest": 2,
+          "treant": 2
+        }
+      ]
+    },
+    {
+      "time": 180,
+      "players": [
+        {
+          "gold": 136,
+          "wood": 1829,
+          "population": 110,
+          "control": 325.05000000003963,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              5
+            ]
+          ]
+        },
+        {
+          "gold": 14,
+          "wood": 2839,
+          "population": 53,
+          "control": 335.550000000042,
+          "heroes": [
+            [
+              "druid",
+              5
+            ],
+            [
+              "frost",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "footman": 2,
+          "druid": 1,
+          "archer": 28,
+          "frost": 1,
+          "priest": 5
+        },
+        {
+          "worker": 18,
+          "footman": 2,
+          "archer": 5
+        }
+      ]
+    },
+    {
+      "time": 240,
+      "players": [
+        {
+          "gold": 2471,
+          "wood": 3298,
+          "population": 120,
+          "control": 607.799999999995,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              6
+            ]
+          ]
+        },
+        {
+          "gold": 93,
+          "wood": 4681,
+          "population": 28,
+          "control": 412.8000000000596,
+          "heroes": [
+            [
+              "druid",
+              5
+            ],
+            [
+              "frost",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "footman": 2,
+          "druid": 1,
+          "archer": 36,
+          "frost": 1,
+          "priest": 6
+        },
+        {
+          "footman": 2,
+          "worker": 16,
+          "archer": 1
+        }
+      ]
+    }
+  ]
+}

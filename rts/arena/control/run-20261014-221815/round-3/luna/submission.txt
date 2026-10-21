@@ -1,0 +1,5 @@
+Submitted the revised round 3 entry in [entry.json](/workspace/entry.json), with the controller in [agent.py](/workspace/agent.py) and replay notes in [review.md](/workspace/review.md).
+
+The round 2 replays showed isolated side-node orders splitting my force, including two orders to the same unit in one decision. The revised strategy keeps the army together at the central outpost, focuses nearby enemies, and delays upgrades until the center is secured.
+
+`agent.py` passed `py_compile` and returned valid JSON on the example and round 2 snapshots, responding in under 18 ms. I did not run a full head-to-head simulation.

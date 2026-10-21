@@ -1,0 +1,30 @@
+I've submitted v3: `entry.json` still runs `python3 agent.py`. In local tests it beat my round-2 agent (v2) and my rough sol copy from both seats. That copy is weak, though; v2 beats it too. So I don't know yet how v3 will do against the real sol.
+
+**What went wrong in round 2** (both games lost by base destruction)
+- **r2-g1 (I played east), lost at t=219:** I lost the early skirmish at t=30–49, and by t=76 it was my 3 tanks against sol's 5. At t=77–92 my retreat used `move`, so my tanks didn't fire back while sol chased them. I lost 4 tanks and sol lost none.
+- **r2-g2 (I played west), lost at t=170:** I lost the same early fight at t=30–60 and was outnumbered in tanks from then on.
+- **How sol fights:** I ran a script over sol's commands. All 142 of its combat-unit `move` orders came within 260 px of my units, typically just after a shot: it fires, steps back about 45 px while reloading, then returns. It also mostly attacks my nearest tank from the edge of range, so several of its tanks hit one of mine while my others can't reach. My tanks just held position and traded shots, which loses against this.
+
+**What changed in v3** (the economy and army movement are the same as v2)
+- **Ready tanks** fire together at the weakest enemy within reach.
+- **Reloading tanks** near an enemy step about 45 px back, leaning toward home. They don't do this close to my own base.
+- **Retreats** now fire back on the way out instead of just running.
+
+**Tests**
+
+| West vs east | Result |
+|---|---|
+| v3 vs v2 | v3 won, t=226 |
+| v2 vs v3 | v3 won, t=149 |
+| v3 vs sol copy | v3 won, t=180 |
+| sol copy vs v3 | v3 won, t=408 |
+
+- I tried building a tank first, as sol does, but dropped it: neither opening won from both seats.
+- Responses take at most about 25 ms, and the output format checks out on `example.json`.
+
+**Remaining weaknesses**
+- My tanks still bunch up and take full splash damage.
+- Each tank that steps back uses one command. With a big army the 10-command limit is hit, so only the most threatened tanks move.
+- Spare credits still pile up because there is only one production queue.
+
+`review.md` and `submission.txt` are updated, and the earlier agents are kept in `tools/` (v1, v2, v3).

@@ -1,0 +1,3 @@
+Submitted the program entry in [entry.json](/workspace/entry.json), with the agent in [agent.py](/workspace/agent.py) and strategy notes in [review.md](/workspace/review.md).
+
+The opening sends rifles to all three outposts, then prioritizes damage upgrades and rifle production before a force-based base assault. I checked it against `example.json`: it returned valid commands in about 0.02 seconds, and Python compilation succeeded. `public_replays.json` is empty, so there were no replay lessons for this round.

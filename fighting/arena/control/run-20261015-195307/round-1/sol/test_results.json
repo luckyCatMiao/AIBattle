@@ -1,0 +1,1151 @@
+[
+  {
+    "style": "rush",
+    "enemyTeam": [
+      "vex",
+      "aegis",
+      "torv"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 977,
+    "windows": 66,
+    "maxMs": 31,
+    "meanMs": 4,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 417,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "vex",
+        "winnerHp": 990,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 408,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 872,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 151,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 872,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "guard": 39,
+      "jump": 6,
+      "LK": 3,
+      "forward": 5,
+      "zone": 1,
+      "HP": 3,
+      "LP": 3,
+      "back": 1,
+      "HK": 3,
+      "lanceshot": 1,
+      "arrow": 1
+    },
+    "hp": [
+      [
+        "kestrel",
+        872
+      ],
+      [
+        "torv",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "rush",
+    "enemyTeam": [
+      "vex",
+      "aegis",
+      "torv"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1064,
+    "windows": 71,
+    "maxMs": 14,
+    "meanMs": 3,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 493,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "vex",
+        "winnerHp": 824,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 62,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 824,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 508,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 824,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "guard": 46,
+      "jump": 5,
+      "LK": 3,
+      "forward": 4,
+      "HP": 1,
+      "lanceshot": 3,
+      "arrow": 3,
+      "rush": 1,
+      "LP": 2,
+      "back": 2,
+      "low": 1
+    },
+    "hp": [
+      [
+        "torv",
+        0
+      ],
+      [
+        "kestrel",
+        824
+      ]
+    ]
+  },
+  {
+    "style": "zone",
+    "enemyTeam": [
+      "kestrel",
+      "aegis",
+      "sable"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 2504,
+    "windows": 167,
+    "maxMs": 10,
+    "meanMs": 3,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1200,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 712,
+        "loserHp": 602,
+        "reason": "时间到（生命较高）"
+      },
+      {
+        "round": 2,
+        "frames": 602,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 474,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 701,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "sable",
+        "winnerHp": 108,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "forward": 7,
+      "guard": 118,
+      "jump": 12,
+      "HK": 8,
+      "LP": 5,
+      "zone": 1,
+      "LK": 1,
+      "HP": 2,
+      "lanceshot": 4,
+      "arrow": 4,
+      "rise": 1,
+      "back": 4
+    },
+    "hp": [
+      [
+        "kestrel",
+        108
+      ],
+      [
+        "sable",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "zone",
+    "enemyTeam": [
+      "kestrel",
+      "aegis",
+      "sable"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 2735,
+    "windows": 183,
+    "maxMs": 7,
+    "meanMs": 3,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1200,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 712,
+        "loserHp": 602,
+        "reason": "时间到（生命较高）"
+      },
+      {
+        "round": 2,
+        "frames": 771,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 512,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 763,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "sable",
+        "winnerHp": 122,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "forward": 9,
+      "guard": 124,
+      "jump": 12,
+      "HK": 7,
+      "LP": 9,
+      "zone": 1,
+      "LK": 5,
+      "arrow": 7,
+      "back": 2,
+      "lanceshot": 3,
+      "rise": 1,
+      "HP": 3
+    },
+    "hp": [
+      [
+        "sable",
+        0
+      ],
+      [
+        "kestrel",
+        122
+      ]
+    ]
+  },
+  {
+    "style": "normal",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1044,
+    "windows": 70,
+    "maxMs": 9,
+    "meanMs": 3,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 498,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 148,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 397,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 944,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 1,
+      "guard": 35,
+      "back": 3,
+      "jump": 6,
+      "lanceshot": 5,
+      "forward": 7,
+      "HK": 5,
+      "LP": 4,
+      "LK": 1,
+      "HP": 3
+    },
+    "hp": [
+      [
+        "kestrel",
+        944
+      ],
+      [
+        "nyx",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "normal",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1217,
+    "windows": 82,
+    "maxMs": 6,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 565,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 220,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 431,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 3,
+      "guard": 45,
+      "back": 4,
+      "jump": 7,
+      "LP": 5,
+      "LK": 4,
+      "HK": 1,
+      "lanceshot": 2,
+      "forward": 8,
+      "zone": 1,
+      "HP": 2
+    },
+    "hp": [
+      [
+        "nyx",
+        0
+      ],
+      [
+        "kestrel",
+        1000
+      ]
+    ]
+  },
+  {
+    "style": "low",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1290,
+    "windows": 86,
+    "maxMs": 9,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 496,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 458,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 924,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 335,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 924,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 3,
+      "guard": 47,
+      "back": 3,
+      "jump": 8,
+      "lanceshot": 3,
+      "forward": 9,
+      "LP": 3,
+      "LK": 2,
+      "rise": 1,
+      "HK": 5,
+      "HP": 2
+    },
+    "hp": [
+      [
+        "kestrel",
+        924
+      ],
+      [
+        "nyx",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "low",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1225,
+    "windows": 82,
+    "maxMs": 6,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 567,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 904,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 471,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 828,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 186,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 828,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 8,
+      "guard": 43,
+      "back": 1,
+      "jump": 7,
+      "HK": 1,
+      "LP": 1,
+      "forward": 11,
+      "lanceshot": 5,
+      "low": 1,
+      "LK": 4
+    },
+    "hp": [
+      [
+        "nyx",
+        0
+      ],
+      [
+        "kestrel",
+        828
+      ]
+    ]
+  },
+  {
+    "style": "guard",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 3600,
+    "windows": 240,
+    "maxMs": 7,
+    "meanMs": 3,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1200,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 909,
+        "reason": "时间到（生命较高）"
+      },
+      {
+        "round": 2,
+        "frames": 1200,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 1000,
+        "loserHp": 675,
+        "reason": "时间到（生命较高）"
+      },
+      {
+        "round": 3,
+        "frames": 1200,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 1000,
+        "loserHp": 987,
+        "reason": "时间到（生命较高）"
+      }
+    ],
+    "notes": {
+      "arrow": 12,
+      "guard": 73,
+      "rise": 4,
+      "LK": 57,
+      "forward": 11,
+      "rush": 3,
+      "jump": 2,
+      "back": 7,
+      "HK": 1,
+      "LP": 70
+    },
+    "hp": [
+      [
+        "kestrel",
+        1000
+      ],
+      [
+        "nyx",
+        987
+      ]
+    ]
+  },
+  {
+    "style": "guard",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 3600,
+    "windows": 240,
+    "maxMs": 7,
+    "meanMs": 4,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 1200,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 909,
+        "reason": "时间到（生命较高）"
+      },
+      {
+        "round": 2,
+        "frames": 1200,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 1000,
+        "loserHp": 675,
+        "reason": "时间到（生命较高）"
+      },
+      {
+        "round": 3,
+        "frames": 1200,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 1000,
+        "loserHp": 987,
+        "reason": "时间到（生命较高）"
+      }
+    ],
+    "notes": {
+      "arrow": 12,
+      "guard": 119,
+      "rise": 2,
+      "LK": 58,
+      "forward": 13,
+      "rush": 3,
+      "back": 7,
+      "HP": 1,
+      "LP": 25
+    },
+    "hp": [
+      [
+        "nyx",
+        987
+      ],
+      [
+        "kestrel",
+        1000
+      ]
+    ]
+  },
+  {
+    "style": "jump",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1002,
+    "windows": 67,
+    "maxMs": 6,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 400,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 886,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 135,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 772,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 466,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 664,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 5,
+      "guard": 40,
+      "jump": 6,
+      "HK": 5,
+      "forward": 6,
+      "LP": 3,
+      "lanceshot": 1,
+      "LK": 1
+    },
+    "hp": [
+      [
+        "kestrel",
+        664
+      ],
+      [
+        "nyx",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "jump",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1116,
+    "windows": 75,
+    "maxMs": 7,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 525,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 651,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 174,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 651,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 416,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 651,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 2,
+      "guard": 45,
+      "jump": 7,
+      "HK": 7,
+      "lanceshot": 2,
+      "HP": 1,
+      "back": 3,
+      "LP": 2,
+      "forward": 4,
+      "LK": 2
+    },
+    "hp": [
+      [
+        "nyx",
+        0
+      ],
+      [
+        "kestrel",
+        651
+      ]
+    ]
+  },
+  {
+    "style": "overhead",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1611,
+    "windows": 108,
+    "maxMs": 6,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 562,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 866,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 647,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 694,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 401,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 694,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 6,
+      "guard": 65,
+      "back": 2,
+      "jump": 8,
+      "lanceshot": 4,
+      "forward": 7,
+      "LP": 3,
+      "HK": 4,
+      "LK": 6,
+      "super": 1,
+      "rise": 1,
+      "HP": 1
+    },
+    "hp": [
+      [
+        "kestrel",
+        694
+      ],
+      [
+        "nyx",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "overhead",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1266,
+    "windows": 85,
+    "maxMs": 6,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 463,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 321,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 481,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 3,
+      "guard": 46,
+      "back": 6,
+      "jump": 6,
+      "rise": 1,
+      "lanceshot": 5,
+      "forward": 8,
+      "HK": 1,
+      "HP": 1,
+      "LP": 5,
+      "LK": 1,
+      "low": 1,
+      "balanced": 1
+    },
+    "hp": [
+      [
+        "nyx",
+        0
+      ],
+      [
+        "kestrel",
+        1000
+      ]
+    ]
+  },
+  {
+    "style": "balanced",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 0,
+    "full": false,
+    "winner": 0,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1404,
+    "windows": 94,
+    "maxMs": 6,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 557,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 976,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 579,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 553,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 267,
+        "winner": "p0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 429,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 5,
+      "guard": 43,
+      "LP": 2,
+      "jump": 8,
+      "back": 5,
+      "forward": 10,
+      "lanceshot": 4,
+      "HK": 6,
+      "rise": 3,
+      "LK": 6,
+      "HP": 2
+    },
+    "hp": [
+      [
+        "kestrel",
+        429
+      ],
+      [
+        "nyx",
+        0
+      ]
+    ]
+  },
+  {
+    "style": "balanced",
+    "enemyTeam": [
+      "aegis",
+      "torv",
+      "nyx"
+    ],
+    "seat": 1,
+    "full": false,
+    "winner": 1,
+    "win": true,
+    "reason": "车轮战全胜",
+    "frames": 1511,
+    "windows": 101,
+    "maxMs": 7,
+    "meanMs": 2,
+    "roundLog": [
+      {
+        "round": 1,
+        "frames": 549,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 976,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 468,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 646,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 493,
+        "winner": "p1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 540,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "notes": {
+      "arrow": 4,
+      "guard": 55,
+      "LP": 7,
+      "jump": 9,
+      "back": 5,
+      "forward": 6,
+      "lanceshot": 6,
+      "HK": 3,
+      "rise": 1,
+      "LK": 3,
+      "rush": 1,
+      "HP": 1
+    },
+    "hp": [
+      [
+        "nyx",
+        0
+      ],
+      [
+        "kestrel",
+        540
+      ]
+    ]
+  }
+]

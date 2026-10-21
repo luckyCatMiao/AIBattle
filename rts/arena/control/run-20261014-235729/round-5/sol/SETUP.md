@@ -1,0 +1,2 @@
+This is a continuation: BOTH players retain their OWN final round-3 files from the previous series. Both must review the latest public games and may improve before EVERY round, including the first. There are 5 additional revision rounds, two swapped-seat games per round. Neither player starts from scratch. Both receive identical historical public records.
+Public replay IDs prefixed history- belong to the previous series. New-series records use r1-g1 etc.

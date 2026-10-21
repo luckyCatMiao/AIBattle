@@ -1,0 +1,25 @@
+I've submitted the revised program: `entry.json` still runs `python3 agent.py`, which now contains my v2. In local tests it won 5 of 6 games, all by destroying the base. The tests use my own rough copies of sol, so they're only a guide to how it will do against the real one.
+
+**Why round 1 was lost**
+- **r1-g1 (I played east):** my 8 tanks advanced into sol's 9 at t=115–145 and all died; sol destroyed my base at t=168. When one of my tanks targeted one of sol's, sol pulled that tank back, so my tanks chased into its group one at a time.
+- **r1-g2 (I played west):** I lost on score, 1313 to 5092. At t=97 one tank (u23) charged alone and died. The army then switched between holding and attacking, and fell from 7 tanks to 3 while retreating. Sol then held all 3 outposts until the end.
+- **Economy:** my home mine ran out at about t=140, and my income fell to roughly one tank every 19 s. Sol's outposts kept it building one every 12 s, with about 5000 credits unspent.
+
+**What changed in v2**
+- **No chasing:** tanks only shoot enemies already in range. In a fight, the others hold position, or advance together if the local fight looks winnable.
+- **Retreat rule:** the army only retreats when the fight within about 260 px is clearly lost. It no longer flips between modes every second.
+- **Outposts:** the army waits at my own-side outpost instead of beside the base. It attacks at a lower strength threshold than my first v2 draft. That draft was too cautious and lost on score to my sol copy.
+- **Economy:** when the home mine runs low, it builds up to 7 workers for the mine next to my outpost. Workers run home when enemies come near.
+
+**Tests on `rules.js`**
+- **Against `tools/solbot3.py`:** this is a new copy of sol that holds outposts, kites and focus-fires. v2 won both seats, at t=206 and t=231.
+- **Against the older `tools/solbot.py`:** v2 won both seats.
+- **Against my round-1 agent:** 1–1. It lost the game where it played east.
+- **Speed and format:** decisions took at most about 35 ms, and the output format checks out on `example.json`.
+
+**Remaining weaknesses**
+- My copies of sol are only approximations, and the real one may fight better.
+- Credits still pile up unused once income is above what one production queue can spend.
+- Units don't spread out against splash damage, and my damaged tanks don't pull back.
+
+`review.md` has the full replay notes and next steps. The round-1 agent is kept as `tools/agent_v1.py`.

@@ -1,0 +1,5 @@
+Submitted [entry.json](/workspace/entry.json) running the revised agent.
+
+Reduced the combat support radius to avoid counting distant reinforcements. Selected strategy won 15/18 comparison games; 5,454 public-observation checks produced zero command errors. Maximum measured response time was 13.8 ms.
+
+Replay lessons, tests and remaining weaknesses are documented in [review.md](/workspace/review.md).

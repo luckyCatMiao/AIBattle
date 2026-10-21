@@ -1,0 +1,494 @@
+{
+  "scenarios": [
+    {
+      "name": "plant_and_explode",
+      "windows": 44,
+      "round": {
+        "round": 1,
+        "winnerTeam": 0,
+        "winner": "candidate",
+        "reason": "\u70b8\u5f39\u7206\u70b8",
+        "frames": 861,
+        "bomb": {
+          "state": "exploded",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4350
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          }
+        ]
+      }
+    },
+    {
+      "name": "defuse_kit_False",
+      "windows": 6,
+      "round": {
+        "round": 1,
+        "winnerTeam": 1,
+        "winner": "baseline",
+        "reason": "\u62c6\u9664\u70b8\u5f39",
+        "frames": 101,
+        "bomb": {
+          "state": "defused",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4350
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          }
+        ]
+      }
+    },
+    {
+      "name": "defuse_kit_True",
+      "windows": 3,
+      "round": {
+        "round": 1,
+        "winnerTeam": 1,
+        "winner": "baseline",
+        "reason": "\u62c6\u9664\u70b8\u5f39",
+        "frames": 51,
+        "bomb": {
+          "state": "defused",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4350
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          }
+        ]
+      }
+    },
+    {
+      "name": "pickup_plant_explode",
+      "windows": 45,
+      "round": {
+        "round": 1,
+        "winnerTeam": 0,
+        "winner": "candidate",
+        "reason": "\u70b8\u5f39\u7206\u70b8",
+        "frames": 888,
+        "bomb": {
+          "state": "exploded",
+          "site": "A"
+        },
+        "units": [
+          {
+            "team": 0,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4350
+          },
+          {
+            "team": 0,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 0,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 0,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 0,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 4050
+          },
+          {
+            "team": 1,
+            "index": 0,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 1,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 2,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 3,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          },
+          {
+            "team": 1,
+            "index": 4,
+            "hp": 100,
+            "alive": true,
+            "weapon": "pistol",
+            "kills": 0,
+            "deaths": 0,
+            "money": 2700
+          }
+        ]
+      }
+    }
+  ],
+  "protocol": [
+    {
+      "seat": 0,
+      "wins": [
+        3,
+        3
+      ],
+      "windows": 79,
+      "max_response": 0.019839181000065764,
+      "stderr": ""
+    },
+    {
+      "seat": 1,
+      "wins": [
+        3,
+        3
+      ],
+      "windows": 75,
+      "max_response": 0.02639845399994556,
+      "stderr": ""
+    }
+  ]
+}

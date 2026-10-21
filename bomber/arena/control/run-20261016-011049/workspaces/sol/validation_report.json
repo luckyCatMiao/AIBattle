@@ -1,0 +1,36 @@
+{
+  "agent_sha256": "e2462240d635dedcaec1c5e39203abf2fc5c80c89ff4a9d50fb4c5a18eb76151",
+  "selftest_rounds": 96,
+  "selftest_summary": {
+    "still": {
+      "win": 24
+    },
+    "random": {
+      "win": 24
+    },
+    "hunter": {
+      "draw": 20,
+      "win": 4
+    },
+    "self": {
+      "draw": 24
+    }
+  },
+  "protocol_series": 16,
+  "protocol_rounds": 64,
+  "protocol_windows": 3396,
+  "protocol_summary": {
+    "still": {
+      "win": 8
+    },
+    "hunter": {
+      "draw": 7,
+      "win": 1
+    }
+  },
+  "max_protocol_seconds": 0.03095633800012365,
+  "stress_observations": 60,
+  "max_stress_seconds": 0.1521940520001408,
+  "exact_timeline_checks": 12403200,
+  "all_tactical_checks_passed": true
+}

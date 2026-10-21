@@ -1,0 +1,243 @@
+[
+  {
+    "seed": 7,
+    "style": "turret",
+    "seat": 1,
+    "wins": [
+      3,
+      3
+    ],
+    "winner": null,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.65,
+        "alive": [
+          "1:0",
+          "1:4"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 1,
+        "reason": "拆除炸弹",
+        "seconds": 29.55,
+        "alive": [
+          "1:0"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 3.7,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 8.05,
+        "alive": [
+          "0:4"
+        ]
+      },
+      {
+        "round": 5,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 3.7,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:2",
+          "0:4"
+        ]
+      },
+      {
+        "round": 6,
+        "winner": 0,
+        "reason": "拆除炸弹",
+        "seconds": 28.05,
+        "alive": [
+          "0:0"
+        ]
+      }
+    ],
+    "windows": 81,
+    "timing": [
+      {
+        "maxMs": 21.430346999999998,
+        "meanMs": 2.077860609195403,
+        "count": 87
+      },
+      {
+        "maxMs": 19.531189,
+        "meanMs": 2.0533379310344833,
+        "count": 87
+      }
+    ]
+  },
+  {
+    "seed": 8,
+    "style": "turret",
+    "seat": 1,
+    "wins": [
+      0,
+      4
+    ],
+    "winner": 1,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 1,
+        "reason": "拆除炸弹",
+        "seconds": 34.05,
+        "alive": [
+          "1:0"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 8.1,
+        "alive": [
+          "1:0",
+          "1:4"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.7,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 1,
+        "reason": "防守方全灭",
+        "seconds": 10.45,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:3",
+          "1:4"
+        ]
+      }
+    ],
+    "windows": 60,
+    "timing": [
+      {
+        "maxMs": 23.35193400000003,
+        "meanMs": 2.195268234375,
+        "count": 64
+      },
+      {
+        "maxMs": 21.593120999999996,
+        "meanMs": 2.3855825312500043,
+        "count": 64
+      }
+    ]
+  },
+  {
+    "seed": 9,
+    "style": "turret",
+    "seat": 1,
+    "wins": [
+      3,
+      3
+    ],
+    "winner": null,
+    "rounds": [
+      {
+        "round": 1,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 7.9,
+        "alive": [
+          "1:0",
+          "1:4"
+        ]
+      },
+      {
+        "round": 2,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.7,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:4"
+        ]
+      },
+      {
+        "round": 3,
+        "winner": 1,
+        "reason": "进攻方全灭",
+        "seconds": 4.1,
+        "alive": [
+          "1:0",
+          "1:1",
+          "1:2",
+          "1:4"
+        ]
+      },
+      {
+        "round": 4,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 9.85,
+        "alive": [
+          "0:4"
+        ]
+      },
+      {
+        "round": 5,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 3.6,
+        "alive": [
+          "0:0",
+          "0:1",
+          "0:3",
+          "0:4"
+        ]
+      },
+      {
+        "round": 6,
+        "winner": 0,
+        "reason": "进攻方全灭",
+        "seconds": 5.95,
+        "alive": [
+          "0:0",
+          "0:4"
+        ]
+      }
+    ],
+    "windows": 38,
+    "timing": [
+      {
+        "maxMs": 25.294352000000003,
+        "meanMs": 3.3377980227272546,
+        "count": 44
+      },
+      {
+        "maxMs": 23.490789999999947,
+        "meanMs": 3.407368931818186,
+        "count": 44
+      }
+    ]
+  }
+]
