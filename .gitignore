@@ -22,9 +22,6 @@ diag/scripts/drive.py
 **/public_replays.json
 **/public-*.json.gz
 
-# lab 里的原始回放 dump 单文件超过 100MB（r1-g1 ≈133MB、r1-g2 ≈102MB），
-# 超过 GitHub 单文件上限，无法推送。
-**/replay_dump_*.json
 
 # 说明：run-*/workspaces/ 与 run-*/round-*/ 下的策略代码保留；
 # transcript（*.jsonl）、日志（*.log）和 __pycache__ 由下面的通用规则排除。
@@ -73,3 +70,10 @@ node_modules/
 .chrome-cache/
 .DS_Store
 Thumbs.db
+
+# 发给选手的官方对局回放副本（run 根目录已有原档，工作区这份是重复的）
+**/workspaces/**/matches/
+# 选手自己导出的超大回放 dump（130MB+ 级别）
+**/lab/**/*dump*.json
+# 练习赛目录（黑盒自测产生，不属于系列赛记录）
+**/arena/control/practice-*/

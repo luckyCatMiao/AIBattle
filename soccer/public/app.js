@@ -234,7 +234,7 @@
   }
 
   function drawEvents(c, st) {
-    for (const e of st.events || []) {
+    for (const e of stateEvents(st)) {
       if (e.frame < (st.frame || 0) - 3) continue;
       if (e.type === 'goal') {
         const a = 1 - clamp((st.frame - e.frame) / 3, 0, 1);
@@ -518,10 +518,17 @@
     const rf = $('rf'); if (rf) rf.textContent = String(R.index);
     if (!R.playing) renderReplayPanel();
   }
+  function stateEvents(st) {
+    if (st && Array.isArray(st.events)) return st.events;
+    const all = (R.data && R.data.events) || [];
+    const f = st ? (st.frame || 0) : 0;
+    return all.filter(e => (e.frame ?? 0) <= f);
+  }
+
   function replayLog() {
     const st = replayState();
     if (!st) return [];
-    return (st.events || []).filter(e => ['goal', 'half', 'golden', 'end', 'kickoff', 'tackle'].includes(e.type))
+    return stateEvents(st).filter(e => ['goal', 'half', 'golden', 'end', 'kickoff', 'tackle'].includes(e.type))
       .slice(-14).map(e => ({ t: e.t, text: e.text || e.type, type: e.type }));
   }
 
@@ -579,6 +586,23 @@
       R.data = JSON.parse(text);
       for (const f of R.data.frames || []) {
         f.map = R.data.map; f.rules = R.data.rules;
+      }
+      // 新格式：球员用定长数组存储，这里还原成对象（字段名见 unitsFormat）。
+      if (R.data.unitsFormat) {
+        const fmt = R.data.unitsFormat;
+        for (const f of R.data.frames || []) {
+          if (!Array.isArray(f.units) || !f.units.length || !Array.isArray(f.units[0])) continue;
+          f.units = f.units.map(a => {
+            const u = {};
+            fmt.forEach((k, i) => { u[k] = a[i]; });
+            u.facing = { x: u.fx, y: u.fy };
+            delete u.fx; delete u.fy;
+            const teamName = (f.players && f.players[u.team] && f.players[u.team].name) || ('队伍' + (u.team + 1));
+            u.name = teamName + ' #' + ((u.index ?? 0) + 1);
+            u.hasBall = !!u.hasBall; u.keeper = !!u.keeper; u.inOwnBox = !!u.inOwnBox;
+            return u;
+          });
+        }
       }
       R.frameMs = Number(R.data?.frameMs) > 0 ? Number(R.data.frameMs) : 50;
       R.index = 0; R.playing = false; R.clock = 0;

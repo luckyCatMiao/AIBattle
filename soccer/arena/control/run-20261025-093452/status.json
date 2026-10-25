@@ -1,6 +1,6 @@
 {
   "run": "run-20261025-093452",
-  "phase": "比赛进行中",
+  "phase": "模型准备",
   "models": {
     "deepseek-g1": "deepseek-v4.1-flash",
     "sol": "gpt-6.1-sol"
@@ -10,7 +10,7 @@
     "sol": "GPT-6.1 Sol"
   },
   "reasoning_effort": "max",
-  "round": 1,
+  "round": 2,
   "rounds": 6,
   "games": [
     {
@@ -1424,7 +1424,9 @@
   "pid": 203908,
   "port": 8841,
   "completed": false,
-  "updated": "2026-10-25T09:44:01",
+  "updated": "2026-10-25T10:10:19",
   "game": 20,
-  "game_id": "r1-g20"
+  "game_id": "r1-g20",
+  "win_rate": 0.25,
+  "played_games": 20
 }

@@ -731,9 +731,27 @@ def normalize_window(raw, frames=20, team_size=3):
     return out
 
 
+# 每帧球员打包成定长数组，省掉重复的字段名与静态字段（name 由 players 提供）。
+UNIT_FIELDS = ['id', 'team', 'index', 'x', 'y', 'fx', 'fy', 'hasBall', 'keeper',
+               'inOwnBox', 'kicks', 'goals', 'touches', 'kickCd', 'controlLock']
+
+
+def pack_unit(u):
+    facing = u.get('facing') or {}
+    return [u.get('id'), u.get('team'), u.get('index'),
+            round(u.get('x', 0), 3), round(u.get('y', 0), 3),
+            round(facing.get('x', 0), 3), round(facing.get('y', 0), 3),
+            1 if u.get('hasBall') else 0, 1 if u.get('keeper') else 0, 1 if u.get('inOwnBox') else 0,
+            u.get('kicks', 0), u.get('goals', 0), u.get('touches', 0),
+            u.get('kickCd', 0), u.get('controlLock', 0)]
+
+
 def compact_frame(frame):
-    """每帧去掉重复的静态目录；回放端用文件顶层的 map/rules/weapons 补齐。"""
-    return {k: v for k, v in frame.items() if k not in ('map', 'rules')}
+    """每帧去掉重复的静态目录与累积事件；球员打包成数组，回放端按 UNIT_FIELDS 还原。"""
+    out = {k: v for k, v in frame.items() if k not in ('map', 'rules', 'events')}
+    if isinstance(out.get('units'), list):
+        out['units'] = [pack_unit(u) for u in out['units']]
+    return out
 
 
 def play(iteration, entries, seat_order, game_number, pool, engine_dirs=None, seed=None, team_size=None):
@@ -826,6 +844,8 @@ def play(iteration, entries, seat_order, game_number, pool, engine_dirs=None, se
     record = {
         'id': game_id, 'round': iteration, 'game': game_number, 'seats': seat_order,
         'names': names, 'seed': seed,
+        'unitsFormat': UNIT_FIELDS,
+        'events': state.get('events') or [],
         'frames': frames, 'windows': windows, 'frameMs': 50,
         'map': state.get('map'), 'rules': state.get('rules'),
         'final': state, 'winner': winner,

@@ -30,9 +30,22 @@ for (const [who, dir] of Object.entries(config.frozen_paths || {})) {
 audit.frozenStrategiesVerified = true;
 
 const canon = value => JSON.stringify(value);
-const compact = frame => {
+// 与 train.py 的 compact_frame 对齐：帧里不带 map/rules/events，球员按 UNIT_FIELDS 打包成数组。
+const UNIT_FIELDS = ['id', 'team', 'index', 'x', 'y', 'fx', 'fy', 'hasBall', 'keeper',
+  'inOwnBox', 'kicks', 'goals', 'touches', 'kickCd', 'controlLock'];
+const packUnit = u => {
+  const facing = u.facing || {};
+  const r3 = v => Math.round((v || 0) * 1000) / 1000;
+  return [u.id, u.team, u.index, r3(u.x), r3(u.y), r3(facing.x), r3(facing.y),
+    u.hasBall ? 1 : 0, u.keeper ? 1 : 0, u.inOwnBox ? 1 : 0,
+    u.kicks || 0, u.goals || 0, u.touches || 0, u.kickCd || 0, u.controlLock || 0];
+};
+const compact = (frame, unitsFormat) => {
   const out = { ...frame };
-  for (const key of ['map', 'rules']) delete out[key];
+  for (const key of ['map', 'rules', 'events']) delete out[key];
+  if (unitsFormat && Array.isArray(out.units) && out.units.length && !Array.isArray(out.units[0])) {
+    out.units = out.units.map(packUnit);
+  }
   return out;
 };
 
@@ -49,7 +62,8 @@ for (const result of results) {
   const compare = (actual, expected, label) => {
     if (canon(actual) !== canon(expected)) throw Error(`${record.id}: ${label} 不一致`);
   };
-  compare(compact(structuredClone(sim.snapshot(game))), record.frames[0], '起始快照');
+  const fmt = record.unitsFormat;
+  compare(compact(structuredClone(sim.snapshot(game)), fmt), compact(record.frames[0], fmt), '起始快照');
 
   let frameIndex = 1;
   for (const window of record.windows) {
@@ -64,7 +78,7 @@ for (const result of results) {
       }
       sim.step(game);
       if (!record.frames[frameIndex]) throw Error(`${record.id}: 存档缺少第 ${frameIndex} 帧`);
-      compare(compact(structuredClone(sim.snapshot(game))), record.frames[frameIndex], `第 ${frameIndex} 帧`);
+      compare(compact(structuredClone(sim.snapshot(game)), fmt), compact(record.frames[frameIndex], fmt), `第 ${frameIndex} 帧`);
       frameIndex++;
     }
   }
