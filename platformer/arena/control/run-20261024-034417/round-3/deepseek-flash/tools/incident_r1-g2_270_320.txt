@@ -1,0 +1,95 @@
+r1-g2 round 1 frames 270-320 (t 13.50-16.00) level width 151 goal 147
+level columns x=85..112:
+  x= 85 top=3 
+  x= 86 top=3 spike@y3
+  x= 87 top=3 
+  x= 88 top=3 
+  x= 89 top=3 
+  x= 90 top=3 
+  x= 91 top=3 
+  x= 92 top=3 
+  x= 93 top=3 
+  x= 94 top=3 spike@y3
+  x= 95 top=3 
+  x= 96 top=3 
+  x= 97 top=3 
+  x= 98 top=4 
+  x= 99 top=4 
+  x=100 top=4 
+  x=101 top=3 
+  x=102 top=3 
+  x=103 top=3 
+  x=104 top=3 
+  x=105 top=3 
+  x=106 top=3 
+  x=107 top=3 
+  x=108 top=3 
+  x=109 top=3 
+  x=110 top=3 spike@y3
+  x=111 top=3 
+  x=112 top=3 
+agents' windows/inputs (DSF seat 1):
+  win end f265: DSF=1,1,1,1,1 | opp=1J,1,1,1,1
+  win end f270: DSF=1,1,1,1,1 | opp=1,1,1,1,1
+  win end f275: DSF=1,1,1,1,1 | opp=1,1,1,1,1
+  win end f280: DSF=1,1,1,1,1J | opp=1,1,1,1,1
+  win end f285: DSF=1,1,1,1,1 | opp=1,1J,-1,0,0
+  win end f290: DSF=1,1,1,1,1 | opp=1,1,1,1,1
+  win end f295: DSF=1,1,1,1,1 | opp=1,1,1,1,1
+  win end f300: DSF=1,1,1,1,1 | opp=1,1J,1,1,1
+  win end f305: DSF=1,1,1J,1,1 | opp=1,1,1,1,1
+  win end f310: DSF=0,1,1,1,1 | opp=1,1,1,1,1
+  win end f315: DSF=1,1,1,1,1 | opp=1,1,1,1,1
+  win end f320: DSF=1,1,1,1,1 | opp=1,-1,1,1,1
+frames:
+  f270 t= 12.50 | sol:x= 88.67 y= 4.23 vx= 6.80 vy= -7.00 g=0 d=0 inv=0.0 mx=88.7 | deep:x= 89.39 y= 3.21 vx= 6.80 vy=-11.20 g=0 d=0 inv=0.0 mx=89.4 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.98,4.00) mon@113.61]
+  f271 t= 12.55 | sol:x= 89.01 y= 3.77 vx= 6.80 vy= -9.10 g=0 d=0 inv=0.0 mx=89.0 | deep:x= 89.73 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=89.7 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.86,4.00) mon@113.53]
+  f272 t= 12.60 | sol:x= 89.35 y= 3.21 vx= 6.80 vy=-11.20 g=0 d=0 inv=0.0 mx=89.3 | deep:x= 90.07 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=90.1 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.75,4.00) mon@113.44]
+  f273 t= 12.65 | sol:x= 89.69 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=89.7 | deep:x= 90.41 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=90.4 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.66,4.00) mon@113.36]
+  f274 t= 12.70 | sol:x= 90.03 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=90.0 | deep:x= 90.75 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=90.8 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.59,4.00) mon@113.27]
+  f275 t= 12.75 | sol:x= 90.37 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=90.4 | deep:x= 91.09 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=91.1 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.54,4.00) mon@113.19]
+  f276 t= 12.80 | sol:x= 90.71 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=90.7 | deep:x= 91.43 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=91.4 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.51,4.00) mon@113.10]
+  f277 t= 12.85 | sol:x= 91.05 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=91.0 | deep:x= 91.77 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=91.8 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.50,4.00) mon@113.02]
+  f278 t= 12.90 | sol:x= 91.39 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=91.4 | deep:x= 92.11 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=92.1 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.51,4.00) mon@112.93]
+  f279 t= 12.95 | sol:x= 91.73 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=91.7 | deep:x= 92.45 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=92.5 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.54,4.00) mon@112.85]
+  f280 t= 13.00 | sol:x= 92.07 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=92.1 | deep:x= 92.79 y= 3.60 vx= 6.80 vy= 11.90 g=0 d=0 inv=0.0 mx=92.8 | [plant@87.5 h=0.00 plant@95.5 h=1.15 saw@(101.59,4.00) mon@112.76]
+  f281 t= 13.05 | sol:x= 92.41 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=92.4 | deep:x= 93.13 y= 4.09 vx= 6.80 vy=  9.80 g=0 d=0 inv=0.0 mx=93.1 | [plant@87.5 h=0.00 plant@95.5 h=0.96 saw@(101.66,4.00) mon@112.68]
+  f282 t= 13.10 | sol:x= 92.75 y= 3.60 vx= 6.80 vy= 11.90 g=0 d=0 inv=0.0 mx=92.8 | deep:x= 93.47 y= 4.47 vx= 6.80 vy=  7.70 g=0 d=0 inv=0.0 mx=93.5 | [plant@87.5 h=0.00 plant@95.5 h=0.73 saw@(101.74,4.00) mon@112.59]
+  f283 t= 13.15 | sol:x= 92.99 y= 4.09 vx= 4.80 vy=  9.80 g=0 d=0 inv=0.0 mx=93.0 | deep:x= 93.81 y= 4.75 vx= 6.80 vy=  5.60 g=0 d=0 inv=0.0 mx=93.8 | [plant@87.5 h=0.00 plant@95.5 h=0.50 saw@(101.85,4.00) mon@112.51]
+  f284 t= 13.20 | sol:x= 93.23 y= 4.47 vx= 4.80 vy=  7.70 g=0 d=0 inv=0.0 mx=93.2 | deep:x= 94.15 y= 4.93 vx= 6.80 vy=  3.50 g=0 d=0 inv=0.0 mx=94.2 | [plant@87.5 h=0.00 plant@95.5 h=0.27 saw@(101.98,4.00) mon@112.42]
+  f285 t= 13.25 | sol:x= 93.47 y= 4.75 vx= 4.80 vy=  5.60 g=0 d=0 inv=0.0 mx=93.5 | deep:x= 94.49 y= 5.00 vx= 6.80 vy=  1.40 g=0 d=0 inv=0.0 mx=94.5 | [plant@87.5 h=0.00 plant@95.5 h=0.04 saw@(102.12,4.00) mon@112.34]
+  f286 t= 13.30 | sol:x= 93.81 y= 4.93 vx= 6.80 vy=  3.50 g=0 d=0 inv=0.0 mx=93.8 | deep:x= 94.83 y= 4.96 vx= 6.80 vy= -0.70 g=0 d=0 inv=0.0 mx=94.8 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(102.28,4.00) mon@112.25]
+  f287 t= 13.35 | sol:x= 94.15 y= 5.00 vx= 6.80 vy=  1.40 g=0 d=0 inv=0.0 mx=94.2 | deep:x= 95.17 y= 4.82 vx= 6.80 vy= -2.80 g=0 d=0 inv=0.0 mx=95.2 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(102.45,4.00) mon@112.17]
+  f288 t= 13.40 | sol:x= 94.49 y= 4.96 vx= 6.80 vy= -0.70 g=0 d=0 inv=0.0 mx=94.5 | deep:x= 95.51 y= 4.58 vx= 6.80 vy= -4.90 g=0 d=0 inv=0.0 mx=95.5 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(102.64,4.00) mon@112.08]
+  f289 t= 13.45 | sol:x= 94.83 y= 4.82 vx= 6.80 vy= -2.80 g=0 d=0 inv=0.0 mx=94.8 | deep:x= 95.85 y= 4.23 vx= 6.80 vy= -7.00 g=0 d=0 inv=0.0 mx=95.8 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(102.85,4.00) mon@112.00]
+  f290 t= 13.50 | sol:x= 95.17 y= 4.58 vx= 6.80 vy= -4.90 g=0 d=0 inv=0.0 mx=95.2 | deep:x= 96.19 y= 3.77 vx= 6.80 vy= -9.10 g=0 d=0 inv=0.0 mx=96.2 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(103.07,4.00) mon@111.91]
+  f291 t= 13.55 | sol:x= 95.51 y= 4.23 vx= 6.80 vy= -7.00 g=0 d=0 inv=0.0 mx=95.5 | deep:x= 96.53 y= 3.21 vx= 6.80 vy=-11.20 g=0 d=0 inv=0.0 mx=96.5 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(103.30,4.00) mon@111.83]
+  f292 t= 13.60 | sol:x= 95.85 y= 3.77 vx= 6.80 vy= -9.10 g=0 d=0 inv=0.0 mx=95.8 | deep:x= 96.87 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=96.9 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(103.54,4.00) mon@111.74]
+  f293 t= 13.65 | sol:x= 96.19 y= 3.21 vx= 6.80 vy=-11.20 g=0 d=0 inv=0.0 mx=96.2 | deep:x= 97.21 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=97.2 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(103.79,4.00) mon@111.66]
+  f294 t= 13.70 | sol:x= 96.53 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=96.5 | deep:x= 97.55 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=97.5 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(104.05,4.00) mon@111.57]
+  f295 t= 13.75 | sol:x= 96.87 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=96.9 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=0.05 plant@95.5 h=0.00 saw@(104.32,4.00) mon@111.49]
+  f296 t= 13.80 | sol:x= 96.92 y= 3.00 vx= 4.20 vy=  0.00 g=1 d=0 inv=0.0 mx=97.2 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=0.28 plant@95.5 h=0.00 saw@(104.59,4.00) mon@111.40]
+  f297 t= 13.85 | sol:x= 96.92 y= 3.60 vx= 4.20 vy= 11.90 g=0 d=0 inv=0.0 mx=97.3 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=0.51 plant@95.5 h=0.00 saw@(104.86,4.00) mon@111.32]
+  f298 t= 13.90 | sol:x= 97.23 y= 4.09 vx= 6.20 vy=  9.80 g=0 d=0 inv=0.0 mx=97.3 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=0.74 plant@95.5 h=0.00 saw@(105.15,4.00) mon@111.23]
+  f299 t= 13.95 | sol:x= 97.57 y= 4.47 vx= 6.80 vy=  7.70 g=0 d=0 inv=0.0 mx=97.6 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=0.97 plant@95.5 h=0.00 saw@(105.43,4.00) mon@111.15]
+  f300 t= 14.00 | sol:x= 97.91 y= 4.75 vx= 6.80 vy=  5.60 g=0 d=0 inv=0.0 mx=97.9 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(105.71,4.00) mon@111.06]
+  f301 t= 14.05 | sol:x= 98.25 y= 4.93 vx= 6.80 vy=  3.50 g=0 d=0 inv=0.0 mx=98.2 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(105.99,4.00) mon@110.98]
+  f302 t= 14.10 | sol:x= 98.59 y= 5.00 vx= 6.80 vy=  1.40 g=0 d=0 inv=0.0 mx=98.6 | deep:x= 97.64 y= 3.00 vx= 0.00 vy=  0.00 g=1 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(106.27,4.00) mon@110.89]
+  f303 t= 14.15 | sol:x= 98.93 y= 4.96 vx= 6.80 vy= -0.70 g=0 d=0 inv=0.0 mx=98.9 | deep:x= 97.64 y= 3.60 vx= 0.00 vy= 11.90 g=0 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(106.55,4.00) mon@110.81]
+  f304 t= 14.20 | sol:x= 99.27 y= 4.82 vx= 6.80 vy= -2.80 g=0 d=0 inv=0.0 mx=99.3 | deep:x= 97.64 y= 4.09 vx= 0.00 vy=  9.80 g=0 d=0 inv=0.0 mx=97.6 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(106.82,4.00) mon@110.72]
+  f305 t= 14.25 | sol:x= 99.61 y= 4.58 vx= 6.80 vy= -4.90 g=0 d=0 inv=0.0 mx=99.6 | deep:x= 97.74 y= 4.47 vx= 2.00 vy=  7.70 g=0 d=0 inv=0.0 mx=97.7 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(107.08,4.00) mon@110.64]
+  f306 t= 14.30 | sol:x= 99.95 y= 4.23 vx= 6.80 vy= -7.00 g=0 d=0 inv=0.0 mx=100.0 | deep:x= 97.84 y= 4.75 vx= 2.00 vy=  5.60 g=0 d=0 inv=0.0 mx=97.8 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(107.33,4.00) mon@110.55]
+  f307 t= 14.35 | sol:x=100.29 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=100.3 | deep:x= 98.04 y= 4.93 vx= 4.00 vy=  3.50 g=0 d=0 inv=0.0 mx=98.0 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(107.58,4.00) mon@110.47]
+  f308 t= 14.40 | sol:x=100.63 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=100.6 | deep:x= 98.34 y= 5.00 vx= 6.00 vy=  1.40 g=0 d=0 inv=0.0 mx=98.3 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(107.82,4.00) mon@110.38]
+  f309 t= 14.45 | sol:x=100.97 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=101.0 | deep:x= 98.68 y= 4.96 vx= 6.80 vy= -0.70 g=0 d=0 inv=0.0 mx=98.7 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(108.04,4.00) mon@110.30]
+  f310 t= 14.50 | sol:x=101.31 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=101.3 | deep:x= 99.02 y= 4.82 vx= 6.80 vy= -2.80 g=0 d=0 inv=0.0 mx=99.0 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(108.25,4.00) mon@110.21]
+  f311 t= 14.55 | sol:x=101.65 y= 3.90 vx= 6.80 vy= -2.10 g=0 d=0 inv=0.0 mx=101.7 | deep:x= 99.36 y= 4.58 vx= 6.80 vy= -4.90 g=0 d=0 inv=0.0 mx=99.4 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(108.45,4.00) mon@110.13]
+  f312 t= 14.60 | sol:x=101.99 y= 3.69 vx= 6.80 vy= -4.20 g=0 d=0 inv=0.0 mx=102.0 | deep:x= 99.70 y= 4.23 vx= 6.80 vy= -7.00 g=0 d=0 inv=0.0 mx=99.7 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(108.63,4.00) mon@110.04]
+  f313 t= 14.65 | sol:x=102.33 y= 3.37 vx= 6.80 vy= -6.30 g=0 d=0 inv=0.0 mx=102.3 | deep:x=100.04 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=100.0 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(108.80,4.00) mon@109.96]
+  f314 t= 14.70 | sol:x=102.67 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=102.7 | deep:x=100.38 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=100.4 | [plant@87.5 h=1.15 plant@95.5 h=0.00 saw@(108.95,4.00) mon@109.87]
+  f315 t= 14.75 | sol:x=103.01 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=103.0 | deep:x=100.72 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=100.7 | [plant@87.5 h=1.10 plant@95.5 h=0.00 saw@(109.09,4.00) mon@109.79]
+  f316 t= 14.80 | sol:x=103.35 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=103.3 | deep:x=101.06 y= 4.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=101.1 | [plant@87.5 h=0.87 plant@95.5 h=0.00 saw@(109.20,4.00) mon@109.70]
+  f317 t= 14.85 | sol:x=103.51 y= 3.00 vx= 3.30 vy=  0.00 g=1 d=0 inv=0.0 mx=103.5 | deep:x=101.40 y= 3.90 vx= 6.80 vy= -2.10 g=0 d=0 inv=0.0 mx=101.4 | [plant@87.5 h=0.64 plant@95.5 h=0.00 saw@(109.30,4.00) mon@109.62]
+  f318 t= 14.90 | sol:x=103.85 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=103.8 | deep:x=101.74 y= 3.69 vx= 6.80 vy= -4.20 g=0 d=0 inv=0.0 mx=101.7 | [plant@87.5 h=0.41 plant@95.5 h=0.00 saw@(109.38,4.00) mon@109.53]
+  f319 t= 14.95 | sol:x=104.19 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=104.2 | deep:x=102.08 y= 3.37 vx= 6.80 vy= -6.30 g=0 d=0 inv=0.0 mx=102.1 | [plant@87.5 h=0.18 plant@95.5 h=0.00 saw@(109.44,4.00) mon@109.45]
+  f320 t= 15.00 | sol:x=104.53 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=104.5 | deep:x=102.42 y= 3.00 vx= 6.80 vy=  0.00 g=1 d=0 inv=0.0 mx=102.4 | [plant@87.5 h=0.00 plant@95.5 h=0.00 saw@(109.48,4.00) mon@109.36]

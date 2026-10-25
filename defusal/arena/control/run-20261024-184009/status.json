@@ -1,0 +1,23 @@
+{
+  "run": "run-20261024-184009",
+  "phase": "建立本机环境",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，准备时间不设上限；双方各控 5 个单位，逐单位视野、CS 式购买；每场 6 回合（3 攻 3 守）先到 4 胜；每 20 帧同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 100340,
+  "port": 8833,
+  "completed": false,
+  "updated": "2026-10-24T18:40:09"
+}

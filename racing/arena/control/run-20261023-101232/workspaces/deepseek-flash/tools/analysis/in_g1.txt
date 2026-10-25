@@ -1,0 +1,47 @@
+type <class 'list'> len 19
+first window keys dict_keys(['frame', 'inputs', 'seconds']) frame 20
+inputs len 2 type <class 'list'> elem0 len 20 elem0[0] <class 'list'>
+[[{"throttle": 1.0, "steer": 0.0, "drift": false, "boost": false}], [{"throttle": 1.0, "steer": 0.0, "drift": false, "boost": false}], [{"throttle": 1.0, "steer": 0.0, "drift": false, "boost": false}]]
+[[{"throttle": 1.0, "steer": 0.27105129983643533, "drift": true, "boost": true}], [{"throttle": 1.0, "steer": 0.27105129983643533, "drift": true, "boost": true}], [{"throttle": 1.0, "steer": 0.4336820797382966, "drift": false, "boost": true}]]
+============================================================
+CAR 0
+win 0 frame 20 t -0.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.00 max 0.00] drift 0 boost 0
+win 1 frame 40 t  0.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.00 max 1.00] drift 0 boost 0
+win 2 frame 60 t  1.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.08 max 0.64] drift 0 boost 0
+win 3 frame 80 t  2.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.24 max 0.58] drift 0 boost 0
+win 4 frame100 t  3.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.16 max 0.28] drift 0 boost 0
+win 5 frame120 t  4.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.28 max 0.62] drift 0 boost 0
+win 6 frame140 t  5.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.07 max 0.54] drift 0 boost 0
+win 7 frame160 t  6.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.22 max 0.41] drift 0 boost 0
+win 8 frame180 t  7.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.11 max 0.55] drift 0 boost 0
+win 9 frame200 t  8.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.29 max 0.56] drift 0 boost 0
+win10 frame220 t  9.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.16 max 0.35] drift 0 boost 0
+win11 frame240 t 10.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.26 max 0.61] drift 0 boost 0
+win12 frame260 t 11.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.07 max 0.62] drift 0 boost 0
+win13 frame280 t 12.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.22 max 0.32] drift 0 boost 0
+win14 frame300 t 13.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.10 max 0.55] drift 0 boost 0
+win15 frame320 t 14.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.23 max 0.59] drift 0 boost 0
+win16 frame340 t 15.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.16 max 0.53] drift 0 boost 0
+win17 frame360 t 16.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.20 max 0.54] drift 0 boost 0
+win18 frame362 t 16.60 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.07 max 0.62] drift 0 boost 0
+============================================================
+CAR 1
+win 0 frame 20 t -0.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.27 max 0.43] drift 8 boost20
+win 1 frame 40 t  0.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.36 max 0.61] drift10 boost20
+win 2 frame 60 t  1.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.02 max 0.66] drift 4 boost20
+win 3 frame 80 t  2.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.08 max 0.94] drift 6 boost20
+win 4 frame100 t  3.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.04 max 0.53] drift 3 boost20
+win 5 frame120 t  4.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.01 max 0.94] drift 8 boost20
+win 6 frame140 t  5.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.01 max 0.51] drift 5 boost20
+win 7 frame160 t  6.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.03 max 0.84] drift 7 boost20
+win 8 frame180 t  7.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.10 max 0.91] drift 6 boost20
+win 9 frame200 t  8.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.01 max 0.46] drift 4 boost20
+win10 frame220 t  9.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.20 max 1.00] drift10 boost20
+win11 frame240 t 10.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.01 max 0.41] drift 0 boost20
+win12 frame260 t 11.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.20 max 0.88] drift11 boost20
+win13 frame280 t 12.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.08 max 0.92] drift 7 boost20
+win14 frame300 t 13.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.02 max 0.68] drift 3 boost20
+win15 frame320 t 14.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.10 max 0.79] drift 8 boost20
+win16 frame340 t 15.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min -0.07 max 1.00] drift 4 boost20
+win17 frame360 t 16.50 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.19 max 0.82] drift 9 boost20
+win18 frame362 t 16.60 throttle(full/coast/brake)=20/ 0/ 0 steer[min 0.11 max 0.63] drift 6 boost20

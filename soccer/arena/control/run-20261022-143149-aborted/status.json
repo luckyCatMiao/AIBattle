@@ -1,0 +1,23 @@
+{
+  "run": "run-20261022-143149",
+  "phase": "模型准备",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 4,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "双方继承各自上一系列策略，继续各迭代 4 轮，准备时间不设上限；每局双方各控 1–6 名球员（按种子随机）；无战争迷雾；每局 120 秒 + 20 秒金球；每轮 2 局共 4 轮；每 20 帧同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 41992,
+  "port": 8804,
+  "completed": false,
+  "updated": "2026-10-22T14:31:51"
+}

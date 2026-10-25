@@ -1,0 +1,58 @@
+{
+  "game": "soccer",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "medium",
+  "rounds": 3,
+  "games_per_round": 2,
+  "port": 8803,
+  "fresh_start": true,
+  "incumbent": null,
+  "continue_both": false,
+  "from_run": null,
+  "source_round": 3,
+  "starting_files": {
+    "deepseek-flash": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ],
+    "sol": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ]
+  },
+  "inherited_files": {},
+  "clients": {
+    "deepseek-flash": "Claude Code",
+    "sol": "Claude Code"
+  },
+  "stream_proxy": [
+    "sol"
+  ],
+  "history_games": 0,
+  "decision_frames": 20,
+  "max_windows": 200,
+  "source_sha256": "020d2b9df58857ca28e0975ebb205f6d736d9b8a0699aa96f2992ba6ddef17ec",
+  "catalog_sha256": "709dd061e9490f953f5c8d445179df04c54e5509a1662d0e50b4a07476faecdb",
+  "public_sim_sha256": "0e6aaca4cd2d572d13a485f0ebc2d4384dc363b8acad7a95df1c124b66ce5446",
+  "frozen_paths": {
+    "sol-r1": "control/run-20261021-234445/round-1/sol",
+    "deepseek-flash-r1": "control/run-20261021-234445/round-1/deepseek-flash",
+    "sol-r2": "control/run-20261021-234445/round-2/sol",
+    "deepseek-flash-r2": "control/run-20261021-234445/round-2/deepseek-flash",
+    "sol-r3": "control/run-20261021-234445/round-3/sol",
+    "deepseek-flash-r3": "control/run-20261021-234445/round-3/deepseek-flash"
+  }
+}

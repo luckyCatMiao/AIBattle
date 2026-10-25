@@ -1,0 +1,88 @@
+W end=175 t=7.50 R1 x=54.06/53.07 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=AIR-FIRST x=54.06 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-AIR x=54.06 dx=-0.99 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+W end=180 t=7.75 R1 x=55.76/54.77 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=AIR-FIRST x=55.76 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-AIR x=55.76 dx=-0.99 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+W end=185 t=8.00 R1 x=57.46/56.47 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=AIR-FIRST x=57.46 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-AIR x=57.46 dx=-0.99 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+W end=190 t=8.25 R1 x=59.16/58.17 y=4.93 vx=6.80 vy=3.50 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=AIR-FIRST x=59.16 y=4.93 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+W end=195 t=8.50 R1 x=60.86/59.87 y=4.23 vx=6.80 vy=-7.00 og=False
+   plan=[(-1.0, False), (-1.0, False), (-1.0, False), (1.0, True), (1.0, False)] actual=[(-1.0, False), (-1.0, False), (-1.0, False), (1.0, True), (1.0, False)] dbg=AIR-FIRST x=60.86 y=4.23 acts=[(-1.0, False), (-1.0, False), (-1.0, False), (1.0, True), (1.0, False)]
+W end=200 t=8.75 R1 x=62.02/61.29 y=4.09 vx=6.30 vy=9.80 og=False
+   plan=[(-1.0, False), (0.0, False), (0.0, False), (0.0, False), (-1.0, False)] actual=[(-1.0, False), (0.0, False), (0.0, False), (0.0, False), (-1.0, False)] dbg=AIR-FIRST x=62.02 y=4.09 acts=[(0.0, False), (0.0, False), (0.0, False), (0.0, False), (0.0, False)]
+PUSH-AIR x=62.02 dx=-0.73 acts=[(-1.0, False), (0.0, False), (0.0, False), (0.0, False), (-1.0, False)]
+W end=205 t=9.00 R1 x=63.11/62.78 y=4.96 vx=2.30 vy=-0.70 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=210 t=9.25 R1 x=64.64/63.92 y=3.21 vx=0.00 vy=-11.20 og=False
+   plan=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=215 t=9.50 R1 x=64.94/65.84 y=4.75 vx=4.00 vy=5.60 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=220 t=9.75 R1 x=66.60/67.44 y=4.58 vx=6.80 vy=-4.90 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, True), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, True), (1.0, False), (1.0, False)] dbg=
+W end=225 t=10.00 R1 x=68.30/69.14 y=5.47 vx=6.80 vy=7.70 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=230 t=10.25 R1 x=70.00/70.84 y=5.82 vx=6.80 vy=-2.80 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=235 t=10.50 R1 x=71.70/72.54 y=3.55 vx=6.80 vy=-13.30 og=False
+   plan=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=240 t=10.75 R1 x=72.94/74.24 y=4.75 vx=4.00 vy=5.60 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=735 t=7.60 R2 x=55.97/54.99 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)] dbg=MAXX x=55.97 y=3.00 maxX=55.97 bestmx=60.73 acts=((1.0, 0), (1.0, 0), (1.0, 0), (1.0, 1), (1.0, 0))
+W end=740 t=7.85 R2 x=57.67/56.69 y=4.09 vx=6.80 vy=9.80 og=False
+   plan=[(-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False)] actual=[(-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False)] dbg=MAXX x=57.67 y=4.09 maxX=57.67 bestmx=61.06 acts=((-1.0, 0), (-1.0, 0), (-1.0, 0), (-1.0, 0), (-1.0, 0))
+W end=745 t=8.10 R2 x=57.87/56.83 y=4.96 vx=-3.20 vy=-0.70 og=False
+   plan=[(-1.0, False), (0.0, False), (-1.0, False), (0.0, False), (0.0, False)] actual=[(-1.0, False), (0.0, False), (-1.0, False), (0.0, False), (0.0, False)] dbg=MAXX x=57.87 y=4.96 maxX=58.09 bestmx=61.08 acts=((-1.0, 0), (0.0, 0), (-1.0, 0), (0.0, 0), (0.0, 0))
+W end=750 t=8.35 R2 x=3.40/57.38 y=3.00 vx=0.00 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=3.40 stuck=(58, 3) ok=True
+DEATH#1 t=8.35 x=3.4 y=3 maxX=58.09 hist=[(5.85, 44.07, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (6.1, 45.77, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)]), (6.35, 47.47, 4.09, 6.8, 9.8, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (6.6, 49.17, 4.96, 6.8, -0.7, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (6.85, 50.87, 4, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.1, 52.57, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.35, 54.27, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.6, 55.97, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)]), (7.85, 57.67, 4.09, 6.8, 9.8, False, [(-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False)]), (8.1, 57.87, 4.96, -3.2, -0.7, False, [(-1.0, False), (0.0, False), (-1.0, False), (0.0, False), (0.0, False)])]
+W end=755 t=8.60 R2 x=4.93/57.63 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=4.93 stuck=(58, 3) ok=True
+W end=760 t=8.85 R2 x=6.63/57.26 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=6.63 stuck=(58, 3) ok=True
+W end=765 t=9.10 R2 x=8.33/57.94 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=8.33 stuck=(58, 3) ok=True
+W end=770 t=9.35 R2 x=10.03/58.14 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=10.03 stuck=(58, 3) ok=True
+W end=775 t=9.60 R2 x=11.73/57.04 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=11.73 stuck=(58, 3) ok=True
+W end=780 t=9.85 R2 x=13.43/57.20 y=4.75 vx=6.80 vy=5.60 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)] dbg=NORM x=13.43 stuck=(58, 3) ok=True
+W end=785 t=10.10 R2 x=15.00/57.90 y=5.95 vx=6.80 vy=9.80 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=15.00 stuck=(58, 3) ok=True
+W end=790 t=10.35 R2 x=16.70/57.97 y=6.82 vx=6.80 vy=-0.70 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=16.70 stuck=(58, 3) ok=True
+W end=795 t=10.60 R2 x=18.40/57.13 y=5.07 vx=6.80 vy=-11.20 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=NORM x=18.40 stuck=(58, 3) ok=True
+W end=2555 t=7.55 R3 x=54.39/53.64 y=4.58 vx=6.80 vy=-4.90 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2560 t=7.80 R3 x=56.09/55.34 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2565 t=8.05 R3 x=57.79/57.04 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2570 t=8.30 R3 x=59.49/58.74 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2575 t=8.55 R3 x=61.19/60.44 y=4.93 vx=6.80 vy=3.50 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2580 t=8.80 R3 x=62.89/62.14 y=4.23 vx=6.80 vy=-7.00 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2585 t=9.05 R3 x=64.59/63.84 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2590 t=9.30 R3 x=66.29/65.54 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2595 t=9.55 R3 x=67.99/67.24 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, True), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, True), (1.0, False), (1.0, False)] dbg=PUSH-PLAN x=67.99 dx=-0.75 acts=[(1.0, False), (1.0, False), (1.0, True), (1.0, False), (1.0, False)]
+W end=2600 t=9.80 R3 x=69.69/68.94 y=4.47 vx=6.80 vy=7.70 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2605 t=10.05 R3 x=71.39/70.64 y=4.82 vx=6.80 vy=-2.80 og=False
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=PUSH-PLAN x=71.39 dx=-0.75 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+W end=2610 t=10.30 R3 x=73.09/72.34 y=4.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=
+W end=2615 t=10.55 R3 x=74.79/74.04 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=AIR-FIRST x=74.79 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+W end=2620 t=10.80 R3 x=76.49/75.74 y=3.00 vx=6.80 vy=0.00 og=True
+   plan=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] actual=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)] dbg=AIR-FIRST x=76.49 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+r2-g2.json.gz player=1 windows=585 diffs=0

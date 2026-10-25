@@ -1,0 +1,2693 @@
+[
+  {
+    "id": "history-run-20261014-224405-r3-g1",
+    "ourSeat": 0,
+    "winner": "astra",
+    "duration": 164.65,
+    "frames": [
+      {
+        "time": 15.000000000000078,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 107,
+            "level": 0,
+            "kills": 0,
+            "damage": 0,
+            "controlTime": 4.849999999999991
+          },
+          {
+            "credits": 42,
+            "level": 0,
+            "kills": 0,
+            "damage": 0,
+            "controlTime": 3.4499999999999957
+          }
+        ],
+        "combat": [
+          {
+            "id": "u4",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 510.9596563007127,
+            "y": 503.0044380739671,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u5",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 611.0383555222364,
+            "y": 243.47583110255434,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u6",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 630.6006030600013,
+            "y": 248.4644730919178,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u7",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 613.3716227435747,
+            "y": 269.94967534558305,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u11",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 781.2178151166923,
+            "y": 499.67616303125817,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u12",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 801.8142844852504,
+            "y": 506.3637419932227,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u13",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 792.1869493041996,
+            "y": 491.91010098043535,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u14",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 789.0570844504978,
+            "y": 510.5930974137694,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 322.7069407514423,
+            "y": 444.6038612289397,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 593,
+              "y": 420
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 1035.7316106247574,
+            "y": 469.68493962256275,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 830.5736835487436,
+              "y": 495
+            }
+          }
+        ]
+      },
+      {
+        "time": 25.00000000000022,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 162,
+            "level": 0,
+            "kills": 1,
+            "damage": 282,
+            "controlTime": 24.850000000000218
+          },
+          {
+            "credits": 67,
+            "level": 0,
+            "kills": 0,
+            "damage": 190,
+            "controlTime": 13.450000000000056
+          }
+        ],
+        "combat": [
+          {
+            "id": "u4",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 19,
+            "x": 522.9459312915516,
+            "y": 498.51346804343166,
+            "fireAt": 25.65000000000022,
+            "order": {
+              "type": "attack",
+              "target": "u13"
+            }
+          },
+          {
+            "id": "u5",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 611.0383555222364,
+            "y": 243.47583110255434,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u6",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 630.6006030600013,
+            "y": 248.4644730919178,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u7",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 50,
+            "x": 619.5225965004246,
+            "y": 323.9195644830448,
+            "fireAt": 25.500000000000217,
+            "order": {
+              "type": "attack",
+              "target": "u13"
+            }
+          },
+          {
+            "id": "u12",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 86,
+            "x": 637.2322943797662,
+            "y": 454.6914829399567,
+            "fireAt": 25.10000000000021,
+            "order": {
+              "type": "attack",
+              "target": "u4"
+            }
+          },
+          {
+            "id": "u13",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 10,
+            "x": 629.8711172567783,
+            "y": 443.4466327351506,
+            "fireAt": 25.10000000000021,
+            "order": {
+              "type": "attack",
+              "target": "u4"
+            }
+          },
+          {
+            "id": "u14",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 62,
+            "x": 641.5624558773526,
+            "y": 467.41481952009536,
+            "fireAt": 25.75000000000022,
+            "order": {
+              "type": "attack",
+              "target": "u4"
+            }
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 321,
+            "x": 495.1301516268569,
+            "y": 461.15946955379326,
+            "fireAt": 25.400000000000198,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 768.2268975527685,
+            "y": 372.725796610676,
+            "fireAt": 26.050000000000207,
+            "order": {
+              "type": "attack",
+              "target": "u7"
+            }
+          }
+        ]
+      },
+      {
+        "time": 35.00000000000015,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 237,
+            "level": 0,
+            "kills": 4,
+            "damage": 519,
+            "controlTime": 44.84999999999959
+          },
+          {
+            "credits": 112,
+            "level": 0,
+            "kills": 4,
+            "damage": 479,
+            "controlTime": 23.4500000000002
+          }
+        ],
+        "combat": [
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 321,
+            "x": 662.3714999588992,
+            "y": 472.59818050993334,
+            "fireAt": 36.40000000000018,
+            "order": {
+              "type": "attack",
+              "target": "u16"
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 281,
+            "x": 820.0377319024358,
+            "y": 402.9545031094079,
+            "fireAt": 35.05000000000026,
+            "order": {
+              "type": "attack",
+              "target": "u15"
+            }
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 459.65169355732985,
+            "y": 479.3876041779184,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            }
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 902.3637382166639,
+            "y": 361.3833638175624,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 250
+            }
+          }
+        ]
+      },
+      {
+        "time": 44.99999999999958,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 192,
+            "level": 1,
+            "kills": 4,
+            "damage": 807,
+            "controlTime": 64.84999999999846
+          },
+          {
+            "credits": 137,
+            "level": 1,
+            "kills": 4,
+            "damage": 864.6000000000001,
+            "controlTime": 33.45000000000024
+          }
+        ],
+        "combat": [
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 21.799999999999997,
+            "x": 650.7111254954872,
+            "y": 436.70938418531927,
+            "fireAt": 45.699999999999655,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 89,
+            "x": 874.1774702790966,
+            "y": 392.011249301712,
+            "fireAt": 45.89999999999964,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "hp": 273.6,
+            "x": 709.4727847413499,
+            "y": 445.40410648352395,
+            "fireAt": 46.949999999999584,
+            "order": {
+              "type": "attack",
+              "target": "u16"
+            }
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "hp": 264,
+            "x": 804.1254233809872,
+            "y": 355.40986562258956,
+            "fireAt": 46.89999999999959,
+            "order": {
+              "type": "attack",
+              "target": "u15"
+            }
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 394.2528026359118,
+            "y": 466.66109252524075,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            }
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 960.110011450013,
+            "y": 410.9536879216226,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 290
+            }
+          }
+        ]
+      },
+      {
+        "time": 59.99999999999873,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 104,
+            "level": 2,
+            "kills": 5,
+            "damage": 1246.4000000000003,
+            "controlTime": 94.84999999999675
+          },
+          {
+            "credits": 125,
+            "level": 1,
+            "kills": 6,
+            "damage": 1505.6000000000004,
+            "controlTime": 48.449999999999385
+          }
+        ],
+        "combat": [
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "hp": 33.599999999999994,
+            "x": 750.9548872775185,
+            "y": 377.771425824285,
+            "fireAt": 61.899999999998734,
+            "order": {
+              "type": "attack",
+              "target": "u21"
+            }
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "hp": 14.400000000000034,
+            "x": 600.7684419190357,
+            "y": 463.7828184078687,
+            "fireAt": 60.94999999999879,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "hp": 240.00000000000003,
+            "x": 821.8515619617665,
+            "y": 381.3729914025943,
+            "fireAt": 60.94999999999879,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 497.0533930462726,
+            "y": 474.9179849973245,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            }
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 856.1432766475359,
+            "y": 368.07769296682784,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 290
+            }
+          }
+        ]
+      },
+      {
+        "time": 79.9999999999976,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 254,
+            "level": 2,
+            "kills": 7,
+            "damage": 1721.6,
+            "controlTime": 134.8499999999964
+          },
+          {
+            "credits": 75,
+            "level": 2,
+            "kills": 8,
+            "damage": 1990.0000000000005,
+            "controlTime": 68.44999999999825
+          }
+        ],
+        "combat": [
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "hp": 40,
+            "x": 521.7166939571953,
+            "y": 475.1363462109127,
+            "fireAt": 80.94999999999766,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "hp": 214.39999999999998,
+            "x": 719.5366658985871,
+            "y": 346.52287487957796,
+            "fireAt": 80.94999999999766,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "hp": 304,
+            "x": 749.8540898741219,
+            "y": 413.99867091273836,
+            "fireAt": 80.89999999999766,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u27",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 494.0744448850783,
+            "y": 473.8618264737212,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 706.0163151938692,
+              "y": 496.5
+            }
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 993.1536683660765,
+            "y": 424.04333029128844,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 665,
+              "y": 290
+            }
+          }
+        ]
+      },
+      {
+        "time": 99.99999999999646,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 454,
+            "level": 2,
+            "kills": 8,
+            "damage": 2104,
+            "controlTime": 171.3500000000047
+          },
+          {
+            "credits": 175,
+            "level": 2,
+            "kills": 10,
+            "damage": 2502.0000000000005,
+            "controlTime": 91.94999999999692
+          }
+        ],
+        "combat": [
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "hp": 304,
+            "x": 623.9255189722522,
+            "y": 303.01170354766424,
+            "fireAt": 101.79999999999647,
+            "order": {
+              "type": "attack",
+              "target": "u29"
+            }
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "hp": 192,
+            "x": 646.749905484584,
+            "y": 302.6577134121701,
+            "fireAt": 99.89999999999658,
+            "order": {
+              "type": "attack",
+              "target": "u29"
+            }
+          },
+          {
+            "id": "u29",
+            "owner": 0,
+            "type": "tank",
+            "hp": 248,
+            "x": 553.4855802843842,
+            "y": 461.7023751271151,
+            "fireAt": 99.89999999999658,
+            "order": {
+              "type": "move",
+              "x": 305.9871150774342,
+              "y": 423.1806054197303
+            }
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 730.7240820022369,
+            "y": 398.4491502486737,
+            "fireAt": 0,
+            "order": {
+              "type": "attack",
+              "target": "u29"
+            }
+          },
+          {
+            "id": "u31",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 338.57345249263807,
+            "y": 405.65546308471613,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 628,
+              "y": 250
+            }
+          }
+        ]
+      },
+      {
+        "time": 119.99999999999532,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 544,
+            "level": 2,
+            "kills": 8,
+            "damage": 2540.8,
+            "controlTime": 191.35000000000926
+          },
+          {
+            "credits": 325,
+            "level": 2,
+            "kills": 13,
+            "damage": 3484.0000000000005,
+            "controlTime": 131.94999999999575
+          }
+        ],
+        "combat": [
+          {
+            "id": "u26",
+            "owner": 1,
+            "type": "tank",
+            "hp": 80,
+            "x": 477.37693385395323,
+            "y": 390.9335535171743,
+            "fireAt": 120.19999999999543,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "hp": 57.599999999999994,
+            "x": 475.3102335573449,
+            "y": 363.19845836716405,
+            "fireAt": 120.84999999999539,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "hp": 281.6,
+            "x": 486.9488240678052,
+            "y": 417.11429058187116,
+            "fireAt": 120.5499999999954,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u32",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 486.6505772491542,
+            "y": 448.4108555924787,
+            "fireAt": 120.79999999999539,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u34",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 842.9390419209508,
+            "y": 442.38403755000604,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 170,
+              "y": 420.00000000000006
+            }
+          },
+          {
+            "id": "u35",
+            "owner": 0,
+            "type": "tank",
+            "hp": 136,
+            "x": 308.687591301542,
+            "y": 427.21178012826283,
+            "fireAt": 120.14999999999543,
+            "order": {
+              "type": "attack",
+              "target": "u26"
+            }
+          }
+        ]
+      },
+      {
+        "time": 139.99999999999758,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 504,
+            "level": 2,
+            "kills": 9,
+            "damage": 2968,
+            "controlTime": 211.3500000000138
+          },
+          {
+            "credits": 475,
+            "level": 2,
+            "kills": 19,
+            "damage": 5436.000000000001,
+            "controlTime": 171.95000000000485
+          }
+        ],
+        "combat": [
+          {
+            "id": "u28",
+            "owner": 1,
+            "type": "tank",
+            "hp": 35.19999999999999,
+            "x": 355.59957402501345,
+            "y": 376.12425942304435,
+            "fireAt": 140.64999999999728,
+            "order": {
+              "type": "attack",
+              "target": "b0"
+            }
+          },
+          {
+            "id": "u30",
+            "owner": 1,
+            "type": "tank",
+            "hp": 12.800000000000068,
+            "x": 341.1075123255755,
+            "y": 433.9848302882249,
+            "fireAt": 140.44999999999723,
+            "order": {
+              "type": "attack",
+              "target": "b0"
+            }
+          },
+          {
+            "id": "u32",
+            "owner": 1,
+            "type": "tank",
+            "hp": 304,
+            "x": 357.40558700854666,
+            "y": 453.5571532911373,
+            "fireAt": 141.1499999999974,
+            "order": {
+              "type": "attack",
+              "target": "b0"
+            }
+          },
+          {
+            "id": "u34",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 361.7104052401641,
+            "y": 422.6397342749692,
+            "fireAt": 140.49999999999724,
+            "order": {
+              "type": "attack",
+              "target": "b0"
+            }
+          },
+          {
+            "id": "u36",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 574.2957806801887,
+            "y": 436.1072141574991,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 170,
+              "y": 420.00000000000006
+            }
+          },
+          {
+            "id": "u38",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 992.8795737401093,
+            "y": 450.31832316883873,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 170,
+              "y": 420.00000000000006
+            }
+          }
+        ]
+      }
+    ],
+    "decisions35to43": [
+      {
+        "tick": 700,
+        "now": 35.00000000000015,
+        "commands": [
+          [
+            {
+              "type": "upgrade"
+            },
+            {
+              "type": "move",
+              "x": 631.2704932046792,
+              "y": 486.33598888223054,
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          []
+        ],
+        "seconds": [
+          0.000773,
+          0.000616
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 720,
+        "now": 36.00000000000009,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 827.7215100417128,
+              "y": 399.560456335076,
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000806,
+          0.001028
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 740,
+        "now": 37.000000000000036,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 634.289120330825,
+              "y": 485.00261336374246,
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "upgrade"
+            },
+            {
+              "type": "move",
+              "x": 858.8225167959329,
+              "y": 385.82264796277883,
+              "units": [
+                "u16"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u20"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000685,
+          0.000629
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 760,
+        "now": 37.99999999999998,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u20",
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000625,
+          0.00077
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 780,
+        "now": 38.99999999999992,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u20",
+              "units": [
+                "u19",
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 820.3693124605572,
+              "y": 342.1683630808424,
+              "units": [
+                "u20"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000669,
+          0.000599
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 800,
+        "now": 39.999999999999865,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u19"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 648.2289928363955,
+              "y": 461.6286695879452,
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 853.5685768418466,
+              "y": 390.821688454339,
+              "units": [
+                "u16"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u20"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000767,
+          0.000649
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 820,
+        "now": 40.99999999999981,
+        "commands": [
+          [
+            {
+              "type": "train",
+              "unit": "raider"
+            },
+            {
+              "type": "attack",
+              "target": "u20",
+              "units": [
+                "u19",
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 835.4098952734353,
+              "y": 333.3927098736651,
+              "units": [
+                "u20"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u16"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 665,
+              "y": 290,
+              "units": [
+                "u22"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000908,
+          0.000818
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 840,
+        "now": 41.99999999999975,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u19"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 652.7589987824273,
+              "y": 436.9225240695946,
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 872.6628527020466,
+              "y": 387.9821575913354,
+              "units": [
+                "u16"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 864.0518617077348,
+              "y": 315.07093314663604,
+              "units": [
+                "u20"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000767,
+          0.000704
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 860,
+        "now": 42.999999999999694,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u15"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 674.1340318440372,
+              "y": 457.3371796593317,
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u19",
+              "units": [
+                "u20",
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000904,
+          0.00085
+        ],
+        "notes": [
+          "Control outposts; sustain armor; focus favorable engagements.",
+          ""
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      }
+    ]
+  },
+  {
+    "id": "history-run-20261014-224405-r3-g2",
+    "ourSeat": 1,
+    "winner": "astra",
+    "duration": 217.05,
+    "frames": [
+      {
+        "time": 15.000000000000078,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 103,
+            "level": 0,
+            "kills": 0,
+            "damage": 0,
+            "controlTime": 3.7499999999999947
+          },
+          {
+            "credits": 45,
+            "level": 0,
+            "kills": 0,
+            "damage": 0,
+            "controlTime": 4.399999999999992
+          }
+        ],
+        "combat": [
+          {
+            "id": "u4",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 484.36832179073883,
+            "y": 501.0480204618046,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u5",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 496.50713865956885,
+            "y": 495.27890224278644,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u6",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 502.21764591104926,
+            "y": 509.226590111141,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u7",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 110,
+            "x": 489.4692510840297,
+            "y": 513.482413102575,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u11",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 807.8008478000928,
+            "y": 483.7842985670916,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u12",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 657.0800995949542,
+            "y": 246.02773068242922,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u13",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 647.4600697938251,
+            "y": 236.64217653654163,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u14",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 644.5368539610271,
+            "y": 267.47973664403696,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 309.2246339166398,
+            "y": 463.30994321454455,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 449.4263164512564,
+              "y": 495.00000000000006
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 1021.3538864711338,
+            "y": 445.3867027540065,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 420
+            }
+          }
+        ]
+      },
+      {
+        "time": 25.00000000000022,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 128,
+            "level": 0,
+            "kills": 2,
+            "damage": 257,
+            "controlTime": 13.75000000000006
+          },
+          {
+            "credits": 100,
+            "level": 0,
+            "kills": 2,
+            "damage": 329,
+            "controlTime": 24.40000000000021
+          }
+        ],
+        "combat": [
+          {
+            "id": "u4",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 62,
+            "x": 560.1858393229155,
+            "y": 366.07649859119243,
+            "fireAt": 25.70000000000022,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u7",
+            "owner": 0,
+            "type": "rifle",
+            "hp": 49,
+            "x": 573.6202021710762,
+            "y": 368.9879336656472,
+            "fireAt": 25.10000000000021,
+            "order": {
+              "type": "attack",
+              "target": "u12"
+            }
+          },
+          {
+            "id": "u11",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 807.8008478000928,
+            "y": 483.7842985670916,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u12",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 73,
+            "x": 642.7168291270062,
+            "y": 268.4331847371344,
+            "fireAt": 25.75000000000022,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 497.61642579895397,
+            "y": 415.2402923377204,
+            "fireAt": 25.5500000000002,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 734.6262837817901,
+            "y": 448.97046323246985,
+            "fireAt": 27.00000000000022,
+            "order": {
+              "type": "attack",
+              "target": "u6"
+            }
+          }
+        ]
+      },
+      {
+        "time": 35.00000000000015,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 173,
+            "level": 0,
+            "kills": 3,
+            "damage": 463,
+            "controlTime": 23.750000000000203
+          },
+          {
+            "credits": 175,
+            "level": 0,
+            "kills": 4,
+            "damage": 520,
+            "controlTime": 44.399999999999615
+          }
+        ],
+        "combat": [
+          {
+            "id": "u11",
+            "owner": 1,
+            "type": "rifle",
+            "hp": 110,
+            "x": 807.8008478000928,
+            "y": 483.7842985670916,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 280,
+            "x": 519.086627662915,
+            "y": 384.45958401621886,
+            "fireAt": 35.00000000000026,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 227,
+            "x": 745.7218068414688,
+            "y": 456.90541718726143,
+            "fireAt": 35.95000000000021,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 426.80471653023,
+            "y": 358.867487728181,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 615,
+              "y": 250
+            }
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 881.5329099358612,
+            "y": 469.9572957340944,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            }
+          }
+        ]
+      },
+      {
+        "time": 44.99999999999958,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 198,
+            "level": 1,
+            "kills": 4,
+            "damage": 814.6000000000001,
+            "controlTime": 33.75000000000022
+          },
+          {
+            "credits": 130,
+            "level": 1,
+            "kills": 4,
+            "damage": 911.6,
+            "controlTime": 64.39999999999849
+          }
+        ],
+        "combat": [
+          {
+            "id": "u15",
+            "owner": 0,
+            "type": "tank",
+            "hp": 80.4,
+            "x": 572.1408430080281,
+            "y": 414.3965764018964,
+            "fireAt": 44.099999999999746,
+            "order": {
+              "type": "attack",
+              "target": "u20"
+            }
+          },
+          {
+            "id": "u16",
+            "owner": 1,
+            "type": "tank",
+            "hp": 100.6,
+            "x": 751.3838098434716,
+            "y": 490.79954199801455,
+            "fireAt": 46.549999999999606,
+            "order": {
+              "type": "attack",
+              "target": "u19"
+            }
+          },
+          {
+            "id": "u19",
+            "owner": 0,
+            "type": "tank",
+            "hp": 168,
+            "x": 610.3085188248263,
+            "y": 391.12397121908845,
+            "fireAt": 46.049999999999635,
+            "order": {
+              "type": "attack",
+              "target": "u20"
+            }
+          },
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "hp": 244.8,
+            "x": 736.2539950749491,
+            "y": 508.80729296023674,
+            "fireAt": 46.14999999999963,
+            "order": {
+              "type": "attack",
+              "target": "u19"
+            }
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 316.99617005082473,
+            "y": 426.9832168519907,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 615,
+              "y": 290
+            }
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 962.8791917441471,
+            "y": 459.96990196582504,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            }
+          }
+        ]
+      },
+      {
+        "time": 59.99999999999873,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 186,
+            "level": 1,
+            "kills": 5,
+            "damage": 1049.6000000000004,
+            "controlTime": 48.74999999999937
+          },
+          {
+            "credits": 23,
+            "level": 2,
+            "kills": 6,
+            "damage": 1272,
+            "controlTime": 94.39999999999678
+          }
+        ],
+        "combat": [
+          {
+            "id": "u20",
+            "owner": 1,
+            "type": "tank",
+            "hp": 158.40000000000003,
+            "x": 552.8171566914272,
+            "y": 509.8023510720503,
+            "fireAt": 59.399999999998876,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u21",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 612.4014523917609,
+            "y": 213.04097851483942,
+            "fireAt": 0,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u22",
+            "owner": 1,
+            "type": "tank",
+            "hp": 312,
+            "x": 514.9482070326941,
+            "y": 465.9193933904976,
+            "fireAt": 61.349999999998765,
+            "order": {
+              "type": "attack",
+              "target": "u23"
+            }
+          },
+          {
+            "id": "u23",
+            "owner": 0,
+            "type": "tank",
+            "hp": 248,
+            "x": 350.4450489531935,
+            "y": 411.9691818753868,
+            "fireAt": 61.39999999999876,
+            "order": {
+              "type": "attack",
+              "target": "u22"
+            }
+          },
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 861.8110158261835,
+            "y": 470.1573835335419,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            }
+          }
+        ]
+      },
+      {
+        "time": 79.9999999999976,
+        "nodes": [
+          1,
+          1,
+          1
+        ],
+        "players": [
+          {
+            "credits": 146,
+            "level": 2,
+            "kills": 7,
+            "damage": 1568.0000000000007,
+            "controlTime": 65.59999999999842
+          },
+          {
+            "credits": 242,
+            "level": 2,
+            "kills": 8,
+            "damage": 1991.9999999999995,
+            "controlTime": 137.54999999999703
+          }
+        ],
+        "combat": [
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 649.0440735300041,
+            "y": 267.4393450541691,
+            "fireAt": 66.34999999999849,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u25",
+            "owner": 1,
+            "type": "raider",
+            "hp": 102,
+            "x": 637.1185234201107,
+            "y": 250.1540549329007,
+            "fireAt": 67.94999999999833,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u26",
+            "owner": 0,
+            "type": "tank",
+            "hp": 248,
+            "x": 421.9345803928078,
+            "y": 468.0474124283018,
+            "fireAt": 80.79999999999767,
+            "order": {
+              "type": "attackMove",
+              "x": 489.4263164512564,
+              "y": 465.00000000000006
+            }
+          },
+          {
+            "id": "u27",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 863.2071139613505,
+            "y": 344.09434654321916,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            }
+          },
+          {
+            "id": "u28",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 330.90497418991885,
+            "y": 468.7105782020663,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 489.4263164512564,
+              "y": 505.00000000000006
+            }
+          }
+        ]
+      },
+      {
+        "time": 99.99999999999646,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 209,
+            "level": 2,
+            "kills": 9,
+            "damage": 2324.0000000000014,
+            "controlTime": 76.5499999999978
+          },
+          {
+            "credits": 479,
+            "level": 2,
+            "kills": 8,
+            "damage": 2305.5999999999995,
+            "controlTime": 186.60000000000818
+          }
+        ],
+        "combat": [
+          {
+            "id": "u24",
+            "owner": 1,
+            "type": "tank",
+            "hp": 91.20000000000005,
+            "x": 636.1794017564953,
+            "y": 430.03075144915374,
+            "fireAt": 101.2999999999965,
+            "order": {
+              "type": "attack",
+              "target": "u28"
+            }
+          },
+          {
+            "id": "u26",
+            "owner": 0,
+            "type": "tank",
+            "hp": 102.4,
+            "x": 480.74702872940975,
+            "y": 504.35207357769417,
+            "fireAt": 99.19999999999662,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            }
+          },
+          {
+            "id": "u27",
+            "owner": 1,
+            "type": "tank",
+            "hp": 124.80000000000001,
+            "x": 644.0612821260706,
+            "y": 409.09296474217257,
+            "fireAt": 96.0499999999968,
+            "order": {
+              "type": "attack",
+              "target": "u28"
+            }
+          },
+          {
+            "id": "u28",
+            "owner": 0,
+            "type": "tank",
+            "hp": 248,
+            "x": 518.807608282963,
+            "y": 538.9094220604984,
+            "fireAt": 101.2499999999965,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            }
+          },
+          {
+            "id": "u30",
+            "owner": 0,
+            "type": "tank",
+            "hp": 304,
+            "x": 469.92334579501306,
+            "y": 460.4220324287679,
+            "fireAt": 101.74999999999648,
+            "order": {
+              "type": "attack",
+              "target": "u24"
+            }
+          },
+          {
+            "id": "u31",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 854.9573076545355,
+            "y": 469.54140757818413,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 573.9836848061308,
+              "y": 496.50000000000006
+            }
+          }
+        ]
+      },
+      {
+        "time": 119.99999999999532,
+        "nodes": [
+          1,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 299,
+            "level": 2,
+            "kills": 13,
+            "damage": 3274.0000000000014,
+            "controlTime": 96.54999999999666
+          },
+          {
+            "credits": 629,
+            "level": 2,
+            "kills": 9,
+            "damage": 2855.9999999999995,
+            "controlTime": 226.60000000001727
+          }
+        ],
+        "combat": [
+          {
+            "id": "u26",
+            "owner": 0,
+            "type": "tank",
+            "hp": 1.6000000000000014,
+            "x": 567.7434073441207,
+            "y": 395.285408961539,
+            "fireAt": 120.6499999999954,
+            "order": {
+              "type": "hold"
+            }
+          },
+          {
+            "id": "u30",
+            "owner": 0,
+            "type": "tank",
+            "hp": 102.4,
+            "x": 637.6784863128486,
+            "y": 393.52828202053763,
+            "fireAt": 121.09999999999538,
+            "order": {
+              "type": "attack",
+              "target": "u33"
+            }
+          },
+          {
+            "id": "u32",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 635.7666671446178,
+            "y": 306.10123284359054,
+            "fireAt": 118.9999999999955,
+            "order": {
+              "type": "attack",
+              "target": "u33"
+            }
+          },
+          {
+            "id": "u33",
+            "owner": 1,
+            "type": "tank",
+            "hp": 136,
+            "x": 799.9375656649304,
+            "y": 456.95330474843183,
+            "fireAt": 120.24999999999542,
+            "order": {
+              "type": "move",
+              "x": 1110,
+              "y": 419.99999999999994
+            }
+          },
+          {
+            "id": "u34",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 450.7544295332408,
+            "y": 308.51003838940767,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 580,
+              "y": 210
+            }
+          }
+        ]
+      },
+      {
+        "time": 139.99999999999758,
+        "nodes": [
+          0,
+          1,
+          0
+        ],
+        "players": [
+          {
+            "credits": 421,
+            "level": 2,
+            "kills": 14,
+            "damage": 3690.0000000000014,
+            "controlTime": 127.09999999999492
+          },
+          {
+            "credits": 808,
+            "level": 2,
+            "kills": 11,
+            "damage": 3206.3999999999996,
+            "controlTime": 256.05000000002394
+          }
+        ],
+        "combat": [
+          {
+            "id": "u32",
+            "owner": 0,
+            "type": "tank",
+            "hp": 136,
+            "x": 741.0587063124009,
+            "y": 381.2983690376524,
+            "fireAt": 141.79999999999754,
+            "order": {
+              "type": "attack",
+              "target": "u37"
+            }
+          },
+          {
+            "id": "u34",
+            "owner": 0,
+            "type": "tank",
+            "hp": 337.6,
+            "x": 745.7997980265841,
+            "y": 404.3305084301724,
+            "fireAt": 141.6499999999975,
+            "order": {
+              "type": "attack",
+              "target": "u37"
+            }
+          },
+          {
+            "id": "u36",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 699.1248676270758,
+            "y": 511.80045155374717,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 740.5736835487436,
+              "y": 545
+            }
+          },
+          {
+            "id": "u37",
+            "owner": 1,
+            "type": "tank",
+            "hp": 80,
+            "x": 912.4987442904094,
+            "y": 408.0511561731216,
+            "fireAt": 141.84999999999755,
+            "order": {
+              "type": "attack",
+              "target": "u32"
+            }
+          },
+          {
+            "id": "u38",
+            "owner": 0,
+            "type": "tank",
+            "hp": 360,
+            "x": 340.8640168957525,
+            "y": 456.50687109020197,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 705.5736835487436,
+              "y": 465
+            }
+          },
+          {
+            "id": "u39",
+            "owner": 1,
+            "type": "tank",
+            "hp": 360,
+            "x": 1002.1871001033613,
+            "y": 404.9010357473459,
+            "fireAt": 0,
+            "order": {
+              "type": "attackMove",
+              "x": 687,
+              "y": 267
+            }
+          }
+        ]
+      }
+    ],
+    "decisions35to43": [
+      {
+        "tick": 700,
+        "now": 35.00000000000015,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u11",
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000505,
+          0.000669
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 720,
+        "now": 36.00000000000009,
+        "commands": [
+          [
+            {
+              "type": "upgrade"
+            },
+            {
+              "type": "move",
+              "x": 514.6772353597931,
+              "y": 382.82582703293946,
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "upgrade"
+            },
+            {
+              "type": "move",
+              "x": 746.0994415300376,
+              "y": 462.11186656192433,
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000643,
+          0.000609
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 740,
+        "now": 37.000000000000036,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u11",
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u11"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 514.4263164512564,
+              "y": 505.00000000000006,
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.00059,
+          0.00073
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 760,
+        "now": 37.99999999999998,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u15",
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000713,
+          0.000651
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 780,
+        "now": 38.99999999999992,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 498.3580715461011,
+              "y": 376.892735097746,
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u20"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 728.4407055395786,
+              "y": 463.88003306241694,
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000684,
+          0.000534
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 800,
+        "now": 39.999999999999865,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u20",
+              "units": [
+                "u15"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u19",
+              "units": [
+                "u20",
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000622,
+          0.000552
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 820,
+        "now": 40.99999999999981,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 548.5953135932443,
+              "y": 343.59719556361375,
+              "units": [
+                "u19"
+              ]
+            },
+            {
+              "type": "attackMove",
+              "x": 615,
+              "y": 290,
+              "units": [
+                "u21"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "train",
+              "unit": "raider"
+            },
+            {
+              "type": "move",
+              "x": 726.6840163986305,
+              "y": 495.27095986600676,
+              "units": [
+                "u20"
+              ]
+            },
+            {
+              "type": "move",
+              "x": 752.6727918340765,
+              "y": 478.2514709883708,
+              "units": [
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000634,
+          0.000563
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 840,
+        "now": 41.99999999999975,
+        "commands": [
+          [
+            {
+              "type": "attack",
+              "target": "u20",
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "attack",
+              "target": "u15",
+              "units": [
+                "u20",
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000645,
+          0.000578
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      },
+      {
+        "tick": 860,
+        "now": 42.999999999999694,
+        "commands": [
+          [
+            {
+              "type": "move",
+              "x": 536.5145568677398,
+              "y": 394.10943270520403,
+              "units": [
+                "u15"
+              ]
+            },
+            {
+              "type": "attack",
+              "target": "u16",
+              "units": [
+                "u19"
+              ]
+            }
+          ],
+          [
+            {
+              "type": "move",
+              "x": 753.7205934619685,
+              "y": 508.5230481353447,
+              "units": [
+                "u20",
+                "u16"
+              ]
+            }
+          ]
+        ],
+        "seconds": [
+          0.000683,
+          0.000612
+        ],
+        "notes": [
+          "",
+          "Control outposts; sustain armor; focus favorable engagements."
+        ],
+        "errors": [
+          [],
+          []
+        ]
+      }
+    ]
+  }
+]

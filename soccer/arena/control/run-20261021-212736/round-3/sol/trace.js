@@ -1,0 +1,7 @@
+'use strict';
+const sim=require('./simulation'),{spawn}=require('child_process'),rl=require('readline'),fs=require('fs');
+const p=spawn('python3',['-u','/workspace/agent.py']);let pending;rl.createInterface({input:p.stdout}).on('line',s=>{pending(JSON.parse(s))});p.stderr.on('data',s=>process.stderr.write(s));const ask=o=>new Promise(r=>{pending=r;p.stdin.write(JSON.stringify(o)+'\n')});
+async function main(){const g=sim.createMatch({players:[{name:'a',kind:'api'},{name:'b',kind:'api'}],teamSize:1});let rows=[];
+while(g.frame<600){let r=await ask(sim.view(g,0));let v=sim.view(g,0);rows.push({f:g.frame,b:v.ball,u:v.units.map(u=>({x:u.x,y:u.y,ball:u.hasBall})),a:r.inputs[0][0]});let opp=[];
+for(let k=0;k<20;k++){let u=g.units[1],b=g.ball,own=b.owner===u.id,x=own?1:b.x,y=own?13:b.y;let dx=x-u.x,dy=y-u.y;let d=Math.hypot(dx,dy);let dir=Math.abs(dx)<.07?(dy>0?'D':'U'):Math.abs(dy)<.07?(dx>0?'R':'L'):(Math.abs(dx)>2.4*Math.abs(dy)?(dx>0?'R':'L'):Math.abs(dy)>2.4*Math.abs(dx)?(dy>0?'D':'U'):(dy>0?'D':'U')+(dx>0?'R':'L'));let a={dir,aim:own?(Math.atan2(13-u.y,1-u.x)*180/Math.PI+360)%360:180,kick:own&&u.x<16};opp.push(a);g.units[0].held=r.inputs[k][0];u.held=a;sim.step(g)}
+}p.stdin.end();fs.writeFileSync('/workspace/trace.json',JSON.stringify(rows,null,2));console.log(g.score)}main();

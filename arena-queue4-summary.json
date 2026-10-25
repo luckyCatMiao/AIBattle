@@ -1,0 +1,51 @@
+[
+  {
+    "game": "rts",
+    "run": null,
+    "phase": "比赛中止，需要检查",
+    "games": [],
+    "returncode": 1,
+    "minutes": 99.6
+  },
+  {
+    "game": "hero-rts",
+    "run": "run-20261024-155033",
+    "phase": "双方复盘并改进",
+    "games": [
+      {
+        "id": "r1-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 2453,
+          "sol": 11655
+        }
+      },
+      {
+        "id": "r1-g2",
+        "winner": "sol",
+        "scores": {
+          "sol": 11761,
+          "deepseek-flash": 2334
+        }
+      },
+      {
+        "id": "r2-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 2971,
+          "sol": 15820
+        }
+      },
+      {
+        "id": "r2-g2",
+        "winner": "deepseek-flash",
+        "scores": {
+          "sol": 13978,
+          "deepseek-flash": 3810
+        }
+      }
+    ],
+    "returncode": 1,
+    "minutes": 169.6
+  }
+]

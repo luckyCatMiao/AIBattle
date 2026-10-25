@@ -1,0 +1,90 @@
+=== r2-g2 round 4: frames 4433..5884, 72.55s, winner=DeepSeek V4.1 Flash ===
+our team ['vex', 'kestrel', 'aegis'] sol team ['kestrel', 'aegis', 'vex']
+  f 4433 r    0  221.65s EVENT suddenDeath 长弓 · Kestrel 在决着阶段被拖垮
+  f 4433 r    0  221.65s EVENT ko 长弓 · Kestrel 被击败
+  f 4433 r    0  221.65s EVENT roundEnd 第 3 局：铁律 · Aegis 胜（击倒）
+  f 4435 r    2  221.75s SOL  START 铁律弹 x=420 inp={'dir': 'B', 'btn': None}
+  f 4474 r   41  223.70s OURS BLOCK 防御 · 削防 12
+  f 4479 r   46  223.95s SOL  START 铁律突进 x=420 inp={'dir': 'F', 'btn': None}
+  f 4489 r   56  224.45s OURS BLOCK 防御 · 削防 14
+  f 4506 r   73  225.30s OURS START 回旋踵落 x=791 inp={'dir': 'DB', 'btn': None}
+  f 4520 r   87  226.00s OURS HIT dmg=140 combo=1 hp=974/428 state=attack/attack inp={'dir': 'DB', 'btn': None}
+  f 4549 r  116  227.45s SOL  START 回旋踵落 x=595 inp={'dir': 'DB', 'btn': None}
+  f 4609 r  176  230.45s SOL  START 空中重拳 x=700 inp={'dir': 'B', 'btn': None}
+  f 4617 r  184  230.85s OURS BLOCK 防御 · 削防 12
+  f 4633 r  200  231.65s OURS START 回旋踵落 x=841 inp={'dir': 'B', 'btn': None}
+  f 4667 r  234  233.35s SOL  START 裂空上击 x=826 inp={'dir': 'DB', 'btn': None}
+  f 4673 r  240  233.65s SOL  HIT dmg=134 combo=1 hp=962/288 state=attack/crouch inp={'dir': 'DB', 'btn': None}
+  f 4716 r  283  235.80s EVENT down 
+  f 4727 r  294  236.35s SOL  START 铁律突进 x=831 inp={'dir': 'DB', 'btn': None}
+  f 4737 r  304  236.85s SOL  HIT dmg=106 combo=1 hp=828/288 state=down/stand inp={'dir': 'DB', 'btn': None}
+  f 4758 r  325  237.90s EVENT down 
+  f 4777 r  344  238.85s SOL  START 回旋踵落 x=1013 inp={'dir': 'DB', 'btn': None}
+  f 4791 r  358  239.55s SOL  HIT dmg=140 combo=1 hp=722/288 state=down/attack inp={'dir': 'DB', 'btn': None}
+  f 4800 r  367  240.00s SOL  START 侧踢 x=1013 inp={'dir': 'DB', 'btn': None}
+  f 4836 r  403  241.80s SOL  START 空中轻拳 x=1112 inp={'dir': 'B', 'btn': None}
+  f 4840 r  407  242.00s OURS BLOCK 防御 · 削防 6
+  f 4892 r  459  244.60s SOL  START 裂空上击 x=1215 inp={'dir': 'DB', 'btn': None}
+  f 4898 r  465  244.90s OURS BLOCK 防御 · 削防 18
+  f 4918 r  485  245.90s OURS START 回旋踵落 x=1107 inp={'dir': 'DB', 'btn': None}
+  f 4932 r  499  246.60s OURS HIT dmg=140 combo=1 hp=558/288 state=attack/attack inp={'dir': 'DB', 'btn': None}
+  f 4971 r  538  248.55s SOL  START 裂空上击 x=1215 inp={'dir': 'DB', 'btn': None}
+  f 4977 r  544  248.85s OURS BLOCK 防御 · 削防 18
+  f 4995 r  562  249.75s OURS START 回旋踵落 x=1092 inp={'dir': 'DB', 'btn': None}
+  f 5009 r  576  250.45s OURS HIT dmg=140 combo=1 hp=540/148 state=crouch/attack inp={'dir': 'DB', 'btn': None}
+  f 5040 r  607  252.00s SOL  START 直拳 x=1220 inp={'dir': 'DB', 'btn': None}
+  f 5044 r  611  252.20s OURS BLOCK 防御 · 削防 5
+  f 5059 r  626  252.95s SOL  START 侧踢 x=1215 inp={'dir': 'DB', 'btn': None}
+  f 5064 r  631  253.20s OURS BLOCK 防御 · 削防 5
+  f 5082 r  649  254.10s SOL  START 侧踢 x=1205 inp={'dir': 'DB', 'btn': None}
+  f 5087 r  654  254.35s OURS BLOCK 防御 · 削防 5
+  f 5105 r  672  255.25s SOL  START 侧踢 x=1195 inp={'dir': 'DB', 'btn': None}
+  f 5110 r  677  255.50s OURS BLOCK 防御 · 削防 5
+  f 5128 r  695  256.40s SOL  START 绝律 · 三重天 x=1195 inp={'dir': 'DB', 'btn': None}
+  f 5128 r  695  256.40s SOL  SUPER 铁律 · Aegis 发动超必杀 绝律 · 三重天
+  f 5142 r  709  257.10s OURS BLOCK 防御 · 削防 40
+  f 5150 r  717  257.50s OURS BLOCK 防御 · 削防 40
+  f 5158 r  725  257.90s OURS BLOCK 防御 · 削防 40
+  f 5166 r  733  258.30s OURS BLOCK 防御 · 削防 40
+  f 5174 r  741  258.70s OURS BLOCK 防御 · 削防 40
+  f 5182 r  749  259.10s OURS BLOCK 防御 · 削防 40
+  f 5201 r  768  260.05s OURS START 直拳 x=1008 inp={'dir': 'DB', 'btn': None}
+  f 5239 r  806  261.95s SOL  START 侧踢 x=1195 inp={'dir': 'F', 'btn': None}
+  f 5258 r  825  262.90s SOL  START 侧踢 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 5284 r  851  264.20s SOL  START 侧踢 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 5303 r  870  265.15s SOL  START 侧踢 x=1175 inp={'dir': 'DB', 'btn': None}
+  f 5308 r  875  265.40s OURS BLOCK 防御 · 削防 5
+  f 5329 r  896  266.45s SOL  START 侧踢 x=1175 inp={'dir': 'DB', 'btn': None}
+  f 5348 r  915  267.40s SOL  START 侧踢 x=1165 inp={'dir': 'DB', 'btn': None}
+  f 5353 r  920  267.65s OURS BLOCK 防御 · 削防 5
+  f 5374 r  941  268.70s SOL  START 侧踢 x=1169 inp={'dir': 'DB', 'btn': None}
+  f 5393 r  960  269.65s SOL  START 侧踢 x=1159 inp={'dir': 'DB', 'btn': None}
+  f 5398 r  965  269.90s OURS BLOCK 防御 · 削防 5
+  f 5419 r  986  270.95s SOL  START 侧踢 x=1159 inp={'dir': 'DB', 'btn': None}
+  f 5438 r 1005  271.90s SOL  START 侧踢 x=1149 inp={'dir': 'DB', 'btn': None}
+  f 5443 r 1010  272.15s OURS BLOCK 防御 · 削防 5
+  f 5464 r 1031  273.20s SOL  START 侧踢 x=1153 inp={'dir': 'DB', 'btn': None}
+  f 5483 r 1050  274.15s SOL  START 侧踢 x=1143 inp={'dir': 'DB', 'btn': None}
+  f 5488 r 1055  274.40s OURS BLOCK 防御 · 削防 5
+  f 5509 r 1076  275.45s SOL  START 侧踢 x=1143 inp={'dir': 'DB', 'btn': None}
+  f 5528 r 1095  276.40s SOL  START 侧踢 x=1133 inp={'dir': 'DB', 'btn': None}
+  f 5533 r 1100  276.65s OURS BLOCK 防御 · 削防 5
+  f 5554 r 1121  277.70s SOL  START 侧踢 x=1137 inp={'dir': 'DB', 'btn': None}
+  f 5573 r 1140  278.65s SOL  START 侧踢 x=1127 inp={'dir': 'DB', 'btn': None}
+  f 5578 r 1145  278.90s OURS BLOCK 防御 · 削防 5
+  f 5599 r 1166  279.95s SOL  START 侧踢 x=1127 inp={'dir': 'DB', 'btn': None}
+  f 5618 r 1185  280.90s SOL  START 侧踢 x=1117 inp={'dir': 'DB', 'btn': None}
+  f 5623 r 1190  281.15s OURS BLOCK 防御 · 削防 5
+  f 5655 r 1222  282.75s SOL  START 空中重拳 x=1025 inp={'dir': 'DB', 'btn': None}
+  f 5663 r 1230  283.15s OURS BLOCK 防御 · 削防 12
+  f 5679 r 1246  283.95s OURS START 回旋踵落 x=918 inp={'dir': 'B', 'btn': None}
+  f 5715 r 1282  285.75s SOL  START 直拳 x=887 inp={'dir': 'DB', 'btn': None}
+  f 5719 r 1286  285.95s SOL  HIT dmg=58 combo=1 hp=228/8 state=attack/crouch inp={'dir': 'DB', 'btn': None}
+  f 5724 r 1291  286.20s SOL  START 铁贯手 x=887 inp={'dir': 'DB', 'btn': None}
+  f 5736 r 1303  286.80s OURS BLOCK 防御 · 削防 10
+  f 5754 r 1321  287.70s OURS START 回旋踵落 x=803 inp={'dir': 'DB', 'btn': None}
+  f 5768 r 1335  288.40s SOL  BLOCK 防御 · 削防 11
+  f 5785 r 1352  289.25s SOL  START 铁律突进 x=887 inp={'dir': 'DB', 'btn': None}
+  f 5795 r 1362  289.75s SOL  HIT dmg=106 combo=1 hp=160/1 state=attack/attack inp={'dir': 'DB', 'btn': None}
+  f 5816 r 1383  290.80s EVENT down 
+  f 5880 r 1447  294.00s OURS START 直拳 x=555 inp={'dir': 'DB', 'btn': None}

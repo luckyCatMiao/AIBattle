@@ -1,0 +1,70 @@
+{
+  "phase": "比赛中止，需要检查",
+  "round": 1,
+  "results": [],
+  "ready": [
+    "sol",
+    "deepseek-flash"
+  ],
+  "contestants": [
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "short": "Deepseek-Flash"
+    },
+    {
+      "id": "sol",
+      "name": "GPT-6.1 Sol",
+      "short": "Sol"
+    }
+  ],
+  "setup_note": "Sol 沿用既有策略，首轮保持原样；挑战者从零开始",
+  "port": 8836,
+  "rounds": 3,
+  "updated": "2026-10-24T15:50:33",
+  "player_ready": "deepseek-flash",
+  "usage": [
+    {
+      "usage": {
+        "input_tokens": 135732,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 47360768,
+        "output_tokens": 251002,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "modelUsage": {
+        "deepseek-v4.1-flash": {
+          "inputTokens": 135732,
+          "outputTokens": 251002,
+          "cacheReadInputTokens": 47360768,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 7.517560799999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "reported_cost_usd": 7.517560799999999
+    }
+  ],
+  "error": "python3: can't open file '/mnt/c/Users/Admin/Desktop/AIBattle/rts/arena/isolate.py': [Errno 2] No such file or directory\n"
+}

@@ -1,0 +1,135 @@
+==========================================================================================
+r1-g1 seed=4011 2v2 seats=['deepseek-flash', 'sol'] score=[0, 2] reason=常规时间结束
+  frames=2401 (120.05s) poss_frames=[106, 103] segs=26 seg_start_x_med={0: 9.6, 1: 27.21}
+  territory: third_segments=[0, 8] max_prog=[21.5, 38.0] def3rd=[762, 472] att3rd=[472, 762]
+  dist_hist: {0: {'n': 9, 'med': 31.85, 'buckets': [0, 0, 2, 0, 7], 'own_half': 8}, 1: {'n': 16, 'med': 21.45, 'buckets': [7, 1, 4, 0, 4], 'own_half': 8}}
+  GOALS:
+    {"frame": 196, "t": 9.8, "team": 1, "model": "sol", "scorer": "t1u1", "ownGoal": false, "score": [0, 1], "cross_y": 15.29, "lastTouch": "t1u1", "kick_frame": 161, "kick_t": 8.05, "kick_unit": "t1u1", "kick_team": 1, "kick_model": "sol", "kick_x": 11.631, "kick_y": 6.825, "angle_deg": 141.3, "flight": 35, "dist_att_goal": 12.29, "dist_own_goal": 31.97, "ray_y_att": 15.34, "ray_y_own": null, "keeper_kick": [1.32, 11.02], "keeper_kick_dist_cross": 4.27, "keeper_goal": [3.31, 11.91], "keeper_goal_dist_ball": 4.05, "lane": []}
+    {"frame": 993, "t": 49.65, "team": 1, "model": "sol", "scorer": "t1u1", "ownGoal": false, "score": [0, 2], "cross_y": 15.29, "lastTouch": "t1u1", "kick_frame": 961, "kick_t": 48.05, "kick_unit": "t1u1", "kick_team": 1, "kick_model": "sol", "kick_x": 11.935, "kick_y": 8.614, "angle_deg": 148.3, "flight": 32, "dist_att_goal": 11.78, "dist_own_goal": 31.37, "ray_y_att": 15.36, "ray_y_own": null, "keeper_kick": [1.28, 11.05], "keeper_kick_dist_cross": 4.24, "keeper_goal": [2.62, 12.39], "keeper_goal_dist_ball": 3.28, "lane": []}
+  SHOTS (<=20 & on target line):
+    {"frame": 161, "t": 8.05, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.631, "y": 6.825, "dist": 12.29, "ray_y": 15.34}
+    {"frame": 690, "t": 34.5, "team": 1, "model": "sol", "unit": "t1u1", "x": 5.296, "y": 23.316, "dist": 11.17, "ray_y": 15.34}
+    {"frame": 961, "t": 48.05, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.935, "y": 8.614, "dist": 11.78, "ray_y": 15.36}
+    {"frame": 1184, "t": 59.2, "team": 1, "model": "sol", "unit": "t1u1", "x": 12.773, "y": 7.549, "dist": 12.97, "ray_y": 15.36}
+    {"frame": 1373, "t": 68.65, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.678, "y": 6.797, "dist": 12.35, "ray_y": 15.35}
+    {"frame": 1758, "t": 87.9, "team": 1, "model": "sol", "unit": "t1u1", "x": 8.418, "y": 21.65, "dist": 11.4, "ray_y": 15.34}
+    {"frame": 1821, "t": 91.05, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.41, "y": 19.968, "dist": 12.53, "ray_y": 10.64}
+  SAVES:
+    {"frame": 706, "t": 35.3, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 690, "flight": 16, "dist": 11.17, "from": [5.3, 23.32], "ray_y": 15.34}
+    {"frame": 1402, "t": 70.1, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 1373, "flight": 29, "dist": 12.35, "from": [11.68, 6.8], "ray_y": 15.35}
+    {"frame": 1778, "t": 88.9, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 1758, "flight": 20, "dist": 11.4, "from": [8.42, 21.65], "ray_y": 15.34}
+  kicks me=9 opp=16
+  our shots=0 opp shots=7
+==========================================================================================
+r1-g2 seed=4012 1v1 seats=['sol', 'deepseek-flash'] score=[6, 1] reason=常规时间结束
+  frames=2401 (120.05s) poss_frames=[182, 59] segs=29 seg_start_x_med={0: 20.96, 1: 21.0}
+  territory: third_segments=[4, 0] max_prog=[31.8, 21.4] def3rd=[682, 515] att3rd=[515, 682]
+  dist_hist: {0: {'n': 18, 'med': 21.21, 'buckets': [4, 0, 11, 0, 3], 'own_half': 14}, 1: {'n': 5, 'med': 20.7, 'buckets': [0, 0, 5, 0, 0], 'own_half': 0}}
+  GOALS:
+    {"frame": 178, "t": 8.9, "team": 0, "model": "sol", "scorer": "t0u0", "ownGoal": false, "score": [1, 0], "cross_y": 10.58, "lastTouch": "t0u0", "kick_frame": 152, "kick_t": 7.6, "kick_unit": "t0u0", "kick_team": 0, "kick_model": "sol", "kick_x": 32.575, "kick_y": 6.635, "angle_deg": 21.1, "flight": 26, "dist_att_goal": 12.21, "dist_own_goal": 32.21, "ray_y_att": 10.65, "ray_y_own": null, "keeper_kick": [30.72, 7.74], "keeper_kick_dist_cross": 2.84, "keeper_goal": [34.31, 7.29], "keeper_goal_dist_ball": 9.13, "lane": []}
+    {"frame": 369, "t": 18.45, "team": 0, "model": "sol", "scorer": "t0u0", "ownGoal": false, "score": [2, 0], "cross_y": 10.62, "lastTouch": "t0u0", "kick_frame": 343, "kick_t": 17.15, "kick_unit": "t0u0", "kick_team": 0, "kick_model": "sol", "kick_x": 32.664, "kick_y": 6.722, "angle_deg": 20.8, "flight": 26, "dist_att_goal": 12.09, "dist_own_goal": 32.28, "ray_y_att": 10.65, "ray_y_own": null, "keeper_kick": [31.19, 6.12], "keeper_kick_dist_cross": 4.5, "keeper_goal": [34.66, 7.24], "keeper_goal_dist_ball": 8.93, "lane": []}
+    {"frame": 870, "t": 43.5, "team": 0, "model": "sol", "scorer": "t0u0", "ownGoal": false, "score": [3, 0], "cross_y": 10.65, "lastTouch": "t0u0"}
+    {"frame": 1390, "t": 69.5, "team": 0, "model": "sol", "scorer": "t0u0", "ownGoal": false, "score": [4, 0], "cross_y": 10.57, "lastTouch": "t0u0", "kick_frame": 1364, "kick_t": 68.2, "kick_unit": "t0u0", "kick_team": 0, "kick_model": "sol", "kick_x": 32.544, "kick_y": 6.635, "angle_deg": 21.0, "flight": 26, "dist_att_goal": 12.24, "dist_own_goal": 32.18, "ray_y_att": 10.65, "ray_y_own": null, "keeper_kick": [31.07, 6.3], "keeper_kick_dist_cross": 4.27, "keeper_goal": [34.59, 7.3], "keeper_goal_dist_ball": 8.83, "lane": []}
+    {"frame": 1893, "t": 94.65, "team": 0, "model": "sol", "scorer": "t0u0", "ownGoal": false, "score": [5, 0], "cross_y": 10.65, "lastTouch": "t0u0"}
+    {"frame": 2060, "t": 103.0, "team": 1, "model": "deepseek-flash", "scorer": "t1u0", "ownGoal": false, "score": [5, 1], "cross_y": 11.27, "lastTouch": "t1u0", "kick_frame": 1981, "kick_t": 99.05, "kick_unit": "t1u0", "kick_team": 1, "kick_model": "deepseek-flash", "kick_x": 21.685, "kick_y": 12.354, "angle_deg": 183.0, "flight": 79, "dist_att_goal": 20.7, "dist_own_goal": 21.32, "ray_y_att": 11.27, "ray_y_own": null, "keeper_kick": [22.06, 12.95], "keeper_kick_dist_cross": 1.68, "keeper_goal": [9.78, 12.95], "keeper_goal_dist_ball": 8.91, "lane": []}
+    {"frame": 2250, "t": 112.5, "team": 0, "model": "sol", "scorer": "t0u0", "ownGoal": false, "score": [6, 1], "cross_y": 10.57, "lastTouch": "t0u0", "kick_frame": 2224, "kick_t": 111.2, "kick_unit": "t0u0", "kick_team": 0, "kick_model": "sol", "kick_x": 32.544, "kick_y": 6.635, "angle_deg": 21.0, "flight": 26, "dist_att_goal": 12.24, "dist_own_goal": 32.18, "ray_y_att": 10.65, "ray_y_own": null, "keeper_kick": [31.07, 6.3], "keeper_kick_dist_cross": 4.27, "keeper_goal": [34.59, 7.3], "keeper_goal_dist_ball": 8.83, "lane": []}
+  SHOTS (<=20 & on target line):
+    {"frame": 152, "t": 7.6, "team": 0, "model": "sol", "unit": "t0u0", "x": 32.575, "y": 6.635, "dist": 12.21, "ray_y": 10.65}
+    {"frame": 343, "t": 17.15, "team": 0, "model": "sol", "unit": "t0u0", "x": 32.664, "y": 6.722, "dist": 12.09, "ray_y": 10.65}
+    {"frame": 1364, "t": 68.2, "team": 0, "model": "sol", "unit": "t0u0", "x": 32.544, "y": 6.635, "dist": 12.24, "ray_y": 10.65}
+    {"frame": 2224, "t": 111.2, "team": 0, "model": "sol", "unit": "t0u0", "x": 32.544, "y": 6.635, "dist": 12.24, "ray_y": 10.65}
+  SAVES:
+  kicks me=5 opp=18
+  our shots=0 opp shots=4
+==========================================================================================
+r2-g1 seed=4021 3v3 seats=['deepseek-flash', 'sol'] score=[0, 3] reason=常规时间结束
+  frames=2401 (120.05s) poss_frames=[320, 94] segs=36 seg_start_x_med={0: 8.22, 1: 21.8}
+  territory: third_segments=[0, 8] max_prog=[21.1, 32.1] def3rd=[1400, 0] att3rd=[0, 1400]
+  dist_hist: {0: {'n': 16, 'med': 32.96, 'buckets': [0, 0, 1, 3, 12], 'own_half': 15}, 1: {'n': 20, 'med': 19.59, 'buckets': [7, 4, 9, 0, 0], 'own_half': 8}}
+  GOALS:
+    {"frame": 261, "t": 13.05, "team": 1, "model": "sol", "scorer": "t0u2", "ownGoal": true, "score": [0, 1], "cross_y": 14.38, "lastTouch": "t0u2", "kick_frame": 241, "kick_t": 12.05, "kick_unit": "t0u2", "kick_team": 0, "kick_model": "deepseek-flash", "kick_x": 10.036, "kick_y": 12.823, "angle_deg": 170.0, "flight": 20, "dist_att_goal": 32.96, "dist_own_goal": 9.04, "ray_y_att": null, "ray_y_own": 14.42, "keeper_kick": [40.68, 11.11], "keeper_kick_dist_cross": 3.27, "keeper_goal": [40.68, 14.11], "keeper_goal_dist_ball": 39.49, "lane": []}
+    {"frame": 744, "t": 37.2, "team": 1, "model": "sol", "scorer": "t0u2", "ownGoal": true, "score": [0, 2], "cross_y": 14.42, "lastTouch": "t0u2", "kick_frame": 721, "kick_t": 36.05, "kick_unit": "t0u2", "kick_team": 0, "kick_model": "deepseek-flash", "kick_x": 7.459, "kick_y": 6.751, "angle_deg": 130.0, "flight": 23, "dist_att_goal": 36.09, "dist_own_goal": 8.99, "ray_y_att": null, "ray_y_own": 14.45, "keeper_kick": [40.75, 12.35], "keeper_kick_dist_cross": 2.07, "keeper_goal": [40.75, 12.5], "keeper_goal_dist_ball": 39.77, "lane": [["t1u0", 0.25, 33.75], ["t1u2", 0.31, 7.63]]}
+    {"frame": 2223, "t": 111.15, "team": 1, "model": "sol", "scorer": "t0u1", "ownGoal": true, "score": [0, 3], "cross_y": 14.21, "lastTouch": "t0u1", "kick_frame": 2201, "kick_t": 110.05, "kick_unit": "t0u1", "kick_team": 0, "kick_model": "deepseek-flash", "kick_x": 7.426, "kick_y": 6.798, "angle_deg": 130.0, "flight": 22, "dist_att_goal": 36.11, "dist_own_goal": 8.93, "ray_y_att": null, "ray_y_own": 14.46, "keeper_kick": [40.68, 12.37], "keeper_kick_dist_cross": 1.84, "keeper_goal": [40.68, 12.85], "keeper_goal_dist_ball": 39.5, "lane": [["t1u2", 0.21, 7.73], ["t1u0", 0.22, 33.72]]}
+  SHOTS (<=20 & on target line):
+    {"frame": 152, "t": 7.6, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.505, "y": 6.776, "dist": 12.21, "ray_y": 15.35}
+    {"frame": 224, "t": 11.2, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.321, "y": 11.76, "dist": 10.4, "ray_y": 12.06}
+    {"frame": 432, "t": 21.6, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.466, "y": 6.684, "dist": 12.22, "ray_y": 15.35}
+    {"frame": 911, "t": 45.55, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.591, "y": 6.731, "dist": 12.31, "ray_y": 15.34}
+    {"frame": 1364, "t": 68.2, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.394, "y": 6.705, "dist": 12.15, "ray_y": 10.65}
+    {"frame": 2390, "t": 119.5, "team": 1, "model": "sol", "unit": "t1u1", "x": 11.651, "y": 6.808, "dist": 12.32, "ray_y": 15.34}
+  SAVES:
+    {"frame": 182, "t": 9.1, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 152, "flight": 30, "dist": 12.21, "from": [11.51, 6.78], "ray_y": 15.35}
+    {"frame": 462, "t": 23.1, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 432, "flight": 30, "dist": 12.22, "from": [11.47, 6.68], "ray_y": 15.35}
+    {"frame": 942, "t": 47.1, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 911, "flight": 31, "dist": 12.31, "from": [11.59, 6.73], "ray_y": 15.34}
+    {"frame": 1389, "t": 69.45, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 1364, "flight": 25, "dist": 12.15, "from": [11.39, 6.71], "ray_y": 10.65}
+    {"frame": 1946, "t": 97.3, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u1", "shot_frame": 1913, "flight": 33, "dist": 12.67, "from": [11.06, 5.3], "ray_y": 16.34}
+  kicks me=16 opp=20
+  our shots=0 opp shots=6
+==========================================================================================
+r2-g2 seed=4022 5v5 seats=['sol', 'deepseek-flash'] score=[3, 0] reason=常规时间结束
+  frames=2401 (120.05s) poss_frames=[208, 461] segs=37 seg_start_x_med={0: 26.79, 1: 10.45}
+  territory: third_segments=[7, 0] max_prog=[33.2, 24.7] def3rd=[65, 1603] att3rd=[1603, 65]
+  dist_hist: {0: {'n': 17, 'med': 17.08, 'buckets': [8, 1, 5, 2, 1], 'own_half': 8}, 1: {'n': 20, 'med': 31.49, 'buckets': [0, 1, 5, 3, 11], 'own_half': 17}}
+  GOALS:
+    {"frame": 1040, "t": 52.0, "team": 0, "model": "sol", "scorer": "t1u4", "ownGoal": true, "score": [1, 0], "cross_y": 10.87, "lastTouch": "t1u4", "kick_frame": 1021, "kick_t": 51.05, "kick_unit": "t1u4", "kick_team": 1, "kick_model": "deepseek-flash", "kick_x": 36.32, "kick_y": 5.328, "angle_deg": 40.0, "flight": 19, "dist_att_goal": 36.14, "dist_own_goal": 10.17, "ray_y_att": null, "ray_y_own": 10.93, "keeper_kick": [3.27, 12.17], "keeper_kick_dist_cross": 1.3, "keeper_goal": [3.27, 12.64], "keeper_goal_dist_ball": 39.69, "lane": [["t0u0", 0.33, 33.75], ["t0u3", 0.57, 6.63]]}
+    {"frame": 1669, "t": 83.45, "team": 0, "model": "sol", "scorer": "t1u3", "ownGoal": true, "score": [2, 0], "cross_y": 11.26, "lastTouch": "t1u3", "kick_frame": 1641, "kick_t": 82.05, "kick_unit": "t1u3", "kick_team": 1, "kick_model": "deepseek-flash", "kick_x": 35.371, "kick_y": 20.139, "angle_deg": 310.0, "flight": 28, "dist_att_goal": 35.1, "dist_own_goal": 10.45, "ray_y_att": null, "ray_y_own": 11.04, "keeper_kick": [3.28, 13.96], "keeper_kick_dist_cross": 2.7, "keeper_goal": [3.28, 12.86], "keeper_goal_dist_ball": 39.58, "lane": [["t0u0", 0.48, 32.68], ["t0u2", 0.67, 2.79]]}
+    {"frame": 2222, "t": 111.1, "team": 0, "model": "sol", "scorer": "t1u1", "ownGoal": true, "score": [3, 0], "cross_y": 10.87, "lastTouch": "t1u1", "kick_frame": 2201, "kick_t": 110.05, "kick_unit": "t1u1", "kick_team": 1, "kick_model": "deepseek-flash", "kick_x": 33.752, "kick_y": 9.253, "angle_deg": 10.0, "flight": 21, "dist_att_goal": 32.97, "dist_own_goal": 9.98, "ray_y_att": null, "ray_y_own": 10.89, "keeper_kick": [3.31, 12.86], "keeper_kick_dist_cross": 1.99, "keeper_goal": [3.31, 12.86], "keeper_goal_dist_ball": 39.69, "lane": [["t0u0", 0.12, 30.66], ["t0u2", 0.32, 4.47]]}
+  SHOTS (<=20 & on target line):
+    {"frame": 571, "t": 28.55, "team": 0, "model": "sol", "unit": "t0u3", "x": 32.65, "y": 20.692, "dist": 12.9, "ray_y": 10.66}
+    {"frame": 743, "t": 37.15, "team": 0, "model": "sol", "unit": "t0u1", "x": 31.537, "y": 6.678, "dist": 13.09, "ray_y": 10.66}
+    {"frame": 1163, "t": 58.15, "team": 1, "model": "deepseek-flash", "unit": "t1u3", "x": 19.696, "y": 11.802, "dist": 18.73, "ray_y": 10.5}
+    {"frame": 2134, "t": 106.7, "team": 0, "model": "sol", "unit": "t0u1", "x": 34.612, "y": 4.746, "dist": 11.77, "ray_y": 10.65}
+    {"frame": 2184, "t": 109.2, "team": 0, "model": "sol", "unit": "t0u1", "x": 32.823, "y": 8.353, "dist": 11.19, "ray_y": 14.41}
+    {"frame": 2387, "t": 119.35, "team": 0, "model": "sol", "unit": "t0u2", "x": 32.666, "y": 6.711, "dist": 12.1, "ray_y": 15.34}
+  SAVES:
+    {"frame": 604, "t": 30.2, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 0, "shooter_model": "sol", "shooter": "t0u3", "shot_frame": 571, "flight": 33, "dist": 12.9, "from": [32.65, 20.69], "ray_y": 10.66}
+    {"frame": 771, "t": 38.55, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 0, "shooter_model": "sol", "shooter": "t0u1", "shot_frame": 743, "flight": 28, "dist": 13.09, "from": [31.54, 6.68], "ray_y": 10.66}
+    {"frame": 1799, "t": 89.95, "keeper_team": 0, "keeper_model": "sol", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "deepseek-flash", "shooter": "t1u3", "shot_frame": 1761, "flight": 38, "dist": 20.21, "from": [21.11, 15.04], "ray_y": 10.76}
+    {"frame": 2068, "t": 103.4, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 1, "shooter_model": "deepseek-flash", "shooter": "t1u4", "shot_frame": 2041, "flight": 27, "dist": 37.09, "from": [36.5, 2.26], "ray_y": null}
+    {"frame": 2154, "t": 107.7, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 0, "shooter_model": "sol", "shooter": "t0u1", "shot_frame": 2134, "flight": 20, "dist": 11.77, "from": [34.61, 4.75], "ray_y": 10.65}
+  kicks me=20 opp=17
+  our shots=1 opp shots=5
+==========================================================================================
+r3-g1 seed=4031 6v6 seats=['deepseek-flash', 'sol'] score=[0, 0] reason=金球未分胜负，平局
+  frames=2801 (140.05s) poss_frames=[504, 340] segs=61 seg_start_x_med={0: 10.74, 1: 22.58}
+  territory: third_segments=[0, 8] max_prog=[24.3, 39.7] def3rd=[1620, 187] att3rd=[187, 1620]
+  dist_hist: {0: {'n': 34, 'med': 32.12, 'buckets': [0, 3, 5, 7, 19], 'own_half': 29}, 1: {'n': 25, 'med': 20.97, 'buckets': [5, 6, 9, 2, 3], 'own_half': 10}}
+  GOALS:
+  SHOTS (<=20 & on target line):
+    {"frame": 221, "t": 11.05, "team": 1, "model": "sol", "unit": "t1u2", "x": 12.439, "y": 7.532, "dist": 12.68, "ray_y": 10.66}
+    {"frame": 341, "t": 17.05, "team": 0, "model": "deepseek-flash", "unit": "t0u1", "x": 24.105, "y": 7.411, "dist": 19.7, "ray_y": 15.42}
+    {"frame": 478, "t": 23.9, "team": 1, "model": "sol", "unit": "t1u4", "x": 11.285, "y": 21.275, "dist": 13.2, "ray_y": 10.65}
+    {"frame": 1054, "t": 52.7, "team": 1, "model": "sol", "unit": "t1u4", "x": 3.789, "y": 22.099, "dist": 9.52, "ray_y": 15.36}
+    {"frame": 1321, "t": 66.05, "team": 0, "model": "deepseek-flash", "unit": "t0u2", "x": 23.813, "y": 13.834, "dist": 19.21, "ray_y": 12.16}
+    {"frame": 1601, "t": 80.05, "team": 1, "model": "sol", "unit": "t1u3", "x": 10.724, "y": 24.121, "dist": 14.77, "ray_y": 15.36}
+    {"frame": 2648, "t": 132.4, "team": 1, "model": "sol", "unit": "t1u3", "x": 12.064, "y": 8.101, "dist": 12.1, "ray_y": 15.34}
+  SAVES:
+    {"frame": 512, "t": 25.6, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u4", "shot_frame": 478, "flight": 34, "dist": 13.2, "from": [11.29, 21.27], "ray_y": 10.65}
+    {"frame": 1068, "t": 53.4, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u4", "shot_frame": 1054, "flight": 14, "dist": 9.52, "from": [3.79, 22.1], "ray_y": 15.36}
+    {"frame": 1631, "t": 81.55, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u3", "shot_frame": 1601, "flight": 30, "dist": 14.77, "from": [10.72, 24.12], "ray_y": 15.36}
+    {"frame": 2677, "t": 133.85, "keeper_team": 0, "keeper_model": "deepseek-flash", "keeper": "t0u0", "shooter_team": 1, "shooter_model": "sol", "shooter": "t1u3", "shot_frame": 2648, "flight": 29, "dist": 12.1, "from": [12.06, 8.1], "ray_y": 15.34}
+  kicks me=34 opp=25
+  our shots=2 opp shots=5
+==========================================================================================
+r3-g2 seed=4032 4v4 seats=['sol', 'deepseek-flash'] score=[2, 0] reason=常规时间结束
+  frames=2401 (120.05s) poss_frames=[255, 369] segs=41 seg_start_x_med={0: 21.0, 1: 10.68}
+  territory: third_segments=[7, 0] max_prog=[35.1, 27.9] def3rd=[318, 1029] att3rd=[1029, 318]
+  dist_hist: {0: {'n': 21, 'med': 21.17, 'buckets': [5, 4, 7, 0, 5], 'own_half': 10}, 1: {'n': 23, 'med': 30.4, 'buckets': [1, 1, 2, 5, 14], 'own_half': 20}}
+  GOALS:
+    {"frame": 585, "t": 29.25, "team": 0, "model": "sol", "scorer": "t0u2", "ownGoal": false, "score": [1, 0], "cross_y": 10.48, "lastTouch": "t0u2", "kick_frame": 561, "kick_t": 28.05, "kick_unit": "t0u2", "kick_team": 0, "kick_model": "sol", "kick_x": 35.938, "kick_y": 2.793, "angle_deg": 48.1, "flight": 24, "dist_att_goal": 12.41, "dist_own_goal": 36.4, "ray_y_att": 10.66, "ray_y_own": null, "keeper_kick": [42.69, 12.38], "keeper_kick_dist_cross": 1.89, "keeper_goal": [42.69, 11.9], "keeper_goal_dist_ball": 1.43, "lane": []}
+    {"frame": 1805, "t": 90.25, "team": 0, "model": "sol", "scorer": "t0u1", "ownGoal": false, "score": [2, 0], "cross_y": 10.64, "lastTouch": "t0u1", "kick_frame": 1781, "kick_t": 89.05, "kick_unit": "t0u1", "kick_team": 0, "kick_model": "sol", "kick_x": 32.501, "kick_y": 10.21, "angle_deg": 2.4, "flight": 24, "dist_att_goal": 10.86, "dist_own_goal": 31.62, "ray_y_att": 10.65, "ray_y_own": null, "keeper_kick": [42.69, 12.85], "keeper_kick_dist_cross": 2.21, "keeper_goal": [42.69, 12.22], "keeper_goal_dist_ball": 1.58, "lane": []}
+  SHOTS (<=20 & on target line):
+    {"frame": 561, "t": 28.05, "team": 0, "model": "sol", "unit": "t0u2", "x": 35.938, "y": 2.793, "dist": 12.41, "ray_y": 10.66}
+    {"frame": 781, "t": 39.05, "team": 0, "model": "sol", "unit": "t0u1", "x": 30.108, "y": 7.594, "dist": 13.98, "ray_y": 10.65}
+    {"frame": 907, "t": 45.35, "team": 0, "model": "sol", "unit": "t0u2", "x": 28.853, "y": 13.369, "dist": 14.15, "ray_y": 15.35}
+    {"frame": 1695, "t": 84.75, "team": 0, "model": "sol", "unit": "t0u2", "x": 31.486, "y": 7.84, "dist": 12.62, "ray_y": 15.35}
+    {"frame": 1781, "t": 89.05, "team": 0, "model": "sol", "unit": "t0u1", "x": 32.501, "y": 10.21, "dist": 10.86, "ray_y": 10.65}
+    {"frame": 2381, "t": 119.05, "team": 1, "model": "deepseek-flash", "unit": "t1u1", "x": 14.342, "y": 17.201, "dist": 13.99, "ray_y": 14.85}
+  SAVES:
+    {"frame": 811, "t": 40.55, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 0, "shooter_model": "sol", "shooter": "t0u1", "shot_frame": 781, "flight": 30, "dist": 13.98, "from": [30.11, 7.59], "ray_y": 10.65}
+    {"frame": 940, "t": 47.0, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 0, "shooter_model": "sol", "shooter": "t0u2", "shot_frame": 907, "flight": 33, "dist": 14.15, "from": [28.85, 13.37], "ray_y": 15.35}
+    {"frame": 1726, "t": 86.3, "keeper_team": 1, "keeper_model": "deepseek-flash", "keeper": "t1u0", "shooter_team": 0, "shooter_model": "sol", "shooter": "t0u2", "shot_frame": 1695, "flight": 31, "dist": 12.62, "from": [31.49, 7.84], "ray_y": 15.35}
+  kicks me=23 opp=21
+  our shots=1 opp shots=5
+
+saved dev4/postmatch_analysis.json

@@ -1,0 +1,236 @@
+[
+ {
+  "seed": 7001,
+  "seatA": 0,
+  "winner": null,
+  "wins": [
+   1,
+   1
+  ],
+  "rounds": [
+   {
+    "round": 1,
+    "winner": 1,
+    "reason": "到达终点",
+    "wins": [
+     0,
+     1
+    ],
+    "t": 26.85
+   },
+   {
+    "round": 2,
+    "winner": 0,
+    "reason": "到达终点",
+    "wins": [
+     1,
+     1
+    ],
+    "t": 50.2
+   },
+   {
+    "round": 3,
+    "winner": null,
+    "reason": "时间到",
+    "wins": [
+     1,
+     1
+    ],
+    "t": 141.25
+   }
+  ],
+  "pushes": [
+   21,
+   0
+  ],
+  "respawns": [
+   2,
+   4
+  ],
+  "maxX": [
+   153,
+   153.1
+  ],
+  "finished": [
+   false,
+   false
+  ],
+  "maxMs": 192,
+  "avgMs": 10,
+  "windows": 565,
+  "stdoutErr": ""
+ },
+ {
+  "seed": 7001,
+  "seatA": 1,
+  "winner": 1,
+  "wins": [
+   0,
+   2
+  ],
+  "rounds": [
+   {
+    "round": 1,
+    "winner": 1,
+    "reason": "到达终点",
+    "wins": [
+     0,
+     1
+    ],
+    "t": 27
+   },
+   {
+    "round": 2,
+    "winner": 1,
+    "reason": "到达终点",
+    "wins": [
+     0,
+     2
+    ],
+    "t": 50.35
+   }
+  ],
+  "pushes": [
+   8,
+   1
+  ],
+  "respawns": [
+   1,
+   0
+  ],
+  "maxX": [
+   121.8,
+   152.2
+  ],
+  "finished": [
+   false,
+   true
+  ],
+  "maxMs": 737,
+  "avgMs": 36,
+  "windows": 202,
+  "stdoutErr": ""
+ },
+ {
+  "seed": 7005,
+  "seatA": 0,
+  "winner": 0,
+  "wins": [
+   2,
+   0
+  ],
+  "rounds": [
+   {
+    "round": 1,
+    "winner": null,
+    "reason": "时间到",
+    "wins": [
+     0,
+     0
+    ],
+    "t": 91.05
+   },
+   {
+    "round": 2,
+    "winner": 0,
+    "reason": "到达终点",
+    "wins": [
+     1,
+     0
+    ],
+    "t": 115.65
+   },
+   {
+    "round": 3,
+    "winner": 0,
+    "reason": "到达终点",
+    "wins": [
+     2,
+     0
+    ],
+    "t": 144.1
+   }
+  ],
+  "pushes": [
+   15,
+   2
+  ],
+  "respawns": [
+   2,
+   7
+  ],
+  "maxX": [
+   183,
+   168.4
+  ],
+  "finished": [
+   true,
+   false
+  ],
+  "maxMs": 382,
+  "avgMs": 11,
+  "windows": 577,
+  "stdoutErr": ""
+ },
+ {
+  "seed": 7005,
+  "seatA": 1,
+  "winner": null,
+  "wins": [
+   1,
+   1
+  ],
+  "rounds": [
+   {
+    "round": 1,
+    "winner": null,
+    "reason": "时间到",
+    "wins": [
+     0,
+     0
+    ],
+    "t": 91.05
+   },
+   {
+    "round": 2,
+    "winner": 1,
+    "reason": "到达终点",
+    "wins": [
+     0,
+     1
+    ],
+    "t": 115.7
+   },
+   {
+    "round": 3,
+    "winner": 0,
+    "reason": "到达终点",
+    "wins": [
+     1,
+     1
+    ],
+    "t": 144.25
+   }
+  ],
+  "pushes": [
+   12,
+   1
+  ],
+  "respawns": [
+   2,
+   3
+  ],
+  "maxX": [
+   183.1,
+   168.9
+  ],
+  "finished": [
+   true,
+   false
+  ],
+  "maxMs": 393,
+  "avgMs": 20,
+  "windows": 577,
+  "stdoutErr": ""
+ }
+]

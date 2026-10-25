@@ -1,0 +1,144 @@
+========================================================================
+r1-g1  seed=8111  seats=['deepseek-flash', 'sol']  my_team=0  winner=0 (deepseek-flash)
+duration_field=14.62s frames=4164 (208.20s) windows=833
+reason=比分 2:1  errors={'deepseek-flash': 0, 'sol': 0}
+level widths: R1=200(goal 196), R2=172(goal 168), R3=194(goal 190)
+final maxX: deepseek-flash=31.07, sol=28.21
+final deaths: deepseek-flash=2, sol=1
+
+per-round:
+  R1: level 200 goal 196 | t 1.00->91.05 (90.05s) | winner=deepseek-flash reason=时间到 wins=[1, 0]
+    deepseek-flash: x=2.50 maxX=2.50 deaths=0 (+0) finished=False invuln=0.00
+    sol: x=3.40 maxX=2.50 deaths=0 (+0) finished=False invuln=0.00
+  R2: level 172 goal 168 | t 92.05->117.10 (25.05s) | winner=sol reason=到达终点 wins=[1, 1]
+    deepseek-flash: x=2.50 maxX=2.50 deaths=0 (+0) finished=False invuln=0.00
+    sol: x=3.40 maxX=2.50 deaths=0 (+0) finished=False invuln=0.00
+  R3: level 194 goal 190 | t 118.10->208.15 (90.05s) | winner=deepseek-flash reason=时间到 wins=[2, 1]
+    deepseek-flash: x=2.50 maxX=31.07 deaths=2 (+2) finished=False invuln=0.00
+    sol: x=10.80 maxX=28.21 deaths=1 (+1) finished=False invuln=0.70
+
+events by round:
+  -- R1
+     push: 10 events, t 6.75-9.65, x 42.2-58.5
+       deepseek-flash -> sol: 8
+       sol -> deepseek-flash: 2
+       detail: 6.75s deepseek-flash->sol@42.2; 6.80s deepseek-flash->sol@42.5; 7.05s deepseek-flash->sol@44.0; 8.70s deepseek-flash->sol@52.3; 8.75s deepseek-flash->sol@52.3; 8.80s deepseek-flash->sol@52.6; 8.85s deepseek-flash->sol@52.9; 8.95s sol->deepseek-flash@53.5; 9.00s sol->deepseek-flash@54.2; 9.65s deepseek-flash->sol@58.5
+     monster spawn: t=7.25 x=65.69 y=3
+     monster spawn: t=13.55 x=114.64 y=3
+     monster spawn: t=17.80 x=129.52 y=3
+     monster spawn: t=24.00 x=177.04 y=3
+     monster spawn: t=28.70 x=155.55 y=3
+     monster spawn: t=35.15 x=190.00 y=3
+     respawn: t=9.75 team=sol reason=锯齿 x=3.40
+     respawn: t=28.35 team=deepseek-flash reason=地刺 x=2.50
+     go: {"id": 2, "t": 1, "frame": 20, "type": "go", "round": 1}
+     round: {"id": 21, "t": 91.05, "frame": 1821, "type": "round", "round": 1, "team": 0, "reason": "时间到", "wins": [1, 0]}
+  -- R2
+     push: 14 events, t 92.80-106.30, x 8.2-95.9
+       deepseek-flash -> sol: 14
+       detail: 92.80s deepseek-flash->sol@8.2; 92.85s deepseek-flash->sol@8.3; 92.90s deepseek-flash->sol@8.5; 92.95s deepseek-flash->sol@8.7; 93.00s deepseek-flash->sol@8.8; 93.05s deepseek-flash->sol@9.2; 93.45s deepseek-flash->sol@11.8; 93.50s deepseek-flash->sol@12.1; 104.00s deepseek-flash->sol@81.0; 106.10s deepseek-flash->sol@95.0; 106.15s deepseek-flash->sol@95.2; 106.20s deepseek-flash->sol@95.3; 106.25s deepseek-flash->sol@95.6; 106.30s deepseek-flash->sol@95.9
+     monster spawn: t=98.50 x=67.42 y=3
+     monster spawn: t=104.80 x=116.73 y=3
+     monster spawn: t=111.25 x=160.25 y=3
+     go: {"id": 22, "t": 92.05, "frame": 1841, "type": "go", "round": 2}
+     round: {"id": 40, "t": 117.1, "frame": 2342, "type": "round", "round": 2, "team": 1, "reason": "到达终点", "wins": [1, 1]}
+  -- R3
+     push: 6 events, t 120.35-122.10, x 18.1-27.3
+       deepseek-flash -> sol: 5
+       sol -> deepseek-flash: 1
+       detail: 120.35s deepseek-flash->sol@18.1; 120.40s deepseek-flash->sol@18.1; 120.45s deepseek-flash->sol@18.2; 120.50s deepseek-flash->sol@18.5; 120.55s deepseek-flash->sol@18.8; 122.10s sol->deepseek-flash@27.3
+     monster spawn: t=122.35 x=57.52 y=3
+     monster spawn: t=128.30 x=48.74 y=3
+     monster spawn: t=133.15 x=58.18 y=3
+     respawn: t=122.15 team=deepseek-flash reason=地刺 x=2.50
+     respawn: t=126.50 team=deepseek-flash reason=地刺 x=2.50
+     respawn: t=206.85 team=sol reason=怪物 x=3.40
+     go: {"id": 41, "t": 118.1, "frame": 2362, "type": "go", "round": 3}
+     round: {"id": 54, "t": 208.15, "frame": 4163, "type": "round", "round": 3, "team": 0, "reason": "时间到", "wins": [2, 1]}
+
+respawn context (5 frames before):
+  t=9.75 team=sol reason=锯齿
+    f190 t=8.50 deepseek-flash: x=57.23 y=5.63 vx=6.80 vy=-9.10 g=False | sol: x=57.58 y=3.00 vx=6.80 vy=0.00 g=True
+    f191 t=8.55 deepseek-flash: x=57.57 y=5.07 vx=6.80 vy=-11.20 g=False | sol: x=57.75 y=3.00 vx=3.30 vy=0.00 g=True
+    f192 t=8.60 deepseek-flash: x=57.91 y=4.41 vx=6.80 vy=-13.30 g=False | sol: x=58.09 y=3.00 vx=6.80 vy=0.00 g=True
+    f193 t=8.65 deepseek-flash: x=57.91 y=3.64 vx=4.20 vy=-15.40 g=False | sol: x=58.63 y=3.00 vx=3.30 vy=0.00 g=True
+    f194 t=8.70 deepseek-flash: x=58.22 y=3.00 vx=6.20 vy=0.00 g=True | sol: x=58.97 y=3.00 vx=6.80 vy=0.00 g=True
+    f195 t=8.75 deepseek-flash: x=58.56 y=3.00 vx=6.80 vy=0.00 g=True | sol: x=3.40 y=3.00 vx=0.00 vy=0.00 g=True
+  t=28.35 team=deepseek-flash reason=地刺
+    f562 t=27.10 deepseek-flash: x=182.37 y=5.00 vx=6.80 vy=1.40 g=False | sol: x=129.42 y=3.00 vx=6.80 vy=0.00 g=True
+    f563 t=27.15 deepseek-flash: x=182.71 y=4.96 vx=6.80 vy=-0.70 g=False | sol: x=129.76 y=3.00 vx=6.80 vy=0.00 g=True
+    f564 t=27.20 deepseek-flash: x=183.05 y=4.82 vx=6.80 vy=-2.80 g=False | sol: x=130.10 y=3.00 vx=6.80 vy=0.00 g=True
+    f565 t=27.25 deepseek-flash: x=183.39 y=4.58 vx=6.80 vy=-4.90 g=False | sol: x=130.44 y=3.00 vx=6.80 vy=0.00 g=True
+    f566 t=27.30 deepseek-flash: x=183.73 y=4.23 vx=6.80 vy=-7.00 g=False | sol: x=130.78 y=3.00 vx=6.80 vy=0.00 g=True
+    f567 t=27.35 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=131.12 y=3.00 vx=6.80 vy=0.00 g=True
+  t=122.15 team=deepseek-flash reason=地刺
+    f2438 t=3.80 deepseek-flash: x=26.03 y=6.09 vx=6.80 vy=-7.00 g=False | sol: x=26.70 y=3.00 vx=0.44 vy=0.00 g=True
+    f2439 t=3.85 deepseek-flash: x=26.37 y=5.63 vx=6.80 vy=-9.10 g=False | sol: x=26.70 y=3.00 vx=0.00 vy=0.00 g=True
+    f2440 t=3.90 deepseek-flash: x=26.71 y=5.07 vx=6.80 vy=-11.20 g=False | sol: x=26.87 y=3.00 vx=3.50 vy=0.00 g=True
+    f2441 t=3.95 deepseek-flash: x=26.95 y=4.41 vx=4.80 vy=-13.30 g=False | sol: x=26.89 y=3.00 vx=0.32 vy=0.00 g=True
+    f2442 t=4.00 deepseek-flash: x=27.61 y=3.64 vx=2.80 vy=-15.40 g=False | sol: x=26.89 y=3.00 vx=0.00 vy=0.00 g=True
+    f2443 t=4.05 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=26.71 y=3.00 vx=-3.50 vy=0.00 g=True
+  t=126.50 team=deepseek-flash reason=地刺
+    f2525 t=8.15 deepseek-flash: x=29.37 y=5.00 vx=6.80 vy=1.40 g=False | sol: x=26.09 y=3.00 vx=0.00 vy=0.00 g=True
+    f2526 t=8.20 deepseek-flash: x=29.71 y=4.96 vx=6.80 vy=-0.70 g=False | sol: x=26.09 y=3.00 vx=0.00 vy=0.00 g=True
+    f2527 t=8.25 deepseek-flash: x=30.05 y=4.82 vx=6.80 vy=-2.80 g=False | sol: x=26.09 y=3.00 vx=0.00 vy=0.00 g=True
+    f2528 t=8.30 deepseek-flash: x=30.39 y=4.58 vx=6.80 vy=-4.90 g=False | sol: x=26.26 y=3.00 vx=3.50 vy=0.00 g=True
+    f2529 t=8.35 deepseek-flash: x=30.73 y=4.23 vx=6.80 vy=-7.00 g=False | sol: x=26.28 y=3.00 vx=0.32 vy=0.00 g=True
+    f2530 t=8.40 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=26.47 y=3.00 vx=3.82 vy=0.00 g=True
+  t=206.85 team=sol reason=怪物
+    f4132 t=88.50 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=27.47 y=4.96 vx=0.00 vy=-0.70 g=False
+    f4133 t=88.55 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=27.47 y=4.82 vx=0.00 vy=-2.80 g=False
+    f4134 t=88.60 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=27.47 y=4.58 vx=0.00 vy=-4.90 g=False
+    f4135 t=88.65 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=27.47 y=4.23 vx=0.00 vy=-7.00 g=False
+    f4136 t=88.70 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=27.57 y=3.77 vx=2.00 vy=-9.10 g=False
+    f4137 t=88.75 deepseek-flash: x=2.50 y=3.00 vx=0.00 vy=0.00 g=True | sol: x=3.40 y=3.00 vx=0.00 vy=0.00 g=True
+
+========================================================================
+r1-g2  seed=8112  seats=['sol', 'deepseek-flash']  my_team=1  winner=0 (sol)
+duration_field=3.99s frames=969 (48.45s) windows=194
+reason=比分 2:0  errors={'deepseek-flash': 0, 'sol': 0}
+level widths: R1=151(goal 147), R2=174(goal 170)
+final maxX: sol=170.26, deepseek-flash=94.87
+final deaths: sol=0, deepseek-flash=1
+
+per-round:
+  R1: level 151 goal 147 | t 1.00->22.50 (21.50s) | winner=sol reason=到达终点 wins=[1, 0]
+    sol: x=2.50 maxX=2.50 deaths=0 (+0) finished=False invuln=0.00
+    deepseek-flash: x=3.40 maxX=2.50 deaths=0 (+0) finished=False invuln=0.00
+  R2: level 174 goal 170 | t 23.50->48.40 (24.90s) | winner=sol reason=到达终点 wins=[2, 0]
+    sol: x=170.26 maxX=170.26 deaths=0 (+0) finished=True invuln=0.00
+    deepseek-flash: x=94.87 maxX=94.87 deaths=1 (+1) finished=False invuln=0.00
+
+events by round:
+  -- R1
+     push: 4 events, t 9.90-16.90, x 63.1-109.3
+       sol -> deepseek-flash: 3
+       deepseek-flash -> sol: 1
+       detail: 9.90s sol->deepseek-flash@63.1; 9.95s sol->deepseek-flash@63.4; 11.20s sol->deepseek-flash@73.8; 16.90s deepseek-flash->sol@109.3
+     monster spawn: t=6.75 x=60.99 y=3
+     monster spawn: t=12.70 x=114.97 y=3
+     monster spawn: t=17.90 x=141.00 y=3
+     go: {"id": 2, "t": 1, "frame": 20, "type": "go", "round": 1}
+     round: {"id": 10, "t": 22.5, "frame": 450, "type": "round", "round": 1, "team": 0, "reason": "到达终点", "wins": [1, 0]}
+  -- R2
+     monster spawn: t=28.65 x=60.67 y=3
+     monster spawn: t=33.60 x=105.78 y=3
+     monster spawn: t=39.80 x=135.10 y=3
+     monster spawn: t=44.20 x=164.00 y=3
+     respawn: t=34.80 team=deepseek-flash reason=锯齿 x=3.40
+     go: {"id": 11, "t": 23.5, "frame": 470, "type": "go", "round": 2}
+     round: {"id": 17, "t": 48.4, "frame": 968, "type": "round", "round": 2, "team": 0, "reason": "到达终点", "wins": [2, 0]}
+
+respawn context (5 frames before):
+  t=34.80 team=deepseek-flash reason=锯齿
+    f691 t=11.05 sol: x=76.65 y=4.93 vx=4.80 vy=3.50 g=False | deepseek-flash: x=78.38 y=4.93 vx=6.80 vy=3.50 g=False
+    f692 t=11.10 sol: x=76.99 y=5.00 vx=6.80 vy=1.40 g=False | deepseek-flash: x=78.72 y=5.00 vx=6.80 vy=1.40 g=False
+    f693 t=11.15 sol: x=77.33 y=4.96 vx=6.80 vy=-0.70 g=False | deepseek-flash: x=79.06 y=4.96 vx=6.80 vy=-0.70 g=False
+    f694 t=11.20 sol: x=77.67 y=4.82 vx=6.80 vy=-2.80 g=False | deepseek-flash: x=79.40 y=4.82 vx=6.80 vy=-2.80 g=False
+    f695 t=11.25 sol: x=78.01 y=4.58 vx=6.80 vy=-4.90 g=False | deepseek-flash: x=79.74 y=4.58 vx=6.80 vy=-4.90 g=False
+    f696 t=11.30 sol: x=78.35 y=4.23 vx=6.80 vy=-7.00 g=False | deepseek-flash: x=3.40 y=3.00 vx=0.00 vy=0.00 g=True
+
+========================================================================
+MY SUMMARY
+r1-g1: my seat=0 winner=deepseek-flash score=2:1 deaths=2 maxX=31.07 level=194
+r1-g2: my seat=1 winner=sol score=0:2 deaths=1 maxX=94.87 level=174

@@ -1,0 +1,69 @@
+mismatches=0/99
+W0 tick=0 round=1 same=True note='bomb@16,15 OPEN 27.9'
+W1 tick=20 round=1 same=True note='approach 19.2'
+W2 tick=40 round=1 same=True note='approach 19.2'
+W3 tick=60 round=1 same=True note='bomb@15,15 OPEN 29.6'
+W4 tick=80 round=1 same=True note='bomb@15,15 OPEN 27.9'
+W5 tick=100 round=1 same=True note='approach 27.6'
+W6 tick=120 round=1 same=True note='approach 19.2'
+W7 tick=140 round=1 same=True note='bomb@13,14 OPEN 19.6'
+W8 tick=160 round=1 same=True note='approach 27.6'
+W9 tick=180 round=1 same=True note='approach 9.3'
+W10 tick=200 round=1 same=True note='bomb@13,13 OPEN 9.6'
+W11 tick=220 round=1 same=True note='approach 19.3 |noend'
+W12 tick=240 round=1 same=True note='bomb@13,13 OPEN 19.6'
+
+===== STDERR =====
+cell=(17,15) t0=0 spd=0 bomb=0/1 nBombs=0 cands=bomb@16,15 OPEN:27.9 | bomb@17,14 OPEN:27.9 | approach:27.6 | stay:-0.6 | bomb@17,16:-2.5 | bomb@18,15:-2.5
+   bombs=[] blasts=[] t0pos=(17,15) p=(0,0) mp=1.000 tiles=[0, 0, 0]
+   pick bomb@16,15 OPEN alive=True path=[(17, 15), (16, 15), (17, 15), (17, 14)]
+-> bomb@16,15 OPEN 27.9
+cell=(17,14) t0=1 spd=0 bomb=1/1 nBombs=2 cands=approach:19.2 | stay:-2.4
+   bombs=[(2, 1, 28), (16, 15, 28)] blasts=[] t0pos=(17,14) p=(0,0) mp=1.000 tiles=[1, 0, 1]
+   pick approach alive=True path=[(17, 14)]
+-> approach 19.2
+cell=(17,14) t0=0 spd=0 bomb=1/1 nBombs=2 cands=approach:19.2 | stay:-2.4
+   bombs=[(2, 1, 8), (16, 15, 8)] blasts=[] t0pos=(17,14) p=(0,0) mp=1.000 tiles=[1, 0, 1]
+   pick approach alive=True path=[(17, 14)]
+-> approach 19.2
+cell=(17,14) t0=0 spd=0 bomb=0/1 nBombs=0 cands=bomb@15,15 OPEN:29.6 | bomb@17,14 OPEN:29.6 | approach:29.3 | bomb@17,15:-0.8 | bomb@16,15:-0.8 | stay:-2.4
+   bombs=[] blasts=[] t0pos=(17,14) p=(0,0) mp=1.000 tiles=[1, 0, 1]
+   pick bomb@15,15 OPEN alive=True path=[(17, 14), (17, 15), (16, 15), (15, 15), (14, 15), (13, 15)]
+-> bomb@15,15 OPEN 29.6
+cell=(15,15) t0=1 spd=0 bomb=0/1 nBombs=0 cands=bomb@15,15 OPEN:27.9 | bomb@13,14 OPEN:27.9 | bomb@12,15 OPEN:27.9 | bomb@13,15 OPEN:27.9 | bomb@17,14 OPEN:27.9 | approach:27.6
+   bombs=[] blasts=[] t0pos=(15,15) p=(0,0) mp=1.000 tiles=[0, 0, 0]
+   pick bomb@15,15 OPEN alive=True path=[(15, 15), (14, 15), (13, 15)]
+-> bomb@15,15 OPEN 27.9
+cell=(13,15) t0=0 spd=0 bomb=1/1 nBombs=2 cands=approach:27.6 | stay:-0.6
+   bombs=[(3, 1, 21), (15, 15, 22)] blasts=[] t0pos=(13,15) p=(0,0) mp=1.000 tiles=[0, 0, 0]
+   pick approach alive=True path=[(13, 15), (12, 15)]
+-> approach 27.6
+cell=(12,15) t0=0 spd=0 bomb=1/1 nBombs=3 cands=approach:19.2 | stay:-2.4
+   bombs=[(3, 1, 1), (15, 15, 2), (5, 1, 35)] blasts=[] t0pos=(12,15) p=(0,0) mp=1.000 tiles=[2, 0, 0]
+   pick approach alive=True path=[(12, 15)]
+-> approach 19.2
+cell=(12,15) t0=0 spd=0 bomb=0/1 nBombs=1 cands=bomb@13,14 OPEN:19.6 | bomb@12,15 OPEN:19.6 | bomb@15,14 OPEN:19.6 | bomb@13,15 OPEN:19.6 | approach:19.2 | bomb@15,15:-0.7
+   bombs=[(5, 1, 15)] blasts=[] t0pos=(12,15) p=(0,0) mp=1.000 tiles=[2, 0, 0]
+   pick bomb@13,14 OPEN alive=True path=[(12, 15), (13, 15), (13, 14), (13, 15), (12, 15)]
+-> bomb@13,14 OPEN 19.6
+cell=(13,15) t0=1 spd=0 bomb=1/1 nBombs=1 cands=approach:27.6 | stay:-0.7
+   bombs=[(13, 14, 35)] blasts=[(5, 1), (6, 1), (4, 1), (5, 2), (5, 0)] t0pos=(13,15) p=(0,0) mp=1.000 tiles=[0, 0, 0]
+   pick approach alive=True path=[(13, 15), (12, 15)]
+-> approach 27.6
+cell=(12,15) t0=0 spd=0 bomb=1/1 nBombs=1 cands=approach:9.3 | stay:-2.4
+   bombs=[(13, 14, 15)] blasts=[] t0pos=(12,15) p=(0,0) mp=1.000 tiles=[2, 0, 0]
+   pick approach alive=True path=[(12, 15)]
+-> approach 9.3
+cell=(12,15) t0=0 spd=0 bomb=0/1 nBombs=1 cands=bomb@13,13 OPEN:9.6 | bomb@12,15 OPEN:9.6 | bomb@13,15 OPEN:9.6 | approach:9.3 | bomb@15,15:-0.7 | bomb@14,15:-0.8
+   bombs=[(5, 1, 31)] blasts=[(13, 14), (13, 15), (13, 13)] t0pos=(12,15) p=(0,0) mp=1.000 tiles=[2, 0, 0]
+   pick bomb@13,13 OPEN alive=True path=[(12, 15), (12, 15), (12, 15), (12, 15), (12, 15), (12, 15), (12, 15), (13, 15)]
+-> bomb@13,13 OPEN 9.6
+cell=(12,15) t0=0 spd=0 bomb=0/1 nBombs=2 cands=approach:19.3 | stay:-2.4
+   bombs=[(5, 1, 11), (3, 1, 31)] blasts=[] t0pos=(12,15) p=(0,0) mp=1.000 tiles=[2, 0, 0]
+   pick approach alive=True path=[(12, 15), (13, 15), (13, 14), (13, 13)]
+-> approach 19.3 |noend
+cell=(13,14) t0=3 spd=0 bomb=0/1 nBombs=0 cands=bomb@13,13 OPEN:19.6 | bomb@12,15 OPEN:19.6 | bomb@13,15 OPEN:19.6 | bomb@14,13 OPEN:19.6 | approach:19.3 | stay:-0.7
+   bombs=[] blasts=[(3, 1), (4, 1), (5, 1), (2, 1), (1, 1), (3, 2), (3, 3), (3, 0), (5, 1), (6, 1), (7, 1), (4, 1), (3, 1), (5, 2), (5, 3), (5, 0)] t0pos=(13,14) p=(0,0) mp=0.667 tiles=[1, 0, 1]
+   pick bomb@13,13 OPEN alive=True path=[(13, 14), (13, 13), (13, 14), (13, 15)]
+-> bomb@13,13 OPEN 19.6
+cell=(13,15) t0=4 spd=0 bomb=1/1 nBombs=1 cands=approach:17.6 | stay:-0.6

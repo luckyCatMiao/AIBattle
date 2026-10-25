@@ -1,0 +1,3 @@
+Submitted `entry.json` running `node agent.js`.
+
+Fixed stale movement orders after completed captures. Validated 5,844 public observations with zero command errors; maximum response computation was 15.1 ms. Strategy, replay lessons, tests and weaknesses are documented in `review.md`.

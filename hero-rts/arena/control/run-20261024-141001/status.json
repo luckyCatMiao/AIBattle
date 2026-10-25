@@ -1,0 +1,23 @@
+{
+  "run": "run-20261024-141001",
+  "phase": "比赛中止，需要检查",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，准备时间不设上限；双方可见相同历史公开回放；每轮交换出生点打两局；每0.25秒同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 170980,
+  "completed": false,
+  "error": "'NoneType' object has no attribute 'name'",
+  "updated": "2026-10-24T14:10:01"
+}

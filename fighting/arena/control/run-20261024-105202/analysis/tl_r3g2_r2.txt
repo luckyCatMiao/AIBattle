@@ -1,0 +1,27 @@
+=== r3-g2 round 2: frames 1772..2157, 19.25s, winner=GPT-6.1 Sol ===
+our team ['vex', 'kestrel', 'aegis'] sol team ['kestrel', 'aegis', 'vex']
+  f 1772 r    0   88.60s EVENT suddenDeath 疾影 · Vex 在决着阶段被拖垮
+  f 1772 r    0   88.60s EVENT ko 疾影 · Vex 被击败
+  f 1772 r    0   88.60s EVENT roundEnd 第 1 局：长弓 · Kestrel 胜（击倒）
+  f 1817 r   45   90.85s SOL  START 空中重拳 x=669 inp={'dir': 'B', 'btn': None}
+  f 1862 r   90   93.10s SOL  START 穿云箭 x=700 inp={'dir': 'DB', 'btn': None}
+  f 1880 r  108   94.00s OURS BLOCK 防御 · 削防 13
+  f 1899 r  127   94.95s OURS START 踩踏 x=911 inp={'dir': 'DB', 'btn': None}
+  f 1920 r  148   96.00s OURS START 短弓柄 x=889 inp={'dir': 'F', 'btn': None}
+  f 1923 r  151   96.15s SOL  BLOCK 防御 · 削防 4
+  f 1934 r  162   96.70s SOL  START 短弓柄 x=803 inp={'dir': 'DB', 'btn': None}
+  f 1937 r  165   96.85s OURS BLOCK 防御 · 削防 4
+  f 1948 r  176   97.40s OURS START 高踢 x=899 inp={'dir': 'DB', 'btn': None}
+  f 1950 r  178   97.50s SOL  START 弓身横扫 x=803 inp={'dir': 'DB', 'btn': None}
+  f 1961 r  189   98.05s SOL  HIT dmg=132 combo=1 hp=983/483 state=attack/stand inp={'dir': 'DB', 'btn': None}
+  f 1967 r  195   98.35s SOL  START 高踢 x=803 inp={'dir': 'DB', 'btn': None}
+  f 1980 r  208   99.00s SOL  HIT dmg=137 combo=2 hp=851/483 state=hitstun/attack inp={'dir': 'DB', 'btn': None}
+  f 1988 r  216   99.40s SOL  START 长弓 · 万矢 x=803 inp={'dir': 'B', 'btn': None}
+  f 1988 r  216   99.40s SOL  SUPER 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+  f 2002 r  230  100.10s SOL  HIT dmg=240 combo=3 hp=714/483 state=hitstun/attack inp={'dir': 'DB', 'btn': None}
+  f 2011 r  239  100.55s SOL  HIT dmg=210 combo=4 hp=474/483 state=hitstun/attack inp={'dir': 'DB', 'btn': None}
+  f 2020 r  248  101.00s SOL  HIT dmg=180 combo=5 hp=474/483 state=hitstun/attack inp={'dir': 'DB', 'btn': None}
+  f 2102 r  330  105.10s SOL  START 穿云箭 x=776 inp={'dir': 'F', 'btn': None}
+  f 2121 r  349  106.05s OURS BLOCK 防御 · 削防 13
+  f 2138 r  366  106.90s SOL  START 穿云箭 x=776 inp={'dir': 'DB', 'btn': None}
+  f 2140 r  368  107.00s OURS START 踩踏 x=1000 inp={'dir': 'DB', 'btn': None}

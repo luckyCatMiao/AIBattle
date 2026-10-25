@@ -1,0 +1,167 @@
+[
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "round1",
+    "seat": 0,
+    "score": [
+      11,
+      1
+    ],
+    "frames": 1547,
+    "windows": 155,
+    "maxMs": 153.9751,
+    "hits": [
+      21,
+      32
+    ],
+    "smashes": [
+      1,
+      27
+    ],
+    "minStamina": [
+      26.700000000000003,
+      14.800000000000058
+    ],
+    "reasons": {
+      "落在自己半场": 11,
+      "落在对方半场": 1
+    },
+    "hitKinds": {
+      "1-smash": 27,
+      "0-lift": 13,
+      "1-clear": 4,
+      "0-clear": 7,
+      "0-smash": 1,
+      "1-lift": 1
+    },
+    "misses": 0,
+    "service": {
+      "won": 10,
+      "lost": 1
+    },
+    "winner": 0,
+    "longestRally": 8
+  },
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "round1",
+    "seat": 1,
+    "score": [
+      1,
+      11
+    ],
+    "frames": 1573,
+    "windows": 158,
+    "maxMs": 49.17750000000024,
+    "hits": [
+      33,
+      23
+    ],
+    "smashes": [
+      31,
+      2
+    ],
+    "minStamina": [
+      21.499999999997478,
+      18.700000000000035
+    ],
+    "reasons": {
+      "落在对方半场": 1,
+      "落在自己半场": 11
+    },
+    "hitKinds": {
+      "1-smash": 2,
+      "0-lift": 2,
+      "1-clear": 7,
+      "0-smash": 31,
+      "1-lift": 14
+    },
+    "misses": 0,
+    "service": {
+      "won": 10,
+      "lost": 0
+    },
+    "winner": 1,
+    "longestRally": 15
+  },
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "r2_lift",
+    "seat": 0,
+    "score": [
+      0,
+      0
+    ],
+    "frames": 4800,
+    "windows": 480,
+    "maxMs": 111.30290000000241,
+    "hits": [
+      79,
+      80
+    ],
+    "smashes": [
+      0,
+      0
+    ],
+    "minStamina": [
+      27.100000000000005,
+      28.000000000000007
+    ],
+    "reasons": {},
+    "hitKinds": {
+      "1-lift": 80,
+      "0-clear": 79
+    },
+    "misses": 0,
+    "service": {
+      "won": 0,
+      "lost": 0
+    },
+    "winner": null,
+    "longestRally": 159
+  },
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "r2_lift",
+    "seat": 1,
+    "score": [
+      0,
+      2
+    ],
+    "frames": 4800,
+    "windows": 480,
+    "maxMs": 182.7149999999965,
+    "hits": [
+      86,
+      86
+    ],
+    "smashes": [
+      0,
+      9
+    ],
+    "minStamina": [
+      26.700000000000003,
+      20.00000000000002
+    ],
+    "reasons": {
+      "落在对方半场": 2
+    },
+    "hitKinds": {
+      "1-smash": 9,
+      "0-lift": 86,
+      "1-clear": 56,
+      "1-drop": 21
+    },
+    "misses": 0,
+    "service": {
+      "won": 1,
+      "lost": 0
+    },
+    "winner": 1,
+    "longestRally": 69
+  }
+]

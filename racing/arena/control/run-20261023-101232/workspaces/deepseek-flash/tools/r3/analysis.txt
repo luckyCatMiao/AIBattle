@@ -1,0 +1,188 @@
+================================================================================
+r3-g1 seed 5031 seats ['deepseek-flash', 'sol'] frames 245 winner 1
+track length 87.489 halfWidth 3.571
+
+-- car 0 deepseek-flash
+run frames 215 t range 1.5 12.200000000000001
+speed min/avg/max 0.00 18.13 26.33
+offroad frames 0 boost frames 100 drift frames 77
+  lap 1 reached at t=6.50 tick=130  lapdur=5.00 progress=83.77 speed=22.13
+  lap 2 reached at t=11.00 tick=220  lapdur=4.50 progress=171.88 speed=20.39
+  samples (t, lap, progress, speed, nextCp, boosting, drifting, energy):
+     1.50 lap0 prog    0.00 sp  0.00 cp1 b0 d0 E0.00
+     2.00 lap0 prog   85.64 sp  7.23 cp1 b0 d0 E0.00
+     2.50 lap0 prog    3.51 sp 13.74 cp2 b0 d0 E0.00
+     3.00 lap0 prog   14.60 sp 14.39 cp3 b0 d0 E0.00
+     3.50 lap0 prog   22.50 sp 16.37 cp4 b0 d0 E0.11
+     4.00 lap0 prog   32.15 sp 21.61 cp6 b1 d1 E0.01
+     4.50 lap0 prog   41.35 sp 19.26 cp7 b1 d0 E0.06
+     5.00 lap0 prog   52.14 sp 21.59 cp8 b0 d0 E0.14
+     5.50 lap0 prog   63.55 sp 23.95 cp10 b1 d1 E0.07
+     6.00 lap0 prog   73.94 sp 23.46 cp11 b1 d0 E0.13
+     6.50 lap1 prog   83.77 sp 22.13 cp1 b1 d0 E0.06
+     7.00 lap1 prog   93.82 sp 15.15 cp2 b0 d0 E0.00
+     7.50 lap1 prog  102.69 sp 15.38 cp3 b0 d0 E0.00
+     8.00 lap1 prog  111.07 sp 15.36 cp4 b0 d0 E0.10
+     8.50 lap1 prog  120.89 sp 18.59 cp6 b0 d0 E0.06
+     9.00 lap1 prog  130.16 sp 18.35 cp7 b1 d0 E0.06
+     9.50 lap1 prog  140.57 sp 18.87 cp8 b0 d0 E0.16
+    10.00 lap1 prog  151.69 sp 24.77 cp10 b1 d1 E0.03
+    10.50 lap1 prog  162.79 sp 21.55 cp11 b1 d0 E0.12
+    11.00 lap2 prog  171.88 sp 20.39 cp1 b1 d0 E0.07
+    11.50 lap2 prog  181.31 sp 15.68 cp2 b0 d0 E0.01
+    12.00 lap2 prog  190.76 sp 17.74 cp3 b1 d0 E0.01
+
+-- car 1 sol
+run frames 215 t range 1.5 12.200000000000001
+speed min/avg/max 0.00 22.53 29.18
+offroad frames 0 boost frames 182 drift frames 106
+  lap 1 reached at t=5.70 tick=114  lapdur=4.20 progress=84.39 speed=24.60
+  lap 2 reached at t=9.05 tick=181  lapdur=3.35 progress=171.26 speed=26.63
+  lap 3 reached at t=12.20 tick=244  lapdur=3.15 progress=258.75 speed=27.18
+  samples (t, lap, progress, speed, nextCp, boosting, drifting, energy):
+     1.50 lap0 prog    0.00 sp  0.00 cp1 b0 d0 E0.00
+     2.00 lap0 prog   82.57 sp  7.22 cp1 b0 d1 E0.00
+     2.50 lap0 prog    0.64 sp 15.14 cp1 b0 d1 E0.01
+     3.00 lap0 prog   12.68 sp 20.54 cp3 b1 d0 E0.10
+     3.50 lap0 prog   24.10 sp 23.98 cp4 b1 d0 E0.15
+     4.00 lap0 prog   38.09 sp 26.74 cp6 b1 d1 E0.03
+     4.50 lap0 prog   52.14 sp 25.69 cp8 b1 d0 E0.10
+     5.00 lap0 prog   65.44 sp 23.45 cp10 b1 d0 E0.23
+     5.50 lap0 prog   77.33 sp 24.44 cp0 b1 d0 E0.10
+     6.00 lap1 prog   91.00 sp 24.61 cp2 b1 d0 E0.02
+     6.50 lap1 prog  103.87 sp 20.85 cp3 b1 d0 E0.16
+     7.00 lap1 prog  113.61 sp 23.89 cp5 b1 d0 E0.02
+     7.50 lap1 prog  127.96 sp 21.09 cp7 b1 d0 E0.16
+     8.00 lap1 prog  140.57 sp 25.54 cp8 b1 d1 E0.12
+     8.50 lap1 prog  154.19 sp 25.09 cp10 b1 d1 E0.28
+     9.00 lap1 prog  170.06 sp 25.86 cp0 b1 d0 E0.34
+     9.50 lap2 prog  184.55 sp 25.88 cp2 b1 d0 E0.45
+    10.00 lap2 prog  195.73 sp 23.18 cp4 b1 d1 E0.36
+    10.50 lap2 prog  210.58 sp 25.20 cp6 b1 d0 E0.38
+    11.00 lap2 prog  224.32 sp 26.92 cp8 b1 d0 E0.46
+    11.50 lap2 prog  236.48 sp 23.08 cp10 b1 d1 E0.30
+    12.00 lap2 prog  250.96 sp 24.78 cp11 b1 d0 E0.20
+
+-- delta samples: t, lap0/prog0, lap1/prog1, progress diff (lap-aware)
+   0.00  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   0.50  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   1.00  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   1.50  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   2.00  p0 lap0   85.64 sp 7.23 | p1 lap0   82.57 sp 7.22 | diff    3.07
+   2.50  p0 lap0    3.51 sp13.74 | p1 lap0    0.64 sp15.14 | diff    2.88
+   3.00  p0 lap0   14.60 sp14.39 | p1 lap0   12.68 sp20.54 | diff    1.92
+   3.50  p0 lap0   22.50 sp16.37 | p1 lap0   24.10 sp23.98 | diff   -1.60
+   4.00  p0 lap0   32.15 sp21.61 | p1 lap0   38.09 sp26.74 | diff   -5.94
+   4.50  p0 lap0   41.35 sp19.26 | p1 lap0   52.14 sp25.69 | diff  -10.79
+   5.00  p0 lap0   52.14 sp21.59 | p1 lap0   65.44 sp23.45 | diff  -13.30
+   5.50  p0 lap0   63.55 sp23.95 | p1 lap0   77.33 sp24.44 | diff  -13.78
+   6.00  p0 lap0   73.94 sp23.46 | p1 lap1   91.00 sp24.61 | diff -104.55
+   6.50  p0 lap1   83.77 sp22.13 | p1 lap1  103.87 sp20.85 | diff  -20.11
+   7.00  p0 lap1   93.82 sp15.15 | p1 lap1  113.61 sp23.89 | diff  -19.79
+   7.50  p0 lap1  102.69 sp15.38 | p1 lap1  127.96 sp21.09 | diff  -25.27
+   8.00  p0 lap1  111.07 sp15.36 | p1 lap1  140.57 sp25.54 | diff  -29.50
+   8.50  p0 lap1  120.89 sp18.59 | p1 lap1  154.19 sp25.09 | diff  -33.30
+   9.00  p0 lap1  130.16 sp18.35 | p1 lap1  170.06 sp25.86 | diff  -39.90
+   9.50  p0 lap1  140.57 sp18.87 | p1 lap2  184.55 sp25.88 | diff -131.47
+  10.00  p0 lap1  151.69 sp24.77 | p1 lap2  195.73 sp23.18 | diff -131.53
+  10.50  p0 lap1  162.79 sp21.55 | p1 lap2  210.58 sp25.20 | diff -135.28
+  11.00  p0 lap2  171.88 sp20.39 | p1 lap2  224.32 sp26.92 | diff  -52.45
+  11.50  p0 lap2  181.31 sp15.68 | p1 lap2  236.48 sp23.08 | diff  -55.17
+  12.00  p0 lap2  190.76 sp17.74 | p1 lap2  250.96 sp24.78 | diff  -60.20
+================================================================================
+r3-g2 seed 5032 seats ['sol', 'deepseek-flash'] frames 267 winner 0
+track length 87.530 halfWidth 4.074
+
+-- car 0 sol
+run frames 237 t range 1.5 13.3
+speed min/avg/max 0.00 19.53 28.59
+offroad frames 0 boost frames 153 drift frames 102
+  lap 1 reached at t=6.05 tick=121  lapdur=4.55 progress=83.27 speed=21.12
+  lap 2 reached at t=9.85 tick=197  lapdur=3.80 progress=171.59 speed=18.07
+  lap 3 reached at t=13.30 tick=266  lapdur=3.45 progress=258.33 speed=27.49
+  samples (t, lap, progress, speed, nextCp, boosting, drifting, energy):
+     1.50 lap0 prog    0.00 sp  0.00 cp1 b0 d0 E0.00
+     2.00 lap0 prog   85.58 sp  7.14 cp1 b0 d1 E0.00
+     2.50 lap0 prog    3.47 sp 13.96 cp2 b0 d0 E0.00
+     3.00 lap0 prog   11.29 sp 14.02 cp3 b0 d0 E0.00
+     3.50 lap0 prog   18.46 sp 16.42 cp4 b0 d1 E0.01
+     4.00 lap0 prog   34.07 sp 20.86 cp6 b1 d1 E0.07
+     4.50 lap0 prog   44.15 sp 21.58 cp7 b1 d0 E0.10
+     5.00 lap0 prog   56.99 sp 20.46 cp9 b1 d0 E0.07
+     5.50 lap0 prog   69.73 sp 22.06 cp11 b1 d1 E0.00
+     6.00 lap0 prog   82.49 sp 19.70 cp0 b1 d0 E0.07
+     6.50 lap1 prog   94.20 sp 24.74 cp2 b1 d1 E0.05
+     7.00 lap1 prog  107.52 sp 27.02 cp4 b1 d1 E0.05
+     7.50 lap1 prog  123.48 sp 19.75 cp6 b1 d0 E0.15
+     8.00 lap1 prog  131.07 sp 18.86 cp7 b1 d0 E0.04
+     8.50 lap1 prog  140.23 sp 14.96 cp8 b0 d1 E0.01
+     9.00 lap1 prog  149.47 sp 17.58 cp10 b1 d0 E0.05
+     9.50 lap1 prog  162.38 sp 18.95 cp11 b1 d0 E0.14
+    10.00 lap2 prog  262.01 sp 20.79 cp1 b1 d1 E0.02
+    10.50 lap2 prog  188.16 sp 20.71 cp3 b0 d0 E0.00
+    11.00 lap2 prog  199.69 sp 18.55 cp5 b1 d0 E0.12
+    11.50 lap2 prog  211.98 sp 21.56 cp6 b1 d1 E0.00
+    12.00 lap2 prog  222.51 sp 23.50 cp8 b1 d0 E0.06
+    12.50 lap2 prog  235.16 sp 25.38 cp9 b1 d0 E0.16
+    13.00 lap2 prog  248.64 sp 27.81 cp11 b1 d1 E0.04
+
+-- car 1 deepseek-flash
+run frames 237 t range 1.5 13.3
+speed min/avg/max 0.00 21.54 27.87
+offroad frames 0 boost frames 167 drift frames 107
+  lap 1 reached at t=6.60 tick=132  lapdur=5.10 progress=84.06 speed=24.98
+  lap 2 reached at t=10.55 tick=211  lapdur=3.95 progress=171.59 speed=24.85
+  samples (t, lap, progress, speed, nextCp, boosting, drifting, energy):
+     1.50 lap0 prog    0.00 sp  0.00 cp1 b0 d0 E0.00
+     2.00 lap0 prog   82.49 sp  7.10 cp1 b0 d0 E0.00
+     2.50 lap0 prog    0.00 sp 13.29 cp1 b0 d1 E0.01
+     3.00 lap0 prog    9.13 sp 18.14 cp2 b1 d0 E0.02
+     3.50 lap0 prog   17.72 sp 16.62 cp4 b0 d0 E0.11
+     4.00 lap0 prog   28.32 sp 19.69 cp5 b1 d0 E0.02
+     4.50 lap0 prog   37.90 sp 17.50 cp6 b1 d0 E0.06
+     5.00 lap0 prog   47.45 sp 20.72 cp8 b0 d0 E0.12
+     5.50 lap0 prog   58.85 sp 26.44 cp9 b1 d1 E0.01
+     6.00 lap0 prog   70.41 sp 23.96 cp11 b1 d0 E0.14
+     6.50 lap0 prog   81.72 sp 25.80 cp0 b1 d0 E0.23
+     7.00 lap1 prog   93.79 sp 27.23 cp2 b1 d1 E0.12
+     7.50 lap1 prog  105.99 sp 24.37 cp3 b1 d0 E0.14
+     8.00 lap1 prog  115.21 sp 22.13 cp5 b1 d0 E0.07
+     8.50 lap1 prog  125.43 sp 23.15 cp6 b1 d1 E0.05
+     9.00 lap1 prog  136.63 sp 22.70 cp8 b1 d0 E0.08
+     9.50 lap1 prog  148.25 sp 24.08 cp9 b0 d0 E0.17
+    10.00 lap1 prog  159.85 sp 26.81 cp11 b1 d1 E0.07
+    10.50 lap1 prog  170.80 sp 23.50 cp0 b1 d0 E0.17
+    11.00 lap2 prog  182.14 sp 26.62 cp2 b1 d0 E0.22
+    11.50 lap2 prog  194.28 sp 24.83 cp4 b1 d1 E0.07
+    12.00 lap2 prog  204.69 sp 21.66 cp5 b0 d0 E0.01
+    12.50 lap2 prog  213.93 sp 21.28 cp6 b0 d0 E0.14
+    13.00 lap2 prog  225.92 sp 26.31 cp8 b1 d1 E0.01
+
+-- delta samples: t, lap0/prog0, lap1/prog1, progress diff (lap-aware)
+   0.00  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   0.50  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   1.00  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   1.50  p0 lap0    0.00 sp 0.00 | p1 lap0    0.00 sp 0.00 | diff    0.00
+   2.00  p0 lap0   85.58 sp 7.14 | p1 lap0   82.49 sp 7.10 | diff    3.09
+   2.50  p0 lap0    3.47 sp13.96 | p1 lap0    0.00 sp13.29 | diff    3.47
+   3.00  p0 lap0   11.29 sp14.02 | p1 lap0    9.13 sp18.14 | diff    2.15
+   3.50  p0 lap0   18.46 sp16.42 | p1 lap0   17.72 sp16.62 | diff    0.74
+   4.00  p0 lap0   34.07 sp20.86 | p1 lap0   28.32 sp19.69 | diff    5.75
+   4.50  p0 lap0   44.15 sp21.58 | p1 lap0   37.90 sp17.50 | diff    6.25
+   5.00  p0 lap0   56.99 sp20.46 | p1 lap0   47.45 sp20.72 | diff    9.55
+   5.50  p0 lap0   69.73 sp22.06 | p1 lap0   58.85 sp26.44 | diff   10.87
+   6.00  p0 lap0   82.49 sp19.70 | p1 lap0   70.41 sp23.96 | diff   12.08
+   6.50  p0 lap1   94.20 sp24.74 | p1 lap0   81.72 sp25.80 | diff  100.01
+   7.00  p0 lap1  107.52 sp27.02 | p1 lap1   93.79 sp27.23 | diff   13.72
+   7.50  p0 lap1  123.48 sp19.75 | p1 lap1  105.99 sp24.37 | diff   17.48
+   8.00  p0 lap1  131.07 sp18.86 | p1 lap1  115.21 sp22.13 | diff   15.87
+   8.50  p0 lap1  140.23 sp14.96 | p1 lap1  125.43 sp23.15 | diff   14.80
+   9.00  p0 lap1  149.47 sp17.58 | p1 lap1  136.63 sp22.70 | diff   12.84
+   9.50  p0 lap1  162.38 sp18.95 | p1 lap1  148.25 sp24.08 | diff   14.12
+  10.00  p0 lap2  262.01 sp20.79 | p1 lap1  159.85 sp26.81 | diff  189.69
+  10.50  p0 lap2  188.16 sp20.71 | p1 lap1  170.80 sp23.50 | diff  104.89
+  11.00  p0 lap2  199.69 sp18.55 | p1 lap2  182.14 sp26.62 | diff   17.56
+  11.50  p0 lap2  211.98 sp21.56 | p1 lap2  194.28 sp24.83 | diff   17.70
+  12.00  p0 lap2  222.51 sp23.50 | p1 lap2  204.69 sp21.66 | diff   17.81
+  12.50  p0 lap2  235.16 sp25.38 | p1 lap2  213.93 sp21.28 | diff   21.24
+  13.00  p0 lap2  248.64 sp27.81 | p1 lap2  225.92 sp26.31 | diff   22.72

@@ -1,0 +1,70 @@
+{
+  "integration-west.json": {
+    "seat": 0,
+    "winner": 0,
+    "time": 180.85000000000687,
+    "reason": "其余势力的城镇大厅全部被摧毁",
+    "decisions": 724,
+    "maxMs": 13.951628000000007,
+    "maxCommands": 19,
+    "errors": {}
+  },
+  "integration-east.json": {
+    "seat": 1,
+    "winner": 1,
+    "time": 197.2500000000106,
+    "reason": "其余势力的城镇大厅全部被摧毁",
+    "decisions": 789,
+    "maxMs": 16.490947000000002,
+    "maxCommands": 19,
+    "errors": {}
+  },
+  "test-rush.json": {
+    "mode": "rush",
+    "seat": 0,
+    "winner": 0,
+    "reason": "其余势力的城镇大厅全部被摧毁",
+    "time": 171.2500000000047,
+    "decisions": 685,
+    "cmds": 982,
+    "maxMs": 2.941970000000083,
+    "score": [
+      7016,
+      583
+    ],
+    "errors": {
+      "1:train:worker:该建筑队列已满": 10,
+      "1:attackMove::请选择 1–100 个单位": 12
+    }
+  },
+  "test-mirror.json": {
+    "mode": "mirror",
+    "seat": 0,
+    "winner": 0,
+    "reason": "其余势力的城镇大厅全部被摧毁",
+    "time": 195.80000000001027,
+    "decisions": 784,
+    "cmds": 2447,
+    "maxMs": 3.4148709999999483,
+    "score": [
+      11246,
+      3978
+    ],
+    "errors": {}
+  },
+  "test-selfplay.json": {
+    "mode": "mirror",
+    "seat": 0,
+    "winner": 0,
+    "reason": "其余势力的城镇大厅全部被摧毁",
+    "time": 278.400000000029,
+    "decisions": 1114,
+    "cmds": 4619,
+    "maxMs": 3.0429229999999734,
+    "score": [
+      14633,
+      5584
+    ],
+    "errors": {}
+  }
+}

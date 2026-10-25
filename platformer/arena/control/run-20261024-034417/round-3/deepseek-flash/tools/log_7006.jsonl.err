@@ -1,0 +1,64 @@
+A:PUSH-PLAN x=16.83 dx=-0.90 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)]
+PUSH-PLAN x=20.23 dx=-0.90 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-PLAN x=27.20 dx=-0.94 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-PLAN x=34.71 dx=-0.72 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-PLAN x=36.41 dx=-0.72 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-PLAN x=90.73 dx=-0.92 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, True), (1.0, False)]
+PUSH-PLAN x=92.43 dx=-0.92 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+PUSH-PLAN x=94.13 dx=-0.92 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=113.84 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=115.54 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=117.24 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=118.94 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=120.64 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=122.34 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=124.04 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, True), (1.0, False), (1.0, False)]
+AIR-FIRST x=125.74 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=127.44 y=4.93 acts=[(1.0, False), (1.0, False), (-1.0, False), (-1.0, False), (-1.0, False)]
+AIR-FIRST x=128.75 y=4.23 acts=[(-1.0, False), (0.0, False), (-1.0, False), (1.0, True), (1.0, False)]
+AIR-FIRST x=37.96 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=39.66 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=41.36 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=43.06 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=44.76 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=46.46 y=4.93 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (-1.0, False)]
+AIR-FIRST x=48.06 y=4.23 acts=[(-1.0, False), (-1.0, False), (-1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=48.59 y=3.00 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=50.29 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=51.99 y=4.93 acts=[(1.0, False), (-1.0, False), (-1.0, False), (0.0, False), (-1.0, False)]
+AIR-FIRST x=52.89 y=4.23 acts=[(1.0, False), (0.0, False), (-1.0, False), (1.0, True), (0.0, False)]
+AIR-FIRST x=53.64 y=4.09 acts=[(-1.0, False), (0.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=54.74 y=4.96 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=56.65 y=3.21 acts=[(-1.0, False), (1.0, True), (-1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=58.25 y=4.75 acts=[(-1.0, False), (-1.0, False), (-1.0, False), (0.0, False), (-1.0, False)]
+FALLBACK-AIR x=59.65 y=4.58 vy=-4.90
+DEATH#1 t=8.95 x=4.6 y=3 maxX=59.69 hist=[(6.45, 48.06, 4.23, 4.8, -7, False, [(-1.0, False), (-1.0, False), (-1.0, False), (1.0, False), (1.0, False)]), (6.7, 48.59, 3, 5.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (6.95, 50.29, 3, 6.8, 0, True, [(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.2, 51.99, 4.93, 6.8, 3.5, False, [(1.0, False), (-1.0, False), (-1.0, False), (0.0, False), (-1.0, False)]), (7.45, 52.89, 4.23, 0.8, -7, False, [(1.0, False), (0.0, False), (-1.0, False), (1.0, True), (0.0, False)]), (7.7, 53.64, 4.09, 4.3, 9.8, False, [(-1.0, False), (0.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.95, 54.74, 4.96, 6.8, -0.7, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (8.2, 56.65, 3.21, 6.8, -11.2, False, [(-1.0, False), (1.0, True), (-1.0, False), (1.0, False), (1.0, False)]), (8.45, 58.25, 4.75, 6.8, 5.6, False, [(-1.0, False), (-1.0, False), (-1.0, False), (0.0, False), (-1.0, False)]), (8.7, 59.65, 4.58, -1.2, -4.9, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)])]
+AIR-FIRST x=18.19 y=3.60 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=19.89 y=5.00 acts=[(1.0, False), (1.0, True), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=21.43 y=6.61 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=23.13 y=6.44 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=24.83 y=3.64 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=26.53 y=3.00 acts=[(1.0, False), (1.0, True), (1.0, False), (-1.0, False), (-1.0, False)]
+AIR-FIRST x=27.93 y=4.75 acts=[(1.0, False), (1.0, False), (1.0, False), (1.0, False), (-1.0, False)]
+AIR-FIRST x=29.43 y=4.58 acts=[(-1.0, False), (0.0, False), (-1.0, False), (-1.0, False), (1.0, False)]
+AIR-FIRST x=29.80 y=3.00 acts=[(1.0, False), (1.0, True), (-1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=31.35 y=4.75 acts=[(-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False), (1.0, False)]
+AIR-FIRST x=31.75 y=4.58 acts=[(1.0, False), (1.0, False), (1.0, False), (-1.0, False), (1.0, False)]
+AIR-FIRST x=33.17 y=3.00 acts=[(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]
+AIR-FIRST x=34.94 y=4.93 acts=[(1.0, False), (1.0, False), (-1.0, False), (0.0, False), (-1.0, False)]
+AIR-FIRST x=36.24 y=4.23 acts=[(-1.0, False), (1.0, False), (1.0, False), (1.0, True), (-1.0, False)]
+DEATH#2 t=14.45 x=4.15 y=4.09 maxX=59.69 hist=[(11.95, 24.83, 3.64, 6.8, -15.4, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (12.2, 26.53, 3, 6.8, 0, True, [(1.0, False), (1.0, True), (1.0, False), (-1.0, False), (-1.0, False)]), (12.45, 27.93, 4.75, 2.8, 5.6, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (-1.0, False)]), (12.7, 29.43, 4.58, 4.8, -4.9, False, [(-1.0, False), (0.0, False), (-1.0, False), (-1.0, False), (1.0, False)]), (12.95, 29.8, 3, 2.3, 0, True, [(1.0, False), (1.0, True), (-1.0, False), (1.0, False), (1.0, False)]), (13.2, 31.35, 4.75, 6.8, 5.6, False, [(-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False), (1.0, False)]), (13.45, 31.75, 4.58, 0.8, -4.9, False, [(1.0, False), (1.0, False), (1.0, False), (-1.0, False), (1.0, False)]), (13.7, 33.17, 3, 6.8, 0, True, [(1.0, True), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (13.95, 34.94, 4.93, 6.8, 3.5, False, [(1.0, False), (1.0, False), (-1.0, False), (0.0, False), (-1.0, False)]), (14.2, 36.24, 4.23, 2.8, -7, False, [(-1.0, False), (1.0, False), (1.0, False), (1.0, True), (-1.0, False)])]
+
+B:PREFIX dir=0.0 k=1 x=38.47 y=3.00 og=True
+PREFIX dir=0.0 k=1 x=39.73 y=3.00 og=True
+PREFIX dir=0.0 k=1 x=40.98 y=3.00 og=True
+PREFIX dir=0.0 k=1 x=42.24 y=3.00 og=True
+PREFIX dir=0.0 k=1 x=43.50 y=3.60 og=False
+PREFIX dir=-1.0 k=3 x=45.20 y=5.00 og=False
+FALLBACK-AIR x=58.93 y=5.00 vy=1.40
+DEATH#1 t=8.95 x=2.68 y=3 maxX=60.17 hist=[(6.45, 45.2, 5, 6.8, 1.4, False, [(-1.0, False), (-1.0, False), (-1.0, False), (1.0, False), (1.0, False)]), (6.7, 46, 3.77, 4.8, -9.1, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (6.95, 47.7, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.2, 49.4, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.45, 51.1, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.7, 52.8, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (7.95, 54.5, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (8.2, 55.93, 3, 6.8, 0, True, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, True)]), (8.45, 57.63, 3.6, 6.8, 11.9, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)]), (8.7, 58.93, 5, 4.2, 1.4, False, [(1.0, False), (1.0, False), (1.0, False), (1.0, False), (1.0, False)])]
+PREFIX dir=0.0 k=1 x=20.48 y=4.86 og=True
+PREFIX dir=0.0 k=1 x=23.27 y=3.00 og=True
+PREFIX dir=0.0 k=1 x=24.53 y=3.00 og=True
+FALLBACK-AIR-SEARCH x=37.22 y=4.75 acts=[(-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False), (-1.0, False)]
+PREFIX dir=0.0 k=4 x=37.42 y=4.58 og=False

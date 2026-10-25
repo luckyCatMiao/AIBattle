@@ -1,0 +1,9 @@
+[
+ {"name":"base","weave_on":0,"boost_on":0},
+ {"name":"w+line1.0","weave_amp":0.6,"weave_T":0.72,"weave_shape":2,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_alpha_min":0,"line_off":1.0,"line_off_k":14},
+ {"name":"w+line1.4","weave_amp":0.6,"weave_T":0.72,"weave_shape":2,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_alpha_min":0,"line_off":1.4,"line_off_k":12},
+ {"name":"w+line1.4_T90","weave_amp":0.5,"weave_T":0.9,"weave_shape":1,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_alpha_min":0,"line_off":1.4,"line_off_k":12},
+ {"name":"w+line1.4_m11","weave_amp":0.6,"weave_T":0.72,"weave_shape":2,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_alpha_min":0,"line_off":1.4,"line_off_k":12,"boost_margin":1.12},
+ {"name":"w+line1.4_m125","weave_amp":0.6,"weave_T":0.72,"weave_shape":2,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_alpha_min":0,"line_off":1.4,"line_off_k":12,"boost_margin":1.25},
+ {"name":"w+line1.4_off1","weave_amp":0.6,"weave_T":0.72,"weave_shape":2,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":1,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_alpha_min":0,"line_off":1.4,"line_off_k":12}
+]

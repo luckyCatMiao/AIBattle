@@ -1,0 +1,50 @@
+{
+  "file": "agent.py",
+  "opp": "agent_r1.py",
+  "style": "fast",
+  "results": [
+    {
+      "n": 1,
+      "seat": 0,
+      "score": [
+        12,
+        0
+      ],
+      "winner": 0,
+      "frame": 2400,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 12
+        },
+        {
+          "kicks": 12,
+          "possession": 51
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "seat": 1,
+      "score": [
+        0,
+        12
+      ],
+      "winner": 1,
+      "frame": 2400,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 51
+        },
+        {
+          "kicks": 12,
+          "possession": 12
+        }
+      ]
+    }
+  ],
+  "maxMs": 23.994238999999997,
+  "meanMs": 3.230532891666665,
+  "windows": 240
+}

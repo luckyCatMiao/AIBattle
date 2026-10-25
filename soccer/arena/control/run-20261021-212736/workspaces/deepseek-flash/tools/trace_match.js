@@ -40,8 +40,9 @@ async function main(){
         ball:{x:g.ball.x,y:g.ball.y,vx:g.ball.vx,vy:g.ball.vy,owner:g.ball.owner},
         units:g.units.map(u=>({id:u.id,team:u.team,index:u.index,x:u.x,y:u.y,facing:{...u.facing},kickCd:u.kickCd,controlLock:u.controlLock,stealLock:u.stealLock}))};
       const inA=frames[0].map(f=>f.map(u=>({dir:u.dir,aim:u.aim,kick:u.kick})));
+      const inB=frames[1].map(f=>f.map(u=>({dir:u.dir,aim:u.aim,kick:u.kick})));
       sim.advanceWindow(g,frames);
-      states.push({before,after_score:[...g.score],inputsA:inA,events:g.events.slice(-4)});
+      states.push({before,after_score:[...g.score],inputsA:inA,inputsB:inB,events:g.events.slice(-4)});
       windows++;
     }
   }finally{A.kill();B.kill();}

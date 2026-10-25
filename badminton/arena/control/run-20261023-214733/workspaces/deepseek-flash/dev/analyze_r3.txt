@@ -1,0 +1,160 @@
+==========================================================================================
+r3-g1 seed=7131 net=1.92 seats=['deepseek-flash', 'sol']
+score=0:11 winner=sol longestRally=34 frames=1989 windows=199 duration=5.44s errors={'deepseek-flash': 0, 'sol': 0}
+final stamina us:them = 2.4:18.6  hits=44:41 smashes=23:9
+
+-- points (us:sol) --
+P01 t=   8.30 gap=  8.30 score=0:1 srv=deepseek-flash w=sol            rally= 8 endx= 6.32 sta= 59.7: 53.4 reason=落在自己半场
+P02 t=  17.30 gap=  7.50 score=0:2 srv=sol            w=sol            rally= 8 endx= 1.00 sta= 19.6: 40.0 reason=落在对方半场
+P03 t=  22.80 gap=  4.00 score=0:3 srv=sol            w=sol            rally= 4 endx= 0.40 sta= 11.6: 38.9 reason=落在对方半场
+P04 t=  28.30 gap=  4.00 score=0:4 srv=sol            w=sol            rally= 4 endx= 0.40 sta=  3.6: 36.1 reason=落在对方半场
+P05 t=  37.45 gap=  7.65 score=0:5 srv=sol            w=sol            rally= 7 endx= 6.33 sta=  2.7: 22.1 reason=落在自己半场
+P06 t=  45.05 gap=  6.10 score=0:6 srv=sol            w=sol            rally= 5 endx= 6.33 sta=  3.6: 24.9 reason=落在自己半场
+P07 t=  50.60 gap=  4.05 score=0:7 srv=sol            w=sol            rally= 4 endx= 1.00 sta=  4.5: 19.8 reason=落在对方半场
+P08 t=  56.15 gap=  4.05 score=0:8 srv=sol            w=sol            rally= 4 endx= 1.00 sta=  3.9: 14.9 reason=落在对方半场
+P09 t=  62.30 gap=  4.65 score=0:9 srv=sol            w=sol            rally= 4 endx= 0.94 sta=  1.2: 21.9 reason=落在对方半场
+P10 t=  67.50 gap=  3.70 score=0:10 srv=sol            w=sol            rally= 3 endx= 6.32 sta=  2.7: 40.5 reason=落在自己半场
+P11 t=  99.40 gap= 30.40 score=0:11 srv=sol            w=sol            rally=34 endx= 0.40 sta=  2.1: 18.2 reason=落在对方半场
+progression: 0:0 -> 0:1 -> 0:2 -> 0:3 -> 0:4 -> 0:5 -> 0:6 -> 0:7 -> 0:8 -> 0:9 -> 0:10 -> 0:11
+
+-- rally detail (hits: frame t team pos air kind speed) --
+P01   0:1 srv=us  w=sol r= 8 | sol sm@16 US  cl@7 sol cl@8 US  dr@6 solJli@7 US Jdr@15 solJli@9 US Jdr@6
+P02   0:2 srv=sol w=sol r= 8 | US  dr@5 sol cl@8 US  dr@12 sol li@10 US Jdr@15 sol li@10 US  cl@9 solJsm@17
+P03   0:3 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@21
+P04   0:4 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@21
+P05   0:5 srv=sol w=sol r= 7 | US  dr@5 sol li@9 US  dr@6 sol li@7 US  cl@9 sol cl@8 US  dr@6
+P06   0:6 srv=sol w=sol r= 5 | US  dr@5 sol li@9 US  cl@7 sol li@9 US  dr@6
+P07   0:7 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@17
+P08   0:8 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P09   0:9 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@8 sol cl@8
+P10  0:10 srv=sol w=sol r= 3 | US  dr@5 sol li@9 US  dr@6
+P11  0:11 srv=sol w=sol r=34 | US  dr@5 sol li@9 US  cl@7 sol li@9 US  cl@7 sol cl@7 US  cl@8 solJsm@18 US  cl@8 solJdr@14 US  cl@8 sol cl@8 US  cl@8 sol cl@8 US  dr@12 sol cl@8 US  dr@13 solJli@10 US  dr@13 sol cl@9 US  cl@8 sol cl@8 US  cl@8 sol cl@8 US  cl@8 sol cl@9 US  dr@12 sol cl@8 US  dr@6 sol li@9 US  cl@7 sol li@9 US  cl@9 solJdr@15
+
+-- shot stats --
+US: hits=44 jumps=3 airborne_hits=3
+   drive  n=24 speeds=[5.6, 15.3, 5.7, 4.9, 12.4, 14.8, 5.0, 5.0, 5.0, 6.2, 5.8, 5.0, 6.3, 5.0, 5.0, 5.0, 5.0, 6.2, 5.0, 12.4, 12.8, 13.4, 12.4, 6.2]
+   clear  n=20 speeds=[7.3, 8.7, 8.6, 8.6, 8.7, 7.5, 8.5, 8.6, 7.5, 7.0, 6.9, 8.2, 8.0, 7.9, 8.2, 8.3, 8.4, 8.1, 6.9, 8.7]
+   smash>=14: 0/0
+sol: hits=41 jumps=11 airborne_hits=11
+   lift   n=19 speeds=[6.8, 9.4, 9.9, 9.9, 8.6, 8.6, 8.6, 6.8, 9.1, 8.6, 8.7, 8.7, 8.8, 8.6, 8.8, 8.6, 9.6, 8.7, 8.8]
+   clear  n=13 speeds=[8.4, 7.9, 8.3, 7.6, 7.2, 8.2, 8.5, 8.2, 8.5, 8.4, 8.4, 8.5, 8.2]
+   smash  n= 7 speeds=[15.8, 17.5, 21.1, 21.1, 17.0, 17.5, 18.2]
+   drive  n= 2 speeds=[13.7, 15.4]
+   smash>=14: 7/7
+
+-- point endings --
+P01   0:1 winner=sol last_hit=us drive 5.7 from=(3.40,2.70) endx=6.32 reason=落在自己半场
+P02   0:2 winner=sol last_hit=sol smash 17.5 from=(8.28,2.50) endx=1.00 reason=落在对方半场
+P03   0:3 winner=sol last_hit=sol smash 21.1 from=(8.23,2.39) endx=0.40 reason=落在对方半场
+P04   0:4 winner=sol last_hit=sol smash 21.1 from=(8.23,2.39) endx=0.40 reason=落在对方半场
+P05   0:5 winner=sol last_hit=us drive 5.8 from=(3.81,2.18) endx=6.33 reason=落在自己半场
+P06   0:6 winner=sol last_hit=us drive 6.3 from=(3.21,2.15) endx=6.33 reason=落在自己半场
+P07   0:7 winner=sol last_hit=sol smash 17.0 from=(8.27,2.56) endx=1.00 reason=落在对方半场
+P08   0:8 winner=sol last_hit=sol smash 17.5 from=(8.31,2.48) endx=1.00 reason=落在对方半场
+P09   0:9 winner=sol last_hit=sol clear 7.6 from=(7.72,1.58) endx=0.94 reason=落在对方半场
+P10  0:10 winner=sol last_hit=us drive 6.2 from=(3.50,2.21) endx=6.32 reason=落在自己半场
+P11  0:11 winner=sol last_hit=sol drive 15.4 from=(9.24,2.42) endx=0.40 reason=落在对方半场
+
+-- net faults --
+t=3.90 frame=78 by=deepseek-flash x=6.54 y=1.70
+t=7.75 frame=155 by=deepseek-flash x=6.54 y=1.89
+t=33.00 frame=660 by=deepseek-flash x=6.54 y=1.58
+t=36.95 frame=739 by=deepseek-flash x=6.54 y=1.60
+t=44.55 frame=891 by=deepseek-flash x=6.54 y=1.54
+t=67.00 frame=1340 by=deepseek-flash x=6.54 y=1.58
+
+-- swings / empty swings --
+deepseek-flash: swing_starts=45 hits=44 empty=1 (2%)
+   frame=1980 t=99.00 phase=rally score=0:10 shuttle=(5.53,1.89) me=(3.98,0.00)
+sol: swing_starts=41 hits=41 empty=0 (0%)
+
+-- stamina / movement --
+deepseek-flash: first<=15=21.4s first<=0.01=30.4s min=0.0 <=15=78% regen=34% dead=66% airborne_frames=24 sprint_frames=28
+sol: first<=15=35.4s first<=0.01=Nones min=9.8 <=15=5% regen=65% dead=33% airborne_frames=88 sprint_frames=44
+
+-- serve stats --
+deepseek-flash: serve_points=1 holds=0 win_rate=0% lost_rallies=[8]
+sol: serve_points=10 holds=10 win_rate=100% lost_rallies=[]
+
+-- first return after serve --
+US: n=10 x=[5.77, 5.9, 5.9, 5.9, 5.9, 5.9, 5.9, 5.9, 5.9, 5.9] y=[2.15, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18] kinds=['drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive'] speeds=[4.9, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0]
+sol: n=1 x=[6.97] y=[2.09] kinds=['smash'] speeds=[15.8]
+==========================================================================================
+r3-g2 seed=7132 net=1.93 seats=['sol', 'deepseek-flash']
+score=0:11 winner=sol longestRally=6 frames=1255 windows=126 duration=6.18s errors={'deepseek-flash': 0, 'sol': 0}
+final stamina us:them = 1.5:75.2  hits=23:23 smashes=11:10
+
+-- points (us:sol) --
+P01 t=   4.75 gap=  4.75 score=0:1 srv=sol            w=sol            rally= 4 endx=12.94 sta= 84.0: 83.3 reason=落在对方半场
+P02 t=  10.25 gap=  4.00 score=0:2 srv=sol            w=sol            rally= 4 endx=12.40 sta= 67.1: 79.7 reason=落在对方半场
+P03 t=  15.75 gap=  4.00 score=0:3 srv=sol            w=sol            rally= 4 endx=12.40 sta= 49.9: 77.6 reason=落在对方半场
+P04 t=  23.20 gap=  5.95 score=0:4 srv=sol            w=sol            rally= 6 endx=12.40 sta= 31.7: 74.2 reason=落在对方半场
+P05 t=  28.70 gap=  4.00 score=0:5 srv=sol            w=sol            rally= 4 endx=12.40 sta= 15.6: 71.8 reason=落在对方半场
+P06 t=  35.20 gap=  5.00 score=0:6 srv=sol            w=sol            rally= 4 endx=11.90 sta=  6.6: 86.9 reason=落在对方半场
+P07 t=  40.70 gap=  4.00 score=0:7 srv=sol            w=sol            rally= 4 endx=12.40 sta=  1.2: 83.3 reason=落在对方半场
+P08 t=  46.20 gap=  4.00 score=0:8 srv=sol            w=sol            rally= 4 endx=12.40 sta=  1.2: 81.2 reason=落在对方半场
+P09 t=  51.70 gap=  4.00 score=0:9 srv=sol            w=sol            rally= 4 endx=12.40 sta=  1.2: 79.1 reason=落在对方半场
+P10 t=  57.20 gap=  4.00 score=0:10 srv=sol            w=sol            rally= 4 endx=12.40 sta=  1.2: 77.0 reason=落在对方半场
+P11 t=  62.70 gap=  4.00 score=0:11 srv=sol            w=sol            rally= 4 endx=12.40 sta=  1.2: 74.9 reason=落在对方半场
+progression: 0:0 -> 0:1 -> 0:2 -> 0:3 -> 0:4 -> 0:5 -> 0:6 -> 0:7 -> 0:8 -> 0:9 -> 0:10 -> 0:11
+
+-- rally detail (hits: frame t team pos air kind speed) --
+P01   0:1 srv=sol w=sol r= 4 | US  dr@5 sol li@8 US  cl@9 solJsm@20
+P02   0:2 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P03   0:3 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P04   0:4 srv=sol w=sol r= 6 | US  dr@5 sol li@9 US  cl@9 sol cl@8 US  cl@8 solJsm@17
+P05   0:5 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P06   0:6 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 sol cl@8
+P07   0:7 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P08   0:8 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P09   0:9 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P10  0:10 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+P11  0:11 srv=sol w=sol r= 4 | US  dr@5 sol li@9 US  cl@9 solJsm@18
+
+-- shot stats --
+US: hits=23 jumps=0 airborne_hits=0
+   clear  n=12 speeds=[8.5, 8.5, 8.5, 8.6, 8.1, 8.6, 8.6, 8.6, 8.6, 8.6, 8.6, 8.6]
+   drive  n=11 speeds=[5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0]
+   smash>=14: 0/0
+sol: hits=23 jumps=10 airborne_hits=10
+   lift   n=11 speeds=[8.4, 8.7, 8.7, 8.6, 8.6, 8.6, 8.6, 8.6, 8.6, 8.6, 8.6]
+   smash  n=10 speeds=[20.3, 18.1, 18.1, 17.0, 18.1, 18.1, 18.1, 18.1, 18.1, 18.1]
+   clear  n= 2 speeds=[8.3, 8.3]
+   smash>=14: 10/10
+
+-- point endings --
+P01   0:1 winner=sol last_hit=sol smash 20.3 from=(5.17,2.43) endx=12.94 reason=落在对方半场
+P02   0:2 winner=sol last_hit=sol smash 18.1 from=(5.04,2.45) endx=12.40 reason=落在对方半场
+P03   0:3 winner=sol last_hit=sol smash 18.1 from=(5.04,2.45) endx=12.40 reason=落在对方半场
+P04   0:4 winner=sol last_hit=sol smash 17.0 from=(5.11,2.56) endx=12.40 reason=落在对方半场
+P05   0:5 winner=sol last_hit=sol smash 18.1 from=(4.45,2.59) endx=12.40 reason=落在对方半场
+P06   0:6 winner=sol last_hit=sol clear 8.3 from=(3.68,2.12) endx=11.90 reason=落在对方半场
+P07   0:7 winner=sol last_hit=sol smash 18.1 from=(4.45,2.59) endx=12.40 reason=落在对方半场
+P08   0:8 winner=sol last_hit=sol smash 18.1 from=(4.45,2.59) endx=12.40 reason=落在对方半场
+P09   0:9 winner=sol last_hit=sol smash 18.1 from=(4.45,2.59) endx=12.40 reason=落在对方半场
+P10  0:10 winner=sol last_hit=sol smash 18.1 from=(4.45,2.59) endx=12.40 reason=落在对方半场
+P11  0:11 winner=sol last_hit=sol smash 18.1 from=(4.45,2.59) endx=12.40 reason=落在对方半场
+
+-- net faults --
+
+-- swings / empty swings --
+sol: swing_starts=23 hits=23 empty=0 (0%)
+deepseek-flash: swing_starts=30 hits=23 empty=7 (23%)
+   frame=570 t=28.50 phase=rally score=0:4 shuttle=(9.54,1.22) me=(9.35,0.00)
+   frame=680 t=34.00 phase=rally score=0:5 shuttle=(4.40,2.52) me=(9.36,0.00)
+   frame=809 t=40.45 phase=rally score=0:6 shuttle=(8.73,1.50) me=(9.49,0.00)
+   frame=919 t=45.95 phase=rally score=0:7 shuttle=(8.73,1.50) me=(9.49,0.00)
+   frame=1029 t=51.45 phase=rally score=0:8 shuttle=(8.73,1.50) me=(9.49,0.00)
+   frame=1139 t=56.95 phase=rally score=0:9 shuttle=(8.73,1.50) me=(9.49,0.00)
+   frame=1249 t=62.45 phase=rally score=0:10 shuttle=(8.73,1.50) me=(9.49,0.00)
+
+-- stamina / movement --
+sol: first<=15=Nones first<=0.01=Nones min=71.5 <=15=0% regen=69% dead=31% airborne_frames=80 sprint_frames=0
+deepseek-flash: first<=15=28.5s first<=0.01=39.3s min=0.0 <=15=51% regen=33% dead=62% airborne_frames=0 sprint_frames=49
+
+-- serve stats --
+sol: serve_points=11 holds=11 win_rate=100% lost_rallies=[]
+deepseek-flash: serve_points=0 holds=0 win_rate=0% lost_rallies=[]
+
+-- first return after serve --
+US: n=11 x=[7.38, 7.38, 7.38, 7.5, 7.5, 7.5, 7.5, 7.5, 7.5, 7.5, 7.5] y=[2.2, 2.2, 2.2, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18, 2.18] kinds=['drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive', 'drive'] speeds=[5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0]

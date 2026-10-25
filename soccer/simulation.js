@@ -8,9 +8,16 @@ const catalog = require('./catalog');
 const {
   rules, GOALS, BALL_SPAWN, TILE, W, H, EMPTY, WALL,
   buildField, auditField, inGoalMouth, teamSizeForSeed, spawnsFor,
+  PENALTY_BOXES, inPenaltyBox, nearestOutsideBox,
 } = catalog;
 
 const DT = 1 / rules.hz;
+// 可复现的 LCG：同一个 seed 在任何机器上得到同一串数以产生同一批扰动。
+function makeRng(seed) {
+  let s = (Number(seed) >>> 0) || 1;
+  const next = () => { s = (Math.imul(s, 1664525) + 1013904223) >>> 0; return s / 4294967296; };
+  return { next, range: (a, b) => a + (b - a) * next() };
+}
 const DIRS = {
   N: [0, 0], U: [0, -1], D: [0, 1], L: [-1, 0], R: [1, 0],
   UL: [-Math.SQRT1_2, -Math.SQRT1_2], UR: [Math.SQRT1_2, -Math.SQRT1_2],
@@ -37,15 +44,32 @@ function makeUnit(g, team, index) {
     facing: { x: team === 0 ? 1 : -1, y: 0 },
     held: { dir: 'N', aim: null, kick: false },
     inputHistory: [],
-    kickCd: 0, controlLock: 0, stealLock: 0,
+    kickCd: 0, controlLock: 0, stealLock: 0, foulLock: 0,
     goals: 0, kicks: 0, touches: 0,
   };
+}
+
+function jitterSpawns(base, rng) {
+  // 每个球员在基础站位附近 ±1.5 格随机；不进入对方禁区（对方禁区在 x∈[34,43]，基础站位离得很远）。
+  const out = { 0: [], 1: [] };
+  for (const team of [0, 1]) {
+    for (const [x, y] of base[team]) {
+      const jx = x + rng.range(-1.5, 1.5);
+      const jy = y + rng.range(-1.5, 1.5);
+      out[team].push([
+        clamp(jx, rules.unitRadius + 1, W - rules.unitRadius - 1),
+        clamp(jy, rules.unitRadius + 1, H - rules.unitRadius - 1),
+      ]);
+    }
+  }
+  return out;
 }
 
 function createMatch({ id = 'test', players, seed = 1, teamSize } = {}) {
   if (!Array.isArray(players) || players.length !== 2) throw Error('足球必须是两名选手');
   const n = teamSize == null ? teamSizeForSeed(seed) : Number(teamSize);
   if (!Number.isInteger(n) || n < rules.minTeamSize || n > rules.maxTeamSize) throw Error('每队人数必须是 1–6');
+  const rng = makeRng((Number(seed) >>> 0) ^ (n * 2654435761));
   const g = {
     id, seed, status: 'playing', phase: 'live', winner: null, reason: '', eventId: 0,
     players: players.map((p, i) => {
@@ -54,18 +78,19 @@ function createMatch({ id = 'test', players, seed = 1, teamSize } = {}) {
       return { id: i, name: String(p.name).slice(0, 32), kind: p.kind, wins: 0 };
     }),
     frame: 0, tick: 0, half: 1, score: [0, 0],
-    teamSize: n, spawns: spawnsFor(n),
+    teamSize: n, spawns: jitterSpawns(spawnsFor(n), rng), kickoffTeam: Math.abs(seed) % 2, rng,
     golden: false, goldenEnd: 0, freeze: 0,
     tiles: buildField(), mapAudit: null,
     units: [], ball: null,
-    stats: [{ kicks: 0, possession: 0 }, { kicks: 0, possession: 0 }],
+    stats: [{ kicks: 0, possession: 0, fouls: 0 }, { kicks: 0, possession: 0, fouls: 0 }],
+    freeKickTeam: null, freeKickFrames: 0,
     events: [], humanInput: null,
   };
   g.mapAudit = auditField(g.tiles);
   for (let team = 0; team < 2; team++) {
     for (let i = 0; i < n; i++) g.units.push(makeUnit(g, team, i));
   }
-  kickoff(g, '开场', 0);
+  kickoff(g, '开场', 0, Math.abs(seed) % 2);
   return g;
 }
 
@@ -76,15 +101,19 @@ function resetUnit(u, team, index, spawns) {
   u.x = tx + 0.5; u.y = ty + 0.5;
   u.facing = { x: team === 0 ? 1 : -1, y: 0 };
   u.held = { dir: 'N', aim: null, kick: false };
-  u.kickCd = 0; u.controlLock = 0; u.stealLock = 0;
+  u.kickCd = 0; u.controlLock = 0; u.stealLock = 0; u.foulLock = 0;
 }
 
-function kickoff(g, text, freezeFrames = Math.round(rules.kickoffFreeze * rules.hz)) {
+function kickoff(g, text, freezeFrames = Math.round(rules.kickoffFreeze * rules.hz), team = g.kickoffTeam) {
+  if (team === 0 || team === 1) g.kickoffTeam = team;
   for (const u of g.units) resetUnit(u, u.team, u.index, g.spawns);
+  const kickRng = g.rng || makeRng(1);
   g.ball = {
-    x: BALL_SPAWN.x, y: BALL_SPAWN.y, vx: 0, vy: 0,
+    x: BALL_SPAWN.x + kickRng.range(-1.2, 1.2), y: BALL_SPAWN.y + kickRng.range(-1.2, 1.2),
+    vx: 0, vy: 0,
     owner: null, lastTouch: null, lastTeam: null,
   };
+  g.freeKickTeam = null; g.freeKickFrames = 0;
   g.freeze = Math.max(0, freezeFrames);
   g.phase = g.golden ? 'golden' : 'live';
   emit(g, 'kickoff', { text });
@@ -102,7 +131,7 @@ function goal(g, team) {
     text: `进球！${g.players[team].name} ${g.score[0]} : ${g.score[1]}${ownGoal ? '（乌龙）' : ''}`,
   });
   if (g.golden) { finish(g, team, '金球制胜'); return; }
-  kickoff(g, `中圈开球 · ${g.players[team].name} 进球`, Math.round(rules.kickoffFreeze * rules.hz));
+  kickoff(g, `中圈开球 · ${g.players[team].name} 进球`, Math.round(rules.kickoffFreeze * rules.hz), 1 - team);
 }
 
 function finish(g, winner, reason) {
@@ -121,7 +150,7 @@ function checkClock(g) {
     if (g.half === 1 && g.frame >= halfFrames) {
       g.half = 2;
       emit(g, 'half', { text: '下半场开始' });
-      kickoff(g, '下半场开球');
+      kickoff(g, '下半场开球', undefined, 1 - g.kickoffTeam);
     }
     if (g.frame >= matchFrames) {
       if (g.score[0] === g.score[1]) {
@@ -212,6 +241,7 @@ function updateUnit(g, u) {
   if (u.kickCd > 0) u.kickCd--;
   if (u.controlLock > 0) u.controlLock--;
   if (u.stealLock > 0) u.stealLock--;
+  if (u.foulLock > 0) u.foulLock--;
 
   const inp = u.held || {};
   const dir = DIRS[inp.dir] || DIRS.N;
@@ -219,9 +249,16 @@ function updateUnit(g, u) {
   if (aim) u.facing = { x: aim.x, y: aim.y };
   else if (dir[0] || dir[1]) u.facing = { x: dir[0], y: dir[1] };
 
-  if (dir[0] || dir[1]) moveUnit(g, u, dir[0] * rules.moveSpeed * DT, dir[1] * rules.moveSpeed * DT);
+  // 持球时明显降速；犯规被移出禁区后的短暂僵直也不能移动
+  const carrying = g.ball.owner === u.id;
+  const speed = rules.moveSpeed * (carrying ? rules.dribbleSpeedFactor : 1);
+  if (u.foulLock <= 0 && (dir[0] || dir[1])) {
+    moveUnit(g, u, dir[0] * speed * DT, dir[1] * speed * DT);
+  }
 
-  if (inp.kick && g.ball.owner === u.id && u.kickCd <= 0 && u.controlLock <= 0) kickBall(g, u);
+  if (u.foulLock <= 0 && inp.kick && g.ball.owner === u.id && u.kickCd <= 0 && u.controlLock <= 0) {
+    kickBall(g, u);
+  }
 }
 
 function kickBall(g, u) {
@@ -303,7 +340,8 @@ function tryPossession(g) {
     if (!owner) { b.owner = null; return; }
     const ownerD = Math.hypot(owner.x - b.x, owner.y - b.y);
     const { u: thief, d } = nearestEligible(g, b.x, b.y,
-      u => u.team !== owner.team && u.stealLock <= 0 && u.controlLock <= 0);
+      u => u.team !== owner.team && u.stealLock <= 0 && u.controlLock <= 0 &&
+        (g.freeKickFrames <= 0 || u.team === g.freeKickTeam));
     if (thief && d < rules.controlRadius && d + rules.tackleMargin < ownerD) {
       b.owner = thief.id; b.lastTouch = thief.id; b.lastTeam = thief.team;
       thief.touches++;
@@ -313,24 +351,77 @@ function tryPossession(g) {
     return;
   }
 
-  const { u, d } = nearestEligible(g, b.x, b.y, u => u.controlLock <= 0 && u.stealLock <= 0);
-  if (u && d < rules.controlRadius) {
-    b.owner = u.id; b.lastTouch = u.id; b.lastTeam = u.team;
-    u.touches++;
+  const speed = Math.hypot(b.vx, b.vy);
+  const { u, d } = nearestEligible(g, b.x, b.y,
+    u => u.controlLock <= 0 && u.stealLock <= 0 && (g.freeKickFrames <= 0 || u.team === g.freeKickTeam));
+  let winner = u;
+  // 开球方在中圈等距争抢时有极小优势，避免固定由数组里靠前的队伍拿球。
+  // 注意：这个优先权不能绕过任意球归属，否则犯规方会在任意球上"抢回"球权。
+  if (u) {
+    const preferred = g.units.find(x => x.team === g.kickoffTeam && x.controlLock <= 0 && x.stealLock <= 0 &&
+      (g.freeKickFrames <= 0 || x.team === g.freeKickTeam) &&
+      Math.hypot(x.x - b.x, x.y - b.y) <= d + 0.06);
+    if (preferred) winner = preferred;
+  }
+  if (winner && Math.hypot(winner.x - b.x, winner.y - b.y) < rules.controlRadius) {
+    b.owner = winner.id; b.lastTouch = winner.id; b.lastTeam = winner.team;
+    winner.touches++;
     b.vx = 0; b.vy = 0;
+    if (g.freeKickFrames > 0 && winner.team === g.freeKickTeam) g.freeKickFrames = 0;
+    if (winner.index === 0 && inPenaltyBox(winner.team, winner.x, winner.y) && speed >= rules.saveMinSpeed) {
+      emit(g, 'save', { team: winner.team, unit: winner.id, text: `扑救：${winner.name} 没收射门` });
+    }
   }
 }
 
 /* ============================ 主循环 ============================ */
+
+function commitFoul(g, u, boxTeam) {
+  const box = PENALTY_BOXES[boxTeam];
+  const spot = nearestOutsideBox(box, u.x, u.y, 0.9);
+  const b = g.ball;
+  // 犯规者被移到任意球点更外侧，并短暂僵直
+  const cx = (box.x1 + box.x2) / 2, cy = (box.y1 + box.y2) / 2;
+  let dx = spot.x - cx, dy = spot.y - cy;
+  const l = Math.hypot(dx, dy) || 1;
+  u.x = clamp(spot.x + dx / l * 1.3, rules.unitRadius, W - rules.unitRadius);
+  u.y = clamp(spot.y + dy / l * 1.3, rules.unitRadius, H - rules.unitRadius);
+  u.foulLock = Math.round(rules.foulLock * rules.hz);
+  u.stealLock = Math.max(u.stealLock, u.foulLock);
+  u.kickCd = Math.max(u.kickCd, u.foulLock);
+  // 任意球：球停在犯规点，短暂停后由被犯规方处理
+  b.owner = null; b.x = spot.x; b.y = spot.y; b.vx = 0; b.vy = 0;
+  b.lastTouch = null; b.lastTeam = null;
+  // 规则：任意球由被犯规方开球。被犯规方第一次触球前，犯规方不能抢。
+  g.freeKickTeam = 1 - u.team;
+  g.freeKickFrames = Math.round(2.0 * rules.hz);
+  g.freeze = Math.max(g.freeze, Math.round(rules.foulFreeze * rules.hz));
+  g.stats[u.team].fouls = (g.stats[u.team].fouls || 0) + 1;
+  emit(g, 'foul', {
+    team: u.team, unit: u.id, box: boxTeam, x: round3(u.x), y: round3(u.y),
+    text: `犯规：${u.name} 进入对方禁区，${g.players[1 - u.team].name} 获得任意球`,
+  });
+}
+
+function checkFouls(g) {
+  // 只禁止进入对方禁区；防守方可以在本方禁区里防守，守门员在本方禁区有更大的扑救半径。
+  for (const u of g.units) {
+    if (u.foulLock > 0) continue;
+    if (inPenaltyBox(1 - u.team, u.x, u.y)) { commitFoul(g, u, 1 - u.team); return true; }
+  }
+  return false;
+}
 
 function step(g) {
   if (g.status !== 'playing') return;
   g.frame++; g.tick++;
 
   if (g.freeze > 0) { g.freeze--; checkClock(g); return; }
+  if (g.freeKickFrames > 0) g.freeKickFrames--;
 
   for (const u of g.units) updateUnit(g, u);
   separateUnits(g);
+  if (checkFouls(g)) { checkClock(g); return; }
   updateBall(g);
   if (g.ball.owner) {
     const u = g.units.find(x => x.id === g.ball.owner);
@@ -394,6 +485,8 @@ function publicUnit(u, g) {
     x: round3(u.x), y: round3(u.y),
     facing: { x: round3(u.facing.x), y: round3(u.facing.y) },
     hasBall: !!g.ball && g.ball.owner === u.id,
+    keeper: u.index === 0,
+    inOwnBox: inPenaltyBox(u.team, u.x, u.y),
     kickCd: round3(u.kickCd / rules.hz),
     controlLock: round3(u.controlLock / rules.hz),
     goals: u.goals, kicks: u.kicks, touches: u.touches,
@@ -426,7 +519,7 @@ function commonState(g, viewer = null) {
     stats: g.stats.map(s => ({ ...s })),
     units: g.units.map(u => publicUnit(u, g)),
     ball: publicBall(g.ball),
-    map: { width: W, height: H, tiles: Array.from(g.tiles), goals: GOALS, spawns: g.spawns },
+    map: { width: W, height: H, tiles: Array.from(g.tiles), goals: GOALS, spawns: g.spawns, penaltyBoxes: PENALTY_BOXES },
     rules: { ...rules },
     events: g.events.slice(-140),
   };
@@ -484,25 +577,95 @@ function opponentBlocked(g, team, a, b) {
   return false;
 }
 
+function segmentHitsBox(g, x0, y0, x1, y1, box) {
+  const steps = Math.max(2, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / 0.4));
+  for (let i = 1; i < steps; i++) {
+    const t = i / steps;
+    if (inPenaltyBox(box, x0 + (x1 - x0) * t, y0 + (y1 - y0) * t)) return true;
+  }
+  return false;
+}
+
+function safeTarget(g, u, tx, ty) {
+  // 任何单位都不能进入对方禁区；本方禁区可以防守。
+  const boxTeam = 1 - u.team;
+  const box = PENALTY_BOXES[boxTeam];
+  if (inPenaltyBox(boxTeam, tx, ty)) {
+    const p = nearestOutsideBox(box, tx, ty, 1.2);
+    tx = p.x; ty = p.y;
+  }
+  // 目标在禁区外，但直线路径穿过禁区时，先绕到最近的外角
+  if (segmentHitsBox(g, u.x, u.y, tx, ty, boxTeam)) {
+    const m = 1.2;
+    const corners = [
+      { x: box.x1 - m, y: box.y1 - m }, { x: box.x1 - m, y: box.y2 + m },
+      { x: box.x2 + m, y: box.y1 - m }, { x: box.x2 + m, y: box.y2 + m },
+    ].filter(c => c.x > 0 && c.x < W && c.y > 0 && c.y < H);
+    let best = null, bestD = Infinity;
+    for (const c of corners) {
+      const d = Math.hypot(c.x - u.x, c.y - u.y);
+      if (d < bestD) { bestD = d; best = c; }
+    }
+    if (best) { tx = best.x; ty = best.y; }
+  }
+  return { x: tx, y: ty };
+}
+
 function botUnitInput(g, u) {
   const b = g.ball;
   const own = g.units.filter(x => x.team === u.team);
-  const byBall = own.slice().sort((a, c) => dist(a, b) - dist(c, b));
-  const rank = byBall.indexOf(u);
   const opponentGoal = goalCenter(u.team);
   const myGoal = ownGoalCenter(u.team);
   const owner = b.owner ? g.units.find(x => x.id === b.owner) : null;
+  const isKeeper = u.index === 0;
+  const deg = (x, y) => Math.atan2(y - u.y, x - u.x) * 180 / Math.PI;
+  // 射门瞄准离对方守门员较远的那个角，避免总打中路被没收
+  const shotTarget = () => {
+    const keeper = g.units.find(x => x.team === 1 - u.team && x.index === 0);
+    const top = rules.goalTop + 0.8, bottom = rules.goalBottom - 0.8;
+    let y = (rules.goalTop + rules.goalBottom) / 2;
+    if (keeper) y = Math.abs(keeper.y - top) > Math.abs(keeper.y - bottom) ? top : bottom;
+    return { x: u.team === 0 ? W - 0.8 : 0.8, y };
+  };
 
-  // 0 号位：追球/持球；1 号位：接应；2 号位：保护球门
+  // 守门员：站在球门线前跟踪来球；球进本方禁区就出击
+  if (isKeeper && own.length >= 2) {
+    if (owner && owner.id === u.id) {
+      let mate = null, best = -1;
+      for (const t of own) {
+        if (t.id === u.id) continue;
+        const progress = u.team === 0 ? t.x : W - t.x;
+        if (progress > best && lineClear(g, u, t) && !opponentBlocked(g, u.team, u, t)) {
+          best = progress; mate = t;
+        }
+      }
+      const p = safeTarget(g, u, mate ? mate.x : W / 2, mate ? mate.y : H / 2);
+      return { dir: dirToward(u, p.x, p.y), aim: mate ? deg(mate.x, mate.y) : deg(opponentGoal.x, opponentGoal.y), kick: u.kickCd <= 0 };
+    }
+    const ballInOwnBox = inPenaltyBox(u.team, b.x, b.y);
+    const nearGoal = Math.hypot(b.x - myGoal.x, b.y - myGoal.y) < 4.5;
+    if (ballInOwnBox || (owner && owner.team !== u.team && nearGoal)) {
+      return { dir: dirToward(u, b.x, b.y), aim: deg(b.x, b.y), kick: false };
+    }
+    const tx = myGoal.x + (u.team === 0 ? 1.2 : -1.2);
+    const ty = clamp(b.y, rules.goalTop + 0.8, rules.goalBottom - 0.8);
+    return { dir: dirToward(u, tx, ty), aim: deg(b.x, b.y), kick: false };
+  }
+
+  // 非守门员（1v1 的唯一球员也在这里）
+  const field = own.filter(x => x.index !== 0);
+  const byBall = field.slice().sort((a, c) => dist(a, b) - dist(c, b));
+  const rank = Math.max(0, byBall.indexOf(u));
   const role = rank === 0 ? 'striker' : rank === 1 ? 'support' : 'cover';
+  const safeAim = (x, y) => {
+    const p = safeTarget(g, u, x, y);
+    return { dir: dirToward(u, p.x, p.y), aim: deg(x, y), kick: false };
+  };
 
-  // 持球
   if (owner && owner.id === u.id) {
     const dGoal = Math.hypot(opponentGoal.x - u.x, opponentGoal.y - u.y);
-    const angleGoal = Math.atan2(opponentGoal.y - u.y, opponentGoal.x - u.x) * 180 / Math.PI;
-    const clear = lineClear(g, u, opponentGoal) && !opponentBlocked(g, u.team, u, opponentGoal);
-
-    // 队友更靠近球门 → 传球
+    const shot = shotTarget();
+    const clear = lineClear(g, u, shot) && !opponentBlocked(g, u.team, u, shot);
     let mate = null;
     for (const t of own) {
       if (t.id === u.id) continue;
@@ -513,50 +676,21 @@ function botUnitInput(g, u) {
       }
     }
     if (mate && u.kickCd <= 0) {
-      const a = Math.atan2(mate.y - u.y, mate.x - u.x) * 180 / Math.PI;
-      return { dir: dirToward(u, mate.x, mate.y), aim: a, kick: true };
+      const p = safeTarget(g, u, mate.x, mate.y);
+      return { dir: dirToward(u, p.x, p.y), aim: deg(mate.x, mate.y), kick: true };
     }
-    // 射门：近距离且线路干净；被逼抢时更远也直接打
     const pressured = g.units.some(x => x.team !== u.team && Math.hypot(x.x - u.x, x.y - u.y) < 1.6);
+    const p = safeTarget(g, u, opponentGoal.x, opponentGoal.y);
+    const dir = dirToward(u, p.x, p.y);
     if (((dGoal < 18 && clear) || (pressured && dGoal < 24)) && u.kickCd <= 0) {
-      return { dir: dirToward(u, opponentGoal.x, opponentGoal.y), aim: angleGoal, kick: true };
+      return { dir, aim: deg(shot.x, shot.y), kick: true };
     }
-    // 带球推进
-    return { dir: dirToward(u, opponentGoal.x, opponentGoal.y), aim: angleGoal, kick: false };
+    return { dir, aim: deg(shot.x, shot.y), kick: false };
   }
 
-  // 对方持球
-  if (owner && owner.team !== u.team) {
-    if (role === 'striker') {
-      const a = Math.atan2(b.y - u.y, b.x - u.x) * 180 / Math.PI;
-      return { dir: dirToward(u, b.x, b.y), aim: a, kick: false };
-    }
-    if (role === 'support') {
-      const tx = (b.x + myGoal.x) / 2, ty = (b.y + myGoal.y) / 2;
-      return { dir: dirToward(u, tx, ty), aim: Math.atan2(b.y - u.y, b.x - u.x) * 180 / Math.PI, kick: false };
-    }
-    // 保护球门：站在球门与球之间
-    const tx = myGoal.x + (b.x - myGoal.x) * 0.22;
-    const ty = myGoal.y + (b.y - myGoal.y) * 0.22;
-    const a = Math.atan2(b.y - u.y, b.x - u.x) * 180 / Math.PI;
-    return { dir: dirToward(u, tx, ty), aim: a, kick: false };
-  }
-
-  // 自由球
-  if (role === 'striker') {
-    const a = Math.atan2(b.y - u.y, b.x - u.x) * 180 / Math.PI;
-    return { dir: dirToward(u, b.x, b.y), aim: a, kick: false };
-  }
-  if (role === 'support') {
-    const dx = opponentGoal.x - b.x, dy = opponentGoal.y - b.y;
-    const l = Math.hypot(dx, dy) || 1;
-    const tx = b.x + dx / l * 5 - dy / l * 3;
-    const ty = b.y + dy / l * 5 + dx / l * 3;
-    return { dir: dirToward(u, tx, ty), aim: Math.atan2(b.y - u.y, b.x - u.x) * 180 / Math.PI, kick: false };
-  }
-  const tx = myGoal.x + (b.x - myGoal.x) * 0.28;
-  const ty = myGoal.y + (b.y - myGoal.y) * 0.28;
-  return { dir: dirToward(u, tx, ty), aim: Math.atan2(b.y - u.y, b.x - u.x) * 180 / Math.PI, kick: false };
+  if (role === 'striker') return safeAim(b.x, b.y);
+  if (role === 'support') return safeAim((b.x + myGoal.x) / 2, (b.y + myGoal.y) / 2);
+  return safeAim(myGoal.x + (b.x - myGoal.x) * 0.28, myGoal.y + (b.y - myGoal.y) * 0.28);
 }
 
 module.exports = {

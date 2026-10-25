@@ -1,0 +1,307 @@
+====================================================================================================
+r3-g1 seed 5031 length 87.489 halfWidth 3.571
+
+### car 0 deepseek-flash DeepSeek V4.1 Flash
+checkpoint crossings: t lap cp_before->cp_after speed s lat E
+    2.50 lap0 cp1->2 sp 13.74 s   3.49 lat  0.85 E0.00 d0 b0
+    2.80 lap0 cp2->3 sp 14.11 s  11.48 lat  2.94 E0.00 d0 b0
+    3.25 lap0 cp3->4 sp 15.91 s  18.27 lat  0.58 E0.06 d0 b1
+    3.65 lap0 cp4->5 sp 20.28 s  25.46 lat -0.09 E0.02 d1 b1
+    4.00 lap0 cp5->6 sp 21.61 s  32.18 lat  0.71 E0.01 d1 b1
+    4.45 lap0 cp6->7 sp 18.18 s  40.49 lat -0.73 E0.09 d0 b1
+    4.80 lap0 cp7->8 sp 21.68 s  47.63 lat -0.53 E0.06 d0 b1
+    5.10 lap0 cp8->9 sp 22.28 s  54.51 lat  0.20 E0.08 d0 b1
+    5.45 lap0 cp9->10 sp 22.70 s  62.23 lat -0.73 E0.10 d1 b1
+    5.80 lap0 cp10->11 sp 25.06 s  69.71 lat -1.59 E0.05 d1 b1
+    6.10 lap0 cp11->0 sp 26.20 s  76.62 lat -1.39 E0.07 d1 b1
+    6.50 lap0 cp0->1 sp 22.13 s  83.96 lat -2.58 E0.06 d0 b1
+    6.80 lap1 cp1->2 sp 17.19 s   3.94 lat -1.74 E0.03 d0 b1
+    7.20 lap1 cp2->3 sp 14.65 s  10.48 lat  1.32 E0.00 d0 b0
+    7.70 lap1 cp3->4 sp 15.12 s  18.42 lat  0.52 E0.08 d0 b0
+    8.10 lap1 cp4->5 sp 18.25 s  25.32 lat  0.52 E0.04 d0 b1
+    8.45 lap1 cp5->6 sp 20.28 s  32.20 lat  1.36 E0.03 d1 b1
+    8.85 lap1 cp6->7 sp 17.45 s  40.33 lat -0.20 E0.00 d1 b0
+    9.25 lap1 cp7->8 sp 19.86 s  47.86 lat -0.32 E0.08 d0 b1
+    9.55 lap1 cp8->9 sp 19.06 s  54.16 lat  0.20 E0.13 d0 b1
+    9.90 lap1 cp9->10 sp 22.01 s  61.69 lat -0.36 E0.09 d0 b1
+   10.25 lap1 cp10->11 sp 24.50 s  69.58 lat -1.15 E0.08 d1 b1
+   10.60 lap1 cp11->0 sp 24.32 s  77.29 lat -1.46 E0.06 d1 b1
+   11.00 lap1 cp0->1 sp 20.39 s  84.33 lat -2.78 E0.07 d0 b1
+   11.30 lap2 cp1->2 sp 17.84 s   4.03 lat -1.59 E0.04 d0 b1
+   11.70 lap2 cp2->3 sp 14.67 s  10.95 lat  1.33 E0.01 d0 b0
+   12.15 lap2 cp3->4 sp 16.08 s  18.38 lat  0.37 E0.01 d1 b0
+segment times (same lap):
+  lap0 cp1->cp2: 0.30 s  (t 2.50 -> 2.80)
+  lap0 cp2->cp3: 0.45 s  (t 2.80 -> 3.25)
+  lap0 cp3->cp4: 0.40 s  (t 3.25 -> 3.65)
+  lap0 cp4->cp5: 0.35 s  (t 3.65 -> 4.00)
+  lap0 cp5->cp6: 0.45 s  (t 4.00 -> 4.45)
+  lap0 cp6->cp7: 0.35 s  (t 4.45 -> 4.80)
+  lap0 cp7->cp8: 0.30 s  (t 4.80 -> 5.10)
+  lap0 cp8->cp9: 0.35 s  (t 5.10 -> 5.45)
+  lap0 cp9->cp10: 0.35 s  (t 5.45 -> 5.80)
+  lap0 cp10->cp11: 0.30 s  (t 5.80 -> 6.10)
+  lap0 cp11->cp0: 0.40 s  (t 6.10 -> 6.50)
+  lap1 cp1->cp2: 0.40 s  (t 6.80 -> 7.20)
+  lap1 cp2->cp3: 0.50 s  (t 7.20 -> 7.70)
+  lap1 cp3->cp4: 0.40 s  (t 7.70 -> 8.10)
+  lap1 cp4->cp5: 0.35 s  (t 8.10 -> 8.45)
+  lap1 cp5->cp6: 0.40 s  (t 8.45 -> 8.85)
+  lap1 cp6->cp7: 0.40 s  (t 8.85 -> 9.25)
+  lap1 cp7->cp8: 0.30 s  (t 9.25 -> 9.55)
+  lap1 cp8->cp9: 0.35 s  (t 9.55 -> 9.90)
+  lap1 cp9->cp10: 0.35 s  (t 9.90 -> 10.25)
+  lap1 cp10->cp11: 0.35 s  (t 10.25 -> 10.60)
+  lap1 cp11->cp0: 0.40 s  (t 10.60 -> 11.00)
+  lap2 cp1->cp2: 0.40 s  (t 11.30 -> 11.70)
+  lap2 cp2->cp3: 0.45 s  (t 11.70 -> 12.15)
+per-lap aggregates: lap frames boost drift thr<1 brake avgsp avg|lat| avg|steer|
+  lap0 100  b 47 d 36 thr<1  1 brake  1  sp 17.26 lat 1.03 steer 0.30
+  lap1  90  b 46 d 34 thr<1  7 brake  7  sp 19.45 lat 0.93 steer 0.43
+  lap2  25  b  7 d  7 thr<1  3 brake  3  sp 16.85 lat 1.32 steer 0.48
+slow frames (speed<16, t>=1.5):
+  t 1.50-3.25 (36 fr) lap0 speed 0.0-15.9 s 0.0-86.6 lat -1.63..3.25 inputs [(1.0, 0.26, False, False), (1.0, -0.17, False, False), (1.0, 0.37, True, False), (1.0, -0.32, False, False)]
+  t 4.15-4.15 (1 fr) lap0 speed 15.7-15.7 s 35.1-35.1 lat 0.51..0.51 inputs [(1.0, 0.07, False, False)]
+  t 6.95-7.40 (10 fr) lap1 speed 14.5-15.9 s 5.8-13.7 lat -0.08..1.38 inputs [(-0.35, 0.01, False, True), (1.0, 1.0, False, False), (1.0, -0.52, True, True), (1.0, 0.51, False, True)]
+  t 7.50-7.70 (5 fr) lap1 speed 14.9-15.4 s 15.3-18.4 lat 0.52..0.86 inputs [(-0.35, 0.14, False, False), (1.0, -0.73, False, True), (-1.0, 0.32, False, False), (-1.0, 0.62, True, False)]
+  t 8.00-8.00 (1 fr) lap1 speed 15.4-15.4 s 23.5-23.5 lat 0.38..0.38 inputs [(1.0, 0.36, False, False)]
+  t 11.50-11.90 (9 fr) lap2 speed 14.6-15.7 s 6.6-14.1 lat 0.76..1.47 inputs [(1.0, 0.3, True, True), (1.0, 1.0, False, False), (1.0, 0.25, True, True), (1.0, 0.46, False, True)]
+  t 12.20-12.20 (1 fr) lap2 speed 15.4-15.4 s 19.2-19.2 lat 0.25..0.25 inputs [(1.0, 0.55, True, False)]
+
+### car 1 sol GPT-6.1 Sol
+checkpoint crossings: t lap cp_before->cp_after speed s lat E
+    2.65 lap0 cp1->2 sp 16.68 s   3.15 lat  0.15 E0.10 d0 b1
+    2.95 lap0 cp2->3 sp 20.08 s  11.86 lat  1.89 E0.13 d0 b1
+    3.25 lap0 cp3->4 sp 22.30 s  18.29 lat -0.67 E0.11 d0 b1
+    3.55 lap0 cp4->5 sp 23.12 s  25.13 lat -0.68 E0.12 d0 b1
+    3.85 lap0 cp5->6 sp 25.39 s  32.45 lat  2.02 E0.12 d0 b1
+    4.10 lap0 cp6->7 sp 26.84 s  40.83 lat  0.90 E0.14 d0 b1
+    4.35 lap0 cp7->8 sp 29.18 s  47.76 lat  0.56 E0.00 d1 b1
+    4.60 lap0 cp8->9 sp 27.93 s  55.25 lat  0.90 E0.04 d1 b1
+    4.85 lap0 cp9->10 sp 23.66 s  61.60 lat  0.14 E0.11 d1 b1
+    5.20 lap0 cp10->11 sp 23.70 s  69.82 lat  0.15 E0.11 d1 b1
+    5.50 lap0 cp11->0 sp 24.44 s  77.06 lat  1.92 E0.10 d0 b1
+    5.70 lap0 cp0->1 sp 24.60 s  84.41 lat  1.57 E0.01 d0 b0
+    6.00 lap1 cp1->2 sp 24.61 s   3.24 lat  1.13 E0.02 d0 b1
+    6.20 lap1 cp2->3 sp 22.66 s  10.86 lat  1.52 E0.14 d0 b1
+    6.60 lap1 cp3->4 sp 18.39 s  18.20 lat -1.68 E0.10 d0 b1
+    6.95 lap1 cp4->5 sp 23.63 s  25.30 lat -0.10 E0.05 d0 b1
+    7.25 lap1 cp5->6 sp 25.27 s  32.39 lat  3.10 E0.00 d1 b1
+    7.50 lap1 cp6->7 sp 21.09 s  40.41 lat  1.18 E0.16 d0 b1
+    7.80 lap1 cp7->8 sp 21.51 s  47.50 lat  0.63 E0.24 d0 b1
+    8.05 lap1 cp8->9 sp 23.33 s  54.35 lat  1.63 E0.36 d0 b1
+    8.35 lap1 cp9->10 sp 22.80 s  62.30 lat  1.76 E0.37 d0 b1
+    8.60 lap1 cp10->11 sp 25.53 s  69.77 lat  1.61 E0.40 d0 b1
+    8.85 lap1 cp11->0 sp 28.30 s  76.81 lat  1.83 E0.24 d1 b1
+    9.05 lap1 cp0->1 sp 26.63 s  83.62 lat  0.54 E0.32 d1 b1
+    9.35 lap2 cp1->2 sp 26.64 s   4.13 lat  0.03 E0.32 d1 b1
+    9.55 lap2 cp2->3 sp 23.63 s  10.93 lat  0.98 E0.42 d0 b1
+    9.90 lap2 cp3->4 sp 20.54 s  18.49 lat -0.73 E0.42 d0 b1
+   10.20 lap2 cp4->5 sp 24.60 s  25.38 lat  0.66 E0.40 d0 b1
+   10.45 lap2 cp5->6 sp 25.50 s  32.26 lat  2.91 E0.41 d0 b1
+   10.65 lap2 cp6->7 sp 28.09 s  39.75 lat  1.24 E0.29 d1 b1
+   10.95 lap2 cp7->8 sp 29.00 s  47.96 lat  0.07 E0.28 d1 b1
+   11.20 lap2 cp8->9 sp 25.85 s  54.59 lat  0.52 E0.34 d1 b1
+   11.50 lap2 cp9->10 sp 23.08 s  61.37 lat  1.28 E0.30 d1 b1
+   11.80 lap2 cp10->11 sp 25.48 s  70.17 lat  2.66 E0.23 d1 b1
+   12.05 lap2 cp11->0 sp 25.40 s  77.17 lat  3.46 E0.17 d1 b1
+   12.20 lap2 cp0->1 sp 27.18 s  83.98 lat  1.62 E0.08 d1 b1
+segment times (same lap):
+  lap0 cp1->cp2: 0.30 s  (t 2.65 -> 2.95)
+  lap0 cp2->cp3: 0.30 s  (t 2.95 -> 3.25)
+  lap0 cp3->cp4: 0.30 s  (t 3.25 -> 3.55)
+  lap0 cp4->cp5: 0.30 s  (t 3.55 -> 3.85)
+  lap0 cp5->cp6: 0.25 s  (t 3.85 -> 4.10)
+  lap0 cp6->cp7: 0.25 s  (t 4.10 -> 4.35)
+  lap0 cp7->cp8: 0.25 s  (t 4.35 -> 4.60)
+  lap0 cp8->cp9: 0.25 s  (t 4.60 -> 4.85)
+  lap0 cp9->cp10: 0.35 s  (t 4.85 -> 5.20)
+  lap0 cp10->cp11: 0.30 s  (t 5.20 -> 5.50)
+  lap0 cp11->cp0: 0.20 s  (t 5.50 -> 5.70)
+  lap1 cp1->cp2: 0.20 s  (t 6.00 -> 6.20)
+  lap1 cp2->cp3: 0.40 s  (t 6.20 -> 6.60)
+  lap1 cp3->cp4: 0.35 s  (t 6.60 -> 6.95)
+  lap1 cp4->cp5: 0.30 s  (t 6.95 -> 7.25)
+  lap1 cp5->cp6: 0.25 s  (t 7.25 -> 7.50)
+  lap1 cp6->cp7: 0.30 s  (t 7.50 -> 7.80)
+  lap1 cp7->cp8: 0.25 s  (t 7.80 -> 8.05)
+  lap1 cp8->cp9: 0.30 s  (t 8.05 -> 8.35)
+  lap1 cp9->cp10: 0.25 s  (t 8.35 -> 8.60)
+  lap1 cp10->cp11: 0.25 s  (t 8.60 -> 8.85)
+  lap1 cp11->cp0: 0.20 s  (t 8.85 -> 9.05)
+  lap2 cp1->cp2: 0.20 s  (t 9.35 -> 9.55)
+  lap2 cp2->cp3: 0.35 s  (t 9.55 -> 9.90)
+  lap2 cp3->cp4: 0.30 s  (t 9.90 -> 10.20)
+  lap2 cp4->cp5: 0.25 s  (t 10.20 -> 10.45)
+  lap2 cp5->cp6: 0.20 s  (t 10.45 -> 10.65)
+  lap2 cp6->cp7: 0.30 s  (t 10.65 -> 10.95)
+  lap2 cp7->cp8: 0.25 s  (t 10.95 -> 11.20)
+  lap2 cp8->cp9: 0.30 s  (t 11.20 -> 11.50)
+  lap2 cp9->cp10: 0.30 s  (t 11.50 -> 11.80)
+  lap2 cp10->cp11: 0.25 s  (t 11.80 -> 12.05)
+  lap2 cp11->cp0: 0.15 s  (t 12.05 -> 12.20)
+per-lap aggregates: lap frames boost drift thr<1 brake avgsp avg|lat| avg|steer|
+  lap0  84  b 62 d 40 thr<1  0 brake  0  sp 19.87 lat 0.94 steer 0.42
+  lap1  67  b 56 d 35 thr<1  0 brake  0  sp 23.49 lat 1.38 steer 0.46
+  lap2  63  b 63 d 30 thr<1  0 brake  0  sp 24.97 lat 1.24 steer 0.51
+  lap3   1  b  1 d  1 thr<1  0 brake  0  sp 27.18 lat 1.62 steer 0.28
+slow frames (speed<16, t>=1.5):
+  t 1.50-2.60 (23 fr) lap0 speed 0.0-15.7 s 0.1-86.6 lat -1.06..1.60 inputs [(1.0, 0.59, False, True), (1.0, 0.29, False, True), (1.0, 0.37, True, True), (1.0, 0.18, True, True)]
+====================================================================================================
+r3-g2 seed 5032 length 87.530 halfWidth 4.074
+
+### car 0 sol GPT-6.1 Sol
+checkpoint crossings: t lap cp_before->cp_after speed s lat E
+    2.45 lap0 cp1->2 sp 13.56 s   2.63 lat  0.66 E0.00 d0 b0
+    2.95 lap0 cp2->3 sp 14.01 s  10.23 lat  2.32 E0.00 d0 b0
+    3.45 lap0 cp3->4 sp 16.14 s  18.02 lat  2.12 E0.01 d1 b0
+    3.75 lap0 cp4->5 sp 21.42 s  26.87 lat  3.73 E0.00 d1 b1
+    3.95 lap0 cp5->6 sp 19.83 s  32.64 lat  2.10 E0.10 d1 b1
+    4.30 lap0 cp6->7 sp 19.92 s  39.47 lat  0.74 E0.07 d1 b1
+    4.65 lap0 cp7->8 sp 24.18 s  48.22 lat  2.75 E0.01 d0 b1
+    4.95 lap0 cp8->9 sp 19.50 s  55.65 lat  2.95 E0.01 d1 b0
+    5.20 lap0 cp9->10 sp 21.02 s  62.08 lat  3.19 E0.01 d1 b0
+    5.45 lap0 cp10->11 sp 20.84 s  68.70 lat  1.81 E0.03 d1 b1
+    5.80 lap0 cp11->0 sp 20.21 s  75.94 lat  2.07 E0.02 d1 b1
+    6.05 lap0 cp0->1 sp 21.12 s  83.41 lat  2.16 E0.04 d1 b1
+    6.35 lap1 cp1->2 sp 20.92 s   3.13 lat  1.68 E0.14 d1 b1
+    6.65 lap1 cp2->3 sp 24.82 s  11.02 lat  1.55 E0.18 d0 b1
+    6.95 lap1 cp3->4 sp 26.47 s  18.55 lat  2.09 E0.08 d1 b1
+    7.10 lap1 cp4->5 sp 27.08 s  24.44 lat  3.17 E0.16 d0 b1
+    7.35 lap1 cp5->6 sp 28.59 s  32.75 lat  0.02 E0.01 d1 b1
+    7.80 lap1 cp6->7 sp 16.20 s  40.72 lat -2.26 E0.16 d0 b1
+    8.20 lap1 cp7->8 sp 18.42 s  46.83 lat  1.91 E0.01 d0 b0
+    8.65 lap1 cp8->9 sp 15.93 s  54.99 lat  3.35 E0.02 d0 b1
+    9.00 lap1 cp9->10 sp 17.58 s  62.17 lat  3.72 E0.05 d0 b1
+    9.25 lap1 cp10->11 sp 19.63 s  69.32 lat  2.42 E0.07 d0 b1
+    9.55 lap1 cp11->0 sp 17.83 s  75.75 lat  2.35 E0.11 d0 b1
+    9.85 lap1 cp0->1 sp 18.07 s  83.81 lat  1.84 E0.11 d0 b1
+   10.15 lap2 cp1->2 sp 22.80 s   3.70 lat  2.26 E0.08 d0 b1
+   10.40 lap2 cp2->3 sp 22.43 s  10.66 lat  2.81 E0.00 d0 b0
+   10.75 lap2 cp3->4 sp 20.41 s  17.66 lat  2.08 E0.03 d0 b1
+   11.00 lap2 cp4->5 sp 18.55 s  24.85 lat  3.33 E0.12 d0 b1
+   11.30 lap2 cp5->6 sp 19.20 s  32.81 lat  1.34 E0.12 d0 b1
+   11.65 lap2 cp6->7 sp 20.41 s  39.76 lat -0.37 E0.09 d0 b1
+   12.00 lap2 cp7->8 sp 23.50 s  47.54 lat -0.22 E0.06 d0 b1
+   12.30 lap2 cp8->9 sp 24.46 s  54.87 lat -0.46 E0.07 d0 b1
+   12.55 lap2 cp9->10 sp 24.75 s  61.26 lat  0.46 E0.13 d0 b1
+   12.80 lap2 cp10->11 sp 27.08 s  68.42 lat  0.48 E0.17 d0 b1
+   13.05 lap2 cp11->0 sp 26.32 s  75.16 lat  1.15 E0.15 d0 b1
+   13.30 lap2 cp0->1 sp 27.49 s  83.08 lat  0.88 E0.00 d1 b1
+segment times (same lap):
+  lap0 cp1->cp2: 0.50 s  (t 2.45 -> 2.95)
+  lap0 cp2->cp3: 0.50 s  (t 2.95 -> 3.45)
+  lap0 cp3->cp4: 0.30 s  (t 3.45 -> 3.75)
+  lap0 cp4->cp5: 0.20 s  (t 3.75 -> 3.95)
+  lap0 cp5->cp6: 0.35 s  (t 3.95 -> 4.30)
+  lap0 cp6->cp7: 0.35 s  (t 4.30 -> 4.65)
+  lap0 cp7->cp8: 0.30 s  (t 4.65 -> 4.95)
+  lap0 cp8->cp9: 0.25 s  (t 4.95 -> 5.20)
+  lap0 cp9->cp10: 0.25 s  (t 5.20 -> 5.45)
+  lap0 cp10->cp11: 0.35 s  (t 5.45 -> 5.80)
+  lap0 cp11->cp0: 0.25 s  (t 5.80 -> 6.05)
+  lap1 cp1->cp2: 0.30 s  (t 6.35 -> 6.65)
+  lap1 cp2->cp3: 0.30 s  (t 6.65 -> 6.95)
+  lap1 cp3->cp4: 0.15 s  (t 6.95 -> 7.10)
+  lap1 cp4->cp5: 0.25 s  (t 7.10 -> 7.35)
+  lap1 cp5->cp6: 0.45 s  (t 7.35 -> 7.80)
+  lap1 cp6->cp7: 0.40 s  (t 7.80 -> 8.20)
+  lap1 cp7->cp8: 0.45 s  (t 8.20 -> 8.65)
+  lap1 cp8->cp9: 0.35 s  (t 8.65 -> 9.00)
+  lap1 cp9->cp10: 0.25 s  (t 9.00 -> 9.25)
+  lap1 cp10->cp11: 0.30 s  (t 9.25 -> 9.55)
+  lap1 cp11->cp0: 0.30 s  (t 9.55 -> 9.85)
+  lap2 cp1->cp2: 0.25 s  (t 10.15 -> 10.40)
+  lap2 cp2->cp3: 0.35 s  (t 10.40 -> 10.75)
+  lap2 cp3->cp4: 0.25 s  (t 10.75 -> 11.00)
+  lap2 cp4->cp5: 0.30 s  (t 11.00 -> 11.30)
+  lap2 cp5->cp6: 0.35 s  (t 11.30 -> 11.65)
+  lap2 cp6->cp7: 0.35 s  (t 11.65 -> 12.00)
+  lap2 cp7->cp8: 0.30 s  (t 12.00 -> 12.30)
+  lap2 cp8->cp9: 0.25 s  (t 12.30 -> 12.55)
+  lap2 cp9->cp10: 0.25 s  (t 12.55 -> 12.80)
+  lap2 cp10->cp11: 0.25 s  (t 12.80 -> 13.05)
+  lap2 cp11->cp0: 0.25 s  (t 13.05 -> 13.30)
+per-lap aggregates: lap frames boost drift thr<1 brake avgsp avg|lat| avg|steer|
+  lap0  91  b 43 d 36 thr<1  0 brake  0  sp 16.21 lat 1.91 steer 0.43
+  lap1  76  b 55 d 35 thr<1  0 brake  0  sp 20.58 lat 2.20 steer 0.45
+  lap2  69  b 54 d 30 thr<1  0 brake  0  sp 22.63 lat 1.36 steer 0.47
+  lap3   1  b  1 d  1 thr<1  0 brake  0  sp 27.49 lat 0.88 steer 0.54
+slow frames (speed<16, t>=1.5):
+  t 1.50-3.20 (35 fr) lap0 speed 0.0-14.6 s 0.0-86.8 lat -1.60..2.32 inputs [(1.0, 0.16, True, True), (1.0, 0.63, True, True), (1.0, 0.57, False, True), (1.0, 0.91, False, True)]
+  t 7.85-7.85 (1 fr) lap1 speed 15.9-15.9 s 41.4-41.4 lat -1.91..-1.91 inputs [(1.0, 0.6, False, True)]
+  t 8.45-8.65 (5 fr) lap1 speed 14.1-15.9 s 51.6-55.0 lat 3.11..3.35 inputs [(1.0, 0.68, False, True), (1.0, 0.53, True, True), (1.0, 0.46, True, True), (1.0, 0.49, True, True)]
+  t 8.85-8.90 (2 fr) lap1 speed 15.8-16.0 s 58.6-59.6 lat 3.54..3.55 inputs [(1.0, -0.01, False, True), (1.0, -0.1, False, True)]
+
+### car 1 deepseek-flash DeepSeek V4.1 Flash
+checkpoint crossings: t lap cp_before->cp_after speed s lat E
+    2.65 lap0 cp1->2 sp 15.87 s   2.99 lat  1.91 E0.02 d0 b1
+    3.05 lap0 cp2->3 sp 17.55 s  10.22 lat  1.11 E0.02 d1 b0
+    3.50 lap0 cp3->4 sp 16.62 s  17.85 lat -0.23 E0.11 d0 b0
+    3.85 lap0 cp4->5 sp 17.98 s  25.03 lat  1.19 E0.11 d0 b1
+    4.20 lap0 cp5->6 sp 18.78 s  32.43 lat  0.48 E0.00 d0 b1
+    4.60 lap0 cp6->7 sp 20.66 s  39.37 lat -0.62 E0.00 d1 b1
+    4.95 lap0 cp7->8 sp 22.59 s  46.43 lat -0.25 E0.00 d1 b0
+    5.30 lap0 cp8->9 sp 22.47 s  54.26 lat -0.80 E0.13 d0 b0
+    5.60 lap0 cp9->10 sp 23.15 s  61.41 lat -0.47 E0.17 d0 b0
+    5.95 lap0 cp10->11 sp 23.94 s  69.47 lat -1.48 E0.17 d0 b1
+    6.25 lap0 cp11->0 sp 24.89 s  76.69 lat -1.15 E0.17 d0 b1
+    6.60 lap0 cp0->1 sp 24.98 s  84.38 lat -2.07 E0.17 d0 b1
+    6.90 lap1 cp1->2 sp 25.35 s   3.58 lat -2.48 E0.18 d0 b1
+    7.25 lap1 cp2->3 sp 26.72 s  11.63 lat -2.82 E0.14 d1 b1
+    7.55 lap1 cp3->4 sp 25.77 s  19.73 lat -2.81 E0.10 d1 b1
+    7.90 lap1 cp4->5 sp 21.78 s  25.95 lat -1.33 E0.13 d0 b1
+    8.20 lap1 cp5->6 sp 22.17 s  32.05 lat -0.64 E0.01 d1 b0
+    8.60 lap1 cp6->7 sp 22.45 s  40.21 lat -1.18 E0.15 d0 b0
+    8.90 lap1 cp7->8 sp 21.68 s  46.81 lat -0.95 E0.14 d0 b0
+    9.25 lap1 cp8->9 sp 22.67 s  54.51 lat -1.52 E0.14 d0 b1
+    9.55 lap1 cp9->10 sp 24.18 s  61.54 lat -0.87 E0.14 d0 b1
+    9.90 lap1 cp10->11 sp 24.33 s  69.69 lat -1.61 E0.13 d0 b1
+   10.20 lap1 cp11->0 sp 24.49 s  76.84 lat -1.08 E0.15 d0 b1
+   10.55 lap1 cp0->1 sp 24.85 s  84.35 lat -2.15 E0.14 d1 b1
+   10.85 lap2 cp1->2 sp 25.91 s   3.43 lat -2.29 E0.15 d1 b1
+   11.20 lap2 cp2->3 sp 27.02 s  11.53 lat -2.60 E0.10 d1 b1
+   11.45 lap2 cp3->4 sp 25.25 s  18.35 lat -2.74 E0.10 d1 b1
+   11.80 lap2 cp4->5 sp 22.62 s  25.25 lat -0.85 E0.10 d0 b1
+   12.15 lap2 cp5->6 sp 19.90 s  32.35 lat -0.77 E0.01 d1 b0
+   12.55 lap2 cp6->7 sp 21.96 s  40.09 lat -1.16 E0.12 d0 b1
+   12.85 lap2 cp7->8 sp 24.80 s  47.08 lat -0.68 E0.10 d0 b1
+   13.15 lap2 cp8->9 sp 23.25 s  54.00 lat -1.42 E0.15 d0 b1
+segment times (same lap):
+  lap0 cp1->cp2: 0.40 s  (t 2.65 -> 3.05)
+  lap0 cp2->cp3: 0.45 s  (t 3.05 -> 3.50)
+  lap0 cp3->cp4: 0.35 s  (t 3.50 -> 3.85)
+  lap0 cp4->cp5: 0.35 s  (t 3.85 -> 4.20)
+  lap0 cp5->cp6: 0.40 s  (t 4.20 -> 4.60)
+  lap0 cp6->cp7: 0.35 s  (t 4.60 -> 4.95)
+  lap0 cp7->cp8: 0.35 s  (t 4.95 -> 5.30)
+  lap0 cp8->cp9: 0.30 s  (t 5.30 -> 5.60)
+  lap0 cp9->cp10: 0.35 s  (t 5.60 -> 5.95)
+  lap0 cp10->cp11: 0.30 s  (t 5.95 -> 6.25)
+  lap0 cp11->cp0: 0.35 s  (t 6.25 -> 6.60)
+  lap1 cp1->cp2: 0.35 s  (t 6.90 -> 7.25)
+  lap1 cp2->cp3: 0.30 s  (t 7.25 -> 7.55)
+  lap1 cp3->cp4: 0.35 s  (t 7.55 -> 7.90)
+  lap1 cp4->cp5: 0.30 s  (t 7.90 -> 8.20)
+  lap1 cp5->cp6: 0.40 s  (t 8.20 -> 8.60)
+  lap1 cp6->cp7: 0.30 s  (t 8.60 -> 8.90)
+  lap1 cp7->cp8: 0.35 s  (t 8.90 -> 9.25)
+  lap1 cp8->cp9: 0.30 s  (t 9.25 -> 9.55)
+  lap1 cp9->cp10: 0.35 s  (t 9.55 -> 9.90)
+  lap1 cp10->cp11: 0.30 s  (t 9.90 -> 10.20)
+  lap1 cp11->cp0: 0.35 s  (t 10.20 -> 10.55)
+  lap2 cp1->cp2: 0.35 s  (t 10.85 -> 11.20)
+  lap2 cp2->cp3: 0.25 s  (t 11.20 -> 11.45)
+  lap2 cp3->cp4: 0.35 s  (t 11.45 -> 11.80)
+  lap2 cp4->cp5: 0.35 s  (t 11.80 -> 12.15)
+  lap2 cp5->cp6: 0.40 s  (t 12.15 -> 12.55)
+  lap2 cp6->cp7: 0.30 s  (t 12.55 -> 12.85)
+  lap2 cp7->cp8: 0.30 s  (t 12.85 -> 13.15)
+per-lap aggregates: lap frames boost drift thr<1 brake avgsp avg|lat| avg|steer|
+  lap0 102  b 51 d 43 thr<1  1 brake  1  sp 17.82 lat 0.99 steer 0.35
+  lap1  79  b 69 d 37 thr<1  6 brake  6  sp 24.51 lat 1.61 steer 0.52
+  lap2  56  b 47 d 27 thr<1  4 brake  4  sp 24.11 lat 1.56 steer 0.53
+slow frames (speed<16, t>=1.5):
+  t 1.50-2.65 (24 fr) lap0 speed 0.0-15.9 s 0.1-86.9 lat 1.46..1.97 inputs [(1.0, 1.0, False, False), (1.0, 0.0, False, False)]
+  t 2.85-2.90 (2 fr) lap0 speed 15.1-16.0 s 6.4-7.3 lat 1.39..1.47 inputs [(1.0, 0.35, False, False), (1.0, 0.45, False, False)]
+  t 3.15-3.25 (3 fr) lap0 speed 14.6-16.0 s 11.9-13.3 lat 0.08..0.55 inputs [(1.0, 0.34, True, False), (1.0, -0.04, False, False)]

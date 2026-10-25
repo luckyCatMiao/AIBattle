@@ -1,5 +1,5 @@
 """Independent model competitors; frozen revisions; durable frame-by-frame replays."""
-import argparse, concurrent.futures, gzip, hashlib, importlib.util, json, msvcrt, os, pathlib, shutil, socket, subprocess, threading, time, urllib.parse
+import argparse, concurrent.futures, gzip, hashlib, importlib.util, json, msvcrt, os, pathlib, shutil, socket, subprocess, sys, tempfile, threading, time, urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent
 CONTROL = ROOT / 'control'
@@ -7,9 +7,28 @@ CONTROL = ROOT / 'control'
 spec = importlib.util.spec_from_file_location('legacy_transport', ROOT.parents[1] / 'rts' / 'arena' / 'train.py')
 transport = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(transport)
-CATALOG = {'sol': 'gpt-6.1-sol', 'luna': 'gpt-6-luna', 'astra': 'gpt-6-astra', 'opus': 'claude-opus-5-5'}
+CATALOG = {
+    'sol': 'gpt-6.1-sol', 'luna': 'gpt-6-luna', 'astra': 'gpt-6-astra', 'opus': 'claude-opus-5-5',
+    # DeepSeek 通过 Claude Code CLI 使用，与 GPT 走同一条客户端路径。
+    'deepseek-flash': 'deepseek-v4.1-flash', 'deepseek': 'deepseek-v4.1-flash',
+}
+LABELS = {
+    'sol': 'GPT-6.1 Sol', 'luna': 'GPT-6 Luna', 'astra': 'GPT-6 Astra', 'opus': 'Claude Opus 5.5',
+    'deepseek-flash': 'DeepSeek V4.1 Flash', 'deepseek': 'DeepSeek V4.1 Flash',
+}
+# 本轮所有对手都通过 Claude Code CLI 调用（不再使用 Codex CLI）。
+CLIENTS = {w: 'claude' for w in CATALOG}
+# GPT 系模型在当前网关下会出现「thinking 块提前结束、后续 delta 继续」的流式乱序，
+# 需要本地顺序修正代理；DeepSeek 不需要。
+STREAM_PROXY = {'sol', 'luna', 'astra'}
+EFFORT = 'medium'
+PROXY_PORT = 8897
+PROXY = None
+HOME_ROOT = '/opt/aibattle-tools/auth/fighting-models'
+NO_ISOLATION = False
+SETTINGS_FILES = {}
+HOMES_TMP = None
 MODELS = {w: CATALOG[w] for w in ('opus', 'sol')}
-LABELS = transport.LABELS
 transport.MODELS = MODELS
 RUN = None; REF = None; STATE = {}; GUARD = threading.Lock(); ARGS = None
 STARTING = {}; INHERITED = {}; HISTORY = []; PROTECTED_HASHES = {}
@@ -42,6 +61,195 @@ def load_history(run, seen=None):
         ident = 'history-' + run.name + '-' + result['id']
         HISTORY.append({**{k: v for k, v in result.items() if k not in ('sha256', 'windows')},
                         'original_id': result['id'], 'id': ident, 'source_run': run.name})
+
+
+def wsl_path(p):
+    """Windows 绝对路径 -> WSL /mnt/<drive>/... 路径。"""
+    s = str(pathlib.Path(p).resolve())
+    return '/mnt/' + s[0].lower() + '/' + s[3:].replace('\\', '/')
+
+
+
+
+def model_command(who, output='submission.txt', seconds=0):
+    """本轮统一使用 Claude Code；保留 codex 分支只用于显式配置的旧对手。
+
+    seconds<=0 表示不包裹 timeout，准备阶段可以一直进行到模型自己结束。
+    """
+    # 本机直跑不套 timeout 包装：Windows 的 timeout.exe 与 GNU timeout 语法不同，
+    # 时限交给 subprocess.run 的 timeout 参数。
+    prefix = [] if (not seconds or seconds <= 0 or NO_ISOLATION) else [
+        'timeout', '--signal=TERM', '--kill-after=10s', str(seconds) + 's']
+    if CLIENTS.get(who, 'claude') == 'claude':
+        settings = SETTINGS_FILES.get(who, '/home/player/.claude/settings.json') if NO_ISOLATION else '/home/player/.claude/settings.json'
+        exe = (shutil.which('claude') or 'claude') if NO_ISOLATION else 'claude'
+        return prefix + [exe, '-p',
+                '--safe-mode', '--settings', settings, '--setting-sources', 'user',
+                '--model', MODELS[who], '--effort', EFFORT, '--dangerously-skip-permissions',
+                '--strict-mcp-config', '--disable-slash-commands', '--no-chrome', '--no-session-persistence',
+                '--tools', 'Bash,Read,Write,Edit,Glob,Grep', '--output-format', 'stream-json', '--verbose']
+    return prefix + ['codex', 'exec',
+            '--ignore-user-config', '--ignore-rules', '--ephemeral', '--skip-git-repo-check',
+            '--dangerously-bypass-approvals-and-sandbox', '-m', MODELS[who],
+            '-c', 'model_reasoning_effort="medium"', '-c', 'web_search="disabled"',
+            '--disable', 'apps', '--disable', 'plugins', '--disable', 'multi_agent',
+            '--disable', 'computer_use', '--disable', 'browser_use', '--disable', 'in_app_browser',
+            '--disable', 'memories', '--disable', 'hooks', '--json', '-o', '/workspace/' + output, '-']
+
+
+
+
+def completed_usage(who, events):
+    if CLIENTS.get(who, 'claude') == 'claude':
+        results = [e for e in events if e.get('type') == 'result']
+        if len(results) != 1 or results[0].get('is_error') or results[0].get('subtype') != 'success':
+            raise RuntimeError(who + ' did not complete successfully')
+        init = [e for e in events if e.get('type') == 'system' and e.get('subtype') == 'init']
+        if not init or init[0].get('model') != MODELS[who]:
+            raise RuntimeError('Unexpected Claude Code model selection for ' + who)
+        usage = results[0].get('modelUsage', {})
+        if MODELS[who] not in usage:
+            raise RuntimeError('Requested model missing from model usage: ' + who)
+        return [{'usage': results[0].get('usage'), 'modelUsage': usage,
+                 'reported_cost_usd': results[0].get('total_cost_usd')}]
+    usage = [e['usage'] for e in events if e.get('type') == 'turn.completed']
+    if not usage:
+        raise RuntimeError(who + ': no completed model turn')
+    return usage
+
+
+
+
+def provision_homes():
+    """把宿主 Claude Code 配置写给每名选手的私有 home。
+
+    凭据只写进 WSL 的 /opt/aibattle-tools/auth，不进入项目目录、日志或回放。
+    所有选手本轮都走 Claude Code CLI；GPT 系额外指向本地流顺序修正代理。
+    """
+    host = pathlib.Path(os.environ.get('USERPROFILE', str(pathlib.Path.home()))) / '.claude' / 'settings.json'
+    settings = json.loads(host.read_text(encoding='utf-8-sig'))
+    base_env = dict(settings.get('env', {}))
+    for key in ('CLAUDE_CODE_MAX_OUTPUT_TOKENS', 'MAX_THINKING_TOKENS', 'CLAUDE_CODE_EFFORT_LEVEL'):
+        base_env.pop(key, None)
+    base_env['DISABLE_AUTOUPDATER'] = '1'
+    base_env['CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC'] = '1'
+    settings_by_player = {}
+    for who in MODELS:
+        env = dict(base_env)
+        if who in STREAM_PROXY:
+            env['ANTHROPIC_BASE_URL'] = f'http://127.0.0.1:{PROXY_PORT}'
+        entry = {'env': env, 'model': MODELS[who], 'disableAllHooks': True}
+        # 自定义模型 ID 需要宿主 settings 里的 modelPicker/modelSettings，
+        # 否则隔离 home 里的 Claude Code 会报 unrecognized_model。
+        for key in ('modelPicker', 'modelSettings'):
+            if key in settings:
+                entry[key] = settings[key]
+        settings_by_player[who] = entry
+    if NO_ISOLATION:
+        global HOMES_TMP
+        HOMES_TMP = tempfile.mkdtemp(prefix='aibattle-fighting-homes-')
+        for who in MODELS:
+            folder = pathlib.Path(HOMES_TMP) / who
+            folder.mkdir(parents=True, exist_ok=True)
+            f = folder / 'settings.json'
+            f.write_text(json.dumps(settings_by_player[who], ensure_ascii=False, indent=2), encoding='utf-8')
+            try: os.chmod(f, 0o600)
+            except OSError: pass
+            SETTINGS_FILES[who] = str(f)
+        save(CONTROL / 'home-paths.json', {who: str(pathlib.Path(HOMES_TMP) / who) for who in MODELS})
+        save(CONTROL / 'clients.json', {who: CLIENTS.get(who, 'claude') for who in MODELS})
+        return base_env
+
+    payload = {'root': HOME_ROOT, 'players': list(MODELS), 'settings': settings_by_player,
+               'clients': {who: CLIENTS.get(who, 'claude') for who in MODELS}}
+    script = '''import json,os,pathlib,sys
+d=json.load(sys.stdin)
+import glob, shutil
+for who in d['players']:
+    client=d['clients'][who]
+    p=pathlib.Path(d['root'])/who/('.'+client)
+    p.mkdir(parents=True,exist_ok=True)
+    f=p/'settings.json'
+    f.write_text(json.dumps(d['settings'][who],ensure_ascii=False))
+    os.chmod(f,0o600)
+    # Claude Code 的全局状态文件必须在 HOME 根目录；优先恢复之前的备份，
+    # 否则写一个最小的已完成引导配置，避免 unrecognized_model / 反复引导。
+    home=p.parent
+    backups=sorted((p/'backups').glob('.claude.json.backup.*')) if (p/'backups').exists() else []
+    state=home/'.claude.json'
+    if backups:
+        shutil.copy2(backups[-1],state)
+    else:
+        state.write_text(json.dumps({'hasCompletedOnboarding':True,'lastOnboardingVersion':'2.1.296','numStartups':1,'autoUpdates':False}))
+    os.chmod(state,0o600)
+    for item in [home,p,f,state]:os.chown(item,65534,65534)
+'''
+    subprocess.run(['wsl.exe', '-d', 'Ubuntu', '-u', 'root', '--', 'python3', '-c', script],
+                   input=json.dumps(payload), text=True, encoding='utf-8', check=True,
+                   creationflags=subprocess.CREATE_NO_WINDOW)
+    save(CONTROL / 'home-paths.json', {who: f'{HOME_ROOT}/{who}' for who in MODELS})
+    save(CONTROL / 'clients.json', {who: CLIENTS.get(who, 'claude') for who in MODELS})
+    return base_env
+
+
+
+
+def start_stream_proxy(env):
+    """GPT 系模型经本地代理修正流式块顺序；它只转发真实 CLI 请求。"""
+    global PROXY
+    if not (STREAM_PROXY & set(MODELS)):
+        return
+    base = env.get('ANTHROPIC_BASE_URL')
+    if not base:
+        raise RuntimeError('Claude Code 配置缺少 ANTHROPIC_BASE_URL')
+    script = str(ROOT.parents[1] / 'writing-bench' / 'cc_stream_proxy.py')
+    if NO_ISOLATION:
+        log = str(CONTROL / f'fighting-stream-proxy-{RUN.name}.log')
+        PROXY = subprocess.Popen(
+            [sys.executable, script, '--base', base, '--port', str(PROXY_PORT), '--log', log, '--normalize'],
+            cwd=str(ROOT.parents[1] / 'writing-bench'),
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=subprocess.CREATE_NO_WINDOW)
+    else:
+        script = wsl_path(script)
+        log = f'/tmp/fighting-stream-proxy-{RUN.name}.log'
+        PROXY = subprocess.Popen(
+            ['wsl.exe', '-d', 'Ubuntu', '-u', 'root', '--', 'python3', script, '--base', base,
+             '--port', str(PROXY_PORT), '--log', log, '--normalize'],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=subprocess.CREATE_NO_WINDOW)
+    for _ in range(50):
+        ok = False
+        if NO_ISOLATION:
+            try:
+                s = socket.create_connection(('127.0.0.1', PROXY_PORT), 0.5); s.close(); ok = True
+            except OSError:
+                ok = False
+        else:
+            probe = (f"import socket;socket.create_connection(('127.0.0.1',{PROXY_PORT}),0.5).close()")
+            ok = subprocess.run(['wsl.exe', '-d', 'Ubuntu', '-u', 'root', '--', 'python3', '-c', probe],
+                                capture_output=True).returncode == 0
+        if ok:
+            save(CONTROL / 'stream-proxy.json', {'port': PROXY_PORT, 'base': base, 'log': log})
+            return
+        time.sleep(0.2)
+    raise RuntimeError('本地流顺序修正代理没有启动')
+
+
+
+
+def stop_stream_proxy():
+    global PROXY
+    if PROXY is None:
+        return
+    if not NO_ISOLATION:
+        subprocess.run(['wsl.exe', '-d', 'Ubuntu', '-u', 'root', '--', 'pkill', '-f', f'fighting-stream-proxy-{RUN.name}'],
+                       check=False)
+    try:
+        PROXY.terminate()
+    except OSError:
+        pass
+    PROXY = None
+
+
 
 
 def isolated(who, mode, cmd):
@@ -84,6 +292,8 @@ def status(phase=None, **fields):
 
 
 def bootstrap():
+    env = provision_homes()
+    start_stream_proxy(env)
     endpoints = ['chatgpt.com', 'api.openai.com']
     if 'opus' in MODELS:
         host = urllib.parse.urlparse(os.environ.get('ANTHROPIC_BASE_URL', '')).hostname
@@ -127,13 +337,16 @@ def bootstrap():
         STARTING[who] = sorted(p.name for p in folder.iterdir() if p.is_file())
 
     save(CONTROL / 'workspace-paths.json', {w: (RUN / 'workspaces' / w).relative_to(ROOT).as_posix() for w in MODELS})
-    save(RUN / 'isolation-prepare.json', [probe(w, 'prepare') for w in MODELS])
+    save(RUN / 'isolation-prepare.json',
+         {'mode': 'none', 'note': '本机直跑；赛前约定不读取对方工作区'} if NO_ISOLATION
+         else [probe(w, 'prepare') for w in MODELS])
     save(RUN / 'config.json', {
         'game': 'fighting', 'models': MODELS, 'reasoning_effort': 'medium', 'rounds': ARGS.rounds,
         'games_per_round': 2, 'port': ARGS.port, 'fresh_start': not bool(ARGS.incumbent or ARGS.continue_both),
         'incumbent': ARGS.incumbent, 'continue_both': ARGS.continue_both, 'from_run': ARGS.from_run,
         'source_round': ARGS.source_round, 'starting_files': STARTING, 'inherited_files': INHERITED,
-        'clients': {w: 'Claude Code' if w == 'opus' else 'Codex CLI' for w in MODELS},
+        'clients': {w: 'Claude Code' for w in MODELS},
+        'no_isolation': NO_ISOLATION,
         'history_games': len(HISTORY), 'decision_frames': 15, 'max_windows': MAX_WINDOWS,
         'source_sha256': hashed(ROOT.parent / 'simulation.js'),
         'catalog_sha256': hashed(ROOT.parent / 'catalog.js'),
@@ -209,7 +422,8 @@ def freeze(who, iteration, usage):
             shutil.copytree(item, target / item.name, dirs_exist_ok=True)
         else:
             shutil.copy(item, target / item.name)
-    manifest = {p.relative_to(target).as_posix(): hashed(p) for p in sorted(target.rglob('*')) if p.is_file()}
+    # manifest.json 自身不能进清单：它是清单的载体，写进去就变成自引用。
+    manifest = {p.relative_to(target).as_posix(): hashed(p) for p in sorted(target.rglob('*')) if p.is_file() and p.name != 'manifest.json'}
     save(target / 'manifest.json', manifest)
     save(RUN / f'round-{iteration}-{who}-usage.json', {'usage': usage} if not isinstance(usage, list) else usage)
     config = json.loads((RUN / 'config.json').read_text(encoding='utf-8'))
@@ -226,24 +440,39 @@ def team_ids():
 
 
 def prepare(who, iteration):
+    # 冻结现任者：整个系列都不再调用模型，直接把上一系列的冻结提交原样冻结到本轮。
+    # 挑战者每一轮都可以改进，现任者始终是同一套策略，这样胜率比较才有意义。
+    if who == ARGS.incumbent:
+        return freeze(who, iteration, [{'frozen_incumbent': True, 'from_run': ARGS.from_run,
+                                       'source_round': ARGS.source_round}])
+
     # 复用模式：只对第一轮生效——把上一次运行里已完成的提交搬过来，跳过模型准备。
     # 第 2、3 轮必须让模型真的复盘并改进，否则整场就变成同一套策略重复跑，失去迭代意义。
+    resumed_workspace = False
     if ARGS.reuse_workspaces and iteration == 1:
         source = pathlib.Path(ARGS.reuse_workspaces) / 'workspaces' / who
-        if not (source / 'entry.json').exists():
-            raise RuntimeError(f'{who} 在 {source} 里没有可复用的 entry.json')
         folder = RUN / 'workspaces' / who
-        if folder.exists():
-            shutil.rmtree(folder)
-        shutil.copytree(source, folder)
-        refresh_protected(folder, who)
-        entry = json.loads((folder / 'entry.json').read_text(encoding='utf-8'))
-        save(RUN / f'round-{iteration}-{who}-invocation.json',
-             {'model': MODELS[who], 'reasoning_effort': 'medium', 'reused_from': str(source), 'budget_seconds': 0})
-        save(RUN / f'round-{iteration}-{who}-completion.json', {'model_completed': True, 'reused_from': str(source)})
-        return freeze(who, iteration, [])
+        if source.exists():
+            if folder.exists():
+                shutil.rmtree(folder)
+            shutil.copytree(source, folder)
+            refresh_protected(folder, who)
+            # 上次跑到一半（没有 entry.json）时保留模型已经写下的文件继续准备，
+            # 只有真正提交过才直接冻结跳过准备。
+            if (folder / 'entry.json').exists() and (folder / 'entry.json').stat().st_size > 0:
+                save(RUN / f'round-{iteration}-{who}-invocation.json',
+                     {'model': MODELS[who], 'reasoning_effort': 'medium', 'reused_from': str(source), 'budget_seconds': 0})
+                save(RUN / f'round-{iteration}-{who}-completion.json', {'model_completed': True, 'reused_from': str(source)})
+                return freeze(who, iteration, [])
+            resumed_workspace = True
+            print(f'{who} 复用未完成工作区：保留已有文件，继续准备', flush=True)
 
     example_window = json.dumps(build_example_window(), ensure_ascii=False)
+    budget_text = (f'准备上限 {ARGS.prepare_seconds // 60} 分钟' if ARGS.prepare_seconds > 0
+                   else '准备时间不设上限，完成你认为充分的准备后再提交')
+    hard_timeout = None if ARGS.prepare_seconds <= 0 else ARGS.prepare_seconds + 30
+    direct_note = ('\n本轮为本机直跑：不要读取对方工作区、control 目录或对方进程数据；只使用自己的工作区。' if NO_ISOLATION else '')
+    incumbent_goal = (chr(10) * 2 + '【本轮目标】对手是**冻结的 ' + LABELS.get(ARGS.incumbent, ARGS.incumbent or '') + ' 策略**（它的代码与工作区对你不可见，禁止读取）。你的目标是在正式比赛中对它取得 **≥90% 的胜率**：用不同种子、不同座位反复自测，直到自测胜率稳定在 90% 以上再提交，并把实测胜率写进自测报告。') if ARGS.incumbent and who != ARGS.incumbent else ''
     prompt = f'''你是 {MODELS[who]}，参加「铁拳谱」1v1 格斗游戏的正式比赛，第 {iteration} 轮（共 {ARGS.rounds} 轮）。
 
 这是一个帧精确的 2D 横版格斗游戏，服务端以 20 Hz 推进，双方每 15 帧（0.75 秒）同时提交一次逐帧输入，收齐后统一推进。
@@ -258,7 +487,7 @@ def prepare(who, iteration):
   public_results.json  之前的公开战报
 
 请阅读帧数据，理解每名角色的起手帧、判定帧、收招帧、命中硬直、取消窗口、防御方式与必杀指令。
-本轮使用 medium effort，准备上限 {ARGS.prepare_seconds // 60} 分钟。充分理解机制、编写并实际运行有对抗性的自测；提前完成即可提交。
+本轮使用 medium effort，{budget_text}。充分理解机制、编写并实际运行有对抗性的自测；提前完成即可提交。
 
 在 /workspace/entry.json 写入你的提交，必须包含：
 {{"mode":"program","command":["python3","agent.py"],"team":["角色1","角色2","角色3"]}}
@@ -275,20 +504,39 @@ example.json 的 exampleWindow 字段是一份可照抄的合法窗口（{exampl
 序列在 12 帧内完成即成立，中间可夹入无关方向帧。普通技命中后的取消窗口内同样可以取消成必杀，这是连段的核心。
 
 程序单次响应硬上限 5 秒。准备环境可以联网，比赛执行时工作区只读且无网络。
-禁止读取对方文件、禁止修改 RULES.md/GAME.md/simulation.js/catalog.js/example.json，禁止下载现成引擎。
+禁止读取对方文件、禁止修改 RULES.md/GAME.md/simulation.js/catalog.js/example.json，禁止下载现成引擎。{direct_note}
 
-把你实际采用的策略、自测结果与局限写入简体中文 review.md。没有对局前不要编造复盘结果。'''
+把你实际采用的策略、自测结果与局限写入简体中文 review.md。没有对局前不要编造复盘结果。{incumbent_goal}'''
     out = RUN / f'round-{iteration}-{who}.jsonl'
     err = RUN / f'round-{iteration}-{who}.stderr.log'
-    cmd = transport.model_command(who, seconds=ARGS.prepare_seconds)
+    cmd = model_command(who, seconds=ARGS.prepare_seconds)
     save(RUN / f'round-{iteration}-{who}-invocation.json', {'model': MODELS[who], 'reasoning_effort': 'medium', 'command': cmd, 'budget_seconds': ARGS.prepare_seconds})
-    with out.open('w', encoding='utf-8') as o, err.open('w', encoding='utf-8') as e:
-        p = subprocess.run(isolated(who, 'prepare', cmd), input=prompt, stdout=o, stderr=e, text=True,
-                           encoding='utf-8', timeout=ARGS.prepare_seconds + 30, creationflags=subprocess.CREATE_NO_WINDOW)
+    p = None
+    timed_out = False
+    try:
+        with out.open('w', encoding='utf-8') as o, err.open('w', encoding='utf-8') as e:
+            if NO_ISOLATION:
+                ws = RUN / 'workspaces' / who
+                p = subprocess.run(cmd, input=prompt.replace('/workspace', str(ws)), stdout=o, stderr=e, text=True,
+                                   encoding='utf-8', timeout=hard_timeout, cwd=str(ws),
+                                   creationflags=subprocess.CREATE_NO_WINDOW)
+            else:
+                p = subprocess.run(isolated(who, 'prepare', cmd), input=prompt, stdout=o, stderr=e, text=True,
+                                   encoding='utf-8', timeout=hard_timeout, creationflags=subprocess.CREATE_NO_WINDOW)
+    except subprocess.TimeoutExpired:
+        # 模型跑满预算：只要它已经把 entry.json 落盘，就按已提交处理，不整场报废。
+        timed_out = True
+        print(f'{who} 准备跑满 {ARGS.prepare_seconds // 60} 分钟预算', flush=True)
     events = [json.loads(line) for line in out.read_text(encoding='utf-8').splitlines() if line.strip().startswith('{')]
+    if timed_out:
+        if not (RUN / 'workspaces' / who / 'entry.json').exists():
+            raise RuntimeError(f'{who} 准备超时且没有提交 entry.json')
+        save(RUN / f'round-{iteration}-{who}-completion.json', {'model_completed': False, 'timed_out': True})
+        check_protected(RUN / 'workspaces' / who, who)
+        return freeze(who, iteration, [{'timed_out': True}])
     usage = None
     try:
-        usage = transport.completed_usage(who, events)
+        usage = completed_usage(who, events)
     except Exception as exc:
         save(RUN / f'round-{iteration}-{who}-completion.json', {'returncode': p.returncode, 'model_completed': False, 'error': str(exc)})
         raise
@@ -302,9 +550,21 @@ class Competitor:
 
     def __init__(self, who, entry, iteration, game):
         self.who = who; self.entry = entry; self.iter = iteration
-        self.process = transport.JsonProcess(
-            isolated(who, 'engine', ['timeout', '--signal=KILL', '7200s', *entry['command']]),
-            RUN / f'engine-{iteration}-{game}-{who}.log') if entry['mode'] == 'program' else None
+        self.process = None
+        if entry['mode'] == 'program':
+            if NO_ISOLATION:
+                cmd = list(entry['command'])
+                if cmd[0] in ('python3', 'python', 'py'):
+                    cmd[0] = sys.executable
+                elif cmd[0] == 'node':
+                    cmd[0] = shutil.which('node') or 'node'
+                engine_dir = RUN / f'round-{iteration}' / who
+                self.process = transport.JsonProcess(cmd, RUN / f'engine-{iteration}-{game}-{who}.log',
+                                                     cwd=str(engine_dir))
+            else:
+                self.process = transport.JsonProcess(
+                    isolated(who, 'engine', ['timeout', '--signal=KILL', '7200s', *entry['command']]),
+                    RUN / f'engine-{iteration}-{game}-{who}.log')
 
     def move(self, obs):
         if self.process:
@@ -316,9 +576,15 @@ class Competitor:
         prompt = ('继续本场格斗对局。只读取你自己的笔记和公开规则。把本窗口输出 '
                   '{"inputs":[15 帧的 {"dir":…,"btn":…}]} 写入 action.json。当前状态：\n' + json.dumps(obs))
         try:
-            p = subprocess.run(isolated(self.who, 'prepare', transport.model_command(self.who, 'action-summary.txt', 180)),
-                               input=prompt, stdout=f, stderr=f, text=True, encoding='utf-8', timeout=200,
-                               creationflags=subprocess.CREATE_NO_WINDOW)
+            if NO_ISOLATION:
+                ws = RUN / 'workspaces' / self.who
+                p = subprocess.run(model_command(self.who, 'action-summary.txt', 180), cwd=str(ws),
+                                   input=prompt, stdout=f, stderr=f, text=True, encoding='utf-8', timeout=200,
+                                   creationflags=subprocess.CREATE_NO_WINDOW)
+            else:
+                p = subprocess.run(isolated(self.who, 'prepare', model_command(self.who, 'action-summary.txt', 180)),
+                                   input=prompt, stdout=f, stderr=f, text=True, encoding='utf-8', timeout=200,
+                                   creationflags=subprocess.CREATE_NO_WINDOW)
             action = json.loads((RUN / 'workspaces' / self.who / 'action.json').read_text(encoding='utf-8'))
         finally:
             f.close()
@@ -440,6 +706,12 @@ def play(iteration, entries, seat_order, game_number, pool):
 
 
 def review(who, iteration, summary):
+    if who == ARGS.incumbent:
+        note = ('本系列中 ' + LABELS.get(who, who) + ' 的策略在赛前已冻结（来自 ' + str(ARGS.from_run)
+                + ' 第 ' + str(ARGS.source_round) + ' 轮）：不调用模型、不做任何改动，第 ' + str(iteration)
+                + ' 轮比赛沿用同一份冻结提交。\n')
+        # 冻结目录里的 review.md 是上一系列留下的原件，改它会破坏清单校验。
+        return
     prompt = (f'请复盘你在「铁拳谱」第 {iteration} 轮的两局比赛。以下是公开战报：\n'
               + json.dumps(summary, ensure_ascii=False)[:20000]
               + '\n把具体对局 ID、模拟帧数/秒数与你的改动写入 /workspace/review.md（简体中文）。')
@@ -447,14 +719,26 @@ def review(who, iteration, summary):
     err = RUN / f'round-{iteration}-{who}-review.stderr.log'
     try:
         with out.open('w', encoding='utf-8') as o, err.open('w', encoding='utf-8') as e:
-            subprocess.run(isolated(who, 'prepare', transport.model_command(who, 'review-summary.txt', 600)),
-                           input=prompt, stdout=o, stderr=e, text=True, encoding='utf-8', timeout=630,
-                           creationflags=subprocess.CREATE_NO_WINDOW)
+            if NO_ISOLATION:
+                ws = RUN / 'workspaces' / who
+                subprocess.run(model_command(who, 'review-summary.txt', 600), cwd=str(ws),
+                               input=prompt.replace('/workspace', str(ws)), stdout=o, stderr=e, text=True,
+                               encoding='utf-8', timeout=630, creationflags=subprocess.CREATE_NO_WINDOW)
+            else:
+                subprocess.run(isolated(who, 'prepare', model_command(who, 'review-summary.txt', 600)),
+                               input=prompt, stdout=o, stderr=e, text=True, encoding='utf-8', timeout=630,
+                               creationflags=subprocess.CREATE_NO_WINDOW)
     except Exception as exc:
         print('review failed for', who, exc, flush=True)
 
 
 def postmatch(who, iteration, summary):
+    if who == ARGS.incumbent:
+        note = ('本系列中 ' + LABELS.get(who, who) + ' 的策略在赛前已冻结（来自 ' + str(ARGS.from_run)
+                + ' 第 ' + str(ARGS.source_round) + ' 轮），全程未参与准备、复盘与改进；'
+                '本系列所有对局都由这一份冻结版本出战。\n')
+        (RUN / f'postmatch-{who}.md').write_text(note, encoding='utf-8')
+        return
     prompt = ('比赛已结束。请写一份简体中文赛后复盘：你实际采用的策略、关键对局的具体帧数与判读、'
               '你的失误与可改进之处、以及对游戏机制的理解变化。写入 /workspace/postmatch.md。\n'
               + json.dumps(summary, ensure_ascii=False)[:20000])
@@ -462,9 +746,15 @@ def postmatch(who, iteration, summary):
     err = RUN / f'postmatch-{who}.stderr.log'
     try:
         with out.open('w', encoding='utf-8') as o, err.open('w', encoding='utf-8') as e:
-            subprocess.run(isolated(who, 'prepare', transport.model_command(who, 'postmatch-summary.txt', 600)),
-                           input=prompt, stdout=o, stderr=e, text=True, encoding='utf-8', timeout=630,
-                           creationflags=subprocess.CREATE_NO_WINDOW)
+            if NO_ISOLATION:
+                ws = RUN / 'workspaces' / who
+                subprocess.run(model_command(who, 'postmatch-summary.txt', 600), cwd=str(ws),
+                               input=prompt.replace('/workspace', str(ws)), stdout=o, stderr=e, text=True,
+                               encoding='utf-8', timeout=630, creationflags=subprocess.CREATE_NO_WINDOW)
+            else:
+                subprocess.run(isolated(who, 'prepare', model_command(who, 'postmatch-summary.txt', 600)),
+                               input=prompt, stdout=o, stderr=e, text=True, encoding='utf-8', timeout=630,
+                               creationflags=subprocess.CREATE_NO_WINDOW)
         source = RUN / 'workspaces' / who / 'postmatch.md'
         if source.exists():
             shutil.copy(source, RUN / f'postmatch-{who}.md')
@@ -483,6 +773,8 @@ def main():
     parser.add_argument('--continue-both', action='store_true')
     parser.add_argument('--prepare-seconds', type=int, default=1800)
     parser.add_argument('--port', type=int, default=8796)
+    parser.add_argument('--no-isolation', action='store_true',
+                        help='本机直跑：不使用 WSL/bubblewrap，只靠赛前约定不读取对方工作区')
     parser.add_argument('--seed-base', type=int, default=1000)
     parser.add_argument('--reuse-workspaces', metavar='RUN_DIR',
                         help='复用某个已完成运行的选手提交，跳过模型准备（用于上一次因非选手原因中断时续跑）')
@@ -491,8 +783,8 @@ def main():
         parser.error('Two different models required')
     if any(p not in CATALOG for p in ARGS.players):
         parser.error('Unknown player')
-    if not 60 <= ARGS.prepare_seconds <= 3600:
-        parser.error('Preparation budget must be 60–3600 seconds')
+    if ARGS.prepare_seconds != 0 and not 60 <= ARGS.prepare_seconds <= 86400:
+        parser.error('Preparation budget must be 0 (unlimited) or 60–86400 seconds')
     if ARGS.incumbent and not ARGS.from_run:
         parser.error('--incumbent requires --from-run')
     if ARGS.continue_both and not ARGS.from_run:
@@ -500,7 +792,8 @@ def main():
     if ARGS.incumbent and ARGS.continue_both:
         parser.error('--incumbent and --continue-both are mutually exclusive')
 
-    global MODELS
+    global MODELS, NO_ISOLATION
+    NO_ISOLATION = bool(ARGS.no_isolation)
     MODELS = {w: CATALOG[w] for w in ARGS.players}
     transport.MODELS = MODELS
 
@@ -527,27 +820,31 @@ def main():
 
     # 裁判是唯一的权威引擎进程。
     REF = transport.JsonProcess(['node', str(ROOT / 'referee.js')], RUN / 'referee.stderr.log')
-    setup = (f'双方继承各自上一系列策略，继续各迭代 {ARGS.rounds} 轮，每轮各最多 {ARGS.prepare_seconds // 60} 分钟准备'
+    budget_note = f'各最多 {ARGS.prepare_seconds // 60} 分钟准备' if ARGS.prepare_seconds > 0 else '准备时间不设上限'
+    setup = (f'双方继承各自上一系列策略，继续各迭代 {ARGS.rounds} 轮，每轮{budget_note}'
              if ARGS.continue_both else
-             f'{LABELS[ARGS.incumbent]} 沿用上一系列冻结策略，不额外修改；挑战者从零，最多 {ARGS.prepare_seconds // 60} 分钟准备'
+             f'{LABELS[ARGS.incumbent]} 沿用上一系列冻结策略，不额外修改；挑战者从零，{budget_note}'
              if ARGS.incumbent else
-             f'双方从零开始，各最多 {ARGS.prepare_seconds // 60} 分钟准备')
-    setup += '；每轮交换座位打两局；每 15 帧（0.75 秒）同步决策，等待双方响应期间游戏不推进；策略代码隔离'
+             f'双方从零开始，{budget_note}')
+    setup += '；每轮交换座位打两局；每 15 帧（0.75 秒）同步决策，等待双方响应期间游戏不推进；' + ('本机直跑，赛前约定不读取对方工作区' if NO_ISOLATION else '策略代码隔离')
     STATE = {'run': RUN.name, 'phase': '准备比赛', 'models': MODELS, 'labels': {w: LABELS[w] for w in MODELS},
              'reasoning_effort': 'medium', 'round': 1, 'rounds': ARGS.rounds, 'games': [], 'results': [],
              'ready': [], 'setup_note': setup, 'pid': os.getpid(), 'port': ARGS.port, 'completed': False}
 
     try:
-        status('建立隔离环境')
+        status('建立本机环境' if NO_ISOLATION else '建立隔离环境')
         bootstrap()
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
             for iteration in range(1, ARGS.rounds + 1):
+                for w in MODELS:
+                    (RUN / 'workspaces' / w / 'public_results.json').write_text(json.dumps(HISTORY, ensure_ascii=False, indent=2), encoding='utf-8', newline='')
                 status('模型准备', round=iteration)
                 futures = {w: pool.submit(prepare, w, iteration) for w in MODELS}
                 entries = {w: f.result() for w, f in futures.items()}
                 save(CONTROL / 'engine-paths.json', {w: (RUN / f'round-{iteration}' / w).relative_to(ROOT).as_posix() for w in MODELS})
                 status('比赛进行中', round=iteration, ready=sorted(MODELS))
-                save(RUN / f'isolation-engine-{iteration}.json', [probe(w, 'engine') for w in MODELS])
+                save(RUN / f'isolation-engine-{iteration}.json',
+                     {'mode': 'none'} if NO_ISOLATION else [probe(w, 'engine') for w in MODELS])
 
                 round_results = []
                 for game_number, order in enumerate([list(MODELS), list(reversed(MODELS))], 1):
@@ -576,6 +873,9 @@ def main():
     finally:
         if REF:
             REF.close()
+        stop_stream_proxy()
+        if HOMES_TMP:
+            shutil.rmtree(HOMES_TMP, ignore_errors=True)
         try:
             msvcrt.locking(lock.fileno(), msvcrt.LK_UNLCK, 1)
         except OSError:

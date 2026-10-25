@@ -1,0 +1,10 @@
+[{"name":"base","opts":{}},
+ {"name":"w16push150","opts":{"workers":16,"pushAt":150}},
+ {"name":"w22push200","opts":{"workers":22,"pushAt":200}},
+ {"name":"agg700","opts":{"aggroRange":700}},
+ {"name":"harsh","opts":{"pushAt":110,"aggroRange":1300,"defenseBias":1,"towerAt":50,"tower2At":80}},
+ {"name":"turtle","opts":{"pushAt":600,"aggroRange":1400,"defenseBias":1,"towerAt":60,"tower2At":90}},
+ {"name":"push120","opts":{"pushAt":120,"aggroRange":1100,"defenseBias":1}},
+ {"name":"push250","opts":{"pushAt":250,"aggroRange":900}},
+ {"name":"tower60","opts":{"towerAt":60,"tower2At":95,"aggroRange":1000,"defenseBias":1}},
+ {"name":"w16agg900","opts":{"workers":16,"aggroRange":900,"defenseBias":1,"pushAt":180}}]

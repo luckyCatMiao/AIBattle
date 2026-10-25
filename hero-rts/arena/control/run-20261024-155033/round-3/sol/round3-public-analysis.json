@@ -1,0 +1,3908 @@
+[
+  {
+    "file": "public-r2-g1.json.gz",
+    "seats": [
+      "opus",
+      "sol"
+    ],
+    "duration": 341.35,
+    "winner": "sol",
+    "checkpoints": [
+      {
+        "t": 30,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 180,
+            "wood": 227,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 27,
+            "units": {
+              "worker": 9,
+              "footman": 3,
+              "druid": 1,
+              "treant": 4,
+              "frost": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3"
+            ],
+            "hp": 2790,
+            "center": [
+              2149,
+              1109
+            ],
+            "heroes": [
+              [
+                "druid",
+                3,
+                1020,
+                2509,
+                1255
+              ],
+              [
+                "frost",
+                2,
+                820,
+                2562,
+                1221
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 260,
+            "wood": 395,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 32,
+            "units": {
+              "worker": 9,
+              "footman": 6,
+              "pyromancer": 1
+            },
+            "nodes": [],
+            "hp": 2420,
+            "center": [
+              1069,
+              920
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                785,
+                991
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 60,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 116,
+            "wood": 398,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 41,
+            "units": {
+              "worker": 14,
+              "footman": 2,
+              "druid": 1,
+              "frost": 1,
+              "treant": 4
+            },
+            "nodes": [
+              "n1",
+              "n3"
+            ],
+            "hp": 2460,
+            "center": [
+              2034,
+              1172
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                2151,
+                969
+              ],
+              [
+                "frost",
+                3,
+                940,
+                2214,
+                974
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 101,
+            "wood": 155,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 35,
+            "units": {
+              "worker": 14,
+              "footman": 5,
+              "pyromancer": 1,
+              "archer": 2
+            },
+            "nodes": [
+              "n0",
+              "n2"
+            ],
+            "hp": 2215,
+            "center": [
+              1205,
+              991
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                725,
+                961
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 90,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 77,
+            "wood": 309,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 59,
+            "units": {
+              "worker": 18,
+              "footman": 1,
+              "druid": 1,
+              "frost": 1,
+              "priest": 2,
+              "pyromancer": 1,
+              "archer": 3,
+              "treant": 2,
+              "oracle": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 4620,
+            "center": [
+              2184,
+              1013
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                2149,
+                959
+              ],
+              [
+                "frost",
+                3,
+                940,
+                2224,
+                965
+              ],
+              [
+                "pyromancer",
+                1,
+                650,
+                2190,
+                967
+              ],
+              [
+                "oracle",
+                1,
+                650,
+                2756,
+                1172
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 158,
+            "wood": 449,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 59,
+            "units": {
+              "worker": 18,
+              "footman": 5,
+              "pyromancer": 1,
+              "archer": 2,
+              "frost": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3"
+            ],
+            "hp": 2915,
+            "center": [
+              1202,
+              981
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                725,
+                961
+              ],
+              [
+                "frost",
+                1,
+                700,
+                420,
+                898
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 120,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 215,
+            "wood": 298,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 73,
+            "units": {
+              "worker": 18,
+              "footman": 1,
+              "druid": 1,
+              "frost": 1,
+              "priest": 2,
+              "pyromancer": 1,
+              "archer": 6,
+              "oracle": 1,
+              "ranger": 1,
+              "treant": 2
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 5600,
+            "center": [
+              2033,
+              944
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                1817,
+                881
+              ],
+              [
+                "frost",
+                3,
+                940,
+                1940,
+                883
+              ],
+              [
+                "pyromancer",
+                1,
+                650,
+                1838,
+                868
+              ],
+              [
+                "oracle",
+                1,
+                650,
+                1886,
+                855
+              ],
+              [
+                "ranger",
+                1,
+                720,
+                1895,
+                879
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 71,
+            "wood": 293,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 82,
+            "units": {
+              "worker": 18,
+              "footman": 6,
+              "pyromancer": 1,
+              "archer": 8,
+              "frost": 1,
+              "priest": 2,
+              "oracle": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3"
+            ],
+            "hp": 5103,
+            "center": [
+              1465,
+              1250
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                1172,
+                1251
+              ],
+              [
+                "frost",
+                1,
+                700,
+                1484,
+                1591
+              ],
+              [
+                "oracle",
+                1,
+                650,
+                1011,
+                1082
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 150,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 589,
+            "wood": 339,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 2
+            },
+            "pop": 79,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "frost": 1,
+              "priest": 3,
+              "pyromancer": 1,
+              "oracle": 1,
+              "ranger": 1,
+              "archer": 9
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n4",
+              "n5"
+            ],
+            "hp": 6623,
+            "center": [
+              2276,
+              1359
+            ],
+            "heroes": [
+              [
+                "druid",
+                5,
+                1134,
+                1574,
+                1212
+              ],
+              [
+                "frost",
+                5,
+                1180,
+                2585,
+                1537
+              ],
+              [
+                "pyromancer",
+                4,
+                689,
+                1909,
+                859
+              ],
+              [
+                "oracle",
+                4,
+                1010,
+                1601,
+                1232
+              ],
+              [
+                "ranger",
+                4,
+                966,
+                1781,
+                1125
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 409,
+            "wood": 299,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 2
+            },
+            "pop": 93,
+            "units": {
+              "worker": 18,
+              "footman": 6,
+              "pyromancer": 1,
+              "frost": 1,
+              "archer": 7,
+              "priest": 4,
+              "oracle": 1,
+              "druid": 1
+            },
+            "nodes": [
+              "n0",
+              "n3"
+            ],
+            "hp": 5862,
+            "center": [
+              1635,
+              758
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                1348,
+                1155
+              ],
+              [
+                "frost",
+                2,
+                703,
+                2794,
+                1652
+              ],
+              [
+                "oracle",
+                2,
+                238,
+                1692,
+                847
+              ],
+              [
+                "druid",
+                2,
+                637,
+                1527,
+                1030
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 180,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 659,
+            "wood": 414,
+            "tier": 2,
+            "tech": {
+              "weapons": 1,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 81,
+            "units": {
+              "worker": 17,
+              "druid": 1,
+              "frost": 1,
+              "pyromancer": 1,
+              "oracle": 1,
+              "ranger": 1,
+              "archer": 10,
+              "priest": 2
+            },
+            "nodes": [
+              "n1",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 6753,
+            "center": [
+              1824,
+              1153
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                1198,
+                1599,
+                1312
+              ],
+              [
+                "frost",
+                5,
+                565,
+                2118,
+                1709
+              ],
+              [
+                "pyromancer",
+                6,
+                1250,
+                1435,
+                938
+              ],
+              [
+                "oracle",
+                6,
+                1078,
+                1474,
+                1361
+              ],
+              [
+                "ranger",
+                6,
+                1050,
+                1604,
+                1044
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 304,
+            "wood": 385,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 70,
+            "units": {
+              "worker": 18,
+              "footman": 3,
+              "pyromancer": 1,
+              "ranger": 1,
+              "priest": 2,
+              "archer": 3,
+              "oracle": 1
+            },
+            "nodes": [
+              "n0",
+              "n2"
+            ],
+            "hp": 3279,
+            "center": [
+              1128,
+              902
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                5,
+                960,
+                960,
+                855
+              ],
+              [
+                "ranger",
+                2,
+                471,
+                1355,
+                1194
+              ],
+              [
+                "oracle",
+                2,
+                770,
+                496,
+                916
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 210,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 872,
+            "wood": 282,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 99,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "frost": 1,
+              "pyromancer": 1,
+              "oracle": 1,
+              "ranger": 1,
+              "archer": 13,
+              "priest": 2,
+              "mortar": 2
+            },
+            "nodes": [
+              "n1",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 8669,
+            "center": [
+              1689,
+              966
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                1380,
+                1723,
+                664
+              ],
+              [
+                "frost",
+                6,
+                1016,
+                1212,
+                957
+              ],
+              [
+                "pyromancer",
+                6,
+                917,
+                1268,
+                965
+              ],
+              [
+                "oracle",
+                6,
+                1250,
+                1230,
+                1173
+              ],
+              [
+                "ranger",
+                6,
+                1038,
+                1221,
+                1225
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 97,
+            "wood": 524,
+            "tier": 2,
+            "tech": {
+              "weapons": 1,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 77,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "oracle": 1,
+              "druid": 1,
+              "priest": 2,
+              "archer": 5,
+              "footman": 1
+            },
+            "nodes": [
+              "n0",
+              "n2"
+            ],
+            "hp": 3538,
+            "center": [
+              926,
+              974
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                5,
+                830,
+                820,
+                1029
+              ],
+              [
+                "oracle",
+                3,
+                504,
+                1739,
+                440
+              ],
+              [
+                "druid",
+                2,
+                804,
+                985,
+                957
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 240,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 801,
+            "wood": 458,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 105,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "pyromancer": 1,
+              "oracle": 1,
+              "ranger": 1,
+              "archer": 12,
+              "mortar": 5,
+              "priest": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 5460,
+            "center": [
+              1659,
+              1052
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                870,
+                1255,
+                540
+              ],
+              [
+                "pyromancer",
+                6,
+                216,
+                1516,
+                1238
+              ],
+              [
+                "oracle",
+                6,
+                877,
+                1320,
+                1203
+              ],
+              [
+                "ranger",
+                6,
+                635,
+                1394,
+                1324
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 204,
+            "wood": 853,
+            "tier": 2,
+            "tech": {
+              "weapons": 1,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 54,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "priest": 2,
+              "archer": 6,
+              "footman": 1
+            },
+            "nodes": [
+              "n0"
+            ],
+            "hp": 3499,
+            "center": [
+              928,
+              1169
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                962,
+                969,
+                1173
+              ],
+              [
+                "ranger",
+                3,
+                850,
+                1130,
+                1097
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 270,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 1709,
+            "wood": 1139,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 97,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "pyromancer": 1,
+              "ranger": 1,
+              "archer": 9,
+              "mortar": 6,
+              "priest": 2,
+              "frost": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 5721,
+            "center": [
+              1489,
+              1004
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                308,
+                1229,
+                921
+              ],
+              [
+                "pyromancer",
+                6,
+                539,
+                1174,
+                1108
+              ],
+              [
+                "ranger",
+                6,
+                549,
+                1222,
+                1242
+              ],
+              [
+                "frost",
+                6,
+                1300,
+                1845,
+                1183
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 262,
+            "wood": 1385,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 35,
+            "units": {
+              "worker": 14,
+              "ranger": 1,
+              "priest": 2,
+              "druid": 1
+            },
+            "nodes": [
+              "n0"
+            ],
+            "hp": 1767,
+            "center": [
+              1137,
+              1217
+            ],
+            "heroes": [
+              [
+                "ranger",
+                5,
+                520,
+                933,
+                1059
+              ],
+              [
+                "druid",
+                3,
+                959,
+                1003,
+                913
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 300,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 1691,
+            "wood": 842,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 103,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "pyromancer": 1,
+              "ranger": 1,
+              "archer": 12,
+              "mortar": 6,
+              "frost": 1,
+              "priest": 2,
+              "oracle": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 6229,
+            "center": [
+              1429,
+              1060
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                128,
+                936,
+                1178
+              ],
+              [
+                "pyromancer",
+                6,
+                288,
+                1172,
+                1183
+              ],
+              [
+                "ranger",
+                6,
+                392,
+                1258,
+                1185
+              ],
+              [
+                "frost",
+                6,
+                1016,
+                966,
+                1210
+              ],
+              [
+                "oracle",
+                6,
+                1250,
+                2118,
+                1206
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 166,
+            "wood": 1857,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 23,
+            "units": {
+              "worker": 10,
+              "frost": 1,
+              "footman": 1,
+              "archer": 1
+            },
+            "nodes": [
+              "n0"
+            ],
+            "hp": 1450,
+            "center": [
+              826,
+              1025
+            ],
+            "heroes": [
+              [
+                "frost",
+                4,
+                1060,
+                771,
+                1007
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 330,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 2680,
+            "wood": 1288,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 119,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "pyromancer": 1,
+              "ranger": 1,
+              "archer": 21,
+              "mortar": 6,
+              "frost": 1,
+              "priest": 4,
+              "oracle": 1
+            },
+            "nodes": [
+              "n0",
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 12323,
+            "center": [
+              925,
+              1004
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                1380,
+                594,
+                1024
+              ],
+              [
+                "pyromancer",
+                6,
+                1250,
+                593,
+                950
+              ],
+              [
+                "ranger",
+                6,
+                1320,
+                667,
+                979
+              ],
+              [
+                "frost",
+                6,
+                1300,
+                628,
+                1103
+              ],
+              [
+                "oracle",
+                6,
+                1250,
+                559,
+                969
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 44,
+            "wood": 2260,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 1,
+            "units": {},
+            "nodes": [],
+            "hp": 0,
+            "center": [
+              0,
+              0
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                2663,
+                330,
+                1000
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "heroDeaths": [
+      {
+        "id": 894,
+        "t": 150.95000000000007,
+        "type": "heroDeath",
+        "x": 1669.3061499964256,
+        "y": 849.3135515941485,
+        "owner": 0,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1039,
+        "t": 158.80000000000186,
+        "type": "heroDeath",
+        "x": 1587.4793536919071,
+        "y": 1078.6691547436185,
+        "owner": 0,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1268,
+        "t": 176.1500000000058,
+        "type": "heroDeath",
+        "x": 2680.2679770606883,
+        "y": 1733.2073186599348,
+        "owner": 0,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1377,
+        "t": 184.75000000000776,
+        "type": "heroDeath",
+        "x": 992.8737894135251,
+        "y": 1247.4417589270718,
+        "owner": 0,
+        "text": "逐风游侠阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1842,
+        "t": 218.55000000001544,
+        "type": "heroDeath",
+        "x": 955.4501554989231,
+        "y": 970.373412535162,
+        "owner": 0,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1869,
+        "t": 219.90000000001575,
+        "type": "heroDeath",
+        "x": 1932.2733619370017,
+        "y": 349.5574299904749,
+        "owner": 0,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1896,
+        "t": 223.90000000001666,
+        "type": "heroDeath",
+        "x": 1181.332672686519,
+        "y": 935.8420629864622,
+        "owner": 1,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2066,
+        "t": 237.7000000000198,
+        "type": "heroDeath",
+        "x": 1193.5858440659476,
+        "y": 1139.6313631669875,
+        "owner": 0,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2276,
+        "t": 256.400000000024,
+        "type": "heroDeath",
+        "x": 1272.5572335901493,
+        "y": 1285.5257256571074,
+        "owner": 1,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2410,
+        "t": 266.1000000000262,
+        "type": "heroDeath",
+        "x": 1085.5521610120006,
+        "y": 1154.3913701926592,
+        "owner": 0,
+        "text": "烬焰法师阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2543,
+        "t": 277.65000000002885,
+        "type": "heroDeath",
+        "x": 1193.455433810695,
+        "y": 890.3736542317366,
+        "owner": 0,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2632,
+        "t": 290.6000000000318,
+        "type": "heroDeath",
+        "x": 1085.9115218308077,
+        "y": 1012.1894501990748,
+        "owner": 0,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2665,
+        "t": 293.8000000000325,
+        "type": "heroDeath",
+        "x": 1075.7015845474123,
+        "y": 1141.1496734416949,
+        "owner": 0,
+        "text": "逐风游侠阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2780,
+        "t": 306.15000000003533,
+        "type": "heroDeath",
+        "x": 930.0292044751956,
+        "y": 1134.4074883446085,
+        "owner": 0,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      }
+    ]
+  },
+  {
+    "file": "public-r2-g2.json.gz",
+    "seats": [
+      "sol",
+      "opus"
+    ],
+    "duration": 684.35,
+    "winner": "opus",
+    "checkpoints": [
+      {
+        "t": 30,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 7,
+            "wood": 146,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 29,
+            "units": {
+              "worker": 9,
+              "footman": 4,
+              "druid": 1,
+              "treant": 4,
+              "frost": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3"
+            ],
+            "hp": 3069,
+            "center": [
+              985,
+              873
+            ],
+            "heroes": [
+              [
+                "druid",
+                3,
+                1020,
+                666,
+                811
+              ],
+              [
+                "frost",
+                2,
+                820,
+                666,
+                791
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 260,
+            "wood": 355,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 32,
+            "units": {
+              "worker": 9,
+              "footman": 6,
+              "pyromancer": 1
+            },
+            "nodes": [],
+            "hp": 2455,
+            "center": [
+              2082,
+              1068
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                2427,
+                1017
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 60,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 23,
+            "wood": 346,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 43,
+            "units": {
+              "worker": 14,
+              "footman": 2,
+              "druid": 1,
+              "frost": 1,
+              "treant": 2
+            },
+            "nodes": [
+              "n0",
+              "n2"
+            ],
+            "hp": 2760,
+            "center": [
+              1029,
+              1011
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                994,
+                1020
+              ],
+              [
+                "frost",
+                3,
+                940,
+                1058,
+                1016
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 90,
+            "wood": 418,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 35,
+            "units": {
+              "worker": 14,
+              "footman": 5,
+              "pyromancer": 1,
+              "archer": 2
+            },
+            "nodes": [
+              "n1",
+              "n3"
+            ],
+            "hp": 2340,
+            "center": [
+              2001,
+              1002
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                2488,
+                979
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 90,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 437,
+            "wood": 325,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 0
+            },
+            "pop": 56,
+            "units": {
+              "worker": 18,
+              "footman": 2,
+              "druid": 1,
+              "frost": 1,
+              "archer": 3,
+              "pyromancer": 1,
+              "priest": 2,
+              "oracle": 1
+            },
+            "nodes": [
+              "n0"
+            ],
+            "hp": 4960,
+            "center": [
+              1043,
+              995
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                1005,
+                1043
+              ],
+              [
+                "frost",
+                3,
+                940,
+                1061,
+                1018
+              ],
+              [
+                "pyromancer",
+                1,
+                650,
+                1007,
+                961
+              ],
+              [
+                "oracle",
+                1,
+                650,
+                420,
+                898
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 67,
+            "wood": 647,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 59,
+            "units": {
+              "worker": 18,
+              "footman": 5,
+              "pyromancer": 1,
+              "archer": 2,
+              "frost": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3"
+            ],
+            "hp": 3040,
+            "center": [
+              2009,
+              1017
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                4,
+                1010,
+                2488,
+                979
+              ],
+              [
+                "frost",
+                1,
+                700,
+                2849,
+                1187
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 120,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 82,
+            "wood": 170,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 71,
+            "units": {
+              "worker": 18,
+              "footman": 1,
+              "druid": 1,
+              "frost": 1,
+              "pyromancer": 1,
+              "priest": 1,
+              "archer": 7,
+              "oracle": 1,
+              "ranger": 1,
+              "treant": 1
+            },
+            "nodes": [
+              "n0"
+            ],
+            "hp": 5363,
+            "center": [
+              858,
+              1100
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                835,
+                1296
+              ],
+              [
+                "frost",
+                3,
+                900,
+                1328,
+                874
+              ],
+              [
+                "pyromancer",
+                1,
+                650,
+                801,
+                1290
+              ],
+              [
+                "oracle",
+                1,
+                610,
+                1371,
+                877
+              ],
+              [
+                "ranger",
+                1,
+                720,
+                517,
+                1423
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 476,
+            "wood": 533,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 82,
+            "units": {
+              "worker": 18,
+              "footman": 6,
+              "pyromancer": 1,
+              "archer": 7,
+              "frost": 1,
+              "priest": 2,
+              "oracle": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3"
+            ],
+            "hp": 5533,
+            "center": [
+              1163,
+              1030
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                5,
+                1036,
+                1806,
+                1128
+              ],
+              [
+                "frost",
+                1,
+                700,
+                440,
+                281
+              ],
+              [
+                "oracle",
+                3,
+                890,
+                2192,
+                966
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 150,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 20,
+            "wood": 212,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 77,
+            "units": {
+              "worker": 17,
+              "druid": 1,
+              "frost": 1,
+              "pyromancer": 1,
+              "archer": 9,
+              "oracle": 1,
+              "ranger": 1,
+              "priest": 1,
+              "treant": 1
+            },
+            "nodes": [
+              "n0"
+            ],
+            "hp": 5952,
+            "center": [
+              1103,
+              1025
+            ],
+            "heroes": [
+              [
+                "druid",
+                4,
+                1140,
+                1146,
+                1107
+              ],
+              [
+                "frost",
+                4,
+                1060,
+                1078,
+                1005
+              ],
+              [
+                "pyromancer",
+                2,
+                730,
+                1120,
+                1175
+              ],
+              [
+                "oracle",
+                2,
+                672,
+                1166,
+                1033
+              ],
+              [
+                "ranger",
+                2,
+                840,
+                1061,
+                1135
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 787,
+            "wood": 642,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 0,
+              "gathering": 2
+            },
+            "pop": 101,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "footman": 4,
+              "frost": 1,
+              "archer": 12,
+              "priest": 5,
+              "oracle": 1,
+              "druid": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 5976,
+            "center": [
+              1693,
+              1059
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                5,
+                1130,
+                1860,
+                1210
+              ],
+              [
+                "frost",
+                2,
+                478,
+                425,
+                563
+              ],
+              [
+                "oracle",
+                4,
+                545,
+                1248,
+                906
+              ],
+              [
+                "druid",
+                2,
+                517,
+                1348,
+                1166
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 180,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 66,
+            "wood": 145,
+            "tier": 1,
+            "tech": {
+              "weapons": 1,
+              "armor": 0,
+              "gathering": 1
+            },
+            "pop": 75,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "frost": 1,
+              "pyromancer": 1,
+              "archer": 7,
+              "oracle": 1,
+              "ranger": 1,
+              "priest": 1,
+              "treant": 1
+            },
+            "nodes": [
+              "n0",
+              "n3"
+            ],
+            "hp": 7093,
+            "center": [
+              1437,
+              1163
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                1380,
+                1590,
+                1271
+              ],
+              [
+                "frost",
+                5,
+                1177,
+                1619,
+                1201
+              ],
+              [
+                "pyromancer",
+                4,
+                1007,
+                1563,
+                1250
+              ],
+              [
+                "oracle",
+                4,
+                1010,
+                1628,
+                1260
+              ],
+              [
+                "ranger",
+                4,
+                1080,
+                1593,
+                1315
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 628,
+            "wood": 627,
+            "tier": 1,
+            "tech": {
+              "weapons": 0,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 107,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "footman": 5,
+              "priest": 5,
+              "archer": 14,
+              "ranger": 1
+            },
+            "nodes": [
+              "n1",
+              "n2",
+              "n4",
+              "n5"
+            ],
+            "hp": 6976,
+            "center": [
+              2311,
+              986
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                2426,
+                1009
+              ],
+              [
+                "ranger",
+                1,
+                720,
+                2370,
+                1065
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 210,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 803,
+            "wood": 149,
+            "tier": 2,
+            "tech": {
+              "weapons": 1,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 77,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "frost": 1,
+              "pyromancer": 1,
+              "oracle": 1,
+              "ranger": 1,
+              "archer": 8,
+              "treant": 2,
+              "priest": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 7364,
+            "center": [
+              1605,
+              798
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                1380,
+                1960,
+                819
+              ],
+              [
+                "frost",
+                6,
+                1300,
+                1972,
+                744
+              ],
+              [
+                "pyromancer",
+                6,
+                1250,
+                1857,
+                834
+              ],
+              [
+                "oracle",
+                6,
+                859,
+                2121,
+                812
+              ],
+              [
+                "ranger",
+                6,
+                1134,
+                1918,
+                689
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 606,
+            "wood": 724,
+            "tier": 2,
+            "tech": {
+              "weapons": 1,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 81,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "footman": 2,
+              "oracle": 1,
+              "archer": 4,
+              "druid": 1,
+              "priest": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 4906,
+            "center": [
+              2324,
+              920
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                2463,
+                1086
+              ],
+              [
+                "ranger",
+                3,
+                960,
+                1738,
+                1116
+              ],
+              [
+                "oracle",
+                5,
+                770,
+                2132,
+                845
+              ],
+              [
+                "druid",
+                2,
+                900,
+                2593,
+                1078
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 240,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 749,
+            "wood": 201,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 1,
+              "gathering": 2
+            },
+            "pop": 79,
+            "units": {
+              "worker": 18,
+              "druid": 1,
+              "frost": 1,
+              "oracle": 1,
+              "ranger": 1,
+              "archer": 7,
+              "mortar": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 4059,
+            "center": [
+              1430,
+              725
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                932,
+                1468,
+                743
+              ],
+              [
+                "frost",
+                6,
+                488,
+                1720,
+                380
+              ],
+              [
+                "oracle",
+                6,
+                252,
+                1686,
+                433
+              ],
+              [
+                "ranger",
+                6,
+                1148,
+                1762,
+                364
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 85,
+            "wood": 777,
+            "tier": 2,
+            "tech": {
+              "weapons": 1,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 93,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "oracle": 1,
+              "druid": 1,
+              "treant": 3,
+              "archer": 10,
+              "frost": 1,
+              "priest": 2,
+              "footman": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 8019,
+            "center": [
+              2060,
+              957
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                2290,
+                993
+              ],
+              [
+                "ranger",
+                5,
+                1077,
+                1918,
+                1088
+              ],
+              [
+                "oracle",
+                6,
+                1000,
+                1828,
+                595
+              ],
+              [
+                "druid",
+                4,
+                1140,
+                1810,
+                624
+              ],
+              [
+                "frost",
+                4,
+                1060,
+                1926,
+                1121
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 270,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 627,
+            "wood": 392,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 65,
+            "units": {
+              "worker": 18,
+              "frost": 1,
+              "ranger": 1,
+              "mortar": 2,
+              "archer": 2,
+              "pyromancer": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 2155,
+            "center": [
+              814,
+              787
+            ],
+            "heroes": [
+              [
+                "frost",
+                6,
+                40,
+                1138,
+                108
+              ],
+              [
+                "ranger",
+                6,
+                157,
+                847,
+                102
+              ],
+              [
+                "pyromancer",
+                6,
+                1250,
+                420,
+                898
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 83,
+            "wood": 1113,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 89,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "oracle": 1,
+              "druid": 1,
+              "frost": 1,
+              "archer": 16,
+              "footman": 3,
+              "treant": 1,
+              "priest": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 9057,
+            "center": [
+              1495,
+              952
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                1681,
+                1071
+              ],
+              [
+                "ranger",
+                6,
+                1255,
+                1105,
+                947
+              ],
+              [
+                "oracle",
+                6,
+                1021,
+                1195,
+                192
+              ],
+              [
+                "druid",
+                5,
+                872,
+                1273,
+                188
+              ],
+              [
+                "frost",
+                6,
+                1300,
+                999,
+                979
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 300,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 112,
+            "wood": 466,
+            "tier": 3,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 66,
+            "units": {
+              "worker": 17,
+              "mortar": 5,
+              "pyromancer": 1,
+              "priest": 2,
+              "druid": 1,
+              "treant": 2,
+              "archer": 2
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 2878,
+            "center": [
+              711,
+              1025
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                119,
+                154,
+                532
+              ],
+              [
+                "druid",
+                6,
+                1380,
+                411,
+                813
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 231,
+            "wood": 1439,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 62,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "oracle": 1,
+              "druid": 1,
+              "archer": 5,
+              "footman": 2,
+              "priest": 2
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 4679,
+            "center": [
+              1344,
+              977
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                1666,
+                1083
+              ],
+              [
+                "ranger",
+                6,
+                885,
+                752,
+                754
+              ],
+              [
+                "oracle",
+                6,
+                237,
+                369,
+                524
+              ],
+              [
+                "druid",
+                6,
+                853,
+                330,
+                606
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 330,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 58,
+            "wood": 340,
+            "tier": 3,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 70,
+            "units": {
+              "worker": 18,
+              "mortar": 6,
+              "pyromancer": 1,
+              "priest": 2,
+              "druid": 1,
+              "archer": 5,
+              "treant": 2
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 3962,
+            "center": [
+              1420,
+              1067
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                133,
+                1695,
+                839
+              ],
+              [
+                "druid",
+                6,
+                1232,
+                1722,
+                858
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 121,
+            "wood": 2025,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 44,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "archer": 1,
+              "footman": 2,
+              "frost": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 3351,
+            "center": [
+              2327,
+              979
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1191,
+                2176,
+                874
+              ],
+              [
+                "frost",
+                6,
+                1300,
+                2375,
+                1013
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 360,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 170,
+            "wood": 479,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 71,
+            "units": {
+              "worker": 18,
+              "mortar": 4,
+              "druid": 1,
+              "archer": 10,
+              "priest": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 2558,
+            "center": [
+              1664,
+              1028
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                521,
+                2134,
+                897
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 14,
+            "wood": 2404,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 59,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "frost": 1,
+              "oracle": 1,
+              "footman": 1,
+              "archer": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 3311,
+            "center": [
+              2321,
+              973
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                2328,
+                937
+              ],
+              [
+                "frost",
+                6,
+                291,
+                2318,
+                1027
+              ],
+              [
+                "oracle",
+                6,
+                1250,
+                2308,
+                1137
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 420,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 77,
+            "wood": 408,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 73,
+            "units": {
+              "worker": 18,
+              "mortar": 4,
+              "archer": 12,
+              "priest": 3
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 3310,
+            "center": [
+              1850,
+              1014
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 58,
+            "wood": 3394,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 37,
+            "units": {
+              "worker": 18,
+              "footman": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 242,
+            "center": [
+              2215,
+              1046
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 480,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 6,
+            "wood": 436,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 82,
+            "units": {
+              "worker": 18,
+              "mortar": 5,
+              "archer": 13,
+              "priest": 2
+            },
+            "nodes": [
+              "n0",
+              "n1",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 3726,
+            "center": [
+              1782,
+              1027
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 92,
+            "wood": 4376,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 51,
+            "units": {
+              "worker": 17,
+              "oracle": 1,
+              "archer": 1,
+              "druid": 1,
+              "footman": 1
+            },
+            "nodes": [],
+            "hp": 2794,
+            "center": [
+              2352,
+              1040
+            ],
+            "heroes": [
+              [
+                "oracle",
+                6,
+                1250,
+                2406,
+                1120
+              ],
+              [
+                "druid",
+                6,
+                1120,
+                2359,
+                1201
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 540,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 130,
+            "wood": 340,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 63,
+            "units": {
+              "worker": 18,
+              "mortar": 3,
+              "druid": 1,
+              "archer": 6,
+              "priest": 1
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "hp": 2634,
+            "center": [
+              1445,
+              974
+            ],
+            "heroes": [
+              [
+                "druid",
+                6,
+                931,
+                2045,
+                894
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 346,
+            "wood": 5263,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 42,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "archer": 1
+            },
+            "nodes": [
+              "n1"
+            ],
+            "hp": 1609,
+            "center": [
+              2329,
+              929
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                286,
+                2477,
+                937
+              ],
+              [
+                "ranger",
+                6,
+                1177,
+                2246,
+                972
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 600,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 39,
+            "wood": 318,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 48,
+            "units": {
+              "worker": 18,
+              "mortar": 3,
+              "priest": 1,
+              "archer": 2
+            },
+            "nodes": [
+              "n0",
+              "n2",
+              "n3",
+              "n5"
+            ],
+            "hp": 992,
+            "center": [
+              974,
+              1059
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                3200,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 5,
+            "wood": 5790,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 79,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "frost": 1,
+              "priest": 3,
+              "oracle": 1,
+              "archer": 6,
+              "footman": 3,
+              "druid": 1
+            },
+            "nodes": [
+              "n1",
+              "n4"
+            ],
+            "hp": 7705,
+            "center": [
+              1691,
+              1084
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1199,
+                1718,
+                1071
+              ],
+              [
+                "ranger",
+                6,
+                1237,
+                1217,
+                897
+              ],
+              [
+                "frost",
+                6,
+                905,
+                1435,
+                1087
+              ],
+              [
+                "oracle",
+                6,
+                1021,
+                1095,
+                761
+              ],
+              [
+                "druid",
+                6,
+                1380,
+                1742,
+                1183
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 660,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 80,
+            "wood": 533,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 26,
+            "units": {
+              "worker": 14,
+              "priest": 1
+            },
+            "nodes": [
+              "n2",
+              "n3",
+              "n5"
+            ],
+            "hp": 121,
+            "center": [
+              765,
+              1223
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                2417,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 463,
+            "wood": 6588,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 119,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "frost": 1,
+              "priest": 6,
+              "oracle": 1,
+              "footman": 8,
+              "archer": 22,
+              "druid": 1,
+              "treant": 2
+            },
+            "nodes": [
+              "n0",
+              "n1",
+              "n4"
+            ],
+            "hp": 13532,
+            "center": [
+              880,
+              943
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                1086,
+                999
+              ],
+              [
+                "ranger",
+                6,
+                1298,
+                638,
+                904
+              ],
+              [
+                "frost",
+                6,
+                1118,
+                506,
+                898
+              ],
+              [
+                "oracle",
+                6,
+                1094,
+                492,
+                867
+              ],
+              [
+                "druid",
+                6,
+                1380,
+                552,
+                997
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "t": 684,
+        "players": [
+          {
+            "side": "sol",
+            "gold": 15,
+            "wood": 566,
+            "tier": 3,
+            "tech": {
+              "weapons": 3,
+              "armor": 3,
+              "gathering": 2
+            },
+            "pop": 7,
+            "units": {
+              "worker": 3
+            },
+            "nodes": [
+              "n2",
+              "n3",
+              "n5"
+            ],
+            "hp": 0,
+            "center": [
+              0,
+              0
+            ],
+            "heroes": [],
+            "hall": [
+              [
+                92,
+                330,
+                1000
+              ]
+            ]
+          },
+          {
+            "side": "opus",
+            "gold": 1503,
+            "wood": 7108,
+            "tier": 2,
+            "tech": {
+              "weapons": 2,
+              "armor": 2,
+              "gathering": 2
+            },
+            "pop": 119,
+            "units": {
+              "worker": 18,
+              "pyromancer": 1,
+              "ranger": 1,
+              "frost": 1,
+              "priest": 6,
+              "oracle": 1,
+              "footman": 8,
+              "archer": 24,
+              "druid": 1,
+              "treant": 2
+            },
+            "nodes": [
+              "n0",
+              "n1",
+              "n4"
+            ],
+            "hp": 13556,
+            "center": [
+              578,
+              954
+            ],
+            "heroes": [
+              [
+                "pyromancer",
+                6,
+                1250,
+                678,
+                952
+              ],
+              [
+                "ranger",
+                6,
+                1320,
+                639,
+                957
+              ],
+              [
+                "frost",
+                6,
+                1138,
+                528,
+                865
+              ],
+              [
+                "oracle",
+                6,
+                1094,
+                515,
+                832
+              ],
+              [
+                "druid",
+                6,
+                1380,
+                523,
+                906
+              ]
+            ],
+            "hall": [
+              [
+                3200,
+                2870,
+                1000
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "heroDeaths": [
+      {
+        "id": 1211,
+        "t": 157.45000000000155,
+        "type": "heroDeath",
+        "x": 1312.6449676873194,
+        "y": 864.9550917017975,
+        "owner": 1,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1243,
+        "t": 158.90000000000188,
+        "type": "heroDeath",
+        "x": 1289.6839921246083,
+        "y": 1116.0583824519233,
+        "owner": 1,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 1293,
+        "t": 163.55000000000294,
+        "type": "heroDeath",
+        "x": 809.6174117350383,
+        "y": 636.4897840406908,
+        "owner": 1,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2113,
+        "t": 233.8000000000189,
+        "type": "heroDeath",
+        "x": 1750.2212011673241,
+        "y": 789.149483016338,
+        "owner": 0,
+        "text": "烬焰法师阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2383,
+        "t": 253.30000000002335,
+        "type": "heroDeath",
+        "x": 1461.8124514442989,
+        "y": 643.6421953304277,
+        "owner": 0,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2613,
+        "t": 266.4000000000263,
+        "type": "heroDeath",
+        "x": 1300.484044869625,
+        "y": 283.6002588591329,
+        "owner": 0,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2691,
+        "t": 271.50000000002746,
+        "type": "heroDeath",
+        "x": 1057.5238434628636,
+        "y": 82.57064603486468,
+        "owner": 0,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2751,
+        "t": 276.30000000002855,
+        "type": "heroDeath",
+        "x": 607.9409566389529,
+        "y": 68.52809038236538,
+        "owner": 0,
+        "text": "逐风游侠阵亡，12 秒后可复活"
+      },
+      {
+        "id": 2808,
+        "t": 280.35000000002947,
+        "type": "heroDeath",
+        "x": 874.8588831869089,
+        "y": 937.0071549583272,
+        "owner": 1,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 3112,
+        "t": 302.0000000000344,
+        "type": "heroDeath",
+        "x": 391.67763176730955,
+        "y": 537.6468324324715,
+        "owner": 1,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 3175,
+        "t": 306.8000000000355,
+        "type": "heroDeath",
+        "x": 385.01496437576776,
+        "y": 614.2648897054321,
+        "owner": 1,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 3235,
+        "t": 313.450000000037,
+        "type": "heroDeath",
+        "x": 1260.2759350008444,
+        "y": 813.1326180247105,
+        "owner": 1,
+        "text": "逐风游侠阵亡，12 秒后可复活"
+      },
+      {
+        "id": 3347,
+        "t": 333.05000000004145,
+        "type": "heroDeath",
+        "x": 1888.0892470736978,
+        "y": 800.2586350986955,
+        "owner": 0,
+        "text": "烬焰法师阵亡，12 秒后可复活"
+      },
+      {
+        "id": 3596,
+        "t": 362.45000000004814,
+        "type": "heroDeath",
+        "x": 2296.273331921872,
+        "y": 952.689870116319,
+        "owner": 1,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 3969,
+        "t": 389.75000000005434,
+        "type": "heroDeath",
+        "x": 2174.610395162154,
+        "y": 935.7595427835267,
+        "owner": 1,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 4107,
+        "t": 398.3500000000563,
+        "type": "heroDeath",
+        "x": 2163.9878514485927,
+        "y": 1202.7923533133762,
+        "owner": 1,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 4199,
+        "t": 409.65000000005887,
+        "type": "heroDeath",
+        "x": 2277.7991185229207,
+        "y": 646.3668056279818,
+        "owner": 0,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 4217,
+        "t": 411.6000000000593,
+        "type": "heroDeath",
+        "x": 2341.5554229585755,
+        "y": 1126.0011230510672,
+        "owner": 1,
+        "text": "逐风游侠阵亡，12 秒后可复活"
+      },
+      {
+        "id": 4279,
+        "t": 417.10000000006056,
+        "type": "heroDeath",
+        "x": 2169.6738710327686,
+        "y": 854.5093649551216,
+        "owner": 1,
+        "text": "烬焰法师阵亡，12 秒后可复活"
+      },
+      {
+        "id": 4437,
+        "t": 443.50000000006656,
+        "type": "heroDeath",
+        "x": 2146.595862065222,
+        "y": 907.7175853690059,
+        "owner": 1,
+        "text": "霜语先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 4974,
+        "t": 499.80000000007936,
+        "type": "heroDeath",
+        "x": 2315.87424436255,
+        "y": 955.2404241253653,
+        "owner": 1,
+        "text": "星辉祭司阵亡，12 秒后可复活"
+      },
+      {
+        "id": 5186,
+        "t": 519.6000000000752,
+        "type": "heroDeath",
+        "x": 2145.649543691209,
+        "y": 1227.0627092004158,
+        "owner": 1,
+        "text": "森之先知阵亡，12 秒后可复活"
+      },
+      {
+        "id": 5386,
+        "t": 548.8500000000486,
+        "type": "heroDeath",
+        "x": 1916.1881226898433,
+        "y": 779.2744176172384,
+        "owner": 0,
+        "text": "森之先知阵亡，12 秒后可复活"
+      }
+    ]
+  }
+]

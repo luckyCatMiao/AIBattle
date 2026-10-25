@@ -1,0 +1,27 @@
+== r3-g2 net=1.93 seats=['sol', 'deepseek-flash'] ==
+P01 serve_f=16 point_f=95 t=4.75 start=0:1 -> rally=4 winner=sol endx=12.94
+   f=  30 t=  1.50 US    drive v=  5.0 contact=(7.38,2.20) body=(7.98,0.00) st= 93.0
+   f=  42 t=  2.10 sol   lift  v=  8.4 contact=(4.86,0.91) body=(4.09,0.00) st= 93.6
+   f=  69 t=  3.45 US    clear v=  8.5 contact=(10.05,2.12) body=(10.54,0.00) st= 82.0
+   f=  86 t=  4.30 sol J smash v= 20.3 contact=(5.17,2.43) body=(3.96,0.50) st= 83.0
+
+P04 serve_f=345 point_f=464 t=23.20 start=0:4 -> rally=6 winner=sol endx=12.40
+   f= 359 t= 17.95 US    drive v=  5.0 contact=(7.50,2.18) body=(7.97,0.00) st= 45.3
+   f= 372 t= 18.60 sol   lift  v=  8.6 contact=(4.76,0.68) body=(3.98,0.00) st= 84.4
+   f= 399 t= 19.95 US    clear v=  8.6 contact=(10.04,2.07) body=(10.54,0.00) st= 32.4
+   f= 419 t= 20.95 sol   clear v=  8.3 contact=(3.68,2.12) body=(3.12,0.00) st= 84.9
+   f= 438 t= 21.90 US    clear v=  8.1 contact=(9.54,2.25) body=(10.25,0.00) st= 28.4
+   f= 454 t= 22.70 sol J smash v= 17.0 contact=(5.11,2.56) body=(4.19,0.50) st= 74.2
+
+P06 serve_f=604 point_f=704 t=35.20 start=0:6 -> rally=4 winner=sol endx=11.90
+   f= 618 t= 30.90 US    drive v=  5.0 contact=(7.50,2.18) body=(7.98,0.00) st= 13.7
+   f= 631 t= 31.55 sol   lift  v=  8.6 contact=(4.76,0.68) body=(3.98,0.00) st= 79.2
+   f= 658 t= 32.90 US    clear v=  8.6 contact=(10.04,2.07) body=(10.53,0.00) st=  7.3
+   f= 678 t= 33.90 sol   clear v=  8.3 contact=(3.68,2.12) body=(3.14,0.00) st= 79.7
+
+P11 serve_f=1174 point_f=1254 t=62.70 start=0:11 -> rally=4 winner=sol endx=12.40
+   f=1188 t= 59.40 US    drive v=  5.0 contact=(7.50,2.18) body=(7.98,0.00) st=  0.0
+   f=1201 t= 60.05 sol   lift  v=  8.6 contact=(4.76,0.68) body=(3.98,0.00) st= 84.4
+   f=1228 t= 61.40 US    clear v=  8.6 contact=(10.04,2.07) body=(10.53,0.00) st=  0.0
+   f=1244 t= 62.20 sol J smash v= 18.1 contact=(4.45,2.59) body=(3.90,0.51) st= 74.6
+

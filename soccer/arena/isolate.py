@@ -40,7 +40,12 @@ if mode == 'prepare':
     home = pathlib.Path(json.loads((ROOT / 'control' / 'home-paths.json').read_text(encoding='utf-8'))[who])
     if not home.is_relative_to('/opt/aibattle-tools/auth'):
         raise SystemExit('invalid home path')
+    client = clients.get(who)
     args += ['--ro-bind', '/opt/aibattle-tools/node_modules', '/tools/node_modules',
-             '--bind', str(home / ('.claude' if clients.get(who) == 'claude' else '.codex')),
-             '/home/player/.claude' if clients.get(who) == 'claude' else '/home/player/.codex']
+             '--bind', str(home / ('.claude' if client == 'claude' else '.codex')),
+             '/home/player/.claude' if client == 'claude' else '/home/player/.codex']
+    # .claude.json 是 Claude Code 的 HOME 级状态文件，不在 .claude/ 内；单独挂进去。
+    state_file = home / '.claude.json'
+    if client == 'claude' and state_file.exists():
+        args += ['--bind', str(state_file), '/home/player/.claude.json']
 os.execvp('bwrap', args + ['--'] + cmd)

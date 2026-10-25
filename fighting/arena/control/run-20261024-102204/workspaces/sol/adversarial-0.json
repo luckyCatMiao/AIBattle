@@ -1,0 +1,52 @@
+{
+  "description": "opponent sees committed window and uses exact internal state; unfair stress test",
+  "seat": 0,
+  "winner": 0,
+  "frames": 2533,
+  "rounds": [
+    {
+      "round": 1,
+      "frames": 1234,
+      "winner": "0",
+      "winnerChar": "kestrel",
+      "loserChar": "kestrel",
+      "winnerHp": 94,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 2,
+      "frames": 225,
+      "winner": "1",
+      "winnerChar": "aegis",
+      "loserChar": "kestrel",
+      "winnerHp": 891,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 3,
+      "frames": 677,
+      "winner": "0",
+      "winnerChar": "aegis",
+      "loserChar": "aegis",
+      "winnerHp": 527,
+      "loserHp": 0,
+      "reason": "击倒"
+    },
+    {
+      "round": 4,
+      "frames": 396,
+      "winner": "0",
+      "winnerChar": "aegis",
+      "loserChar": "vex",
+      "winnerHp": 248,
+      "loserHp": 0,
+      "reason": "击倒"
+    }
+  ],
+  "hp": [
+    248,
+    0
+  ]
+}

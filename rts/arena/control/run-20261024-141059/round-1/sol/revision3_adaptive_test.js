@@ -1,0 +1,5 @@
+const fs=require('fs'),s=require('./rules'),src=fs.readFileSync('series3_center.js','utf8');
+const variants={adaptivecenter:fs.readFileSync('series3_adaptivecenter.js','utf8'),center:src};
+const opponents={old:require('./agent_series_r2').choose,south:require('./series3_spar').choose};
+function play(a,z,seat){const g=s.createMatch({players:[{},{}]});g.status='playing';for(let t=0;t<600&&g.status==='playing';t++){const os=[structuredClone(s.snapshot(g,0)),structuredClone(s.snapshot(g,1))],acts=os.map((o,i)=>(i===seat?a:z)(o));for(let i=0;i<2;i++)for(const c of acts[i].commands)s.command(g,i,c);for(let k=0;k<20;k++)s.step(g);}return{seat,winner:g.winner,time:+g.now.toFixed(2),score:g.players.map(p=>s.score(g,p))};}
+const rows=[];for(const [k,v] of Object.entries(variants)){fs.writeFileSync('series3_'+k+'.js',v);const a=require('./series3_'+k).choose,r={variant:k};for(const [n,z] of Object.entries(opponents))r[n]=[0,1].map(i=>play(a,z,i));rows.push(r);console.log(JSON.stringify(r));}fs.writeFileSync('series3_adaptive_test.json',JSON.stringify(rows,null,2));

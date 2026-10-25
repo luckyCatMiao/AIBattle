@@ -1,0 +1,11 @@
+[
+ {"name":"base","weave_on":0,"boost_on":0},
+ {"name":"e05_off1","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.05,"weave_boost_off":1},
+ {"name":"e30_off1","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.30,"weave_boost_off":1},
+ {"name":"e50_off1","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.50,"weave_boost_off":1},
+ {"name":"e70_off1","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.70,"weave_boost_off":1},
+ {"name":"e30_off0","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.30,"weave_boost_off":0},
+ {"name":"e50_off0","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.50,"weave_boost_off":0},
+ {"name":"e50_off1_vb18","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.50,"boost_vmin":18.0},
+ {"name":"e50_off1_vb12","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.50,"boost_vmin":12.0}
+]

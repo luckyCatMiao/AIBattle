@@ -1,0 +1,72 @@
+=== r3-g1 round 1: frames 0..1674, 83.70s, winner=GPT-6.1 Sol ===
+our team ['vex', 'kestrel', 'aegis'] sol team ['kestrel', 'aegis', 'vex']
+  f   64 r   64    3.20s SOL  START 空中重拳 x=694 inp={'dir': 'B', 'btn': None}
+  f   96 r   96    4.80s SOL  START 穿云箭 x=645 inp={'dir': 'B', 'btn': None}
+  f  113 r  113    5.65s OURS BLOCK 防御 · 削防 13
+  f  132 r  132    6.60s OURS START 低扫 x=449 inp={'dir': 'DB', 'btn': None}
+  f  154 r  154    7.70s SOL  START 空中重腿 x=520 inp={'dir': 'B', 'btn': None}
+  f  163 r  163    8.15s OURS BLOCK 防御 · 削防 13
+  f  180 r  180    9.00s OURS START 旋身踢 x=380 inp={'dir': 'B', 'btn': None}
+  f  208 r  208   10.40s SOL  START 穿云箭 x=402 inp={'dir': 'DB', 'btn': None}
+  f  219 r  219   10.95s SOL  HIT dmg=96 combo=1 hp=974/1000 state=attack/attack inp={'dir': 'DB', 'btn': None}
+  f  245 r  245   12.25s SOL  START 倒跃射 x=402 inp={'dir': 'DB', 'btn': None}
+  f  252 r  252   12.60s OURS BLOCK 防御 · 削防 12
+  f  269 r  269   13.45s OURS START 旋身踢 x=320 inp={'dir': 'DB', 'btn': None}
+  f  281 r  281   14.05s OURS HIT dmg=138 combo=1 hp=866/1000 state=attack/attack inp={'dir': 'DB', 'btn': None}
+  f  304 r  304   15.20s SOL  START 踩踏 x=417 inp={'dir': 'DB', 'btn': None}
+  f  308 r  308   15.40s SOL  HIT dmg=62 combo=1 hp=866/862 state=attack/hitstun inp={'dir': 'DB', 'btn': None}
+  f  313 r  313   15.65s SOL  START 弓身横扫 x=417 inp={'dir': 'DB', 'btn': None}
+  f  324 r  324   16.20s OURS BLOCK 防御 · 削防 11
+  f  345 r  345   17.25s OURS START 旋身踢 x=279 inp={'dir': 'DB', 'btn': None}
+  f  357 r  357   17.85s SOL  BLOCK 防御 · 削防 11
+  f  373 r  373   18.65s SOL  START 高踢 x=448 inp={'dir': 'DB', 'btn': None}
+  f  386 r  386   19.30s SOL  HIT dmg=152 combo=1 hp=793/851 state=attack/attack inp={'dir': 'DB', 'btn': None}
+  f  396 r  396   19.80s SOL  START 穿云箭 x=448 inp={'dir': 'B', 'btn': None}
+  f  415 r  415   20.75s OURS BLOCK 防御 · 削防 13
+  f  434 r  434   21.70s OURS START 低扫 x=231 inp={'dir': 'DB', 'btn': None}
+  f  434 r  434   21.70s SOL  START 穿云箭 x=448 inp={'dir': 'DB', 'btn': None}
+  f  453 r  453   22.65s OURS BLOCK 防御 · 削防 13
+  f  501 r  501   25.05s SOL  START 空中重拳 x=262 inp={'dir': 'B', 'btn': None}
+  f  536 r  536   26.80s SOL  START 踩踏 x=194 inp={'dir': 'B', 'btn': None}
+  f  540 r  540   27.00s OURS BLOCK 防御 · 削防 5
+  f  552 r  552   27.60s OURS START 旋身踢 x=60 inp={'dir': 'DB', 'btn': None}
+  f  574 r  574   28.70s SOL  START 高踢 x=225 inp={'dir': 'DB', 'btn': None}
+  f  587 r  587   29.35s SOL  HIT dmg=152 combo=1 hp=610/851 state=attack/attack inp={'dir': 'B', 'btn': None}
+  f  592 r  592   29.60s SOL  START 弓身横扫 x=225 inp={'dir': 'B', 'btn': None}
+  f  603 r  603   30.15s SOL  HIT dmg=119 combo=2 hp=458/851 state=hitstun/attack inp={'dir': 'DB', 'btn': None}
+  f  608 r  608   30.40s SOL  START 高踢 x=225 inp={'dir': 'DB', 'btn': None}
+  f  621 r  621   31.05s SOL  HIT dmg=122 combo=3 hp=339/851 state=hitstun/attack inp={'dir': 'B', 'btn': None}
+  f  681 r  681   34.05s SOL  START 空中重腿 x=319 inp={'dir': 'B', 'btn': None}
+  f  799 r  799   39.95s SOL  START 空中重腿 x=233 inp={'dir': 'B', 'btn': None}
+  f  844 r  844   42.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f  874 r  874   43.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f  904 r  904   45.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f  934 r  934   46.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f  964 r  964   48.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f  994 r  994   49.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1024 r 1024   51.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1054 r 1054   52.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1084 r 1084   54.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1114 r 1114   55.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1144 r 1144   57.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1174 r 1174   58.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1204 r 1204   60.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1234 r 1234   61.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1264 r 1264   63.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1294 r 1294   64.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1324 r 1324   66.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1354 r 1354   67.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1384 r 1384   69.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1414 r 1414   70.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1444 r 1444   72.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1474 r 1474   73.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1504 r 1504   75.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1534 r 1534   76.70s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1564 r 1564   78.20s SOL  START 踩踏 x=204 inp={'dir': 'DB', 'btn': None}
+  f 1594 r 1594   79.70s SOL  START 踩踏 x=204 inp={'dir': 'F', 'btn': None}
+  f 1598 r 1598   79.90s SOL  HIT dmg=62 combo=1 hp=211/845 state=crouch/crouch inp={'dir': 'F', 'btn': None}
+  f 1603 r 1603   80.15s SOL  START 弓身横扫 x=204 inp={'dir': 'F', 'btn': None}
+  f 1614 r 1614   80.70s OURS BLOCK 防御 · 削防 11
+  f 1635 r 1635   81.75s OURS START 旋身踢 x=83 inp={'dir': 'DB', 'btn': None}
+  f 1647 r 1647   82.35s SOL  BLOCK 防御 · 削防 11
+  f 1663 r 1663   83.15s SOL  START 弓身横扫 x=201 inp={'dir': 'DB', 'btn': None}

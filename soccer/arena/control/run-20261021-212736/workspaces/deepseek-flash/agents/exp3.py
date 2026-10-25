@@ -30,6 +30,8 @@ STEAL_LOCK_FRAMES = 4     # 0.18s
 GOAL_TOP, GOAL_BOT = 10.5, 15.5
 import os as _os
 STALL_TIME = float(_os.environ.get('STALL_TIME', '45'))
+GK_CAP = _os.environ.get('GK_CAP')
+GK_FACTOR = float(_os.environ.get('GK_FACTOR', '0.68'))
 
 DIRS = {
     'N': (0.0, 0.0), 'U': (0.0, -1.0), 'D': (0.0, 1.0),
@@ -676,7 +678,9 @@ def keeper_decide(u, ball, opps, owner_u, my_gx, ad, n, ball_start):
         back = clamp(0.25 * D, 1.4, 4.2)
     else:
         cap = 14.0 if n == 1 else (11.0 if n == 2 else (12.0 if n == 3 else 14.0))
-        back = clamp(0.68 * D, 1.35, cap)
+        if GK_CAP is not None:
+            cap = float(GK_CAP)
+        back = clamp(GK_FACTOR * D, 1.35, cap)
     dx = bp[0] - goal[0]; dy = bp[1] - goal[1]
     l = math.hypot(dx, dy) or 1.0
     tgt = (goal[0] + dx / l * back, goal[1] + dy / l * back)

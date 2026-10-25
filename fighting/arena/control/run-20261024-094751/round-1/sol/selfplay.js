@@ -1,0 +1,4 @@
+global.bot=null;const s=require('./simulation'),a=require('./agent'),fs=require('fs');
+const b=require(process.argv[2]||'./agent-v1');let teams=[(process.argv[3]||'kestrel,aegis,vex').split(','),(process.argv[4]||'kestrel,aegis,vex').split(',')];let g=s.createMatch({players:teams.map((team,i)=>({name:''+i,kind:'api',team}))}),prev=[null,null],windows=0;
+while(g.status==='playing'&&windows++<800){let ins=[];for(let id=0;id<2;id++){let ai=id===+(process.argv[5]||0)?a:b;let h=ai.hydrate(s.snapshot(g,id),prev[id]);ins[id]=ai.decide(h,id).inputs;prev[id]=h;h.fighters[id].inputHistory.push(...ins[id]);h.fighters[id].inputHistory=h.fighters[id].inputHistory.slice(-30);}s.advanceWindow(g,ins);}
+let result={teams,winner:g.winner,frames:g.frames,rounds:g.roundLog,hp:g.fighters.map(f=>Math.round(f.hp)),active:g.players.map(p=>p.active)};console.log(JSON.stringify(result));

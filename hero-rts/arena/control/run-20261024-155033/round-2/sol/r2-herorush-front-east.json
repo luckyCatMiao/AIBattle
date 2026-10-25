@@ -1,0 +1,507 @@
+{
+  "seat": 1,
+  "mode": "caster",
+  "candidate": "./agent",
+  "winner": 0,
+  "win": false,
+  "time": 389.35000000005425,
+  "reason": "其余势力的城镇大厅全部被摧毁",
+  "frames": 1558,
+  "maxMs": 3.011025000000245,
+  "maxCommands": 16,
+  "errors": [
+    {},
+    {}
+  ],
+  "score": [
+    24510,
+    17335
+  ],
+  "deaths": [
+    {
+      "priest": 19,
+      "footman": 82,
+      "vanguard": 2,
+      "pyromancer": 2,
+      "worker": 1,
+      "mortar": 4
+    },
+    {
+      "footman": 4,
+      "archer": 74,
+      "priest": 19,
+      "pyromancer": 2,
+      "druid": 2,
+      "oracle": 2,
+      "frost": 2,
+      "mortar": 13,
+      "ranger": 1,
+      "worker": 26
+    }
+  ],
+  "checkpoints": [
+    {
+      "time": 60,
+      "players": [
+        {
+          "gold": 67,
+          "wood": 385,
+          "population": 50,
+          "control": 56.9999999999989,
+          "heroes": [
+            [
+              "pyromancer",
+              4
+            ],
+            [
+              "vanguard",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 26,
+          "wood": 351,
+          "population": 44,
+          "control": 54.34999999999905,
+          "heroes": [
+            [
+              "druid",
+              4
+            ],
+            [
+              "frost",
+              4
+            ],
+            [
+              "pyromancer",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 14,
+          "footman": 10,
+          "pyromancer": 1,
+          "priest": 1
+        },
+        {
+          "worker": 14,
+          "footman": 4,
+          "druid": 1,
+          "frost": 1,
+          "treant": 4
+        }
+      ]
+    },
+    {
+      "time": 120,
+      "players": [
+        {
+          "gold": 448,
+          "wood": 255,
+          "population": 73,
+          "control": 207.25000000001288,
+          "heroes": [
+            [
+              "pyromancer",
+              5
+            ],
+            [
+              "vanguard",
+              3
+            ],
+            [
+              "frost",
+              1
+            ],
+            [
+              "oracle",
+              1
+            ],
+            [
+              "ranger",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 234,
+          "wood": 318,
+          "population": 81,
+          "control": 187.25000000000833,
+          "heroes": [
+            [
+              "druid",
+              5
+            ],
+            [
+              "frost",
+              5
+            ],
+            [
+              "pyromancer",
+              3
+            ],
+            [
+              "oracle",
+              3
+            ],
+            [
+              "ranger",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "footman": 7,
+          "pyromancer": 1,
+          "vanguard": 1,
+          "frost": 1,
+          "priest": 2,
+          "oracle": 1
+        },
+        {
+          "worker": 18,
+          "footman": 3,
+          "druid": 1,
+          "frost": 1,
+          "archer": 8,
+          "pyromancer": 1,
+          "priest": 2,
+          "oracle": 1,
+          "ranger": 1
+        }
+      ]
+    },
+    {
+      "time": 180,
+      "players": [
+        {
+          "gold": 2498,
+          "wood": 348,
+          "population": 75,
+          "control": 351.6500000000457,
+          "heroes": [
+            [
+              "pyromancer",
+              5
+            ],
+            [
+              "vanguard",
+              4
+            ],
+            [
+              "frost",
+              3
+            ],
+            [
+              "oracle",
+              3
+            ],
+            [
+              "ranger",
+              3
+            ]
+          ]
+        },
+        {
+          "gold": 1863,
+          "wood": 481,
+          "population": 91,
+          "control": 402.8500000000573,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "pyromancer",
+              5
+            ],
+            [
+              "oracle",
+              5
+            ],
+            [
+              "ranger",
+              4
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "frost": 1,
+          "footman": 8,
+          "oracle": 1,
+          "ranger": 1,
+          "vanguard": 1,
+          "priest": 1
+        },
+        {
+          "worker": 18,
+          "footman": 1,
+          "druid": 1,
+          "frost": 1,
+          "archer": 13,
+          "pyromancer": 1,
+          "oracle": 1,
+          "ranger": 1,
+          "priest": 2
+        }
+      ]
+    },
+    {
+      "time": 240,
+      "players": [
+        {
+          "gold": 1285,
+          "wood": 136,
+          "population": 91,
+          "control": 446.55000000006726,
+          "heroes": [
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "vanguard",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        },
+        {
+          "gold": 3720,
+          "wood": 345,
+          "population": 72,
+          "control": 667.9499999999402,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "frost": 1,
+          "oracle": 1,
+          "ranger": 1,
+          "footman": 13,
+          "priest": 1,
+          "mortar": 1
+        },
+        {
+          "worker": 18,
+          "ranger": 1,
+          "archer": 8,
+          "priest": 2,
+          "mortar": 2
+        }
+      ]
+    },
+    {
+      "time": 300,
+      "players": [
+        {
+          "gold": 249,
+          "wood": 388,
+          "population": 111,
+          "control": 703.9999999999075,
+          "heroes": [
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "vanguard",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        },
+        {
+          "gold": 1774,
+          "wood": 336,
+          "population": 68,
+          "control": 770.499999999847,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "frost": 1,
+          "oracle": 1,
+          "ranger": 1,
+          "footman": 16,
+          "vanguard": 1,
+          "mortar": 4,
+          "pyromancer": 1,
+          "priest": 2
+        },
+        {
+          "worker": 18,
+          "mortar": 4,
+          "druid": 1,
+          "priest": 2,
+          "archer": 3
+        }
+      ]
+    },
+    {
+      "time": 360,
+      "players": [
+        {
+          "gold": 732,
+          "wood": 546,
+          "population": 115,
+          "control": 1039.799999999602,
+          "heroes": [
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "vanguard",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        },
+        {
+          "gold": 39,
+          "wood": 551,
+          "population": 26,
+          "control": 794.699999999825,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "frost": 1,
+          "oracle": 1,
+          "ranger": 1,
+          "footman": 18,
+          "vanguard": 1,
+          "mortar": 6,
+          "pyromancer": 1,
+          "priest": 2
+        },
+        {
+          "druid": 1,
+          "frost": 1,
+          "mortar": 3,
+          "oracle": 1,
+          "archer": 1
+        }
+      ]
+    }
+  ]
+}

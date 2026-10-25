@@ -1,0 +1,1897 @@
+{
+ "round": 3,
+ "zones": [
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "seat": 0,
+   "frames": 2801,
+   "me": {
+    "poss": 141,
+    "own_half": 108,
+    "attack_third": 33,
+    "keeper": 66,
+    "own_half_pct": 76.6,
+    "attack_third_pct": 23.4,
+    "keeper_pct": 46.8,
+    "longest": {
+     "owner": "t0u1",
+     "team": 0,
+     "index": 1,
+     "start": 2484,
+     "end": 2500,
+     "frames": 17,
+     "seconds": 0.85,
+     "avg_x": 42.3,
+     "avg_y": 6.42
+    }
+   },
+   "opp": {
+    "poss": 142,
+    "own_half": 37,
+    "attack_third": 59,
+    "keeper": 2,
+    "own_half_pct": 26.1,
+    "attack_third_pct": 41.5,
+    "keeper_pct": 1.4,
+    "longest": {
+     "owner": "t1u4",
+     "team": 1,
+     "index": 4,
+     "start": 186,
+     "end": 208,
+     "frames": 23,
+     "seconds": 1.15,
+     "avg_x": 19.38,
+     "avg_y": 10.32
+    }
+   }
+  },
+  {
+   "id": "r3-g2",
+   "teamSize": 2,
+   "seat": 1,
+   "frames": 2801,
+   "me": {
+    "poss": 1875,
+    "own_half": 1875,
+    "attack_third": 0,
+    "keeper": 13,
+    "own_half_pct": 100.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 0.7,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 308,
+     "end": 1199,
+     "frames": 892,
+     "seconds": 44.6,
+     "avg_x": 32.05,
+     "avg_y": 21.08
+    }
+   },
+   "opp": {
+    "poss": 14,
+    "own_half": 2,
+    "attack_third": 7,
+    "keeper": 0,
+    "own_half_pct": 14.3,
+    "attack_third_pct": 50.0,
+    "keeper_pct": 0.0,
+    "longest": {
+     "owner": "t0u1",
+     "team": 0,
+     "index": 1,
+     "start": 2416,
+     "end": 2420,
+     "frames": 5,
+     "seconds": 0.25,
+     "avg_x": 33.02,
+     "avg_y": 22.37
+    }
+   }
+  },
+  {
+   "id": "r3-g3",
+   "teamSize": 3,
+   "seat": 0,
+   "frames": 2438,
+   "me": {
+    "poss": 1328,
+    "own_half": 1327,
+    "attack_third": 0,
+    "keeper": 18,
+    "own_half_pct": 99.9,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 1.4,
+    "longest": {
+     "owner": "t0u2",
+     "team": 0,
+     "index": 2,
+     "start": 413,
+     "end": 1199,
+     "frames": 787,
+     "seconds": 39.35,
+     "avg_x": 16.15,
+     "avg_y": 24.45
+    }
+   },
+   "opp": {
+    "poss": 83,
+    "own_half": 35,
+    "attack_third": 22,
+    "keeper": 2,
+    "own_half_pct": 42.2,
+    "attack_third_pct": 26.5,
+    "keeper_pct": 2.4,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 2132,
+     "end": 2168,
+     "frames": 37,
+     "seconds": 1.85,
+     "avg_x": 14.51,
+     "avg_y": 8.18
+    }
+   }
+  },
+  {
+   "id": "r3-g4",
+   "teamSize": 4,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 303,
+    "own_half": 290,
+    "attack_third": 11,
+    "keeper": 2,
+    "own_half_pct": 95.7,
+    "attack_third_pct": 3.6,
+    "keeper_pct": 0.7,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 1350,
+     "end": 1423,
+     "frames": 74,
+     "seconds": 3.7,
+     "avg_x": 29.77,
+     "avg_y": 3.1
+    }
+   },
+   "opp": {
+    "poss": 155,
+    "own_half": 117,
+    "attack_third": 3,
+    "keeper": 3,
+    "own_half_pct": 75.5,
+    "attack_third_pct": 1.9,
+    "keeper_pct": 1.9,
+    "longest": {
+     "owner": "t0u3",
+     "team": 0,
+     "index": 3,
+     "start": 1955,
+     "end": 1980,
+     "frames": 26,
+     "seconds": 1.3,
+     "avg_x": 9.23,
+     "avg_y": 16.91
+    }
+   }
+  },
+  {
+   "id": "r3-g5",
+   "teamSize": 1,
+   "seat": 0,
+   "frames": 2401,
+   "me": {
+    "poss": 1778,
+    "own_half": 1762,
+    "attack_third": 0,
+    "keeper": 1778,
+    "own_half_pct": 99.1,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 100.0,
+    "longest": {
+     "owner": "t0u0",
+     "team": 0,
+     "index": 0,
+     "start": 1550,
+     "end": 2400,
+     "frames": 851,
+     "seconds": 42.55,
+     "avg_x": 9.1,
+     "avg_y": 20.03
+    }
+   },
+   "opp": {
+    "poss": 21,
+    "own_half": 19,
+    "attack_third": 0,
+    "keeper": 21,
+    "own_half_pct": 90.5,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 100.0,
+    "longest": {
+     "owner": "t1u0",
+     "team": 1,
+     "index": 0,
+     "start": 1329,
+     "end": 1347,
+     "frames": 19,
+     "seconds": 0.95,
+     "avg_x": 28.58,
+     "avg_y": 14.38
+    }
+   }
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 113,
+    "own_half": 76,
+    "attack_third": 37,
+    "keeper": 35,
+    "own_half_pct": 67.3,
+    "attack_third_pct": 32.7,
+    "keeper_pct": 31.0,
+    "longest": {
+     "owner": "t1u2",
+     "team": 1,
+     "index": 2,
+     "start": 1548,
+     "end": 1565,
+     "frames": 18,
+     "seconds": 0.9,
+     "avg_x": 30.5,
+     "avg_y": 20.29
+    }
+   },
+   "opp": {
+    "poss": 213,
+    "own_half": 102,
+    "attack_third": 37,
+    "keeper": 4,
+    "own_half_pct": 47.9,
+    "attack_third_pct": 17.4,
+    "keeper_pct": 1.9,
+    "longest": {
+     "owner": "t0u4",
+     "team": 0,
+     "index": 4,
+     "start": 329,
+     "end": 360,
+     "frames": 32,
+     "seconds": 1.6,
+     "avg_x": 13.55,
+     "avg_y": 19.93
+    }
+   }
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "seat": 0,
+   "frames": 2401,
+   "me": {
+    "poss": 83,
+    "own_half": 58,
+    "attack_third": 25,
+    "keeper": 38,
+    "own_half_pct": 69.9,
+    "attack_third_pct": 30.1,
+    "keeper_pct": 45.8,
+    "longest": {
+     "owner": "t0u0",
+     "team": 0,
+     "index": 0,
+     "start": 1186,
+     "end": 1199,
+     "frames": 14,
+     "seconds": 0.7,
+     "avg_x": 8.87,
+     "avg_y": 8.96
+    }
+   },
+   "opp": {
+    "poss": 251,
+    "own_half": 133,
+    "attack_third": 45,
+    "keeper": 5,
+    "own_half_pct": 53.0,
+    "attack_third_pct": 17.9,
+    "keeper_pct": 2.0,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 373,
+     "end": 416,
+     "frames": 44,
+     "seconds": 2.2,
+     "avg_x": 15.17,
+     "avg_y": 6.62
+    }
+   }
+  },
+  {
+   "id": "r3-g8",
+   "teamSize": 2,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 859,
+    "own_half": 858,
+    "attack_third": 0,
+    "keeper": 0,
+    "own_half_pct": 99.9,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 0.0,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 738,
+     "end": 1199,
+     "frames": 462,
+     "seconds": 23.1,
+     "avg_x": 32.47,
+     "avg_y": 3.12
+    }
+   },
+   "opp": {
+    "poss": 24,
+    "own_half": 8,
+    "attack_third": 2,
+    "keeper": 2,
+    "own_half_pct": 33.3,
+    "attack_third_pct": 8.3,
+    "keeper_pct": 8.3,
+    "longest": {
+     "owner": "t0u1",
+     "team": 0,
+     "index": 1,
+     "start": 2337,
+     "end": 2342,
+     "frames": 6,
+     "seconds": 0.3,
+     "avg_x": 26.92,
+     "avg_y": 17.65
+    }
+   }
+  },
+  {
+   "id": "r3-g9",
+   "teamSize": 3,
+   "seat": 0,
+   "frames": 2401,
+   "me": {
+    "poss": 633,
+    "own_half": 633,
+    "attack_third": 0,
+    "keeper": 12,
+    "own_half_pct": 100.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 1.9,
+    "longest": {
+     "owner": "t0u2",
+     "team": 0,
+     "index": 2,
+     "start": 1777,
+     "end": 2056,
+     "frames": 280,
+     "seconds": 14.0,
+     "avg_x": 8.55,
+     "avg_y": 22.86
+    }
+   },
+   "opp": {
+    "poss": 75,
+    "own_half": 50,
+    "attack_third": 7,
+    "keeper": 1,
+    "own_half_pct": 66.7,
+    "attack_third_pct": 9.3,
+    "keeper_pct": 1.3,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 344,
+     "end": 363,
+     "frames": 20,
+     "seconds": 1.0,
+     "avg_x": 22.76,
+     "avg_y": 12.2
+    }
+   }
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 510,
+    "own_half": 496,
+    "attack_third": 8,
+    "keeper": 26,
+    "own_half_pct": 97.3,
+    "attack_third_pct": 1.6,
+    "keeper_pct": 5.1,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 165,
+     "end": 254,
+     "frames": 90,
+     "seconds": 4.5,
+     "avg_x": 30.19,
+     "avg_y": 22.53
+    }
+   },
+   "opp": {
+    "poss": 103,
+    "own_half": 75,
+    "attack_third": 3,
+    "keeper": 3,
+    "own_half_pct": 72.8,
+    "attack_third_pct": 2.9,
+    "keeper_pct": 2.9,
+    "longest": {
+     "owner": "t0u3",
+     "team": 0,
+     "index": 3,
+     "start": 1543,
+     "end": 1560,
+     "frames": 18,
+     "seconds": 0.9,
+     "avg_x": 13.66,
+     "avg_y": 18.55
+    }
+   }
+  },
+  {
+   "id": "r3-g11",
+   "teamSize": 1,
+   "seat": 0,
+   "frames": 2401,
+   "me": {
+    "poss": 1695,
+    "own_half": 1579,
+    "attack_third": 0,
+    "keeper": 1695,
+    "own_half_pct": 93.2,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 100.0,
+    "longest": {
+     "owner": "t0u0",
+     "team": 0,
+     "index": 0,
+     "start": 166,
+     "end": 1122,
+     "frames": 957,
+     "seconds": 47.85,
+     "avg_x": 14.95,
+     "avg_y": 6.1
+    }
+   },
+   "opp": {
+    "poss": 33,
+    "own_half": 33,
+    "attack_third": 0,
+    "keeper": 33,
+    "own_half_pct": 100.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 100.0,
+    "longest": {
+     "owner": "t1u0",
+     "team": 1,
+     "index": 0,
+     "start": 2092,
+     "end": 2110,
+     "frames": 19,
+     "seconds": 0.95,
+     "avg_x": 25.58,
+     "avg_y": 21.78
+    }
+   }
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 173,
+    "own_half": 117,
+    "attack_third": 56,
+    "keeper": 16,
+    "own_half_pct": 67.6,
+    "attack_third_pct": 32.4,
+    "keeper_pct": 9.2,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 190,
+     "end": 285,
+     "frames": 96,
+     "seconds": 4.8,
+     "avg_x": 33.92,
+     "avg_y": 4.27
+    }
+   },
+   "opp": {
+    "poss": 246,
+    "own_half": 131,
+    "attack_third": 9,
+    "keeper": 8,
+    "own_half_pct": 53.3,
+    "attack_third_pct": 3.7,
+    "keeper_pct": 3.3,
+    "longest": {
+     "owner": "t0u4",
+     "team": 0,
+     "index": 4,
+     "start": 2149,
+     "end": 2201,
+     "frames": 53,
+     "seconds": 2.65,
+     "avg_x": 25.05,
+     "avg_y": 19.83
+    }
+   }
+  },
+  {
+   "id": "r3-g13",
+   "teamSize": 5,
+   "seat": 0,
+   "frames": 2437,
+   "me": {
+    "poss": 230,
+    "own_half": 206,
+    "attack_third": 23,
+    "keeper": 3,
+    "own_half_pct": 89.6,
+    "attack_third_pct": 10.0,
+    "keeper_pct": 1.3,
+    "longest": {
+     "owner": "t0u2",
+     "team": 0,
+     "index": 2,
+     "start": 524,
+     "end": 660,
+     "frames": 137,
+     "seconds": 6.85,
+     "avg_x": 14.19,
+     "avg_y": 2.09
+    }
+   },
+   "opp": {
+    "poss": 183,
+    "own_half": 124,
+    "attack_third": 15,
+    "keeper": 4,
+    "own_half_pct": 67.8,
+    "attack_third_pct": 8.2,
+    "keeper_pct": 2.2,
+    "longest": {
+     "owner": "t1u3",
+     "team": 1,
+     "index": 3,
+     "start": 2237,
+     "end": 2281,
+     "frames": 45,
+     "seconds": 2.25,
+     "avg_x": 22.25,
+     "avg_y": 21.2
+    }
+   }
+  },
+  {
+   "id": "r3-g14",
+   "teamSize": 2,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 791,
+    "own_half": 767,
+    "attack_third": 0,
+    "keeper": 28,
+    "own_half_pct": 97.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 3.5,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 1480,
+     "end": 2025,
+     "frames": 546,
+     "seconds": 27.3,
+     "avg_x": 36.14,
+     "avg_y": 11.34
+    }
+   },
+   "opp": {
+    "poss": 88,
+    "own_half": 46,
+    "attack_third": 16,
+    "keeper": 1,
+    "own_half_pct": 52.3,
+    "attack_third_pct": 18.2,
+    "keeper_pct": 1.1,
+    "longest": {
+     "owner": "t0u1",
+     "team": 0,
+     "index": 1,
+     "start": 2294,
+     "end": 2328,
+     "frames": 35,
+     "seconds": 1.75,
+     "avg_x": 28.93,
+     "avg_y": 19.26
+    }
+   }
+  },
+  {
+   "id": "r3-g15",
+   "teamSize": 3,
+   "seat": 0,
+   "frames": 2801,
+   "me": {
+    "poss": 1799,
+    "own_half": 1799,
+    "attack_third": 0,
+    "keeper": 0,
+    "own_half_pct": 100.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 0.0,
+    "longest": {
+     "owner": "t0u2",
+     "team": 0,
+     "index": 2,
+     "start": 154,
+     "end": 653,
+     "frames": 500,
+     "seconds": 25.0,
+     "avg_x": 17.39,
+     "avg_y": 2.1
+    }
+   },
+   "opp": {
+    "poss": 49,
+    "own_half": 48,
+    "attack_third": 0,
+    "keeper": 0,
+    "own_half_pct": 98.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 0.0,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 1616,
+     "end": 1633,
+     "frames": 18,
+     "seconds": 0.9,
+     "avg_x": 23.49,
+     "avg_y": 2.9
+    }
+   }
+  },
+  {
+   "id": "r3-g16",
+   "teamSize": 4,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 601,
+    "own_half": 595,
+    "attack_third": 4,
+    "keeper": 36,
+    "own_half_pct": 99.0,
+    "attack_third_pct": 0.7,
+    "keeper_pct": 6.0,
+    "longest": {
+     "owner": "t1u2",
+     "team": 1,
+     "index": 2,
+     "start": 2082,
+     "end": 2168,
+     "frames": 87,
+     "seconds": 4.35,
+     "avg_x": 26.48,
+     "avg_y": 2.38
+    }
+   },
+   "opp": {
+    "poss": 129,
+    "own_half": 86,
+    "attack_third": 4,
+    "keeper": 3,
+    "own_half_pct": 66.7,
+    "attack_third_pct": 3.1,
+    "keeper_pct": 2.3,
+    "longest": {
+     "owner": "t0u3",
+     "team": 0,
+     "index": 3,
+     "start": 2238,
+     "end": 2260,
+     "frames": 23,
+     "seconds": 1.15,
+     "avg_x": 10.36,
+     "avg_y": 11.06
+    }
+   }
+  },
+  {
+   "id": "r3-g17",
+   "teamSize": 1,
+   "seat": 0,
+   "frames": 2401,
+   "me": {
+    "poss": 1625,
+    "own_half": 1591,
+    "attack_third": 0,
+    "keeper": 1625,
+    "own_half_pct": 97.9,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 100.0,
+    "longest": {
+     "owner": "t0u0",
+     "team": 0,
+     "index": 0,
+     "start": 1382,
+     "end": 2400,
+     "frames": 1019,
+     "seconds": 50.95,
+     "avg_x": 9.77,
+     "avg_y": 16.14
+    }
+   },
+   "opp": {
+    "poss": 20,
+    "own_half": 19,
+    "attack_third": 1,
+    "keeper": 20,
+    "own_half_pct": 95.0,
+    "attack_third_pct": 5.0,
+    "keeper_pct": 100.0,
+    "longest": {
+     "owner": "t1u0",
+     "team": 1,
+     "index": 0,
+     "start": 745,
+     "end": 753,
+     "frames": 9,
+     "seconds": 0.45,
+     "avg_x": 23.16,
+     "avg_y": 12.87
+    }
+   }
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 74,
+    "own_half": 72,
+    "attack_third": 2,
+    "keeper": 24,
+    "own_half_pct": 97.3,
+    "attack_third_pct": 2.7,
+    "keeper_pct": 32.4,
+    "longest": {
+     "owner": "t1u2",
+     "team": 1,
+     "index": 2,
+     "start": 522,
+     "end": 540,
+     "frames": 19,
+     "seconds": 0.95,
+     "avg_x": 23.53,
+     "avg_y": 13.03
+    }
+   },
+   "opp": {
+    "poss": 317,
+    "own_half": 134,
+    "attack_third": 42,
+    "keeper": 3,
+    "own_half_pct": 42.3,
+    "attack_third_pct": 13.2,
+    "keeper_pct": 0.9,
+    "longest": {
+     "owner": "t0u4",
+     "team": 0,
+     "index": 4,
+     "start": 1102,
+     "end": 1146,
+     "frames": 45,
+     "seconds": 2.25,
+     "avg_x": 23.98,
+     "avg_y": 20.9
+    }
+   }
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "seat": 0,
+   "frames": 2801,
+   "me": {
+    "poss": 88,
+    "own_half": 41,
+    "attack_third": 42,
+    "keeper": 30,
+    "own_half_pct": 46.6,
+    "attack_third_pct": 47.7,
+    "keeper_pct": 34.1,
+    "longest": {
+     "owner": "t0u0",
+     "team": 0,
+     "index": 0,
+     "start": 169,
+     "end": 180,
+     "frames": 12,
+     "seconds": 0.6,
+     "avg_x": 11.16,
+     "avg_y": 17.57
+    }
+   },
+   "opp": {
+    "poss": 170,
+    "own_half": 159,
+    "attack_third": 4,
+    "keeper": 6,
+    "own_half_pct": 93.5,
+    "attack_third_pct": 2.4,
+    "keeper_pct": 3.5,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 1129,
+     "end": 1162,
+     "frames": 34,
+     "seconds": 1.7,
+     "avg_x": 27.71,
+     "avg_y": 3.38
+    }
+   }
+  },
+  {
+   "id": "r3-g20",
+   "teamSize": 2,
+   "seat": 1,
+   "frames": 2401,
+   "me": {
+    "poss": 1123,
+    "own_half": 1123,
+    "attack_third": 0,
+    "keeper": 3,
+    "own_half_pct": 100.0,
+    "attack_third_pct": 0.0,
+    "keeper_pct": 0.3,
+    "longest": {
+     "owner": "t1u1",
+     "team": 1,
+     "index": 1,
+     "start": 1359,
+     "end": 2400,
+     "frames": 1042,
+     "seconds": 52.1,
+     "avg_x": 31.97,
+     "avg_y": 1.74
+    }
+   },
+   "opp": {
+    "poss": 23,
+    "own_half": 15,
+    "attack_third": 5,
+    "keeper": 1,
+    "own_half_pct": 65.2,
+    "attack_third_pct": 21.7,
+    "keeper_pct": 4.3,
+    "longest": {
+     "owner": "t0u1",
+     "team": 0,
+     "index": 1,
+     "start": 612,
+     "end": 621,
+     "frames": 10,
+     "seconds": 0.5,
+     "avg_x": 21.29,
+     "avg_y": 12.49
+    }
+   }
+  }
+ ],
+ "on_target_shots": [
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 148,
+   "kick_frame": 143,
+   "shot_dist": 12.84,
+   "keeper_dist": 9.12431394681266
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 624,
+   "kick_frame": 587,
+   "shot_dist": 13.62,
+   "keeper_dist": 5.991073443048416
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 788,
+   "kick_frame": 782,
+   "shot_dist": 13.01,
+   "keeper_dist": 9.20479103510775
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 907,
+   "kick_frame": 882,
+   "shot_dist": 11.87,
+   "keeper_dist": 3.3651570542843916
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1070,
+   "kick_frame": 1065,
+   "shot_dist": 12.9,
+   "keeper_dist": 9.254926309809278
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1369,
+   "kick_frame": 1364,
+   "shot_dist": 13.23,
+   "keeper_dist": 10.092136542873366
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1867,
+   "kick_frame": 1862,
+   "shot_dist": 6.54,
+   "keeper_dist": 3.3317830061395046
+  },
+  {
+   "id": "r3-g1",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1949,
+   "kick_frame": 1941,
+   "shot_dist": 7.47,
+   "keeper_dist": 3.3245289891953123
+  },
+  {
+   "id": "r3-g2",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2429,
+   "kick_frame": 2421,
+   "shot_dist": 13.48,
+   "keeper_dist": 8.575088221120525
+  },
+  {
+   "id": "r3-g3",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 160,
+   "kick_frame": 155,
+   "shot_dist": 12.37,
+   "keeper_dist": 8.588410795950553
+  },
+  {
+   "id": "r3-g3",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1369,
+   "kick_frame": 1365,
+   "shot_dist": 11.79,
+   "keeper_dist": 8.414767079367081
+  },
+  {
+   "id": "r3-g3",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2176,
+   "kick_frame": 2169,
+   "shot_dist": 12.69,
+   "keeper_dist": 8.544243968895083
+  },
+  {
+   "id": "r3-g3",
+   "teamSize": 3,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2290,
+   "kick_frame": 2251,
+   "shot_dist": 21.64,
+   "keeper_dist": 3.1301405719232496
+  },
+  {
+   "id": "r3-g3",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 2437,
+   "kick_frame": 2391,
+   "shot_dist": 15.3,
+   "keeper_dist": 8.63595744547181
+  },
+  {
+   "id": "r3-g4",
+   "teamSize": 4,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 587,
+   "kick_frame": 554,
+   "shot_dist": 20.13,
+   "keeper_dist": 3.2032549071218166
+  },
+  {
+   "id": "r3-g4",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1629,
+   "kick_frame": 1585,
+   "shot_dist": 13.95,
+   "keeper_dist": 9.17148036033442
+  },
+  {
+   "id": "r3-g4",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2381,
+   "kick_frame": 2375,
+   "shot_dist": 13.74,
+   "keeper_dist": 9.523983672812546
+  },
+  {
+   "id": "r3-g5",
+   "teamSize": 1,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 193,
+   "kick_frame": 114,
+   "shot_dist": 20.43,
+   "keeper_dist": 16.67133698897602
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 156,
+   "kick_frame": 151,
+   "shot_dist": 12.43,
+   "keeper_dist": 8.948808021183604
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 602,
+   "kick_frame": 575,
+   "shot_dist": 11.1,
+   "keeper_dist": 5.181296362880627
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 871,
+   "kick_frame": 858,
+   "shot_dist": 10.1,
+   "keeper_dist": 2.479709862060479
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 936,
+   "kick_frame": 921,
+   "shot_dist": 10.44,
+   "keeper_dist": 2.384815506491016
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 1176,
+   "kick_frame": 1161,
+   "shot_dist": 8.92,
+   "keeper_dist": 4.590660627839963
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1367,
+   "kick_frame": 1360,
+   "shot_dist": 12.5,
+   "keeper_dist": 9.158703019532842
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1506,
+   "kick_frame": 1501,
+   "shot_dist": 13.16,
+   "keeper_dist": 9.847588638849613
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1667,
+   "kick_frame": 1651,
+   "shot_dist": 11.15,
+   "keeper_dist": 3.2823133610306012
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1842,
+   "kick_frame": 1783,
+   "shot_dist": 17.71,
+   "keeper_dist": 10.875267399011388
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2007,
+   "kick_frame": 2001,
+   "shot_dist": 13.18,
+   "keeper_dist": 9.508403125656796
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 2088,
+   "kick_frame": 2050,
+   "shot_dist": 14.12,
+   "keeper_dist": 10.349876327763537
+  },
+  {
+   "id": "r3-g6",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 2280,
+   "kick_frame": 2241,
+   "shot_dist": 13.36,
+   "keeper_dist": 9.655155565810421
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 176,
+   "kick_frame": 171,
+   "shot_dist": 12.1,
+   "keeper_dist": 8.391613492052645
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 691,
+   "kick_frame": 685,
+   "shot_dist": 14.74,
+   "keeper_dist": 10.543512934501479
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 800,
+   "kick_frame": 778,
+   "shot_dist": 12.74,
+   "keeper_dist": 3.543324004377811
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 972,
+   "kick_frame": 914,
+   "shot_dist": 17.09,
+   "keeper_dist": 10.02781112706058
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1186,
+   "kick_frame": 1181,
+   "shot_dist": 11.84,
+   "keeper_dist": 8.337189214597448
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1413,
+   "kick_frame": 1411,
+   "shot_dist": 12.63,
+   "keeper_dist": 10.260676390959809
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1543,
+   "kick_frame": 1541,
+   "shot_dist": 8.17,
+   "keeper_dist": 5.87329038955167
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2046,
+   "kick_frame": 2041,
+   "shot_dist": 7.63,
+   "keeper_dist": 3.6992168090016024
+  },
+  {
+   "id": "r3-g7",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2381,
+   "kick_frame": 2354,
+   "shot_dist": 10.99,
+   "keeper_dist": 5.09259246356902
+  },
+  {
+   "id": "r3-g8",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 200,
+   "kick_frame": 165,
+   "shot_dist": 12.21,
+   "keeper_dist": 8.60158781853676
+  },
+  {
+   "id": "r3-g8",
+   "teamSize": 2,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 494,
+   "kick_frame": 457,
+   "shot_dist": 21.0,
+   "keeper_dist": 3.2168812536368208
+  },
+  {
+   "id": "r3-g8",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1973,
+   "kick_frame": 1926,
+   "shot_dist": 14.58,
+   "keeper_dist": 8.557340240986095
+  },
+  {
+   "id": "r3-g9",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 170,
+   "kick_frame": 163,
+   "shot_dist": 12.66,
+   "keeper_dist": 8.64081338763892
+  },
+  {
+   "id": "r3-g9",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 262,
+   "kick_frame": 221,
+   "shot_dist": 16.25,
+   "keeper_dist": 8.569810849721247
+  },
+  {
+   "id": "r3-g9",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 476,
+   "kick_frame": 444,
+   "shot_dist": 12.7,
+   "keeper_dist": 8.56285028480587
+  },
+  {
+   "id": "r3-g9",
+   "teamSize": 3,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 979,
+   "kick_frame": 936,
+   "shot_dist": 13.83,
+   "keeper_dist": 8.587026551723245
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 150,
+   "kick_frame": 145,
+   "shot_dist": 12.62,
+   "keeper_dist": 8.938233606255768
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 450,
+   "kick_frame": 440,
+   "shot_dist": 15.15,
+   "keeper_dist": 10.873550340160294
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1378,
+   "kick_frame": 1373,
+   "shot_dist": 12.2,
+   "keeper_dist": 8.611742796902377
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1829,
+   "kick_frame": 1825,
+   "shot_dist": 6.59,
+   "keeper_dist": 3.320075450949873
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1971,
+   "kick_frame": 1965,
+   "shot_dist": 7.01,
+   "keeper_dist": 3.9442426395950854
+  },
+  {
+   "id": "r3-g10",
+   "teamSize": 4,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 2029,
+   "kick_frame": 2001,
+   "shot_dist": 9.4,
+   "keeper_dist": 4.3593445608256305
+  },
+  {
+   "id": "r3-g11",
+   "teamSize": 1,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 2217,
+   "kick_frame": 2137,
+   "shot_dist": 19.94,
+   "keeper_dist": 21.263682018879045
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 349,
+   "kick_frame": 342,
+   "shot_dist": 6.73,
+   "keeper_dist": 1.8416210250754632
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 527,
+   "kick_frame": 522,
+   "shot_dist": 6.65,
+   "keeper_dist": 3.3230841096788373
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 984,
+   "kick_frame": 979,
+   "shot_dist": 7.43,
+   "keeper_dist": 4.279680361896199
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1088,
+   "kick_frame": 1082,
+   "shot_dist": 6.68,
+   "keeper_dist": 2.3538166878497577
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1539,
+   "kick_frame": 1533,
+   "shot_dist": 7.49,
+   "keeper_dist": 3.9602588299251362
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 1827,
+   "kick_frame": 1821,
+   "shot_dist": 12.47,
+   "keeper_dist": 8.267994254956882
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1970,
+   "kick_frame": 1965,
+   "shot_dist": 6.96,
+   "keeper_dist": 3.3261921171213182
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2041,
+   "kick_frame": 2036,
+   "shot_dist": 7.42,
+   "keeper_dist": 3.815513857922677
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2322,
+   "kick_frame": 2318,
+   "shot_dist": 10.67,
+   "keeper_dist": 7.866280760308522
+  },
+  {
+   "id": "r3-g12",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 2381,
+   "kick_frame": 2344,
+   "shot_dist": 13.24,
+   "keeper_dist": 6.780960182746981
+  },
+  {
+   "id": "r3-g13",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 282,
+   "kick_frame": 280,
+   "shot_dist": 8.34,
+   "keeper_dist": 5.996443779441278
+  },
+  {
+   "id": "r3-g13",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1087,
+   "kick_frame": 1068,
+   "shot_dist": 13.57,
+   "keeper_dist": 4.4212622632004095
+  },
+  {
+   "id": "r3-g13",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1639,
+   "kick_frame": 1636,
+   "shot_dist": 8.32,
+   "keeper_dist": 5.339126988562829
+  },
+  {
+   "id": "r3-g13",
+   "teamSize": 5,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 2436,
+   "kick_frame": 2422,
+   "shot_dist": 8.19,
+   "keeper_dist": 5.183491198024746
+  },
+  {
+   "id": "r3-g14",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 851,
+   "kick_frame": 814,
+   "shot_dist": 12.6,
+   "keeper_dist": 8.640808411254124
+  },
+  {
+   "id": "r3-g14",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1066,
+   "kick_frame": 1031,
+   "shot_dist": 12.29,
+   "keeper_dist": 8.639181095451116
+  },
+  {
+   "id": "r3-g14",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2338,
+   "kick_frame": 2329,
+   "shot_dist": 13.84,
+   "keeper_dist": 8.581119973523272
+  },
+  {
+   "id": "r3-g16",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 932,
+   "kick_frame": 923,
+   "shot_dist": 16.66,
+   "keeper_dist": 10.993241287263734
+  },
+  {
+   "id": "r3-g16",
+   "teamSize": 4,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1535,
+   "kick_frame": 1497,
+   "shot_dist": 20.66,
+   "keeper_dist": 3.1775729731982554
+  },
+  {
+   "id": "r3-g16",
+   "teamSize": 4,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 1888,
+   "kick_frame": 1861,
+   "shot_dist": 10.83,
+   "keeper_dist": 5.1653499397427085
+  },
+  {
+   "id": "r3-g16",
+   "teamSize": 4,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 2051,
+   "kick_frame": 2046,
+   "shot_dist": 12.92,
+   "keeper_dist": 9.227849261881126
+  },
+  {
+   "id": "r3-g17",
+   "teamSize": 1,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 486,
+   "kick_frame": 382,
+   "shot_dist": 22.38,
+   "keeper_dist": 21.936473850644273
+  },
+  {
+   "id": "r3-g17",
+   "teamSize": 1,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 675,
+   "kick_frame": 596,
+   "shot_dist": 20.9,
+   "keeper_dist": 17.333897224802044
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 444,
+   "kick_frame": 382,
+   "shot_dist": 17.85,
+   "keeper_dist": 10.949725521674045
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 740,
+   "kick_frame": 697,
+   "shot_dist": 14.22,
+   "keeper_dist": 11.025119409784187
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1775,
+   "kick_frame": 1741,
+   "shot_dist": 12.76,
+   "keeper_dist": 9.188789365308144
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1926,
+   "kick_frame": 1847,
+   "shot_dist": 20.62,
+   "keeper_dist": 11.909349814326555
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 2126,
+   "kick_frame": 2090,
+   "shot_dist": 12.4,
+   "keeper_dist": 8.646187136535964
+  },
+  {
+   "id": "r3-g18",
+   "teamSize": 6,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2325,
+   "kick_frame": 2291,
+   "shot_dist": 20.14,
+   "keeper_dist": 2.4107793345721213
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 251,
+   "kick_frame": 237,
+   "shot_dist": 11.73,
+   "keeper_dist": 2.2586035508694304
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 551,
+   "kick_frame": 549,
+   "shot_dist": 8.73,
+   "keeper_dist": 6.641356864376435
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 621,
+   "kick_frame": 586,
+   "shot_dist": 13.07,
+   "keeper_dist": 5.592589740004178
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 795,
+   "kick_frame": 789,
+   "shot_dist": 13.75,
+   "keeper_dist": 9.81781014279661
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 891,
+   "kick_frame": 878,
+   "shot_dist": 11.94,
+   "keeper_dist": 3.2661599777108283
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 1082,
+   "kick_frame": 1070,
+   "shot_dist": 10.72,
+   "keeper_dist": 2.426432978674663
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "goal",
+   "goal_frame": 1547,
+   "kick_frame": 1481,
+   "shot_dist": 17.41,
+   "keeper_dist": 2.3238175487761494
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2407,
+   "kick_frame": 2405,
+   "shot_dist": 6.89,
+   "keeper_dist": 4.3231934955539515
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2604,
+   "kick_frame": 2595,
+   "shot_dist": 8.51,
+   "keeper_dist": 3.685197416692895
+  },
+  {
+   "id": "r3-g19",
+   "teamSize": 5,
+   "side": "me",
+   "type": "save",
+   "goal_frame": 2729,
+   "kick_frame": 2721,
+   "shot_dist": 6.53,
+   "keeper_dist": 2.198071199938712
+  },
+  {
+   "id": "r3-g20",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "save",
+   "goal_frame": 159,
+   "kick_frame": 151,
+   "shot_dist": 13.34,
+   "keeper_dist": 8.605617932490377
+  },
+  {
+   "id": "r3-g20",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 533,
+   "kick_frame": 504,
+   "shot_dist": 10.8,
+   "keeper_dist": 6.345741643023298
+  },
+  {
+   "id": "r3-g20",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 739,
+   "kick_frame": 705,
+   "shot_dist": 12.09,
+   "keeper_dist": 8.62555795296745
+  },
+  {
+   "id": "r3-g20",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 939,
+   "kick_frame": 903,
+   "shot_dist": 12.56,
+   "keeper_dist": 8.542471890501018
+  },
+  {
+   "id": "r3-g20",
+   "teamSize": 2,
+   "side": "opp",
+   "type": "goal",
+   "goal_frame": 1140,
+   "kick_frame": 1105,
+   "shot_dist": 12.4,
+   "keeper_dist": 8.592072858164087
+  }
+ ]
+}

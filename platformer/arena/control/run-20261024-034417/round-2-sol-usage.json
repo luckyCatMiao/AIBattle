@@ -1,0 +1,43 @@
+[
+  {
+    "usage": {
+      "input_tokens": 107689,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 157717,
+      "output_tokens": 4472,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6.1-sol": {
+        "inputTokens": 107689,
+        "outputTokens": 4472,
+        "cacheReadInputTokens": 157717,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.5517394000000001,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "reported_cost_usd": 0.5517394000000001
+  }
+]

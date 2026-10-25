@@ -1,0 +1,51 @@
+[
+  {
+    "game": "bomber",
+    "run": "run-20261024-093625",
+    "phase": "模型准备",
+    "games": [
+      {
+        "id": "r1-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 3000
+        }
+      },
+      {
+        "id": "r1-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 3000
+        }
+      },
+      {
+        "id": "r2-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 1000
+        }
+      },
+      {
+        "id": "r2-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 3000
+        }
+      }
+    ],
+    "returncode": 1,
+    "minutes": 543.7
+  },
+  {
+    "game": "defusal",
+    "run": "run-20261024-184009",
+    "phase": "建立本机环境",
+    "games": [],
+    "returncode": 1,
+    "minutes": 0.0
+  }
+]

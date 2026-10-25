@@ -1,0 +1,111 @@
+====================================================================================================
+r1-g1 seed 5011 len 97.333 halfWidth 3.598
+-- car 0 DeepSeek V4.1 Flash
+   lap1 cp 2  t=  1.150 frame  53 v=13.04 lat=-0.41
+   lap1 cp 3  t=  1.750 frame  65 v=14.17 lat=+0.85
+   lap1 cp 4  t=  2.250 frame  75 v=14.63 lat=+1.48
+   lap1 cp 5  t=  2.700 frame  84 v=14.22 lat=+0.99
+   lap1 cp 6  t=  3.250 frame  95 v=14.10 lat=+0.00
+   lap1 cp 7  t=  3.800 frame 106 v=14.21 lat=+1.12
+   lap1 cp 8  t=  4.350 frame 117 v=14.62 lat=+1.33
+   lap1 cp 9  t=  4.750 frame 125 v=14.52 lat=+1.79
+   lap1 cp10  t=  5.300 frame 136 v=14.16 lat=-0.92
+   lap1 cp11  t=  5.850 frame 147 v=14.21 lat=+1.03
+   lap0 cp 0  t=  6.350 frame 157 v=14.20 lat=+1.12
+   lap2 cp 1  t=  6.900 frame 168 v=14.63 lat=+1.40
+   lap2 cp 2  t=  7.350 frame 177 v=14.15 lat=+0.48
+   lap2 cp 3  t=  7.900 frame 188 v=14.26 lat=+0.75
+   lap2 cp 4  t=  8.400 frame 198 v=14.66 lat=+1.35
+   lap2 cp 5  t=  8.850 frame 207 v=14.24 lat=+1.08
+   lap2 cp 6  t=  9.450 frame 219 v=14.10 lat=+0.05
+   lap2 cp 7  t= 10.000 frame 230 v=14.21 lat=+1.16
+   lap2 cp 8  t= 10.500 frame 240 v=14.62 lat=+1.29
+   lap2 cp 9  t= 10.900 frame 248 v=14.46 lat=+1.95
+   lap2 cp10  t= 11.450 frame 259 v=14.16 lat=-0.90
+   lap2 cp11  t= 12.000 frame 270 v=14.20 lat=+1.04
+   lap1 cp 0  t= 12.550 frame 281 v=14.20 lat=+1.12
+   lap3 cp 1  t= 13.100 frame 292 v=14.63 lat=+1.49
+   lap3 cp 2  t= 13.500 frame 300 v=14.16 lat=+0.67
+   lap3 cp 3  t= 14.050 frame 311 v=14.26 lat=+0.60
+   lap3 cp 4  t= 14.600 frame 322 v=14.67 lat=+1.38
+   lap3 cp 5  t= 15.050 frame 331 v=14.22 lat=+0.94
+   lap3 cp 6  t= 15.600 frame 342 v=14.10 lat=-0.01
+   lap3 cp 7  t= 16.150 frame 353 v=14.21 lat=+1.12
+   sectors (from GO; cp1..cp11 then cp0/lap line):
+    lap1: cp2@1.15 cp3@1.75 cp4@2.25 cp5@2.70 cp6@3.25 cp7@3.80 cp8@4.35 cp9@4.75 cp10@5.30 cp11@5.85 cp0@12.55
+          dt: 0.60 0.50 0.45 0.55 0.55 0.55 0.40 0.55 0.55 6.70  sum 11.40
+          v :  13.5  16.2  18.0  14.7  14.7  14.7  20.3  14.7  14.7   1.2
+    lap2: cp1@6.90 cp2@7.35 cp3@7.90 cp4@8.40 cp5@8.85 cp6@9.45 cp7@10.00 cp8@10.50 cp9@10.90 cp10@11.45 cp11@12.00
+          dt: 0.45 0.55 0.50 0.45 0.60 0.55 0.50 0.40 0.55 0.55  sum 5.10
+          v :  18.0  14.7  16.2  18.0  13.5  14.7  16.2  20.3  14.7  14.7
+    lap3: cp1@13.10 cp2@13.50 cp3@14.05 cp4@14.60 cp5@15.05 cp6@15.60 cp7@16.15
+          dt: 0.40 0.55 0.55 0.45 0.55 0.55  sum 3.05
+          v :  20.3  14.7  14.7  18.0  14.7  14.7
+-- car 1 GPT-6.1 Sol
+   lap1 cp 2  t=  1.150 frame  53 v=13.82 lat=+1.81
+   lap1 cp 3  t=  1.700 frame  64 v=17.60 lat=+2.14
+   lap1 cp 4  t=  2.100 frame  72 v=15.31 lat=+2.16
+   lap1 cp 5  t=  2.500 frame  80 v=14.63 lat=+1.56
+   lap1 cp 6  t=  3.050 frame  91 v=14.02 lat=+1.35
+   lap1 cp 7  t=  3.550 frame 101 v=17.58 lat=+1.72
+   lap1 cp 8  t=  4.000 frame 110 v=17.29 lat=+1.03
+   lap1 cp 9  t=  4.350 frame 117 v=19.30 lat=+1.70
+   lap1 cp10  t=  4.750 frame 125 v=16.48 lat=+0.16
+   lap1 cp11  t=  5.300 frame 136 v=16.07 lat=+1.94
+   lap0 cp 0  t=  5.700 frame 144 v=18.88 lat=+1.40
+   lap2 cp 1  t=  6.150 frame 153 v=18.02 lat=+1.07
+   lap2 cp 2  t=  6.500 frame 160 v=18.46 lat=+0.54
+   lap2 cp 3  t=  7.000 frame 170 v=14.41 lat=+1.78
+   lap2 cp 4  t=  7.400 frame 178 v=16.47 lat=+1.57
+   lap2 cp 5  t=  7.800 frame 186 v=18.71 lat=+0.68
+   lap2 cp 6  t=  8.300 frame 196 v=14.04 lat=+0.98
+   lap2 cp 7  t=  8.800 frame 206 v=14.66 lat=+2.02
+   lap2 cp 8  t=  9.200 frame 214 v=17.37 lat=+1.32
+   lap2 cp 9  t=  9.550 frame 221 v=17.73 lat=+1.15
+   lap2 cp10  t= 10.000 frame 230 v=15.09 lat=-0.22
+   lap2 cp11  t= 10.550 frame 241 v=14.24 lat=+2.11
+   lap1 cp 0  t= 11.000 frame 250 v=16.63 lat=+1.41
+   lap3 cp 1  t= 11.400 frame 258 v=17.96 lat=+1.22
+   lap3 cp 2  t= 11.750 frame 265 v=20.88 lat=+0.24
+   lap3 cp 3  t= 12.200 frame 274 v=16.36 lat=+1.11
+   lap3 cp 4  t= 12.600 frame 282 v=19.00 lat=+1.43
+   lap3 cp 5  t= 13.000 frame 290 v=20.20 lat=+0.32
+   lap3 cp 6  t= 13.450 frame 299 v=14.04 lat=+0.42
+   lap3 cp 7  t= 14.000 frame 310 v=16.10 lat=+1.26
+   lap3 cp 8  t= 14.450 frame 319 v=17.77 lat=+0.56
+   lap3 cp 9  t= 14.850 frame 327 v=18.00 lat=+0.62
+   lap3 cp10  t= 15.300 frame 336 v=18.42 lat=-0.20
+   lap3 cp11  t= 15.750 frame 345 v=14.41 lat=+2.02
+   lap2 cp 0  t= 16.200 frame 354 v=18.98 lat=+1.52
+   lap4 cp 1  t= 16.600 frame 362 v=19.98 lat=+1.29
+   sectors (from GO; cp1..cp11 then cp0/lap line):
+    lap1: cp2@1.15 cp3@1.70 cp4@2.10 cp5@2.50 cp6@3.05 cp7@3.55 cp8@4.00 cp9@4.35 cp10@4.75 cp11@5.30 cp0@11.00
+          dt: 0.55 0.40 0.40 0.55 0.50 0.45 0.35 0.40 0.55 5.70  sum 9.85
+          v :  14.7  20.3  20.3  14.7  16.2  18.0  23.2  20.3  14.7   1.4
+    lap2: cp1@6.15 cp2@6.50 cp3@7.00 cp4@7.40 cp5@7.80 cp6@8.30 cp7@8.80 cp8@9.20 cp9@9.55 cp10@10.00 cp11@10.55 cp0@16.20
+          dt: 0.35 0.50 0.40 0.40 0.50 0.50 0.40 0.35 0.45 0.55 5.65  sum 10.05
+          v :  23.2  16.2  20.3  20.3  16.2  16.2  20.3  23.2  18.0  14.7   1.4
+    lap3: cp1@11.40 cp2@11.75 cp3@12.20 cp4@12.60 cp5@13.00 cp6@13.45 cp7@14.00 cp8@14.45 cp9@14.85 cp10@15.30 cp11@15.75
+          dt: 0.35 0.45 0.40 0.40 0.45 0.55 0.45 0.40 0.45 0.45  sum 4.35
+          v :  23.2  18.0  20.3  20.3  18.0  14.7  18.0  20.3  18.0  18.0
+-- gap at each running lap checkpoint (DS_time - SOL_time; + = DS later/slower)
+   lap1: cp2 +0.00 | cp3 +0.05 | cp4 +0.15 | cp5 +0.20 | cp6 +0.20 | cp7 +0.25 | cp8 +0.35 | cp9 +0.40 | cp10 +0.55 | cp11 +0.55 | cp0 +1.55
+   lap2: cp1 +0.75 | cp2 +0.85 | cp3 +0.90 | cp4 +1.00 | cp5 +1.05 | cp6 +1.15 | cp7 +1.20 | cp8 +1.30 | cp9 +1.35 | cp10 +1.45 | cp11 +1.45
+   lap3: cp1 +1.70 | cp2 +1.75 | cp3 +1.85 | cp4 +2.00 | cp5 +2.05 | cp6 +2.15 | cp7 +2.15
+-- per-lap speed stats
+   car0
+    lap1: frames 138 mean 13.03 max 14.63 min 0.00
+    lap2: frames 124 mean 14.29 max 14.66 min 14.10
+    lap3: frames 71 mean 14.29 max 14.67 min 14.10
+   car1
+    lap1: frames 123 mean 14.35 max 21.17 min 0.00
+    lap2: frames 105 mean 16.46 max 20.25 min 14.04
+    lap3: frames 104 mean 17.16 max 21.43 min 14.03
+   car0 events by lap:
+    lap1: offroad 0 drifting 0 boosting 0 (frames)
+    lap2: offroad 0 drifting 0 boosting 0 (frames)
+    lap3: offroad 0 drifting 0 boosting 0 (frames)
+   car1 events by lap:
+    lap1: offroad 0 drifting 35 boosting 28 (frames)
+    lap2: offroad 0 drifting 30 boosting 34 (frames)
+    lap3: offroad 0 drifting 35 boosting 39 (frames)

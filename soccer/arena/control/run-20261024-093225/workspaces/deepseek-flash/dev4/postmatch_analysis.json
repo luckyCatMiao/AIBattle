@@ -1,0 +1,3971 @@
+[
+ {
+  "id": "r1-g1",
+  "seed": 4011,
+  "teamSize": 2,
+  "seats": [
+   "deepseek-flash",
+   "sol"
+  ],
+  "me_team": 0,
+  "frames": 2401,
+  "seconds": 120.05,
+  "duration": 2.71,
+  "reason": "常规时间结束",
+  "score": [
+   0,
+   2
+  ],
+  "stats": [
+   {
+    "kicks": 9,
+    "possession": 106,
+    "fouls": 0
+   },
+   {
+    "kicks": 16,
+    "possession": 103,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   106,
+   103
+  ],
+  "poss_segments": 26,
+  "seg_start_x": {
+   "0": 9.6,
+   "1": 27.21
+  },
+  "territory": {
+   "third_segments": [
+    0,
+    8
+   ],
+   "max_prog": [
+    21.515,
+    38.013
+   ],
+   "def_third_frames": [
+    762,
+    472
+   ],
+   "att_third_frames": [
+    472,
+    762
+   ]
+  },
+  "dist_hist": {
+   "0": {
+    "n": 9,
+    "med": 31.85,
+    "buckets": [
+     0,
+     0,
+     2,
+     0,
+     7
+    ],
+    "own_half": 8
+   },
+   "1": {
+    "n": 16,
+    "med": 21.45,
+    "buckets": [
+     7,
+     1,
+     4,
+     0,
+     4
+    ],
+    "own_half": 8
+   }
+  },
+  "goals": [
+   {
+    "frame": 196,
+    "t": 9.8,
+    "team": 1,
+    "model": "sol",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "cross_y": 15.29,
+    "lastTouch": "t1u1",
+    "kick_frame": 161,
+    "kick_t": 8.05,
+    "kick_unit": "t1u1",
+    "kick_team": 1,
+    "kick_model": "sol",
+    "kick_x": 11.631,
+    "kick_y": 6.825,
+    "angle_deg": 141.3,
+    "flight": 35,
+    "dist_att_goal": 12.29,
+    "dist_own_goal": 31.97,
+    "ray_y_att": 15.34,
+    "ray_y_own": null,
+    "keeper_kick": [
+     1.32,
+     11.02
+    ],
+    "keeper_kick_dist_cross": 4.27,
+    "keeper_goal": [
+     3.31,
+     11.91
+    ],
+    "keeper_goal_dist_ball": 4.05,
+    "lane": []
+   },
+   {
+    "frame": 993,
+    "t": 49.65,
+    "team": 1,
+    "model": "sol",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     2
+    ],
+    "cross_y": 15.29,
+    "lastTouch": "t1u1",
+    "kick_frame": 961,
+    "kick_t": 48.05,
+    "kick_unit": "t1u1",
+    "kick_team": 1,
+    "kick_model": "sol",
+    "kick_x": 11.935,
+    "kick_y": 8.614,
+    "angle_deg": 148.3,
+    "flight": 32,
+    "dist_att_goal": 11.78,
+    "dist_own_goal": 31.37,
+    "ray_y_att": 15.36,
+    "ray_y_own": null,
+    "keeper_kick": [
+     1.28,
+     11.05
+    ],
+    "keeper_kick_dist_cross": 4.24,
+    "keeper_goal": [
+     2.62,
+     12.39
+    ],
+    "keeper_goal_dist_ball": 3.28,
+    "lane": []
+   }
+  ],
+  "shots": [
+   {
+    "frame": 161,
+    "t": 8.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.631,
+    "y": 6.825,
+    "dist": 12.29,
+    "ray_y": 15.34
+   },
+   {
+    "frame": 690,
+    "t": 34.5,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 5.296,
+    "y": 23.316,
+    "dist": 11.17,
+    "ray_y": 15.34
+   },
+   {
+    "frame": 961,
+    "t": 48.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.935,
+    "y": 8.614,
+    "dist": 11.78,
+    "ray_y": 15.36
+   },
+   {
+    "frame": 1184,
+    "t": 59.2,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 12.773,
+    "y": 7.549,
+    "dist": 12.97,
+    "ray_y": 15.36
+   },
+   {
+    "frame": 1373,
+    "t": 68.65,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.678,
+    "y": 6.797,
+    "dist": 12.35,
+    "ray_y": 15.35
+   },
+   {
+    "frame": 1758,
+    "t": 87.9,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 8.418,
+    "y": 21.65,
+    "dist": 11.4,
+    "ray_y": 15.34
+   },
+   {
+    "frame": 1821,
+    "t": 91.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.41,
+    "y": 19.968,
+    "dist": 12.53,
+    "ray_y": 10.64
+   }
+  ],
+  "saves": [
+   {
+    "frame": 706,
+    "t": 35.3,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 690,
+    "flight": 16,
+    "dist": 11.17,
+    "from": [
+     5.3,
+     23.32
+    ],
+    "ray_y": 15.34
+   },
+   {
+    "frame": 1402,
+    "t": 70.1,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 1373,
+    "flight": 29,
+    "dist": 12.35,
+    "from": [
+     11.68,
+     6.8
+    ],
+    "ray_y": 15.35
+   },
+   {
+    "frame": 1778,
+    "t": 88.9,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 1758,
+    "flight": 20,
+    "dist": 11.4,
+    "from": [
+     8.42,
+     21.65
+    ],
+    "ray_y": 15.34
+   }
+  ],
+  "kicks": [
+   {
+    "frame": 74,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.45,
+    "y": 12.76,
+    "angle": 239.0,
+    "dist": 21.45
+   },
+   {
+    "frame": 161,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.63,
+    "y": 6.83,
+    "angle": 141.3,
+    "dist": 12.29
+   },
+   {
+    "frame": 301,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 22.45,
+    "y": 13.34,
+    "angle": 34.0,
+    "dist": 20.55
+   },
+   {
+    "frame": 461,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 39.98,
+    "y": 23.11,
+    "angle": 175.6,
+    "dist": 40.27
+   },
+   {
+    "frame": 619,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 15.87,
+    "y": 24.15,
+    "angle": 181.8,
+    "dist": 18.59
+   },
+   {
+    "frame": 690,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 5.3,
+    "y": 23.32,
+    "angle": 241.7,
+    "dist": 11.17
+   },
+   {
+    "frame": 721,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 2.63,
+    "y": 16.73,
+    "angle": 346.0,
+    "dist": 40.54
+   },
+   {
+    "frame": 863,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 24.18,
+    "y": 10.8,
+    "angle": 237.2,
+    "dist": 23.29
+   },
+   {
+    "frame": 961,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.94,
+    "y": 8.61,
+    "angle": 148.3,
+    "dist": 11.78
+   },
+   {
+    "frame": 1081,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 21.94,
+    "y": 13.56,
+    "angle": 30.0,
+    "dist": 21.07
+   },
+   {
+    "frame": 1101,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 23.52,
+    "y": 11.54,
+    "angle": 239.0,
+    "dist": 22.57
+   },
+   {
+    "frame": 1184,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 12.77,
+    "y": 7.55,
+    "angle": 146.4,
+    "dist": 12.97
+   },
+   {
+    "frame": 1286,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.45,
+    "y": 12.76,
+    "angle": 239.0,
+    "dist": 21.45
+   },
+   {
+    "frame": 1373,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.68,
+    "y": 6.8,
+    "angle": 141.3,
+    "dist": 12.35
+   },
+   {
+    "frame": 1421,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 3.15,
+    "y": 13.88,
+    "angle": 344.0,
+    "dist": 39.85
+   },
+   {
+    "frame": 1441,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 8.42,
+    "y": 12.23,
+    "angle": 16.0,
+    "dist": 34.59
+   },
+   {
+    "frame": 1602,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 30.59,
+    "y": 18.89,
+    "angle": 157.4,
+    "dist": 30.17
+   },
+   {
+    "frame": 1758,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 8.42,
+    "y": 21.65,
+    "angle": 220.4,
+    "dist": 11.4
+   },
+   {
+    "frame": 1781,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.89,
+    "y": 15.28,
+    "angle": 26.0,
+    "dist": 41.17
+   },
+   {
+    "frame": 1821,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.41,
+    "y": 19.97,
+    "angle": 221.9,
+    "dist": 12.53
+   },
+   {
+    "frame": 1841,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 11.92,
+    "y": 19.96,
+    "angle": 359.0,
+    "dist": 31.85
+   },
+   {
+    "frame": 1995,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 34.0,
+    "y": 19.09,
+    "angle": 202.6,
+    "dist": 33.56
+   },
+   {
+    "frame": 2161,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 12.63,
+    "y": 10.13,
+    "angle": 20.0,
+    "dist": 30.51
+   },
+   {
+    "frame": 2181,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 12.56,
+    "y": 10.11,
+    "angle": 21.0,
+    "dist": 30.58
+   },
+   {
+    "frame": 2341,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 33.9,
+    "y": 17.96,
+    "angle": 239.0,
+    "dist": 33.27
+   }
+  ]
+ },
+ {
+  "id": "r1-g2",
+  "seed": 4012,
+  "teamSize": 1,
+  "seats": [
+   "sol",
+   "deepseek-flash"
+  ],
+  "me_team": 1,
+  "frames": 2401,
+  "seconds": 120.05,
+  "duration": 1.63,
+  "reason": "常规时间结束",
+  "score": [
+   6,
+   1
+  ],
+  "stats": [
+   {
+    "kicks": 18,
+    "possession": 182,
+    "fouls": 0
+   },
+   {
+    "kicks": 5,
+    "possession": 59,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   182,
+   59
+  ],
+  "poss_segments": 29,
+  "seg_start_x": {
+   "0": 20.96,
+   "1": 21.0
+  },
+  "territory": {
+   "third_segments": [
+    4,
+    0
+   ],
+   "max_prog": [
+    31.838,
+    21.447
+   ],
+   "def_third_frames": [
+    682,
+    515
+   ],
+   "att_third_frames": [
+    515,
+    682
+   ]
+  },
+  "dist_hist": {
+   "0": {
+    "n": 18,
+    "med": 21.21,
+    "buckets": [
+     4,
+     0,
+     11,
+     0,
+     3
+    ],
+    "own_half": 14
+   },
+   "1": {
+    "n": 5,
+    "med": 20.7,
+    "buckets": [
+     0,
+     0,
+     5,
+     0,
+     0
+    ],
+    "own_half": 0
+   }
+  },
+  "goals": [
+   {
+    "frame": 178,
+    "t": 8.9,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "cross_y": 10.58,
+    "lastTouch": "t0u0",
+    "kick_frame": 152,
+    "kick_t": 7.6,
+    "kick_unit": "t0u0",
+    "kick_team": 0,
+    "kick_model": "sol",
+    "kick_x": 32.575,
+    "kick_y": 6.635,
+    "angle_deg": 21.1,
+    "flight": 26,
+    "dist_att_goal": 12.21,
+    "dist_own_goal": 32.21,
+    "ray_y_att": 10.65,
+    "ray_y_own": null,
+    "keeper_kick": [
+     30.72,
+     7.74
+    ],
+    "keeper_kick_dist_cross": 2.84,
+    "keeper_goal": [
+     34.31,
+     7.29
+    ],
+    "keeper_goal_dist_ball": 9.13,
+    "lane": []
+   },
+   {
+    "frame": 369,
+    "t": 18.45,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "cross_y": 10.62,
+    "lastTouch": "t0u0",
+    "kick_frame": 343,
+    "kick_t": 17.15,
+    "kick_unit": "t0u0",
+    "kick_team": 0,
+    "kick_model": "sol",
+    "kick_x": 32.664,
+    "kick_y": 6.722,
+    "angle_deg": 20.8,
+    "flight": 26,
+    "dist_att_goal": 12.09,
+    "dist_own_goal": 32.28,
+    "ray_y_att": 10.65,
+    "ray_y_own": null,
+    "keeper_kick": [
+     31.19,
+     6.12
+    ],
+    "keeper_kick_dist_cross": 4.5,
+    "keeper_goal": [
+     34.66,
+     7.24
+    ],
+    "keeper_goal_dist_ball": 8.93,
+    "lane": []
+   },
+   {
+    "frame": 870,
+    "t": 43.5,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "cross_y": 10.65,
+    "lastTouch": "t0u0"
+   },
+   {
+    "frame": 1390,
+    "t": 69.5,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     4,
+     0
+    ],
+    "cross_y": 10.57,
+    "lastTouch": "t0u0",
+    "kick_frame": 1364,
+    "kick_t": 68.2,
+    "kick_unit": "t0u0",
+    "kick_team": 0,
+    "kick_model": "sol",
+    "kick_x": 32.544,
+    "kick_y": 6.635,
+    "angle_deg": 21.0,
+    "flight": 26,
+    "dist_att_goal": 12.24,
+    "dist_own_goal": 32.18,
+    "ray_y_att": 10.65,
+    "ray_y_own": null,
+    "keeper_kick": [
+     31.07,
+     6.3
+    ],
+    "keeper_kick_dist_cross": 4.27,
+    "keeper_goal": [
+     34.59,
+     7.3
+    ],
+    "keeper_goal_dist_ball": 8.83,
+    "lane": []
+   },
+   {
+    "frame": 1893,
+    "t": 94.65,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     5,
+     0
+    ],
+    "cross_y": 10.65,
+    "lastTouch": "t0u0"
+   },
+   {
+    "frame": 2060,
+    "t": 103.0,
+    "team": 1,
+    "model": "deepseek-flash",
+    "scorer": "t1u0",
+    "ownGoal": false,
+    "score": [
+     5,
+     1
+    ],
+    "cross_y": 11.27,
+    "lastTouch": "t1u0",
+    "kick_frame": 1981,
+    "kick_t": 99.05,
+    "kick_unit": "t1u0",
+    "kick_team": 1,
+    "kick_model": "deepseek-flash",
+    "kick_x": 21.685,
+    "kick_y": 12.354,
+    "angle_deg": 183.0,
+    "flight": 79,
+    "dist_att_goal": 20.7,
+    "dist_own_goal": 21.32,
+    "ray_y_att": 11.27,
+    "ray_y_own": null,
+    "keeper_kick": [
+     22.06,
+     12.95
+    ],
+    "keeper_kick_dist_cross": 1.68,
+    "keeper_goal": [
+     9.78,
+     12.95
+    ],
+    "keeper_goal_dist_ball": 8.91,
+    "lane": []
+   },
+   {
+    "frame": 2250,
+    "t": 112.5,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     6,
+     1
+    ],
+    "cross_y": 10.57,
+    "lastTouch": "t0u0",
+    "kick_frame": 2224,
+    "kick_t": 111.2,
+    "kick_unit": "t0u0",
+    "kick_team": 0,
+    "kick_model": "sol",
+    "kick_x": 32.544,
+    "kick_y": 6.635,
+    "angle_deg": 21.0,
+    "flight": 26,
+    "dist_att_goal": 12.24,
+    "dist_own_goal": 32.18,
+    "ray_y_att": 10.65,
+    "ray_y_own": null,
+    "keeper_kick": [
+     31.07,
+     6.3
+    ],
+    "keeper_kick_dist_cross": 4.27,
+    "keeper_goal": [
+     34.59,
+     7.3
+    ],
+    "keeper_goal_dist_ball": 8.83,
+    "lane": []
+   }
+  ],
+  "shots": [
+   {
+    "frame": 152,
+    "t": 7.6,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u0",
+    "x": 32.575,
+    "y": 6.635,
+    "dist": 12.21,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 343,
+    "t": 17.15,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u0",
+    "x": 32.664,
+    "y": 6.722,
+    "dist": 12.09,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 1364,
+    "t": 68.2,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u0",
+    "x": 32.544,
+    "y": 6.635,
+    "dist": 12.24,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 2224,
+    "t": 111.2,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u0",
+    "x": 32.544,
+    "y": 6.635,
+    "dist": 12.24,
+    "ray_y": 10.65
+   }
+  ],
+  "saves": [],
+  "kicks": [
+   {
+    "frame": 64,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.63,
+    "y": 12.77,
+    "angle": 301.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 152,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 32.58,
+    "y": 6.63,
+    "angle": 21.1,
+    "dist": 12.21
+   },
+   {
+    "frame": 255,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.79,
+    "y": 12.77,
+    "angle": 301.0,
+    "dist": 21.21
+   },
+   {
+    "frame": 343,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 32.66,
+    "y": 6.72,
+    "angle": 20.8,
+    "dist": 12.09
+   },
+   {
+    "frame": 449,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.98,
+    "y": 12.81,
+    "angle": 301.0,
+    "dist": 21.02
+   },
+   {
+    "frame": 461,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 21.67,
+    "y": 12.29,
+    "angle": 170.0,
+    "dist": 20.69
+   },
+   {
+    "frame": 638,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 8.63,
+    "y": 15.61,
+    "angle": 301.0,
+    "dist": 34.47
+   },
+   {
+    "frame": 740,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 20.02,
+    "y": 5.16,
+    "angle": 13.5,
+    "dist": 24.28
+   },
+   {
+    "frame": 950,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.98,
+    "y": 12.81,
+    "angle": 301.0,
+    "dist": 21.02
+   },
+   {
+    "frame": 961,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 21.69,
+    "y": 12.32,
+    "angle": 170.0,
+    "dist": 20.7
+   },
+   {
+    "frame": 1139,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 8.57,
+    "y": 15.66,
+    "angle": 301.0,
+    "dist": 34.53
+   },
+   {
+    "frame": 1276,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.63,
+    "y": 12.77,
+    "angle": 301.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 1364,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 32.54,
+    "y": 6.63,
+    "angle": 21.0,
+    "dist": 12.24
+   },
+   {
+    "frame": 1470,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.98,
+    "y": 12.81,
+    "angle": 301.0,
+    "dist": 21.02
+   },
+   {
+    "frame": 1481,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 21.69,
+    "y": 12.32,
+    "angle": 170.0,
+    "dist": 20.7
+   },
+   {
+    "frame": 1659,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 8.57,
+    "y": 15.66,
+    "angle": 301.0,
+    "dist": 34.53
+   },
+   {
+    "frame": 1760,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 19.94,
+    "y": 5.15,
+    "angle": 13.4,
+    "dist": 24.36
+   },
+   {
+    "frame": 1973,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.98,
+    "y": 12.81,
+    "angle": 301.0,
+    "dist": 21.02
+   },
+   {
+    "frame": 1981,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 21.68,
+    "y": 12.35,
+    "angle": 183.0,
+    "dist": 20.7
+   },
+   {
+    "frame": 2136,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.63,
+    "y": 12.77,
+    "angle": 301.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 2224,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 32.54,
+    "y": 6.63,
+    "angle": 21.0,
+    "dist": 12.24
+   },
+   {
+    "frame": 2330,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 21.98,
+    "y": 12.81,
+    "angle": 301.0,
+    "dist": 21.02
+   },
+   {
+    "frame": 2341,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 21.69,
+    "y": 12.32,
+    "angle": 170.0,
+    "dist": 20.7
+   }
+  ]
+ },
+ {
+  "id": "r2-g1",
+  "seed": 4021,
+  "teamSize": 3,
+  "seats": [
+   "deepseek-flash",
+   "sol"
+  ],
+  "me_team": 0,
+  "frames": 2401,
+  "seconds": 120.05,
+  "duration": 4.51,
+  "reason": "常规时间结束",
+  "score": [
+   0,
+   3
+  ],
+  "stats": [
+   {
+    "kicks": 16,
+    "possession": 320,
+    "fouls": 0
+   },
+   {
+    "kicks": 20,
+    "possession": 94,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   320,
+   94
+  ],
+  "poss_segments": 36,
+  "seg_start_x": {
+   "0": 8.22,
+   "1": 21.8
+  },
+  "territory": {
+   "third_segments": [
+    0,
+    8
+   ],
+   "max_prog": [
+    21.115,
+    32.076
+   ],
+   "def_third_frames": [
+    1400,
+    0
+   ],
+   "att_third_frames": [
+    0,
+    1400
+   ]
+  },
+  "dist_hist": {
+   "0": {
+    "n": 16,
+    "med": 32.96,
+    "buckets": [
+     0,
+     0,
+     1,
+     3,
+     12
+    ],
+    "own_half": 15
+   },
+   "1": {
+    "n": 20,
+    "med": 19.59,
+    "buckets": [
+     7,
+     4,
+     9,
+     0,
+     0
+    ],
+    "own_half": 8
+   }
+  },
+  "goals": [
+   {
+    "frame": 261,
+    "t": 13.05,
+    "team": 1,
+    "model": "sol",
+    "scorer": "t0u2",
+    "ownGoal": true,
+    "score": [
+     0,
+     1
+    ],
+    "cross_y": 14.38,
+    "lastTouch": "t0u2",
+    "kick_frame": 241,
+    "kick_t": 12.05,
+    "kick_unit": "t0u2",
+    "kick_team": 0,
+    "kick_model": "deepseek-flash",
+    "kick_x": 10.036,
+    "kick_y": 12.823,
+    "angle_deg": 170.0,
+    "flight": 20,
+    "dist_att_goal": 32.96,
+    "dist_own_goal": 9.04,
+    "ray_y_att": null,
+    "ray_y_own": 14.42,
+    "keeper_kick": [
+     40.68,
+     11.11
+    ],
+    "keeper_kick_dist_cross": 3.27,
+    "keeper_goal": [
+     40.68,
+     14.11
+    ],
+    "keeper_goal_dist_ball": 39.49,
+    "lane": []
+   },
+   {
+    "frame": 744,
+    "t": 37.2,
+    "team": 1,
+    "model": "sol",
+    "scorer": "t0u2",
+    "ownGoal": true,
+    "score": [
+     0,
+     2
+    ],
+    "cross_y": 14.42,
+    "lastTouch": "t0u2",
+    "kick_frame": 721,
+    "kick_t": 36.05,
+    "kick_unit": "t0u2",
+    "kick_team": 0,
+    "kick_model": "deepseek-flash",
+    "kick_x": 7.459,
+    "kick_y": 6.751,
+    "angle_deg": 130.0,
+    "flight": 23,
+    "dist_att_goal": 36.09,
+    "dist_own_goal": 8.99,
+    "ray_y_att": null,
+    "ray_y_own": 14.45,
+    "keeper_kick": [
+     40.75,
+     12.35
+    ],
+    "keeper_kick_dist_cross": 2.07,
+    "keeper_goal": [
+     40.75,
+     12.5
+    ],
+    "keeper_goal_dist_ball": 39.77,
+    "lane": [
+     [
+      "t1u0",
+      0.25,
+      33.75
+     ],
+     [
+      "t1u2",
+      0.31,
+      7.63
+     ]
+    ]
+   },
+   {
+    "frame": 2223,
+    "t": 111.15,
+    "team": 1,
+    "model": "sol",
+    "scorer": "t0u1",
+    "ownGoal": true,
+    "score": [
+     0,
+     3
+    ],
+    "cross_y": 14.21,
+    "lastTouch": "t0u1",
+    "kick_frame": 2201,
+    "kick_t": 110.05,
+    "kick_unit": "t0u1",
+    "kick_team": 0,
+    "kick_model": "deepseek-flash",
+    "kick_x": 7.426,
+    "kick_y": 6.798,
+    "angle_deg": 130.0,
+    "flight": 22,
+    "dist_att_goal": 36.11,
+    "dist_own_goal": 8.93,
+    "ray_y_att": null,
+    "ray_y_own": 14.46,
+    "keeper_kick": [
+     40.68,
+     12.37
+    ],
+    "keeper_kick_dist_cross": 1.84,
+    "keeper_goal": [
+     40.68,
+     12.85
+    ],
+    "keeper_goal_dist_ball": 39.5,
+    "lane": [
+     [
+      "t1u2",
+      0.21,
+      7.73
+     ],
+     [
+      "t1u0",
+      0.22,
+      33.72
+     ]
+    ]
+   }
+  ],
+  "shots": [
+   {
+    "frame": 152,
+    "t": 7.6,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.505,
+    "y": 6.776,
+    "dist": 12.21,
+    "ray_y": 15.35
+   },
+   {
+    "frame": 224,
+    "t": 11.2,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.321,
+    "y": 11.76,
+    "dist": 10.4,
+    "ray_y": 12.06
+   },
+   {
+    "frame": 432,
+    "t": 21.6,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.466,
+    "y": 6.684,
+    "dist": 12.22,
+    "ray_y": 15.35
+   },
+   {
+    "frame": 911,
+    "t": 45.55,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.591,
+    "y": 6.731,
+    "dist": 12.31,
+    "ray_y": 15.34
+   },
+   {
+    "frame": 1364,
+    "t": 68.2,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.394,
+    "y": 6.705,
+    "dist": 12.15,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 2390,
+    "t": 119.5,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 11.651,
+    "y": 6.808,
+    "dist": 12.32,
+    "ray_y": 15.34
+   }
+  ],
+  "saves": [
+   {
+    "frame": 182,
+    "t": 9.1,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 152,
+    "flight": 30,
+    "dist": 12.21,
+    "from": [
+     11.51,
+     6.78
+    ],
+    "ray_y": 15.35
+   },
+   {
+    "frame": 462,
+    "t": 23.1,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 432,
+    "flight": 30,
+    "dist": 12.22,
+    "from": [
+     11.47,
+     6.68
+    ],
+    "ray_y": 15.35
+   },
+   {
+    "frame": 942,
+    "t": 47.1,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 911,
+    "flight": 31,
+    "dist": 12.31,
+    "from": [
+     11.59,
+     6.73
+    ],
+    "ray_y": 15.34
+   },
+   {
+    "frame": 1389,
+    "t": 69.45,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 1364,
+    "flight": 25,
+    "dist": 12.15,
+    "from": [
+     11.39,
+     6.71
+    ],
+    "ray_y": 10.65
+   },
+   {
+    "frame": 1946,
+    "t": 97.3,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u1",
+    "shot_frame": 1913,
+    "flight": 33,
+    "dist": 12.67,
+    "from": [
+     11.06,
+     5.3
+    ],
+    "ray_y": 16.34
+   }
+  ],
+  "kicks": [
+   {
+    "frame": 64,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.37,
+    "y": 12.77,
+    "angle": 239.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 152,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.51,
+    "y": 6.78,
+    "angle": 140.8,
+    "dist": 12.21
+   },
+   {
+    "frame": 201,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.89,
+    "y": 14.86,
+    "angle": 346.0,
+    "dist": 41.15
+   },
+   {
+    "frame": 224,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.32,
+    "y": 11.76,
+    "angle": 178.4,
+    "dist": 10.4
+   },
+   {
+    "frame": 241,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 10.04,
+    "y": 12.82,
+    "angle": 170.0,
+    "dist": 32.96
+   },
+   {
+    "frame": 344,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.37,
+    "y": 12.77,
+    "angle": 239.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 432,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.47,
+    "y": 6.68,
+    "angle": 140.4,
+    "dist": 12.22
+   },
+   {
+    "frame": 481,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.9,
+    "y": 15.29,
+    "angle": 12.0,
+    "dist": 41.17
+   },
+   {
+    "frame": 561,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 19.84,
+    "y": 18.37,
+    "angle": 248.0,
+    "dist": 19.59
+   },
+   {
+    "frame": 568,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 18.02,
+    "y": 14.16,
+    "angle": 239.0,
+    "dist": 17.06
+   },
+   {
+    "frame": 721,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 7.46,
+    "y": 6.75,
+    "angle": 130.0,
+    "dist": 36.09
+   },
+   {
+    "frame": 824,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.37,
+    "y": 12.77,
+    "angle": 239.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 911,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.59,
+    "y": 6.73,
+    "angle": 140.9,
+    "dist": 12.31
+   },
+   {
+    "frame": 961,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.9,
+    "y": 15.29,
+    "angle": 12.0,
+    "dist": 41.17
+   },
+   {
+    "frame": 1045,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 18.78,
+    "y": 19.18,
+    "angle": 148.9,
+    "dist": 18.82
+   },
+   {
+    "frame": 1276,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.37,
+    "y": 12.77,
+    "angle": 239.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 1364,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.39,
+    "y": 6.71,
+    "angle": 159.2,
+    "dist": 12.15
+   },
+   {
+    "frame": 1401,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.9,
+    "y": 10.92,
+    "angle": 348.0,
+    "dist": 41.16
+   },
+   {
+    "frame": 1421,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 10.72,
+    "y": 9.03,
+    "angle": 323.0,
+    "dist": 32.52
+   },
+   {
+    "frame": 1441,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 12.19,
+    "y": 9.75,
+    "angle": 191.0,
+    "dist": 30.98
+   },
+   {
+    "frame": 1481,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 14.32,
+    "y": 9.9,
+    "angle": 61.0,
+    "dist": 28.85
+   },
+   {
+    "frame": 1501,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 16.59,
+    "y": 12.13,
+    "angle": 250.0,
+    "dist": 26.43
+   },
+   {
+    "frame": 1581,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 10.57,
+    "y": 7.61,
+    "angle": 16.0,
+    "dist": 32.87
+   },
+   {
+    "frame": 1601,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 11.65,
+    "y": 8.77,
+    "angle": 219.0,
+    "dist": 31.63
+   },
+   {
+    "frame": 1641,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 13.96,
+    "y": 8.17,
+    "angle": 65.0,
+    "dist": 29.44
+   },
+   {
+    "frame": 1743,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 22.91,
+    "y": 20.84,
+    "angle": 239.0,
+    "dist": 23.27
+   },
+   {
+    "frame": 1761,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 22.19,
+    "y": 19.52,
+    "angle": 30.0,
+    "dist": 21.81
+   },
+   {
+    "frame": 1781,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 24.5,
+    "y": 18.7,
+    "angle": 239.0,
+    "dist": 24.18
+   },
+   {
+    "frame": 1784,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 23.19,
+    "y": 16.03,
+    "angle": 239.0,
+    "dist": 22.39
+   },
+   {
+    "frame": 1913,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.06,
+    "y": 5.3,
+    "angle": 132.4,
+    "dist": 12.67
+   },
+   {
+    "frame": 1961,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.9,
+    "y": 15.26,
+    "angle": 12.0,
+    "dist": 41.17
+   },
+   {
+    "frame": 2041,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 20.44,
+    "y": 18.45,
+    "angle": 240.9,
+    "dist": 20.19
+   },
+   {
+    "frame": 2049,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 17.84,
+    "y": 13.72,
+    "angle": 239.0,
+    "dist": 16.86
+   },
+   {
+    "frame": 2201,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 7.43,
+    "y": 6.8,
+    "angle": 130.0,
+    "dist": 36.11
+   },
+   {
+    "frame": 2304,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.37,
+    "y": 12.77,
+    "angle": 239.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 2390,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 11.65,
+    "y": 6.81,
+    "angle": 141.3,
+    "dist": 12.32
+   }
+  ]
+ },
+ {
+  "id": "r2-g2",
+  "seed": 4022,
+  "teamSize": 5,
+  "seats": [
+   "sol",
+   "deepseek-flash"
+  ],
+  "me_team": 1,
+  "frames": 2401,
+  "seconds": 120.05,
+  "duration": 6.64,
+  "reason": "常规时间结束",
+  "score": [
+   3,
+   0
+  ],
+  "stats": [
+   {
+    "kicks": 17,
+    "possession": 208,
+    "fouls": 0
+   },
+   {
+    "kicks": 20,
+    "possession": 462,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   208,
+   461
+  ],
+  "poss_segments": 37,
+  "seg_start_x": {
+   "0": 26.79,
+   "1": 10.45
+  },
+  "territory": {
+   "third_segments": [
+    7,
+    0
+   ],
+   "max_prog": [
+    33.163,
+    24.745
+   ],
+   "def_third_frames": [
+    65,
+    1603
+   ],
+   "att_third_frames": [
+    1603,
+    65
+   ]
+  },
+  "dist_hist": {
+   "0": {
+    "n": 17,
+    "med": 17.08,
+    "buckets": [
+     8,
+     1,
+     5,
+     2,
+     1
+    ],
+    "own_half": 8
+   },
+   "1": {
+    "n": 20,
+    "med": 31.49,
+    "buckets": [
+     0,
+     1,
+     5,
+     3,
+     11
+    ],
+    "own_half": 17
+   }
+  },
+  "goals": [
+   {
+    "frame": 1040,
+    "t": 52.0,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t1u4",
+    "ownGoal": true,
+    "score": [
+     1,
+     0
+    ],
+    "cross_y": 10.87,
+    "lastTouch": "t1u4",
+    "kick_frame": 1021,
+    "kick_t": 51.05,
+    "kick_unit": "t1u4",
+    "kick_team": 1,
+    "kick_model": "deepseek-flash",
+    "kick_x": 36.32,
+    "kick_y": 5.328,
+    "angle_deg": 40.0,
+    "flight": 19,
+    "dist_att_goal": 36.14,
+    "dist_own_goal": 10.17,
+    "ray_y_att": null,
+    "ray_y_own": 10.93,
+    "keeper_kick": [
+     3.27,
+     12.17
+    ],
+    "keeper_kick_dist_cross": 1.3,
+    "keeper_goal": [
+     3.27,
+     12.64
+    ],
+    "keeper_goal_dist_ball": 39.69,
+    "lane": [
+     [
+      "t0u0",
+      0.33,
+      33.75
+     ],
+     [
+      "t0u3",
+      0.57,
+      6.63
+     ]
+    ]
+   },
+   {
+    "frame": 1669,
+    "t": 83.45,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t1u3",
+    "ownGoal": true,
+    "score": [
+     2,
+     0
+    ],
+    "cross_y": 11.26,
+    "lastTouch": "t1u3",
+    "kick_frame": 1641,
+    "kick_t": 82.05,
+    "kick_unit": "t1u3",
+    "kick_team": 1,
+    "kick_model": "deepseek-flash",
+    "kick_x": 35.371,
+    "kick_y": 20.139,
+    "angle_deg": 310.0,
+    "flight": 28,
+    "dist_att_goal": 35.1,
+    "dist_own_goal": 10.45,
+    "ray_y_att": null,
+    "ray_y_own": 11.04,
+    "keeper_kick": [
+     3.28,
+     13.96
+    ],
+    "keeper_kick_dist_cross": 2.7,
+    "keeper_goal": [
+     3.28,
+     12.86
+    ],
+    "keeper_goal_dist_ball": 39.58,
+    "lane": [
+     [
+      "t0u0",
+      0.48,
+      32.68
+     ],
+     [
+      "t0u2",
+      0.67,
+      2.79
+     ]
+    ]
+   },
+   {
+    "frame": 2222,
+    "t": 111.1,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t1u1",
+    "ownGoal": true,
+    "score": [
+     3,
+     0
+    ],
+    "cross_y": 10.87,
+    "lastTouch": "t1u1",
+    "kick_frame": 2201,
+    "kick_t": 110.05,
+    "kick_unit": "t1u1",
+    "kick_team": 1,
+    "kick_model": "deepseek-flash",
+    "kick_x": 33.752,
+    "kick_y": 9.253,
+    "angle_deg": 10.0,
+    "flight": 21,
+    "dist_att_goal": 32.97,
+    "dist_own_goal": 9.98,
+    "ray_y_att": null,
+    "ray_y_own": 10.89,
+    "keeper_kick": [
+     3.31,
+     12.86
+    ],
+    "keeper_kick_dist_cross": 1.99,
+    "keeper_goal": [
+     3.31,
+     12.86
+    ],
+    "keeper_goal_dist_ball": 39.69,
+    "lane": [
+     [
+      "t0u0",
+      0.12,
+      30.66
+     ],
+     [
+      "t0u2",
+      0.32,
+      4.47
+     ]
+    ]
+   }
+  ],
+  "shots": [
+   {
+    "frame": 571,
+    "t": 28.55,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 32.65,
+    "y": 20.692,
+    "dist": 12.9,
+    "ray_y": 10.66
+   },
+   {
+    "frame": 743,
+    "t": 37.15,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 31.537,
+    "y": 6.678,
+    "dist": 13.09,
+    "ray_y": 10.66
+   },
+   {
+    "frame": 1163,
+    "t": 58.15,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 19.696,
+    "y": 11.802,
+    "dist": 18.73,
+    "ray_y": 10.5
+   },
+   {
+    "frame": 2134,
+    "t": 106.7,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 34.612,
+    "y": 4.746,
+    "dist": 11.77,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 2184,
+    "t": 109.2,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 32.823,
+    "y": 8.353,
+    "dist": 11.19,
+    "ray_y": 14.41
+   },
+   {
+    "frame": 2387,
+    "t": 119.35,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 32.666,
+    "y": 6.711,
+    "dist": 12.1,
+    "ray_y": 15.34
+   }
+  ],
+  "saves": [
+   {
+    "frame": 604,
+    "t": 30.2,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter": "t0u3",
+    "shot_frame": 571,
+    "flight": 33,
+    "dist": 12.9,
+    "from": [
+     32.65,
+     20.69
+    ],
+    "ray_y": 10.66
+   },
+   {
+    "frame": 771,
+    "t": 38.55,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter": "t0u1",
+    "shot_frame": 743,
+    "flight": 28,
+    "dist": 13.09,
+    "from": [
+     31.54,
+     6.68
+    ],
+    "ray_y": 10.66
+   },
+   {
+    "frame": 1799,
+    "t": 89.95,
+    "keeper_team": 0,
+    "keeper_model": "sol",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "deepseek-flash",
+    "shooter": "t1u3",
+    "shot_frame": 1761,
+    "flight": 38,
+    "dist": 20.21,
+    "from": [
+     21.11,
+     15.04
+    ],
+    "ray_y": 10.76
+   },
+   {
+    "frame": 2068,
+    "t": 103.4,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 1,
+    "shooter_model": "deepseek-flash",
+    "shooter": "t1u4",
+    "shot_frame": 2041,
+    "flight": 27,
+    "dist": 37.09,
+    "from": [
+     36.5,
+     2.26
+    ],
+    "ray_y": null
+   },
+   {
+    "frame": 2154,
+    "t": 107.7,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter": "t0u1",
+    "shot_frame": 2134,
+    "flight": 20,
+    "dist": 11.77,
+    "from": [
+     34.61,
+     4.75
+    ],
+    "ray_y": 10.65
+   }
+  ],
+  "kicks": [
+   {
+    "frame": 64,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 21.63,
+    "y": 12.77,
+    "angle": 301.0,
+    "dist": 21.37
+   },
+   {
+    "frame": 161,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 31.79,
+    "y": 6.39,
+    "angle": 159.0,
+    "dist": 31.49
+   },
+   {
+    "frame": 181,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 29.4,
+    "y": 7.04,
+    "angle": 185.0,
+    "dist": 29.02
+   },
+   {
+    "frame": 201,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 26.67,
+    "y": 7.99,
+    "angle": 59.0,
+    "dist": 17.08
+   },
+   {
+    "frame": 541,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 35.01,
+    "y": 21.2,
+    "angle": 198.0,
+    "dist": 34.99
+   },
+   {
+    "frame": 571,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 32.65,
+    "y": 20.69,
+    "angle": 315.9,
+    "dist": 12.9
+   },
+   {
+    "frame": 621,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.11,
+    "y": 11.1,
+    "angle": 166.0,
+    "dist": 41.16
+   },
+   {
+    "frame": 661,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 31.98,
+    "y": 13.98,
+    "angle": 0.0,
+    "dist": 31.0
+   },
+   {
+    "frame": 681,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 30.86,
+    "y": 13.1,
+    "angle": 182.0,
+    "dist": 29.86
+   },
+   {
+    "frame": 739,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 29.45,
+    "y": 8.89,
+    "angle": 304.0,
+    "dist": 14.16
+   },
+   {
+    "frame": 743,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 31.54,
+    "y": 6.68,
+    "angle": 19.1,
+    "dist": 13.09
+   },
+   {
+    "frame": 781,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.11,
+    "y": 11.08,
+    "angle": 166.0,
+    "dist": 41.16
+   },
+   {
+    "frame": 821,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 29.93,
+    "y": 13.49,
+    "angle": 280.0,
+    "dist": 28.93
+   },
+   {
+    "frame": 844,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 28.43,
+    "y": 11.34,
+    "angle": 315.0,
+    "dist": 14.66
+   },
+   {
+    "frame": 1021,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 36.32,
+    "y": 5.33,
+    "angle": 40.0,
+    "dist": 36.14
+   },
+   {
+    "frame": 1121,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 22.29,
+    "y": 12.52,
+    "angle": 295.0,
+    "dist": 21.3
+   },
+   {
+    "frame": 1123,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 22.27,
+    "y": 12.29,
+    "angle": 184.0,
+    "dist": 21.28
+   },
+   {
+    "frame": 1141,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 20.19,
+    "y": 11.47,
+    "angle": 301.0,
+    "dist": 22.86
+   },
+   {
+    "frame": 1161,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 21.54,
+    "y": 11.7,
+    "angle": 155.0,
+    "dist": 20.58
+   },
+   {
+    "frame": 1163,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 19.7,
+    "y": 11.8,
+    "angle": 184.0,
+    "dist": 18.73
+   },
+   {
+    "frame": 1186,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 16.79,
+    "y": 12.68,
+    "angle": 0.0,
+    "dist": 26.22
+   },
+   {
+    "frame": 1279,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 21.6,
+    "y": 13.05,
+    "angle": 337.3,
+    "dist": 21.4
+   },
+   {
+    "frame": 1281,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 22.47,
+    "y": 13.46,
+    "angle": 43.0,
+    "dist": 21.48
+   },
+   {
+    "frame": 1641,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 35.37,
+    "y": 20.14,
+    "angle": 310.0,
+    "dist": 35.1
+   },
+   {
+    "frame": 1749,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 21.98,
+    "y": 13.82,
+    "angle": 59.0,
+    "dist": 21.04
+   },
+   {
+    "frame": 1761,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 21.11,
+    "y": 15.04,
+    "angle": 192.0,
+    "dist": 20.21
+   },
+   {
+    "frame": 1800,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 6.46,
+    "y": 11.76,
+    "angle": 301.0,
+    "dist": 36.57
+   },
+   {
+    "frame": 1860,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 16.76,
+    "y": 3.21,
+    "angle": 354.0,
+    "dist": 28.01
+   },
+   {
+    "frame": 2041,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 36.5,
+    "y": 2.26,
+    "angle": 60.0,
+    "dist": 37.09
+   },
+   {
+    "frame": 2081,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.02,
+    "y": 12.68,
+    "angle": 194.0,
+    "dist": 41.02
+   },
+   {
+    "frame": 2109,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 30.53,
+    "y": 8.78,
+    "angle": 297.3,
+    "dist": 13.17
+   },
+   {
+    "frame": 2134,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 34.61,
+    "y": 4.75,
+    "angle": 35.1,
+    "dist": 11.77
+   },
+   {
+    "frame": 2161,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.06,
+    "y": 10.71,
+    "angle": 191.0,
+    "dist": 41.12
+   },
+   {
+    "frame": 2184,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 32.82,
+    "y": 8.35,
+    "angle": 30.8,
+    "dist": 11.19
+   },
+   {
+    "frame": 2201,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 33.75,
+    "y": 9.25,
+    "angle": 10.0,
+    "dist": 32.97
+   },
+   {
+    "frame": 2301,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 21.91,
+    "y": 12.77,
+    "angle": 301.0,
+    "dist": 21.09
+   },
+   {
+    "frame": 2387,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 32.67,
+    "y": 6.71,
+    "angle": 39.9,
+    "dist": 12.1
+   }
+  ]
+ },
+ {
+  "id": "r3-g1",
+  "seed": 4031,
+  "teamSize": 6,
+  "seats": [
+   "deepseek-flash",
+   "sol"
+  ],
+  "me_team": 0,
+  "frames": 2801,
+  "seconds": 140.05,
+  "duration": 15.53,
+  "reason": "金球未分胜负，平局",
+  "score": [
+   0,
+   0
+  ],
+  "stats": [
+   {
+    "kicks": 34,
+    "possession": 504,
+    "fouls": 0
+   },
+   {
+    "kicks": 25,
+    "possession": 340,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   504,
+   340
+  ],
+  "poss_segments": 61,
+  "seg_start_x": {
+   "0": 10.74,
+   "1": 22.58
+  },
+  "territory": {
+   "third_segments": [
+    0,
+    8
+   ],
+   "max_prog": [
+    24.296,
+    39.679
+   ],
+   "def_third_frames": [
+    1620,
+    187
+   ],
+   "att_third_frames": [
+    187,
+    1620
+   ]
+  },
+  "dist_hist": {
+   "0": {
+    "n": 34,
+    "med": 32.12,
+    "buckets": [
+     0,
+     3,
+     5,
+     7,
+     19
+    ],
+    "own_half": 29
+   },
+   "1": {
+    "n": 25,
+    "med": 20.97,
+    "buckets": [
+     5,
+     6,
+     9,
+     2,
+     3
+    ],
+    "own_half": 10
+   }
+  },
+  "goals": [],
+  "shots": [
+   {
+    "frame": 221,
+    "t": 11.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 12.439,
+    "y": 7.532,
+    "dist": 12.68,
+    "ray_y": 10.66
+   },
+   {
+    "frame": 341,
+    "t": 17.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 24.105,
+    "y": 7.411,
+    "dist": 19.7,
+    "ray_y": 15.42
+   },
+   {
+    "frame": 478,
+    "t": 23.9,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 11.285,
+    "y": 21.275,
+    "dist": 13.2,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 1054,
+    "t": 52.7,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 3.789,
+    "y": 22.099,
+    "dist": 9.52,
+    "ray_y": 15.36
+   },
+   {
+    "frame": 1321,
+    "t": 66.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 23.813,
+    "y": 13.834,
+    "dist": 19.21,
+    "ray_y": 12.16
+   },
+   {
+    "frame": 1601,
+    "t": 80.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 10.724,
+    "y": 24.121,
+    "dist": 14.77,
+    "ray_y": 15.36
+   },
+   {
+    "frame": 2648,
+    "t": 132.4,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 12.064,
+    "y": 8.101,
+    "dist": 12.1,
+    "ray_y": 15.34
+   }
+  ],
+  "saves": [
+   {
+    "frame": 512,
+    "t": 25.6,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u4",
+    "shot_frame": 478,
+    "flight": 34,
+    "dist": 13.2,
+    "from": [
+     11.29,
+     21.27
+    ],
+    "ray_y": 10.65
+   },
+   {
+    "frame": 1068,
+    "t": 53.4,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u4",
+    "shot_frame": 1054,
+    "flight": 14,
+    "dist": 9.52,
+    "from": [
+     3.79,
+     22.1
+    ],
+    "ray_y": 15.36
+   },
+   {
+    "frame": 1631,
+    "t": 81.55,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u3",
+    "shot_frame": 1601,
+    "flight": 30,
+    "dist": 14.77,
+    "from": [
+     10.72,
+     24.12
+    ],
+    "ray_y": 15.36
+   },
+   {
+    "frame": 2677,
+    "t": 133.85,
+    "keeper_team": 0,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter": "t1u3",
+    "shot_frame": 2648,
+    "flight": 29,
+    "dist": 12.1,
+    "from": [
+     12.06,
+     8.1
+    ],
+    "ray_y": 15.34
+   }
+  ],
+  "kicks": [
+   {
+    "frame": 66,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 22.47,
+    "y": 12.22,
+    "angle": 239.0,
+    "dist": 21.48
+   },
+   {
+    "frame": 81,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 22.53,
+    "y": 10.62,
+    "angle": 0.0,
+    "dist": 20.61
+   },
+   {
+    "frame": 101,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 25.67,
+    "y": 9.92,
+    "angle": 234.5,
+    "dist": 24.87
+   },
+   {
+    "frame": 103,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 23.96,
+    "y": 8.52,
+    "angle": 229.3,
+    "dist": 23.39
+   },
+   {
+    "frame": 201,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 10.6,
+    "y": 7.76,
+    "angle": 356.0,
+    "dist": 32.82
+   },
+   {
+    "frame": 221,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 12.44,
+    "y": 7.53,
+    "angle": 164.7,
+    "dist": 12.68
+   },
+   {
+    "frame": 241,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 10.94,
+    "y": 8.51,
+    "angle": 10.0,
+    "dist": 32.37
+   },
+   {
+    "frame": 261,
+    "team": 0,
+    "unit": "t0u4",
+    "x": 15.04,
+    "y": 7.3,
+    "angle": 307.0,
+    "dist": 28.54
+   },
+   {
+    "frame": 321,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 24.15,
+    "y": 6.34,
+    "angle": 185.0,
+    "dist": 19.99
+   },
+   {
+    "frame": 341,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 24.11,
+    "y": 7.41,
+    "angle": 23.0,
+    "dist": 19.7
+   },
+   {
+    "frame": 343,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 24.97,
+    "y": 7.81,
+    "angle": 121.0,
+    "dist": 24.52
+   },
+   {
+    "frame": 478,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 11.29,
+    "y": 21.27,
+    "angle": 225.9,
+    "dist": 13.2
+   },
+   {
+    "frame": 521,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.74,
+    "y": 11.4,
+    "angle": 33.0,
+    "dist": 41.29
+   },
+   {
+    "frame": 561,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 9.61,
+    "y": 16.11,
+    "angle": 350.0,
+    "dist": 33.53
+   },
+   {
+    "frame": 581,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 11.8,
+    "y": 15.11,
+    "angle": 0.0,
+    "dist": 31.27
+   },
+   {
+    "frame": 600,
+    "team": 1,
+    "unit": "t1u5",
+    "x": 20.66,
+    "y": 14.73,
+    "angle": 225.1,
+    "dist": 19.73
+   },
+   {
+    "frame": 606,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 18.11,
+    "y": 11.69,
+    "angle": 239.0,
+    "dist": 17.16
+   },
+   {
+    "frame": 741,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 8.72,
+    "y": 7.52,
+    "angle": 0.0,
+    "dist": 34.72
+   },
+   {
+    "frame": 781,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 19.54,
+    "y": 7.63,
+    "angle": 31.0,
+    "dist": 24.07
+   },
+   {
+    "frame": 801,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 22.09,
+    "y": 7.81,
+    "angle": 12.0,
+    "dist": 21.55
+   },
+   {
+    "frame": 842,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 36.72,
+    "y": 10.8,
+    "angle": 169.7,
+    "dist": 35.79
+   },
+   {
+    "frame": 866,
+    "team": 1,
+    "unit": "t1u5",
+    "x": 31.51,
+    "y": 11.95,
+    "angle": 121.0,
+    "dist": 30.53
+   },
+   {
+    "frame": 941,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 20.53,
+    "y": 21.46,
+    "angle": 165.1,
+    "dist": 21.28
+   },
+   {
+    "frame": 1054,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 3.79,
+    "y": 22.1,
+    "angle": 247.5,
+    "dist": 9.52
+   },
+   {
+    "frame": 1081,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.85,
+    "y": 15.34,
+    "angle": 19.0,
+    "dist": 41.22
+   },
+   {
+    "frame": 1101,
+    "team": 0,
+    "unit": "t0u4",
+    "x": 9.25,
+    "y": 18.12,
+    "angle": 0.0,
+    "dist": 34.13
+   },
+   {
+    "frame": 1121,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 14.71,
+    "y": 18.67,
+    "angle": 356.0,
+    "dist": 28.86
+   },
+   {
+    "frame": 1281,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 21.96,
+    "y": 12.38,
+    "angle": 203.5,
+    "dist": 20.97
+   },
+   {
+    "frame": 1301,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 20.73,
+    "y": 12.11,
+    "angle": 355.0,
+    "dist": 22.28
+   },
+   {
+    "frame": 1321,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 23.81,
+    "y": 13.83,
+    "angle": 355.0,
+    "dist": 19.21
+   },
+   {
+    "frame": 1359,
+    "team": 1,
+    "unit": "t1u5",
+    "x": 29.09,
+    "y": 14.34,
+    "angle": 121.0,
+    "dist": 28.13
+   },
+   {
+    "frame": 1433,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 18.57,
+    "y": 20.48,
+    "angle": 180.0,
+    "dist": 19.1
+   },
+   {
+    "frame": 1541,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 5.53,
+    "y": 20.47,
+    "angle": 15.0,
+    "dist": 38.21
+   },
+   {
+    "frame": 1601,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 10.72,
+    "y": 24.12,
+    "angle": 222.0,
+    "dist": 14.77
+   },
+   {
+    "frame": 1641,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.87,
+    "y": 15.2,
+    "angle": 10.0,
+    "dist": 41.19
+   },
+   {
+    "frame": 1661,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 9.4,
+    "y": 17.75,
+    "angle": 70.0,
+    "dist": 33.93
+   },
+   {
+    "frame": 1681,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 13.05,
+    "y": 20.22,
+    "angle": 347.0,
+    "dist": 30.8
+   },
+   {
+    "frame": 1701,
+    "team": 1,
+    "unit": "t1u4",
+    "x": 15.67,
+    "y": 21.27,
+    "angle": 149.8,
+    "dist": 16.85
+   },
+   {
+    "frame": 1981,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 7.22,
+    "y": 18.24,
+    "angle": 348.0,
+    "dist": 36.16
+   },
+   {
+    "frame": 2001,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 14.85,
+    "y": 17.41,
+    "angle": 15.0,
+    "dist": 28.49
+   },
+   {
+    "frame": 2021,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 21.38,
+    "y": 18.13,
+    "angle": 352.0,
+    "dist": 22.22
+   },
+   {
+    "frame": 2064,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 36.98,
+    "y": 15.31,
+    "angle": 239.0,
+    "dist": 36.06
+   },
+   {
+    "frame": 2147,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 24.85,
+    "y": 4.07,
+    "angle": 190.3,
+    "dist": 25.47
+   },
+   {
+    "frame": 2301,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 2.32,
+    "y": 2.28,
+    "angle": 352.0,
+    "dist": 42.07
+   },
+   {
+    "frame": 2327,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 13.19,
+    "y": 2.27,
+    "angle": 166.3,
+    "dist": 16.24
+   },
+   {
+    "frame": 2361,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 11.91,
+    "y": 1.79,
+    "angle": 29.0,
+    "dist": 33.05
+   },
+   {
+    "frame": 2381,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 15.83,
+    "y": 4.91,
+    "angle": 183.0,
+    "dist": 28.35
+   },
+   {
+    "frame": 2421,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 14.87,
+    "y": 5.26,
+    "angle": 139.0,
+    "dist": 29.18
+   },
+   {
+    "frame": 2441,
+    "team": 0,
+    "unit": "t0u4",
+    "x": 16.47,
+    "y": 6.28,
+    "angle": 10.0,
+    "dist": 27.37
+   },
+   {
+    "frame": 2461,
+    "team": 1,
+    "unit": "t1u5",
+    "x": 24.83,
+    "y": 7.8,
+    "angle": 226.0,
+    "dist": 24.39
+   },
+   {
+    "frame": 2472,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 20.12,
+    "y": 3.53,
+    "angle": 195.7,
+    "dist": 21.33
+   },
+   {
+    "frame": 2473,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 19.4,
+    "y": 3.35,
+    "angle": 189.1,
+    "dist": 20.78
+   },
+   {
+    "frame": 2581,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 4.61,
+    "y": 2.73,
+    "angle": 40.0,
+    "dist": 39.74
+   },
+   {
+    "frame": 2601,
+    "team": 0,
+    "unit": "t0u4",
+    "x": 6.91,
+    "y": 4.36,
+    "angle": 15.0,
+    "dist": 37.11
+   },
+   {
+    "frame": 2648,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 12.06,
+    "y": 8.1,
+    "angle": 146.8,
+    "dist": 12.1
+   },
+   {
+    "frame": 2681,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 1.78,
+    "y": 14.77,
+    "angle": 326.0,
+    "dist": 41.26
+   },
+   {
+    "frame": 2721,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 11.14,
+    "y": 8.93,
+    "angle": 351.0,
+    "dist": 32.12
+   },
+   {
+    "frame": 2741,
+    "team": 0,
+    "unit": "t0u5",
+    "x": 14.33,
+    "y": 8.66,
+    "angle": 53.0,
+    "dist": 28.99
+   },
+   {
+    "frame": 2761,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 17.11,
+    "y": 11.92,
+    "angle": 121.0,
+    "dist": 16.15
+   }
+  ]
+ },
+ {
+  "id": "r3-g2",
+  "seed": 4032,
+  "teamSize": 4,
+  "seats": [
+   "sol",
+   "deepseek-flash"
+  ],
+  "me_team": 1,
+  "frames": 2401,
+  "seconds": 120.05,
+  "duration": 7.42,
+  "reason": "常规时间结束",
+  "score": [
+   2,
+   0
+  ],
+  "stats": [
+   {
+    "kicks": 21,
+    "possession": 255,
+    "fouls": 0
+   },
+   {
+    "kicks": 23,
+    "possession": 369,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   255,
+   369
+  ],
+  "poss_segments": 41,
+  "seg_start_x": {
+   "0": 21.0,
+   "1": 10.68
+  },
+  "territory": {
+   "third_segments": [
+    7,
+    0
+   ],
+   "max_prog": [
+    35.09,
+    27.912
+   ],
+   "def_third_frames": [
+    318,
+    1029
+   ],
+   "att_third_frames": [
+    1029,
+    318
+   ]
+  },
+  "dist_hist": {
+   "0": {
+    "n": 21,
+    "med": 21.17,
+    "buckets": [
+     5,
+     4,
+     7,
+     0,
+     5
+    ],
+    "own_half": 10
+   },
+   "1": {
+    "n": 23,
+    "med": 30.4,
+    "buckets": [
+     1,
+     1,
+     2,
+     5,
+     14
+    ],
+    "own_half": 20
+   }
+  },
+  "goals": [
+   {
+    "frame": 585,
+    "t": 29.25,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "cross_y": 10.48,
+    "lastTouch": "t0u2",
+    "kick_frame": 561,
+    "kick_t": 28.05,
+    "kick_unit": "t0u2",
+    "kick_team": 0,
+    "kick_model": "sol",
+    "kick_x": 35.938,
+    "kick_y": 2.793,
+    "angle_deg": 48.1,
+    "flight": 24,
+    "dist_att_goal": 12.41,
+    "dist_own_goal": 36.4,
+    "ray_y_att": 10.66,
+    "ray_y_own": null,
+    "keeper_kick": [
+     42.69,
+     12.38
+    ],
+    "keeper_kick_dist_cross": 1.89,
+    "keeper_goal": [
+     42.69,
+     11.9
+    ],
+    "keeper_goal_dist_ball": 1.43,
+    "lane": []
+   },
+   {
+    "frame": 1805,
+    "t": 90.25,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "cross_y": 10.64,
+    "lastTouch": "t0u1",
+    "kick_frame": 1781,
+    "kick_t": 89.05,
+    "kick_unit": "t0u1",
+    "kick_team": 0,
+    "kick_model": "sol",
+    "kick_x": 32.501,
+    "kick_y": 10.21,
+    "angle_deg": 2.4,
+    "flight": 24,
+    "dist_att_goal": 10.86,
+    "dist_own_goal": 31.62,
+    "ray_y_att": 10.65,
+    "ray_y_own": null,
+    "keeper_kick": [
+     42.69,
+     12.85
+    ],
+    "keeper_kick_dist_cross": 2.21,
+    "keeper_goal": [
+     42.69,
+     12.22
+    ],
+    "keeper_goal_dist_ball": 1.58,
+    "lane": []
+   }
+  ],
+  "shots": [
+   {
+    "frame": 561,
+    "t": 28.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 35.938,
+    "y": 2.793,
+    "dist": 12.41,
+    "ray_y": 10.66
+   },
+   {
+    "frame": 781,
+    "t": 39.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 30.108,
+    "y": 7.594,
+    "dist": 13.98,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 907,
+    "t": 45.35,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 28.853,
+    "y": 13.369,
+    "dist": 14.15,
+    "ray_y": 15.35
+   },
+   {
+    "frame": 1695,
+    "t": 84.75,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 31.486,
+    "y": 7.84,
+    "dist": 12.62,
+    "ray_y": 15.35
+   },
+   {
+    "frame": 1781,
+    "t": 89.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 32.501,
+    "y": 10.21,
+    "dist": 10.86,
+    "ray_y": 10.65
+   },
+   {
+    "frame": 2381,
+    "t": 119.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 14.342,
+    "y": 17.201,
+    "dist": 13.99,
+    "ray_y": 14.85
+   }
+  ],
+  "saves": [
+   {
+    "frame": 811,
+    "t": 40.55,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter": "t0u1",
+    "shot_frame": 781,
+    "flight": 30,
+    "dist": 13.98,
+    "from": [
+     30.11,
+     7.59
+    ],
+    "ray_y": 10.65
+   },
+   {
+    "frame": 940,
+    "t": 47.0,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter": "t0u2",
+    "shot_frame": 907,
+    "flight": 33,
+    "dist": 14.15,
+    "from": [
+     28.85,
+     13.37
+    ],
+    "ray_y": 15.35
+   },
+   {
+    "frame": 1726,
+    "t": 86.3,
+    "keeper_team": 1,
+    "keeper_model": "deepseek-flash",
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter": "t0u2",
+    "shot_frame": 1695,
+    "flight": 31,
+    "dist": 12.62,
+    "from": [
+     31.49,
+     7.84
+    ],
+    "ray_y": 15.35
+   }
+  ],
+  "kicks": [
+   {
+    "frame": 69,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 21.59,
+    "y": 12.22,
+    "angle": 301.0,
+    "dist": 21.42
+   },
+   {
+    "frame": 141,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 30.61,
+    "y": 5.11,
+    "angle": 193.0,
+    "dist": 30.64
+   },
+   {
+    "frame": 263,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 8.85,
+    "y": 2.96,
+    "angle": 59.0,
+    "dist": 35.6
+   },
+   {
+    "frame": 421,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 23.81,
+    "y": 20.58,
+    "angle": 301.0,
+    "dist": 20.63
+   },
+   {
+    "frame": 561,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 35.94,
+    "y": 2.79,
+    "angle": 48.1,
+    "dist": 12.41
+   },
+   {
+    "frame": 666,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 21.59,
+    "y": 12.22,
+    "angle": 301.0,
+    "dist": 21.42
+   },
+   {
+    "frame": 741,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 30.84,
+    "y": 5.73,
+    "angle": 140.0,
+    "dist": 30.71
+   },
+   {
+    "frame": 781,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 30.11,
+    "y": 7.59,
+    "angle": 13.3,
+    "dist": 13.98
+   },
+   {
+    "frame": 821,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.12,
+    "y": 10.81,
+    "angle": 192.0,
+    "dist": 41.17
+   },
+   {
+    "frame": 861,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 31.09,
+    "y": 8.82,
+    "angle": 180.0,
+    "dist": 30.38
+   },
+   {
+    "frame": 907,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 28.85,
+    "y": 13.37,
+    "angle": 8.0,
+    "dist": 14.15
+   },
+   {
+    "frame": 941,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.11,
+    "y": 15.12,
+    "angle": 186.0,
+    "dist": 41.16
+   },
+   {
+    "frame": 981,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 29.78,
+    "y": 13.97,
+    "angle": 186.0,
+    "dist": 28.79
+   },
+   {
+    "frame": 1001,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 27.11,
+    "y": 14.29,
+    "angle": 157.0,
+    "dist": 26.14
+   },
+   {
+    "frame": 1141,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 7.0,
+    "y": 22.76,
+    "angle": 301.0,
+    "dist": 37.3
+   },
+   {
+    "frame": 1153,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 10.93,
+    "y": 17.13,
+    "angle": 301.0,
+    "dist": 32.34
+   },
+   {
+    "frame": 1281,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 21.59,
+    "y": 12.22,
+    "angle": 301.0,
+    "dist": 21.42
+   },
+   {
+    "frame": 1361,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 31.06,
+    "y": 6.42,
+    "angle": 172.0,
+    "dist": 30.78
+   },
+   {
+    "frame": 1401,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 29.68,
+    "y": 6.59,
+    "angle": 172.0,
+    "dist": 29.38
+   },
+   {
+    "frame": 1421,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 20.55,
+    "y": 7.72,
+    "angle": 349.9,
+    "dist": 23.06
+   },
+   {
+    "frame": 1430,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 25.81,
+    "y": 6.4,
+    "angle": 321.5,
+    "dist": 18.41
+   },
+   {
+    "frame": 1432,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 27.48,
+    "y": 5.28,
+    "angle": 329.2,
+    "dist": 17.34
+   },
+   {
+    "frame": 1581,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 35.98,
+    "y": 6.59,
+    "angle": 137.0,
+    "dist": 35.56
+   },
+   {
+    "frame": 1601,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 31.14,
+    "y": 9.04,
+    "angle": 176.0,
+    "dist": 30.4
+   },
+   {
+    "frame": 1621,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 23.36,
+    "y": 9.69,
+    "angle": 306.3,
+    "dist": 19.92
+   },
+   {
+    "frame": 1685,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 29.23,
+    "y": 3.75,
+    "angle": 67.0,
+    "dist": 16.59
+   },
+   {
+    "frame": 1695,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 31.49,
+    "y": 7.84,
+    "angle": 33.1,
+    "dist": 12.62
+   },
+   {
+    "frame": 1741,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 42.14,
+    "y": 14.85,
+    "angle": 200.0,
+    "dist": 41.18
+   },
+   {
+    "frame": 1781,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 32.5,
+    "y": 10.21,
+    "angle": 2.4,
+    "dist": 10.86
+   },
+   {
+    "frame": 1889,
+    "team": 0,
+    "unit": "t0u1",
+    "x": 21.83,
+    "y": 12.96,
+    "angle": 23.1,
+    "dist": 21.17
+   },
+   {
+    "frame": 1901,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 22.02,
+    "y": 13.27,
+    "angle": 174.0,
+    "dist": 21.02
+   },
+   {
+    "frame": 1921,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 20.96,
+    "y": 13.58,
+    "angle": 323.0,
+    "dist": 19.96
+   },
+   {
+    "frame": 1924,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 21.73,
+    "y": 12.86,
+    "angle": 186.0,
+    "dist": 20.73
+   },
+   {
+    "frame": 1969,
+    "team": 0,
+    "unit": "t0u0",
+    "x": 6.1,
+    "y": 11.99,
+    "angle": 15.5,
+    "dist": 36.91
+   },
+   {
+    "frame": 1989,
+    "team": 0,
+    "unit": "t0u3",
+    "x": 11.43,
+    "y": 14.17,
+    "angle": 59.0,
+    "dist": 31.59
+   },
+   {
+    "frame": 2071,
+    "team": 0,
+    "unit": "t0u2",
+    "x": 22.57,
+    "y": 20.39,
+    "angle": 33.3,
+    "dist": 21.73
+   },
+   {
+    "frame": 2201,
+    "team": 1,
+    "unit": "t1u0",
+    "x": 41.87,
+    "y": 18.14,
+    "angle": 173.0,
+    "dist": 41.19
+   },
+   {
+    "frame": 2241,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 34.83,
+    "y": 18.45,
+    "angle": 135.0,
+    "dist": 34.27
+   },
+   {
+    "frame": 2261,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 33.85,
+    "y": 17.58,
+    "angle": 39.0,
+    "dist": 33.17
+   },
+   {
+    "frame": 2281,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 33.27,
+    "y": 16.61,
+    "angle": 184.0,
+    "dist": 32.47
+   },
+   {
+    "frame": 2301,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 31.09,
+    "y": 16.82,
+    "angle": 229.0,
+    "dist": 30.33
+   },
+   {
+    "frame": 2321,
+    "team": 1,
+    "unit": "t1u2",
+    "x": 30.05,
+    "y": 15.62,
+    "angle": 72.0,
+    "dist": 29.16
+   },
+   {
+    "frame": 2341,
+    "team": 1,
+    "unit": "t1u3",
+    "x": 28.86,
+    "y": 17.27,
+    "angle": 180.0,
+    "dist": 28.19
+   },
+   {
+    "frame": 2381,
+    "team": 1,
+    "unit": "t1u1",
+    "x": 14.34,
+    "y": 17.2,
+    "angle": 190.0,
+    "dist": 13.99
+   }
+  ]
+ }
+]

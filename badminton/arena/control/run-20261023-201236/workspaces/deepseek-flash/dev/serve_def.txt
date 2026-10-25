@@ -1,0 +1,68 @@
+==============================================================================================================
+r1-g1.json.gz seats ['deepseek-flash', 'sol'] me 0
+ # serveF myX@serve  oppF myX@oppHit   myVx  landX framesToLand oppHitY oppSwing                 myMove mySwingFrames
+ 1     16      3.71    30       3.97  -0.53   5.11          143    1.68     over              +0.1 +0.0 True/4
+ 2    255      3.70   269       3.95  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+ 3    354      3.68   368       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+ 4    485      3.69   499       3.96  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+ 5    584      3.68   598       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+ 6    715      3.69   729       3.96  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+ 7    814      3.68   828       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+ 8    945      3.69   959       3.96  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+ 9   1044      3.68  1058       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+10   1175      3.69  1189       3.96  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+11   1274      3.68  1288       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+12   1405      3.69  1419       3.96  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+13   1504      3.68  1518       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+14   1635      3.69  1649       3.96  -0.79   2.87            3    1.68     over              +0.2 +0.0 True/5
+15   1734      3.68  1748       3.96  -0.56   1.00           35    1.68     over              +0.2 +0.0 True/4
+--------------------------------------------------------------------------------------------------------------
+opponent serve points: my return contact
+ 1 serveF  203 myHitF  217 myX  5.42 contactY 2.09 land  8.66 winner ME
+ 2 serveF  302 myHitF  316 myX  5.42 contactY 2.09 land  8.67 winner ME
+ 3 serveF  433 myHitF  447 myX  5.42 contactY 2.09 land  8.66 winner ME
+ 4 serveF  532 myHitF  546 myX  5.42 contactY 2.09 land  8.68 winner ME
+ 5 serveF  663 myHitF  677 myX  5.42 contactY 2.09 land  8.67 winner ME
+ 6 serveF  762 myHitF  776 myX  5.42 contactY 2.09 land  8.68 winner ME
+ 7 serveF  893 myHitF  907 myX  5.42 contactY 2.09 land  8.67 winner ME
+ 8 serveF  992 myHitF 1006 myX  5.42 contactY 2.09 land  8.69 winner ME
+ 9 serveF 1123 myHitF 1137 myX  5.42 contactY 2.09 land  8.67 winner ME
+10 serveF 1222 myHitF 1236 myX  5.42 contactY 2.09 land  8.69 winner ME
+11 serveF 1353 myHitF 1367 myX  5.42 contactY 2.09 land  8.67 winner ME
+12 serveF 1452 myHitF 1466 myX  5.42 contactY 2.09 land  8.69 winner ME
+13 serveF 1583 myHitF 1597 myX  5.42 contactY 2.09 land  8.67 winner ME
+14 serveF 1682 myHitF 1696 myX  5.42 contactY 2.09 land  8.69 winner ME
+==============================================================================================================
+r1-g2.json.gz seats ['sol', 'deepseek-flash'] me 1
+ # serveF myX@serve  oppF myX@oppHit   myVx  landX framesToLand oppHitY oppSwing                 myMove mySwingFrames
+ 1    164      9.71   178       9.43   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+ 2    295      9.70   309       9.45   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+ 3    394      9.72   408       9.44   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+ 4    525      9.71   539       9.44   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+ 5    624      9.72   638       9.44   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+ 6    755      9.71   769       9.44   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+ 7    854      9.72   868       9.44   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+ 8    985      9.71   999       9.44   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+ 9   1084      9.72  1098       9.44   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+10   1215      9.71  1229       9.44   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+11   1314      9.72  1328       9.44   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+12   1445      9.71  1459       9.44   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+13   1544      9.72  1558       9.44   0.56  12.40           35    1.68     over              +0.0 -0.2 True/4
+14   1675      9.71  1689       9.44   0.79  10.53            3    1.68     over              +0.0 -0.2 True/5
+--------------------------------------------------------------------------------------------------------------
+opponent serve points: my return contact
+ 1 serveF   16 myHitF   29 myX  7.72 contactY 2.22 land  6.32 winner ME
+ 2 serveF  243 myHitF  257 myX  7.98 contactY 2.09 land  4.74 winner ME
+ 3 serveF  342 myHitF  356 myX  7.98 contactY 2.09 land  4.73 winner ME
+ 4 serveF  473 myHitF  487 myX  7.98 contactY 2.09 land  4.74 winner ME
+ 5 serveF  572 myHitF  586 myX  7.98 contactY 2.09 land  4.72 winner ME
+ 6 serveF  703 myHitF  717 myX  7.98 contactY 2.09 land  4.73 winner ME
+ 7 serveF  802 myHitF  816 myX  7.98 contactY 2.09 land  4.72 winner ME
+ 8 serveF  933 myHitF  947 myX  7.98 contactY 2.09 land  4.73 winner ME
+ 9 serveF 1032 myHitF 1046 myX  7.98 contactY 2.09 land  4.71 winner ME
+10 serveF 1163 myHitF 1177 myX  7.98 contactY 2.09 land  4.73 winner ME
+11 serveF 1262 myHitF 1276 myX  7.98 contactY 2.09 land  4.71 winner ME
+12 serveF 1393 myHitF 1407 myX  7.98 contactY 2.09 land  4.73 winner ME
+13 serveF 1492 myHitF 1506 myX  7.98 contactY 2.09 land  4.71 winner ME
+14 serveF 1623 myHitF 1637 myX  7.98 contactY 2.09 land  4.73 winner ME
+15 serveF 1722 myHitF 1736 myX  7.98 contactY 2.09 land  4.71 winner ME

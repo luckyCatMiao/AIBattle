@@ -1,0 +1,103 @@
+{
+  "verified": true,
+  "sourceVerified": true,
+  "frozenStrategiesVerified": true,
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": "sol",
+      "frames": 2598,
+      "windows": 130,
+      "score": [
+        0,
+        1
+      ],
+      "reason": "金球制胜",
+      "stats": [
+        {
+          "kicks": 17,
+          "possession": 609,
+          "fouls": 0
+        },
+        {
+          "kicks": 16,
+          "possession": 134,
+          "fouls": 0
+        }
+      ],
+      "sha256": "3ed1d5a8cfd4d6f05ea31cfe6416bd5363b4a4c73c19adeb3e89d02794b934ac"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        4,
+        1
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 17,
+          "possession": 143,
+          "fouls": 0
+        },
+        {
+          "kicks": 9,
+          "possession": 57,
+          "fouls": 0
+        }
+      ],
+      "sha256": "416187249bd95a2c07396c6020dc8875264d6601935834b3d4f4697dceef2b88"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        0,
+        6
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 6,
+          "possession": 196,
+          "fouls": 0
+        },
+        {
+          "kicks": 19,
+          "possession": 60,
+          "fouls": 0
+        }
+      ],
+      "sha256": "aec2f843ec170255f74f3349d9f0a343bf4bfa058aecdfba1eed8ba791f4f38e"
+    },
+    {
+      "id": "r2-g2",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        1,
+        0
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 29,
+          "possession": 480,
+          "fouls": 0
+        },
+        {
+          "kicks": 27,
+          "possession": 698,
+          "fouls": 0
+        }
+      ],
+      "sha256": "4b8ea50cb54bacda60a788e15b19413b3adf894f1586ecb796ca16e46ad03361"
+    }
+  ]
+}

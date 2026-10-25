@@ -1,0 +1,90 @@
+{
+  "file": "round2_link_holdout.jsonl",
+  "matches": 48,
+  "win": 30,
+  "draw": 18,
+  "loss": 0,
+  "goals": 164,
+  "conceded": 10,
+  "fouls": 0,
+  "maxMs": 193.31,
+  "modes": {
+    "old": {
+      "matches": 12,
+      "win": 5,
+      "draw": 7,
+      "loss": 0,
+      "goals": 16,
+      "conceded": 6
+    },
+    "corners": {
+      "matches": 12,
+      "win": 11,
+      "draw": 1,
+      "loss": 0,
+      "goals": 58,
+      "conceded": 0
+    },
+    "swarm": {
+      "matches": 12,
+      "win": 11,
+      "draw": 1,
+      "loss": 0,
+      "goals": 75,
+      "conceded": 1
+    },
+    "oracle": {
+      "matches": 12,
+      "win": 3,
+      "draw": 9,
+      "loss": 0,
+      "goals": 15,
+      "conceded": 3
+    }
+  }
+}
+{
+  "file": "round2_base_holdout.jsonl",
+  "matches": 48,
+  "win": 30,
+  "draw": 18,
+  "loss": 0,
+  "goals": 153,
+  "conceded": 11,
+  "fouls": 0,
+  "maxMs": 161.19,
+  "modes": {
+    "old": {
+      "matches": 12,
+      "win": 4,
+      "draw": 8,
+      "loss": 0,
+      "goals": 15,
+      "conceded": 6
+    },
+    "corners": {
+      "matches": 12,
+      "win": 12,
+      "draw": 0,
+      "loss": 0,
+      "goals": 48,
+      "conceded": 1
+    },
+    "swarm": {
+      "matches": 12,
+      "win": 12,
+      "draw": 0,
+      "loss": 0,
+      "goals": 76,
+      "conceded": 1
+    },
+    "oracle": {
+      "matches": 12,
+      "win": 2,
+      "draw": 10,
+      "loss": 0,
+      "goals": 14,
+      "conceded": 3
+    }
+  }
+}

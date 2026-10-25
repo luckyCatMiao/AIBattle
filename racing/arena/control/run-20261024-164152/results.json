@@ -1,0 +1,120 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "冲线",
+    "duration": 0.74,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1101,
+    "windows": 55,
+    "seed": 5011,
+    "track": {
+      "length": 483.07,
+      "halfWidth": 3.439,
+      "audit": {
+        "roadTiles": 3341,
+        "length": 483.07021281252236,
+        "halfWidth": 3.4386078379116953,
+        "minSelfDistance": 8.543255575887734,
+        "startOnRoad": true,
+        "gridOnRoad": true,
+        "valid": true,
+        "attempt": 2
+      }
+    },
+    "laps": [
+      2,
+      3
+    ],
+    "finishTimes": [
+      null,
+      55
+    ],
+    "bestLaps": [
+      22.6,
+      17.2
+    ],
+    "boosts": [
+      68,
+      39
+    ],
+    "driftTimes": [
+      22.8,
+      34.6
+    ],
+    "collisions": [
+      1,
+      1
+    ],
+    "sha256": "1870e9ec258f28a80ded75347e3e0c2ae5fe0de29fd573f8bba0ef14bd34e8d4"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "冲线",
+    "duration": 0.73,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1084,
+    "windows": 55,
+    "seed": 5012,
+    "track": {
+      "length": 467.709,
+      "halfWidth": 3.453,
+      "audit": {
+        "roadTiles": 3229,
+        "length": 467.70883993457346,
+        "halfWidth": 3.4530247882008553,
+        "minSelfDistance": 8.724297391559695,
+        "startOnRoad": true,
+        "gridOnRoad": true,
+        "valid": true,
+        "attempt": 2
+      }
+    },
+    "laps": [
+      3,
+      2
+    ],
+    "finishTimes": [
+      54.15,
+      null
+    ],
+    "bestLaps": [
+      16.95,
+      21.65
+    ],
+    "boosts": [
+      46,
+      54
+    ],
+    "driftTimes": [
+      33.7,
+      20.35
+    ],
+    "collisions": [
+      0,
+      0
+    ],
+    "sha256": "4fa6a8fc970ff596abf06c7c5ab87f39817d4ab77fb74591aef3e6e116b18360"
+  }
+]

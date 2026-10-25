@@ -2,13 +2,19 @@
 
 让不同厂商的大模型各自编写策略程序，在同一套裁判下打游戏比高低。
 
-仓库内置 **7 个游戏**、逐帧确定性模拟、可审计回放和一套模型隔离评测流程。所有游戏服务都是**零依赖 Node.js**（≥ 20），不需要 `npm install`。
+仓库内置 **10 个游戏**、逐帧确定性模拟、可审计回放和一套模型隔离评测流程。所有游戏服务都是**零依赖 Node.js**（≥ 20），不需要 `npm install`。
 
 ![五子棋](preview.jpg)
 
 ![前线争夺](rts-preview.jpg)
 
 ![爆破模式](defusal-preview.jpg)
+
+![俯视角赛车](racing-preview.jpg)
+
+![横版羽毛球](badminton-preview.jpg)
+
+![横版闯关竞速](platformer-preview.jpg)
 
 ---
 
@@ -23,6 +29,9 @@
 | 泡泡堂 | 2–4 人炸弹对战，炸箱掉落道具 | `StartBomber.bat` | <http://127.0.0.1:8797/> | `WatchBomberBattle.bat`（8798） |
 | 爆破模式 | 5v5 战术射击，随机大地图 / 逐单位视野 / CS 经济 | `StartDefusal.bat` | <http://127.0.0.1:8799/> | `WatchDefusalBattle.bat`（8800） |
 | 3V3 足球 | 每队 1–6 人随机 / 实体足球 / 120 秒 + 金球 | `StartSoccer.bat` | <http://127.0.0.1:8801/> | `WatchSoccerBattle.bat`（8802） |
+| 俯视角赛车 | 每局随机赛道 / 漂移蓄能喷火 / 车车碰撞 | `StartRacing.bat` | <http://127.0.0.1:8805/> | `WatchRacingBattle.bat`（8806） |
+| 横版羽毛球 | 侧视 1v1 / 起跳杀球 / 上手·下手两种挥拍 | `StartBadminton.bat` | <http://127.0.0.1:8808/> | `WatchBadmintonBattle.bat`（8809） |
+| 横版闯关竞速 | 随机关卡 / 两人竞速 / 推人 / 怪物 | `StartPlatformer.bat` | <http://127.0.0.1:8814/> | `WatchPlatformerBattle.bat`（8815） |
 
 各游戏的玩法与 AI API 文档：
 
@@ -32,6 +41,9 @@
 - [泡泡堂](bomber/README.md)
 - [爆破模式](defusal/README.md)
 - [3V3 足球](soccer/README.md)
+- [俯视角赛车](racing/README.md)
+- [横版羽毛球](badminton/README.md)
+- [横版闯关竞速](platformer/README.md)
 
 ## 快速开始
 
@@ -48,6 +60,9 @@ node fighting/server.js # 铁拳谱，8795
 node bomber/server.js   # 泡泡堂，8797
 node defusal/server.js  # 爆破模式，8799
 node soccer/server.js   # 3V3 足球，8801
+node racing/server.js   # 俯视角赛车，8805
+node badminton/server.js # 横版羽毛球，8808
+node platformer/server.js # 横版闯关竞速，8814
 ```
 
 Windows 下也可以直接双击对应的 `.bat`。页面默认只监听本机，不对外网开放。
@@ -90,7 +105,7 @@ python defusal/arena/train.py --players deepseek-flash sol --rounds 3 --port 880
 
 可用选手名：`sol`、`luna`、`astra`、`opus`、`deepseek-flash`、`deepseek`（实际模型 ID 见各 `arena/train.py` 顶部的 `CATALOG`）。`--port` 只做占用检查，不能与其他服务冲突；准备阶段默认不设超时。其余游戏把 `defusal` 换成 `rts` / `hero-rts` / `fighting` / `bomber` 即可。
 
-评测脚本目前以 **Windows + WSL2（Ubuntu）** 为目标环境：隔离使用 bubblewrap，凭据写入 WSL 私有目录。
+评测脚本支持两种执行方式：默认使用 **WSL2 + bubblewrap** 隔离，凭据写入 WSL 内的私有目录；加 `--no-isolation` 则在**本机直跑**（不需要 WSL），只靠赛前约定不读取对方工作区，凭据写入系统临时目录并在结束后删除。
 
 ## 目录结构
 
@@ -98,7 +113,8 @@ python defusal/arena/train.py --players deepseek-flash sol --rounds 3 --port 880
 .
 ├─ server.js / public/          五子棋服务与网页
 ├─ rts/ hero-rts/ fighting/
-│  bomber/ defusal/ soccer/      竞技游戏：规则引擎、服务、网页、arena 评测
+│  bomber/ defusal/ soccer/
+│  racing/ badminton/ platformer/ 竞技游戏：规则引擎、服务、网页、arena 评测
 ├─ tests/                       Node 测试（规则、API、确定性、隔离）
 ├─ writing-bench/               写作/对战评测工具（可选，需 Python）
 ├─ training/                    早期训练脚本
@@ -112,7 +128,7 @@ python defusal/arena/train.py --players deepseek-flash sol --rounds 3 --port 880
 npm test        # node --test tests/*.test.js
 ```
 
-当前共 **198 项**测试，覆盖规则、胜负判定、API 权限、帧精确推进、回放审计和隔离边界。
+当前共 **202 项**测试，覆盖规则、胜负判定、API 权限、帧精确推进、回放审计和隔离边界。
 
 ## 仓库里不包含什么
 

@@ -1,0 +1,494 @@
+[
+  {
+    "style": "parry",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "sable",
+      "aegis",
+      "kestrel"
+    ],
+    "seat": 0,
+    "winner": 0,
+    "win": true,
+    "frames": 1225,
+    "hp": [
+      927,
+      0
+    ],
+    "active": [
+      0,
+      3
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 542,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "sable",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 260,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 422,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 927,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 75.14959200000001,
+    "meanMs": 45.106939097560975
+  },
+  {
+    "style": "parry",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "sable",
+      "aegis",
+      "kestrel"
+    ],
+    "seat": 1,
+    "winner": 1,
+    "win": true,
+    "frames": 1377,
+    "hp": [
+      0,
+      440
+    ],
+    "active": [
+      3,
+      0
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 747,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "sable",
+        "winnerHp": 580,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 136,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 580,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 493,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 440,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 61.466151000000536,
+    "meanMs": 41.333413891304325
+  },
+  {
+    "style": "bomb",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "nyx",
+      "torv",
+      "sable"
+    ],
+    "seat": 0,
+    "winner": 0,
+    "win": true,
+    "frames": 1159,
+    "hp": [
+      679,
+      0
+    ],
+    "active": [
+      0,
+      3
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 423,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 934,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 214,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 934,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 521,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "sable",
+        "winnerHp": 679,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 75.06230700000015,
+    "meanMs": 45.989661269230815
+  },
+  {
+    "style": "bomb",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "nyx",
+      "torv",
+      "sable"
+    ],
+    "seat": 1,
+    "winner": 1,
+    "win": true,
+    "frames": 1625,
+    "hp": [
+      0,
+      721
+    ],
+    "active": [
+      3,
+      0
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 542,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "nyx",
+        "winnerHp": 1000,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 438,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "torv",
+        "winnerHp": 919,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 644,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "sable",
+        "winnerHp": 721,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 73.02119700000003,
+    "meanMs": 54.2103625963302
+  },
+  {
+    "style": "heavyspam",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "aegis",
+      "kestrel",
+      "vex"
+    ],
+    "seat": 0,
+    "winner": 0,
+    "win": true,
+    "frames": 964,
+    "hp": [
+      913,
+      0
+    ],
+    "active": [
+      0,
+      3
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 383,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 913,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 179,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 913,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 401,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "vex",
+        "winnerHp": 913,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 45.9596309999979,
+    "meanMs": 36.25269053846132
+  },
+  {
+    "style": "heavyspam",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "aegis",
+      "kestrel",
+      "vex"
+    ],
+    "seat": 1,
+    "winner": 1,
+    "win": true,
+    "frames": 1200,
+    "hp": [
+      0,
+      901
+    ],
+    "active": [
+      3,
+      0
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 497,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 913,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 339,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 901,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 363,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "vex",
+        "winnerHp": 901,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 54.65694500000245,
+    "meanMs": 37.79248945000004
+  },
+  {
+    "style": "block",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "aegis",
+      "kestrel",
+      "vex"
+    ],
+    "seat": 0,
+    "winner": 0,
+    "win": true,
+    "frames": 7412,
+    "hp": [
+      372,
+      0
+    ],
+    "active": [
+      1,
+      3
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 1980,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 279,
+        "loserHp": 97,
+        "reason": "时间到（生命比例较高）"
+      },
+      {
+        "round": 2,
+        "frames": 1801,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 525,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 1772,
+        "winner": "0",
+        "winnerChar": "aegis",
+        "loserChar": "kestrel",
+        "winnerHp": 774,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 4,
+        "frames": 1859,
+        "winner": "0",
+        "winnerChar": "aegis",
+        "loserChar": "vex",
+        "winnerHp": 372,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 99.99757200000022,
+    "meanMs": 59.764431494949356
+  },
+  {
+    "style": "block",
+    "team": [
+      "kestrel",
+      "aegis",
+      "vex"
+    ],
+    "enemy": [
+      "aegis",
+      "kestrel",
+      "vex"
+    ],
+    "seat": 1,
+    "winner": 1,
+    "win": true,
+    "frames": 7405,
+    "hp": [
+      0,
+      268
+    ],
+    "active": [
+      3,
+      1
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "frames": 1865,
+        "winner": "1",
+        "winnerChar": "kestrel",
+        "loserChar": "aegis",
+        "winnerHp": 584,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 2,
+        "frames": 1933,
+        "winner": "0",
+        "winnerChar": "kestrel",
+        "loserChar": "kestrel",
+        "winnerHp": 179,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 3,
+        "frames": 1639,
+        "winner": "1",
+        "winnerChar": "aegis",
+        "loserChar": "kestrel",
+        "winnerHp": 954,
+        "loserHp": 0,
+        "reason": "击倒"
+      },
+      {
+        "round": 4,
+        "frames": 1968,
+        "winner": "1",
+        "winnerChar": "aegis",
+        "loserChar": "vex",
+        "winnerHp": 268,
+        "loserHp": 0,
+        "reason": "击倒"
+      }
+    ],
+    "maxMs": 115.07520799999475,
+    "meanMs": 64.21702950809714
+  }
+]

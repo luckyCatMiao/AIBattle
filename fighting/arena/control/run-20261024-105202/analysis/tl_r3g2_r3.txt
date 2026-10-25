@@ -1,0 +1,102 @@
+=== r3-g2 round 3: frames 2157..3799, 82.10s, winner=GPT-6.1 Sol ===
+our team ['vex', 'kestrel', 'aegis'] sol team ['kestrel', 'aegis', 'vex']
+  f 2157 r    0  107.85s SOL  HIT dmg=96 combo=1 hp=71/483 state=attack/attack inp={'dir': 'F', 'btn': None}
+  f 2157 r    0  107.85s EVENT ko 长弓 · Kestrel 被击败
+  f 2157 r    0  107.85s EVENT roundEnd 第 2 局：长弓 · Kestrel 胜（击倒）
+  f 2164 r    7  108.20s SOL  START 穿云箭 x=420 inp={'dir': 'F', 'btn': None}
+  f 2194 r   37  109.70s OURS BLOCK 防御 · 削防 13
+  f 2220 r   63  111.00s SOL  START 短弓柄 x=351 inp={'dir': 'DB', 'btn': None}
+  f 2234 r   77  111.70s SOL  START 穿云箭 x=351 inp={'dir': 'DB', 'btn': None}
+  f 2260 r  103  113.00s OURS BLOCK 防御 · 削防 13
+  f 2301 r  144  115.05s SOL  START 空中重腿 x=537 inp={'dir': 'B', 'btn': None}
+  f 2355 r  198  117.75s SOL  START 空中轻拳 x=691 inp={'dir': 'DB', 'btn': None}
+  f 2359 r  202  117.95s OURS BLOCK 防御 · 削防 6
+  f 2432 r  275  121.60s SOL  START 空中重拳 x=921 inp={'dir': 'B', 'btn': None}
+  f 2440 r  283  122.00s OURS BLOCK 防御 · 削防 12
+  f 2456 r  299  122.80s OURS START 回旋踵落 x=1042 inp={'dir': 'B', 'btn': None}
+  f 2485 r  328  124.25s SOL  START 短弓柄 x=1049 inp={'dir': 'DB', 'btn': None}
+  f 2488 r  331  124.40s SOL  HIT dmg=52 combo=1 hp=956/483 state=attack/air inp={'dir': 'DB', 'btn': None}
+  f 2493 r  336  124.65s SOL  START 倒跃射 x=1049 inp={'dir': 'DB', 'btn': None}
+  f 2500 r  343  125.00s SOL  HIT dmg=101 combo=2 hp=904/483 state=hitstun/attack inp={'dir': 'DB', 'btn': None}
+  f 2535 r  378  126.75s EVENT down 
+  f 2543 r  386  127.15s SOL  START 高踢 x=1054 inp={'dir': 'N', 'btn': None}
+  f 2556 r  399  127.80s SOL  HIT dmg=152 combo=1 hp=803/483 state=down/attack inp={'dir': 'B', 'btn': None}
+  f 2567 r  410  128.35s SOL  START 弓身横扫 x=1054 inp={'dir': 'B', 'btn': None}
+  f 2578 r  421  128.90s SOL  HIT dmg=119 combo=2 hp=651/483 state=hitstun/attack inp={'dir': 'B', 'btn': None}
+  f 2583 r  426  129.15s SOL  START 高踢 x=1054 inp={'dir': 'DB', 'btn': None}
+  f 2596 r  439  129.80s SOL  HIT dmg=122 combo=3 hp=532/483 state=hitstun/attack inp={'dir': 'B', 'btn': None}
+  f 2640 r  483  132.00s SOL  START 弓身横扫 x=1012 inp={'dir': 'B', 'btn': None}
+  f 2677 r  520  133.85s SOL  START 倒跃射 x=1012 inp={'dir': 'DB', 'btn': None}
+  f 2730 r  573  136.50s SOL  START 空中轻腿 x=1074 inp={'dir': 'DB', 'btn': None}
+  f 2734 r  577  136.70s OURS BLOCK 防御 · 削防 6
+  f 2781 r  624  139.05s SOL  START 倒跃射 x=1220 inp={'dir': 'B', 'btn': None}
+  f 2788 r  631  139.40s OURS BLOCK 防御 · 削防 12
+  f 2805 r  648  140.25s OURS START 回旋踵落 x=1115 inp={'dir': 'DB', 'btn': None}
+  f 2819 r  662  140.95s OURS HIT dmg=140 combo=1 hp=392/483 state=crouch/attack inp={'dir': 'DB', 'btn': None}
+  f 2850 r  693  142.50s SOL  START 短弓柄 x=1220 inp={'dir': 'DB', 'btn': None}
+  f 2853 r  696  142.65s SOL  HIT dmg=52 combo=1 hp=392/343 state=attack/crouch inp={'dir': 'DB', 'btn': None}
+  f 2858 r  701  142.90s SOL  START 弓身横扫 x=1220 inp={'dir': 'DB', 'btn': None}
+  f 2869 r  712  143.45s OURS BLOCK 防御 · 削防 11
+  f 2910 r  753  145.50s SOL  START 弓身横扫 x=1220 inp={'dir': 'DB', 'btn': None}
+  f 2921 r  764  146.05s OURS BLOCK 防御 · 削防 11
+  f 2940 r  783  147.00s OURS START 回旋踵落 x=1072 inp={'dir': 'DB', 'btn': None}
+  f 2954 r  797  147.70s SOL  BLOCK 防御 · 削防 11
+  f 2974 r  817  148.70s SOL  START 踩踏 x=1220 inp={'dir': 'DB', 'btn': None}
+  f 2994 r  837  149.70s SOL  START 踩踏 x=1202 inp={'dir': 'DB', 'btn': None}
+  f 2998 r  841  149.90s OURS BLOCK 防御 · 削防 5
+  f 3019 r  862  150.95s SOL  START 踩踏 x=1198 inp={'dir': 'DB', 'btn': None}
+  f 3023 r  866  151.15s OURS BLOCK 防御 · 削防 5
+  f 3043 r  886  152.15s SOL  START 弓身横扫 x=1212 inp={'dir': 'DB', 'btn': None}
+  f 3054 r  897  152.70s OURS BLOCK 防御 · 削防 11
+  f 3094 r  937  154.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3109 r  952  155.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3124 r  967  156.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3139 r  982  156.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3154 r  997  157.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3169 r 1012  158.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3184 r 1027  159.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3199 r 1042  159.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3214 r 1057  160.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3229 r 1072  161.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3244 r 1087  162.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3259 r 1102  162.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3274 r 1117  163.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3289 r 1132  164.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3304 r 1147  165.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3319 r 1162  165.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3334 r 1177  166.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3349 r 1192  167.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3364 r 1207  168.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3379 r 1222  168.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3394 r 1237  169.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3409 r 1252  170.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3424 r 1267  171.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3439 r 1282  171.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3454 r 1297  172.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3469 r 1312  173.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3484 r 1327  174.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3499 r 1342  174.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3514 r 1357  175.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3529 r 1372  176.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3544 r 1387  177.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3559 r 1402  177.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3574 r 1417  178.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3589 r 1432  179.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3604 r 1447  180.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3619 r 1462  180.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3634 r 1477  181.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3649 r 1492  182.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3664 r 1507  183.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3679 r 1522  183.95s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3694 r 1537  184.70s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3709 r 1552  185.45s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3724 r 1567  186.20s SOL  START 短弓柄 x=1185 inp={'dir': 'DB', 'btn': None}
+  f 3739 r 1582  186.95s SOL  START 踩踏 x=1172 inp={'dir': 'DB', 'btn': None}
+  f 3743 r 1586  187.15s OURS BLOCK 防御 · 削防 5
+  f 3759 r 1602  187.95s SOL  START 高踢 x=1172 inp={'dir': 'DB', 'btn': None}
+  f 3765 r 1608  188.25s OURS START 直拳 x=1036 inp={'dir': 'DB', 'btn': None}
+  f 3769 r 1612  188.45s OURS HIT dmg=58 combo=1 hp=273/312 state=crouch/attack inp={'dir': 'DB', 'btn': None}
+  f 3774 r 1617  188.70s OURS START 侧踢 x=1036 inp={'dir': 'DB', 'btn': None}
+  f 3785 r 1628  189.25s SOL  START 长弓 · 万矢 x=1213 inp={'dir': 'DB', 'btn': None}
+  f 3785 r 1628  189.25s SOL  SUPER 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  f 3791 r 1634  189.55s OURS START 直拳 x=1036 inp={'dir': 'DB', 'btn': None}

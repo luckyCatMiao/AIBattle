@@ -60,6 +60,8 @@ footer{text-align:center;padding:16px;color:var(--dim);font-size:11px;letter-spa
 .log i{color:var(--dim);font-style:normal;flex:none;width:42px;text-align:right}
 .log .goal{color:var(--accent);font-weight:600}
 .log .end{color:var(--warn)}
+.log .foul{color:#ffb86b}
+.log .save{color:var(--accent)}
 .runs{display:flex;flex-direction:column;gap:6px;max-height:208px;overflow:auto}
 .runs button{background:var(--panel2);border:1px solid var(--line);color:var(--ink);text-align:left;padding:8px 11px;border-radius:8px;cursor:pointer;font:inherit;font-size:12px}
 .runs button.on{border-color:var(--accent);background:#1d3325}

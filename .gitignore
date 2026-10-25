@@ -22,6 +22,10 @@ diag/scripts/drive.py
 **/public_replays.json
 **/public-*.json.gz
 
+# lab 里的原始回放 dump 单文件超过 100MB（r1-g1 ≈133MB、r1-g2 ≈102MB），
+# 超过 GitHub 单文件上限，无法推送。
+**/replay_dump_*.json
+
 # 说明：run-*/workspaces/ 与 run-*/round-*/ 下的策略代码保留；
 # transcript（*.jsonl）、日志（*.log）和 __pycache__ 由下面的通用规则排除。
 

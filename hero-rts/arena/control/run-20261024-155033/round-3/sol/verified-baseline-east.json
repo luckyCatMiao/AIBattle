@@ -1,0 +1,319 @@
+{
+  "seat": 1,
+  "mode": "previous",
+  "candidate": "./agent",
+  "winner": 1,
+  "win": true,
+  "time": 259.25000000002467,
+  "reason": "其余势力的城镇大厅全部被摧毁",
+  "frames": 1037,
+  "maxMs": 2.564226999999846,
+  "maxCommands": 16,
+  "errors": [
+    {},
+    {}
+  ],
+  "score": [
+    6925,
+    16130
+  ],
+  "deaths": [
+    {
+      "archer": 48,
+      "priest": 13,
+      "footman": 4,
+      "pyromancer": 2,
+      "oracle": 1,
+      "druid": 2,
+      "frost": 1,
+      "ranger": 1,
+      "worker": 21
+    },
+    {
+      "worker": 1,
+      "footman": 3,
+      "archer": 23,
+      "priest": 4
+    }
+  ],
+  "checkpoints": [
+    {
+      "time": 60,
+      "players": [
+        {
+          "gold": 22,
+          "wood": 636,
+          "population": 39,
+          "control": 57.09999999999889,
+          "heroes": [
+            [
+              "druid",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 4,
+          "wood": 413,
+          "population": 43,
+          "control": 56.9499999999989,
+          "heroes": [
+            [
+              "druid",
+              3
+            ],
+            [
+              "frost",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 14,
+          "footman": 4,
+          "druid": 1,
+          "treant": 4,
+          "archer": 3
+        },
+        {
+          "worker": 13,
+          "footman": 4,
+          "druid": 1,
+          "treant": 4,
+          "archer": 4
+        }
+      ]
+    },
+    {
+      "time": 120,
+      "players": [
+        {
+          "gold": 299,
+          "wood": 947,
+          "population": 77,
+          "control": 177.10000000000602,
+          "heroes": [
+            [
+              "druid",
+              5
+            ],
+            [
+              "frost",
+              4
+            ],
+            [
+              "pyromancer",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 20,
+          "wood": 296,
+          "population": 70,
+          "control": 176.95000000000599,
+          "heroes": [
+            [
+              "druid",
+              4
+            ],
+            [
+              "frost",
+              1
+            ],
+            [
+              "pyromancer",
+              1
+            ],
+            [
+              "oracle",
+              1
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "footman": 4,
+          "druid": 1,
+          "archer": 11,
+          "priest": 2,
+          "frost": 1,
+          "treant": 2
+        },
+        {
+          "worker": 18,
+          "footman": 2,
+          "druid": 1,
+          "archer": 6,
+          "frost": 1,
+          "pyromancer": 1,
+          "priest": 1
+        }
+      ]
+    },
+    {
+      "time": 180,
+      "players": [
+        {
+          "gold": 288,
+          "wood": 1971,
+          "population": 54,
+          "control": 371.6500000000502,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              5
+            ],
+            [
+              "pyromancer",
+              2
+            ],
+            [
+              "oracle",
+              1
+            ],
+            [
+              "ranger",
+              1
+            ]
+          ]
+        },
+        {
+          "gold": 1444,
+          "wood": 513,
+          "population": 101,
+          "control": 337.50000000004246,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              5
+            ],
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "oracle",
+              4
+            ],
+            [
+              "ranger",
+              3
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 18,
+          "frost": 1,
+          "archer": 5,
+          "priest": 1
+        },
+        {
+          "worker": 18,
+          "footman": 1,
+          "druid": 1,
+          "frost": 1,
+          "pyromancer": 1,
+          "archer": 18,
+          "priest": 4,
+          "oracle": 1,
+          "ranger": 1,
+          "treant": 2
+        }
+      ]
+    },
+    {
+      "time": 240,
+      "players": [
+        {
+          "gold": 17,
+          "wood": 2670,
+          "population": 6,
+          "control": 444.9500000000669,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              5
+            ],
+            [
+              "pyromancer",
+              3
+            ],
+            [
+              "oracle",
+              1
+            ],
+            [
+              "ranger",
+              2
+            ]
+          ]
+        },
+        {
+          "gold": 3892,
+          "wood": 591,
+          "population": 120,
+          "control": 624.19999999998,
+          "heroes": [
+            [
+              "druid",
+              6
+            ],
+            [
+              "frost",
+              6
+            ],
+            [
+              "pyromancer",
+              6
+            ],
+            [
+              "oracle",
+              6
+            ],
+            [
+              "ranger",
+              6
+            ]
+          ]
+        }
+      ],
+      "units": [
+        {
+          "worker": 2,
+          "archer": 1
+        },
+        {
+          "worker": 18,
+          "footman": 1,
+          "druid": 1,
+          "frost": 1,
+          "pyromancer": 1,
+          "archer": 26,
+          "priest": 5,
+          "oracle": 1,
+          "ranger": 1,
+          "mortar": 2
+        }
+      ]
+    }
+  ]
+}

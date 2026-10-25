@@ -43,7 +43,7 @@ for (const result of results) {
   const record = JSON.parse(zlib.gunzipSync(fs.readFileSync(file)));
 
   const game = sim.createMatch({
-    id: record.id, seed: record.seed,
+    id: record.id, seed: record.seed, teamSize: record.teamSize ?? record.final?.teamSize,
     players: record.names.map(name => ({ name, kind: 'api' })),
   });
   const compare = (actual, expected, label) => {

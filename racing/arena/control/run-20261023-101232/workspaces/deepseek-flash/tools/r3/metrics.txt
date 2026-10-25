@@ -1,0 +1,52 @@
+====================================================================================================
+r3-g1 seed 5031 track L=87.489 halfWidth=3.571 roadTiles=621 minSelfDist=8.509 attempt=3
+
+car0 deepseek-flash
+  laps: [(6.5, 1, 5), (11, 2, 4.5)]
+  bestLap public 4.50  finishTime -1.00  finished False
+  drift: public 3.85  frames 77 (3.85s) segments 29 first 2.15 longest 0.15s
+  boost: public count 29  frames 100 (5.00s) segments 29 first 2.35 longest 0.55s
+  overlap drift+boost frames 41 (2.05s)
+  offroad 0 frames, collisions 0, max speed 26.33, avg speed 18.13 (moving 18.29)
+  final total distance 194.13 (2.219 laps), last lap s=19.15 lat=+0.25
+  boost run lengths (s): [0.05, 0.15, 0.15, 0.2, 0.15, 0.2, 0.2, 0.2, 0.55, 0.5, 0.1, 0.05, 0.1, 0.05, 0.1, 0.15, 0.15, 0.1, 0.2, 0.15, 0.25, 0.25, 0.25, 0.4, 0.05, 0.05, 0.05, 0.1, 0.1]
+  drift run lengths (s): [0.15, 0.15, 0.15, 0.15, 0.1, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.05, 0.1, 0.05, 0.15, 0.15, 0.15, 0.05, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1, 0.1, 0.15]
+
+car1 sol
+  laps: [(5.7, 1, 4.2), (9.05, 2, 3.35), (12.2, 3, 3.15)]
+  bestLap public 3.15  finishTime 12.20  finished True
+  drift: public 5.30  frames 105 (5.25s) segments 34 first 1.85 longest 0.20s
+  boost: public count 8  frames 181 (9.05s) segments 8 first 2.05 longest 4.75s
+  overlap drift+boost frames 82 (4.10s)
+  offroad 0 frames, collisions 0, max speed 29.18, avg speed 22.53 (moving 22.73)
+  final total distance 346.45 (3.960 laps), last lap s=83.98 lat=+1.62
+  boost run lengths (s): [0.05, 0.1, 0.2, 2.75, 0.2, 0.85, 0.15, 4.75]
+  drift run lengths (s): [0.2, 0.2, 0.2, 0.2, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1, 0.2, 0.2, 0.2, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1, 0.1, 0.1, 0.15]
+
+finish t=12.20: winner car1 lap3 total 346.45; loser car0 lap2 total 194.13; gap 152.32 m (1.741 lap), loser remaining 68.34 m
+====================================================================================================
+r3-g2 seed 5032 track L=87.530 halfWidth=4.074 roadTiles=712 minSelfDist=9.998 attempt=1
+
+car0 sol
+  laps: [(6.05, 1, 4.55), (9.85, 2, 3.8), (13.3, 3, 3.45)]
+  bestLap public 3.45  finishTime 13.30  finished True
+  drift: public 5.10  frames 101 (5.05s) segments 33 first 1.85 longest 0.20s
+  boost: public count 21  frames 152 (7.60s) segments 21 first 2.05 longest 1.85s
+  overlap drift+boost frames 56 (2.80s)
+  offroad 0 frames, collisions 0, max speed 28.59, avg speed 19.53 (moving 19.69)
+  final total distance 345.67 (3.949 laps), last lap s=83.08 lat=+0.88
+  boost run lengths (s): [0.05, 0.05, 0.1, 0.25, 0.85, 0.15, 0.25, 0.55, 1.85, 0.1, 0.2, 0.2, 0.25, 0.55, 0.15, 0.25, 0.25, 0.25, 0.25, 0.25, 0.8]
+  drift run lengths (s): [0.2, 0.1, 0.2, 0.2, 0.2, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.2, 0.2, 0.1, 0.15, 0.15, 0.15, 0.15, 0.2, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1, 0.05]
+
+car1 deepseek-flash
+  laps: [(6.6, 1, 5.1), (10.55, 2, 3.95)]
+  bestLap public 3.95  finishTime -1.00  finished False
+  drift: public 5.35  frames 106 (5.30s) segments 38 first 2.15 longest 0.15s
+  boost: public count 23  frames 166 (8.30s) segments 23 first 2.35 longest 2.20s
+  overlap drift+boost frames 75 (3.75s)
+  offroad 0 frames, collisions 0, max speed 27.87, avg speed 21.54 (moving 21.72)
+  final total distance 232.70 (2.658 laps), last lap s=57.64 lat=-1.35
+  boost run lengths (s): [0.05, 0.1, 0.1, 0.15, 0.15, 0.2, 0.1, 0.2, 0.2, 0.2, 0.2, 0.25, 2.2, 0.25, 0.25, 0.2, 0.25, 0.25, 2.15, 0.25, 0.25, 0.2, 0.15]
+  drift run lengths (s): [0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.05, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.05, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.05, 0.15, 0.15, 0.15, 0.15, 0.05]
+
+finish t=13.30: winner car0 lap3 total 345.67; loser car1 lap2 total 232.70; gap 112.98 m (1.291 lap), loser remaining 29.89 m

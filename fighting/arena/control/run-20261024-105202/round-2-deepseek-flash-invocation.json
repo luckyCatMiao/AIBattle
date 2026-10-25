@@ -1,0 +1,28 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "reasoning_effort": "medium",
+  "command": [
+    "C:\\Users\\Admin\\.local\\bin\\claude.EXE",
+    "-p",
+    "--safe-mode",
+    "--settings",
+    "C:\\Users\\Admin\\AppData\\Local\\Temp\\aibattle-fighting-homes-8hal_f82\\deepseek-flash\\settings.json",
+    "--setting-sources",
+    "user",
+    "--model",
+    "deepseek-v4.1-flash",
+    "--effort",
+    "medium",
+    "--dangerously-skip-permissions",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Bash,Read,Write,Edit,Glob,Grep",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "budget_seconds": 0
+}

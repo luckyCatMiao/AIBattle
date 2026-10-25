@@ -1,0 +1,552 @@
+{
+  "run": "run-20261024-093625",
+  "phase": "模型准备",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 3,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 5.24,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 184,
+      "windows": 183,
+      "sha256": "60af968d58c74de5a6aec40eb7d24f197006a9d3c22dff1c3a73fddd1e5f03d0"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 4.49,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 208,
+      "windows": 207,
+      "sha256": "884dcc2aa9f1b85c4dc4a170f494e0debcd7ebec6636c60af4cc7c3e8a48c188"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "胜局最多",
+      "duration": 19.11,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 1000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 652,
+      "windows": 651,
+      "sha256": "c36509e2cb26afb34439badcb235a9564d7bf217250b1511b9ca2df85c9ef982"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.15,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 100,
+      "windows": 99,
+      "sha256": "c72b5c5c4ca539ee9b1f80e1d41955fadc8f47fbdb76c361125dd5c97c7c5d7c"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 5.24,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 184,
+      "windows": 183,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1267,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 2,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "frames": 1206,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 2,
+              "blast": 1,
+              "speed": 0
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "frames": 1169,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        }
+      ],
+      "sha256": "60af968d58c74de5a6aec40eb7d24f197006a9d3c22dff1c3a73fddd1e5f03d0"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 4.49,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 208,
+      "windows": 207,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 1557,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "frames": 1284,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 2,
+              "blast": 1,
+              "speed": 1
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "frames": 1282,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ]
+        }
+      ],
+      "sha256": "884dcc2aa9f1b85c4dc4a170f494e0debcd7ebec6636c60af4cc7c3e8a48c188"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "胜局最多",
+      "duration": 19.11,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 1000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 652,
+      "windows": 651,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 3000,
+          "winner": null,
+          "reason": "时间到",
+          "cause": null,
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "frames": 3000,
+          "winner": null,
+          "reason": "时间到",
+          "cause": null,
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "frames": 3000,
+          "winner": null,
+          "reason": "时间到",
+          "cause": null,
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "frames": 1013,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": false,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 4,
+              "blast": 3,
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "frames": 3000,
+          "winner": null,
+          "reason": "时间到",
+          "cause": null,
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            }
+          ]
+        }
+      ],
+      "sha256": "c36509e2cb26afb34439badcb235a9564d7bf217250b1511b9ca2df85c9ef982"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "先胜三局",
+      "duration": 2.15,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 3000
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 100,
+      "windows": 99,
+      "roundLog": [
+        {
+          "round": 1,
+          "frames": 761,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 6,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 3,
+              "blast": 2,
+              "speed": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "frames": 449,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 2,
+              "blast": 3,
+              "speed": 2
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 2,
+              "blast": 4,
+              "speed": 0
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "frames": 751,
+          "winner": "GPT-6.1 Sol",
+          "reason": "最后存活",
+          "cause": "被炸死",
+          "fighters": [
+            {
+              "owner": 0,
+              "alive": true,
+              "bombs": 5,
+              "blast": 6,
+              "speed": 3
+            },
+            {
+              "owner": 1,
+              "alive": false,
+              "bombs": 1,
+              "blast": 1,
+              "speed": 0
+            }
+          ]
+        }
+      ],
+      "sha256": "c72b5c5c4ca539ee9b1f80e1d41955fadc8f47fbdb76c361125dd5c97c7c5d7c"
+    }
+  ],
+  "ready": [
+    "deepseek-flash",
+    "sol"
+  ],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，准备时间不设上限；双方操控完全相同角色，无选角差异；每轮交换座位打两局；每 20 帧（1 秒）同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 173092,
+  "port": 8831,
+  "completed": false,
+  "updated": "2026-10-24T14:04:14",
+  "game": 2,
+  "game_id": "r2-g2"
+}

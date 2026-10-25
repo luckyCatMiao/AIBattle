@@ -1,0 +1,33 @@
+{
+  "phase": "比赛中止，需要检查",
+  "round": 1,
+  "results": [],
+  "ready": [
+    "sol"
+  ],
+  "contestants": [
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "short": "Deepseek-Flash"
+    },
+    {
+      "id": "sol",
+      "name": "GPT-6.1 Sol",
+      "short": "Sol"
+    }
+  ],
+  "setup_note": "Sol 沿用既有策略，首轮保持原样；挑战者从零开始",
+  "port": 8836,
+  "rounds": 3,
+  "updated": "2026-10-24T14:10:01",
+  "player_ready": "sol",
+  "usage": [
+    {
+      "frozen_incumbent": true,
+      "from_run": "D:\\extraProj\\AIBattle\\rts\\arena\\control\\run-20261015-010803",
+      "source_round": 3
+    }
+  ],
+  "error": "cannot access local variable 'budget_text' where it is not associated with a value"
+}

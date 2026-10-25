@@ -1,0 +1,23 @@
+{
+  "run": "run-20261024-102204",
+  "phase": "模型准备",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，最多 60 分钟准备；每轮交换座位打两局；每 15 帧（0.75 秒）同步决策，等待双方响应期间游戏不推进；本机直跑，赛前约定不读取对方工作区",
+  "pid": 145584,
+  "port": 8835,
+  "completed": false,
+  "updated": "2026-10-24T10:22:05"
+}

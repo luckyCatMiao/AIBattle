@@ -1,0 +1,7 @@
+const fs=require('fs'),{play}=require('./revision4_sweep');let base=fs.readFileSync('incumbent_series_r3.js','utf8');
+const patch=`const movingAway=near.some(e=>D(e,u)<230&&D(e,dest)>D(e,u)+40);const travelType=movingAway?'move':'attackMove';`;
+const replace=`else if(u.order.type!==travelType||Math.hypot(u.order.x-dest.x,u.order.y-dest.y)>65){group('go'+travelType+(dest.id||'defend'),{type:travelType,x:dest.x,y:dest.y},u,40);}`;
+const old=`else if(u.order.type!=='attackMove'||Math.hypot(u.order.x-dest.x,u.order.y-dest.y)>65){group('go'+(dest.id||'defend'),{type:'attackMove',x:dest.x,y:dest.y},u,40);}`;
+const move=base.replace('  if(D(u,dest)<48)', '  '+patch+'\n  if(D(u,dest)<48)').replace(old,replace);
+const variants={move,moveReload:move.replace('o.now+.85','o.now+.65'),moveFocus:move.replace('hits*3-splash*12','hits*5-splash*8'),movePriority:move.replace('},u,40);}', '},u,movingAway?108:40);}'),noChase:base.replace("{type:'attackMove',x:dest.x,y:dest.y}","{type:'move',x:dest.x,y:dest.y}").replace("u.order.type!=='attackMove'","u.order.type!=='move'")};
+let results=[];for(const [name,src] of Object.entries(variants)){fs.writeFileSync('sr3_'+name+'.js',src);let rows=[];for(const opp of ['incumbent_series_r3','r5_weighted','r4_reload45'])for(const seat of [0,1])rows.push({opp,...play(require('./sr3_'+name).choose,require('./'+opp).choose,seat)});let out={name,wins:rows.filter(r=>r.winner===r.seat).length,rows};results.push(out);console.log(JSON.stringify(out));fs.writeFileSync('series_r3_micro.json',JSON.stringify(results,null,2));}

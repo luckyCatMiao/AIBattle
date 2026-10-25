@@ -1,0 +1,24 @@
+'use strict';
+const {runDuel}=require('./duel');
+const {Agent}=require('../agent.js');
+const {SolClone}=require('./solclone.js');
+const seat=parseInt(process.argv[2]||'0',10);
+const agOpts=process.argv[3]?JSON.parse(process.argv[3]):{};
+const cloneOpts=process.argv[4]?JSON.parse(process.argv[4]):{};
+const us=new Agent(agOpts), cl=new SolClone(cloneOpts);
+const A=seat===0?us:cl,B=seat===0?cl:us;
+let last=-1;
+const r=runDuel(A,B,{heroA:seat===0?'necromancer':'druid',heroB:seat===0?'druid':'necromancer',maxSeconds:600,onFrame:(g)=>{
+  const t=g.now;if(t-last<4)return;last=t;
+  const mine=g.units.filter(u=>u.owner===seat&&u.type!=='worker');
+  const foe=g.units.filter(u=>u.owner===1-seat&&u.type!=='worker');
+  const h=mine.find(u=>u.hero);
+  const a=mine.length?{x:Math.round(mine.reduce((s,u)=>s+u.x,0)/mine.length),y:Math.round(mine.reduce((s,u)=>s+u.y,0)/mine.length)}:null;
+  const th=g.buildings.find(b=>b.type==='townhall'&&b.owner===1-seat);
+  const myTH=g.buildings.find(b=>b.type==='townhall'&&b.owner===seat);
+  const ph=us.mem.phase;
+  const cnt={};for(const u of mine)cnt[u.type]=(cnt[u.type]||0)+1;
+  const wcnt=g.units.filter(u=>u.owner===seat&&u.type==='worker').length;
+  console.log(`t=${t.toFixed(0)} ${ph} @${a?a.x+','+a.y:'-'} units[${Object.entries(cnt).map(([k,v])=>k+v).join(',')}] w${wcnt} hero:${h?h.level+'/'+Math.round(h.hp)+'/'+Math.round(h.mana):'-'} oppTH=${th?Math.round(th.hp):'X'} ourTH=${myTH?Math.round(myTH.hp):'X'} g${Math.round(g.players[seat].gold)} pop${g.players[seat].population}/${g.players[seat].popCap}`);
+}});
+console.log('RESULT winner',r.winner,'dur',r.duration.toFixed(1),'rej',JSON.stringify(r.stats.rejected),'samples',r.stats.rejectSamples.slice(0,6));

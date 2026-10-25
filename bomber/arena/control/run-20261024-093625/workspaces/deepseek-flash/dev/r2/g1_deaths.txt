@@ -1,0 +1,59 @@
+===== r2-g1 seed=4021 seats=['deepseek-flash', 'sol'] total_tick=13013
+deaths: [(501, 0, 10020, 1013, 7, 5)]
+
+====================================================================================================
+DEATH owner=0 abs_tick=10020 round_frame=1013 at (7,5)
+
+[tick 9920 round 4] P0(p416)@(7,2) alive=True eq=6/6/3 active=2 | P1(p417)@(7,1) alive=True eq=3/3/3 active=2
+      bombs: B1@(5,3)fuse13 blast3; B0@(9,3)fuse28 blast6; B1@(7,1)fuse33 blast3
+      blasts: -
+
+[tick 9940 round 4] P0(p416)@(7,5) alive=True eq=6/6/3 active=3 | P1(p417)@(3,1) alive=True eq=4/3/3 active=1
+      bombs: B1@(7,1)fuse13 blast3
+      blasts: (9,3),(10,3),(8,3),(7,3),(6,3),(5,3),(4,3),(9,4),(9,5),(9,2),(6,3),(7,3),(8,3),(9,3),(10,3),(11,3),(5,3),(4,3),(3,3),(2,3),(1,3),(5,3),(6,3),(7,3),(8,3),(4,3),(3,3),(2,3),(5,4),(5,5),(5,6),(5,2),(5,1),(5,0)
+
+[tick 9960 round 4] P0(p416)@(7,5) alive=True eq=6/6/3 active=3 | P1(p417)@(5,5) alive=True eq=4/3/3 active=0
+      bombs: -
+      blasts: (7,1),(8,1),(9,1),(10,1),(6,1),(5,1),(4,1),(7,2),(7,3),(7,4),(7,0)
+
+[tick 9980 round 4] P0(p416)@(7,5) alive=True eq=6/6/3 active=3 | P1(p417)@(7,3) alive=True eq=4/3/3 active=1
+      bombs: B1@(7,3)fuse33 blast3
+      blasts: -
+
+[tick 10000 round 4] P0(p416)@(7,5) alive=True eq=6/6/3 active=3 | P1(p417)@(9,1) alive=True eq=4/3/3 active=3
+      bombs: B1@(7,3)fuse13 blast3; B1@(7,2)fuse24 blast3; B1@(8,1)fuse31 blast3
+      blasts: -
+
+[tick 10020 round 5] P0(p488)@(1,1) alive=True eq=1/1/0 active=0 | P1(p489)@(17,15) alive=True eq=1/1/0 active=0
+      bombs: -
+      blasts: -
+
+-- inputs by window (seat order ['deepseek-flash', 'sol']) --
+window 496 (frames 921-940):
+  seat0 deepseek-flash  D1 N2 L1 N2 R*1 N2 D1 N2 D1 N7   BOMB@6
+  seat1 sol             L1 N2 L1 N2 L1 N2 L1 N10   BOMB@-
+window 497 (frames 941-960):
+  seat0 deepseek-flash  N20   BOMB@-
+  seat1 sol             R1 N2 R1 N2 D1 N2 D1 N2 D1 N4 D1 N2   BOMB@-
+window 498 (frames 961-980):
+  seat0 deepseek-flash  N20   BOMB@-
+  seat1 sol             U1 N2 U1 N2 R1 N2 R1 N2 N*1 N7   BOMB@12
+window 499 (frames 981-1000):
+  seat0 deepseek-flash  N20   BOMB@-
+  seat1 sol             U1 N2 N*1 U1 N2 R1 N2 R*1 N9   BOMB@3,10
+window 500 (frames -12-7):
+  seat0 deepseek-flash  N20   BOMB@-
+  seat1 sol             N*1 N19   BOMB@0
+
+-- new events since frame index 498 --
+   {"id": 904, "t": 497.65, "frame": 953, "type": "explode", "owner": 1, "x": 7, "y": 1, "cells": 11, "text": "GPT-6.1 Sol 引爆"}
+   {"id": 905, "t": 498.65, "frame": 973, "type": "bomb", "owner": 1, "x": 7, "y": 3, "text": "GPT-6.1 Sol 放置炸弹"}
+   {"id": 906, "t": 499.2, "frame": 984, "type": "bomb", "owner": 1, "x": 7, "y": 2, "text": "GPT-6.1 Sol 放置炸弹"}
+   {"id": 907, "t": 499.55, "frame": 991, "type": "bomb", "owner": 1, "x": 8, "y": 1, "text": "GPT-6.1 Sol 放置炸弹"}
+   {"id": 908, "t": 500.05, "frame": 1001, "type": "bomb", "owner": 1, "x": 9, "y": 1, "text": "GPT-6.1 Sol 放置炸弹"}
+   {"id": 909, "t": 500.65, "frame": 1013, "type": "explode", "owner": 1, "x": 7, "y": 2, "cells": 6, "text": "GPT-6.1 Sol 引爆"}
+   {"id": 910, "t": 500.65, "frame": 1013, "type": "blast", "owner": null, "x": 7, "y": 6, "text": "火力 +1 掉落"}
+   {"id": 911, "t": 500.65, "frame": 1013, "type": "explode", "owner": 1, "x": 7, "y": 3, "cells": 13, "text": "GPT-6.1 Sol 引爆"}
+   {"id": 912, "t": 500.65, "frame": 1013, "type": "death", "owner": 0, "x": 7, "y": 5, "reason": "被炸死", "text": "DeepSeek V4.1 Flash 被炸死"}
+   {"id": 913, "t": 500.65, "frame": 1013, "type": "roundEnd", "owner": 1, "text": "第 4 局：GPT-6.1 Sol 胜 · 最后存活（被炸死）"}
+   {"id": 914, "t": 500.65, "frame": 0, "type": "round", "text": "第 5 局开始"}

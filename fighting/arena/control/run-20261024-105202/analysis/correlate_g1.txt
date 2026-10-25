@@ -1,0 +1,305 @@
+== r3-g1 our seat 0
+
+--- ROUND 1 hits/blocks/supers with our agent note ---
+f113 block        US dmg= combo= name= text=防御 · 削防 13
+    win6@f105 note=blockair dx=204.2 me=vex stand hp1000 mt0 g120 | op=kestrel air hp1000 mt0 g120 move=None
+    inputs=Bx15
+f163 block        US dmg= combo= name= text=防御 · 削防 13
+    win9@f150 note=approach dx=182.1 me=vex attack hp987 mt2 g117 | op=kestrel stand hp1000 mt3 g120 move=None
+    inputs=DBx14 F
+f219 hit          OPP dmg=96 combo=1 name= text=命中 96
+    win13@f210 note=atk dx=87.2 me=vex attack hp974 mt4 g118 | op=kestrel air hp1000 mt6 g120 move=None
+    inputs=DBx15
+f252 block        US dmg= combo= name= text=防御 · 削防 12
+    win15@f240 note= dx=56.0 me=vex hitstun hp878 mt9 g120 | op=kestrel attack hp1000 mt6 g120 move=穿云箭
+    inputs=DBx15
+f281 hit          US dmg=138 combo=1 name= text=命中 138
+    win17@f270 note=blockpunish@270 dx=74.3 me=vex blockstun hp866 mt11 g116 | op=kestrel attack hp1000 mt9 g120 move=倒跃射
+    inputs=DBx14 F+HK
+f308 hit          OPP dmg=62 combo=1 name= text=命中 62
+    win19@f300 note=atk dx=81.9 me=vex attack hp866 mt19 g118 | op=kestrel hitstun hp862 mt14 g120 move=None
+    inputs=DBx15
+f324 block        US dmg= combo= name= text=防御 · 削防 11
+    win20@f315 note=combo dx=96.1 me=vex attack hp866 mt19 g119 | op=kestrel hitstun hp862 mt14 g120 move=None
+    inputs=DBx14 F+LP
+f357 block        OPP dmg= combo= name= text=防御 · 削防 11
+    win22@f345 note=blockpunish@340 dx=130.1 me=vex blockstun hp793 mt26 g116 | op=kestrel attack hp862 mt25 g120 move=弓身横扫
+    inputs=DBx9 F+HK DBx5
+f386 hit          OPP dmg=152 combo=1 name= text=命中 152
+    win24@f375 note=atk dx=152 me=vex attack hp793 mt29 g118 | op=kestrel blockstun hp851 mt27 g116 move=None
+    inputs=DBx15
+f415 block        US dmg= combo= name= text=防御 · 削防 13
+    win26@f405 note= dx=168.5 me=vex hitstun hp641 mt34 g120 | op=kestrel attack hp851 mt35 g118 move=高踢
+    inputs=Bx15
+f453 block        US dmg= combo= name= text=防御 · 削防 13
+    win29@f450 note=atk dx=217.0 me=vex attack hp628 mt36 g117 | op=kestrel attack hp851 mt38 g120 move=穿云箭
+    inputs=DBx15
+f540 block        US dmg= combo= name= text=防御 · 削防 5
+    win35@f540 note=hold-recovery dx=196 me=vex stand hp615 mt38 g120 | op=kestrel attack hp851 mt41 g120 move=空中重拳
+    inputs=Bx15
+f587 hit          OPP dmg=152 combo=1 name= text=命中 152
+    win38@f585 note=atk dx=182.3 me=vex attack hp610 mt40 g118 | op=kestrel stand hp851 mt44 g120 move=None
+    inputs=DBx15
+f603 hit          OPP dmg=119 combo=2 name= text=命中 119 · 2 连
+    win39@f600 note=blk dx=164.7 me=vex attack hp610 mt40 g120 | op=kestrel attack hp851 mt44 g120 move=高踢
+    inputs=Bx15
+f621 hit          OPP dmg=122 combo=3 name= text=命中 122 · 3 连
+    win40@f615 note= dx=164.7 me=vex hitstun hp458 mt45 g120 | op=kestrel attack hp851 mt52 g120 move=弓身横扫
+    inputs=DBx15
+f1598 hit          OPP dmg=62 combo=1 name= text=命中 62
+    win105@f1590 note=hold-recovery dx=143.9 me=vex crouch hp217 mt55 g120 | op=kestrel attack hp851 mt68 g120 move=踩踏
+    inputs=DBx15
+f1614 block        US dmg= combo= name= text=防御 · 削防 11
+    win106@f1605 note=approach dx=143.9 me=vex crouch hp211 mt55 g120 | op=kestrel crouch hp845 mt68 g120 move=None
+    inputs=Fx14 DB
+f1647 block        OPP dmg= combo= name= text=防御 · 削防 11
+    win108@f1635 note=blockpunish@1630 dx=113.9 me=vex blockstun hp115 mt62 g116 | op=kestrel attack hp822 mt79 g120 move=弓身横扫
+    inputs=DBx9 F+HK DBx5
+f1674 hit          OPP dmg=132 combo=1 name= text=命中 132
+    win110@f1665 note=atk dx=121.1 me=vex attack hp87 mt65 g118 | op=kestrel blockstun hp783 mt81 g116 move=None
+    inputs=DBx15
+f1674 ko           US dmg= combo= name= text=疾影 · Vex 被击败
+    win110@f1665 note=atk dx=121.1 me=vex attack hp87 mt65 g118 | op=kestrel blockstun hp783 mt81 g116 move=None
+    inputs=DBx15
+f1674 roundEnd     OPP dmg= combo= name= text=第 1 局：长弓 · Kestrel 胜（击倒）
+    win110@f1665 note=atk dx=121.1 me=vex attack hp87 mt65 g118 | op=kestrel blockstun hp783 mt81 g116 move=None
+    inputs=DBx15
+
+--- ROUND 2 hits/blocks/supers with our agent note ---
+f1710 block        US dmg= combo= name= text=防御 · 削防 13
+    win113@f1710 note=blockproj dx=404.8 me=kestrel crouch hp1000 mt0 g120 | op=kestrel attack hp757 mt89 g119 move=穿云箭
+    inputs=Fx12 DBx3
+f1743 block        US dmg= combo= name= text=防御 · 削防 13
+    win115@f1740 note=walk-safe dx=358.8 me=kestrel stand hp987 mt2 g116 | op=kestrel attack hp757 mt92 g120 move=穿云箭
+    inputs=Fx8 DBx7
+f1851 hit          OPP dmg=96 combo=1 name= text=命中 96
+    win122@f1845 note=hold-recovery dx=183.5 me=kestrel stand hp974 mt4 g120 | op=kestrel attack hp757 mt95 g120 move=踩踏
+    inputs=DBx15
+f1951 block        US dmg= combo= name= text=防御 · 削防 13
+    win129@f1950 note=walk-safe dx=325.1 me=kestrel crouch hp878 mt9 g120 | op=kestrel attack hp757 mt95 g120 move=穿云箭
+    inputs=Fx8 DBx7
+f2432 block        US dmg= combo= name= text=防御 · 削防 12
+    win161@f2430 note=approach dx=191.9 me=kestrel stand hp865 mt11 g120 | op=kestrel stand hp757 mt98 g120 move=None
+    inputs=Fx10 DBx5
+f2477 super        OPP dmg= combo= name= text=长弓 · Kestrel 发动超必杀 长弓 · 万矢
+    win164@f2475 note=respect-super-hold dx=191.9 me=kestrel stand hp853 mt13 g117 | op=kestrel attack hp757 mt100 g120 move=高踢
+    inputs=Bx15
+f2491 block        US dmg= combo= name= text=防御 · 削防 38
+    win165@f2490 note=respect-super-hold dx=191.9 me=kestrel stand hp853 mt13 g119 | op=kestrel crouch hp757 mt100 g120 move=None
+    inputs=DBx15
+f2500 block        US dmg= combo= name= text=防御 · 削防 38
+    win165@f2490 note=respect-super-hold dx=191.9 me=kestrel stand hp853 mt13 g119 | op=kestrel crouch hp757 mt100 g120 move=None
+    inputs=DBx15
+f2509 block        US dmg= combo= name= text=防御 · 削防 38
+    win166@f2505 note=blk dx=191.9 me=kestrel crouch hp853 mt13 g120 | op=kestrel attack hp757 mt0 g120 move=长弓 · 万矢
+    inputs=DBx15
+f2518 block        US dmg= combo= name= text=防御 · 削防 38
+    win166@f2505 note=blk dx=191.9 me=kestrel crouch hp853 mt13 g120 | op=kestrel attack hp757 mt0 g120 move=长弓 · 万矢
+    inputs=DBx15
+f2527 block        US dmg= combo= name= text=防御 · 削防 38
+    win167@f2520 note=blk-multi dx=191.9 me=kestrel blockstun hp777 mt17 g112 | op=kestrel attack hp757 mt6 g120 move=长弓 · 万矢
+    inputs=DBx15
+f2536 block        US dmg= combo= name= text=防御 · 削防 38
+    win168@f2535 note=blk-multi dx=191.9 me=kestrel blockstun hp701 mt21 g104 | op=kestrel attack hp757 mt12 g120 move=长弓 · 万矢
+    inputs=DBx15
+f2545 block        US dmg= combo= name= text=防御 · 削防 38
+    win168@f2535 note=blk-multi dx=191.9 me=kestrel blockstun hp701 mt21 g104 | op=kestrel attack hp757 mt12 g120 move=长弓 · 万矢
+    inputs=DBx15
+f2614 block        US dmg= combo= name= text=防御 · 削防 13
+    win173@f2610 note=hold-recovery dx=191.9 me=kestrel crouch hp587 mt27 g96 | op=kestrel attack hp757 mt21 g120 move=长弓 · 万矢
+    inputs=DBx15
+f2650 hit          OPP dmg=96 combo=1 name= text=命中 96
+    win175@f2640 note=blockpunish@2626 dx=191.9 me=kestrel blockstun hp574 mt29 g94 | op=kestrel attack hp757 mt24 g120 move=穿云箭
+    inputs=F+LP DBx7 F+LK DBx6
+f2694 block        US dmg= combo= name= text=防御 · 削防 13
+    win178@f2685 note= dx=191.9 me=kestrel hitstun hp478 mt34 g97 | op=kestrel stand hp757 mt24 g120 move=None
+    inputs=DBx15
+f2749 hit          OPP dmg=52 combo=1 name= text=命中 52
+    win182@f2745 note=atk dx=31.7 me=kestrel attack hp465 mt36 g98 | op=kestrel air hp757 mt27 g120 move=None
+    inputs=DBx15
+f2765 block        US dmg= combo= name= text=防御 · 削防 11
+    win183@f2760 note=poke:lk dx=0 me=kestrel attack hp465 mt36 g100 | op=kestrel crouch hp757 mt27 g120 move=None
+    inputs=DBx7 F+LK DBx7
+f2809 hit          US dmg=62 combo=1 name= text=命中 62
+    win186@f2805 note=blk dx=56 me=kestrel crouch hp402 mt43 g98 | op=kestrel attack hp757 mt38 g120 move=弓身横扫
+    inputs=DBx15
+f2817 hit          US dmg=47 combo=2 name= text=命中 47 · 2 连
+    win186@f2805 note=blk dx=56 me=kestrel crouch hp402 mt43 g98 | op=kestrel attack hp757 mt38 g120 move=弓身横扫
+    inputs=DBx15
+f2837 whiff        US dmg= combo= name= text=无敌帧躲开
+    win188@f2835 note=combo dx=57.2 me=kestrel attack hp402 mt59 g101 | op=kestrel hitstun hp648 mt48 g120 move=None
+    inputs=DBx14 F+LP
+f2844 hit          OPP dmg=112 combo=1 name= text=命中 112
+    win188@f2835 note=combo dx=57.2 me=kestrel attack hp402 mt59 g101 | op=kestrel hitstun hp648 mt48 g120 move=None
+    inputs=DBx14 F+LP
+f2912 hit          OPP dmg=152 combo=1 name= text=命中 152
+    win193@f2910 note= dx=64.6 me=kestrel down hp290 mt64 g103 | op=kestrel crouch hp648 mt60 g120 move=None
+    inputs=DBx15
+f2929 hit          OPP dmg=56 combo=2 name= text=命中 56 · 2 连
+    win194@f2925 note= dx=64.6 me=kestrel wakeup hp290 mt64 g104 | op=kestrel attack hp648 mt60 g120 move=高踢
+    inputs=Bx15
+f2945 block        US dmg= combo= name= text=防御 · 削防 11
+    win195@f2940 note= dx=64.6 me=kestrel hitstun hp138 mt69 g104 | op=kestrel attack hp648 mt68 g120 move=高踢
+    inputs=Bx15
+f2986 hit          OPP dmg=96 combo=1 name= text=命中 96
+    win198@f2985 note=blk dx=64.6 me=kestrel crouch hp71 mt76 g101 | op=kestrel attack hp648 mt79 g120 move=弓身横扫
+    inputs=DBx15
+f2986 ko           US dmg= combo= name= text=长弓 · Kestrel 被击败
+    win198@f2985 note=blk dx=64.6 me=kestrel crouch hp71 mt76 g101 | op=kestrel attack hp648 mt79 g120 move=弓身横扫
+    inputs=DBx15
+f2986 roundEnd     OPP dmg= combo= name= text=第 2 局：长弓 · Kestrel 胜（击倒）
+    win198@f2985 note=blk dx=64.6 me=kestrel crouch hp71 mt76 g101 | op=kestrel attack hp648 mt79 g120 move=弓身横扫
+    inputs=DBx15
+
+--- ROUND 3 hits/blocks/supers with our agent note ---
+f3025 block        US dmg= combo= name= text=防御 · 削防 13
+    win200@f3015 note=walk-safe dx=440 me=aegis crouch hp1000 mt0 g120 | op=kestrel attack hp648 mt79 g120 move=穿云箭
+    inputs=Fx8 DBx7
+f3060 block        US dmg= combo= name= text=防御 · 削防 13
+    win203@f3060 note=blockproj dx=371.8 me=aegis crouch hp987 mt2 g117 | op=kestrel attack hp648 mt82 g120 move=穿云箭
+    inputs=Fx11 DBx4
+f3799 block        OPP dmg= combo= name= text=防御 · 削防 5
+    win252@f3795 note=approach dx=152.6 me=aegis crouch hp974 mt4 g120 | op=kestrel stand hp648 mt85 g120 move=None
+    inputs=Fx10 DBx5
+f3815 hit          OPP dmg=62 combo=1 name= text=命中 62
+    win253@f3810 note=poke:lp dx=102.6 me=aegis crouch hp974 mt4 g120 | op=kestrel crouch hp648 mt85 g120 move=None
+    inputs=F+LP DBx8 F+LK DBx5
+f3831 block        US dmg= combo= name= text=防御 · 削防 11
+    win254@f3825 note=poke:lp dx=114.7 me=aegis attack hp974 mt7 g120 | op=kestrel blockstun hp643 mt87 g116 move=None
+    inputs=DBx3 F+LP DBx8 F+LK DBx2
+f3888 hit          OPP dmg=52 combo=1 name= text=命中 52
+    win258@f3885 note=approach dx=149.5 me=aegis crouch hp901 mt14 g119 | op=kestrel crouch hp643 mt98 g120 move=None
+    inputs=Fx10 DBx5
+f3893 super        OPP dmg= combo= name= text=长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+    win258@f3885 note=approach dx=149.5 me=aegis crouch hp901 mt14 g119 | op=kestrel crouch hp643 mt98 g120 move=None
+    inputs=Fx10 DBx5
+f3907 block        US dmg= combo= name= text=防御 · 削防 38
+    win259@f3900 note=poke:lp dx=99.5 me=aegis crouch hp901 mt14 g120 | op=kestrel crouch hp643 mt98 g120 move=None
+    inputs=F+LP DBx8 F+LK DBx5
+f3916 block        US dmg= combo= name= text=防御 · 削防 38
+    win260@f3915 note= dx=108.9 me=aegis hitstun hp849 mt19 g120 | op=kestrel attack hp643 mt0 g120 move=长弓 · 万矢
+    inputs=DBx15
+f3925 block        US dmg= combo= name= text=防御 · 削防 38
+    win260@f3915 note= dx=108.9 me=aegis hitstun hp849 mt19 g120 | op=kestrel attack hp643 mt0 g120 move=长弓 · 万矢
+    inputs=DBx15
+f3934 block        US dmg= combo= name= text=防御 · 削防 38
+    win261@f3930 note=blk-multi dx=116.1 me=aegis blockstun hp811 mt21 g116 | op=kestrel attack hp643 mt3 g120 move=长弓 · 万矢
+    inputs=DBx15
+f3943 block        US dmg= combo= name= text=防御 · 削防 38
+    win261@f3930 note=blk-multi dx=116.1 me=aegis blockstun hp811 mt21 g116 | op=kestrel attack hp643 mt3 g120 move=长弓 · 万矢
+    inputs=DBx15
+f3952 block        US dmg= combo= name= text=防御 · 削防 38
+    win262@f3945 note=blk-multi dx=124.7 me=aegis blockstun hp735 mt25 g108 | op=kestrel attack hp643 mt9 g120 move=长弓 · 万矢
+    inputs=DBx15
+f3961 block        US dmg= combo= name= text=防御 · 削防 38
+    win263@f3960 note=blk-multi dx=138.8 me=aegis blockstun hp659 mt29 g100 | op=kestrel attack hp643 mt15 g120 move=长弓 · 万矢
+    inputs=DBx15
+f4004 hit          US dmg=140 combo=1 name= text=命中 140
+    win265@f3990 note=blockpunish@3979 dx=161.4 me=aegis blockstun hp583 mt33 g92 | op=kestrel attack hp643 mt21 g120 move=长弓 · 万矢
+    inputs=DBx3 F+HK DBx11
+f4054 block        US dmg= combo= name= text=防御 · 削防 13
+    win269@f4050 note=walk-safe dx=260.8 me=aegis attack hp583 mt41 g98 | op=kestrel attack hp503 mt26 g120 move=穿云箭
+    inputs=DBx5 Fx8 DBx2
+f4100 block        US dmg= combo= name= text=防御 · 削防 13
+    win272@f4095 note=approach dx=235.7 me=aegis attack hp570 mt43 g97 | op=kestrel crouch hp503 mt29 g120 move=None
+    inputs=DBx11 Fx4
+f4146 block        US dmg= combo= name= text=防御 · 削防 13
+    win275@f4140 note=approach dx=237.2 me=aegis attack hp557 mt45 g97 | op=kestrel stand hp503 mt32 g120 move=None
+    inputs=DBx12 Fx3
+f4189 block        US dmg= combo= name= text=防御 · 削防 13
+    win278@f4185 note=approach dx=214.3 me=aegis attack hp544 mt47 g97 | op=kestrel crouch hp503 mt35 g120 move=None
+    inputs=DBx13 Fx2
+f4241 hit          OPP dmg=132 combo=1 name= text=命中 132
+    win281@f4230 note=approach dx=225.3 me=aegis attack hp531 mt49 g97 | op=kestrel stand hp503 mt38 g120 move=None
+    inputs=DBx11 Fx4
+f4260 hit          OPP dmg=137 combo=2 name= text=命中 137 · 2 连
+    win283@f4260 note= dx=79.3 me=aegis hitstun hp399 mt54 g100 | op=kestrel attack hp503 mt46 g120 move=弓身横扫
+    inputs=DBx15
+f4290 block        US dmg= combo= name= text=防御 · 削防 11
+    win285@f4290 note= dx=138.2 me=aegis hitstun hp262 mt59 g100 | op=kestrel attack hp503 mt54 g120 move=高踢
+    inputs=Bx15
+f4350 block        US dmg= combo= name= text=防御 · 削防 11
+    win289@f4350 note=wait-agg dx=128.5 me=aegis crouch hp251 mt61 g100 | op=kestrel stand hp503 mt57 g120 move=None
+    inputs=DBx15
+f4391 block        US dmg= combo= name= text=防御 · 削防 11
+    win291@f4380 note=blockpunish@4366 dx=136.5 me=aegis blockstun hp240 mt63 g98 | op=kestrel attack hp503 mt60 g120 move=弓身横扫
+    inputs=F+HK DBx14
+f4424 block        OPP dmg= combo= name= text=防御 · 削防 11
+    win293@f4410 note=blockpunish@4407 dx=136.6 me=aegis blockstun hp229 mt65 g97 | op=kestrel attack hp503 mt63 g120 move=弓身横扫
+    inputs=DBx11 F+HK DBx3
+f4460 block        US dmg= combo= name= text=防御 · 削防 11
+    win296@f4455 note=atk dx=192.4 me=aegis attack hp229 mt68 g101 | op=kestrel blockstun hp492 mt65 g116 move=None
+    inputs=DBx15
+f4617 block        US dmg= combo= name= text=防御 · 削防 12
+    win306@f4605 note=approach dx=195.1 me=aegis stand hp202 mt70 g113 | op=kestrel crouch hp476 mt68 g120 move=None
+    inputs=Fx14 DB
+f4667 hit          OPP dmg=112 combo=1 name= text=命中 112
+    win310@f4665 note=atk dx=56.0 me=aegis attack hp134 mt72 g114 | op=kestrel air hp420 mt71 g120 move=None
+    inputs=DBx15
+f4670 suddenDeath  US dmg= combo= name= text=铁律 · Aegis 在决着阶段被拖垮
+    win311@f4670 note=blk dx=56.0 me=aegis attack hp117 mt72 g116 | op=kestrel attack hp403 mt71 g120 move=倒跃射
+    inputs=DBx15
+f4670 ko           US dmg= combo= name= text=铁律 · Aegis 被击败
+    win311@f4670 note=blk dx=56.0 me=aegis attack hp117 mt72 g116 | op=kestrel attack hp403 mt71 g120 move=倒跃射
+    inputs=DBx15
+f4670 roundEnd     OPP dmg= combo= name= text=第 3 局：长弓 · Kestrel 胜（击倒）
+    win311@f4670 note=blk dx=56.0 me=aegis attack hp117 mt72 g116 | op=kestrel attack hp403 mt71 g120 move=倒跃射
+    inputs=DBx15
+
+--- ATTACK INTENT WINDOWS AND NEXT 30 FRAMES ---
+R1 win8@f135 note=blockpunish@125 dx=191.8 me=blockstun hp987 op=attack hp1000 move=穿云箭 | next: f163 block US dmg=
+R1 win12@f195 note=punish dx=134 me=stand hp974 op=attack hp1000 move=空中重腿 | next: f219 hit OPP dmg=96
+R1 win13@f210 note=atk dx=87.2 me=attack hp974 op=air hp1000 move=None | next: f219 hit OPP dmg=96
+R1 win14@f225 note=counterpoke dx=56.0 me=attack hp974 op=attack hp1000 move=穿云箭 | next: f252 block US dmg=
+R1 win17@f270 note=blockpunish@270 dx=74.3 me=blockstun hp866 op=attack hp1000 move=倒跃射 | next: f281 hit US dmg=138
+R1 win18@f285 note=atk dx=81.9 me=attack hp866 op=attack hp1000 move=倒跃射 | next: f308 hit OPP dmg=62
+R1 win19@f300 note=atk dx=81.9 me=attack hp866 op=hitstun hp862 move=None | next: f308 hit OPP dmg=62; f324 block US dmg=
+R1 win20@f315 note=combo dx=96.1 me=attack hp866 op=hitstun hp862 move=None | next: f324 block US dmg=
+R1 win22@f345 note=blockpunish@340 dx=130.1 me=blockstun hp793 op=attack hp862 move=弓身横扫 | next: f357 block OPP dmg=
+R1 win23@f360 note=punish dx=138.3 me=crouch hp793 op=attack hp862 move=弓身横扫 | next: f386 hit OPP dmg=152
+R1 win24@f375 note=atk dx=152 me=attack hp793 op=blockstun hp851 move=None | next: f386 hit OPP dmg=152
+R1 win25@f390 note=atk dx=168.5 me=attack hp793 op=attack hp851 move=高踢 | next: f415 block US dmg=
+R1 win28@f435 note=blockpunish@427 dx=209.0 me=blockstun hp628 op=attack hp851 move=穿云箭 | next: f453 block US dmg=
+R1 win29@f450 note=atk dx=217.0 me=attack hp628 op=attack hp851 move=穿云箭 | next: f453 block US dmg=
+R1 win36@f555 note=blockcounter@553 dx=134.3 me=stand hp615 op=attack hp851 move=踩踏 | next: NONE
+R1 win37@f570 note=atk dx=134.3 me=attack hp610 op=attack hp851 move=踩踏 | next: f587 hit OPP dmg=152
+R1 win38@f585 note=atk dx=182.3 me=attack hp610 op=stand hp851 move=None | next: f587 hit OPP dmg=152; f603 hit OPP dmg=119
+R1 win108@f1635 note=blockpunish@1630 dx=113.9 me=blockstun hp115 op=attack hp822 move=弓身横扫 | next: f1647 block OPP dmg=
+R1 win109@f1650 note=punish dx=121.1 me=crouch hp102 op=attack hp809 move=弓身横扫 | next: f1674 hit OPP dmg=132; f1674 ko US dmg=
+R1 win110@f1665 note=atk dx=121.1 me=attack hp87 op=blockstun hp783 move=None | next: f1674 hit OPP dmg=132; f1674 ko US dmg=
+R1 win111@f1680 note=atk dx=118.1 me=attack hp71 op=attack hp767 move=弓身横扫 | next: NONE
+R2 win175@f2640 note=blockpunish@2626 dx=191.9 me=blockstun hp574 op=attack hp757 move=穿云箭 | next: f2650 hit OPP dmg=96
+R2 win180@f2715 note=blockpunish@2712 dx=99.2 me=blockstun hp465 op=attack hp757 move=空中重腿 | next: NONE
+R2 win181@f2730 note=atk dx=99.2 me=attack hp465 op=attack hp757 move=空中重腿 | next: f2749 hit OPP dmg=52
+R2 win182@f2745 note=atk dx=31.7 me=attack hp465 op=air hp757 move=None | next: f2749 hit OPP dmg=52; f2765 block US dmg=
+R2 win183@f2760 note=poke:lk dx=0 me=attack hp465 op=crouch hp757 move=None | next: f2765 block US dmg=
+R2 win185@f2790 note=blockpunish@2781 dx=56 me=blockstun hp402 op=attack hp757 move=弓身横扫 | next: f2809 hit US dmg=62; f2817 hit US dmg=47
+R2 win187@f2820 note=poke:lk dx=56 me=crouch hp402 op=crouch hp757 move=None | next: f2837 whiff US dmg=; f2844 hit OPP dmg=112
+R2 win188@f2835 note=combo dx=57.2 me=attack hp402 op=hitstun hp648 move=None | next: f2837 whiff US dmg=; f2844 hit OPP dmg=112
+R2 win190@f2865 note=air-overhead@2851 dx=64.6 me=hitstun hp290 op=attack hp648 move=倒跃射 | next: NONE
+R2 win191@f2880 note=air-overhead@2866 dx=64.6 me=hitstun hp290 op=attack hp648 move=倒跃射 | next: NONE
+R2 win197@f2970 note=blockpunish@2961 dx=64.6 me=blockstun hp71 op=attack hp648 move=弓身横扫 | next: f2986 hit OPP dmg=96; f2986 ko US dmg=
+R3 win202@f3045 note=blocktake@3037 dx=365 me=blockstun hp987 op=crouch hp648 move=None | next: f3060 block US dmg=
+R3 win253@f3810 note=poke:lp dx=102.6 me=crouch hp974 op=crouch hp648 move=None | next: f3815 hit OPP dmg=62; f3831 block US dmg=
+R3 win254@f3825 note=poke:lp dx=114.7 me=attack hp974 op=blockstun hp643 move=None | next: f3831 block US dmg=
+R3 win256@f3855 note=blockpunish@3847 dx=146.7 me=blockstun hp901 op=attack hp643 move=弓身横扫 | next: NONE
+R3 win259@f3900 note=poke:lp dx=99.5 me=crouch hp901 op=crouch hp643 move=None | next: f3907 block US dmg=; f3916 block US dmg=; f3925 block US dmg=
+R3 win265@f3990 note=blockpunish@3979 dx=161.4 me=blockstun hp583 op=attack hp643 move=长弓 · 万矢 | next: f4004 hit US dmg=140
+R3 win266@f4005 note=punish dx=161.8 me=crouch hp583 op=attack hp643 move=长弓 · 万矢 | next: NONE
+R3 win267@f4020 note=atk dx=161.8 me=attack hp583 op=hitstun hp503 move=None | next: NONE
+R3 win268@f4035 note=atk dx=230.2 me=attack hp583 op=hitstun hp503 move=None | next: f4054 block US dmg=
+R3 win271@f4080 note=blockpunish@4066 dx=234.0 me=blockstun hp570 op=attack hp503 move=穿云箭 | next: f4100 block US dmg=
+R3 win274@f4125 note=blockpunish@4112 dx=211.9 me=blockstun hp557 op=attack hp503 move=穿云箭 | next: f4146 block US dmg=
+R3 win277@f4170 note=blockpunish@4158 dx=212.5 me=blockstun hp544 op=attack hp503 move=穿云箭 | next: f4189 block US dmg=
+R3 win280@f4215 note=blockpunish@4201 dx=200.5 me=blockstun hp531 op=attack hp503 move=穿云箭 | next: f4241 hit OPP dmg=132
+R3 win287@f4320 note=blockpunish@4306 dx=176.8 me=blockstun hp251 op=attack hp503 move=弓身横扫 | next: NONE
+R3 win291@f4380 note=blockpunish@4366 dx=136.5 me=blockstun hp240 op=attack hp503 move=弓身横扫 | next: f4391 block US dmg=
+R3 win293@f4410 note=blockpunish@4407 dx=136.6 me=blockstun hp229 op=attack hp503 move=弓身横扫 | next: f4424 block OPP dmg=
+R3 win294@f4425 note=punish dx=144.7 me=crouch hp229 op=attack hp503 move=弓身横扫 | next: NONE
+R3 win295@f4440 note=atk dx=144.7 me=attack hp229 op=blockstun hp492 move=None | next: f4460 block US dmg=
+R3 win296@f4455 note=atk dx=192.4 me=attack hp229 op=blockstun hp492 move=None | next: f4460 block US dmg=
+R3 win298@f4485 note=blockpunish@4476 dx=171.4 me=blockstun hp218 op=attack hp492 move=弓身横扫 | next: NONE
+R3 win299@f4500 note=atk dx=173.5 me=attack hp218 op=attack hp492 move=弓身横扫 | next: NONE
+R3 win308@f4635 note=blockpunish@4634 dx=87.2 me=blockstun hp165 op=attack hp451 move=空中重拳 | next: NONE
+R3 win309@f4650 note=atk dx=98.2 me=attack hp150 op=attack hp436 move=空中重拳 | next: f4667 hit OPP dmg=112; f4670 ko US dmg=
+R3 win310@f4665 note=atk dx=56.0 me=attack hp134 op=air hp420 move=None | next: f4667 hit OPP dmg=112; f4670 ko US dmg=

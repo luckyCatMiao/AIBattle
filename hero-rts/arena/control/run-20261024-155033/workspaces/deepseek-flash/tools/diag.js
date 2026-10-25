@@ -1,0 +1,23 @@
+'use strict';
+const {runDuel}=require('./duel');
+const {Agent}=require('../agent.js');
+const {SolBot}=require('./solbot.js');
+const seat=parseInt(process.argv[2]||'0',10);
+const A=seat===0?new Agent():new SolBot({solr3:true});
+const B=seat===0?new SolBot({solr3:true}):new Agent();
+let lastPrint=-1;
+const r=runDuel(A,B,{heroA:seat===0?'necromancer':'druid',heroB:seat===0?'druid':'necromancer',maxSeconds:600,onFrame:(g)=>{
+  const t=g.now; if(t-lastPrint<5)return; lastPrint=t;
+  const me=seat;
+  const us=g.units.filter(u=>u.owner===me&&u.type!=='worker');
+  const fo=g.units.filter(u=>u.owner===1-me&&u.type!=='worker');
+  const hero=us.find(u=>u.hero);
+  const a=us.length?{x:Math.round(us.reduce((s,u)=>s+u.x,0)/us.length),y:Math.round(us.reduce((s,u)=>s+u.y,0)/us.length)}:null;
+  const th=g.buildings.find(b=>b.type==='townhall'&&b.owner===1-me);
+  const myTH=g.buildings.find(b=>b.type==='townhall'&&b.owner===me);
+  const cnt={};for(const u of us)cnt[u.type]=(cnt[u.type]||0)+1;
+  const ecnt={};for(const u of fo)ecnt[u.type]=(ecnt[u.type]||0)+1;
+  console.log(`t=${t.toFixed(0)} ${a?'@'+a.x+','+a.y:''} our[${Object.entries(cnt).map(([k,v])=>k+v).join(',')}] hero:${hero?hero.level+'/'+Math.round(hero.hp):'-'} enemy[${Object.entries(ecnt).map(([k,v])=>k+v).join(',')}] oppTH=${th?Math.round(th.hp):0} ourTH=${myTH?Math.round(myTH.hp):0} pop=${g.players[me].population}/${g.players[me].popCap} g=${Math.round(g.players[me].gold)} w=${Math.round(g.players[me].wood)}`);
+}});
+console.log('RESULT',r.winner,r.duration.toFixed(1),r.reason);
+console.log('reject samples',r.stats.rejectSamples);

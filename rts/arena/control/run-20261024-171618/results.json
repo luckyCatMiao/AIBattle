@@ -1,0 +1,82 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "基地摧毁",
+    "duration": 133.35,
+    "scores": {
+      "deepseek-flash": 955,
+      "sol": 2652
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    }
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "基地摧毁",
+    "duration": 159.4,
+    "scores": {
+      "sol": 3123,
+      "deepseek-flash": 1307
+    },
+    "errors": {
+      "sol": 0,
+      "deepseek-flash": 0
+    }
+  },
+  {
+    "id": "r2-g1",
+    "round": 2,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "基地摧毁",
+    "duration": 249.65,
+    "scores": {
+      "deepseek-flash": 2270,
+      "sol": 4490
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    }
+  },
+  {
+    "id": "r2-g2",
+    "round": 2,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "基地摧毁",
+    "duration": 264.75,
+    "scores": {
+      "sol": 4897,
+      "deepseek-flash": 2358
+    },
+    "errors": {
+      "sol": 0,
+      "deepseek-flash": 0
+    }
+  }
+]

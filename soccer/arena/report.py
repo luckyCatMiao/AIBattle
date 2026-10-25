@@ -23,7 +23,7 @@ def generate(run):
         for who, value in (r.get('scores') or {}).items():
             goals[who] = goals.get(who, 0) + int(value)
     order = list(labels)
-    port = config.get('watch_port', config.get('port', 8801) + 1)
+    port = config.get('watch_port', 8802)
     url = f'http://127.0.0.1:{port}/?replay=latest&run={run.name}'
 
     out = ['# 3V3 足球 · ' + ' 对战 '.join(names[w] for w in order), '']
@@ -57,7 +57,14 @@ def generate(run):
                 possession[i] += int(s.get('possession', 0))
     out.append('## 机制生效情况')
     out.append('')
+    fouls = [0, 0]; saves = [0, 0]
+    for r in results:
+        for i, v in enumerate(r.get('fouls') or []):
+            if i < 2: fouls[i] += int(v)
+        for i, v in enumerate(r.get('saves') or []):
+            if i < 2: saves[i] += int(v)
     out.append(f'总射门/踢球：{kicks[0]} : {kicks[1]}；控球帧数：{possession[0]} : {possession[1]}。')
+    out.append(f'犯规：{fouls[0]} : {fouls[1]}；守门员扑救：{saves[0]} : {saves[1]}。')
     out.append('')
 
     out.append('## 提交与用量')

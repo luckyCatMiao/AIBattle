@@ -1,0 +1,119 @@
+{
+  "phase": "双方复盘并改进",
+  "round": 3,
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 133.35,
+      "scores": {
+        "deepseek-flash": 955,
+        "sol": 2652
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 159.4,
+      "scores": {
+        "sol": 3123,
+        "deepseek-flash": 1307
+      },
+      "errors": {
+        "sol": 0,
+        "deepseek-flash": 0
+      }
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 249.65,
+      "scores": {
+        "deepseek-flash": 2270,
+        "sol": 4490
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      }
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "基地摧毁",
+      "duration": 264.75,
+      "scores": {
+        "sol": 4897,
+        "deepseek-flash": 2358
+      },
+      "errors": {
+        "sol": 0,
+        "deepseek-flash": 0
+      }
+    }
+  ],
+  "ready": [
+    "sol"
+  ],
+  "contestants": [
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "short": "Deepseek-Flash"
+    },
+    {
+      "id": "sol",
+      "name": "GPT-6.1 Sol",
+      "short": "Sol"
+    }
+  ],
+  "setup_note": "Sol 沿用既有策略，首轮保持原样；挑战者从零开始",
+  "port": 8836,
+  "rounds": 3,
+  "updated": "2026-10-24T17:45:43",
+  "player_ready": "sol",
+  "usage": [
+    {
+      "frozen_incumbent": true,
+      "from_run": "D:\\extraProj\\AIBattle\\rts\\arena\\control\\run-20261015-010803",
+      "source_round": 3
+    }
+  ],
+  "game": 2,
+  "game_id": "r2-g2",
+  "seats": [
+    "sol",
+    "deepseek-flash"
+  ]
+}

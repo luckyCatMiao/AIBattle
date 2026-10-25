@@ -91,10 +91,10 @@ test('右门进球记给队伍 0，并重新开球', () => {
   const g = make();
   const u = unit(g, 0, 0);
   parkAll(g, [u]);
-  u.x = 40; u.y = 13; u.facing = { x: 1, y: 0 };
+  u.x = 32; u.y = 13; u.facing = { x: 1, y: 0 };
   giveBall(g, u);
   u.held = { dir: 'N', aim: 0, kick: true };
-  stepN(g, 15);
+  stepN(g, 30);
   assert.deepEqual(g.score, [1, 0]);
   assert.equal(g.ball.x, W / 2, '进球后球回中圈');
   assert.ok(g.freeze > 0, '重新开球有冻结');
@@ -105,10 +105,10 @@ test('左门进球记给队伍 1', () => {
   const g = make();
   const u = unit(g, 1, 0);
   parkAll(g, [u]);
-  u.x = 4; u.y = 13; u.facing = { x: -1, y: 0 };
+  u.x = 12; u.y = 13; u.facing = { x: -1, y: 0 };
   giveBall(g, u);
   u.held = { dir: 'N', aim: 180, kick: true };
-  stepN(g, 15);
+  stepN(g, 40);
   assert.deepEqual(g.score, [0, 1]);
 });
 
@@ -152,10 +152,10 @@ test('常规时间战平进入金球，金球进球立即结束', () => {
   assert.equal(g.status, 'playing');
   const u = unit(g, 0, 0);
   parkAll(g, [u]);
-  u.x = 40; u.y = 13; u.facing = { x: 1, y: 0 };
+  u.x = 32; u.y = 13; u.facing = { x: 1, y: 0 };
   giveBall(g, u);
   u.held = { dir: 'N', aim: 0, kick: true };
-  stepN(g, 30);
+  stepN(g, 50);
   assert.equal(g.status, 'finished');
   assert.equal(g.winner, 0);
   assert.match(g.reason, /金球/);
@@ -184,6 +184,62 @@ test('抢断：更近的对手可以夺走球', () => {
   a.stealLock = 0;
   sim.step(g);
   assert.equal(g.ball.owner, b.id, '更近的对手应该抢到球');
+});
+
+test('持球移动明显慢于无球', () => {
+  const moving = (withBall) => {
+    const g = make(5, 3);
+    const u = unit(g, 0, 1);
+    parkAll(g, [u]);
+    u.x = 22; u.y = 13;
+    g.ball.x = 2; g.ball.y = 2; g.ball.owner = null;
+    if (withBall) giveBall(g, u);
+    u.held = { dir: 'R', aim: 0, kick: false };
+    stepN(g, 20);
+    return u.x;
+  };
+  const free = moving(false), carrying = moving(true);
+  assert.ok(free - 22 > 2.5, '无球应该正常推进');
+  assert.ok(carrying - 22 < (free - 22) * 0.7, `持球应明显降速：无球 ${(free - 22).toFixed(2)} vs 持球 ${(carrying - 22).toFixed(2)}`);
+});
+
+test('进入对方禁区判犯规，任意球把犯规者移出', () => {
+  const g = make(5, 3);
+  const u = unit(g, 0, 1);
+  parkAll(g, [u]);
+  u.x = 32; u.y = 13; u.facing = { x: 1, y: 0 };
+  u.held = { dir: 'R', aim: null, kick: false };
+  stepN(g, 30);
+  assert.ok(g.events.some(e => e.type === 'foul'), '应该判犯规');
+  assert.ok(g.stats[0].fouls >= 1);
+  assert.ok(!catalog.inPenaltyBox(1, u.x, u.y), '犯规者应被移出对方禁区');
+});
+
+test('守门员在本方禁区没收射门', () => {
+  const g = make(5, 3);
+  const shooter = unit(g, 0, 0), keeper = unit(g, 1, 0);
+  parkAll(g, [shooter, keeper]);
+  shooter.x = 32; shooter.y = 13; shooter.facing = { x: 1, y: 0 };
+  keeper.x = 42; keeper.y = 13;
+  giveBall(g, shooter);
+  shooter.held = { dir: 'N', aim: 0, kick: true };
+  stepN(g, 45);
+  assert.ok(g.events.some(e => e.type === 'save'), '守门员应该扑救');
+  assert.equal(g.score[0], 0, '射门不应进球');
+  const owner = g.units.find(x => x.id === g.ball.owner);
+  assert.ok(owner && owner.team === 1, '扑救后球在守门员手里');
+});
+
+test('守门员没有额外扑救半径，偏离线路就扑不到', () => {
+  const g = make(5, 3);
+  const shooter = unit(g, 0, 0), keeper = unit(g, 1, 0);
+  parkAll(g, [shooter, keeper]);
+  shooter.x = 32; shooter.y = 13; shooter.facing = { x: 1, y: 0 };
+  keeper.x = 42; keeper.y = 14.5;
+  giveBall(g, shooter);
+  shooter.held = { dir: 'N', aim: 0, kick: true };
+  stepN(g, 60);
+  assert.equal(g.score[0], 1, '偏离 1.5 格的守门员不应该有额外扑救范围');
 });
 
 test('相同输入产生逐帧一致的比赛', () => {
@@ -239,6 +295,9 @@ test('观察包含完整球场与球的运动状态', () => {
   assert.equal(v.yourTeam, 1);
   assert.equal(v.units.length, 6);
   assert.ok(Array.isArray(s.map.tiles) && s.map.tiles.length === W * H);
+  assert.ok(s.map.penaltyBoxes && s.map.penaltyBoxes[0] && s.map.penaltyBoxes[1]);
+  assert.equal(s.units.filter(u => u.keeper).length, 2, '每队 index 0 是守门员');
+  assert.equal(typeof s.units[0].inOwnBox, 'boolean');
   for (const key of ['x', 'y', 'vx', 'vy', 'owner']) assert.ok(key in s.ball);
   assert.equal(typeof s.score[0], 'number');
   assert.ok('timeLeft' in s);

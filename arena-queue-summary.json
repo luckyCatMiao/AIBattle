@@ -1,0 +1,59 @@
+[
+  {
+    "game": "soccer",
+    "run": "run-20261024-093225",
+    "phase": "比赛完成",
+    "games": [
+      {
+        "id": "r1-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 2
+        }
+      },
+      {
+        "id": "r1-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 1,
+          "sol": 6
+        }
+      },
+      {
+        "id": "r2-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 3
+        }
+      },
+      {
+        "id": "r2-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 3
+        }
+      },
+      {
+        "id": "r3-g1",
+        "winner": null,
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 0
+        }
+      },
+      {
+        "id": "r3-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 0,
+          "sol": 2
+        }
+      }
+    ],
+    "returncode": 0,
+    "minutes": 429.4
+  }
+]

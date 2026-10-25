@@ -1,0 +1,14 @@
+default seed=8005 seat=0 net=1.37 score=[13, 12] serve 1/13 recv 12/12 selfloss 0 stam=[38.1, 22.5]
+default seed=8005 seat=1 net=1.37 score=[4, 8] serve 3/7 recv 5/5 selfloss 0 stam=[11.0, 4.7]
+default seed=8015 seat=0 net=1.50 score=[11, 6] serve 5/11 recv 6/6 selfloss 0 stam=[11.4, 12.9]
+default seed=8015 seat=1 net=1.50 score=[7, 11] serve 3/10 recv 8/8 selfloss 0 stam=[16.6, 4.8]
+default seed=8025 seat=0 net=1.63 score=[11, 1] serve 10/11 recv 1/1 selfloss 0 stam=[2.4, 0.3]
+default seed=8025 seat=1 net=1.63 score=[4, 8] serve 3/7 recv 5/5 selfloss 0 stam=[1.2, 1.5]
+default seed=8001 seat=0 net=1.92 score=[0, 2] serve 0/1 recv 0/1 selfloss 0 stam=[2.1, 1.8]
+default seed=8001 seat=1 net=1.92 score=[1, 2] serve 1/1 recv 1/2 selfloss 0 stam=[2.7, 0.6]
+== default aggregate: pts 64:37  serve 26/61 (43%)  recv 38/40 (95%)  selfloss 0
+default seed=7021 seat=0 net=1.68 score=[8, 11] serve 2/9 recv 6/10 selfloss 0 stam=[8.4, 5.4]
+default seed=7021 seat=1 net=1.68 score=[7, 11] serve 5/10 recv 6/8 selfloss 0 stam=[0.3, 3.3]
+default seed=7022 seat=0 net=1.69 score=[12, 14] serve 3/13 recv 9/13 selfloss 0 stam=[2.4, 1.5]
+default seed=7022 seat=1 net=1.69 score=[11, 6] serve 1/6 recv 5/11 selfloss 0 stam=[1.5, 2.4]
+== default aggregate: pts 37:43  serve 11/38 (29%)  recv 26/42 (62%)  selfloss 0

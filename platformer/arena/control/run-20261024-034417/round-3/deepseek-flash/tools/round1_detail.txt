@@ -1,0 +1,63 @@
+==============================================================================
+r1-g1 seed=8111 seats=['deepseek-flash', 'sol']
+  R1: width=200 goal=196 span=90.05s winner=deepseek-flash reason=时间到
+    deepseek-flash  end_x=  3.39 end_maxX=184.07 round_maxX=184.07 deaths=1 finished=False
+    sol             end_x=180.94 end_maxX=181.36 round_maxX=181.36 deaths=1 finished=False
+    margin(maxX)=2.71
+    last-frame t=89.95 roundLeft=0.05
+  R2: width=172 goal=168 span=25.05s winner=sol reason=到达终点
+    deepseek-flash  end_x=165.25 end_maxX=165.25 round_maxX=165.59 deaths=0 finished=False
+    sol             end_x=167.61 end_maxX=167.61 round_maxX=167.95 deaths=0 finished=False
+    margin(maxX)=2.36
+    last-frame t=24.95 roundLeft=65.05
+  R3: width=194 goal=190 span=90.05s winner=deepseek-flash reason=时间到
+    deepseek-flash  end_x=  2.50 end_maxX= 31.07 round_maxX= 31.07 deaths=2 finished=False
+    sol             end_x= 10.12 end_maxX= 28.21 round_maxX= 28.21 deaths=1 finished=False
+    margin(maxX)=2.86
+    last-frame t=89.95 roundLeft=0.05
+  stuck intervals (>=0.6s without maxX advancing):
+    R1:
+      deepseek-flash: t=27.35-0.00 (62.7s) at maxX~184.1
+      sol: t=8.75-17.35 (8.6s) at maxX~59.5; t=35.60-46.85 (11.2s) at maxX~181.0; t=46.85-0.00 (43.2s) at maxX~181.4
+    R2:
+      deepseek-flash: none
+      sol: none
+    R3:
+      deepseek-flash: t=4.05-7.95 (3.9s) at maxX~27.9; t=8.40-90.05 (81.7s) at maxX~31.1
+      sol: t=4.40-5.15 (0.8s) at maxX~27.3; t=5.20-90.05 (84.9s) at maxX~28.2
+  milestone times (first t where x>= threshold):
+    R1:
+      deepseek-flash  10:1.1 20:2.6 30:4.1 40:5.5 60:9.0 80:11.8 100:14.8 120:18.0 140:20.8 160:23.7
+      sol             10:1.0 20:2.5 30:4.0 40:5.5 60:17.4 80:20.1 100:23.1 120:25.9 140:28.5 160:31.6
+    R2:
+      deepseek-flash  10:1.2 20:3.0 30:4.5 40:6.0 60:9.0 80:11.9 100:15.2 120:18.3 140:21.2 160:24.2
+      sol             10:1.1 20:2.5 30:4.1 40:5.8 60:8.8 80:11.8 100:14.8 120:17.9 140:20.8 160:23.9
+    R3:
+      deepseek-flash  10:1.1 20:3.0 30:8.2 40:- 60:- 80:- 100:- 120:- 140:- 160:-
+      sol             10:1.0 20:2.6 30:- 40:- 60:- 80:- 100:- 120:- 140:- 160:-
+==============================================================================
+r1-g2 seed=8112 seats=['sol', 'deepseek-flash']
+  R1: width=151 goal=147 span=21.50s winner=sol reason=到达终点
+    sol             end_x=146.63 end_maxX=146.63 round_maxX=146.97 deaths=0 finished=False
+    deepseek-flash  end_x=145.91 end_maxX=145.91 round_maxX=146.25 deaths=0 finished=False
+    margin(maxX)=0.72
+    last-frame t=21.40 roundLeft=68.60
+  R2: width=174 goal=170 span=24.90s winner=sol reason=到达终点
+    sol             end_x=169.58 end_maxX=169.58 round_maxX=170.26 deaths=0 finished=True
+    deepseek-flash  end_x= 94.19 end_maxX= 94.19 round_maxX= 94.87 deaths=1 finished=False
+    margin(maxX)=75.39
+    last-frame t=24.80 roundLeft=65.20
+  stuck intervals (>=0.6s without maxX advancing):
+    R1:
+      sol: none
+      deepseek-flash: t=13.70-14.35 (0.7s) at maxX~97.8
+    R2:
+      sol: none
+      deepseek-flash: t=11.30-22.75 (11.5s) at maxX~80.1
+  milestone times (first t where x>= threshold):
+    R1:
+      sol             10:1.1 20:2.6 30:4.1 40:5.5 60:8.6 80:11.2 100:14.3 120:17.5 140:20.4 160:-
+      deepseek-flash  10:1.0 20:2.5 30:4.0 40:5.5 60:8.3 80:11.2 100:14.7 120:17.6 140:20.6 160:-
+    R2:
+      sol             10:1.1 20:2.6 30:4.1 40:5.7 60:8.6 80:11.6 100:14.8 120:17.6 140:20.7 160:23.4
+      deepseek-flash  10:1.0 20:2.5 30:4.0 40:5.5 60:8.3 80:22.8 100:- 120:- 140:- 160:-

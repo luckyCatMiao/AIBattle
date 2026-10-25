@@ -1,0 +1,79 @@
+== r2-g1 net=1.79 seats=['deepseek-flash', 'sol'] ==
+P05 serve_f=466 point_f=583 t=29.15 start=1:4 -> rally=6 winner=sol endx=1.00
+   f= 480 t= 24.00 US    smash v=  5.1 contact=(5.90,2.16) body=(5.42,0.00) st= 51.8
+   f= 491 t= 24.55 sol   lift  v=  8.1 contact=(8.19,0.89) body=(8.99,0.00) st= 80.8
+   f= 516 t= 25.80 US    drive v=  6.1 contact=(3.47,2.24) body=(2.88,0.00) st= 35.2
+   f= 534 t= 26.70 sol   lift  v=  6.9 contact=(6.26,1.11) body=(7.32,0.00) st= 61.3
+   f= 555 t= 27.75 US    clear v=  8.7 contact=(2.93,2.35) body=(2.31,0.00) st= 32.1
+   f= 574 t= 28.70 sol J smash v= 20.3 contact=(8.58,2.37) body=(9.64,0.50) st= 46.0
+
+P06 serve_f=613 point_f=686 t=34.30 start=1:5 -> rally=3 winner=sol endx=6.32
+   f= 627 t= 31.35 US    smash v=  5.1 contact=(5.90,2.16) body=(5.42,0.00) st= 14.4
+   f= 639 t= 31.95 sol   lift  v=  8.6 contact=(8.41,0.62) body=(9.23,0.00) st= 52.5
+   f= 664 t= 33.20 US    drive v=  6.3 contact=(3.23,2.20) body=(2.89,0.00) st=  8.1
+
+P07 serve_f=716 point_f=787 t=39.35 start=1:6 -> rally=3 winner=sol endx=6.33
+   f= 730 t= 36.50 US    smash v=  5.1 contact=(5.90,2.16) body=(5.41,0.00) st=  8.6
+   f= 741 t= 37.05 sol   lift  v=  8.1 contact=(8.19,0.89) body=(8.99,0.00) st= 69.8
+   f= 766 t= 38.30 US    drive v=  6.1 contact=(3.47,2.24) body=(2.89,0.00) st=  1.9
+
+P09 serve_f=874 point_f=957 t=47.85 start=2:7 -> rally=7 winner=sol endx=1.00
+   f= 888 t= 44.40 sol   smash v= 17.4 contact=(7.75,2.11) body=(8.25,0.00) st= 69.8
+   f= 892 t= 44.60 US    clear v=  7.5 contact=(5.28,1.64) body=(4.47,0.00) st=  7.3
+   f= 906 t= 45.30 sol   drive v= 12.3 contact=(8.98,2.16) body=(9.74,0.00) st= 63.4
+   f= 915 t= 45.75 US    clear v=  8.0 contact=(4.42,1.66) body=(3.78,0.00) st=  4.2
+   f= 929 t= 46.45 sol J drive v= 14.1 contact=(8.29,2.29) body=(9.11,0.46) st= 49.0
+   f= 935 t= 46.75 US    clear v=  7.6 contact=(4.98,1.80) body=(4.15,0.00) st=  3.2
+   f= 948 t= 47.40 sol J smash v= 18.7 contact=(8.19,2.31) body=(9.08,0.50) st= 32.4
+
+P13 serve_f=1275 point_f=1290 t=64.50 start=4:9 -> rally=1 winner=sol endx=2.02
+   f=1287 t= 64.35 sol J smash v= 32.0 contact=(5.92,1.87) body=(7.42,0.51) st= 37.6
+
+P14 serve_f=1320 point_f=1764 t=88.20 start=4:10 -> rally=24 winner=sol endx=1.50
+   f=1334 t= 66.70 US    smash v=  5.1 contact=(5.90,2.16) body=(5.42,0.00) st= 15.2
+   f=1346 t= 67.30 sol   lift  v=  8.9 contact=(8.41,0.63) body=(9.35,0.00) st= 36.4
+   f=1372 t= 68.60 US    clear v=  7.4 contact=(2.73,2.19) body=(2.51,0.00) st=  9.7
+   f=1392 t= 69.60 sol   lift  v=  8.6 contact=(8.72,0.88) body=(9.50,0.00) st= 37.5
+   f=1419 t= 70.95 US    clear v=  6.9 contact=(3.40,2.18) body=(2.84,0.00) st=  3.6
+   f=1433 t= 71.65 sol   clear v=  7.6 contact=(7.81,1.56) body=(8.60,0.00) st= 36.8
+   f=1447 t= 72.35 US    drive v= 12.8 contact=(3.74,2.19) body=(3.29,0.00) st=  0.0
+   f=1457 t= 72.85 sol   clear v=  8.1 contact=(9.04,1.61) body=(10.00,0.00) st= 31.2
+   f=1473 t= 73.65 US    clear v=  7.8 contact=(4.23,2.21) body=(3.52,0.00) st=  0.6
+   f=1492 t= 74.60 sol   clear v=  8.4 contact=(9.77,2.13) body=(10.36,0.00) st= 33.5
+   f=1512 t= 75.60 US    clear v=  8.4 contact=(3.57,2.06) body=(3.08,0.00) st=  0.0
+   f=1532 t= 76.60 sol   clear v=  8.4 contact=(9.82,2.03) body=(10.36,0.00) st= 38.5
+   f=1551 t= 77.55 US    clear v=  8.1 contact=(3.88,2.22) body=(3.24,0.00) st=  0.6
+   f=1571 t= 78.55 sol   clear v=  8.5 contact=(9.90,2.03) body=(10.54,0.00) st= 42.6
+   f=1589 t= 79.45 US    drive v= 12.4 contact=(3.95,2.20) body=(3.50,0.00) st=  0.6
+   f=1598 t= 79.90 sol   clear v=  8.1 contact=(8.56,1.79) body=(9.28,0.00) st= 40.8
+   f=1615 t= 80.75 US    clear v=  8.4 contact=(3.47,2.23) body=(2.75,0.00) st=  0.0
+   f=1635 t= 81.75 sol   clear v=  8.3 contact=(9.69,2.17) body=(10.25,0.00) st= 41.5
+   f=1655 t= 82.75 US    clear v=  8.5 contact=(3.56,2.06) body=(3.06,0.00) st=  0.0
+   f=1673 t= 83.65 sol   drive v= 13.4 contact=(9.45,2.20) body=(10.02,0.00) st= 44.8
+   f=1681 t= 84.05 US    clear v=  7.8 contact=(4.59,1.78) body=(3.86,0.00) st=  1.5
+   f=1699 t= 84.95 sol   clear v=  8.4 contact=(9.73,2.03) body=(10.30,0.00) st= 44.0
+   f=1718 t= 85.90 US    clear v=  8.2 contact=(3.81,2.21) body=(3.17,0.00) st=  0.0
+   f=1738 t= 86.90 sol   clear v=  8.5 contact=(9.86,2.04) body=(10.43,0.00) st= 48.5
+
+P15 serve_f=1794 point_f=2165 t=108.25 start=4:11 -> rally=20 winner=sol endx=0.90
+   f=1808 t= 90.40 US    smash v=  5.1 contact=(5.90,2.16) body=(5.42,0.00) st=  0.0
+   f=1819 t= 90.95 sol   lift  v=  8.6 contact=(8.18,0.90) body=(9.07,0.00) st= 61.9
+   f=1846 t= 92.30 US    clear v=  7.4 contact=(2.86,2.25) body=(2.23,0.00) st=  0.0
+   f=1862 t= 93.10 sol   clear v=  7.4 contact=(7.65,1.62) body=(8.62,0.00) st= 61.1
+   f=1875 t= 93.75 US    drive v= 12.5 contact=(4.09,2.18) body=(3.42,0.00) st=  0.6
+   f=1887 t= 94.35 sol   lift  v=  9.8 contact=(10.43,1.29) body=(11.27,0.00) st= 55.4
+   f=1919 t= 95.95 US    drive v= 13.4 contact=(3.44,2.19) body=(2.78,0.00) st=  3.8
+   f=1928 t= 96.40 sol   clear v=  8.0 contact=(8.44,1.76) body=(9.22,0.00) st= 55.9
+   f=1944 t= 97.20 US    clear v=  6.8 contact=(3.51,2.19) body=(2.98,0.00) st=  1.6
+   f=1960 t= 98.00 sol   clear v=  7.8 contact=(7.89,1.47) body=(8.94,0.00) st= 52.1
+   f=1973 t= 98.65 US    drive v= 12.5 contact=(4.15,2.15) body=(3.47,0.00) st=  0.0
+   f=1985 t= 99.25 sol   lift  v=  9.9 contact=(10.50,1.26) body=(11.16,0.00) st= 41.0
+   f=2017 t=100.85 US    drive v= 13.6 contact=(3.23,2.18) body=(2.79,0.00) st=  0.0
+   f=2027 t=101.35 sol   clear v=  8.0 contact=(8.87,1.63) body=(9.85,0.00) st= 42.1
+   f=2043 t=102.15 US    clear v=  8.0 contact=(4.11,2.20) body=(3.40,0.00) st=  0.6
+   f=2062 t=103.10 sol   clear v=  8.3 contact=(9.74,2.18) body=(10.31,0.00) st= 44.1
+   f=2081 t=104.05 US    clear v=  6.6 contact=(3.69,2.15) body=(3.16,0.00) st=  0.6
+   f=2100 t=105.00 sol   lift  v=  8.8 contact=(8.88,0.71) body=(9.67,0.00) st= 46.8
+   f=2127 t=106.35 US    clear v=  6.9 contact=(3.45,2.21) body=(2.83,0.00) st=  0.6
+   f=2142 t=107.10 sol   clear v=  7.5 contact=(7.65,1.67) body=(8.66,0.00) st= 47.0
+

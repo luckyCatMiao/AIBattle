@@ -1,0 +1,252 @@
+[
+  {
+    "offset": 0,
+    "initialStamina": 100,
+    "style": "retained_start",
+    "seat": 0,
+    "score": [
+      2,
+      11
+    ],
+    "frames": 1868,
+    "windows": 187,
+    "maxMs": 57.402000000000015,
+    "hits": [
+      39,
+      32
+    ],
+    "smashes": [
+      32,
+      7
+    ],
+    "minStamina": [
+      55.3499999999992,
+      46.39999999999878
+    ],
+    "reasons": {
+      "落在自己半场": 12,
+      "落在对方半场": 1
+    },
+    "hitKinds": {
+      "1-smash": 7,
+      "0-lift": 3,
+      "1-clear": 9,
+      "0-smash": 32,
+      "1-lift": 16,
+      "0-clear": 3,
+      "0-drop": 1
+    },
+    "misses": 0,
+    "service": {
+      "won": 1,
+      "lost": 2
+    },
+    "winner": 1,
+    "longestRally": 12
+  },
+  {
+    "offset": 0,
+    "initialStamina": 100,
+    "style": "retained_start",
+    "seat": 1,
+    "score": [
+      0,
+      11
+    ],
+    "frames": 1260,
+    "windows": 126,
+    "maxMs": 59.55790000000002,
+    "hits": [
+      26,
+      16
+    ],
+    "smashes": [
+      25,
+      1
+    ],
+    "minStamina": [
+      80.49999999999996,
+      56.949999999999605
+    ],
+    "reasons": {
+      "落在自己半场": 11
+    },
+    "hitKinds": {
+      "1-smash": 1,
+      "0-lift": 1,
+      "1-clear": 4,
+      "0-smash": 25,
+      "1-lift": 11
+    },
+    "misses": 0,
+    "service": {
+      "won": 10,
+      "lost": 0
+    },
+    "winner": 1,
+    "longestRally": 7
+  },
+  {
+    "offset": 0,
+    "initialStamina": 100,
+    "style": "round1",
+    "seat": 0,
+    "score": [
+      11,
+      0
+    ],
+    "frames": 1280,
+    "windows": 128,
+    "maxMs": 31.40560000000005,
+    "hits": [
+      16,
+      27
+    ],
+    "smashes": [
+      0,
+      27
+    ],
+    "minStamina": [
+      56.949999999999605,
+      80.19999999999996
+    ],
+    "reasons": {
+      "落在自己半场": 11
+    },
+    "hitKinds": {
+      "1-smash": 27,
+      "0-lift": 13,
+      "0-clear": 3
+    },
+    "misses": 0,
+    "service": {
+      "won": 11,
+      "lost": 0
+    },
+    "winner": 0,
+    "longestRally": 7
+  },
+  {
+    "offset": 0,
+    "initialStamina": 100,
+    "style": "round1",
+    "seat": 1,
+    "score": [
+      0,
+      11
+    ],
+    "frames": 1260,
+    "windows": 126,
+    "maxMs": 59.35069999999996,
+    "hits": [
+      26,
+      16
+    ],
+    "smashes": [
+      25,
+      1
+    ],
+    "minStamina": [
+      80.49999999999996,
+      56.949999999999605
+    ],
+    "reasons": {
+      "落在自己半场": 11
+    },
+    "hitKinds": {
+      "1-smash": 1,
+      "0-lift": 1,
+      "1-clear": 4,
+      "0-smash": 25,
+      "1-lift": 11
+    },
+    "misses": 0,
+    "service": {
+      "won": 10,
+      "lost": 0
+    },
+    "winner": 1,
+    "longestRally": 7
+  },
+  {
+    "offset": 0,
+    "initialStamina": 100,
+    "style": "r2_lift",
+    "seat": 0,
+    "score": [
+      0,
+      11
+    ],
+    "frames": 2472,
+    "windows": 248,
+    "maxMs": 52.53200000000015,
+    "hits": [
+      50,
+      40
+    ],
+    "smashes": [
+      49,
+      0
+    ],
+    "minStamina": [
+      40.599999999998914,
+      39.49999999999936
+    ],
+    "reasons": {
+      "落在自己半场": 11
+    },
+    "hitKinds": {
+      "1-lift": 40,
+      "0-smash": 49,
+      "0-clear": 1
+    },
+    "misses": 0,
+    "service": {
+      "won": 0,
+      "lost": 1
+    },
+    "winner": 1,
+    "longestRally": 27
+  },
+  {
+    "offset": 0,
+    "initialStamina": 100,
+    "style": "r2_lift",
+    "seat": 1,
+    "score": [
+      0,
+      1
+    ],
+    "frames": 4800,
+    "windows": 480,
+    "maxMs": 73.44599999999991,
+    "hits": [
+      91,
+      91
+    ],
+    "smashes": [
+      0,
+      33
+    ],
+    "minStamina": [
+      84.04999999999995,
+      66.99999999999983
+    ],
+    "reasons": {
+      "落在对方半场": 1
+    },
+    "hitKinds": {
+      "1-smash": 33,
+      "0-lift": 91,
+      "1-clear": 41,
+      "1-drop": 17
+    },
+    "misses": 0,
+    "service": {
+      "won": 0,
+      "lost": 0
+    },
+    "winner": 1,
+    "longestRally": 179
+  }
+]

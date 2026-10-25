@@ -1,0 +1,5632 @@
+{
+  "run": "run-20261025-013221",
+  "phase": "比赛进行中",
+  "models": {
+    "deepseek-g1": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-g1": "DeepSeek Gen1",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "max",
+  "round": 4,
+  "rounds": 6,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.9,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "2af0f0ac42dde503d648f72b457d2a80441ea0c56e537ba9fc7bc84ee5c0b05d"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.52,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "514b2b47d1825da050226606af9d0f6645f6c479da19a3f443d532e5d664d7e5"
+    },
+    {
+      "id": "r1-g3",
+      "round": 1,
+      "game": 3,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 1.61,
+      "scores": {
+        "deepseek-g1": 3,
+        "sol": 5
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "7e8bde4d99986de5aa438cec7352508305e31b205f83ec886ff67f3f390805ba"
+    },
+    {
+      "id": "r1-g4",
+      "round": 1,
+      "game": 4,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 6.59,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "c8e2405e312faebc27375a366c7c552f093bee05e50d22d0c9e77eabc0a983f9"
+    },
+    {
+      "id": "r1-g5",
+      "round": 1,
+      "game": 5,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.74,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "a023ebb3b6a73fe1a2078e72dfce3e11fda253b1c9aee90b31d92a972a0cc4a1"
+    },
+    {
+      "id": "r1-g6",
+      "round": 1,
+      "game": 6,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 3.1,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "668ea001169cf40276f20051c4678446b5207f3d49680ab904491c43f13bc223"
+    },
+    {
+      "id": "r1-g7",
+      "round": 1,
+      "game": 7,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.7,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "7fd9eeb3fbf44f22878f69b882dcf0f1000c47208e65b085238d01335ec3bcd9"
+    },
+    {
+      "id": "r1-g8",
+      "round": 1,
+      "game": 8,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.32,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "48b68a10c67547908aedd828d1b2e3c62972638070cafe1583136e749dd82b2b"
+    },
+    {
+      "id": "r1-g9",
+      "round": 1,
+      "game": 9,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.6,
+      "scores": {
+        "deepseek-g1": 4,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "3cbc9d578d1d3bac9fc19e739092e5bc9491ff4601d6c8645b8fb547a65df821"
+    },
+    {
+      "id": "r1-g10",
+      "round": 1,
+      "game": 10,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.53,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "9a3c418bed702a941bf1a9336d27f7c9b1fe23c1072a069720aa7ed6acacf554"
+    },
+    {
+      "id": "r1-g11",
+      "round": 1,
+      "game": 11,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.72,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "923cfc19790caf3dc5f748bb52670fa27fb9d66f6d01fabbd73eba4a5f4b435e"
+    },
+    {
+      "id": "r1-g12",
+      "round": 1,
+      "game": 12,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 2.89,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "8ce903dfe0413bf2b74564b8789861711aafb5c6676661e821570554c89ff8a1"
+    },
+    {
+      "id": "r1-g13",
+      "round": 1,
+      "game": 13,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 4.17,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "c8c2719ac493abaf6a423348ac991c05dc61ce34cdcf6a39da9e960b02d0d88f"
+    },
+    {
+      "id": "r1-g14",
+      "round": 1,
+      "game": 14,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "金球制胜",
+      "duration": 4.36,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2771,
+      "windows": 139,
+      "sha256": "5c8763c53e96fc7f7092359a355bde9c862384b08faf4ecc476bc749640eb6d8"
+    },
+    {
+      "id": "r1-g15",
+      "round": 1,
+      "game": 15,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.54,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "ca616061d2b095863bc0e1a23d2148db339a424a38a0c604f0f29af6b6253958"
+    },
+    {
+      "id": "r1-g16",
+      "round": 1,
+      "game": 16,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.29,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "c17ce777034579aa776be013ddca1c25fb98a90f065e3e9beeb10459924b93f9"
+    },
+    {
+      "id": "r1-g17",
+      "round": 1,
+      "game": 17,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.4,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "5887fd71e1c8dd91fa24f47126f3b489d962fcc89313a730d5879168888ead8f"
+    },
+    {
+      "id": "r1-g18",
+      "round": 1,
+      "game": 18,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 2.93,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "7793de6fe730594990af0635cd0ea6bacb107194ca0d111400617624c55e25dd"
+    },
+    {
+      "id": "r1-g19",
+      "round": 1,
+      "game": 19,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.7,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "961f392d69ca9ef6f5dcce8acaba910830a97f05828b4d8d88dcf41492a16a11"
+    },
+    {
+      "id": "r1-g20",
+      "round": 1,
+      "game": 20,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "金球制胜",
+      "duration": 4.91,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2543,
+      "windows": 128,
+      "sha256": "bae1a68481c17f9a1d93008f376a772502edcb5188618d5f34f21b747130a7e5"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.56,
+      "scores": {
+        "deepseek-g1": 5,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "896f105bae2cc023d21b4b5d26963cf24d482c0552a7861c98356d034d96cd12"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 6.87,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "e5da14deccf6bd0abee3197eb8e9b6b7da2d7b66811edcf00f5c888bc19a4f47"
+    },
+    {
+      "id": "r2-g3",
+      "round": 2,
+      "game": 3,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 5.92,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "0f62bd5bb3b465ada781108a4fa887a15915ca0aa3b409071d8f459dc0740ad3"
+    },
+    {
+      "id": "r2-g4",
+      "round": 2,
+      "game": 4,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 49.73,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "cf8130b0f53fb387c3ce47a0f4dd9d805ddb3378ba1f482ffa74af74ee5a2460"
+    },
+    {
+      "id": "r2-g5",
+      "round": 2,
+      "game": 5,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 66.95,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "ac6fa46a5870fa20590e8f44cce250add77804e55ce7937b44e20967cdcb9078"
+    },
+    {
+      "id": "r2-g6",
+      "round": 2,
+      "game": 6,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 17.55,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "cbb8c181c29f391b3d400044798309b9dacd3f719a5e94e1201a76f3ee774a52"
+    },
+    {
+      "id": "r2-g7",
+      "round": 2,
+      "game": 7,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.62,
+      "scores": {
+        "deepseek-g1": 6,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "6d592e64ca7372d2006bd6bdd205145e6f83faca07f4feaf548bd12977cc6f54"
+    },
+    {
+      "id": "r2-g8",
+      "round": 2,
+      "game": 8,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 9.27,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "aa0b7166cbf3df98cac4fd0af9204913732a35d26c3fe23ed2a1a5355f8407d6"
+    },
+    {
+      "id": "r2-g9",
+      "round": 2,
+      "game": 9,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.76,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "abcbb9aa277bd04ac67fe3e04a5634a077d8dd33a83f253e20b7d558423c1587"
+    },
+    {
+      "id": "r2-g10",
+      "round": 2,
+      "game": 10,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 61.05,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "2d4122c066bece535ec43fb87b2af77f9ff6260f092b53b4e79b0ad20da43b71"
+    },
+    {
+      "id": "r2-g11",
+      "round": 2,
+      "game": 11,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 59.47,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "0b9abd686d26cc41cbe30d7c6cae4ffbc67b09b0d8a89fbd3cc13da59a90dec3"
+    },
+    {
+      "id": "r2-g12",
+      "round": 2,
+      "game": 12,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 23.77,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "8e82f38617857249d4ff08d58f007a6c58846cd9e08b382648fd7bb7716c15d4"
+    },
+    {
+      "id": "r2-g13",
+      "round": 2,
+      "game": 13,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.65,
+      "scores": {
+        "deepseek-g1": 8,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "dd2735d9853d5efaec2b820cda70f3308d381304e5670102a7acd18d2ea64bcd"
+    },
+    {
+      "id": "r2-g14",
+      "round": 2,
+      "game": 14,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.78,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 5
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "2de90df1c8353a8010d31a265e59e0cb3e1f6e620ec2ad6d4328c18bde18c6fd"
+    },
+    {
+      "id": "r2-g15",
+      "round": 2,
+      "game": 15,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 7.34,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "3c4ee6418c8cba0a89a2e7edd820c704b1ce201751341293cde99f88e358aa43"
+    },
+    {
+      "id": "r2-g16",
+      "round": 2,
+      "game": 16,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 46.19,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "7ef349f46ad2edcd8e7b122034cb5762c6c29f5ff6b483fa4c7f02266818131e"
+    },
+    {
+      "id": "r2-g17",
+      "round": 2,
+      "game": 17,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 34.26,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "b84c2cbff63f8933d58dede8bc08a24ab06cc31e8df58f2080586aba7bc2da96"
+    },
+    {
+      "id": "r2-g18",
+      "round": 2,
+      "game": 18,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 19.09,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "b84024a61fac4dcbd4fc70515dc53a877fa2a8d1dd79d652d523ca9f535921ed"
+    },
+    {
+      "id": "r2-g19",
+      "round": 2,
+      "game": 19,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 1.75,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "4cac2277420b3be3bcff1d28fb9f4d2d3981b972aaf6c7acfe4cde054af03d0e"
+    },
+    {
+      "id": "r2-g20",
+      "round": 2,
+      "game": 20,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 8.69,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "96789d36e928d3ddbd289d274c78bd0682b1554da93f2b6c625b9099073f5f83"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 7.05,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "88c6545390d6dde4d7befb323d43ddb391cc16c2c264bab90fc3a7b5d7a8d993"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 85.37,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "a15e1e68776a531057a34ad548be57bb322c76a223491ed0a2f77afaa9d3f116"
+    },
+    {
+      "id": "r3-g3",
+      "round": 3,
+      "game": 3,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "金球制胜",
+      "duration": 81.34,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2438,
+      "windows": 122,
+      "sha256": "bd936bfb666f5d42b0b1121ec55d93d6365fc2c8495d6789333d06fa506abffd"
+    },
+    {
+      "id": "r3-g4",
+      "round": 3,
+      "game": 4,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 16.66,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "17d531f2e5616a9ae702a9a199d226cab8646fd607df6334bbece552b1892ba3"
+    },
+    {
+      "id": "r3-g5",
+      "round": 3,
+      "game": 5,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.55,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "58a5d916261091ce25a59c9850c26fe46f3b07eaf88897806929b0678bc9580b"
+    },
+    {
+      "id": "r3-g6",
+      "round": 3,
+      "game": 6,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.89,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "b4464ae6fea30ffa8aee7f3c6eaabbe065d39785ce7dcdeaecad2ccc2f15fe96"
+    },
+    {
+      "id": "r3-g7",
+      "round": 3,
+      "game": 7,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.57,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "b057b7b473a8d7f65f1074c5a11dcbbdb7a2c472ba52bfda5030ed5b7270e0a2"
+    },
+    {
+      "id": "r3-g8",
+      "round": 3,
+      "game": 8,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 40.42,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "1abd95e997892832dc30aad150f789668ca63c9bb7d8467fd650a3bb623d818b"
+    },
+    {
+      "id": "r3-g9",
+      "round": 3,
+      "game": 9,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 29.32,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "e92de0f740afe3fd5cbeb67ee27553015ea9dd9886bfcc652ff59114cb785438"
+    },
+    {
+      "id": "r3-g10",
+      "round": 3,
+      "game": 10,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 23.93,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "1378bcc7b4f07849a25362b08629f4451bccf45330b22fac9ea7df46dace8947"
+    },
+    {
+      "id": "r3-g11",
+      "round": 3,
+      "game": 11,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.55,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "ad751e7326c6ee205f7bd6b481b4bcd3b5e231870f9e5e8f874b58e5751fe9be"
+    },
+    {
+      "id": "r3-g12",
+      "round": 3,
+      "game": 12,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 10.72,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "621e43984e5198ff7d877fb7fafba3f3ea7e6b8c03b27e4395af4665198d749d"
+    },
+    {
+      "id": "r3-g13",
+      "round": 3,
+      "game": 13,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "金球制胜",
+      "duration": 12.77,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2437,
+      "windows": 122,
+      "sha256": "021a0678003258329b207b6e14fa0eddc596828b0a2ba4876cd7eb8a145f9de8"
+    },
+    {
+      "id": "r3-g14",
+      "round": 3,
+      "game": 14,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 34.95,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "72681231aa23a109277e8aef6c38a4536e9a45422b8a00db7b7be3defe0cd792"
+    },
+    {
+      "id": "r3-g15",
+      "round": 3,
+      "game": 15,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 84.09,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "f560a80e0645ec3741014ac1009972d5b3cafeec36e307cb557cc5c809b2a09e"
+    },
+    {
+      "id": "r3-g16",
+      "round": 3,
+      "game": 16,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 28.28,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "031fbbc28b7942b7ce827f8311fa4180713d147dcd0b9f5480453b4c63fe48a1"
+    },
+    {
+      "id": "r3-g17",
+      "round": 3,
+      "game": 17,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.53,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "2064b14f9e2ef5539225205a754fba10714bce0eb76069a743d8dbdb265ee8a0"
+    },
+    {
+      "id": "r3-g18",
+      "round": 3,
+      "game": 18,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.46,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 5
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "a72c7d7b3498494737ff476f57d6dcdea7e4835f9006f122d359b51c609df76e"
+    },
+    {
+      "id": "r3-g19",
+      "round": 3,
+      "game": 19,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 6.65,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "e65dac354a18ea6a7c9a050223d4124379ae0bf422659cb4af858b2a65485557"
+    },
+    {
+      "id": "r3-g20",
+      "round": 3,
+      "game": 20,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 52.79,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "5f5ed6f1280048b7d1459fbe671619eabfc424d7c8a0dd12f50dcdb85cee76bb"
+    },
+    {
+      "id": "r4-g1",
+      "round": 4,
+      "game": 1,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.57,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "bb7003c7943d5efc2bfc727bd4934317f0854fbcaf96461095bc88ec05424f4d"
+    },
+    {
+      "id": "r4-g2",
+      "round": 4,
+      "game": 2,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 4.34,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "39382fd1634fa898dbef68987516b4a222d4c1614984a2e31c0aaa3696f8397d"
+    },
+    {
+      "id": "r4-g3",
+      "round": 4,
+      "game": 3,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 2.0,
+      "scores": {
+        "deepseek-g1": 6,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "79a222a41a22fba2a6933d2a258030e9f293d5714456d85c7978152abbda7449"
+    },
+    {
+      "id": "r4-g4",
+      "round": 4,
+      "game": 4,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.6,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "c2cd67aa5cf7587e3c3e134b6ec8bc3bef64be39c5a589a73b2801f6222fa5a2"
+    },
+    {
+      "id": "r4-g5",
+      "round": 4,
+      "game": 5,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.81,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "dc8823e25b2ed04a8fa7c0b7962e517d506babf3e2950f9e68408b7efd405b83"
+    },
+    {
+      "id": "r4-g6",
+      "round": 4,
+      "game": 6,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 2.92,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "c79ef644e4ce2482f592aa7589aa7d430cc4ec9b9f29bf347246c5c90e27c983"
+    },
+    {
+      "id": "r4-g7",
+      "round": 4,
+      "game": 7,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.59,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "d771f810eafa79120c45ebd093a66c2861c7e021d1433a466e19e56d42a23a1b"
+    },
+    {
+      "id": "r4-g8",
+      "round": 4,
+      "game": 8,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.25,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "848ba3068885b833e84cc4e85ddd0357e2e2fe72feaf9422f50df4fffb8d0a7e"
+    },
+    {
+      "id": "r4-g9",
+      "round": 4,
+      "game": 9,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.6,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "43e3a90b72edc68779f6963fedba93978a4c07cbf13a82b76950ccd2cc710910"
+    },
+    {
+      "id": "r4-g10",
+      "round": 4,
+      "game": 10,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 5.92,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "5a61ac05df145052e352cde1bdc4c8f7687b08a3a6c988b8ead9b8fde76223f1"
+    },
+    {
+      "id": "r4-g11",
+      "round": 4,
+      "game": 11,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.66,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "67b6b7739e88d3074ca55090a1231c3fcfb674b81e5ef66ac83dc8b097700a48"
+    },
+    {
+      "id": "r4-g12",
+      "round": 4,
+      "game": 12,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 2.92,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "850717614145c4593d4b290a82ef9b701e52f9db4f9c911a4a2a59aaeb535bab"
+    },
+    {
+      "id": "r4-g13",
+      "round": 4,
+      "game": 13,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.54,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "258c6b3441206e78a2216b4636219902194d04c7afd8913797d6bbb4aae4210c"
+    },
+    {
+      "id": "r4-g14",
+      "round": 4,
+      "game": 14,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.36,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "238322410a45d32137c3690a99746d58023bd2b90193374b5c793e1e03da988b"
+    },
+    {
+      "id": "r4-g15",
+      "round": 4,
+      "game": 15,
+      "teamSize": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.59,
+      "scores": {
+        "deepseek-g1": 3,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "6d79798b8066b2d4ac77e66932c6dfefbb71cc3d46e8f170bdfe260019478a96"
+    },
+    {
+      "id": "r4-g16",
+      "round": 4,
+      "game": 16,
+      "teamSize": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 5.93,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "9780b8cecd1ee8cdc05cd6e41fbf919a67220d000776f66d04559e57f95244d1"
+    },
+    {
+      "id": "r4-g17",
+      "round": 4,
+      "game": 17,
+      "teamSize": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.47,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "042a51715f00f7f325640c0d18f99fb6cc934b1ad44b21c5a37195347bee241b"
+    },
+    {
+      "id": "r4-g18",
+      "round": 4,
+      "game": 18,
+      "teamSize": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 2.57,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "3cd231ece17eb7a1d716918f3693e132e744f460725aa48d0d6226f448f12f09"
+    },
+    {
+      "id": "r4-g19",
+      "round": 4,
+      "game": 19,
+      "teamSize": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 3.88,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "sha256": "1f832b43d2ff3b2554421c6607b43fa9913f7af5af679ce4f25350a8db38b422"
+    },
+    {
+      "id": "r4-g20",
+      "round": 4,
+      "game": 20,
+      "teamSize": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.42,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "sha256": "b78b4773a43cd48b85970786cb89ed03a72abd21aa8ddfd0b55889f256c0783f"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.9,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 1225,
+          "fouls": 0
+        },
+        {
+          "kicks": 11,
+          "possession": 102,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        2
+      ],
+      "sha256": "2af0f0ac42dde503d648f72b457d2a80441ea0c56e537ba9fc7bc84ee5c0b05d"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.52,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 272,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 382,
+          "fouls": 3
+        }
+      ],
+      "fouls": [
+        0,
+        3
+      ],
+      "saves": [
+        4,
+        2
+      ],
+      "sha256": "514b2b47d1825da050226606af9d0f6645f6c479da19a3f443d532e5d664d7e5"
+    },
+    {
+      "id": "r1-g3",
+      "round": 1,
+      "game": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 1.61,
+      "scores": {
+        "deepseek-g1": 3,
+        "sol": 5
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 3,
+          "possession": 737,
+          "fouls": 0
+        },
+        {
+          "kicks": 13,
+          "possession": 24,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "7e8bde4d99986de5aa438cec7352508305e31b205f83ec886ff67f3f390805ba"
+    },
+    {
+      "id": "r1-g4",
+      "round": 1,
+      "game": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 6.59,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 27,
+          "possession": 162,
+          "fouls": 0
+        },
+        {
+          "kicks": 30,
+          "possession": 196,
+          "fouls": 14
+        }
+      ],
+      "fouls": [
+        0,
+        14
+      ],
+      "saves": [
+        6,
+        0
+      ],
+      "sha256": "c8e2405e312faebc27375a366c7c552f093bee05e50d22d0c9e77eabc0a983f9"
+    },
+    {
+      "id": "r1-g5",
+      "round": 1,
+      "game": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.74,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 15,
+          "possession": 74,
+          "fouls": 5
+        },
+        {
+          "kicks": 26,
+          "possession": 222,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        5,
+        0
+      ],
+      "saves": [
+        1,
+        1
+      ],
+      "sha256": "a023ebb3b6a73fe1a2078e72dfce3e11fda253b1c9aee90b31d92a972a0cc4a1"
+    },
+    {
+      "id": "r1-g6",
+      "round": 1,
+      "game": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 3.1,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 2,
+          "possession": 17,
+          "fouls": 0
+        },
+        {
+          "kicks": 5,
+          "possession": 2288,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "668ea001169cf40276f20051c4678446b5207f3d49680ab904491c43f13bc223"
+    },
+    {
+      "id": "r1-g7",
+      "round": 1,
+      "game": 7,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.7,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 1111,
+          "fouls": 0
+        },
+        {
+          "kicks": 16,
+          "possession": 91,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        1,
+        3
+      ],
+      "sha256": "7fd9eeb3fbf44f22878f69b882dcf0f1000c47208e65b085238d01335ec3bcd9"
+    },
+    {
+      "id": "r1-g8",
+      "round": 1,
+      "game": 8,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.32,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 20,
+          "possession": 199,
+          "fouls": 0
+        },
+        {
+          "kicks": 20,
+          "possession": 486,
+          "fouls": 1
+        }
+      ],
+      "fouls": [
+        0,
+        1
+      ],
+      "saves": [
+        2,
+        0
+      ],
+      "sha256": "48b68a10c67547908aedd828d1b2e3c62972638070cafe1583136e749dd82b2b"
+    },
+    {
+      "id": "r1-g9",
+      "round": 1,
+      "game": 9,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.6,
+      "scores": {
+        "deepseek-g1": 4,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 5,
+          "possession": 1009,
+          "fouls": 0
+        },
+        {
+          "kicks": 6,
+          "possession": 9,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "3cbc9d578d1d3bac9fc19e739092e5bc9491ff4601d6c8645b8fb547a65df821"
+    },
+    {
+      "id": "r1-g10",
+      "round": 1,
+      "game": 10,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.53,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 32,
+          "possession": 174,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 88,
+          "fouls": 23
+        }
+      ],
+      "fouls": [
+        0,
+        23
+      ],
+      "saves": [
+        4,
+        1
+      ],
+      "sha256": "9a3c418bed702a941bf1a9336d27f7c9b1fe23c1072a069720aa7ed6acacf554"
+    },
+    {
+      "id": "r1-g11",
+      "round": 1,
+      "game": 11,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.72,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 26,
+          "possession": 135,
+          "fouls": 8
+        },
+        {
+          "kicks": 30,
+          "possession": 183,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        8,
+        0
+      ],
+      "saves": [
+        1,
+        6
+      ],
+      "sha256": "923cfc19790caf3dc5f748bb52670fa27fb9d66f6d01fabbd73eba4a5f4b435e"
+    },
+    {
+      "id": "r1-g12",
+      "round": 1,
+      "game": 12,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 2.89,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 3,
+          "possession": 3,
+          "fouls": 0
+        },
+        {
+          "kicks": 3,
+          "possession": 2384,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "8ce903dfe0413bf2b74564b8789861711aafb5c6676661e821570554c89ff8a1"
+    },
+    {
+      "id": "r1-g13",
+      "round": 1,
+      "game": 13,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 4.17,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 18,
+          "possession": 1741,
+          "fouls": 0
+        },
+        {
+          "kicks": 13,
+          "possession": 48,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        2
+      ],
+      "sha256": "c8c2719ac493abaf6a423348ac991c05dc61ce34cdcf6a39da9e960b02d0d88f"
+    },
+    {
+      "id": "r1-g14",
+      "round": 1,
+      "game": 14,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "金球制胜",
+      "duration": 4.36,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2771,
+      "windows": 139,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 21,
+          "possession": 107,
+          "fouls": 0
+        },
+        {
+          "kicks": 27,
+          "possession": 758,
+          "fouls": 3
+        }
+      ],
+      "fouls": [
+        0,
+        3
+      ],
+      "saves": [
+        3,
+        0
+      ],
+      "sha256": "5c8763c53e96fc7f7092359a355bde9c862384b08faf4ecc476bc749640eb6d8"
+    },
+    {
+      "id": "r1-g15",
+      "round": 1,
+      "game": 15,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.54,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 2,
+          "possession": 1534,
+          "fouls": 0
+        },
+        {
+          "kicks": 5,
+          "possession": 15,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "ca616061d2b095863bc0e1a23d2148db339a424a38a0c604f0f29af6b6253958"
+    },
+    {
+      "id": "r1-g16",
+      "round": 1,
+      "game": 16,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.29,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 28,
+          "possession": 242,
+          "fouls": 0
+        },
+        {
+          "kicks": 23,
+          "possession": 82,
+          "fouls": 4
+        }
+      ],
+      "fouls": [
+        0,
+        4
+      ],
+      "saves": [
+        2,
+        4
+      ],
+      "sha256": "c17ce777034579aa776be013ddca1c25fb98a90f065e3e9beeb10459924b93f9"
+    },
+    {
+      "id": "r1-g17",
+      "round": 1,
+      "game": 17,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.4,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 182,
+          "fouls": 5
+        },
+        {
+          "kicks": 22,
+          "possession": 157,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        5,
+        0
+      ],
+      "saves": [
+        1,
+        3
+      ],
+      "sha256": "5887fd71e1c8dd91fa24f47126f3b489d962fcc89313a730d5879168888ead8f"
+    },
+    {
+      "id": "r1-g18",
+      "round": 1,
+      "game": 18,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 2.93,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 4,
+          "possession": 4,
+          "fouls": 0
+        },
+        {
+          "kicks": 8,
+          "possession": 1594,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "7793de6fe730594990af0635cd0ea6bacb107194ca0d111400617624c55e25dd"
+    },
+    {
+      "id": "r1-g19",
+      "round": 1,
+      "game": 19,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.7,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 19,
+          "possession": 862,
+          "fouls": 0
+        },
+        {
+          "kicks": 12,
+          "possession": 51,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        1,
+        2
+      ],
+      "sha256": "961f392d69ca9ef6f5dcce8acaba910830a97f05828b4d8d88dcf41492a16a11"
+    },
+    {
+      "id": "r1-g20",
+      "round": 1,
+      "game": 20,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "金球制胜",
+      "duration": 4.91,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2543,
+      "windows": 128,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 20,
+          "possession": 155,
+          "fouls": 0
+        },
+        {
+          "kicks": 29,
+          "possession": 646,
+          "fouls": 8
+        }
+      ],
+      "fouls": [
+        0,
+        8
+      ],
+      "saves": [
+        2,
+        3
+      ],
+      "sha256": "bae1a68481c17f9a1d93008f376a772502edcb5188618d5f34f21b747130a7e5"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.56,
+      "scores": {
+        "deepseek-g1": 5,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 6,
+          "possession": 1227,
+          "fouls": 0
+        },
+        {
+          "kicks": 2,
+          "possession": 7,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "896f105bae2cc023d21b4b5d26963cf24d482c0552a7861c98356d034d96cd12"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 6.87,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 28,
+          "possession": 237,
+          "fouls": 0
+        },
+        {
+          "kicks": 32,
+          "possession": 103,
+          "fouls": 12
+        }
+      ],
+      "fouls": [
+        0,
+        12
+      ],
+      "saves": [
+        5,
+        3
+      ],
+      "sha256": "e5da14deccf6bd0abee3197eb8e9b6b7da2d7b66811edcf00f5c888bc19a4f47"
+    },
+    {
+      "id": "r2-g3",
+      "round": 2,
+      "game": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 5.92,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 19,
+          "possession": 109,
+          "fouls": 3
+        },
+        {
+          "kicks": 28,
+          "possession": 192,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        3,
+        0
+      ],
+      "saves": [
+        2,
+        1
+      ],
+      "sha256": "0f62bd5bb3b465ada781108a4fa887a15915ca0aa3b409071d8f459dc0740ad3"
+    },
+    {
+      "id": "r2-g4",
+      "round": 2,
+      "game": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 49.73,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 73,
+          "fouls": 0
+        },
+        {
+          "kicks": 12,
+          "possession": 1101,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "cf8130b0f53fb387c3ce47a0f4dd9d805ddb3378ba1f482ffa74af74ee5a2460"
+    },
+    {
+      "id": "r2-g5",
+      "round": 2,
+      "game": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 66.95,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 16,
+          "possession": 1462,
+          "fouls": 0
+        },
+        {
+          "kicks": 10,
+          "possession": 35,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        0
+      ],
+      "sha256": "ac6fa46a5870fa20590e8f44cce250add77804e55ce7937b44e20967cdcb9078"
+    },
+    {
+      "id": "r2-g6",
+      "round": 2,
+      "game": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 17.55,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 182,
+          "fouls": 0
+        },
+        {
+          "kicks": 24,
+          "possession": 348,
+          "fouls": 1
+        }
+      ],
+      "fouls": [
+        0,
+        1
+      ],
+      "saves": [
+        1,
+        2
+      ],
+      "sha256": "cbb8c181c29f391b3d400044798309b9dacd3f719a5e94e1201a76f3ee774a52"
+    },
+    {
+      "id": "r2-g7",
+      "round": 2,
+      "game": 7,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.62,
+      "scores": {
+        "deepseek-g1": 6,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 7,
+          "possession": 981,
+          "fouls": 0
+        },
+        {
+          "kicks": 3,
+          "possession": 33,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "6d592e64ca7372d2006bd6bdd205145e6f83faca07f4feaf548bd12977cc6f54"
+    },
+    {
+      "id": "r2-g8",
+      "round": 2,
+      "game": 8,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 9.27,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 23,
+          "possession": 232,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 180,
+          "fouls": 5
+        }
+      ],
+      "fouls": [
+        0,
+        5
+      ],
+      "saves": [
+        5,
+        2
+      ],
+      "sha256": "aa0b7166cbf3df98cac4fd0af9204913732a35d26c3fe23ed2a1a5355f8407d6"
+    },
+    {
+      "id": "r2-g9",
+      "round": 2,
+      "game": 9,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.76,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 19,
+          "possession": 67,
+          "fouls": 7
+        },
+        {
+          "kicks": 22,
+          "possession": 207,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        7,
+        0
+      ],
+      "saves": [
+        1,
+        3
+      ],
+      "sha256": "abcbb9aa277bd04ac67fe3e04a5634a077d8dd33a83f253e20b7d558423c1587"
+    },
+    {
+      "id": "r2-g10",
+      "round": 2,
+      "game": 10,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 61.05,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 9,
+          "possession": 28,
+          "fouls": 0
+        },
+        {
+          "kicks": 2,
+          "possession": 1352,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "2d4122c066bece535ec43fb87b2af77f9ff6260f092b53b4e79b0ad20da43b71"
+    },
+    {
+      "id": "r2-g11",
+      "round": 2,
+      "game": 11,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 59.47,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 8,
+          "possession": 1280,
+          "fouls": 0
+        },
+        {
+          "kicks": 13,
+          "possession": 53,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "0b9abd686d26cc41cbe30d7c6cae4ffbc67b09b0d8a89fbd3cc13da59a90dec3"
+    },
+    {
+      "id": "r2-g12",
+      "round": 2,
+      "game": 12,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 23.77,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 20,
+          "possession": 125,
+          "fouls": 0
+        },
+        {
+          "kicks": 22,
+          "possession": 476,
+          "fouls": 2
+        }
+      ],
+      "fouls": [
+        0,
+        2
+      ],
+      "saves": [
+        3,
+        1
+      ],
+      "sha256": "8e82f38617857249d4ff08d58f007a6c58846cd9e08b382648fd7bb7716c15d4"
+    },
+    {
+      "id": "r2-g13",
+      "round": 2,
+      "game": 13,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.65,
+      "scores": {
+        "deepseek-g1": 8,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 364,
+          "fouls": 0
+        },
+        {
+          "kicks": 6,
+          "possession": 59,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "dd2735d9853d5efaec2b820cda70f3308d381304e5670102a7acd18d2ea64bcd"
+    },
+    {
+      "id": "r2-g14",
+      "round": 2,
+      "game": 14,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.78,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 5
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 27,
+          "possession": 197,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 84,
+          "fouls": 10
+        }
+      ],
+      "fouls": [
+        0,
+        10
+      ],
+      "saves": [
+        2,
+        1
+      ],
+      "sha256": "2de90df1c8353a8010d31a265e59e0cb3e1f6e620ec2ad6d4328c18bde18c6fd"
+    },
+    {
+      "id": "r2-g15",
+      "round": 2,
+      "game": 15,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 7.34,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 24,
+          "possession": 142,
+          "fouls": 4
+        },
+        {
+          "kicks": 30,
+          "possession": 185,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        4,
+        0
+      ],
+      "saves": [
+        0,
+        2
+      ],
+      "sha256": "3c4ee6418c8cba0a89a2e7edd820c704b1ce201751341293cde99f88e358aa43"
+    },
+    {
+      "id": "r2-g16",
+      "round": 2,
+      "game": 16,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 46.19,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 14,
+          "possession": 70,
+          "fouls": 0
+        },
+        {
+          "kicks": 9,
+          "possession": 994,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "7ef349f46ad2edcd8e7b122034cb5762c6c29f5ff6b483fa4c7f02266818131e"
+    },
+    {
+      "id": "r2-g17",
+      "round": 2,
+      "game": 17,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 34.26,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 11,
+          "possession": 702,
+          "fouls": 0
+        },
+        {
+          "kicks": 17,
+          "possession": 26,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        2
+      ],
+      "sha256": "b84c2cbff63f8933d58dede8bc08a24ab06cc31e8df58f2080586aba7bc2da96"
+    },
+    {
+      "id": "r2-g18",
+      "round": 2,
+      "game": 18,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 19.09,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 19,
+          "possession": 87,
+          "fouls": 0
+        },
+        {
+          "kicks": 17,
+          "possession": 377,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        3
+      ],
+      "sha256": "b84024a61fac4dcbd4fc70515dc53a877fa2a8d1dd79d652d523ca9f535921ed"
+    },
+    {
+      "id": "r2-g19",
+      "round": 2,
+      "game": 19,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 1.75,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 2,
+          "possession": 2373,
+          "fouls": 0
+        },
+        {
+          "kicks": 3,
+          "possession": 35,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "4cac2277420b3be3bcff1d28fb9f4d2d3981b972aaf6c7acfe4cde054af03d0e"
+    },
+    {
+      "id": "r2-g20",
+      "round": 2,
+      "game": 20,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 8.69,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 27,
+          "possession": 164,
+          "fouls": 0
+        },
+        {
+          "kicks": 27,
+          "possession": 157,
+          "fouls": 13
+        }
+      ],
+      "fouls": [
+        0,
+        13
+      ],
+      "saves": [
+        1,
+        2
+      ],
+      "sha256": "96789d36e928d3ddbd289d274c78bd0682b1554da93f2b6c625b9099073f5f83"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 7.05,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 26,
+          "possession": 141,
+          "fouls": 22
+        },
+        {
+          "kicks": 35,
+          "possession": 142,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        22,
+        0
+      ],
+      "saves": [
+        4,
+        2
+      ],
+      "sha256": "88c6545390d6dde4d7befb323d43ddb391cc16c2c264bab90fc3a7b5d7a8d993"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 85.37,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 9,
+          "possession": 14,
+          "fouls": 0
+        },
+        {
+          "kicks": 7,
+          "possession": 1876,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "a15e1e68776a531057a34ad548be57bb322c76a223491ed0a2f77afaa9d3f116"
+    },
+    {
+      "id": "r3-g3",
+      "round": 3,
+      "game": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "金球制胜",
+      "duration": 81.34,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2438,
+      "windows": 122,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 7,
+          "possession": 1329,
+          "fouls": 0
+        },
+        {
+          "kicks": 10,
+          "possession": 83,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        1
+      ],
+      "sha256": "bd936bfb666f5d42b0b1121ec55d93d6365fc2c8495d6789333d06fa506abffd"
+    },
+    {
+      "id": "r3-g4",
+      "round": 3,
+      "game": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 16.66,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 23,
+          "possession": 155,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 304,
+          "fouls": 5
+        }
+      ],
+      "fouls": [
+        0,
+        5
+      ],
+      "saves": [
+        1,
+        1
+      ],
+      "sha256": "17d531f2e5616a9ae702a9a199d226cab8646fd607df6334bbece552b1892ba3"
+    },
+    {
+      "id": "r3-g5",
+      "round": 3,
+      "game": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.55,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 2,
+          "possession": 1779,
+          "fouls": 0
+        },
+        {
+          "kicks": 3,
+          "possession": 21,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "58a5d916261091ce25a59c9850c26fe46f3b07eaf88897806929b0678bc9580b"
+    },
+    {
+      "id": "r3-g6",
+      "round": 3,
+      "game": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.89,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 33,
+          "possession": 213,
+          "fouls": 0
+        },
+        {
+          "kicks": 22,
+          "possession": 113,
+          "fouls": 12
+        }
+      ],
+      "fouls": [
+        0,
+        12
+      ],
+      "saves": [
+        4,
+        4
+      ],
+      "sha256": "b4464ae6fea30ffa8aee7f3c6eaabbe065d39785ce7dcdeaecad2ccc2f15fe96"
+    },
+    {
+      "id": "r3-g7",
+      "round": 3,
+      "game": 7,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.57,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 24,
+          "possession": 84,
+          "fouls": 6
+        },
+        {
+          "kicks": 30,
+          "possession": 251,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        6,
+        0
+      ],
+      "saves": [
+        4,
+        4
+      ],
+      "sha256": "b057b7b473a8d7f65f1074c5a11dcbbdb7a2c472ba52bfda5030ed5b7270e0a2"
+    },
+    {
+      "id": "r3-g8",
+      "round": 3,
+      "game": 8,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 40.42,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 11,
+          "possession": 24,
+          "fouls": 0
+        },
+        {
+          "kicks": 9,
+          "possession": 860,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        1,
+        0
+      ],
+      "sha256": "1abd95e997892832dc30aad150f789668ca63c9bb7d8467fd650a3bb623d818b"
+    },
+    {
+      "id": "r3-g9",
+      "round": 3,
+      "game": 9,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 29.32,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 15,
+          "possession": 634,
+          "fouls": 0
+        },
+        {
+          "kicks": 16,
+          "possession": 75,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        1,
+        0
+      ],
+      "sha256": "e92de0f740afe3fd5cbeb67ee27553015ea9dd9886bfcc652ff59114cb785438"
+    },
+    {
+      "id": "r3-g10",
+      "round": 3,
+      "game": 10,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 23.93,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 27,
+          "possession": 103,
+          "fouls": 0
+        },
+        {
+          "kicks": 27,
+          "possession": 510,
+          "fouls": 2
+        }
+      ],
+      "fouls": [
+        0,
+        2
+      ],
+      "saves": [
+        2,
+        3
+      ],
+      "sha256": "1378bcc7b4f07849a25362b08629f4451bccf45330b22fac9ea7df46dace8947"
+    },
+    {
+      "id": "r3-g11",
+      "round": 3,
+      "game": 11,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.55,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 3,
+          "possession": 1695,
+          "fouls": 0
+        },
+        {
+          "kicks": 4,
+          "possession": 33,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "ad751e7326c6ee205f7bd6b481b4bcd3b5e231870f9e5e8f874b58e5751fe9be"
+    },
+    {
+      "id": "r3-g12",
+      "round": 3,
+      "game": 12,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 10.72,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 30,
+          "possession": 246,
+          "fouls": 0
+        },
+        {
+          "kicks": 39,
+          "possession": 173,
+          "fouls": 11
+        }
+      ],
+      "fouls": [
+        0,
+        11
+      ],
+      "saves": [
+        7,
+        2
+      ],
+      "sha256": "621e43984e5198ff7d877fb7fafba3f3ea7e6b8c03b27e4395af4665198d749d"
+    },
+    {
+      "id": "r3-g13",
+      "round": 3,
+      "game": 13,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "金球制胜",
+      "duration": 12.77,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2437,
+      "windows": 122,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 19,
+          "possession": 230,
+          "fouls": 10
+        },
+        {
+          "kicks": 25,
+          "possession": 183,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        10,
+        0
+      ],
+      "saves": [
+        0,
+        3
+      ],
+      "sha256": "021a0678003258329b207b6e14fa0eddc596828b0a2ba4876cd7eb8a145f9de8"
+    },
+    {
+      "id": "r3-g14",
+      "round": 3,
+      "game": 14,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 34.95,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 13,
+          "possession": 88,
+          "fouls": 0
+        },
+        {
+          "kicks": 13,
+          "possession": 791,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        2
+      ],
+      "sha256": "72681231aa23a109277e8aef6c38a4536e9a45422b8a00db7b7be3defe0cd792"
+    },
+    {
+      "id": "r3-g15",
+      "round": 3,
+      "game": 15,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 84.09,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 6,
+          "possession": 1800,
+          "fouls": 0
+        },
+        {
+          "kicks": 9,
+          "possession": 49,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "f560a80e0645ec3741014ac1009972d5b3cafeec36e307cb557cc5c809b2a09e"
+    },
+    {
+      "id": "r3-g16",
+      "round": 3,
+      "game": 16,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 28.28,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 23,
+          "possession": 129,
+          "fouls": 0
+        },
+        {
+          "kicks": 30,
+          "possession": 601,
+          "fouls": 1
+        }
+      ],
+      "fouls": [
+        0,
+        1
+      ],
+      "saves": [
+        1,
+        2
+      ],
+      "sha256": "031fbbc28b7942b7ce827f8311fa4180713d147dcd0b9f5480453b4c63fe48a1"
+    },
+    {
+      "id": "r3-g17",
+      "round": 3,
+      "game": 17,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.53,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 2,
+          "possession": 1626,
+          "fouls": 0
+        },
+        {
+          "kicks": 4,
+          "possession": 20,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "2064b14f9e2ef5539225205a754fba10714bce0eb76069a743d8dbdb265ee8a0"
+    },
+    {
+      "id": "r3-g18",
+      "round": 3,
+      "game": 18,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.46,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 5
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 29,
+          "possession": 317,
+          "fouls": 0
+        },
+        {
+          "kicks": 13,
+          "possession": 74,
+          "fouls": 3
+        }
+      ],
+      "fouls": [
+        0,
+        3
+      ],
+      "saves": [
+        1,
+        0
+      ],
+      "sha256": "a72c7d7b3498494737ff476f57d6dcdea7e4835f9006f122d359b51c609df76e"
+    },
+    {
+      "id": "r3-g19",
+      "round": 3,
+      "game": 19,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 6.65,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 37,
+          "possession": 88,
+          "fouls": 11
+        },
+        {
+          "kicks": 33,
+          "possession": 170,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        11,
+        0
+      ],
+      "saves": [
+        2,
+        6
+      ],
+      "sha256": "e65dac354a18ea6a7c9a050223d4124379ae0bf422659cb4af858b2a65485557"
+    },
+    {
+      "id": "r3-g20",
+      "round": 3,
+      "game": 20,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 52.79,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 23,
+          "fouls": 0
+        },
+        {
+          "kicks": 3,
+          "possession": 1123,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "5f5ed6f1280048b7d1459fbe671619eabfc424d7c8a0dd12f50dcdb85cee76bb"
+    },
+    {
+      "id": "r4-g1",
+      "round": 4,
+      "game": 1,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.57,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 1058,
+          "fouls": 0
+        },
+        {
+          "kicks": 14,
+          "possession": 57,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        2
+      ],
+      "sha256": "bb7003c7943d5efc2bfc727bd4934317f0854fbcaf96461095bc88ec05424f4d"
+    },
+    {
+      "id": "r4-g2",
+      "round": 4,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 4.34,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 16,
+          "possession": 254,
+          "fouls": 0
+        },
+        {
+          "kicks": 12,
+          "possession": 1006,
+          "fouls": 2
+        }
+      ],
+      "fouls": [
+        0,
+        2
+      ],
+      "saves": [
+        2,
+        0
+      ],
+      "sha256": "39382fd1634fa898dbef68987516b4a222d4c1614984a2e31c0aaa3696f8397d"
+    },
+    {
+      "id": "r4-g3",
+      "round": 4,
+      "game": 3,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 2.0,
+      "scores": {
+        "deepseek-g1": 6,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 8,
+          "possession": 1242,
+          "fouls": 0
+        },
+        {
+          "kicks": 1,
+          "possession": 1,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "79a222a41a22fba2a6933d2a258030e9f293d5714456d85c7978152abbda7449"
+    },
+    {
+      "id": "r4-g4",
+      "round": 4,
+      "game": 4,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 6.6,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 3
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 24,
+          "possession": 196,
+          "fouls": 0
+        },
+        {
+          "kicks": 16,
+          "possession": 680,
+          "fouls": 3
+        }
+      ],
+      "fouls": [
+        0,
+        3
+      ],
+      "saves": [
+        3,
+        2
+      ],
+      "sha256": "c2cd67aa5cf7587e3c3e134b6ec8bc3bef64be39c5a589a73b2801f6222fa5a2"
+    },
+    {
+      "id": "r4-g5",
+      "round": 4,
+      "game": 5,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.81,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 10,
+          "possession": 945,
+          "fouls": 0
+        },
+        {
+          "kicks": 20,
+          "possession": 109,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        0
+      ],
+      "sha256": "dc8823e25b2ed04a8fa7c0b7962e517d506babf3e2950f9e68408b7efd405b83"
+    },
+    {
+      "id": "r4-g6",
+      "round": 4,
+      "game": 6,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 2.92,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 14,
+          "possession": 70,
+          "fouls": 0
+        },
+        {
+          "kicks": 9,
+          "possession": 1082,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        2,
+        2
+      ],
+      "sha256": "c79ef644e4ce2482f592aa7589aa7d430cc4ec9b9f29bf347246c5c90e27c983"
+    },
+    {
+      "id": "r4-g7",
+      "round": 4,
+      "game": 7,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.59,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 9,
+          "possession": 815,
+          "fouls": 0
+        },
+        {
+          "kicks": 17,
+          "possession": 83,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        2,
+        3
+      ],
+      "sha256": "d771f810eafa79120c45ebd093a66c2861c7e021d1433a466e19e56d42a23a1b"
+    },
+    {
+      "id": "r4-g8",
+      "round": 4,
+      "game": 8,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.25,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 215,
+          "fouls": 0
+        },
+        {
+          "kicks": 15,
+          "possession": 580,
+          "fouls": 4
+        }
+      ],
+      "fouls": [
+        0,
+        4
+      ],
+      "saves": [
+        4,
+        2
+      ],
+      "sha256": "848ba3068885b833e84cc4e85ddd0357e2e2fe72feaf9422f50df4fffb8d0a7e"
+    },
+    {
+      "id": "r4-g9",
+      "round": 4,
+      "game": 9,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.6,
+      "scores": {
+        "deepseek-g1": 2,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 3,
+          "possession": 1753,
+          "fouls": 0
+        },
+        {
+          "kicks": 2,
+          "possession": 8,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "43e3a90b72edc68779f6963fedba93978a4c07cbf13a82b76950ccd2cc710910"
+    },
+    {
+      "id": "r4-g10",
+      "round": 4,
+      "game": 10,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 5.92,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 28,
+          "possession": 205,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 553,
+          "fouls": 12
+        }
+      ],
+      "fouls": [
+        0,
+        12
+      ],
+      "saves": [
+        4,
+        3
+      ],
+      "sha256": "5a61ac05df145052e352cde1bdc4c8f7687b08a3a6c988b8ead9b8fde76223f1"
+    },
+    {
+      "id": "r4-g11",
+      "round": 4,
+      "game": 11,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.66,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 4
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 18,
+          "possession": 671,
+          "fouls": 0
+        },
+        {
+          "kicks": 23,
+          "possession": 166,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        1
+      ],
+      "sha256": "67b6b7739e88d3074ca55090a1231c3fcfb674b81e5ef66ac83dc8b097700a48"
+    },
+    {
+      "id": "r4-g12",
+      "round": 4,
+      "game": 12,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 2.92,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 14,
+          "possession": 46,
+          "fouls": 0
+        },
+        {
+          "kicks": 6,
+          "possession": 1344,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        1,
+        1
+      ],
+      "sha256": "850717614145c4593d4b290a82ef9b701e52f9db4f9c911a4a2a59aaeb535bab"
+    },
+    {
+      "id": "r4-g13",
+      "round": 4,
+      "game": 13,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 3.54,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 10,
+          "possession": 835,
+          "fouls": 0
+        },
+        {
+          "kicks": 17,
+          "possession": 59,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        1,
+        3
+      ],
+      "sha256": "258c6b3441206e78a2216b4636219902194d04c7afd8913797d6bbb4aae4210c"
+    },
+    {
+      "id": "r4-g14",
+      "round": 4,
+      "game": 14,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.36,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 24,
+          "possession": 136,
+          "fouls": 0
+        },
+        {
+          "kicks": 21,
+          "possession": 679,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        2,
+        1
+      ],
+      "sha256": "238322410a45d32137c3690a99746d58023bd2b90193374b5c793e1e03da988b"
+    },
+    {
+      "id": "r4-g15",
+      "round": 4,
+      "game": 15,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 1.59,
+      "scores": {
+        "deepseek-g1": 3,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 1,
+      "stats": [
+        {
+          "kicks": 4,
+          "possession": 1427,
+          "fouls": 0
+        },
+        {
+          "kicks": 5,
+          "possession": 15,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        0
+      ],
+      "sha256": "6d79798b8066b2d4ac77e66932c6dfefbb71cc3d46e8f170bdfe260019478a96"
+    },
+    {
+      "id": "r4-g16",
+      "round": 4,
+      "game": 16,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "deepseek-g1",
+      "reason": "常规时间结束",
+      "duration": 5.93,
+      "scores": {
+        "deepseek-g1": 1,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 6,
+      "stats": [
+        {
+          "kicks": 23,
+          "possession": 225,
+          "fouls": 0
+        },
+        {
+          "kicks": 17,
+          "possession": 789,
+          "fouls": 6
+        }
+      ],
+      "fouls": [
+        0,
+        6
+      ],
+      "saves": [
+        2,
+        1
+      ],
+      "sha256": "9780b8cecd1ee8cdc05cd6e41fbf919a67220d000776f66d04559e57f95244d1"
+    },
+    {
+      "id": "r4-g17",
+      "round": 4,
+      "game": 17,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 5.47,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 5,
+      "stats": [
+        {
+          "kicks": 18,
+          "possession": 799,
+          "fouls": 3
+        },
+        {
+          "kicks": 23,
+          "possession": 129,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        3,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "042a51715f00f7f325640c0d18f99fb6cc934b1ad44b21c5a37195347bee241b"
+    },
+    {
+      "id": "r4-g18",
+      "round": 4,
+      "game": 18,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 2.57,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 2
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 2,
+      "stats": [
+        {
+          "kicks": 13,
+          "possession": 115,
+          "fouls": 0
+        },
+        {
+          "kicks": 6,
+          "possession": 902,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        3,
+        1
+      ],
+      "sha256": "3cd231ece17eb7a1d716918f3693e132e744f460725aa48d0d6226f448f12f09"
+    },
+    {
+      "id": "r4-g19",
+      "round": 4,
+      "game": 19,
+      "seats": [
+        "deepseek-g1",
+        "sol"
+      ],
+      "winner": null,
+      "reason": "金球未分胜负，平局",
+      "duration": 3.88,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2801,
+      "windows": 140,
+      "teamSize": 3,
+      "stats": [
+        {
+          "kicks": 14,
+          "possession": 1288,
+          "fouls": 0
+        },
+        {
+          "kicks": 10,
+          "possession": 77,
+          "fouls": 0
+        }
+      ],
+      "fouls": [
+        0,
+        0
+      ],
+      "saves": [
+        0,
+        1
+      ],
+      "sha256": "1f832b43d2ff3b2554421c6607b43fa9913f7af5af679ce4f25350a8db38b422"
+    },
+    {
+      "id": "r4-g20",
+      "round": 4,
+      "game": 20,
+      "seats": [
+        "sol",
+        "deepseek-g1"
+      ],
+      "winner": "sol",
+      "reason": "常规时间结束",
+      "duration": 4.42,
+      "scores": {
+        "deepseek-g1": 0,
+        "sol": 1
+      },
+      "errors": {
+        "deepseek-g1": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2401,
+      "windows": 120,
+      "teamSize": 4,
+      "stats": [
+        {
+          "kicks": 23,
+          "possession": 106,
+          "fouls": 0
+        },
+        {
+          "kicks": 16,
+          "possession": 623,
+          "fouls": 9
+        }
+      ],
+      "fouls": [
+        0,
+        9
+      ],
+      "saves": [
+        5,
+        1
+      ],
+      "sha256": "b78b4773a43cd48b85970786cb89ed03a72abd21aa8ddfd0b55889f256c0783f"
+    }
+  ],
+  "ready": [
+    "deepseek-g1",
+    "sol"
+  ],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，准备时间不设上限；每局双方各控 1–6 名球员（按种子随机）；无战争迷雾；每局 120 秒 + 20 秒金球；每轮 2 局共 6 轮；每 20 帧同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 150888,
+  "port": 8841,
+  "completed": false,
+  "updated": "2026-10-25T09:26:47",
+  "game": 20,
+  "game_id": "r4-g20",
+  "win_rate": 0.3,
+  "played_games": 20
+}

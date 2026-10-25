@@ -1,0 +1,20 @@
+'use strict';
+const {runDuel}=require('./duel');
+const {Agent}=require('../agent.js');
+const {SolClone}=require('./solclone.js');
+const seat=parseInt(process.argv[2]||'0',10);
+const agO=process.argv[3]?JSON.parse(process.argv[3]):{};
+const us=new Agent(agO),cl=new SolClone({});
+const A=seat===0?us:cl,B=seat===0?cl:us;
+let last=-1;
+const r=runDuel(A,B,{heroA:seat===0?'necromancer':'druid',heroB:seat===0?'druid':'necromancer',maxSeconds:300,onFrame:(g)=>{
+  const t=g.now;if(t<45||t>140||t-last<3)return;last=t;
+  const mine=g.units.filter(u=>u.owner===seat&&u.type!=='worker');
+  const ew=g.units.filter(u=>u.owner===1-seat&&u.type==='worker').length;
+  const ea=g.units.filter(u=>u.owner===1-seat&&u.type!=='worker');
+  const th=g.buildings.find(b=>b.type==='townhall'&&b.owner===1-seat);
+  const c=mine.length?{x:Math.round(mine.reduce((s,u)=>s+u.x,0)/mine.length),y:Math.round(mine.reduce((s,u)=>s+u.y,0)/mine.length)}:null;
+  const hero=mine.find(u=>u.hero);
+  console.log(`t=${t.toFixed(0)} [${us.mem.phase}] ours${mine.length}@${c?c.x+','+c.y:'-'} hero${hero?hero.level+'/'+Math.round(hero.hp):'X'} | enemy workers${ew} army${ea.length} ${ea.filter(u=>u.hero).map(u=>u.type[0]+u.level).join('')} | TH=${th?Math.round(th.hp):'X'}`);
+}});
+console.log('RESULT',r.winner,r.duration.toFixed(1),'TH',r.th);

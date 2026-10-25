@@ -1,0 +1,1559 @@
+[
+ {
+  "file": "r3-g1.json.gz",
+  "id": "r3-g1",
+  "seed": 4031,
+  "teamSize": 6,
+  "seats": [
+   "deepseek-flash",
+   "sol"
+  ],
+  "frames": 2801,
+  "seconds": 140.05,
+  "duration": 15.53,
+  "reason": "金球未分胜负，平局",
+  "score": [
+   0,
+   0
+  ],
+  "stats": [
+   {
+    "kicks": 34,
+    "possession": 504,
+    "fouls": 0
+   },
+   {
+    "kicks": 25,
+    "possession": 340,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   504,
+   340
+  ],
+  "kicks": [
+   {
+    "frame": 66,
+    "t": 3.3,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 22.466,
+    "y": 12.219,
+    "angle": -2.111,
+    "shot": false,
+    "y_at_goal": -23.58
+   },
+   {
+    "frame": 81,
+    "t": 4.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 22.53,
+    "y": 10.616,
+    "angle": 0,
+    "shot": true,
+    "y_at_goal": 10.62
+   },
+   {
+    "frame": 101,
+    "t": 5.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 25.674,
+    "y": 9.922,
+    "angle": -2.191,
+    "shot": false,
+    "y_at_goal": -24.62
+   },
+   {
+    "frame": 103,
+    "t": 5.15,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 23.956,
+    "y": 8.515,
+    "angle": -2.282,
+    "shot": false,
+    "y_at_goal": -18.13
+   },
+   {
+    "frame": 201,
+    "t": 10.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 10.597,
+    "y": 7.76,
+    "angle": -0.07,
+    "shot": false,
+    "y_at_goal": 5.49
+   },
+   {
+    "frame": 221,
+    "t": 11.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 12.439,
+    "y": 7.532,
+    "angle": 2.875,
+    "shot": true,
+    "y_at_goal": 10.66
+   },
+   {
+    "frame": 241,
+    "t": 12.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 10.942,
+    "y": 8.505,
+    "angle": 0.175,
+    "shot": true,
+    "y_at_goal": 14.17
+   },
+   {
+    "frame": 261,
+    "t": 13.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 15.037,
+    "y": 7.297,
+    "angle": -0.925,
+    "shot": false,
+    "y_at_goal": -29.81
+   },
+   {
+    "frame": 321,
+    "t": 16.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 24.153,
+    "y": 6.345,
+    "angle": -3.054,
+    "shot": false,
+    "y_at_goal": null
+   },
+   {
+    "frame": 341,
+    "t": 17.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 24.105,
+    "y": 7.411,
+    "angle": 0.401,
+    "shot": true,
+    "y_at_goal": 15.42
+   },
+   {
+    "frame": 343,
+    "t": 17.15,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 24.966,
+    "y": 7.806,
+    "angle": 2.111,
+    "shot": false,
+    "y_at_goal": 47.77
+   },
+   {
+    "frame": 478,
+    "t": 23.9,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 11.285,
+    "y": 21.275,
+    "angle": -2.34,
+    "shot": true,
+    "y_at_goal": 10.65
+   },
+   {
+    "frame": 521,
+    "t": 26.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.741,
+    "y": 11.398,
+    "angle": 0.576,
+    "shot": false,
+    "y_at_goal": 38.19
+   },
+   {
+    "frame": 561,
+    "t": 28.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 9.61,
+    "y": 16.11,
+    "angle": -0.175,
+    "shot": true,
+    "y_at_goal": 10.21
+   },
+   {
+    "frame": 581,
+    "t": 29.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 11.804,
+    "y": 15.113,
+    "angle": 0,
+    "shot": true,
+    "y_at_goal": 15.11
+   },
+   {
+    "frame": 600,
+    "t": 30.0,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 20.657,
+    "y": 14.73,
+    "angle": -2.355,
+    "shot": false,
+    "y_at_goal": -4.97
+   },
+   {
+    "frame": 606,
+    "t": 30.3,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 18.11,
+    "y": 11.69,
+    "angle": -2.111,
+    "shot": false,
+    "y_at_goal": -16.84
+   },
+   {
+    "frame": 741,
+    "t": 37.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 8.717,
+    "y": 7.519,
+    "angle": 0,
+    "shot": false,
+    "y_at_goal": 7.52
+   },
+   {
+    "frame": 781,
+    "t": 39.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 19.54,
+    "y": 7.635,
+    "angle": 0.541,
+    "shot": false,
+    "y_at_goal": 21.73
+   },
+   {
+    "frame": 801,
+    "t": 40.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 22.086,
+    "y": 7.806,
+    "angle": 0.209,
+    "shot": true,
+    "y_at_goal": 12.24
+   },
+   {
+    "frame": 842,
+    "t": 42.1,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u0",
+    "x": 36.723,
+    "y": 10.799,
+    "angle": 2.962,
+    "shot": false,
+    "y_at_goal": 17.28
+   },
+   {
+    "frame": 866,
+    "t": 43.3,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 31.511,
+    "y": 11.952,
+    "angle": 2.111,
+    "shot": false,
+    "y_at_goal": 62.83
+   },
+   {
+    "frame": 941,
+    "t": 47.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 20.531,
+    "y": 21.459,
+    "angle": 2.881,
+    "shot": false,
+    "y_at_goal": 26.67
+   },
+   {
+    "frame": 1054,
+    "t": 52.7,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 3.789,
+    "y": 22.099,
+    "angle": -1.963,
+    "shot": true,
+    "y_at_goal": 15.36
+   },
+   {
+    "frame": 1081,
+    "t": 54.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.85,
+    "y": 15.344,
+    "angle": 0.332,
+    "shot": false,
+    "y_at_goal": 29.53
+   },
+   {
+    "frame": 1101,
+    "t": 55.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 9.252,
+    "y": 18.121,
+    "angle": 0,
+    "shot": false,
+    "y_at_goal": 18.12
+   },
+   {
+    "frame": 1121,
+    "t": 56.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 14.706,
+    "y": 18.672,
+    "angle": -0.07,
+    "shot": false,
+    "y_at_goal": 16.69
+   },
+   {
+    "frame": 1281,
+    "t": 64.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 21.96,
+    "y": 12.378,
+    "angle": -2.731,
+    "shot": false,
+    "y_at_goal": 3.25
+   },
+   {
+    "frame": 1301,
+    "t": 65.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 20.734,
+    "y": 12.114,
+    "angle": -0.087,
+    "shot": true,
+    "y_at_goal": 10.17
+   },
+   {
+    "frame": 1321,
+    "t": 66.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 23.813,
+    "y": 13.834,
+    "angle": -0.087,
+    "shot": true,
+    "y_at_goal": 12.16
+   },
+   {
+    "frame": 1359,
+    "t": 67.95,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 29.094,
+    "y": 14.335,
+    "angle": 2.111,
+    "shot": false,
+    "y_at_goal": 61.18
+   },
+   {
+    "frame": 1433,
+    "t": 71.65,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 18.574,
+    "y": 20.478,
+    "angle": 3.142,
+    "shot": false,
+    "y_at_goal": 20.47
+   },
+   {
+    "frame": 1541,
+    "t": 77.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 5.53,
+    "y": 20.47,
+    "angle": 0.262,
+    "shot": false,
+    "y_at_goal": 30.52
+   },
+   {
+    "frame": 1601,
+    "t": 80.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 10.724,
+    "y": 24.121,
+    "angle": -2.408,
+    "shot": true,
+    "y_at_goal": 15.36
+   },
+   {
+    "frame": 1641,
+    "t": 82.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.873,
+    "y": 15.201,
+    "angle": 0.175,
+    "shot": false,
+    "y_at_goal": 22.47
+   },
+   {
+    "frame": 1661,
+    "t": 83.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 9.404,
+    "y": 17.746,
+    "angle": 1.222,
+    "shot": false,
+    "y_at_goal": 110.13
+   },
+   {
+    "frame": 1681,
+    "t": 84.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 13.055,
+    "y": 20.223,
+    "angle": -0.227,
+    "shot": true,
+    "y_at_goal": 13.31
+   },
+   {
+    "frame": 1701,
+    "t": 85.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 15.673,
+    "y": 21.274,
+    "angle": 2.614,
+    "shot": false,
+    "y_at_goal": 29.82
+   },
+   {
+    "frame": 1981,
+    "t": 99.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 7.225,
+    "y": 18.243,
+    "angle": -0.209,
+    "shot": true,
+    "y_at_goal": 10.66
+   },
+   {
+    "frame": 2001,
+    "t": 100.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 14.851,
+    "y": 17.414,
+    "angle": 0.262,
+    "shot": false,
+    "y_at_goal": 24.96
+   },
+   {
+    "frame": 2021,
+    "t": 101.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 21.375,
+    "y": 18.128,
+    "angle": -0.14,
+    "shot": true,
+    "y_at_goal": 15.08
+   },
+   {
+    "frame": 2064,
+    "t": 103.2,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u0",
+    "x": 36.981,
+    "y": 15.311,
+    "angle": -2.111,
+    "shot": false,
+    "y_at_goal": -44.69
+   },
+   {
+    "frame": 2147,
+    "t": 107.35,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 24.852,
+    "y": 4.069,
+    "angle": -2.962,
+    "shot": false,
+    "y_at_goal": -0.26
+   },
+   {
+    "frame": 2301,
+    "t": 115.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 2.322,
+    "y": 2.283,
+    "angle": -0.14,
+    "shot": false,
+    "y_at_goal": -3.45
+   },
+   {
+    "frame": 2327,
+    "t": 116.35,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 13.191,
+    "y": 2.268,
+    "angle": 2.903,
+    "shot": false,
+    "y_at_goal": 5.23
+   },
+   {
+    "frame": 2361,
+    "t": 118.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 11.913,
+    "y": 1.793,
+    "angle": 0.506,
+    "shot": false,
+    "y_at_goal": 19.02
+   },
+   {
+    "frame": 2381,
+    "t": 119.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 15.827,
+    "y": 4.908,
+    "angle": -3.089,
+    "shot": false,
+    "y_at_goal": null
+   },
+   {
+    "frame": 2421,
+    "t": 121.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 14.865,
+    "y": 5.265,
+    "angle": 2.426,
+    "shot": false,
+    "y_at_goal": null
+   },
+   {
+    "frame": 2441,
+    "t": 122.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 16.471,
+    "y": 6.278,
+    "angle": 0.175,
+    "shot": true,
+    "y_at_goal": 10.97
+   },
+   {
+    "frame": 2461,
+    "t": 123.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 24.828,
+    "y": 7.799,
+    "angle": -2.338,
+    "shot": false,
+    "y_at_goal": -16.91
+   },
+   {
+    "frame": 2472,
+    "t": 123.6,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 20.116,
+    "y": 3.528,
+    "angle": -2.867,
+    "shot": false,
+    "y_at_goal": -1.86
+   },
+   {
+    "frame": 2473,
+    "t": 123.65,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 19.401,
+    "y": 3.351,
+    "angle": -2.982,
+    "shot": false,
+    "y_at_goal": 0.39
+   },
+   {
+    "frame": 2581,
+    "t": 129.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 4.61,
+    "y": 2.729,
+    "angle": 0.698,
+    "shot": false,
+    "y_at_goal": 34.93
+   },
+   {
+    "frame": 2601,
+    "t": 130.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 6.911,
+    "y": 4.356,
+    "angle": 0.262,
+    "shot": true,
+    "y_at_goal": 14.03
+   },
+   {
+    "frame": 2648,
+    "t": 132.4,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 12.064,
+    "y": 8.101,
+    "angle": 2.562,
+    "shot": true,
+    "y_at_goal": 15.34
+   },
+   {
+    "frame": 2681,
+    "t": 134.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.781,
+    "y": 14.768,
+    "angle": -0.593,
+    "shot": false,
+    "y_at_goal": -13.01
+   },
+   {
+    "frame": 2721,
+    "t": 136.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 11.136,
+    "y": 8.925,
+    "angle": -0.157,
+    "shot": false,
+    "y_at_goal": 3.88
+   },
+   {
+    "frame": 2741,
+    "t": 137.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 14.332,
+    "y": 8.663,
+    "angle": 0.925,
+    "shot": false,
+    "y_at_goal": 46.7
+   },
+   {
+    "frame": 2761,
+    "t": 138.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 17.114,
+    "y": 11.919,
+    "angle": 2.111,
+    "shot": false,
+    "y_at_goal": 38.79
+   }
+  ],
+  "saves": [
+   {
+    "frame": 512,
+    "t": 25.6,
+    "keeper_team": 0,
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter_unit": "t1u4",
+    "shot_from": [
+     11.285,
+     21.275
+    ],
+    "shot_frame": 478,
+    "shot_dist": 13.2,
+    "is_shot_ray": true
+   },
+   {
+    "frame": 1068,
+    "t": 53.4,
+    "keeper_team": 0,
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter_unit": "t1u4",
+    "shot_from": [
+     3.789,
+     22.099
+    ],
+    "shot_frame": 1054,
+    "shot_dist": 9.52,
+    "is_shot_ray": true
+   },
+   {
+    "frame": 1631,
+    "t": 81.55,
+    "keeper_team": 0,
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter_unit": "t1u3",
+    "shot_from": [
+     10.724,
+     24.121
+    ],
+    "shot_frame": 1601,
+    "shot_dist": 14.77,
+    "is_shot_ray": true
+   },
+   {
+    "frame": 2677,
+    "t": 133.85,
+    "keeper_team": 0,
+    "keeper": "t0u0",
+    "shooter_team": 1,
+    "shooter_model": "sol",
+    "shooter_unit": "t1u3",
+    "shot_from": [
+     12.064,
+     8.101
+    ],
+    "shot_frame": 2648,
+    "shot_dist": 12.1,
+    "is_shot_ray": true
+   }
+  ],
+  "goals": [],
+  "tackles": [
+   {
+    "frame": 258,
+    "t": 12.9,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "from": "t0u1"
+   },
+   {
+    "frame": 259,
+    "t": 12.95,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "from": "t1u2"
+   },
+   {
+    "frame": 1280,
+    "t": 64.0,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "from": "t0u2"
+   },
+   {
+    "frame": 2353,
+    "t": 117.65,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "from": "t1u2"
+   },
+   {
+    "frame": 2391,
+    "t": 119.55,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "from": "t1u1"
+   },
+   {
+    "frame": 2396,
+    "t": 119.8,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "from": "t0u2"
+   },
+   {
+    "frame": 2411,
+    "t": 120.55,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "from": "t1u3"
+   }
+  ],
+  "team_name": {
+   "0": "deepseek-flash",
+   "1": "sol"
+  }
+ },
+ {
+  "file": "r3-g2.json.gz",
+  "id": "r3-g2",
+  "seed": 4032,
+  "teamSize": 4,
+  "seats": [
+   "sol",
+   "deepseek-flash"
+  ],
+  "frames": 2401,
+  "seconds": 120.05,
+  "duration": 7.42,
+  "reason": "常规时间结束",
+  "score": [
+   2,
+   0
+  ],
+  "stats": [
+   {
+    "kicks": 21,
+    "possession": 255,
+    "fouls": 0
+   },
+   {
+    "kicks": 23,
+    "possession": 369,
+    "fouls": 0
+   }
+  ],
+  "poss_frames": [
+   255,
+   369
+  ],
+  "kicks": [
+   {
+    "frame": 69,
+    "t": 3.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.591,
+    "y": 12.221,
+    "angle": -1.03,
+    "shot": false,
+    "y_at_goal": -23.43
+   },
+   {
+    "frame": 141,
+    "t": 7.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 30.607,
+    "y": 5.105,
+    "angle": -2.915,
+    "shot": false,
+    "y_at_goal": -1.72
+   },
+   {
+    "frame": 263,
+    "t": 13.15,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 8.849,
+    "y": 2.955,
+    "angle": 1.03,
+    "shot": false,
+    "y_at_goal": 59.82
+   },
+   {
+    "frame": 421,
+    "t": 21.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 23.811,
+    "y": 20.58,
+    "angle": -1.03,
+    "shot": false,
+    "y_at_goal": -11.37
+   },
+   {
+    "frame": 561,
+    "t": 28.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 35.938,
+    "y": 2.793,
+    "angle": 0.839,
+    "shot": true,
+    "y_at_goal": 10.66
+   },
+   {
+    "frame": 666,
+    "t": 33.3,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.591,
+    "y": 12.221,
+    "angle": -1.03,
+    "shot": false,
+    "y_at_goal": -23.43
+   },
+   {
+    "frame": 741,
+    "t": 37.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 30.841,
+    "y": 5.729,
+    "angle": 2.443,
+    "shot": false,
+    "y_at_goal": 30.79
+   },
+   {
+    "frame": 781,
+    "t": 39.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 30.108,
+    "y": 7.594,
+    "angle": 0.233,
+    "shot": true,
+    "y_at_goal": 10.65
+   },
+   {
+    "frame": 821,
+    "t": 41.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 42.116,
+    "y": 10.81,
+    "angle": -2.932,
+    "shot": false,
+    "y_at_goal": 2.06
+   },
+   {
+    "frame": 861,
+    "t": 43.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 31.088,
+    "y": 8.824,
+    "angle": 3.142,
+    "shot": false,
+    "y_at_goal": 8.81
+   },
+   {
+    "frame": 907,
+    "t": 45.35,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 28.853,
+    "y": 13.369,
+    "angle": 0.139,
+    "shot": true,
+    "y_at_goal": 15.35
+   },
+   {
+    "frame": 941,
+    "t": 47.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 42.107,
+    "y": 15.124,
+    "angle": -3.037,
+    "shot": true,
+    "y_at_goal": 10.81
+   },
+   {
+    "frame": 981,
+    "t": 49.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 29.776,
+    "y": 13.973,
+    "angle": -3.037,
+    "shot": true,
+    "y_at_goal": 10.95
+   },
+   {
+    "frame": 1001,
+    "t": 50.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 27.112,
+    "y": 14.287,
+    "angle": 2.74,
+    "shot": false,
+    "y_at_goal": 25.38
+   },
+   {
+    "frame": 1141,
+    "t": 57.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 6.998,
+    "y": 22.761,
+    "angle": -1.03,
+    "shot": false,
+    "y_at_goal": -37.19
+   },
+   {
+    "frame": 1153,
+    "t": 57.65,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 10.926,
+    "y": 17.132,
+    "angle": -1.03,
+    "shot": false,
+    "y_at_goal": -36.28
+   },
+   {
+    "frame": 1281,
+    "t": 64.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.591,
+    "y": 12.221,
+    "angle": -1.03,
+    "shot": false,
+    "y_at_goal": -23.43
+   },
+   {
+    "frame": 1361,
+    "t": 68.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 31.063,
+    "y": 6.418,
+    "angle": 3.002,
+    "shot": true,
+    "y_at_goal": 10.64
+   },
+   {
+    "frame": 1401,
+    "t": 70.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 29.676,
+    "y": 6.595,
+    "angle": 3.002,
+    "shot": true,
+    "y_at_goal": 10.62
+   },
+   {
+    "frame": 1421,
+    "t": 71.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 20.554,
+    "y": 7.718,
+    "angle": -0.176,
+    "shot": false,
+    "y_at_goal": 3.73
+   },
+   {
+    "frame": 1430,
+    "t": 71.5,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 25.81,
+    "y": 6.404,
+    "angle": -0.672,
+    "shot": false,
+    "y_at_goal": -7.27
+   },
+   {
+    "frame": 1432,
+    "t": 71.6,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 27.476,
+    "y": 5.278,
+    "angle": -0.538,
+    "shot": false,
+    "y_at_goal": -3.99
+   },
+   {
+    "frame": 1581,
+    "t": 79.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 35.979,
+    "y": 6.589,
+    "angle": 2.391,
+    "shot": false,
+    "y_at_goal": 39.21
+   },
+   {
+    "frame": 1601,
+    "t": 80.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 31.143,
+    "y": 9.035,
+    "angle": 3.072,
+    "shot": true,
+    "y_at_goal": 11.14
+   },
+   {
+    "frame": 1621,
+    "t": 81.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 23.36,
+    "y": 9.691,
+    "angle": -0.937,
+    "shot": false,
+    "y_at_goal": -17.03
+   },
+   {
+    "frame": 1685,
+    "t": 84.25,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 29.225,
+    "y": 3.748,
+    "angle": 1.17,
+    "shot": false,
+    "y_at_goal": 36.26
+   },
+   {
+    "frame": 1695,
+    "t": 84.75,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 31.486,
+    "y": 7.84,
+    "angle": 0.578,
+    "shot": true,
+    "y_at_goal": 15.35
+   },
+   {
+    "frame": 1741,
+    "t": 87.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 42.139,
+    "y": 14.851,
+    "angle": -2.793,
+    "shot": false,
+    "y_at_goal": -0.1
+   },
+   {
+    "frame": 1781,
+    "t": 89.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 32.501,
+    "y": 10.21,
+    "angle": 0.042,
+    "shot": true,
+    "y_at_goal": 10.65
+   },
+   {
+    "frame": 1889,
+    "t": 94.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.83,
+    "y": 12.959,
+    "angle": 0.403,
+    "shot": false,
+    "y_at_goal": 21.98
+   },
+   {
+    "frame": 1901,
+    "t": 95.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 22.016,
+    "y": 13.266,
+    "angle": 3.037,
+    "shot": true,
+    "y_at_goal": 15.47
+   },
+   {
+    "frame": 1921,
+    "t": 96.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 20.956,
+    "y": 13.577,
+    "angle": -0.646,
+    "shot": false,
+    "y_at_goal": null
+   },
+   {
+    "frame": 1924,
+    "t": 96.2,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 21.729,
+    "y": 12.855,
+    "angle": -3.037,
+    "shot": true,
+    "y_at_goal": 10.68
+   },
+   {
+    "frame": 1969,
+    "t": 98.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u0",
+    "x": 6.104,
+    "y": 11.992,
+    "angle": 0.271,
+    "shot": false,
+    "y_at_goal": 22.24
+   },
+   {
+    "frame": 1989,
+    "t": 99.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 11.433,
+    "y": 14.166,
+    "angle": 1.03,
+    "shot": false,
+    "y_at_goal": 66.73
+   },
+   {
+    "frame": 2071,
+    "t": 103.55,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 22.568,
+    "y": 20.385,
+    "angle": 0.581,
+    "shot": false,
+    "y_at_goal": 33.8
+   },
+   {
+    "frame": 2201,
+    "t": 110.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 41.866,
+    "y": 18.135,
+    "angle": 3.019,
+    "shot": false,
+    "y_at_goal": 23.17
+   },
+   {
+    "frame": 2241,
+    "t": 112.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 34.831,
+    "y": 18.451,
+    "angle": 2.356,
+    "shot": false,
+    "y_at_goal": 52.3
+   },
+   {
+    "frame": 2261,
+    "t": 113.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 33.854,
+    "y": 17.579,
+    "angle": 0.681,
+    "shot": false,
+    "y_at_goal": null
+   },
+   {
+    "frame": 2281,
+    "t": 114.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 33.274,
+    "y": 16.607,
+    "angle": -3.072,
+    "shot": true,
+    "y_at_goal": 14.36
+   },
+   {
+    "frame": 2301,
+    "t": 115.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 31.092,
+    "y": 16.823,
+    "angle": -2.286,
+    "shot": false,
+    "y_at_goal": -17.82
+   },
+   {
+    "frame": 2321,
+    "t": 116.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 30.047,
+    "y": 15.62,
+    "angle": 1.257,
+    "shot": false,
+    "y_at_goal": null
+   },
+   {
+    "frame": 2341,
+    "t": 117.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 28.864,
+    "y": 17.268,
+    "angle": 3.142,
+    "shot": false,
+    "y_at_goal": 17.26
+   },
+   {
+    "frame": 2381,
+    "t": 119.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 14.342,
+    "y": 17.201,
+    "angle": -2.967,
+    "shot": true,
+    "y_at_goal": 14.85
+   }
+  ],
+  "saves": [
+   {
+    "frame": 811,
+    "t": 40.55,
+    "keeper_team": 1,
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter_unit": "t0u1",
+    "shot_from": [
+     30.108,
+     7.594
+    ],
+    "shot_frame": 781,
+    "shot_dist": 13.98,
+    "is_shot_ray": true
+   },
+   {
+    "frame": 940,
+    "t": 47.0,
+    "keeper_team": 1,
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter_unit": "t0u2",
+    "shot_from": [
+     28.853,
+     13.369
+    ],
+    "shot_frame": 907,
+    "shot_dist": 14.15,
+    "is_shot_ray": true
+   },
+   {
+    "frame": 1726,
+    "t": 86.3,
+    "keeper_team": 1,
+    "keeper": "t1u0",
+    "shooter_team": 0,
+    "shooter_model": "sol",
+    "shooter_unit": "t0u2",
+    "shot_from": [
+     31.486,
+     7.84
+    ],
+    "shot_frame": 1695,
+    "shot_dist": 12.62,
+    "is_shot_ray": true
+   }
+  ],
+  "goals": [
+   {
+    "frame": 585,
+    "t": 29.25,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "shot_frame": 561,
+    "shot_from": [
+     35.938,
+     2.793
+    ],
+    "shot_unit": "t0u2",
+    "shot_dist": 12.41
+   },
+   {
+    "frame": 1805,
+    "t": 90.25,
+    "team": 0,
+    "model": "sol",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "shot_frame": 1781,
+    "shot_from": [
+     32.501,
+     10.21
+    ],
+    "shot_unit": "t0u1",
+    "shot_dist": 10.86
+   }
+  ],
+  "tackles": [
+   {
+    "frame": 866,
+    "t": 43.3,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "from": "t1u3"
+   },
+   {
+    "frame": 1387,
+    "t": 69.35,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "from": "t0u1"
+   },
+   {
+    "frame": 1764,
+    "t": 88.2,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "from": "t1u1"
+   }
+  ],
+  "team_name": {
+   "0": "sol",
+   "1": "deepseek-flash"
+  }
+ }
+]

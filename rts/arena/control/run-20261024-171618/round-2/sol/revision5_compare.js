@@ -1,0 +1,2 @@
+const fs=require('fs'),{play}=require('./revision4_sweep');let out=[];
+for(const name of ['safe','weighted','cone0.25']){const rows=[];for(const opp of ['r5_'+(name==='safe'?'weighted':'safe'),'r5_cone0.5','r4_reload45','r3_support','r3_join','revision1_fastkite'])for(const seat of [0,1])rows.push({opp,...play(require('./r5_'+name).choose,require('./'+opp).choose,seat)});out.push({name,wins:rows.filter(r=>r.winner===r.seat).length,rows});console.log(JSON.stringify(out.at(-1)));fs.writeFileSync('revision5_compare.json',JSON.stringify(out,null,2));}

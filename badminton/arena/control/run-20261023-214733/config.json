@@ -1,0 +1,60 @@
+{
+  "game": "badminton",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "medium",
+  "rounds": 3,
+  "games_per_round": 2,
+  "port": 8810,
+  "watch_port": 8809,
+  "fresh_start": true,
+  "incumbent": null,
+  "continue_both": false,
+  "from_run": null,
+  "source_round": 3,
+  "starting_files": {
+    "deepseek-flash": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ],
+    "sol": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ]
+  },
+  "inherited_files": {},
+  "clients": {
+    "deepseek-flash": "Claude Code",
+    "sol": "Claude Code"
+  },
+  "no_isolation": true,
+  "stream_proxy": [
+    "sol"
+  ],
+  "history_games": 0,
+  "decision_frames": 10,
+  "max_windows": 520,
+  "source_sha256": "1dfa2ae1cf14f5106b9b21c45f45e5956245fb593930509da9acae16668bec9e",
+  "catalog_sha256": "8cd8f208f1ca222ff548d2097d110fb542f5ea5d07fab3eb58129754fada4b17",
+  "public_sim_sha256": "9b851c7c6f0568177a4c226dc589f4fbce357cfff07fefcdca6e0d0d4dd983cd",
+  "frozen_paths": {
+    "sol-r1": "control/run-20261023-214733/round-1/sol",
+    "deepseek-flash-r1": "control/run-20261023-214733/round-1/deepseek-flash",
+    "sol-r2": "control/run-20261023-214733/round-2/sol",
+    "deepseek-flash-r2": "control/run-20261023-214733/round-2/deepseek-flash",
+    "sol-r3": "control/run-20261023-214733/round-3/sol",
+    "deepseek-flash-r3": "control/run-20261023-214733/round-3/deepseek-flash"
+  }
+}

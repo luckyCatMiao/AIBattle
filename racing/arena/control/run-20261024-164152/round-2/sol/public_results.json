@@ -1,0 +1,238 @@
+[
+  {
+    "id": "history-run-20261023-145150-r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "冲线",
+    "duration": 0.98,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1316,
+    "seed": 6011,
+    "track": {
+      "length": 469.822,
+      "halfWidth": 3.619,
+      "audit": {
+        "roadTiles": 3412,
+        "length": 469.8223318191127,
+        "halfWidth": 3.61865752376616,
+        "minSelfDistance": 9.25004963497058,
+        "startOnRoad": true,
+        "gridOnRoad": true,
+        "valid": true,
+        "attempt": 5
+      }
+    },
+    "laps": [
+      3,
+      2
+    ],
+    "finishTimes": [
+      65.75,
+      null
+    ],
+    "bestLaps": [
+      20.7,
+      22.8
+    ],
+    "boosts": [
+      22,
+      74
+    ],
+    "driftTimes": [
+      56.5,
+      27.5
+    ],
+    "collisions": [
+      1,
+      1
+    ],
+    "original_id": "r1-g1",
+    "source_run": "run-20261023-145150"
+  },
+  {
+    "id": "history-run-20261023-145150-r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "冲线",
+    "duration": 0.92,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1301,
+    "seed": 6012,
+    "track": {
+      "length": 459.951,
+      "halfWidth": 3.47,
+      "audit": {
+        "roadTiles": 3196,
+        "length": 459.9510490492263,
+        "halfWidth": 3.4699750773608686,
+        "minSelfDistance": 9.140787287050564,
+        "startOnRoad": true,
+        "gridOnRoad": true,
+        "valid": true,
+        "attempt": 2
+      }
+    },
+    "laps": [
+      2,
+      3
+    ],
+    "finishTimes": [
+      null,
+      65
+    ],
+    "bestLaps": [
+      22.25,
+      20.45
+    ],
+    "boosts": [
+      76,
+      26
+    ],
+    "driftTimes": [
+      27.45,
+      53.0
+    ],
+    "collisions": [
+      0,
+      0
+    ],
+    "original_id": "r1-g2",
+    "source_run": "run-20261023-145150"
+  },
+  {
+    "id": "history-run-20261023-145150-r2-g1",
+    "round": 2,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "冲线",
+    "duration": 0.64,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1062,
+    "seed": 6021,
+    "track": {
+      "length": 463.837,
+      "halfWidth": 3.308,
+      "audit": {
+        "roadTiles": 3113,
+        "length": 463.837385210288,
+        "halfWidth": 3.308460561092943,
+        "minSelfDistance": 8.400357679927422,
+        "startOnRoad": true,
+        "gridOnRoad": true,
+        "valid": true,
+        "attempt": 4
+      }
+    },
+    "laps": [
+      3,
+      2
+    ],
+    "finishTimes": [
+      53.05,
+      null
+    ],
+    "bestLaps": [
+      16.55,
+      16.85
+    ],
+    "boosts": [
+      34,
+      44
+    ],
+    "driftTimes": [
+      42.65,
+      32.9
+    ],
+    "collisions": [
+      1,
+      1
+    ],
+    "original_id": "r2-g1",
+    "source_run": "run-20261023-145150"
+  },
+  {
+    "id": "history-run-20261023-145150-r2-g2",
+    "round": 2,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "deepseek-flash",
+    "reason": "冲线",
+    "duration": 0.67,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1109,
+    "seed": 6022,
+    "track": {
+      "length": 470.923,
+      "halfWidth": 3.614,
+      "audit": {
+        "roadTiles": 3395,
+        "length": 470.9226994510681,
+        "halfWidth": 3.6141445802524688,
+        "minSelfDistance": 9.310273365955961,
+        "startOnRoad": true,
+        "gridOnRoad": true,
+        "valid": true,
+        "attempt": 2
+      }
+    },
+    "laps": [
+      2,
+      3
+    ],
+    "finishTimes": [
+      null,
+      55.4
+    ],
+    "bestLaps": [
+      17.45,
+      16.7
+    ],
+    "boosts": [
+      49,
+      34
+    ],
+    "driftTimes": [
+      32.55,
+      42.9
+    ],
+    "collisions": [
+      5,
+      5
+    ],
+    "original_id": "r2-g2",
+    "source_run": "run-20261023-145150"
+  }
+]

@@ -1,0 +1,56 @@
+=== r1-g1 round 3: frames 3278..4975, 84.85s, winner=GPT-6.1 Sol ===
+our team ['vex', 'kestrel', 'aegis'] sol team ['kestrel', 'aegis', 'vex']
+  f 3278 r    0  163.90s EVENT suddenDeath 长弓 · Kestrel 在决着阶段被拖垮
+  f 3278 r    0  163.90s EVENT ko 长弓 · Kestrel 被击败
+  f 3278 r    0  163.90s EVENT roundEnd 第 2 局：长弓 · Kestrel 胜（击倒）
+  f 3279 r    1  163.95s OURS START 直拳 x=420 inp={'dir': 'DB', 'btn': None}
+  f 3279 r    1  163.95s SOL  START 短弓柄 x=860 inp={'dir': 'DB', 'btn': None}
+  f 3306 r   28  165.30s SOL  START 穿云箭 x=891 inp={'dir': 'F', 'btn': None}
+  f 3338 r   60  166.90s SOL  START 穿云箭 x=891 inp={'dir': 'DB', 'btn': None}
+  f 3339 r   61  166.95s OURS BLOCK 防御 · 削防 13
+  f 3371 r   93  168.55s OURS BLOCK 防御 · 削防 13
+  f 3396 r  118  169.80s SOL  START 长弓 · 万矢 x=838 inp={'dir': 'F', 'btn': None}
+  f 3396 r  118  169.80s SOL  SUPER 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  f 3414 r  136  170.70s SOL  HIT dmg=300 combo=1 hp=974/899 state=crouch/attack inp={'dir': 'F', 'btn': None}
+  f 3495 r  217  174.75s SOL  START 短弓柄 x=848 inp={'dir': 'DB', 'btn': None}
+  f 3498 r  220  174.90s SOL  HIT dmg=52 combo=1 hp=674/899 state=crouch/stand inp={'dir': 'F', 'btn': None}
+  f 3503 r  225  175.15s SOL  START 弓身横扫 x=848 inp={'dir': 'F', 'btn': None}
+  f 3514 r  236  175.70s OURS BLOCK 防御 · 削防 11
+  f 3555 r  277  177.75s SOL  START 踩踏 x=886 inp={'dir': 'DB', 'btn': None}
+  f 3559 r  281  177.95s SOL  HIT dmg=62 combo=1 hp=611/899 state=crouch/stand inp={'dir': 'F', 'btn': None}
+  f 3564 r  286  178.20s SOL  START 弓身横扫 x=886 inp={'dir': 'DB', 'btn': None}
+  f 3575 r  297  178.75s OURS BLOCK 防御 · 削防 11
+  f 3615 r  337  180.75s SOL  START 短弓柄 x=886 inp={'dir': 'DB', 'btn': None}
+  f 3618 r  340  180.90s SOL  HIT dmg=52 combo=1 hp=538/899 state=crouch/crouch inp={'dir': 'F', 'btn': None}
+  f 3623 r  345  181.15s SOL  START 弓身横扫 x=886 inp={'dir': 'F', 'btn': None}
+  f 3634 r  356  181.70s OURS BLOCK 防御 · 削防 11
+  f 3664 r  386  183.20s SOL  START 倒跃射 x=886 inp={'dir': 'F', 'btn': None}
+  f 3671 r  393  183.55s OURS BLOCK 防御 · 削防 12
+  f 3720 r  442  186.00s SOL  START 短弓柄 x=948 inp={'dir': 'DB', 'btn': None}
+  f 3723 r  445  186.15s SOL  HIT dmg=52 combo=1 hp=463/899 state=crouch/stand inp={'dir': 'F', 'btn': None}
+  f 3728 r  450  186.40s SOL  START 弓身横扫 x=948 inp={'dir': 'F', 'btn': None}
+  f 3739 r  461  186.95s OURS BLOCK 防御 · 削防 11
+  f 3769 r  491  188.45s SOL  START 倒跃射 x=948 inp={'dir': 'F', 'btn': None}
+  f 3776 r  498  188.80s OURS BLOCK 防御 · 削防 12
+  f 3825 r  547  191.25s SOL  START 短弓柄 x=1019 inp={'dir': 'DB', 'btn': None}
+  f 3828 r  550  191.40s SOL  HIT dmg=52 combo=1 hp=388/899 state=crouch/stand inp={'dir': 'F', 'btn': None}
+  f 3833 r  555  191.65s SOL  START 弓身横扫 x=1019 inp={'dir': 'F', 'btn': None}
+  f 3844 r  566  192.20s OURS BLOCK 防御 · 削防 11
+  f 3874 r  596  193.70s SOL  START 弓身横扫 x=1019 inp={'dir': 'F', 'btn': None}
+  f 3885 r  607  194.25s OURS BLOCK 防御 · 削防 11
+  f 3915 r  637  195.75s SOL  START 短弓柄 x=1019 inp={'dir': 'DB', 'btn': None}
+  f 3918 r  640  195.90s SOL  HIT dmg=52 combo=1 hp=314/899 state=crouch/stand inp={'dir': 'F', 'btn': None}
+  f 3923 r  645  196.15s SOL  START 弓身横扫 x=1019 inp={'dir': 'F', 'btn': None}
+  f 3934 r  656  196.70s OURS BLOCK 防御 · 削防 11
+  f 3964 r  686  198.20s SOL  START 短弓柄 x=1019 inp={'dir': 'F', 'btn': None}
+  f 3967 r  689  198.35s OURS BLOCK 防御 · 削防 4
+  f 3978 r  700  198.90s OURS START 直拳 x=952 inp={'dir': 'DB', 'btn': None}
+  f 3982 r  704  199.10s SOL  BLOCK 防御 · 削防 5
+  f 4022 r  744  201.10s SOL  START 空中重拳 x=1023 inp={'dir': 'B', 'btn': None}
+  f 4030 r  752  201.50s OURS BLOCK 防御 · 削防 12
+  f 4075 r  797  203.75s SOL  START 倒跃射 x=893 inp={'dir': 'B', 'btn': None}
+  f 4082 r  804  204.10s OURS BLOCK 防御 · 削防 12
+  f 4922 r 1644  246.10s SOL  START 倒跃射 x=1220 inp={'dir': 'F', 'btn': None}
+  f 4929 r 1651  246.45s SOL  HIT dmg=112 combo=1 hp=174/845 state=stand/crouch inp={'dir': 'F', 'btn': None}
+  f 4964 r 1686  248.20s EVENT down 
+  f 4971 r 1693  248.55s SOL  START 穿云箭 x=1220 inp={'dir': 'DB', 'btn': None}

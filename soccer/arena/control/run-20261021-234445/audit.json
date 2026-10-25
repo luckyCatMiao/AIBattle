@@ -1,0 +1,151 @@
+{
+  "verified": true,
+  "sourceVerified": true,
+  "frozenStrategiesVerified": true,
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        0,
+        1
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 25,
+          "possession": 1219,
+          "fouls": 0
+        },
+        {
+          "kicks": 13,
+          "possession": 172,
+          "fouls": 0
+        }
+      ],
+      "sha256": "a0fe719d13a99a3f5b8f51e17f9bd47bb4ae2bfd5745aa1699e47c82d896def2"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        7,
+        6
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 17,
+          "possession": 17,
+          "fouls": 0
+        },
+        {
+          "kicks": 17,
+          "possession": 250,
+          "fouls": 0
+        }
+      ],
+      "sha256": "5023386bf54dc6776f6a9a951019dd53fff958b795a1463172c1765f3532e6f2"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "deepseek-flash",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        2,
+        0
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 39,
+          "possession": 452,
+          "fouls": 0
+        },
+        {
+          "kicks": 18,
+          "possession": 244,
+          "fouls": 0
+        }
+      ],
+      "sha256": "f296ca8d392ed476cf606c00be9668a6b17199517dba519d50ca03ac6f104f85"
+    },
+    {
+      "id": "r2-g2",
+      "winner": null,
+      "frames": 2801,
+      "windows": 140,
+      "score": [
+        0,
+        0
+      ],
+      "reason": "金球未分胜负，平局",
+      "stats": [
+        {
+          "kicks": 24,
+          "possession": 141,
+          "fouls": 0
+        },
+        {
+          "kicks": 69,
+          "possession": 911,
+          "fouls": 0
+        }
+      ],
+      "sha256": "86281e5a480e7a43c1210cb4807fd36ca26d4e5ed893bba1ab0ff4fdec5e04b5"
+    },
+    {
+      "id": "r3-g1",
+      "winner": null,
+      "frames": 2801,
+      "windows": 140,
+      "score": [
+        0,
+        0
+      ],
+      "reason": "金球未分胜负，平局",
+      "stats": [
+        {
+          "kicks": 48,
+          "possession": 671,
+          "fouls": 0
+        },
+        {
+          "kicks": 38,
+          "possession": 347,
+          "fouls": 0
+        }
+      ],
+      "sha256": "89d1ca7072fd962c4477309f1f0a8bd33716a769c4e419b0a17c39606bcebf0a"
+    },
+    {
+      "id": "r3-g2",
+      "winner": null,
+      "frames": 2801,
+      "windows": 140,
+      "score": [
+        0,
+        0
+      ],
+      "reason": "金球未分胜负，平局",
+      "stats": [
+        {
+          "kicks": 21,
+          "possession": 434,
+          "fouls": 0
+        },
+        {
+          "kicks": 45,
+          "possession": 536,
+          "fouls": 0
+        }
+      ],
+      "sha256": "7da33ee46cab133d04ea8d7fef737b9541564cccacab528801f595c80a709440"
+    }
+  ]
+}

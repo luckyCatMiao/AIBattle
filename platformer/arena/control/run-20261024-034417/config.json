@@ -1,0 +1,60 @@
+{
+  "game": "platformer",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "reasoning_effort": "medium",
+  "rounds": 3,
+  "games_per_round": 2,
+  "port": 8816,
+  "watch_port": 8815,
+  "fresh_start": true,
+  "incumbent": null,
+  "continue_both": false,
+  "from_run": null,
+  "source_round": 3,
+  "starting_files": {
+    "deepseek-flash": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ],
+    "sol": [
+      "GAME.md",
+      "RULES.md",
+      "canary.txt",
+      "catalog.js",
+      "example.json",
+      "public_results.json",
+      "simulation.js"
+    ]
+  },
+  "inherited_files": {},
+  "clients": {
+    "deepseek-flash": "Claude Code",
+    "sol": "Claude Code"
+  },
+  "no_isolation": true,
+  "stream_proxy": [
+    "sol"
+  ],
+  "history_games": 0,
+  "decision_frames": 5,
+  "max_windows": 1700,
+  "source_sha256": "5dda0198eb3b41039c2785d64720393c283c1ab4801ec7cc55d812fe4d5e0a26",
+  "catalog_sha256": "11fb601bbdec0f2511c1b2a58d314cb3280f03520b736baf9052cf02ebc219c6",
+  "public_sim_sha256": "40c1413ae2ff66187874c7982c8d44d40a5282ff26b78873a06619bb283e5103",
+  "frozen_paths": {
+    "sol-r1": "control/run-20261024-034417/round-1/sol",
+    "deepseek-flash-r1": "control/run-20261024-034417/round-1/deepseek-flash",
+    "sol-r2": "control/run-20261024-034417/round-2/sol",
+    "deepseek-flash-r2": "control/run-20261024-034417/round-2/deepseek-flash",
+    "sol-r3": "control/run-20261024-034417/round-3/sol",
+    "deepseek-flash-r3": "control/run-20261024-034417/round-3/deepseek-flash"
+  }
+}

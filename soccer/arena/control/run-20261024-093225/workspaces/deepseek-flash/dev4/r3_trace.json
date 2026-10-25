@@ -1,0 +1,2033 @@
+[
+ {
+  "id": "r3-g1",
+  "rows": [
+   {
+    "frame": 66,
+    "t": 3.3,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 22.466,
+    "y": 12.219,
+    "dist_goal": 22.22,
+    "aimed_goal": false,
+    "pred_y": -25.24,
+    "outcome": {
+     "type": "lost",
+     "frame": 68,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 81,
+    "t": 4.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 22.53,
+    "y": 10.616,
+    "dist_goal": 20.06,
+    "aimed_goal": true,
+    "pred_y": 10.62,
+    "outcome": {
+     "type": "lost",
+     "frame": 85,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 101,
+    "t": 5.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 25.674,
+    "y": 9.922,
+    "dist_goal": 25.6,
+    "aimed_goal": false,
+    "pred_y": -26.03,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 102,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 103,
+    "t": 5.15,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 23.956,
+    "y": 8.515,
+    "dist_goal": 24.1,
+    "aimed_goal": false,
+    "pred_y": -19.29,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 201,
+    "t": 10.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 10.597,
+    "y": 7.76,
+    "dist_goal": 32.29,
+    "aimed_goal": false,
+    "pred_y": 5.49,
+    "outcome": {
+     "type": "lost",
+     "frame": 202,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 221,
+    "t": 11.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 12.439,
+    "y": 7.532,
+    "dist_goal": 13.04,
+    "aimed_goal": true,
+    "pred_y": 10.93,
+    "outcome": {
+     "type": "lost",
+     "frame": 223,
+     "unit": "t0u5",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 241,
+    "t": 12.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 10.942,
+    "y": 8.505,
+    "dist_goal": 31.82,
+    "aimed_goal": true,
+    "pred_y": 14.17,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 243,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 261,
+    "t": 13.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 15.037,
+    "y": 7.297,
+    "dist_goal": 28.31,
+    "aimed_goal": false,
+    "pred_y": -29.81,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 307,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 321,
+    "t": 16.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 24.153,
+    "y": 6.345,
+    "dist_goal": 20.52,
+    "aimed_goal": false,
+    "pred_y": null,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 323,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 341,
+    "t": 17.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 24.105,
+    "y": 7.411,
+    "dist_goal": 19.16,
+    "aimed_goal": true,
+    "pred_y": 15.42,
+    "outcome": {
+     "type": "lost",
+     "frame": 342,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 343,
+    "t": 17.15,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 24.966,
+    "y": 7.806,
+    "dist_goal": 25.13,
+    "aimed_goal": false,
+    "pred_y": 49.44,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 478,
+    "t": 23.9,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 11.285,
+    "y": 21.275,
+    "dist_goal": 13.45,
+    "aimed_goal": true,
+    "pred_y": 9.62,
+    "outcome": {
+     "type": "save",
+     "frame": 512,
+     "unit": null,
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 521,
+    "t": 26.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.741,
+    "y": 11.398,
+    "dist_goal": 40.82,
+    "aimed_goal": false,
+    "pred_y": 38.19,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 541,
+     "unit": "t0u5",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 561,
+    "t": 28.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 9.61,
+    "y": 16.11,
+    "dist_goal": 32.99,
+    "aimed_goal": true,
+    "pred_y": 10.21,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 562,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 581,
+    "t": 29.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 11.804,
+    "y": 15.113,
+    "dist_goal": 30.72,
+    "aimed_goal": true,
+    "pred_y": 15.11,
+    "outcome": {
+     "type": "lost",
+     "frame": 599,
+     "unit": "t1u5",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 600,
+    "t": 30.0,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 20.657,
+    "y": 14.73,
+    "dist_goal": 20.31,
+    "aimed_goal": false,
+    "pred_y": -5.98,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 605,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 606,
+    "t": 30.3,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 18.11,
+    "y": 11.69,
+    "dist_goal": 17.92,
+    "aimed_goal": false,
+    "pred_y": -18.51,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 741,
+    "t": 37.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 8.717,
+    "y": 7.519,
+    "dist_goal": 34.18,
+    "aimed_goal": false,
+    "pred_y": 7.52,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 764,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 781,
+    "t": 39.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 19.54,
+    "y": 7.635,
+    "dist_goal": 23.54,
+    "aimed_goal": false,
+    "pred_y": 21.73,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 782,
+     "unit": "t0u5",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 801,
+    "t": 40.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 22.086,
+    "y": 7.806,
+    "dist_goal": 21.0,
+    "aimed_goal": true,
+    "pred_y": 12.24,
+    "outcome": {
+     "type": "lost",
+     "frame": 841,
+     "unit": "t1u0",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 842,
+    "t": 42.1,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u0",
+    "x": 36.723,
+    "y": 10.799,
+    "dist_goal": 36.24,
+    "aimed_goal": false,
+    "pred_y": 17.47,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 847,
+     "unit": "t1u5",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 866,
+    "t": 43.3,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 31.511,
+    "y": 11.952,
+    "dist_goal": 31.23,
+    "aimed_goal": false,
+    "pred_y": 64.5,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 924,
+     "unit": "t1u4",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 941,
+    "t": 47.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 20.531,
+    "y": 21.459,
+    "dist_goal": 21.77,
+    "aimed_goal": false,
+    "pred_y": 26.93,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1054,
+    "t": 52.7,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 3.789,
+    "y": 22.099,
+    "dist_goal": 9.31,
+    "aimed_goal": true,
+    "pred_y": 12.94,
+    "outcome": {
+     "type": "save",
+     "frame": 1068,
+     "unit": null,
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1081,
+    "t": 54.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.85,
+    "y": 15.344,
+    "dist_goal": 40.71,
+    "aimed_goal": false,
+    "pred_y": 29.53,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1096,
+     "unit": "t0u4",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1101,
+    "t": 55.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 9.252,
+    "y": 18.121,
+    "dist_goal": 33.59,
+    "aimed_goal": false,
+    "pred_y": 18.12,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1106,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1121,
+    "t": 56.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 14.706,
+    "y": 18.672,
+    "dist_goal": 28.31,
+    "aimed_goal": false,
+    "pred_y": 16.69,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1281,
+    "t": 64.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 21.96,
+    "y": 12.378,
+    "dist_goal": 21.47,
+    "aimed_goal": false,
+    "pred_y": 2.82,
+    "outcome": {
+     "type": "lost",
+     "frame": 1282,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1301,
+    "t": 65.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 20.734,
+    "y": 12.114,
+    "dist_goal": 21.74,
+    "aimed_goal": true,
+    "pred_y": 10.17,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1302,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1321,
+    "t": 66.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 23.813,
+    "y": 13.834,
+    "dist_goal": 18.66,
+    "aimed_goal": true,
+    "pred_y": 12.16,
+    "outcome": {
+     "type": "lost",
+     "frame": 1334,
+     "unit": "t1u5",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1359,
+    "t": 67.95,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 29.094,
+    "y": 14.335,
+    "dist_goal": 28.87,
+    "aimed_goal": false,
+    "pred_y": 62.85,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1400,
+     "unit": "t1u4",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1433,
+    "t": 71.65,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 18.574,
+    "y": 20.478,
+    "dist_goal": 19.51,
+    "aimed_goal": false,
+    "pred_y": 20.47,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1541,
+    "t": 77.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 5.53,
+    "y": 20.47,
+    "dist_goal": 37.71,
+    "aimed_goal": false,
+    "pred_y": 30.52,
+    "outcome": {
+     "type": "lost",
+     "frame": 1558,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1601,
+    "t": 80.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 10.724,
+    "y": 24.121,
+    "dist_goal": 14.9,
+    "aimed_goal": true,
+    "pred_y": 14.45,
+    "outcome": {
+     "type": "save",
+     "frame": 1631,
+     "unit": null,
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1641,
+    "t": 82.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.873,
+    "y": 15.201,
+    "dist_goal": 40.65,
+    "aimed_goal": false,
+    "pred_y": 22.47,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1655,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1661,
+    "t": 83.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 9.404,
+    "y": 17.746,
+    "dist_goal": 33.82,
+    "aimed_goal": false,
+    "pred_y": 110.13,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1665,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1681,
+    "t": 84.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 13.055,
+    "y": 20.223,
+    "dist_goal": 30.25,
+    "aimed_goal": true,
+    "pred_y": 13.31,
+    "outcome": {
+     "type": "lost",
+     "frame": 1682,
+     "unit": "t1u4",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1701,
+    "t": 85.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u4",
+    "x": 15.673,
+    "y": 21.274,
+    "dist_goal": 17.44,
+    "aimed_goal": false,
+    "pred_y": 30.41,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1981,
+    "t": 99.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 7.225,
+    "y": 18.243,
+    "dist_goal": 35.61,
+    "aimed_goal": true,
+    "pred_y": 10.65,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1991,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2001,
+    "t": 100.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u3",
+    "x": 14.851,
+    "y": 17.414,
+    "dist_goal": 27.99,
+    "aimed_goal": false,
+    "pred_y": 24.96,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2009,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2021,
+    "t": 101.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 21.375,
+    "y": 18.128,
+    "dist_goal": 21.68,
+    "aimed_goal": true,
+    "pred_y": 15.08,
+    "outcome": {
+     "type": "lost",
+     "frame": 2063,
+     "unit": "t1u0",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2064,
+    "t": 103.2,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u0",
+    "x": 36.981,
+    "y": 15.311,
+    "dist_goal": 36.74,
+    "aimed_goal": false,
+    "pred_y": -46.35,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2136,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2147,
+    "t": 107.35,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 24.852,
+    "y": 4.069,
+    "dist_goal": 25.93,
+    "aimed_goal": false,
+    "pred_y": -0.44,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 2301,
+    "t": 115.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u1",
+    "x": 2.322,
+    "y": 2.283,
+    "dist_goal": 41.56,
+    "aimed_goal": false,
+    "pred_y": -3.45,
+    "outcome": {
+     "type": "lost",
+     "frame": 2326,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2327,
+    "t": 116.35,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 13.191,
+    "y": 2.268,
+    "dist_goal": 16.51,
+    "aimed_goal": false,
+    "pred_y": 5.48,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2329,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2361,
+    "t": 118.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 11.913,
+    "y": 1.793,
+    "dist_goal": 32.5,
+    "aimed_goal": false,
+    "pred_y": 19.02,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2368,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2381,
+    "t": 119.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 15.827,
+    "y": 4.908,
+    "dist_goal": 28.89,
+    "aimed_goal": false,
+    "pred_y": null,
+    "outcome": {
+     "type": "lost",
+     "frame": 2382,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2421,
+    "t": 121.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 14.865,
+    "y": 5.265,
+    "dist_goal": 29.49,
+    "aimed_goal": false,
+    "pred_y": null,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2422,
+     "unit": "t0u4",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2441,
+    "t": 122.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 16.471,
+    "y": 6.278,
+    "dist_goal": 26.82,
+    "aimed_goal": true,
+    "pred_y": 10.97,
+    "outcome": {
+     "type": "lost",
+     "frame": 2458,
+     "unit": "t1u5",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2461,
+    "t": 123.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u5",
+    "x": 24.828,
+    "y": 7.799,
+    "dist_goal": 25.08,
+    "aimed_goal": false,
+    "pred_y": -17.95,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2471,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2472,
+    "t": 123.6,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u1",
+    "x": 20.116,
+    "y": 3.528,
+    "dist_goal": 21.82,
+    "aimed_goal": false,
+    "pred_y": -2.14,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 2473,
+    "t": 123.65,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u2",
+    "x": 19.401,
+    "y": 3.351,
+    "dist_goal": 21.22,
+    "aimed_goal": false,
+    "pred_y": 0.23,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 2581,
+    "t": 129.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 4.61,
+    "y": 2.729,
+    "dist_goal": 39.24,
+    "aimed_goal": false,
+    "pred_y": 34.93,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2582,
+     "unit": "t0u4",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2601,
+    "t": 130.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u4",
+    "x": 6.911,
+    "y": 4.356,
+    "dist_goal": 36.56,
+    "aimed_goal": true,
+    "pred_y": 14.03,
+    "outcome": {
+     "type": "lost",
+     "frame": 2615,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2648,
+    "t": 132.4,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 12.064,
+    "y": 8.101,
+    "dist_goal": 12.48,
+    "aimed_goal": true,
+    "pred_y": 16.0,
+    "outcome": {
+     "type": "save",
+     "frame": 2677,
+     "unit": null,
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2681,
+    "t": 134.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u0",
+    "x": 1.781,
+    "y": 14.768,
+    "dist_goal": 40.79,
+    "aimed_goal": false,
+    "pred_y": -13.01,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2703,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2721,
+    "t": 136.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u2",
+    "x": 11.136,
+    "y": 8.925,
+    "dist_goal": 31.6,
+    "aimed_goal": false,
+    "pred_y": 3.88,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2722,
+     "unit": "t0u5",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2741,
+    "t": 137.05,
+    "team": 0,
+    "model": "deepseek-flash",
+    "unit": "t0u5",
+    "x": 14.332,
+    "y": 8.663,
+    "dist_goal": 28.6,
+    "aimed_goal": false,
+    "pred_y": 46.7,
+    "outcome": {
+     "type": "lost",
+     "frame": 2746,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2761,
+    "t": 138.05,
+    "team": 1,
+    "model": "sol",
+    "unit": "t1u3",
+    "x": 17.114,
+    "y": 11.919,
+    "dist_goal": 16.84,
+    "aimed_goal": false,
+    "pred_y": 40.46,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   }
+  ],
+  "summary": {
+   "deepseek-flash": {
+    "kicks": 34,
+    "kicks_aimed_goal": 13,
+    "shots_dist_le20": 2,
+    "shots_dist_le20_median_dist": 19.16,
+    "long_aim_gt20": 11,
+    "kick_dist_median": 31.16,
+    "kick_dist_min": 18.66,
+    "kick_dist_q25": 26.82,
+    "poss_segments": 33,
+    "poss_segments_box_entry": 0,
+    "poss_segments_third": 0,
+    "poss_frames": 504,
+    "max_advance": 25.3
+   },
+   "sol": {
+    "kicks": 25,
+    "kicks_aimed_goal": 5,
+    "shots_dist_le20": 5,
+    "shots_dist_le20_median_dist": 13.04,
+    "long_aim_gt20": 0,
+    "kick_dist_median": 21.47,
+    "kick_dist_min": 9.31,
+    "kick_dist_q25": 16.84,
+    "poss_segments": 28,
+    "poss_segments_box_entry": 0,
+    "poss_segments_third": 8,
+    "poss_frames": 340,
+    "max_advance": 40.68
+   }
+  }
+ },
+ {
+  "id": "r3-g2",
+  "rows": [
+   {
+    "frame": 69,
+    "t": 3.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.591,
+    "y": 12.221,
+    "dist_goal": 21.16,
+    "aimed_goal": false,
+    "pred_y": -23.43,
+    "outcome": {
+     "type": "lost",
+     "frame": 130,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 141,
+    "t": 7.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 30.607,
+    "y": 5.105,
+    "dist_goal": 31.12,
+    "aimed_goal": false,
+    "pred_y": -1.95,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 263,
+    "t": 13.15,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 8.849,
+    "y": 2.955,
+    "dist_goal": 35.2,
+    "aimed_goal": false,
+    "pred_y": 59.82,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 421,
+    "t": 21.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 23.811,
+    "y": 20.58,
+    "dist_goal": 20.2,
+    "aimed_goal": false,
+    "pred_y": -11.37,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 561,
+    "t": 28.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 35.938,
+    "y": 2.793,
+    "dist_goal": 11.87,
+    "aimed_goal": true,
+    "pred_y": 10.66,
+    "outcome": {
+     "type": "goal",
+     "frame": 585,
+     "unit": null,
+     "team": 0,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 666,
+    "t": 33.3,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.591,
+    "y": 12.221,
+    "dist_goal": 21.16,
+    "aimed_goal": false,
+    "pred_y": -23.43,
+    "outcome": {
+     "type": "lost",
+     "frame": 730,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 741,
+    "t": 37.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 30.841,
+    "y": 5.729,
+    "dist_goal": 31.2,
+    "aimed_goal": false,
+    "pred_y": 31.63,
+    "outcome": {
+     "type": "lost",
+     "frame": 743,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 781,
+    "t": 39.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 30.108,
+    "y": 7.594,
+    "dist_goal": 13.44,
+    "aimed_goal": true,
+    "pred_y": 10.65,
+    "outcome": {
+     "type": "save",
+     "frame": 811,
+     "unit": null,
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 821,
+    "t": 41.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 42.116,
+    "y": 10.81,
+    "dist_goal": 41.64,
+    "aimed_goal": false,
+    "pred_y": 1.85,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 843,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 861,
+    "t": 43.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 31.088,
+    "y": 8.824,
+    "dist_goal": 30.82,
+    "aimed_goal": false,
+    "pred_y": 8.81,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 862,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 907,
+    "t": 45.35,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 28.853,
+    "y": 13.369,
+    "dist_goal": 13.61,
+    "aimed_goal": true,
+    "pred_y": 15.35,
+    "outcome": {
+     "type": "save",
+     "frame": 940,
+     "unit": null,
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 941,
+    "t": 47.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 42.107,
+    "y": 15.124,
+    "dist_goal": 41.61,
+    "aimed_goal": true,
+    "pred_y": 10.7,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 967,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 981,
+    "t": 49.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 29.776,
+    "y": 13.973,
+    "dist_goal": 29.24,
+    "aimed_goal": true,
+    "pred_y": 10.85,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 982,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1001,
+    "t": 50.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 27.112,
+    "y": 14.287,
+    "dist_goal": 26.65,
+    "aimed_goal": false,
+    "pred_y": 25.8,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1141,
+    "t": 57.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 6.998,
+    "y": 22.761,
+    "dist_goal": 36.91,
+    "aimed_goal": false,
+    "pred_y": -37.19,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1152,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1153,
+    "t": 57.65,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 10.926,
+    "y": 17.132,
+    "dist_goal": 32.0,
+    "aimed_goal": false,
+    "pred_y": -36.28,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1281,
+    "t": 64.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.591,
+    "y": 12.221,
+    "dist_goal": 21.16,
+    "aimed_goal": false,
+    "pred_y": -23.43,
+    "outcome": {
+     "type": "lost",
+     "frame": 1358,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1361,
+    "t": 68.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 31.063,
+    "y": 6.418,
+    "dist_goal": 31.2,
+    "aimed_goal": true,
+    "pred_y": 10.78,
+    "outcome": {
+     "type": "lost",
+     "frame": 1362,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1401,
+    "t": 70.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 29.676,
+    "y": 6.595,
+    "dist_goal": 29.81,
+    "aimed_goal": true,
+    "pred_y": 10.77,
+    "outcome": {
+     "type": "lost",
+     "frame": 1420,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1421,
+    "t": 71.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 20.554,
+    "y": 7.718,
+    "dist_goal": 22.55,
+    "aimed_goal": false,
+    "pred_y": 3.73,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1429,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1430,
+    "t": 71.5,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 25.81,
+    "y": 6.404,
+    "dist_goal": 18.14,
+    "aimed_goal": false,
+    "pred_y": -7.27,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1431,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1432,
+    "t": 71.6,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 27.476,
+    "y": 5.278,
+    "dist_goal": 17.05,
+    "aimed_goal": false,
+    "pred_y": -3.99,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1581,
+    "t": 79.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 35.979,
+    "y": 6.589,
+    "dist_goal": 36.09,
+    "aimed_goal": false,
+    "pred_y": 40.15,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1586,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1601,
+    "t": 80.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 31.143,
+    "y": 9.035,
+    "dist_goal": 30.85,
+    "aimed_goal": true,
+    "pred_y": 11.21,
+    "outcome": {
+     "type": "lost",
+     "frame": 1618,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1621,
+    "t": 81.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 23.36,
+    "y": 9.691,
+    "dist_goal": 19.68,
+    "aimed_goal": false,
+    "pred_y": -17.03,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1647,
+     "unit": "t0u1",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1685,
+    "t": 84.25,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 29.225,
+    "y": 3.748,
+    "dist_goal": 16.14,
+    "aimed_goal": false,
+    "pred_y": 36.26,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1690,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1695,
+    "t": 84.75,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 31.486,
+    "y": 7.84,
+    "dist_goal": 12.07,
+    "aimed_goal": true,
+    "pred_y": 15.35,
+    "outcome": {
+     "type": "save",
+     "frame": 1726,
+     "unit": null,
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1741,
+    "t": 87.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 42.139,
+    "y": 14.851,
+    "dist_goal": 41.66,
+    "aimed_goal": false,
+    "pred_y": -0.46,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1763,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1781,
+    "t": 89.05,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 32.501,
+    "y": 10.21,
+    "dist_goal": 10.33,
+    "aimed_goal": true,
+    "pred_y": 10.65,
+    "outcome": {
+     "type": "goal",
+     "frame": 1805,
+     "unit": null,
+     "team": 0,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 1889,
+    "t": 94.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u1",
+    "x": 21.83,
+    "y": 12.959,
+    "dist_goal": 20.66,
+    "aimed_goal": false,
+    "pred_y": 21.98,
+    "outcome": {
+     "type": "lost",
+     "frame": 1890,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1901,
+    "t": 95.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 22.016,
+    "y": 13.266,
+    "dist_goal": 21.47,
+    "aimed_goal": true,
+    "pred_y": 15.58,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1902,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1921,
+    "t": 96.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 20.956,
+    "y": 13.577,
+    "dist_goal": 21.4,
+    "aimed_goal": false,
+    "pred_y": null,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1922,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1924,
+    "t": 96.2,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 21.729,
+    "y": 12.855,
+    "dist_goal": 21.18,
+    "aimed_goal": true,
+    "pred_y": 10.57,
+    "outcome": {
+     "type": "lost",
+     "frame": 1968,
+     "unit": "t0u0",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1969,
+    "t": 98.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u0",
+    "x": 6.104,
+    "y": 11.992,
+    "dist_goal": 36.38,
+    "aimed_goal": false,
+    "pred_y": 22.24,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 1976,
+     "unit": "t0u3",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 1989,
+    "t": 99.45,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u3",
+    "x": 11.433,
+    "y": 14.166,
+    "dist_goal": 31.33,
+    "aimed_goal": false,
+    "pred_y": 66.73,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2055,
+     "unit": "t0u2",
+     "team": 0,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2071,
+    "t": 103.55,
+    "team": 0,
+    "model": "sol",
+    "unit": "t0u2",
+    "x": 22.568,
+    "y": 20.385,
+    "dist_goal": 21.4,
+    "aimed_goal": false,
+    "pred_y": 33.8,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   },
+   {
+    "frame": 2201,
+    "t": 110.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u0",
+    "x": 41.866,
+    "y": 18.135,
+    "dist_goal": 41.65,
+    "aimed_goal": false,
+    "pred_y": 23.29,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2208,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2241,
+    "t": 112.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 34.831,
+    "y": 18.451,
+    "dist_goal": 34.93,
+    "aimed_goal": false,
+    "pred_y": 53.3,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2242,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2261,
+    "t": 113.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 33.854,
+    "y": 17.579,
+    "dist_goal": 34.63,
+    "aimed_goal": false,
+    "pred_y": null,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2262,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2281,
+    "t": 114.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 33.274,
+    "y": 16.607,
+    "dist_goal": 32.92,
+    "aimed_goal": true,
+    "pred_y": 14.29,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2282,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2301,
+    "t": 115.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 31.092,
+    "y": 16.823,
+    "dist_goal": 30.92,
+    "aimed_goal": false,
+    "pred_y": -18.97,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2302,
+     "unit": "t1u2",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2321,
+    "t": 116.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u2",
+    "x": 30.047,
+    "y": 15.62,
+    "dist_goal": 30.38,
+    "aimed_goal": false,
+    "pred_y": null,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2323,
+     "unit": "t1u3",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2341,
+    "t": 117.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u3",
+    "x": 28.864,
+    "y": 17.268,
+    "dist_goal": 28.63,
+    "aimed_goal": false,
+    "pred_y": 17.26,
+    "outcome": {
+     "type": "rebound_own",
+     "frame": 2376,
+     "unit": "t1u1",
+     "team": 1,
+     "ball_speed": 0.0
+    }
+   },
+   {
+    "frame": 2381,
+    "t": 119.05,
+    "team": 1,
+    "model": "deepseek-flash",
+    "unit": "t1u1",
+    "x": 14.342,
+    "y": 17.201,
+    "dist_goal": 14.4,
+    "aimed_goal": true,
+    "pred_y": 14.67,
+    "outcome": {
+     "type": "none",
+     "frame": null,
+     "unit": null,
+     "team": null,
+     "ball_speed": null
+    }
+   }
+  ],
+  "summary": {
+   "sol": {
+    "kicks": 21,
+    "kicks_aimed_goal": 5,
+    "shots_dist_le20": 5,
+    "shots_dist_le20_median_dist": 12.07,
+    "long_aim_gt20": 0,
+    "kick_dist_median": 20.66,
+    "kick_dist_min": 10.33,
+    "kick_dist_q25": 16.14,
+    "poss_segments": 22,
+    "poss_segments_box_entry": 0,
+    "poss_segments_third": 7,
+    "poss_frames": 255,
+    "max_advance": 36.09
+   },
+   "deepseek-flash": {
+    "kicks": 23,
+    "kicks_aimed_goal": 9,
+    "shots_dist_le20": 1,
+    "shots_dist_le20_median_dist": 14.4,
+    "long_aim_gt20": 8,
+    "kick_dist_median": 30.92,
+    "kick_dist_min": 14.4,
+    "kick_dist_q25": 28.63,
+    "poss_segments": 19,
+    "poss_segments_box_entry": 0,
+    "poss_segments_third": 0,
+    "poss_frames": 369,
+    "max_advance": 28.91
+   }
+  }
+ }
+]

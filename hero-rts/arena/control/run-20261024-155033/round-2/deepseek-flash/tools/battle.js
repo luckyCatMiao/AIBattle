@@ -1,0 +1,23 @@
+'use strict';
+const {runDuel}=require('./duel');
+const {Agent}=require('../agent.js');
+const {SolClone}=require('./solclone.js');
+const seat=parseInt(process.argv[2]||'0',10);
+const agOpts=process.argv[3]?JSON.parse(process.argv[3]):{};
+const us=new Agent(agOpts),cl=new SolClone({});
+const A=seat===0?us:cl,B=seat===0?cl:us;
+let last=-1;
+const r=runDuel(A,B,{heroA:seat===0?'necromancer':'druid',heroB:seat===0?'druid':'necromancer',maxSeconds:400,onFrame:(g)=>{
+  const t=g.now;if(t<55||t>135||t-last<5)return;last=t;
+  const mine=g.units.filter(u=>u.owner===seat&&u.hp>0);
+  const foe=g.units.filter(u=>u.owner===1-seat&&u.hp>0);
+  const th=g.buildings.find(b=>b.type==='townhall'&&b.owner===1-seat);
+  const towers=g.buildings.filter(b=>b.owner===1-seat&&b.type==='tower');
+  const hero=mine.find(u=>u.hero);
+  const c=mine.filter(u=>u.type!=='worker').length?{x:mine.filter(u=>u.type!=='worker').reduce((s,u)=>s+u.x,0)/mine.filter(u=>u.type!=='worker').length,y:mine.filter(u=>u.type!=='worker').reduce((s,u)=>s+u.y,0)/mine.filter(u=>u.type!=='worker').length}:null;
+  const fmt=arr=>arr.map(u=>u.type+(u.hero?'(lv'+u.level+')':'')+' '+Math.round(u.hp)+(u.shield>0?'+'+Math.round(u.shield):'')).join(' ');
+  console.log(`\nt=${t.toFixed(0)} centroid ${c?Math.round(c.x)+','+Math.round(c.y):'-'} TH=${th?Math.round(th.hp):'X'} towers=${towers.map(x=>Math.round(x.hp)).join(',')} ourHero=${hero?hero.level+'/'+Math.round(hero.hp):'-'}`);
+  console.log('  US :',fmt(mine.filter(u=>u.type!=='worker')));
+  console.log('  OPP:',fmt(foe));
+}});
+console.log('RESULT',r.winner,r.duration.toFixed(1));

@@ -1,0 +1,103 @@
+{
+  "verified": true,
+  "sourceVerified": true,
+  "frozenStrategiesVerified": true,
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": null,
+      "frames": 2801,
+      "windows": 140,
+      "score": [
+        0,
+        0
+      ],
+      "reason": "金球未分胜负，平局",
+      "stats": [
+        {
+          "kicks": 43,
+          "possession": 159,
+          "fouls": 0
+        },
+        {
+          "kicks": 28,
+          "possession": 270,
+          "fouls": 0
+        }
+      ],
+      "sha256": "52e9a52419824168cb12343b33ede2fbfe15210b27e3a580082db3b3025d32f6"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        5,
+        0
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 16,
+          "possession": 51,
+          "fouls": 0
+        },
+        {
+          "kicks": 4,
+          "possession": 4,
+          "fouls": 0
+        }
+      ],
+      "sha256": "32ddb2f3f88469a2bce3b15f5213fcc0ebdcf093e7412606f5d643fa431da822"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        0,
+        2
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 49,
+          "possession": 173,
+          "fouls": 0
+        },
+        {
+          "kicks": 28,
+          "possession": 242,
+          "fouls": 0
+        }
+      ],
+      "sha256": "848c8ff5dfb3700a163b670978bbe1389820d5f45bc45af15c69e5be6ce7f9d5"
+    },
+    {
+      "id": "r2-g2",
+      "winner": null,
+      "frames": 2801,
+      "windows": 140,
+      "score": [
+        0,
+        0
+      ],
+      "reason": "金球未分胜负，平局",
+      "stats": [
+        {
+          "kicks": 23,
+          "possession": 309,
+          "fouls": 0
+        },
+        {
+          "kicks": 31,
+          "possession": 97,
+          "fouls": 0
+        }
+      ],
+      "sha256": "bbe0886a7553fd62895f9590ca27f081c6fd50de9c9be379af58a9272c40d3dd"
+    }
+  ]
+}

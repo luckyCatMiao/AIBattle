@@ -1,0 +1,149 @@
+==========================================================================================
+r3-g1.json.gz seats [ 'deepseek-flash', 'sol' ] status finished wins [ 1, 1 ] winner null reason 比分 1:1 frame 2872
+event counts {
+  ready: 1,
+  go: 3,
+  push: 24,
+  monster: 11,
+  respawn: 11,
+  round: 3,
+  finish: 1
+}
+  PUSH R1 f=58 deepseek-flash -> sol x=15.91
+  PUSH R1 f=59 deepseek-flash -> sol x=16.22
+  RESPAWN R1 f=194 {"id":6,"t":9.7,"frame":194,"type":"respawn","team":0,"reason":"锯齿","x":2.5,"y":3}
+  ROUND R2 f=451 {"id":9,"t":22.55,"frame":451,"type":"round","round":1,"team":1,"reason":"到达终点","wins":[0,1]}
+  PUSH R2 f=594 deepseek-flash -> sol x=44.88
+  PUSH R2 f=595 deepseek-flash -> sol x=45.09
+  PUSH R2 f=596 deepseek-flash -> sol x=45.39
+  PUSH R2 f=644 deepseek-flash -> sol x=61.88
+  PUSH R2 f=645 deepseek-flash -> sol x=62.22
+  PUSH R2 f=651 deepseek-flash -> sol x=64.16
+  RESPAWN R2 f=677 {"id":19,"t":33.85,"frame":677,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  RESPAWN R2 f=681 {"id":20,"t":34.05,"frame":681,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=682 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=901 {"id":23,"t":45.05,"frame":901,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=902 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=1116 {"id":25,"t":55.8,"frame":1116,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=1117 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=1321 {"id":27,"t":66.05,"frame":1321,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=1322 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=1546 {"id":29,"t":77.3,"frame":1546,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=1547 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=1756 {"id":31,"t":87.8,"frame":1756,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=1757 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=1966 {"id":33,"t":98.3,"frame":1966,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=1967 deepseek-flash -> sol x=3.61
+  RESPAWN R2 f=2174 {"id":35,"t":108.7,"frame":2174,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  PUSH R2 f=2175 deepseek-flash -> sol x=3.61
+  ROUND R3 f=2272 {"id":37,"t":113.6,"frame":2272,"type":"round","round":2,"team":null,"reason":"时间到","wins":[0,1]}
+  PUSH R3 f=2310 deepseek-flash -> sol x=9.08
+  PUSH R3 f=2311 deepseek-flash -> sol x=9.42
+  PUSH R3 f=2316 deepseek-flash -> sol x=11.03
+  PUSH R3 f=2343 deepseek-flash -> sol x=20.18
+  PUSH R3 f=2703 deepseek-flash -> sol x=142.5
+  PUSH R3 f=2704 deepseek-flash -> sol x=142.81
+  PUSH R3 f=2714 sol -> deepseek-flash x=145.67
+  PUSH R3 f=2724 deepseek-flash -> sol x=148.52
+  RESPAWN R3 f=2724 {"id":51,"t":136.2,"frame":2724,"type":"respawn","team":1,"reason":"食人花","x":3.4,"y":3}
+  ROUND R3 f=2872 {"id":53,"t":143.6,"frame":2872,"type":"round","round":3,"team":0,"reason":"到达终点","wins":[1,1]}
+  FINISH R3 f=2872 {"id":54,"t":143.6,"frame":2872,"type":"finish","team":null,"reason":"比分 1:1","wins":[1,1]}
+==========================================================================================
+r3-g2.json.gz seats [ 'sol', 'deepseek-flash' ] status finished wins [ 1, 0 ] winner 0 reason 比分 1:0 frame 4113
+event counts {
+  ready: 1,
+  go: 3,
+  monster: 22,
+  respawn: 39,
+  push: 45,
+  round: 3,
+  finish: 1
+}
+  RESPAWN R1 f=313 {"id":5,"t":15.65,"frame":313,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  RESPAWN R1 f=361 {"id":7,"t":18.05,"frame":361,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R1 f=372 deepseek-flash -> sol x=4.67
+  RESPAWN R1 f=691 {"id":11,"t":34.55,"frame":691,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R1 f=702 deepseek-flash -> sol x=4.67
+  RESPAWN R1 f=1006 {"id":13,"t":50.3,"frame":1006,"type":"respawn","team":0,"reason":"锯齿","x":2.5,"y":3}
+  PUSH R1 f=1009 sol -> deepseek-flash x=4.07
+  PUSH R1 f=1010 sol -> deepseek-flash x=4.29
+  PUSH R1 f=1011 sol -> deepseek-flash x=4.51
+  RESPAWN R1 f=1315 {"id":17,"t":65.75,"frame":1315,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R1 f=1320 sol -> deepseek-flash x=4.76
+  PUSH R1 f=1321 sol -> deepseek-flash x=4.97
+  RESPAWN R1 f=1656 {"id":20,"t":82.8,"frame":1656,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R1 f=1667 sol -> deepseek-flash x=5.18
+  PUSH R1 f=1668 sol -> deepseek-flash x=5.4
+  PUSH R1 f=1669 sol -> deepseek-flash x=5.61
+  PUSH R1 f=1670 sol -> deepseek-flash x=5.83
+  PUSH R1 f=1671 sol -> deepseek-flash x=6.05
+  ROUND R2 f=1821 {"id":26,"t":91.05,"frame":1821,"type":"round","round":1,"team":null,"reason":"时间到","wins":[0,0]}
+  RESPAWN R2 f=1888 {"id":28,"t":94.4,"frame":1888,"type":"respawn","team":1,"reason":"地刺","x":3.4,"y":3}
+  RESPAWN R2 f=1891 {"id":29,"t":94.55,"frame":1891,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=1902 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=1946 {"id":31,"t":97.3,"frame":1946,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=1957 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2001 {"id":34,"t":100.05,"frame":2001,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2012 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2056 {"id":36,"t":102.8,"frame":2056,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2067 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2111 {"id":39,"t":105.55,"frame":2111,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2122 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2166 {"id":41,"t":108.3,"frame":2166,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2177 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2221 {"id":44,"t":111.05,"frame":2221,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2232 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2276 {"id":46,"t":113.8,"frame":2276,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2287 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2331 {"id":49,"t":116.55,"frame":2331,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2342 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2386 {"id":51,"t":119.3,"frame":2386,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2397 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2441 {"id":54,"t":122.05,"frame":2441,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2452 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2511 {"id":56,"t":125.55,"frame":2511,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2522 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2566 {"id":59,"t":128.3,"frame":2566,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2577 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2621 {"id":62,"t":131.05,"frame":2621,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2632 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2676 {"id":64,"t":133.8,"frame":2676,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2687 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2731 {"id":67,"t":136.55,"frame":2731,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2742 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2801 {"id":69,"t":140.05,"frame":2801,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2812 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2856 {"id":71,"t":142.8,"frame":2856,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2867 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2911 {"id":74,"t":145.55,"frame":2911,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2922 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=2971 {"id":76,"t":148.55,"frame":2971,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=2982 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3026 {"id":78,"t":151.3,"frame":3026,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3037 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3081 {"id":81,"t":154.05,"frame":3081,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3092 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3136 {"id":83,"t":156.8,"frame":3136,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3147 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3191 {"id":86,"t":159.55,"frame":3191,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3202 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3246 {"id":88,"t":162.3,"frame":3246,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3257 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3306 {"id":90,"t":165.3,"frame":3306,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3317 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3361 {"id":93,"t":168.05,"frame":3361,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3372 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3446 {"id":95,"t":172.3,"frame":3446,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3457 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3501 {"id":98,"t":175.05,"frame":3501,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3512 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3556 {"id":101,"t":177.8,"frame":3556,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3567 deepseek-flash -> sol x=4.67
+  RESPAWN R2 f=3611 {"id":103,"t":180.55,"frame":3611,"type":"respawn","team":0,"reason":"地刺","x":2.5,"y":3}
+  PUSH R2 f=3622 deepseek-flash -> sol x=4.67
+  ROUND R3 f=3642 {"id":105,"t":182.1,"frame":3642,"type":"round","round":2,"team":null,"reason":"时间到","wins":[0,0]}
+  PUSH R3 f=3733 sol -> deepseek-flash x=27.09
+  PUSH R3 f=3751 sol -> deepseek-flash x=33.18
+  RESPAWN R3 f=3751 {"id":109,"t":187.55,"frame":3751,"type":"respawn","team":1,"reason":"锯齿","x":3.4,"y":3}
+  ROUND R3 f=4113 {"id":113,"t":205.65,"frame":4113,"type":"round","round":3,"team":0,"reason":"到达终点","wins":[1,0]}
+  FINISH R3 f=4113 {"id":114,"t":205.65,"frame":4113,"type":"finish","team":0,"reason":"比分 1:0","wins":[1,0]}

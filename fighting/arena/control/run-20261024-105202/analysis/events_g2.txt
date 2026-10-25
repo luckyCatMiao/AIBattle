@@ -1,0 +1,233 @@
+== r3-g2 seed=1032 seats=['sol', 'deepseek-flash'] teams=[['kestrel', 'aegis', 'vex'], ['vex', 'kestrel', 'aegis']]
+duration(wall)=12.48 scores={'deepseek-flash': 1024, 'sol': 4195} windows=254 snapshots=255 final_frame=3800 now=190
+events total 218
+
+=== ROUND 1: 77 events ===
+types: {'round': 1, 'jump': 3, 'move': 54, 'block': 6, 'hit': 9, 'whiff': 1, 'down': 2, 'projectile': 1}
+hit damage by owner: {0: 716, 1: 276} hits: {0: 7, 1: 2} block events: {0: 1, 1: 5}
+  f0 t0 round text=第 1 局 · 长弓 · Kestrel 对 疾影 · Vex
+  f30 t1.5 jump owner=0 x=382
+  f62 t3.1 move owner=0 name=空中重腿 text=长弓 · Kestrel 发动 空中重腿 x=574
+  f99 t4.95 move owner=0 name=贯石枪 text=长弓 · Kestrel 发动 贯石枪 x=635
+  f150 t7.5 jump owner=0 x=625
+  f184 t9.2 move owner=0 name=空中重腿 text=长弓 · Kestrel 发动 空中重腿 x=829
+  f225 t11.25 jump owner=0 x=905
+  f257 t12.85 move owner=0 name=空中重腿 text=长弓 · Kestrel 发动 空中重腿 x=1096
+  f266 t13.3 block owner=1 text=防御 · 削防 13 x=1220
+  f283 t14.15 move owner=1 name=旋身踢 text=疾影 · Vex 发动 旋身踢 x=1220
+  f295 t14.75 hit owner=1 damage=138 combo=1 text=命中 138 x=1139
+  f319 t15.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1137
+  f323 t16.15 hit owner=0 damage=62 combo=1 text=命中 62 x=1220
+  f328 t16.4 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1137
+  f339 t16.95 block owner=1 text=防御 · 削防 11 x=1220
+  f360 t18 move owner=1 name=旋身踢 text=疾影 · Vex 发动 旋身踢 x=1220
+  f369 t18.45 move owner=0 name=倒跃射 text=长弓 · Kestrel 发动 倒跃射 x=1137
+  f372 t18.6 whiff owner=1 text=无敌帧躲开 x=1137
+  f376 t18.8 hit owner=0 damage=112 combo=1 text=命中 112 x=1220
+  f411 t20.55 down owner=1 x=1223
+  f418 t20.9 move owner=0 name=穿云箭 text=长弓 · Kestrel 发动 穿云箭 x=1137
+  f429 t21.45 projectile owner=0 text=长弓 · Kestrel 发射 穿云箭 x=1209
+  f429 t21.45 hit owner=0 damage=96 combo=1 text=命中 96 x=1220
+  f456 t22.8 move owner=0 name=倒跃射 text=长弓 · Kestrel 发动 倒跃射 x=1137
+  f463 t23.15 block owner=1 text=防御 · 削防 12 x=1220
+  f480 t24 move owner=1 name=旋身踢 text=疾影 · Vex 发动 旋身踢 x=1220
+  f492 t24.6 hit owner=1 damage=138 combo=1 text=命中 138 x=1137
+  f516 t25.8 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1069
+  f527 t26.35 block owner=1 text=防御 · 削防 11 x=1220
+  f559 t27.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f589 t29.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f619 t30.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f649 t32.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f679 t33.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f709 t35.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f739 t36.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f769 t38.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f799 t39.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f829 t41.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f859 t42.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f889 t44.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f919 t45.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f949 t47.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f979 t48.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1009 t50.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1039 t51.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1069 t53.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1099 t54.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1129 t56.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1159 t57.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1189 t59.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1219 t60.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1249 t62.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1279 t63.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1309 t65.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1339 t66.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1369 t68.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1399 t69.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1429 t71.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1459 t72.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1489 t74.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1519 t75.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1549 t77.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1579 t78.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1609 t80.45 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1069
+  f1613 t80.65 hit owner=0 damage=62 combo=1 text=命中 62 x=1168
+  f1618 t80.9 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1069
+  f1629 t81.45 block owner=1 text=防御 · 削防 11 x=1186
+  f1650 t82.5 move owner=1 name=旋身踢 text=疾影 · Vex 发动 旋身踢 x=1196
+  f1662 t83.1 block owner=0 text=防御 · 削防 11 x=1069
+  f1680 t84 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1047
+  f1691 t84.55 hit owner=0 damage=132 combo=1 text=命中 132 x=1196
+  f1697 t84.85 move owner=0 name=高踢 text=长弓 · Kestrel 发动 高踢 x=1047
+  f1710 t85.5 hit owner=0 damage=137 combo=2 text=命中 137 · 2 连 x=1220
+  f1715 t85.75 move owner=0 name=贯石枪 text=长弓 · Kestrel 发动 贯石枪 x=1047
+  f1730 t86.5 hit owner=0 damage=115 combo=3 text=命中 115 · 3 连 x=1220
+  f1748 t87.4 down owner=1 x=1224
+
+=== ROUND 2: 30 events ===
+types: {'suddenDeath': 1, 'ko': 1, 'roundEnd': 1, 'round': 1, 'jump': 1, 'move': 12, 'projectile': 3, 'block': 4, 'hit': 5, 'super': 1}
+hit damage by owner: {0: 899, 1: 0} hits: {0: 5, 1: 0} block events: {0: 1, 1: 3}
+  f1772 t88.6 suddenDeath owner=1 text=疾影 · Vex 在决着阶段被拖垮 x=1220
+  f1772 t88.6 ko owner=1 text=疾影 · Vex 被击败 x=1220
+  f1772 t88.6 roundEnd owner=0 text=第 1 局：长弓 · Kestrel 胜（击倒）
+  f1772 t88.6 round text=第 2 局 · 长弓 · Kestrel 对 长弓 · Kestrel
+  f1785 t89.25 jump owner=0 x=477
+  f1817 t90.85 move owner=0 name=空中重拳 text=长弓 · Kestrel 发动 空中重拳 x=669
+  f1862 t93.1 move owner=0 name=穿云箭 text=长弓 · Kestrel 发动 穿云箭 x=700
+  f1873 t93.65 projectile owner=0 text=长弓 · Kestrel 发射 穿云箭 x=772
+  f1880 t94 block owner=1 text=防御 · 削防 13 x=904
+  f1899 t94.95 move owner=1 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=911
+  f1920 t96 move owner=1 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=889
+  f1923 t96.15 block owner=0 text=防御 · 削防 4 x=796
+  f1934 t96.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=803
+  f1937 t96.85 block owner=1 text=防御 · 削防 4 x=889
+  f1948 t97.4 move owner=1 name=高踢 text=长弓 · Kestrel 发动 高踢 x=899
+  f1950 t97.5 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=803
+  f1961 t98.05 hit owner=0 damage=132 combo=1 text=命中 132 x=899
+  f1967 t98.35 move owner=0 name=高踢 text=长弓 · Kestrel 发动 高踢 x=803
+  f1980 t99 hit owner=0 damage=137 combo=2 text=命中 137 · 2 连 x=931
+  f1988 t99.4 move owner=0 name=长弓 · 万矢 text=长弓 · Kestrel 发动 长弓 · 万矢 x=803
+  f1988 t99.4 super owner=0 text=长弓 · Kestrel 取消接超必杀 长弓 · 万矢 x=803
+  f2002 t100.1 hit owner=0 damage=240 combo=3 text=命中 240 · 3 连 x=967
+  f2011 t100.55 hit owner=0 damage=210 combo=4 text=命中 210 · 4 连 x=979
+  f2020 t101 hit owner=0 damage=180 combo=5 text=命中 180 · 5 连 x=995
+  f2102 t105.1 move owner=0 name=穿云箭 text=长弓 · Kestrel 发动 穿云箭 x=776
+  f2113 t105.65 projectile owner=0 text=长弓 · Kestrel 发射 穿云箭 x=848
+  f2121 t106.05 block owner=1 text=防御 · 削防 13 x=992
+  f2138 t106.9 move owner=0 name=穿云箭 text=长弓 · Kestrel 发动 穿云箭 x=776
+  f2140 t107 move owner=1 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1000
+  f2149 t107.45 projectile owner=0 text=长弓 · Kestrel 发射 穿云箭 x=848
+
+=== ROUND 3: 111 events ===
+types: {'hit': 10, 'ko': 2, 'roundEnd': 2, 'round': 1, 'move': 74, 'projectile': 2, 'block': 13, 'jump': 4, 'down': 1, 'super': 1, 'matchEnd': 1}
+hit damage by owner: {0: 994, 1: 198} hits: {0: 8, 1: 2} block events: {0: 1, 1: 12}
+  f2157 t107.85 hit owner=0 damage=96 combo=1 text=命中 96 x=991
+  f2157 t107.85 ko owner=1 text=长弓 · Kestrel 被击败 x=991
+  f2157 t107.85 roundEnd owner=0 text=第 2 局：长弓 · Kestrel 胜（击倒）
+  f2157 t107.85 round text=第 3 局 · 长弓 · Kestrel 对 铁律 · Aegis
+  f2164 t108.2 move owner=0 name=穿云箭 text=长弓 · Kestrel 发动 穿云箭 x=420
+  f2175 t108.75 projectile owner=0 text=长弓 · Kestrel 发射 穿云箭 x=492
+  f2194 t109.7 block owner=1 text=防御 · 削防 13 x=760
+  f2220 t111 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=351
+  f2234 t111.7 move owner=0 name=穿云箭 text=长弓 · Kestrel 发动 穿云箭 x=351
+  f2245 t112.25 projectile owner=0 text=长弓 · Kestrel 发射 穿云箭 x=423
+  f2260 t113 block owner=1 text=防御 · 削防 13 x=652
+  f2270 t113.5 jump owner=0 x=351
+  f2301 t115.05 move owner=0 name=空中重腿 text=长弓 · Kestrel 发动 空中重腿 x=537
+  f2340 t117 jump owner=0 x=605
+  f2355 t117.75 move owner=0 name=空中轻拳 text=长弓 · Kestrel 发动 空中轻拳 x=691
+  f2359 t117.95 block owner=1 text=防御 · 削防 6 x=814
+  f2415 t120.75 jump owner=0 x=822
+  f2432 t121.6 move owner=0 name=空中重拳 text=长弓 · Kestrel 发动 空中重拳 x=921
+  f2440 t122 block owner=1 text=防御 · 削防 12 x=1031
+  f2456 t122.8 move owner=1 name=回旋踵落 text=铁律 · Aegis 发动 回旋踵落 x=1042
+  f2485 t124.25 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1049
+  f2488 t124.4 hit owner=0 damage=52 combo=1 text=命中 52 x=1105
+  f2493 t124.65 move owner=0 name=倒跃射 text=长弓 · Kestrel 发动 倒跃射 x=1049
+  f2500 t125 hit owner=0 damage=101 combo=2 text=命中 101 · 2 连 x=1115
+  f2535 t126.75 down owner=1 x=1223
+  f2543 t127.15 move owner=0 name=高踢 text=长弓 · Kestrel 发动 高踢 x=1054
+  f2556 t127.8 hit owner=0 damage=152 combo=1 text=命中 152 x=1220
+  f2567 t128.35 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1054
+  f2578 t128.9 hit owner=0 damage=119 combo=2 text=命中 119 · 2 连 x=1220
+  f2583 t129.15 move owner=0 name=高踢 text=长弓 · Kestrel 发动 高踢 x=1054
+  f2596 t129.8 hit owner=0 damage=122 combo=3 text=命中 122 · 3 连 x=1220
+  f2640 t132 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1012
+  f2677 t133.85 move owner=0 name=倒跃射 text=长弓 · Kestrel 发动 倒跃射 x=1012
+  f2719 t135.95 jump owner=0 x=1012
+  f2730 t136.5 move owner=0 name=空中轻腿 text=长弓 · Kestrel 发动 空中轻腿 x=1074
+  f2734 t136.7 block owner=1 text=防御 · 削防 6 x=1200
+  f2781 t139.05 move owner=0 name=倒跃射 text=长弓 · Kestrel 发动 倒跃射 x=1220
+  f2788 t139.4 block owner=1 text=防御 · 削防 12 x=1121
+  f2805 t140.25 move owner=1 name=回旋踵落 text=铁律 · Aegis 发动 回旋踵落 x=1115
+  f2819 t140.95 hit owner=1 damage=140 combo=1 text=命中 140 x=1220
+  f2850 t142.5 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1220
+  f2853 t142.65 hit owner=0 damage=52 combo=1 text=命中 52 x=1115
+  f2858 t142.9 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1220
+  f2869 t143.45 block owner=1 text=防御 · 削防 11 x=1091
+  f2910 t145.5 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1220
+  f2921 t146.05 block owner=1 text=防御 · 削防 11 x=1080
+  f2940 t147 move owner=1 name=回旋踵落 text=铁律 · Aegis 发动 回旋踵落 x=1072
+  f2954 t147.7 block owner=0 text=防御 · 削防 11 x=1220
+  f2974 t148.7 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1220
+  f2994 t149.7 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1202
+  f2998 t149.9 block owner=1 text=防御 · 削防 5 x=1072
+  f3019 t150.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1198
+  f3023 t151.15 block owner=1 text=防御 · 削防 5 x=1061
+  f3043 t152.15 move owner=0 name=弓身横扫 text=长弓 · Kestrel 发动 弓身横扫 x=1212
+  f3054 t152.7 block owner=1 text=防御 · 削防 11 x=1053
+  f3094 t154.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3109 t155.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3124 t156.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3139 t156.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3154 t157.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3169 t158.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3184 t159.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3199 t159.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3214 t160.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3229 t161.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3244 t162.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3259 t162.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3274 t163.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3289 t164.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3304 t165.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3319 t165.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3334 t166.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3349 t167.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3364 t168.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3379 t168.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3394 t169.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3409 t170.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3424 t171.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3439 t171.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3454 t172.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3469 t173.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3484 t174.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3499 t174.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3514 t175.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3529 t176.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3544 t177.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3559 t177.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3574 t178.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3589 t179.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3604 t180.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3619 t180.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3634 t181.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3649 t182.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3664 t183.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3679 t183.95 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3694 t184.7 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3709 t185.45 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3724 t186.2 move owner=0 name=短弓柄 text=长弓 · Kestrel 发动 短弓柄 x=1185
+  f3739 t186.95 move owner=0 name=踩踏 text=长弓 · Kestrel 发动 踩踏 x=1172
+  f3743 t187.15 block owner=1 text=防御 · 削防 5 x=1044
+  f3759 t187.95 move owner=0 name=高踢 text=长弓 · Kestrel 发动 高踢 x=1172
+  f3765 t188.25 move owner=1 name=直拳 text=铁律 · Aegis 发动 直拳 x=1036
+  f3769 t188.45 hit owner=1 damage=58 combo=1 text=命中 58 x=1172
+  f3774 t188.7 move owner=1 name=侧踢 text=铁律 · Aegis 发动 侧踢 x=1036
+  f3785 t189.25 move owner=0 name=长弓 · 万矢 text=长弓 · Kestrel 发动 长弓 · 万矢 x=1213
+  f3785 t189.25 super owner=0 text=长弓 · Kestrel 发动超必杀 长弓 · 万矢 x=1213
+  f3791 t189.55 move owner=1 name=直拳 text=铁律 · Aegis 发动 直拳 x=1036
+  f3799 t189.95 hit owner=0 damage=300 combo=1 text=命中 300 x=1036
+  f3799 t189.95 ko owner=1 text=铁律 · Aegis 被击败 x=1036
+  f3799 t189.95 roundEnd owner=0 text=第 3 局：长弓 · Kestrel 胜（击倒）
+  f3799 t189.95 matchEnd owner=0 text=GPT-6.1 Sol 获胜（3 局）

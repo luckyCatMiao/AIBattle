@@ -1,0 +1,8 @@
+[
+ {"name":"base","weave_on":0,"boost_on":0},
+ {"name":"weave","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.30,"weave_boost_off":0},
+ {"name":"corner8","weave_on":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_comp":0},
+ {"name":"corner6","weave_on":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":6,"drift_comp":0},
+ {"name":"corner8_comp","weave_on":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_comp":1.0},
+ {"name":"both","weave_amp":0.6,"weave_T":0.72,"weave_base_max":0.5,"boost_energy_min":0.30,"weave_boost_off":0,"drift_on":1,"drift_r_max":7.5,"drift_max_frames":8,"drift_comp":0}
+]

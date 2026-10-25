@@ -1,0 +1,219 @@
+{
+  "run": "run-20261024-155033",
+  "phase": "双方复盘并改进",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 3,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 265.75,
+      "scores": {
+        "deepseek-flash": 2453,
+        "sol": 11655
+      },
+      "errors": {
+        "deepseek-flash": 21,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1064,
+      "sha256": "1c4dfe6882e597917eca3beed6f9f8082ae770c2b72db90bc9e7e1ae1ef64a3f"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 256.45,
+      "scores": {
+        "sol": 11761,
+        "deepseek-flash": 2334
+      },
+      "errors": {
+        "sol": 0,
+        "deepseek-flash": 23
+      },
+      "technicalFailure": null,
+      "frames": 1027,
+      "sha256": "543d9a25aaec58a4ae6a120238dcf55b810ad854417a9b8e1999ef604452d5fc"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 333.8,
+      "scores": {
+        "deepseek-flash": 2971,
+        "sol": 15820
+      },
+      "errors": {
+        "deepseek-flash": 34,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1337,
+      "sha256": "d3af0282757b88b467161d498aa0e2f371a8b58a3b38d10a17752be464a2aa47"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "deepseek-flash",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 440.75,
+      "scores": {
+        "sol": 13978,
+        "deepseek-flash": 3810
+      },
+      "errors": {
+        "sol": 0,
+        "deepseek-flash": 50
+      },
+      "technicalFailure": null,
+      "frames": 1764,
+      "sha256": "dc55689595e3fe12de160056a5f2ac2d2dc1fb30677e95c9f8b733fea45abfca"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 265.75,
+      "scores": {
+        "deepseek-flash": 2453,
+        "sol": 11655
+      },
+      "errors": {
+        "deepseek-flash": 21,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1064,
+      "sha256": "1c4dfe6882e597917eca3beed6f9f8082ae770c2b72db90bc9e7e1ae1ef64a3f"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 256.45,
+      "scores": {
+        "sol": 11761,
+        "deepseek-flash": 2334
+      },
+      "errors": {
+        "sol": 0,
+        "deepseek-flash": 23
+      },
+      "technicalFailure": null,
+      "frames": 1027,
+      "sha256": "543d9a25aaec58a4ae6a120238dcf55b810ad854417a9b8e1999ef604452d5fc"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 333.8,
+      "scores": {
+        "deepseek-flash": 2971,
+        "sol": 15820
+      },
+      "errors": {
+        "deepseek-flash": 34,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1337,
+      "sha256": "d3af0282757b88b467161d498aa0e2f371a8b58a3b38d10a17752be464a2aa47"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "deepseek-flash",
+      "reason": "其余势力的城镇大厅全部被摧毁",
+      "duration": 440.75,
+      "scores": {
+        "sol": 13978,
+        "deepseek-flash": 3810
+      },
+      "errors": {
+        "sol": 0,
+        "deepseek-flash": 50
+      },
+      "technicalFailure": null,
+      "frames": 1764,
+      "sha256": "dc55689595e3fe12de160056a5f2ac2d2dc1fb30677e95c9f8b733fea45abfca"
+    }
+  ],
+  "ready": [
+    "sol"
+  ],
+  "setup_note": "GPT-6.1 Sol 沿用上一系列冻结策略，不额外修改；挑战者从零，准备时间不设上限；双方可见相同历史公开回放；每轮交换出生点打两局；每0.25秒同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 218048,
+  "completed": false,
+  "updated": "2026-10-24T18:02:52",
+  "player_ready": "sol",
+  "game": 2,
+  "game_id": "r2-g2",
+  "seats": [
+    "sol",
+    "deepseek-flash"
+  ],
+  "now": 440.75,
+  "tick": 8815
+}

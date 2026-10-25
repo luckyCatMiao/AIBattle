@@ -1,0 +1,315 @@
+====================================================================================================
+r1-g1 seed=1011 seats=['deepseek-flash', 'sol'] our_seat=0
+teams: our=['vex', 'kestrel', 'aegis']  sol=['kestrel', 'aegis', 'vex']
+winner=1 reason=车轮战全胜 scores={'deepseek-flash': 996, 'sol': 2534} errors={'deepseek-flash': 0, 'sol': 0}
+sim frames=4975 now=248.75s wall=16.01s windows=332
+official: {'DeepSeek V4.1 Flash': {'damageDealt': 0, 'hits': 0, 'blocks': 83, 'throws': 0, 'parries': 0, 'maxCombo': 0, 'score': 996}, 'GPT-6.1 Sol': {'damageDealt': 1588, 'hits': 19, 'blocks': 3, 'throws': 0, 'parries': 0, 'maxCombo': 1, 'score': 2534}}
+
+round | dur(s) | matchup(our vs sol) | winner | startHP(us/sol) -> endHP | our dmg/hits | sol dmg/hits | our blk/sup | sol blk/sup | our maxcombo
+R1 |  81.30 | Vex     vs Kestrel | SOL   | 1000/1000 -> 0/966 | 0/0 | 392/6 | 28/0 | 0/1 | 0
+R2 |  82.60 | Kestrel vs Kestrel | SOL   | 1000/966 -> 0/899 | 0/0 | 462/5 | 41/0 | 2/1 | 0
+R3 |  84.85 | Aegis   vs Kestrel | SOL   | 1000/899 -> 0/782 | 0/0 | 734/8 | 14/0 | 1/1 | 0
+
+-- supers --
+  SOL   R1 f1431 (71.55s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  SOL   R2 f2342 (117.10s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  SOL   R3 f3396 (169.80s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+-- notable hits (dmg>=130 or combo>=2) --
+  SOL  R2 f1626 (81.30s) dmg=144 combo=1
+  SOL  R2 f2475 (123.75s) dmg=152 combo=1
+  SOL  R3 f3414 (170.70s) dmg=300 combo=1
+
+-- move starts (deduped) by side --
+  R1 OUR {'刺拳': 1, '双掌推': 1}
+  R1 SOL {'空中重拳': 7, '弓身横扫': 2, '穿云箭': 3, '倒跃射': 13, '短弓柄': 3, '空中轻拳': 1, '踩踏': 2, '长弓 · 万矢': 1, '贯石枪': 1}
+  R2 OUR {'短弓柄': 2, '弓身横扫': 1}
+  R2 SOL {'穿云箭': 7, '空中重腿': 1, '弓身横扫': 11, '倒跃射': 7, '短弓柄': 5, '踩踏': 4, '长弓 · 万矢': 1, '高踢': 1, '贯石枪': 1, '空中轻腿': 1}
+  R3 OUR {'直拳': 2}
+  R3 SOL {'短弓柄': 7, '穿云箭': 3, '长弓 · 万矢': 1, '弓身横扫': 7, '踩踏': 1, '倒跃射': 4, '空中重拳': 1}
+
+-- repeated move runs (>=5 consecutive same move) --
+  SOL R1 倒跃射 x6 f245..475 span=11.50s
+  SOL R1 倒跃射 x5 f861..1045 span=9.20s
+  SOL R2 弓身横扫 x7 f1834..2104 span=13.50s
+
+-- our offense efficiency per round --
+  R1: moveStarts=2 hits=0 hit/start=0.00 dmg=0
+  R2: moveStarts=3 hits=0 hit/start=0.00 dmg=0
+  R3: moveStarts=2 hits=0 hit/start=0.00 dmg=0
+
+-- round boundaries --
+  R1: frames 0..1626 (0.00s..81.30s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs vex
+  R2: frames 1626..3278 (81.30s..163.90s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs kestrel
+  R3: frames 3278..4975 (163.90s..248.75s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs aegis
+
+====================================================================================================
+r1-g2 seed=1012 seats=['sol', 'deepseek-flash'] our_seat=1
+teams: our=['vex', 'kestrel', 'aegis']  sol=['kestrel', 'aegis', 'vex']
+winner=0 reason=车轮战全胜 scores={'deepseek-flash': 696, 'sol': 3014} errors={'deepseek-flash': 0, 'sol': 0}
+sim frames=3874 now=193.7s wall=12.26s windows=259
+official: {'GPT-6.1 Sol': {'damageDealt': 1822, 'hits': 22, 'blocks': 1, 'throws': 0, 'parries': 0, 'maxCombo': 2, 'score': 3014}, 'DeepSeek V4.1 Flash': {'damageDealt': 0, 'hits': 0, 'blocks': 58, 'throws': 0, 'parries': 0, 'maxCombo': 0, 'score': 696}}
+
+round | dur(s) | matchup(our vs sol) | winner | startHP(us/sol) -> endHP | our dmg/hits | sol dmg/hits | our blk/sup | sol blk/sup | our maxcombo
+R1 |  63.45 | Vex     vs Kestrel | SOL   | 1000/1000 -> 0/1000 | 0/0 | 422/5 | 25/0 | 0/1 | 0
+R2 |  46.75 | Kestrel vs Kestrel | SOL   | 1000/1000 -> 0/1000 | 0/0 | 651/8 | 17/0 | 0/1 | 0
+R3 |  83.50 | Aegis   vs Kestrel | SOL   | 1000/1000 -> 0/916 | 0/0 | 749/9 | 16/0 | 1/1 | 0
+
+-- supers --
+  SOL   R1 f1133 (56.65s) 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+  SOL   R2 f2047 (102.35s) 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+  SOL   R3 f3819 (190.95s) 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+-- notable hits (dmg>=130 or combo>=2) --
+  SOL  R1 f321 (16.05s) dmg=144 combo=1
+  SOL  R2 f1678 (83.90s) dmg=152 combo=1
+  SOL  R2 f2042 (102.10s) dmg=47 combo=2
+  SOL  R2 f2186 (109.30s) dmg=132 combo=1
+  SOL  R3 f2204 (110.20s) dmg=137 combo=2
+
+-- move starts (deduped) by side --
+  R1 OUR {'刺拳': 3}
+  R1 SOL {'空中重腿': 3, '倒跃射': 12, '短弓柄': 3, '贯石枪': 1, '踩踏': 2, '弓身横扫': 3, '穿云箭': 2, '长弓 · 万矢': 1}
+  R2 OUR {'弓身横扫': 1}
+  R2 SOL {'穿云箭': 3, '空中轻拳': 3, '短弓柄': 7, '空中重腿': 2, '弓身横扫': 4, '高踢': 2, '踩踏': 1, '长弓 · 万矢': 1}
+  R3 OUR {'铁贯手': 5, '直拳': 1}
+  R3 SOL {'穿云箭': 9, '空中轻拳': 1, '踩踏': 4, '空中重拳': 1, '倒跃射': 1, '短弓柄': 2, '弓身横扫': 3, '长弓 · 万矢': 1}
+
+-- repeated move runs (>=5 consecutive same move) --
+  SOL R1 倒跃射 x6 f707..938 span=11.55s
+  SOL R3 穿云箭 x9 f2211..2616 span=20.25s
+
+-- our offense efficiency per round --
+  R1: moveStarts=3 hits=0 hit/start=0.00 dmg=0
+  R2: moveStarts=1 hits=0 hit/start=0.00 dmg=0
+  R3: moveStarts=6 hits=0 hit/start=0.00 dmg=0
+
+-- round boundaries --
+  R1: frames 0..1269 (0.00s..63.45s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs vex
+  R2: frames 1269..2204 (63.45s..110.20s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs kestrel
+  R3: frames 2204..3874 (110.20s..193.70s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs aegis
+
+====================================================================================================
+r2-g1 seed=1021 seats=['deepseek-flash', 'sol'] our_seat=0
+teams: our=['vex', 'kestrel', 'aegis']  sol=['kestrel', 'aegis', 'vex']
+winner=1 reason=车轮战全胜 scores={'deepseek-flash': 1686, 'sol': 3121} errors={'deepseek-flash': 0, 'sol': 0}
+sim frames=6809 now=340.45s wall=65.02s windows=454
+official: {'DeepSeek V4.1 Flash': {'damageDealt': 628, 'hits': 5, 'blocks': 59, 'throws': 0, 'parries': 0, 'maxCombo': 1, 'score': 1686}, 'GPT-6.1 Sol': {'damageDealt': 1735, 'hits': 21, 'blocks': 8, 'throws': 0, 'parries': 0, 'maxCombo': 3, 'score': 3121}}
+
+round | dur(s) | matchup(our vs sol) | winner | startHP(us/sol) -> endHP | our dmg/hits | sol dmg/hits | our blk/sup | sol blk/sup | our maxcombo
+R1 |  88.00 | Vex     vs Kestrel | SOL   | 1000/1000 -> 0/645 | 138/1 | 703/6 | 8/0 | 1/0 | 1
+R2 |  84.90 | Kestrel vs Kestrel | SOL   | 1000/645 -> 0/380 | 152/1 | 436/5 | 22/0 | 0/1 | 1
+R3 |  88.45 | Aegis   vs Kestrel | OURS  | 1000/380 -> 362/0 | 140/1 | 322/6 | 20/0 | 4/1 | 1
+R4 |  79.10 | Aegis   vs Aegis   | SOL   | 362/1000 -> 0/768 | 198/2 | 274/4 | 9/1 | 3/0 | 1
+
+-- supers --
+  SOL   R2 f2121 (106.05s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  SOL   R3 f4326 (216.30s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  OURS  R4 f6587 (329.35s) 铁律 · Aegis 取消接超必杀 绝律 · 三重天
+-- notable hits (dmg>=130 or combo>=2) --
+  OURS R1 f281 (14.05s) dmg=138 combo=1
+  SOL  R1 f386 (19.30s) dmg=152 combo=1
+  SOL  R1 f587 (29.35s) dmg=152 combo=1
+  SOL  R1 f603 (30.15s) dmg=119 combo=2
+  SOL  R1 f621 (31.05s) dmg=122 combo=3
+  OURS R2 f2233 (111.65s) dmg=152 combo=1
+  OURS R3 f4259 (212.95s) dmg=140 combo=1
+  OURS R4 f6578 (328.90s) dmg=140 combo=1
+
+-- move starts (deduped) by side --
+  R1 OUR {'低扫': 2, '旋身踢': 5}
+  R1 SOL {'空中重拳': 3, '穿云箭': 4, '空中重腿': 3, '倒跃射': 1, '踩踏': 31, '弓身横扫': 2, '高踢': 3}
+  R2 OUR {'踩踏': 4, '高踢': 2}
+  R2 SOL {'穿云箭': 14, '短弓柄': 2, '弓身横扫': 2, '踩踏': 4, '长弓 · 万矢': 1}
+  R3 OUR {'回旋踵落': 2, '直拳': 8}
+  R3 SOL {'穿云箭': 4, '空中重腿': 4, '踩踏': 4, '空中轻拳': 1, '空中重拳': 2, '短弓柄': 12, '弓身横扫': 8, '倒跃射': 1, '长弓 · 万矢': 1}
+  R4 OUR {'回旋踵落': 7, '直拳': 1, '绝律 · 三重天': 1}
+  R4 SOL {'铁律弹': 3, '空中轻拳': 2, '侧踢': 15, '空中重拳': 3, '直拳': 12, '铁贯手': 5, '回旋踵落': 2}
+
+-- repeated move runs (>=5 consecutive same move) --
+  SOL R1 踩踏 x29 f844..1684 span=42.00s
+  SOL R2 穿云箭 x6 f1772..1969 span=9.85s
+  SOL R2 穿云箭 x6 f2359..3317 span=47.90s
+  OURS R3 直拳 x8 f4695..5163 span=23.40s
+  SOL R3 短弓柄 x6 f3805..3945 span=7.00s
+  OURS R4 回旋踵落 x6 f6210..6564 span=17.70s
+
+-- our offense efficiency per round --
+  R1: moveStarts=7 hits=1 hit/start=0.14 dmg=138
+  R2: moveStarts=6 hits=1 hit/start=0.17 dmg=152
+  R3: moveStarts=10 hits=1 hit/start=0.10 dmg=140
+  R4: moveStarts=9 hits=2 hit/start=0.22 dmg=198
+
+-- round boundaries --
+  R1: frames 0..1760 (0.00s..88.00s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs vex
+  R2: frames 1760..3458 (88.00s..172.90s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs kestrel
+  R3: frames 3458..5227 (172.90s..261.35s) winner=DeepSeek V4.1 Flash reason=击倒 picks=aegis vs kestrel
+  R4: frames 5227..6809 (261.35s..340.45s) winner=GPT-6.1 Sol reason=击倒 picks=aegis vs aegis
+
+====================================================================================================
+r2-g2 seed=1022 seats=['sol', 'deepseek-flash'] our_seat=1
+teams: our=['vex', 'kestrel', 'aegis']  sol=['kestrel', 'aegis', 'vex']
+winner=0 reason=车轮战全胜 scores={'deepseek-flash': 2623, 'sol': 2266} errors={'deepseek-flash': 0, 'sol': 0}
+sim frames=5905 now=295.25s wall=54.61s windows=394
+official: {'GPT-6.1 Sol': {'damageDealt': 1492, 'hits': 15, 'blocks': 2, 'throws': 0, 'parries': 0, 'maxCombo': 1, 'score': 2266}, 'DeepSeek V4.1 Flash': {'damageDealt': 1319, 'hits': 11, 'blocks': 47, 'throws': 0, 'parries': 0, 'maxCombo': 2, 'score': 2623}}
+
+round | dur(s) | matchup(our vs sol) | winner | startHP(us/sol) -> endHP | our dmg/hits | sol dmg/hits | our blk/sup | sol blk/sup | our maxcombo
+R1 |  94.60 | Vex     vs Kestrel | SOL   | 1000/1000 -> 0/244 | 276/2 | 382/4 | 4/0 | 0/0 | 1
+R2 |  37.30 | Kestrel vs Kestrel | OURS  | 1000/244 -> 402/0 | 109/2 | 386/4 | 13/0 | 1/1 | 2
+R3 |  89.75 | Kestrel vs Aegis   | SOL   | 402/1000 -> 0/428 | 456/3 | 92/1 | 4/0 | 0/0 | 1
+R4 |  72.55 | Aegis   vs Aegis   | OURS  | 1000/428 -> 54/0 | 420/3 | 544/5 | 26/0 | 1/1 | 1
+R5 |   1.00 | Aegis   vs Vex     | SOL   | 54/1000 -> 0/1000 | 58/1 | 0/0 | 0/0 | 0/0 | 1
+
+-- supers --
+  SOL   R2 f2529 (126.45s) 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+  SOL   R4 f5128 (256.40s) 铁律 · Aegis 发动超必杀 绝律 · 三重天
+-- notable hits (dmg>=130 or combo>=2) --
+  OURS R1 f295 (14.75s) dmg=138 combo=1
+  OURS R1 f492 (24.60s) dmg=138 combo=1
+  SOL  R2 f1892 (94.60s) dmg=132 combo=1
+  OURS R2 f2083 (104.15s) dmg=47 combo=2
+  OURS R3 f2638 (131.90s) dmg=152 combo=1
+  OURS R3 f2893 (144.65s) dmg=152 combo=1
+  OURS R3 f3087 (154.35s) dmg=152 combo=1
+  OURS R4 f4520 (226.00s) dmg=140 combo=1
+  SOL  R4 f4673 (233.65s) dmg=134 combo=1
+  SOL  R4 f4791 (239.55s) dmg=140 combo=1
+  OURS R4 f4932 (246.60s) dmg=140 combo=1
+  OURS R4 f5009 (250.45s) dmg=140 combo=1
+
+-- move starts (deduped) by side --
+  R1 OUR {'旋身踢': 3, '刺拳': 1}
+  R1 SOL {'空中重腿': 3, '贯石枪': 1, '踩踏': 41, '弓身横扫': 3, '倒跃射': 3, '穿云箭': 1}
+  R2 OUR {'踩踏': 5, '短弓柄': 2, '高踢': 1}
+  R2 SOL {'穿云箭': 8, '空中轻拳': 2, '空中重腿': 1, '踩踏': 1, '长弓 · 万矢': 1}
+  R3 OUR {'高踢': 2}
+  R3 SOL {'空中重拳': 3, '侧踢': 2, '铁律弹': 2, '裂空上击': 1, '直拳': 1, '铁律突进': 1}
+  R4 OUR {'回旋踵落': 6, '直拳': 2}
+  R4 SOL {'铁律弹': 1, '铁律突进': 3, '回旋踵落': 2, '空中重拳': 2, '裂空上击': 3, '侧踢': 22, '空中轻拳': 1, '直拳': 2, '绝律 · 三重天': 1, '铁贯手': 1}
+  R5 OUR {'侧踢': 1}
+  R5 SOL {'疾影突': 1}
+
+-- repeated move runs (>=5 consecutive same move) --
+  SOL R1 踩踏 x40 f559..1729 span=58.50s
+  SOL R4 侧踢 x18 f5239..5618 span=18.95s
+
+-- our offense efficiency per round --
+  R1: moveStarts=4 hits=2 hit/start=0.50 dmg=276
+  R2: moveStarts=8 hits=2 hit/start=0.25 dmg=109
+  R3: moveStarts=2 hits=3 hit/start=1.50 dmg=456
+  R4: moveStarts=8 hits=3 hit/start=0.38 dmg=420
+  R5: moveStarts=1 hits=1 hit/start=1.00 dmg=58
+
+-- round boundaries --
+  R1: frames 0..1892 (0.00s..94.60s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs vex
+  R2: frames 1892..2638 (94.60s..131.90s) winner=DeepSeek V4.1 Flash reason=击倒 picks=kestrel vs kestrel
+  R3: frames 2638..4433 (131.90s..221.65s) winner=GPT-6.1 Sol reason=击倒 picks=aegis vs kestrel
+  R4: frames 4433..5884 (221.65s..294.20s) winner=DeepSeek V4.1 Flash reason=击倒 picks=aegis vs aegis
+  R5: frames 5884..5904 (294.20s..295.20s) winner=GPT-6.1 Sol reason=击倒 picks=vex vs aegis
+
+====================================================================================================
+r3-g1 seed=1031 seats=['deepseek-flash', 'sol'] our_seat=0
+teams: our=['vex', 'kestrel', 'aegis']  sol=['kestrel', 'aegis', 'vex']
+winner=1 reason=车轮战全胜 scores={'deepseek-flash': 1351, 'sol': 3350} errors={'deepseek-flash': 0, 'sol': 0}
+sim frames=4670 now=233.5s wall=15.99s windows=312
+official: {'DeepSeek V4.1 Flash': {'damageDealt': 387, 'hits': 4, 'blocks': 42, 'throws': 0, 'parries': 0, 'maxCombo': 2, 'score': 1351}, 'GPT-6.1 Sol': {'damageDealt': 2052, 'hits': 20, 'blocks': 4, 'throws': 0, 'parries': 0, 'maxCombo': 3, 'score': 3350}}
+
+round | dur(s) | matchup(our vs sol) | winner | startHP(us/sol) -> endHP | our dmg/hits | sol dmg/hits | our blk/sup | sol blk/sup | our maxcombo
+R1 |  83.70 | Vex     vs Kestrel | SOL   | 1000/1000 -> 0/757 | 138/1 | 765/7 | 8/0 | 2/0 | 1
+R2 |  65.60 | Kestrel vs Kestrel | SOL   | 1000/757 -> 0/648 | 109/2 | 696/7 | 15/0 | 0/1 | 2
+R3 |  84.20 | Aegis   vs Kestrel | SOL   | 1000/648 -> 0/397 | 140/1 | 591/6 | 19/0 | 2/1 | 1
+
+-- supers --
+  SOL   R2 f2477 (123.85s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+  SOL   R3 f3893 (194.65s) 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+-- notable hits (dmg>=130 or combo>=2) --
+  OURS R1 f281 (14.05s) dmg=138 combo=1
+  SOL  R1 f386 (19.30s) dmg=152 combo=1
+  SOL  R1 f587 (29.35s) dmg=152 combo=1
+  SOL  R1 f603 (30.15s) dmg=119 combo=2
+  SOL  R1 f621 (31.05s) dmg=122 combo=3
+  SOL  R2 f1674 (83.70s) dmg=132 combo=1
+  OURS R2 f2817 (140.85s) dmg=47 combo=2
+  SOL  R2 f2912 (145.60s) dmg=152 combo=1
+  SOL  R2 f2929 (146.45s) dmg=56 combo=2
+  OURS R3 f4004 (200.20s) dmg=140 combo=1
+  SOL  R3 f4241 (212.05s) dmg=132 combo=1
+  SOL  R3 f4260 (213.00s) dmg=137 combo=2
+
+-- move starts (deduped) by side --
+  R1 OUR {'低扫': 2, '旋身踢': 5}
+  R1 SOL {'空中重拳': 2, '穿云箭': 4, '空中重腿': 3, '倒跃射': 1, '踩踏': 28, '弓身横扫': 4, '高踢': 3}
+  R2 OUR {'踩踏': 2, '高踢': 1, '短弓柄': 2}
+  R2 SOL {'穿云箭': 7, '空中重拳': 2, '踩踏': 2, '高踢': 11, '长弓 · 万矢': 1, '空中重腿': 1, '短弓柄': 1, '弓身横扫': 3, '倒跃射': 1}
+  R3 OUR {'直拳': 3, '回旋踵落': 3, '侧踢': 6}
+  R3 SOL {'穿云箭': 6, '踩踏': 23, '弓身横扫': 7, '短弓柄': 2, '长弓 · 万矢': 1, '高踢': 2, '空中重拳': 1, '倒跃射': 1}
+
+-- repeated move runs (>=5 consecutive same move) --
+  SOL R1 踩踏 x26 f844..1594 span=37.50s
+  SOL R2 高踢 x9 f2038..2419 span=19.05s
+  OURS R3 侧踢 x5 f4074..4314 span=12.00s
+  SOL R3 踩踏 x22 f3079..3709 span=31.50s
+
+-- our offense efficiency per round --
+  R1: moveStarts=7 hits=1 hit/start=0.14 dmg=138
+  R2: moveStarts=5 hits=2 hit/start=0.40 dmg=109
+  R3: moveStarts=12 hits=1 hit/start=0.08 dmg=140
+
+-- round boundaries --
+  R1: frames 0..1674 (0.00s..83.70s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs vex
+  R2: frames 1674..2986 (83.70s..149.30s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs kestrel
+  R3: frames 2986..4670 (149.30s..233.50s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs aegis
+
+====================================================================================================
+r3-g2 seed=1032 seats=['sol', 'deepseek-flash'] our_seat=1
+teams: our=['vex', 'kestrel', 'aegis']  sol=['kestrel', 'aegis', 'vex']
+winner=0 reason=车轮战全胜 scores={'deepseek-flash': 1024, 'sol': 4195} errors={'deepseek-flash': 0, 'sol': 0}
+sim frames=3800 now=190s wall=12.48s windows=254
+official: {'GPT-6.1 Sol': {'damageDealt': 2609, 'hits': 20, 'blocks': 3, 'throws': 0, 'parries': 0, 'maxCombo': 5, 'score': 4195}, 'DeepSeek V4.1 Flash': {'damageDealt': 474, 'hits': 4, 'blocks': 20, 'throws': 0, 'parries': 0, 'maxCombo': 1, 'score': 1024}}
+
+round | dur(s) | matchup(our vs sol) | winner | startHP(us/sol) -> endHP | our dmg/hits | sol dmg/hits | our blk/sup | sol blk/sup | our maxcombo
+R1 |  88.60 | Vex     vs Kestrel | SOL   | 1000/1000 -> 0/487 | 276/2 | 716/7 | 5/0 | 1/0 | 1
+R2 |  19.25 | Kestrel vs Kestrel | SOL   | 1000/487 -> 0/483 | 0/0 | 899/5 | 3/0 | 1/1 | 0
+R3 |  82.10 | Aegis   vs Kestrel | SOL   | 1000/483 -> 0/225 | 198/2 | 694/7 | 12/0 | 1/1 | 1
+
+-- supers --
+  SOL   R2 f1988 (99.40s) 长弓 · Kestrel 取消接超必杀 长弓 · 万矢
+  SOL   R3 f3785 (189.25s) 长弓 · Kestrel 发动超必杀 长弓 · 万矢
+-- notable hits (dmg>=130 or combo>=2) --
+  OURS R1 f295 (14.75s) dmg=138 combo=1
+  OURS R1 f492 (24.60s) dmg=138 combo=1
+  SOL  R1 f1691 (84.55s) dmg=132 combo=1
+  SOL  R1 f1710 (85.50s) dmg=137 combo=2
+  SOL  R1 f1730 (86.50s) dmg=115 combo=3
+  SOL  R2 f1961 (98.05s) dmg=132 combo=1
+  SOL  R2 f1980 (99.00s) dmg=137 combo=2
+  SOL  R2 f2002 (100.10s) dmg=240 combo=3
+  SOL  R2 f2011 (100.55s) dmg=210 combo=4
+  SOL  R2 f2020 (101.00s) dmg=180 combo=5
+  SOL  R3 f2500 (125.00s) dmg=101 combo=2
+  SOL  R3 f2556 (127.80s) dmg=152 combo=1
+  SOL  R3 f2578 (128.90s) dmg=119 combo=2
+  SOL  R3 f2596 (129.80s) dmg=122 combo=3
+  OURS R3 f2819 (140.95s) dmg=140 combo=1
+  SOL  R3 f3799 (189.95s) dmg=300 combo=1
+
+-- move starts (deduped) by side --
+  R1 OUR {'旋身踢': 4}
+  R1 SOL {'空中重腿': 3, '贯石枪': 2, '踩踏': 37, '弓身横扫': 4, '倒跃射': 2, '穿云箭': 1, '高踢': 1}
+  R2 OUR {'踩踏': 2, '短弓柄': 1, '高踢': 1}
+  R2 SOL {'空中重拳': 1, '穿云箭': 3, '短弓柄': 1, '弓身横扫': 1, '高踢': 1, '长弓 · 万矢': 1}
+  R3 OUR {'回旋踵落': 3, '直拳': 2, '侧踢': 1}
+  R3 SOL {'穿云箭': 2, '短弓柄': 46, '空中重腿': 1, '空中轻拳': 1, '空中重拳': 1, '倒跃射': 3, '高踢': 3, '弓身横扫': 5, '空中轻腿': 1, '踩踏': 4, '长弓 · 万矢': 1}
+
+-- repeated move runs (>=5 consecutive same move) --
+  SOL R1 踩踏 x36 f559..1609 span=52.50s
+  SOL R3 短弓柄 x43 f3094..3724 span=31.50s
+
+-- our offense efficiency per round --
+  R1: moveStarts=4 hits=2 hit/start=0.50 dmg=276
+  R2: moveStarts=4 hits=0 hit/start=0.00 dmg=0
+  R3: moveStarts=6 hits=2 hit/start=0.33 dmg=198
+
+-- round boundaries --
+  R1: frames 0..1772 (0.00s..88.60s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs vex
+  R2: frames 1772..2157 (88.60s..107.85s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs kestrel
+  R3: frames 2157..3799 (107.85s..189.95s) winner=GPT-6.1 Sol reason=击倒 picks=kestrel vs aegis
+

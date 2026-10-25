@@ -1,0 +1,22 @@
+'use strict';
+const {runDuel}=require('./duel');
+const {Agent}=require('../agent.js');
+const {SolClone}=require('./solclone.js');
+const seat=parseInt(process.argv[2]||'0',10);
+const agO=process.argv[3]?JSON.parse(process.argv[3]):{};
+const clO=process.argv[4]?JSON.parse(process.argv[4]):{};
+const us=new Agent(agO),cl=new SolClone(clO);
+const A=seat===0?us:cl,B=seat===0?cl:us;
+let last=-1;
+const r=runDuel(A,B,{heroA:seat===0?'necromancer':'druid',heroB:seat===0?'druid':'necromancer',maxSeconds:340,onFrame:(g)=>{
+  const t=g.now;if(t-last<5)return;last=t;
+  const th=g.buildings.find(b=>b.type==='townhall'&&b.owner===1-seat);
+  const myTH=g.buildings.find(b=>b.type==='townhall'&&b.owner===seat);
+  const mine=g.units.filter(u=>u.owner===seat&&u.type!=='worker');
+  const foeArmy=g.units.filter(u=>u.owner===1-seat&&u.type!=='worker');
+  const foot=mine.filter(u=>u.type==='footman').length;
+  const hero=mine.find(u=>u.hero);
+  const nearTH=mine.filter(u=>th&&Math.hypot(u.x-th.x,u.y-th.y)<300).length;
+  console.log(`t=${t.toFixed(0)} [${us.mem.phase}] foot${foot} hero${hero?hero.level+'/'+Math.round(hero.hp):'X'} nearTH${nearTH} oppArmy${foeArmy.length} TH=${th?Math.round(th.hp):'X'} ourTH=${myTH?Math.round(myTH.hp):'X'}`);
+}});
+console.log('RESULT',r.winner,r.duration.toFixed(1),'rej',r.stats.rejected);

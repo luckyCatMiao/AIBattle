@@ -1,0 +1,75 @@
+[
+  {
+    "game": "fighting",
+    "run": "run-20261024-105202",
+    "phase": "比赛完成",
+    "games": [
+      {
+        "id": "r1-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 996,
+          "sol": 2534
+        }
+      },
+      {
+        "id": "r1-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 696,
+          "sol": 3014
+        }
+      },
+      {
+        "id": "r2-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 1686,
+          "sol": 3121
+        }
+      },
+      {
+        "id": "r2-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 2623,
+          "sol": 2266
+        }
+      },
+      {
+        "id": "r3-g1",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 1351,
+          "sol": 3350
+        }
+      },
+      {
+        "id": "r3-g2",
+        "winner": "sol",
+        "scores": {
+          "deepseek-flash": 1024,
+          "sol": 4195
+        }
+      }
+    ],
+    "returncode": 0,
+    "minutes": 197.7
+  },
+  {
+    "game": "rts",
+    "run": null,
+    "phase": "比赛中止，需要检查",
+    "games": [],
+    "returncode": 1,
+    "minutes": 0.2
+  },
+  {
+    "game": "hero-rts",
+    "run": "run-20261024-141001",
+    "phase": "比赛中止，需要检查",
+    "games": [],
+    "returncode": 1,
+    "minutes": 0.0
+  }
+]

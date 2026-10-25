@@ -1,0 +1,178 @@
+{
+  "run": "run-20261023-225845",
+  "phase": "已停止（规则升级：加入危险关卡机制）",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seed": 8011,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 0:2",
+      "duration": 4.9,
+      "wins": [
+        0,
+        2
+      ],
+      "deaths": [
+        0,
+        0
+      ],
+      "maxX": [
+        153.5,
+        154.2
+      ],
+      "level": {
+        "width": 158,
+        "goalX": 154
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1017,
+      "windows": 204,
+      "sha256": "2ee01d0dd8a357636ef0a418c356290c398acf5413cb0cbc4ab11d0fb103d0cc"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seed": 8012,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "deepseek-flash",
+      "reason": "比分 1:2",
+      "duration": 7.82,
+      "wins": [
+        1,
+        2
+      ],
+      "deaths": [
+        0,
+        0
+      ],
+      "maxX": [
+        178.1,
+        179.3
+      ],
+      "level": {
+        "width": 183,
+        "goalX": 179
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1568,
+      "windows": 314,
+      "sha256": "ab916b84dec5dc0f926dd2e78dbb1b311c452a558a4aa0859e5ab9ae987491fe"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 0:2",
+      "duration": 4.9,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1017,
+      "windows": 204,
+      "seed": 8011,
+      "wins": [
+        0,
+        2
+      ],
+      "deaths": [
+        0,
+        0
+      ],
+      "maxX": [
+        153.5,
+        154.2
+      ],
+      "level": {
+        "width": 158,
+        "goalX": 154
+      },
+      "sha256": "2ee01d0dd8a357636ef0a418c356290c398acf5413cb0cbc4ab11d0fb103d0cc"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "deepseek-flash",
+      "reason": "比分 1:2",
+      "duration": 7.82,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1568,
+      "windows": 314,
+      "seed": 8012,
+      "wins": [
+        1,
+        2
+      ],
+      "deaths": [
+        0,
+        0
+      ],
+      "maxX": [
+        178.1,
+        179.3
+      ],
+      "level": {
+        "width": 183,
+        "goalX": 179
+      },
+      "sha256": "ab916b84dec5dc0f926dd2e78dbb1b311c452a558a4aa0859e5ab9ae987491fe"
+    }
+  ],
+  "ready": [
+    "deepseek-flash",
+    "sol"
+  ],
+  "setup_note": "双方从零开始，准备时间不设上限；随机横版关卡（150–200 格）；两人同场竞速、可推人、随机怪物、掉坑重跑；三局两胜；每轮 2 局共 3 轮；每 5 帧（0.25 秒）同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 46116,
+  "port": 8816,
+  "completed": true,
+  "updated": "2026-10-24T00:45:37",
+  "game": 2,
+  "game_id": "r1-g2"
+}

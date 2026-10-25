@@ -1,0 +1,139 @@
+{
+  "verified": true,
+  "sourceVerified": true,
+  "frozenStrategiesVerified": true,
+  "games": [
+    {
+      "id": "r1-g1",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        1,
+        4
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 10,
+          "possession": 105
+        },
+        {
+          "kicks": 11,
+          "possession": 943
+        }
+      ],
+      "sha256": "c6d794f5b1f252fb1b71368760a8b47eb83afa0643e9fae9674bb644d7264130"
+    },
+    {
+      "id": "r1-g2",
+      "winner": "deepseek-flash",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        0,
+        11
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 48
+        },
+        {
+          "kicks": 12,
+          "possession": 247
+        }
+      ],
+      "sha256": "5acd6dedca720142516da2c4ee80bb3670cbc7a5d8d5ef249757522c39cf9436"
+    },
+    {
+      "id": "r2-g1",
+      "winner": "deepseek-flash",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        3,
+        2
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 3,
+          "possession": 1508
+        },
+        {
+          "kicks": 3,
+          "possession": 116
+        }
+      ],
+      "sha256": "de9c279f3ae0e0e6032f45bec0712883e1658ad11fe1fd38d9c9df6eb587de68"
+    },
+    {
+      "id": "r2-g2",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        4,
+        3
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 12,
+          "possession": 622
+        },
+        {
+          "kicks": 3,
+          "possession": 810
+        }
+      ],
+      "sha256": "7e55be1895685ac623a0e9c8cbc9ce8c166229285ce9f65dd622d98ff15a2fc9"
+    },
+    {
+      "id": "r3-g1",
+      "winner": "sol",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        2,
+        5
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 4,
+          "possession": 704
+        },
+        {
+          "kicks": 15,
+          "possession": 528
+        }
+      ],
+      "sha256": "fba31e230aff817bdb40c7ee841689f2ed7a501d59a18a2e0879a2db535958ac"
+    },
+    {
+      "id": "r3-g2",
+      "winner": "deepseek-flash",
+      "frames": 2401,
+      "windows": 120,
+      "score": [
+        2,
+        3
+      ],
+      "reason": "常规时间结束",
+      "stats": [
+        {
+          "kicks": 4,
+          "possession": 153
+        },
+        {
+          "kicks": 3,
+          "possession": 1396
+        }
+      ],
+      "sha256": "29aa6c9fa00b77b4a5a3981179fbd7ae54d2cb3f4c1d0314d091b6dbbc6bc8d9"
+    }
+  ]
+}

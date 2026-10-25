@@ -1,0 +1,66 @@
+== r3-g1 net=1.92 seats=['deepseek-flash', 'sol'] ==
+P01 serve_f=16 point_f=166 t=8.30 start=0:1 -> rally=8 winner=sol endx=6.32
+   f=  30 t=  1.50 sol   smash v= 15.8 contact=(6.97,2.09) body=(7.84,0.00) st= 93.6
+   f=  33 t=  1.65 US    clear v=  7.3 contact=(5.49,1.82) body=(4.59,0.00) st= 93.0
+   f=  49 t=  2.45 sol   clear v=  8.4 contact=(9.83,2.12) body=(10.38,0.00) st= 86.9
+   f=  67 t=  3.35 US    drive v=  5.6 contact=(3.86,2.25) body=(3.50,0.00) st= 89.3
+   f=  84 t=  4.20 sol J lift  v=  6.8 contact=(6.29,1.36) body=(7.33,0.51) st= 60.5
+   f= 103 t=  5.15 US  J drive v= 15.3 contact=(3.62,2.65) body=(2.69,0.46) st= 75.0
+   f= 113 t=  5.65 sol J lift  v=  9.4 contact=(9.99,1.41) body=(10.65,0.46) st= 41.6
+   f= 142 t=  7.10 US  J drive v=  5.7 contact=(3.40,2.70) body=(3.18,0.50) st= 61.0
+
+P02 serve_f=196 point_f=346 t=17.30 start=0:2 -> rally=8 winner=sol endx=1.00
+   f= 210 t= 10.50 US    drive v=  4.9 contact=(5.77,2.15) body=(5.34,0.00) st= 57.2
+   f= 220 t= 11.00 sol   clear v=  7.9 contact=(8.01,1.36) body=(8.91,0.00) st= 59.0
+   f= 233 t= 11.65 US    drive v= 12.4 contact=(4.26,2.20) body=(3.56,0.00) st= 40.4
+   f= 245 t= 12.25 sol   lift  v=  9.9 contact=(10.57,1.30) body=(11.18,0.00) st= 47.9
+   f= 276 t= 13.80 US  J drive v= 14.8 contact=(3.75,2.63) body=(3.05,0.50) st= 32.4
+   f= 286 t= 14.30 sol   lift  v=  9.9 contact=(10.35,1.11) body=(11.13,0.00) st= 48.0
+   f= 319 t= 15.95 US    clear v=  8.7 contact=(3.23,2.12) body=(2.73,0.00) st= 20.8
+   f= 336 t= 16.80 sol J smash v= 17.5 contact=(8.28,2.50) body=(9.22,0.50) st= 40.0
+
+P05 serve_f=596 point_f=749 t=37.45 start=0:5 -> rally=7 winner=sol endx=6.33
+   f= 610 t= 30.50 US    drive v=  5.0 contact=(5.90,2.18) body=(5.41,0.00) st=  0.0
+   f= 623 t= 31.15 sol   lift  v=  8.6 contact=(8.64,0.68) body=(9.42,0.00) st= 41.5
+   f= 649 t= 32.45 US    drive v=  6.2 contact=(3.50,2.21) body=(2.91,0.00) st=  0.0
+   f= 667 t= 33.35 sol   lift  v=  6.8 contact=(6.26,1.09) body=(7.18,0.00) st= 18.4
+   f= 688 t= 34.40 US    clear v=  8.7 contact=(2.96,2.28) body=(2.33,0.00) st=  0.0
+   f= 709 t= 35.45 sol   clear v=  8.3 contact=(9.73,2.16) body=(10.31,0.00) st= 15.6
+   f= 728 t= 36.40 US    drive v=  5.8 contact=(3.81,2.18) body=(3.15,0.00) st=  0.0
+
+P11 serve_f=1380 point_f=1988 t=99.40 start=0:11 -> rally=34 winner=sol endx=0.40
+   f=1394 t= 69.70 US    drive v=  5.0 contact=(5.90,2.18) body=(5.42,0.00) st=  2.0
+   f=1407 t= 70.35 sol   lift  v=  8.8 contact=(8.64,0.69) body=(9.47,0.00) st= 47.9
+   f=1434 t= 71.70 US    clear v=  7.0 contact=(3.20,2.24) body=(2.59,0.00) st=  0.0
+   f=1453 t= 72.65 sol   lift  v=  8.6 contact=(8.73,0.85) body=(9.52,0.00) st= 50.5
+   f=1480 t= 74.00 US    clear v=  6.9 contact=(3.40,2.18) body=(2.83,0.00) st=  0.0
+   f=1496 t= 74.80 sol   clear v=  7.2 contact=(7.96,1.46) body=(8.80,0.00) st= 51.0
+   f=1513 t= 75.65 US    clear v=  8.2 contact=(3.73,2.14) body=(3.17,0.00) st=  0.0
+   f=1529 t= 76.45 sol J smash v= 18.2 contact=(8.20,2.50) body=(9.15,0.46) st= 37.9
+   f=1534 t= 76.70 US    clear v=  8.0 contact=(4.80,1.70) body=(4.22,0.00) st=  0.0
+   f=1547 t= 77.35 sol J drive v= 13.7 contact=(8.38,2.44) body=(9.20,0.46) st= 21.1
+   f=1554 t= 77.70 US    clear v=  7.9 contact=(4.55,1.78) body=(3.99,0.00) st=  0.9
+   f=1571 t= 78.55 sol   clear v=  8.2 contact=(9.52,2.12) body=(10.15,0.00) st= 16.9
+   f=1590 t= 79.50 US    clear v=  8.2 contact=(3.76,2.18) body=(3.12,0.00) st=  0.0
+   f=1610 t= 80.50 sol   clear v=  8.5 contact=(9.85,2.04) body=(10.43,0.00) st= 20.9
+   f=1628 t= 81.40 US    drive v= 12.4 contact=(3.94,2.19) body=(3.49,0.00) st=  0.6
+   f=1638 t= 81.90 sol   clear v=  8.2 contact=(9.10,1.61) body=(10.07,0.00) st= 21.1
+   f=1653 t= 82.65 US    drive v= 12.8 contact=(4.31,2.16) body=(3.85,0.00) st=  0.0
+   f=1664 t= 83.20 sol J lift  v=  9.6 contact=(10.28,1.55) body=(10.78,0.46) st=  9.8
+   f=1696 t= 84.80 US    drive v= 13.4 contact=(3.42,2.21) body=(2.76,0.00) st=  0.0
+   f=1706 t= 85.30 sol   clear v=  8.5 contact=(8.96,1.61) body=(9.67,0.00) st= 10.1
+   f=1723 t= 86.15 US    clear v=  8.3 contact=(3.61,2.23) body=(2.89,0.00) st=  0.6
+   f=1743 t= 87.15 sol   clear v=  8.4 contact=(9.77,2.14) body=(10.36,0.00) st= 11.8
+   f=1763 t= 88.15 US    clear v=  8.4 contact=(3.57,2.07) body=(3.08,0.00) st=  0.0
+   f=1783 t= 89.15 sol   clear v=  8.4 contact=(9.82,2.04) body=(10.36,0.00) st= 16.8
+   f=1802 t= 90.10 US    clear v=  8.1 contact=(3.88,2.23) body=(3.17,0.00) st=  0.0
+   f=1822 t= 91.10 sol   clear v=  8.5 contact=(9.89,2.03) body=(10.46,0.00) st= 21.1
+   f=1840 t= 92.00 US    drive v= 12.4 contact=(3.95,2.20) body=(3.49,0.00) st=  0.6
+   f=1850 t= 92.50 sol   clear v=  8.2 contact=(9.11,1.62) body=(10.06,0.00) st= 21.4
+   f=1866 t= 93.30 US    drive v=  6.2 contact=(4.22,2.17) body=(3.55,0.00) st=  0.0
+   f=1884 t= 94.20 sol   lift  v=  8.7 contact=(8.84,0.78) body=(9.61,0.00) st= 21.9
+   f=1911 t= 95.55 US    clear v=  6.9 contact=(3.45,2.21) body=(2.84,0.00) st=  1.4
+   f=1930 t= 96.50 sol   lift  v=  8.8 contact=(8.86,0.77) body=(9.65,0.00) st= 25.1
+   f=1958 t= 97.90 US    clear v=  8.7 contact=(3.29,2.06) body=(2.80,0.00) st=  0.6
+   f=1975 t= 98.75 sol J drive v= 15.4 contact=(9.24,2.42) body=(9.74,0.50) st= 17.9
+

@@ -1,0 +1,438 @@
+{
+  "run": "run-20261023-214733",
+  "phase": "比赛完成",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 3,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seed": 7111,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 5:11",
+      "duration": 4.57,
+      "scores": {
+        "deepseek-flash": 5,
+        "sol": 11
+      },
+      "longestRally": 19,
+      "hits": [
+        39,
+        39
+      ],
+      "smashes": [
+        19,
+        12
+      ],
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1891,
+      "windows": 189,
+      "sha256": "4d3e84b2a92dbcc327e93abf86b4b972ca0eb58bf5ed857c9c092c7da87c7227"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seed": 7112,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "比分 11:8",
+      "duration": 3.43,
+      "scores": {
+        "deepseek-flash": 8,
+        "sol": 11
+      },
+      "longestRally": 8,
+      "hits": [
+        21,
+        21
+      ],
+      "smashes": [
+        12,
+        13
+      ],
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1342,
+      "windows": 135,
+      "sha256": "b5b523bd1e51643616fc1a71abf5f42b9ded6f1a31c40d16b77f25f76c05b84e"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seed": 7121,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 4:11",
+      "duration": 6.01,
+      "scores": {
+        "deepseek-flash": 4,
+        "sol": 11
+      },
+      "longestRally": 24,
+      "hits": [
+        47,
+        45
+      ],
+      "smashes": [
+        20,
+        13
+      ],
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2166,
+      "windows": 217,
+      "sha256": "203512231fd7b75f4d9d221384cef6ce481202d2f649ac6a8e880466942fb792"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seed": 7122,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "比分 11:6",
+      "duration": 10.5,
+      "scores": {
+        "deepseek-flash": 6,
+        "sol": 11
+      },
+      "longestRally": 39,
+      "hits": [
+        95,
+        95
+      ],
+      "smashes": [
+        11,
+        35
+      ],
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 3957,
+      "windows": 396,
+      "sha256": "759a5d141e46b7cea01ba0f246119f14c201f20a3d3eb4337a91950d23bf62b9"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seed": 7131,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 0:11",
+      "duration": 5.44,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 11
+      },
+      "longestRally": 34,
+      "hits": [
+        44,
+        41
+      ],
+      "smashes": [
+        23,
+        9
+      ],
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1989,
+      "windows": 199,
+      "sha256": "acbb3b7aba6153bfd8aca59711c1c65408dc4f6f00f9c1dbe9972d8d68889d27"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seed": 7132,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "比分 11:0",
+      "duration": 6.18,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 11
+      },
+      "longestRally": 6,
+      "hits": [
+        23,
+        23
+      ],
+      "smashes": [
+        10,
+        11
+      ],
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1255,
+      "windows": 126,
+      "sha256": "3d2eb263a6fe0c5e53ae3ba848cf1177f2b050754d74bace57b61ab3f9c7154f"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 5:11",
+      "duration": 4.57,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1891,
+      "windows": 189,
+      "seed": 7111,
+      "scores": {
+        "deepseek-flash": 5,
+        "sol": 11
+      },
+      "longestRally": 19,
+      "hits": [
+        39,
+        39
+      ],
+      "smashes": [
+        19,
+        12
+      ],
+      "sha256": "4d3e84b2a92dbcc327e93abf86b4b972ca0eb58bf5ed857c9c092c7da87c7227"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "比分 11:8",
+      "duration": 3.43,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1342,
+      "windows": 135,
+      "seed": 7112,
+      "scores": {
+        "deepseek-flash": 8,
+        "sol": 11
+      },
+      "longestRally": 8,
+      "hits": [
+        21,
+        21
+      ],
+      "smashes": [
+        12,
+        13
+      ],
+      "sha256": "b5b523bd1e51643616fc1a71abf5f42b9ded6f1a31c40d16b77f25f76c05b84e"
+    },
+    {
+      "id": "r2-g1",
+      "round": 2,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 4:11",
+      "duration": 6.01,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 2166,
+      "windows": 217,
+      "seed": 7121,
+      "scores": {
+        "deepseek-flash": 4,
+        "sol": 11
+      },
+      "longestRally": 24,
+      "hits": [
+        47,
+        45
+      ],
+      "smashes": [
+        20,
+        13
+      ],
+      "sha256": "203512231fd7b75f4d9d221384cef6ce481202d2f649ac6a8e880466942fb792"
+    },
+    {
+      "id": "r2-g2",
+      "round": 2,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "比分 11:6",
+      "duration": 10.5,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 3957,
+      "windows": 396,
+      "seed": 7122,
+      "scores": {
+        "deepseek-flash": 6,
+        "sol": 11
+      },
+      "longestRally": 39,
+      "hits": [
+        95,
+        95
+      ],
+      "smashes": [
+        11,
+        35
+      ],
+      "sha256": "759a5d141e46b7cea01ba0f246119f14c201f20a3d3eb4337a91950d23bf62b9"
+    },
+    {
+      "id": "r3-g1",
+      "round": 3,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "比分 0:11",
+      "duration": 5.44,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1989,
+      "windows": 199,
+      "seed": 7131,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 11
+      },
+      "longestRally": 34,
+      "hits": [
+        44,
+        41
+      ],
+      "smashes": [
+        23,
+        9
+      ],
+      "sha256": "acbb3b7aba6153bfd8aca59711c1c65408dc4f6f00f9c1dbe9972d8d68889d27"
+    },
+    {
+      "id": "r3-g2",
+      "round": 3,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "比分 11:0",
+      "duration": 6.18,
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 1255,
+      "windows": 126,
+      "seed": 7132,
+      "scores": {
+        "deepseek-flash": 0,
+        "sol": 11
+      },
+      "longestRally": 6,
+      "hits": [
+        23,
+        23
+      ],
+      "smashes": [
+        10,
+        11
+      ],
+      "sha256": "3d2eb263a6fe0c5e53ae3ba848cf1177f2b050754d74bace57b61ab3f9c7154f"
+    }
+  ],
+  "ready": [
+    "deepseek-flash",
+    "sol"
+  ],
+  "setup_note": "双方从零开始，准备时间不设上限；13.4 格侧视球场、1.55 格高网；11 分制 / 240 秒；可起跳、上手/下手两种挥拍、体力；每轮 2 局共 3 轮；每 10 帧同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 187552,
+  "port": 8810,
+  "completed": true,
+  "updated": "2026-10-24T01:42:26",
+  "game": 2,
+  "game_id": "r3-g2"
+}

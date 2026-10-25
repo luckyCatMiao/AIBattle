@@ -13,11 +13,11 @@
 
 无战争迷雾，双方看到同一块完整球场。每个观察包含：
 
-- `units`：你的 `teamSize` 名球员（`team/index/x/y/facing/hasBall/kickCd/controlLock/goals/kicks/touches`）；
+- `units`：你的 `teamSize` 名球员（`team/index/x/y/facing/hasBall/kickCd/controlLock/goals/kicks/touches/keeper/inOwnBox`）；
 - `teamSize`：本局每队人数（1–6，双方相同）；
 - `ball`：`x/y/vx/vy/owner/lastTouch/lastTeam`；
 - `score`、`half`、`timeLeft`、`golden`、`freeze`、`stats`、`events`；
-- `map`：`width/height/tiles/goals/spawns`；
+- `map`：`width/height/tiles/goals/spawns/penaltyBoxes`；
 - `rules`：全部物理参数（`rules.teamSize` 是允许的最大人数 6；本局实际人数看 `teamSize`）。
 
 ## 决策窗口
@@ -38,12 +38,21 @@
 
 ## 足球物理
 
-- 球员半径 0.34 格，移动速度 3.15 格/秒；球员之间会互相挤开，不能穿墙。
-- 球半径 0.22 格；踢出速度约 **14 格/秒**，每物理帧乘 0.97 的摩擦；撞墙反弹 0.72。
+- 球员半径 0.34 格，无球移动速度 3.15 格/秒；**持球时速度降为 58%**（约 1.83 格/秒）。
+- 球半径 0.22 格；踢出速度约 **11 格/秒**，每物理帧乘 0.978 的摩擦；撞墙反弹 0.72。
 - 球员进入球 **0.82 格**内即可控球；控球时球贴在朝向前方 0.62 格。
 - 对手比你更近地逼近球（近 0.12 格以上）会抢断；刚被抢断的一方 0.18 秒内不能反抢。
 - 踢球冷却 **0.35 秒**；踢出后 **0.3 秒**内不能重新控球。
 - 球心越过球门线（x≤1 或 x≥W−1）且在球门高度内即进球；乌龙球记给对方。
+
+## 禁区、守门员与犯规
+
+- 左右禁区都是 **9 格深、14 格高**（见观察里的 `map.penaltyBoxes`）。
+- **任何单位进入对方禁区都判犯规**；防守方可以在本方禁区里防守。
+- 犯规后：球放在禁区外最近的任意球点，短暂停 0.6 秒；犯规者被移到更外侧并僵直 1 秒，由被犯规方开球。
+- 每队 `index 0` 是**守门员**（观察里 `keeper:true`），但没有额外扑救半径。
+  所有球员（包括守门员）都用 **0.82 格**的普通控球半径，守门员要靠站位和移动去碰球。
+- 球速降低后，站在射门线路上的守门员可以直接没收；扑出快球时会记录一次「扑救」事件。
 
 ## 程序协议
 

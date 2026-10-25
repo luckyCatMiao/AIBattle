@@ -26,7 +26,7 @@
   const R = {
     enabled: false, runs: [], run: null, meta: null, data: null, id: null,
     index: 0, playing: false, speed: 1, clock: 0, loading: false, loadingText: '',
-    ticket: 0, error: '', frameMs: 50,
+    ticket: 0, error: '', frameMs: 50, lastScore: [0, 0],
   };
 
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -93,10 +93,10 @@
     c.beginPath(); c.arc(w / 2, h / 2, 3, 0, TAU); c.fillStyle = 'rgba(235,255,240,.8)'; c.fill();
 
     // 禁区与小禁区
-    const boxW = TILE * 7, boxH = TILE * 12;
-    c.strokeRect(L, (h - boxH) / 2, boxW, boxH);
-    c.strokeRect(R - boxW, (h - boxH) / 2, boxW, boxH);
-    const smallW = TILE * 3, smallH = TILE * 6;
+    const boxW = TILE * 9, boxH = TILE * 14;
+    c.strokeRect(L, 6 * TILE, boxW, boxH);
+    c.strokeRect(R - boxW, 6 * TILE, boxW, boxH);
+    const smallW = TILE * 4, smallH = TILE * 8;
     c.strokeRect(L, (h - smallH) / 2, smallW, smallH);
     c.strokeRect(R - smallW, (h - smallH) / 2, smallW, smallH);
 
@@ -166,6 +166,11 @@
       if (u.hasBall) {
         c.strokeStyle = `rgba(255,224,130,${(.65 + pulse(t, .7) * .3).toFixed(3)})`;
         c.lineWidth = 2; c.beginPath(); c.arc(X, Y, R0 + 4, 0, TAU); c.stroke();
+      }
+      // 守门员标记
+      if (u.keeper) {
+        c.strokeStyle = 'rgba(224,200,115,.72)'; c.lineWidth = 1.4;
+        c.setLineDash([3, 3]); c.beginPath(); c.arc(X, Y, R0 + 6, 0, TAU); c.stroke(); c.setLineDash([]);
       }
       // 本地模式标出你控制的球员
       if (!R.enabled && S.mode === 'local' && u.team === 0 && u.index === 0) {
@@ -363,8 +368,8 @@
       } else if (['half', 'golden', 'end'].includes(e.type)) {
         S.banner = e.text || ''; S.bannerUntil = performance.now() + 1800;
         S.log.push({ t: e.t, text: e.text || e.type, type: 'end' });
-      } else if (e.type === 'kickoff' || e.type === 'tackle') {
-        S.log.push({ t: e.t, text: e.text || '抢断', type: e.type });
+      } else if (e.type === 'kickoff' || e.type === 'tackle' || e.type === 'foul' || e.type === 'save') {
+        S.log.push({ t: e.t, text: e.text || e.type, type: e.type });
       }
       if (S.log.length > 60) S.log.shift();
     }
@@ -432,16 +437,17 @@
     setHtml('statsCard', `<h3>比赛数据</h3>
       <div class="row"><span class="k">踢球 / 射门</span><span class="v">${stats[0]?.kicks ?? 0} : ${stats[1]?.kicks ?? 0}</span></div>
       <div class="row"><span class="k">控球帧</span><span class="v">${stats[0]?.possession ?? 0} : ${stats[1]?.possession ?? 0}</span></div>
+      <div class="row"><span class="k">犯规</span><span class="v">${stats[0]?.fouls ?? 0} : ${stats[1]?.fouls ?? 0}</span></div>
       <div class="row"><span class="k">球速</span><span class="v">${Math.hypot(st.ball?.vx || 0, st.ball?.vy || 0).toFixed(1)} 格/秒</span></div>`);
 
     const logs = (st === S.state ? S.log : replayLog()).slice(-14).reverse();
     setHtml('logCard', `<h3>战况</h3><div class="log">${logs.length
-      ? logs.map(l => `<div class="${l.type === 'goal' ? 'goal' : l.type === 'end' ? 'end' : ''}"><i>${l.t != null ? l.t.toFixed(1) + 's' : ''}</i><span>${esc(l.text)}</span></div>`).join('')
+      ? logs.map(l => `<div class="${l.type === 'goal' ? 'goal' : l.type === 'end' ? 'end' : l.type === 'foul' ? 'foul' : l.type === 'save' ? 'save' : ''}"><i>${l.t != null ? l.t.toFixed(1) + 's' : ''}</i><span>${esc(l.text)}</span></div>`).join('')
       : '<div><i></i><span style="color:#8fa394">等待开球…</span></div>'}</div>`);
 
     setHtml('legend', R.enabled
       ? '<b>回放</b> 拖动进度条跳转 · 播放/暂停 · 0.5×–4× 变速<br>逐物理帧回放（20 Hz）'
-      : '<b>移动</b> W A S D · <b>瞄准</b> 鼠标方向 · <b>踢球</b> 空格<br><b>规则</b> 每局 1–6 人/队 · 120 秒 · 平局进入金球');
+      : '<b>移动</b> W A S D · <b>瞄准</b> 鼠标方向 · <b>踢球</b> 空格<br><b>规则</b> 1–6 人/队 · 持球降速 · 进对方禁区犯规<br><b>守门员</b> 1 号球员，靠站位和移动扑救');
   }
 
   /* ==================== 主循环 ==================== */
@@ -450,6 +456,16 @@
     if (R.enabled) {
       replayAdvance(ts - S.lastFrame);
       renderSide();
+      // 比分随播放实时刷新：否则进球后画面回中圈、比分却一直停在 0:0，看起来像"没进"。
+      const nowSt = replayState();
+      const nowScore = (nowSt && nowSt.score) || [0, 0];
+      if (nowScore[0] !== R.lastScore[0] || nowScore[1] !== R.lastScore[1]) {
+        R.lastScore = [nowScore[0], nowScore[1]];
+        const el = $('rScoreNow');
+        if (el) el.textContent = `${nowScore[0]} : ${nowScore[1]}`;
+        const sc = $('scoreCard');
+        if (sc) { const win = sc.querySelector('.rounds .win'); const val = win && win.nextElementSibling; if (val) val.textContent = `${nowScore[0]} : ${nowScore[1]}`; }
+      }
       drawStage(ctx, replayState(), replayPositions(), t);
     } else {
       if (S.mode === 'local' && ts - S.inputAt >= 33) { S.inputAt = ts; sendInput(); }
@@ -566,6 +582,7 @@
       }
       R.frameMs = Number(R.data?.frameMs) > 0 ? Number(R.data.frameMs) : 50;
       R.index = 0; R.playing = false; R.clock = 0;
+      R.lastScore = (R.data.frames?.[0]?.score) || [0, 0];
       renderGameList();
     } catch (e) { R.error = e.message; }
     finally { if (ticket === R.ticket) R.loading = false; }
@@ -574,7 +591,7 @@
 
   function roundLogHtml(st) {
     const score = st.score || [0, 0];
-    return `<div class="rounds"><div><span class="win">最终比分</span><span>${score[0]} : ${score[1]}</span><em>${esc(st.reason || '')}</em></div></div>`;
+    return `<div class="rounds"><div><span class="win">当前比分</span><span>${score[0]} : ${score[1]}</span><em>${esc(st.reason || '')}</em></div></div>`;
   }
 
   function renderReplayPanel() {
@@ -601,7 +618,7 @@
       <div class="row"><span class="k">帧</span><span class="v"><span id="rf">${R.index}</span> / ${last}</span></div>
       <div class="row"><span class="k">模拟时间</span><span class="v">${((st.frame || 0) / 20).toFixed(1)}s · ${st.golden ? '金球' : st.half === 1 ? '上半场' : '下半场'}</span></div>
       <div class="row"><span class="k">结果</span><span class="v" style="color:#e0c873">${d.winner === null || d.winner === undefined ? '平局' : esc(nameOf(d.winner)) + ' 胜'}</span></div>
-      <div class="row"><span class="k">比分</span><span class="v">${d.scores?.[d.seats?.[0]] ?? 0} : ${d.scores?.[d.seats?.[1]] ?? 0}</span></div>`;
+      <div class="row"><span class="k">比分</span><span class="v"><span id="rScoreNow">${(st.score || [0, 0])[0]} : ${(st.score || [0, 0])[1]}</span></span></div>`;
     $('rPlay').onclick = () => { R.playing = !R.playing; renderReplayPanel(); };
     $('rSeek').oninput = e => { R.index = Number(e.target.value); R.playing = false; R.clock = 0; $('rf').textContent = String(R.index); };
     for (const b of $('replayCard').querySelectorAll('.speeds button')) b.onclick = () => { R.speed = Number(b.dataset.s); renderReplayPanel(); };

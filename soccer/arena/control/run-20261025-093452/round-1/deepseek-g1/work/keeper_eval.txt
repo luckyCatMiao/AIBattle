@@ -1,0 +1,65 @@
+samples 438
+
+## recorded(current)  {'goal': 136, 'save': 297, 'timeout': 5} save=67.8% goal=31.1%
+   ts=1 n=17 save=24% goal=53%
+   ts=2 n=61 save=57% goal=43%
+   ts=3 n=55 save=64% goal=35%
+   ts=4 n=81 save=84% goal=16%
+   ts=5 n=125 save=70% goal=30%
+   ts=6 n=99 save=69% goal=31%
+
+## stay_line          {'goal': 320, 'save': 116, 'timeout': 2} save=26.5% goal=73.1%
+   ts=1 n=17 save=24% goal=76%
+   ts=2 n=61 save=31% goal=69%
+   ts=3 n=55 save=13% goal=85%
+   ts=4 n=81 save=52% goal=47%
+   ts=5 n=125 save=24% goal=76%
+   ts=6 n=99 save=14% goal=86%
+
+## track_line         {'goal': 102, 'save': 336} save=76.7% goal=23.3%
+   ts=1 n=17 save=76% goal=24%
+   ts=2 n=61 save=64% goal=36%
+   ts=3 n=55 save=64% goal=36%
+   ts=4 n=81 save=79% goal=21%
+   ts=5 n=125 save=82% goal=18%
+   ts=6 n=99 save=83% goal=17%
+
+## predict_line       {'goal': 29, 'save': 409} save=93.4% goal=6.6%
+   ts=1 n=17 save=100% goal=0%
+   ts=2 n=61 save=75% goal=25%
+   ts=3 n=55 save=98% goal=2%
+   ts=4 n=81 save=90% goal=10%
+   ts=5 n=125 save=96% goal=4%
+   ts=6 n=99 save=100% goal=0%
+
+## predict_home_x2    {'goal': 296, 'save': 142} save=32.4% goal=67.6%
+   ts=1 n=17 save=76% goal=24%
+   ts=2 n=61 save=10% goal=90%
+   ts=3 n=55 save=13% goal=87%
+   ts=4 n=81 save=31% goal=69%
+   ts=5 n=125 save=37% goal=63%
+   ts=6 n=99 save=45% goal=55%
+
+## predict_home_x3    {'goal': 347, 'save': 84, 'timeout': 7} save=19.2% goal=79.2%
+   ts=1 n=17 save=24% goal=53%
+   ts=2 n=61 save=0% goal=98%
+   ts=3 n=55 save=7% goal=91%
+   ts=4 n=81 save=14% goal=85%
+   ts=5 n=125 save=25% goal=75%
+   ts=6 n=99 save=34% goal=66%
+
+## predict_home_y115  {'goal': 131, 'save': 307} save=70.1% goal=29.9%
+   ts=1 n=17 save=76% goal=24%
+   ts=2 n=61 save=34% goal=66%
+   ts=3 n=55 save=60% goal=40%
+   ts=4 n=81 save=64% goal=36%
+   ts=5 n=125 save=82% goal=18%
+   ts=6 n=99 save=86% goal=14%
+
+## lineball_k13       {'goal': 109, 'save': 328, 'timeout': 1} save=74.9% goal=24.9%
+   ts=1 n=17 save=47% goal=53%
+   ts=2 n=61 save=84% goal=16%
+   ts=3 n=55 save=69% goal=29%
+   ts=4 n=81 save=90% goal=10%
+   ts=5 n=125 save=70% goal=30%
+   ts=6 n=99 save=72% goal=28%

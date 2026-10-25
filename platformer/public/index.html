@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>横版闯关竞速 · PLATFORMER ARENA</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark">🏃</span><div><h1>横版闯关竞速</h1><p>PLATFORMER ARENA · 随机关卡 · 推人 · 怪物 · 掉坑重跑</p></div></div>
+  <div class="modes" id="modes">
+    <button data-mode="local" class="on">本地对战</button>
+    <button data-mode="watch">观战回放</button>
+  </div>
+</header>
+
+<main class="stage">
+  <div class="stagecol">
+    <div class="stagewrap">
+      <canvas id="stage" width="1024" height="704"></canvas>
+      <div class="banner" id="banner"></div>
+    </div>
+    <section class="card" id="logCard"></section>
+  </div>
+  <aside class="side">
+    <section class="card" id="setupCard">
+      <h3>本地对战</h3>
+      <div class="setup"><button id="newMatch">开新局（你 vs 练习电脑，随机关卡）</button></div>
+      <small class="hint">A/D 或 ←/→ 移动 · W / 空格 跳跃 · 从后面顶住对手可以推人 · 掉坑或碰怪回起点</small>
+    </section>
+    <section class="card" id="matchCard"></section>
+    <section class="card" id="timeCard"></section>
+    <section class="card" id="meCard"></section>
+    <section class="card" id="rivalCard"></section>
+    <section class="card" id="runCard"></section>
+    <section class="card" id="gameCard"></section>
+    <section class="card" id="replayCard"></section>
+    <section class="card" id="scoreCard"></section>
+    <p class="legend" id="legend"></p>
+  </aside>
+</main>
+
+<footer>AIBATTLE / 横版闯关竞速 <span id="meta"></span></footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>

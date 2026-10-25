@@ -1,0 +1,224 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "比分 0:2",
+    "duration": 7.45,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 1007,
+    "windows": 202,
+    "seed": 8211,
+    "wins": [
+      0,
+      2
+    ],
+    "deaths": [
+      1,
+      0
+    ],
+    "maxX": [
+      88.4,
+      181.3
+    ],
+    "level": {
+      "width": 185,
+      "goalX": 181
+    },
+    "sha256": "644b040c7e685b09c851fc527d777116d169e557bcf84dd2c28eb5d3134f46ab"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "比分 1:0",
+    "duration": 32.8,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 4114,
+    "windows": 823,
+    "seed": 8212,
+    "wins": [
+      1,
+      0
+    ],
+    "deaths": [
+      0,
+      0
+    ],
+    "maxX": [
+      155.1,
+      154.2
+    ],
+    "level": {
+      "width": 159,
+      "goalX": 155
+    },
+    "sha256": "81cc4788189831d8fbaea7484c057847e73955a1bf6999fd8a683507377fb70f"
+  },
+  {
+    "id": "r2-g1",
+    "round": 2,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "比分 0:1",
+    "duration": 30.21,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 4193,
+    "windows": 839,
+    "seed": 8221,
+    "wins": [
+      0,
+      1
+    ],
+    "deaths": [
+      1,
+      1
+    ],
+    "maxX": [
+      25.0,
+      25.1
+    ],
+    "level": {
+      "width": 178,
+      "goalX": 174
+    },
+    "sha256": "afb2a72c5fb79e69c82cdb2c0185771aaafe6c84c0252e2c59fa26470a614ec7"
+  },
+  {
+    "id": "r2-g2",
+    "round": 2,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": null,
+    "reason": "比分 1:1",
+    "duration": 31.3,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 2926,
+    "windows": 585,
+    "seed": 8222,
+    "wins": [
+      1,
+      1
+    ],
+    "deaths": [
+      1,
+      0
+    ],
+    "maxX": [
+      125.0,
+      176.2
+    ],
+    "level": {
+      "width": 180,
+      "goalX": 176
+    },
+    "sha256": "8d10e6d8c8084ee439cffd87692fb7b3e24c1844ee2f982985bc32865dbb893c"
+  },
+  {
+    "id": "r3-g1",
+    "round": 3,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": null,
+    "reason": "比分 1:1",
+    "duration": 24.69,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 2873,
+    "windows": 575,
+    "seed": 8231,
+    "wins": [
+      1,
+      1
+    ],
+    "deaths": [
+      0,
+      1
+    ],
+    "maxX": [
+      196.1,
+      148.3
+    ],
+    "level": {
+      "width": 200,
+      "goalX": 196
+    },
+    "sha256": "e183698b3e0b8ee5295981d2d1bb8666a645256ef748ab26520fbbb4c7fd1dcf"
+  },
+  {
+    "id": "r3-g2",
+    "round": 3,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "比分 1:0",
+    "duration": 31.37,
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 4114,
+    "windows": 823,
+    "seed": 8232,
+    "wins": [
+      1,
+      0
+    ],
+    "deaths": [
+      0,
+      1
+    ],
+    "maxX": [
+      147.3,
+      127.1
+    ],
+    "level": {
+      "width": 151,
+      "goalX": 147
+    },
+    "sha256": "fa53fe1f60c24fbf36d12eeb77816b34971c8ad946aa9732c0f2d9917eaff74a"
+  }
+]

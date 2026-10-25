@@ -1,0 +1,401 @@
+{
+  "r1-g1": {
+    "seed": 8011,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "levels": [
+      {
+        "round": 1,
+        "width": 187,
+        "goalX": 183
+      },
+      {
+        "round": 2,
+        "width": 158,
+        "goalX": 154
+      }
+    ],
+    "finalFrame": 1016,
+    "status": "finished",
+    "wins": [
+      0,
+      2
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "team": 1,
+        "t": 27.55,
+        "frame": 551,
+        "reason": "到达终点"
+      },
+      {
+        "round": 2,
+        "team": 1,
+        "t": 50.8,
+        "frame": 1016,
+        "reason": "到达终点"
+      }
+    ],
+    "pushCount": 4,
+    "pushes": [
+      {
+        "id": 11,
+        "t": 42.55,
+        "frame": 851,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 98.26
+      },
+      {
+        "id": 12,
+        "t": 42.6,
+        "frame": 852,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 98.59
+      },
+      {
+        "id": 14,
+        "t": 50.05,
+        "frame": 1001,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 149.15
+      },
+      {
+        "id": 15,
+        "t": 50.1,
+        "frame": 1002,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 149.49
+      }
+    ],
+    "monsters": [
+      {
+        "id": 3,
+        "t": 5.7,
+        "frame": 114,
+        "type": "monster",
+        "x": 60.38,
+        "y": 3
+      },
+      {
+        "id": 4,
+        "t": 11.8,
+        "frame": 236,
+        "type": "monster",
+        "x": 100.37,
+        "y": 3
+      },
+      {
+        "id": 5,
+        "t": 16.65,
+        "frame": 333,
+        "type": "monster",
+        "x": 142.97,
+        "y": 3
+      },
+      {
+        "id": 6,
+        "t": 22.9,
+        "frame": 458,
+        "type": "monster",
+        "x": 177,
+        "y": 3
+      },
+      {
+        "id": 9,
+        "t": 34.6,
+        "frame": 692,
+        "type": "monster",
+        "x": 69.34,
+        "y": 3
+      },
+      {
+        "id": 10,
+        "t": 39.95,
+        "frame": 799,
+        "type": "monster",
+        "x": 113.91,
+        "y": 3
+      },
+      {
+        "id": 13,
+        "t": 46.15,
+        "frame": 923,
+        "type": "monster",
+        "x": 139.86,
+        "y": 3
+      }
+    ],
+    "respawns": [],
+    "eventCounts": {
+      "ready": 1,
+      "go": 2,
+      "monster": 7,
+      "round": 2,
+      "push": 4,
+      "finish": 1
+    }
+  },
+  "r1-g2": {
+    "seed": 8012,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "levels": [
+      {
+        "round": 1,
+        "width": 189,
+        "goalX": 185
+      },
+      {
+        "round": 2,
+        "width": 160,
+        "goalX": 156
+      },
+      {
+        "round": 3,
+        "width": 183,
+        "goalX": 179
+      }
+    ],
+    "finalFrame": 1567,
+    "status": "finished",
+    "wins": [
+      1,
+      2
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "team": 0,
+        "t": 27.9,
+        "frame": 558,
+        "reason": "到达终点"
+      },
+      {
+        "round": 2,
+        "team": 1,
+        "t": 51.4,
+        "frame": 1028,
+        "reason": "到达终点"
+      },
+      {
+        "round": 3,
+        "team": 1,
+        "t": 78.35,
+        "frame": 1567,
+        "reason": "到达终点"
+      }
+    ],
+    "pushCount": 9,
+    "pushes": [
+      {
+        "id": 8,
+        "t": 25.35,
+        "frame": 507,
+        "type": "push",
+        "from": 1,
+        "to": 0,
+        "x": 168.13
+      },
+      {
+        "id": 9,
+        "t": 26.85,
+        "frame": 537,
+        "type": "push",
+        "from": 1,
+        "to": 0,
+        "x": 178.14
+      },
+      {
+        "id": 16,
+        "t": 50.5,
+        "frame": 1010,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 149.94
+      },
+      {
+        "id": 17,
+        "t": 50.55,
+        "frame": 1011,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 150.27
+      },
+      {
+        "id": 18,
+        "t": 50.6,
+        "frame": 1012,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 150.58
+      },
+      {
+        "id": 25,
+        "t": 75,
+        "frame": 1500,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 156.74
+      },
+      {
+        "id": 26,
+        "t": 75.05,
+        "frame": 1501,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 156.95
+      },
+      {
+        "id": 27,
+        "t": 75.1,
+        "frame": 1502,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 157.17
+      },
+      {
+        "id": 28,
+        "t": 75.15,
+        "frame": 1503,
+        "type": "push",
+        "from": 0,
+        "to": 1,
+        "x": 157.51
+      }
+    ],
+    "monsters": [
+      {
+        "id": 3,
+        "t": 5.45,
+        "frame": 109,
+        "type": "monster",
+        "x": 49.83,
+        "y": 3
+      },
+      {
+        "id": 4,
+        "t": 9.6,
+        "frame": 192,
+        "type": "monster",
+        "x": 91.45,
+        "y": 3
+      },
+      {
+        "id": 5,
+        "t": 14.7,
+        "frame": 294,
+        "type": "monster",
+        "x": 119.79,
+        "y": 3
+      },
+      {
+        "id": 6,
+        "t": 19.7,
+        "frame": 394,
+        "type": "monster",
+        "x": 159.41,
+        "y": 3
+      },
+      {
+        "id": 7,
+        "t": 24,
+        "frame": 480,
+        "type": "monster",
+        "x": 179,
+        "y": 3
+      },
+      {
+        "id": 12,
+        "t": 33.55,
+        "frame": 671,
+        "type": "monster",
+        "x": 65.04,
+        "y": 3
+      },
+      {
+        "id": 13,
+        "t": 38.7,
+        "frame": 774,
+        "type": "monster",
+        "x": 94.57,
+        "y": 3
+      },
+      {
+        "id": 14,
+        "t": 43.45,
+        "frame": 869,
+        "type": "monster",
+        "x": 121.1,
+        "y": 3
+      },
+      {
+        "id": 15,
+        "t": 47.95,
+        "frame": 959,
+        "type": "monster",
+        "x": 150,
+        "y": 3
+      },
+      {
+        "id": 21,
+        "t": 57.35,
+        "frame": 1147,
+        "type": "monster",
+        "x": 55.65,
+        "y": 3
+      },
+      {
+        "id": 22,
+        "t": 61.55,
+        "frame": 1231,
+        "type": "monster",
+        "x": 98.8,
+        "y": 3
+      },
+      {
+        "id": 23,
+        "t": 67,
+        "frame": 1340,
+        "type": "monster",
+        "x": 118.57,
+        "y": 3
+      },
+      {
+        "id": 24,
+        "t": 72.7,
+        "frame": 1454,
+        "type": "monster",
+        "x": 158.17,
+        "y": 3
+      }
+    ],
+    "respawns": [],
+    "eventCounts": {
+      "ready": 1,
+      "go": 3,
+      "monster": 13,
+      "push": 9,
+      "round": 3,
+      "finish": 1
+    }
+  }
+}

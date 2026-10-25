@@ -13,7 +13,13 @@
     "defusal": "node defusal/server.js",
     "defusal-watch": "node defusal/arena/watch.js",
     "soccer": "node soccer/server.js",
-    "soccer-watch": "node soccer/arena/watch.js"
+    "soccer-watch": "node soccer/arena/watch.js",
+    "racing": "node racing/server.js",
+    "racing-watch": "node racing/arena/watch.js",
+    "badminton": "node badminton/server.js",
+    "badminton-watch": "node badminton/arena/watch.js",
+    "platformer": "node platformer/server.js",
+    "platformer-watch": "node platformer/arena/watch.js"
   },
   "engines": {
     "node": ">=20"

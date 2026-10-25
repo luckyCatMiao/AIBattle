@@ -29,6 +29,9 @@ CONTROL_LOCK_FRAMES = 6   # 0.30s
 STEAL_LOCK_FRAMES = 4     # 0.18s
 GOAL_TOP, GOAL_BOT = 10.5, 15.5
 
+# 领先后的墙边压制启动时间（秒）；固定为 60，避免依赖外部环境变量
+STALL_TIME = 60.0
+
 DIRS = {
     'N': (0.0, 0.0), 'U': (0.0, -1.0), 'D': (0.0, 1.0),
     'L': (-1.0, 0.0), 'R': (1.0, 0.0),
@@ -137,6 +140,7 @@ class Memory:
 MEM = Memory()
 _DBG = bool(__import__('os').environ.get('ADBG'))
 _FRAME = 0
+_N6_CAP = 14.0
 
 # ---------------- 内部前向模型 ----------------
 class PlanUnit:
@@ -331,31 +335,25 @@ def open_lane(owner, target, opps, need):
     return True
 
 def choose_shield_aim(pos, facing, opps, attack_dir, extra_pts=()):
-    """选一个朝向，使球（pos+0.62*facing）尽可能远离对手；同时避免朝向自家球门。"""
+    """精确角度护球：球在 pos+0.62*facing，采样 360 个角度最大化到所有对手的最小距离。"""
     best_a = None; best_s = -1e9
-    own_gx = 0.0 if attack_dir > 0 else 43.0
-    for k in range(16):
-        a = k * 22.5
+    pts = list(opps) + list(extra_pts)
+    for k in range(360):
+        a = k * 1.0
         r = math.radians(a)
         bx = pos[0] + math.cos(r) * DRIBBLE_D
         by = pos[1] + math.sin(r) * DRIBBLE_D
-        # 球出边界的朝向略微惩罚
-        if bx < 0.2 or bx > W - 0.2 or by < 0.2 or by > H - 0.2:
+        if bx < -1.0 or bx > W + 1.0 or by < -1.0 or by > H + 1.0:
             s = -5.0
         else:
-            mind = min([math.hypot(bx - o[0], by - o[1]) for o in opps], default=99.0)
-            if extra_pts:
-                mind = min(mind, min([math.hypot(bx - o[0], by - o[1]) for o in extra_pts], default=99.0))
-            s = min(mind, 6.0)
-            # 球朝自家球门方向时稍微保守
-            if (bx - pos[0]) * (own_gx - pos[0]) > 0 and abs(bx - own_gx) < 6:
-                s -= 0.6
+            mind = min([math.hypot(bx - o[0], by - o[1]) for o in pts], default=99.0)
+            s = min(mind, 8.0)
         if s > best_s:
             best_s = s; best_a = a
     return best_a
 
 def make_policy(obs, myteam, units_by_id, order):
-    global _FRAME
+    global _FRAME, _N6_CAP
     _FRAME = int(obs.get('frame', 0))
     """返回 policy(units, ball, k) -> {uid: (dir, aim, kick)}"""
     n = obs['teamSize']
@@ -364,6 +362,37 @@ def make_policy(obs, myteam, units_by_id, order):
     my_gx = own_goal_x(myteam)
     my_units = [units_by_id[u['id']] for u in obs['units'] if u['team'] == myteam]
     my_ids = set(u.id for u in my_units)
+    my_score = int(obs.get('score', [0, 0])[myteam])
+    opp_score = int(obs.get('score', [0, 0])[1 - myteam])
+    lead = my_score - opp_score
+    time_left = float(obs.get('timeLeft', 120.0))
+    # n=6：对手起脚频率高时门将收深（参考第 3 轮 r3-g1：sol 15 次踢球、进 5 球）；
+    # 低起脚频率时保持原来的 14 格出击上限，避免对控球型对手过度退守。
+    _N6_CAP = 14.0
+    if n == 6:
+        try:
+            opp_kicks = float(obs.get('stats', [{}, {}])[1 - myteam].get('kicks', 0))
+        except Exception:
+            opp_kicks = 0.0
+        elapsed = max(1.0, 120.0 - time_left)
+        if opp_kicks / elapsed >= 0.08:
+            _N6_CAP = 10.0
+    stall = (lead >= 1) and (time_left <= STALL_TIME)
+    pin = None
+    if stall and obs['ball'].get('owner') in my_ids:
+        ou0 = units_by_id[obs['ball']['owner']]
+        cands = []
+        for wx, ang in ((0.34, 180.0), (43.66, 0.0)):
+            yy = ou0.y
+            if 9.4 <= yy <= 16.6:
+                yy = 9.0 if yy - 9.4 <= 16.6 - yy else 17.0
+            yy = clamp(yy, 1.2, 24.8)
+            cands.append((abs(ou0.x - wx), (wx, yy), ang))
+        for wy, ang in ((0.34, 270.0), (25.66, 90.0)):
+            xx = clamp(ou0.x, 1.2, 42.8)
+            cands.append((abs(ou0.y - wy), (xx, wy), ang))
+        cands.sort(key=lambda z: z[0])
+        pin = (cands[0][1], cands[0][2])
 
     # 固定门将：优先沿用上一窗口的门将（粘性），否则选最靠自家球门的人
     keeper_id = None
@@ -382,6 +411,12 @@ def make_policy(obs, myteam, units_by_id, order):
             keeper_id = pick.id
             MEM.keeper_id = pick.id
 
+    # 若门将自己带球（rush 时常见），指定一名非持球队员回撤守门，避免被长传打空门。
+    safety_id = None
+    if keeper_id is not None and obs['ball'].get('owner') == keeper_id:
+        cand = [u for u in my_units if u.id != keeper_id]
+        if cand:
+            safety_id = min(cand, key=lambda u: abs(u.x - my_gx) + abs(u.y - 13.0) * 0.2).id
     opp_start_pts = [(float(d['x']), float(d['y'])) for d in obs['units'] if d['team'] != myteam]
     ball_start = (float(obs['ball']['x']), float(obs['ball']['y']))
     # 窗口开始时评估一次“传球方案”：持球者被逼抢或离门较远时，传给空位队友
@@ -415,6 +450,7 @@ def make_policy(obs, myteam, units_by_id, order):
     def policy(units, ball, k):
         dec = {}
         _dbg = None
+        eff_keeper = safety_id if (safety_id is not None and ball.get('owner') == keeper_id) else keeper_id
         mine = [u for u in units if u.is_mine]
         opps = [u for u in units if not u.is_mine]
         opp_pts = [(o.x, o.y) for o in opps]
@@ -427,37 +463,50 @@ def make_policy(obs, myteam, units_by_id, order):
             ou = owner_u
             pos = (ou.x, ou.y)
             pressured = min([math.hypot(ou.x - o.x, ou.y - o.y) for o in opps], default=99.0)
-            # 射门机会？
+            if stall and pin is not None:
+                tgt, pin_ang = pin
+                d2 = math.hypot(pos[0] - tgt[0], pos[1] - tgt[1])
+                if d2 < 0.10:
+                    dec[ou.id] = ('N', pin_ang, False)
+                else:
+                    dec[ou.id] = (dir_toward(pos, tgt), pin_ang, False)
+                for u in mine:
+                    if u.id in dec:
+                        continue
+                    tx = clamp(ou.x - ad * 6.0, 2.0, W - 2.0)
+                    ty = clamp(ou.y + (4.0 if u.index % 2 else -4.0), 2.0, H - 2.0)
+                    dec[u.id] = (dir_toward((u.x, u.y), (tx, ty)), None, False)
+                return dec
+            # 门线战术：已进入球门高度且贴近对方门线 → 直接踢过线，进球判定在争抢之前
+            near_line = (pos[0] >= 41.9) if ad > 0 else (pos[0] <= 1.1)
+            in_mouth = 10.6 <= pos[1] <= 15.4
+            if near_line and in_mouth:
+                aim = 0.0 if ad > 0 else 180.0
+                dec[ou.id] = ('N', aim, True)
+                for u in mine:
+                    if u.id in dec:
+                        continue
+                    dec[u.id] = role_decide(u, ball, opps, opp_pts, eff_keeper, spread_y,
+                                            ad, my_gx, opp_gx, owner_u, n, ball_start)
+                return dec
+            # 近距离射门机会
             st = shot_target(pos, ad, opps)
             if st is not None:
                 T, clr, d = st
-                if d < 9.0 or clr > (1.9 if d < 15 else 2.4) or pressured < 1.35:
+                if d < 3.6 or (d < 7.0 and clr > 2.2):
                     aim = angle_to(pos, T)
                     dec[ou.id] = ('N' if dt_move_small(pos, T) else dir_toward(pos, T),
                                   aim, True)
                     for u in mine:
                         if u.id in dec:
                             continue
-                        dec[u.id] = role_decide(u, ball, opps, opp_pts, keeper_id, spread_y,
+                        dec[u.id] = role_decide(u, ball, opps, opp_pts, eff_keeper, spread_y,
                                                 ad, my_gx, opp_gx, owner_u, n, ball_start)
                     return dec
-            # 传球方案：队友原地接应，持球者直接传出（0-2 帧内）
-            if pass_plan is not None and ou.id == pass_plan[0] and k <= 2:
-                recv = pass_plan[1]; tgt = pass_plan[2]
-                aim = angle_to(pos, tgt)
-                dec[ou.id] = ('N', aim, True)
-                for u in mine:
-                    if u.id in dec:
-                        continue
-                    if u.id == recv:
-                        dec[u.id] = ('N', None, False)
-                    else:
-                        dec[u.id] = role_decide(u, ball, opps, opp_pts, keeper_id, spread_y,
-                                                ad, my_gx, opp_gx, owner_u, n, ball_start)
-                return dec
-            # 护球推进
+            # 护球推进（直冲球门口）
             aim = choose_shield_aim(pos, ou.facing, opp_pts, ad, opp_start_pts)
-            mv = choose_advance_dir(pos, opp_pts, ad, opp_gx)
+            ty = clamp(13.0 + (pos[1] - 13.0) * 0.4, 11.0, 15.0)
+            mv = choose_advance_dir(pos, opp_pts, ad, opp_gx, ty)
             dec[ou.id] = (mv, aim, False)
             for u in mine:
                 if u.id in dec:
@@ -465,7 +514,7 @@ def make_policy(obs, myteam, units_by_id, order):
                 if pass_plan is not None and u.id == pass_plan[1] and k <= 6:
                     dec[u.id] = ('N', None, False)
                     continue
-                dec[u.id] = role_decide(u, ball, opps, opp_pts, keeper_id, spread_y,
+                dec[u.id] = role_decide(u, ball, opps, opp_pts, eff_keeper, spread_y,
                                         ad, my_gx, opp_gx, owner_u, n, ball_start)
             return dec
 
@@ -475,7 +524,7 @@ def make_policy(obs, myteam, units_by_id, order):
         kickoff = (owner_u is None and abs(bp[0] - W / 2.0) < 0.05
                    and abs(bp[1] - H / 2.0) < 0.05
                    and abs(ball.get('vx', 0.0)) + abs(ball.get('vy', 0.0)) < 0.01)
-        pool = mine if kickoff else ([u for u in mine if u.id != keeper_id] or mine)
+        pool = mine if kickoff else ([u for u in mine if u.id != eff_keeper] or mine)
         if owner_u is not None:
             # 对方控球：追球点用实际球位置
             chaser = min(pool, key=lambda u: math.hypot(u.x - bp[0], u.y - bp[1]))
@@ -496,14 +545,14 @@ def make_policy(obs, myteam, units_by_id, order):
                 else:
                     dec[u.id] = chase_decide(u, ball, opp_pts, owner_u, ad, my_gx, n)
             else:
-                dec[u.id] = role_decide(u, ball, opps, opp_pts, keeper_id, spread_y,
+                dec[u.id] = role_decide(u, ball, opps, opp_pts, eff_keeper, spread_y,
                                         ad, my_gx, opp_gx, owner_u, n, ball_start)
         if k == 0 and _DBG:
             ku = next((u for u in mine if u.id == keeper_id), None)
             print('POL f%d own=%s keeper=%s kpos=%s kdec=%s ball=%s chaser=%s' % (
                 _FRAME, ball.get('owner'), keeper_id,
                 None if ku is None else (round(ku.x,2), round(ku.y,2)),
-                None if keeper_id is None else dec.get(keeper_id), (round(ball['x'],2), round(ball['y'],2), round(ball.get('vx',0),1)),
+                None if keeper_id is None else dec.get(eff_keeper), (round(ball['x'],2), round(ball['y'],2), round(ball.get('vx',0),1)),
                 chaser.id), file=sys.stderr, flush=True)
         return dec
 
@@ -549,11 +598,11 @@ def chase_decide(u, ball, opp_pts, owner_u, ad, my_gx, n):
     tgt = pts[best_i]
     return (dir_toward((u.x, u.y), tgt), None, False)
 
-def choose_advance_dir(pos, opp_pts, ad, opp_gx):
+def choose_advance_dir(pos, opp_pts, ad, opp_gx, ty=13.0):
     """带球推进：在 8 个方向里选推进分高且不撞人的"""
     best = 'N'; best_s = -1e9
     gx = opp_gx
-    gdir = norm_vec(gx - pos[0], 13.0 - pos[1])
+    gdir = norm_vec(gx - pos[0], ty - pos[1])
     for dname, (dx, dy) in DIRS.items():
         if dx == 0 and dy == 0:
             continue
@@ -586,8 +635,24 @@ def role_decide(u, ball, opps, opp_pts, keeper_id, spread_y, ad, my_gx, opp_gx, 
         if math.hypot(tx - owner_u.x, ty - owner_u.y) < 2.0:
             ty = clamp(ty + (3.0 if sy >= 0 else -3.0), 3.0, 23.0)
         return (dir_toward((u.x, u.y), (clamp(tx, 2.0, W - 2.0), ty)), None, False)
-    # 防守：站在球与自家球门连线上
-    # 非门将防守球员：卡在球门一侧
+    # 防守：人数足够时，球逼近本方球门则按索引封堵两个射门角（10.8 / 15.2）；
+    # n<=3 时只有一名非门将后卫，封角会放空中路，故保持球-门连线站位。
+    Dgoal = math.hypot(bp[0] - my_gx, bp[1] - 13.0)
+    if n >= 4:
+        if n == 4:
+            dg_thr, frac, smul = 14.0, 0.5, 0.12
+        elif n == 5:
+            dg_thr, frac, smul = 12.0, 0.42, 0.12
+        else:
+            dg_thr, frac, smul = 12.0, 0.5, 0.0
+        if Dgoal < dg_thr:
+            post_y = 10.8 if (u.index % 2 == 0) else 15.2
+            tx = bp[0] + (my_gx - bp[0]) * frac
+            ty = bp[1] + (post_y - bp[1]) * frac
+            settle = spread_y.get(u.id, 0.0) * smul
+            ty = clamp(ty + settle, 3.0, 23.0)
+            tx = clamp(tx, 2.0, W - 2.0)
+            return (dir_toward((u.x, u.y), (tx, ty)), None, False)
     t = 0.35 if u.index % 2 == 0 else 0.55
     tx = bp[0] + (my_gx - bp[0]) * t
     ty = bp[1] + (13.0 - bp[1]) * t
@@ -628,7 +693,7 @@ def keeper_decide(u, ball, opps, owner_u, my_gx, ad, n, ball_start):
     if ours:
         back = clamp(0.25 * D, 1.4, 4.2)
     else:
-        cap = 14.0 if n == 1 else (11.0 if n == 2 else (12.0 if n == 3 else 14.0))
+        cap = _N6_CAP if n == 6 else (6.0 if n in (2, 3, 5) else 14.0)
         back = clamp(0.68 * D, 1.35, cap)
     dx = bp[0] - goal[0]; dy = bp[1] - goal[1]
     l = math.hypot(dx, dy) or 1.0

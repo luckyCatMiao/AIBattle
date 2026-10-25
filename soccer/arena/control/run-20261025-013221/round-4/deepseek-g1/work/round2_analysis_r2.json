@@ -1,0 +1,5068 @@
+[
+ {
+  "id": "r2-g1",
+  "game": 1,
+  "seed": 5521,
+  "teamSize": 1,
+  "seat": 0,
+  "score_me": 5,
+  "score_opp": 0,
+  "winner": "deepseek-g1",
+  "duration": 1.56,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 6,
+  "kicks_opp": 2,
+  "poss_me": 1227,
+  "poss_opp": 7,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 0,
+  "goals_me": 5,
+  "goals_opp": 0,
+  "on_target_me": 5,
+  "on_target_opp": 0,
+  "shots_me": 6,
+  "shots_opp": 0,
+  "goal_events": [
+   {
+    "t": 33,
+    "frame": 660,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 581,
+     "kick_t": 29.05,
+     "kicker": "t0u0",
+     "from": [
+      22.977,
+      9.729
+     ],
+     "dist": 20.29,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 43.6,
+    "frame": 872,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 793,
+     "kick_t": 39.65,
+     "kicker": "t0u0",
+     "from": [
+      22.998,
+      9.616
+     ],
+     "dist": 20.29,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 55.25,
+    "frame": 1105,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1026,
+     "kick_t": 51.3,
+     "kicker": "t0u0",
+     "from": [
+      22.941,
+      16.185
+     ],
+     "dist": 20.31,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 71.1,
+    "frame": 1422,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     4,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1343,
+     "kick_t": 67.15,
+     "kicker": "t0u0",
+     "from": [
+      22.927,
+      9.039
+     ],
+     "dist": 20.46,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 82.65,
+    "frame": 1653,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     5,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1574,
+     "kick_t": 78.7,
+     "kicker": "t0u0",
+     "from": [
+      22.967,
+      7.901
+     ],
+     "dist": 20.67,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [],
+  "shot_rays_me": [
+   {
+    "t": 29.05,
+    "frame": 581,
+    "unit": "t0u0",
+    "from": [
+     22.977,
+     9.729
+    ],
+    "dist": 20.73,
+    "goal_y": 15.1
+   },
+   {
+    "t": 39.65,
+    "frame": 793,
+    "unit": "t0u0",
+    "from": [
+     22.998,
+     9.616
+    ],
+    "dist": 20.71,
+    "goal_y": 14.98
+   },
+   {
+    "t": 51.3,
+    "frame": 1026,
+    "unit": "t0u0",
+    "from": [
+     22.941,
+     16.185
+    ],
+    "dist": 20.77,
+    "goal_y": 10.81
+   },
+   {
+    "t": 58.75,
+    "frame": 1175,
+    "unit": "t0u0",
+    "from": [
+     22.303,
+     12.513
+    ],
+    "dist": 20.7,
+    "goal_y": 12.51
+   },
+   {
+    "t": 67.15,
+    "frame": 1343,
+    "unit": "t0u0",
+    "from": [
+     22.927,
+     9.039
+    ],
+    "dist": 20.78,
+    "goal_y": 14.42
+   },
+   {
+    "t": 78.7,
+    "frame": 1574,
+    "unit": "t0u0",
+    "from": [
+     22.967,
+     7.901
+    ],
+    "dist": 20.74,
+    "goal_y": 13.27
+   }
+  ],
+  "shot_rays_opp": []
+ },
+ {
+  "id": "r2-g2",
+  "game": 2,
+  "seed": 5522,
+  "teamSize": 6,
+  "seat": 1,
+  "score_me": 2,
+  "score_opp": 1,
+  "winner": "deepseek-g1",
+  "duration": 6.87,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 32,
+  "kicks_opp": 28,
+  "poss_me": 103,
+  "poss_opp": 237,
+  "fouls_me": 12,
+  "fouls_opp": 0,
+  "saves_me": 3,
+  "saves_opp": 5,
+  "goals_me": 2,
+  "goals_opp": 1,
+  "on_target_me": 7,
+  "on_target_opp": 4,
+  "shots_me": 8,
+  "shots_opp": 7,
+  "goal_events": [
+   {
+    "t": 15.75,
+    "frame": 315,
+    "team": "me",
+    "scorer": "t1u4",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 300,
+     "kick_t": 15,
+     "kicker": "t1u4",
+     "from": [
+      2.489,
+      20.334
+     ],
+     "dist": 7.48,
+     "shake": "setpiece"
+    }
+   },
+   {
+    "t": 93.6,
+    "frame": 1872,
+    "team": "opp",
+    "scorer": "t0u3",
+    "ownGoal": false,
+    "score": [
+     1,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 1821,
+     "kick_t": 91.05,
+     "kicker": "t0u3",
+     "from": [
+      26.204,
+      18.193
+     ],
+     "dist": 17.58,
+     "shake": "setpiece"
+    }
+   },
+   {
+    "t": 111.55,
+    "frame": 2231,
+    "team": "me",
+    "scorer": "t1u2",
+    "ownGoal": false,
+    "score": [
+     1,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 2207,
+     "kick_t": 110.35,
+     "kicker": "t1u2",
+     "from": [
+      10.598,
+      19.025
+     ],
+     "dist": 11.33,
+     "shake": "setpiece"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "goal",
+    "t": 15.75,
+    "frame": 315,
+    "kick_frame": 300,
+    "dist": 7.48,
+    "from": [
+     2.489,
+     20.334
+    ]
+   },
+   {
+    "type": "save",
+    "t": 37.45,
+    "frame": 749,
+    "kick_frame": 742,
+    "dist": 6.54,
+    "from": [
+     1.372,
+     19.534
+    ]
+   },
+   {
+    "type": "save",
+    "t": 47.05,
+    "frame": 941,
+    "kick_frame": 932,
+    "dist": 7.26,
+    "from": [
+     1.521,
+     20.237
+    ]
+   },
+   {
+    "type": "save",
+    "t": 58.35,
+    "frame": 1167,
+    "kick_frame": 1162,
+    "dist": 6.66,
+    "from": [
+     1.304,
+     19.651
+    ]
+   },
+   {
+    "type": "save",
+    "t": 80.1,
+    "frame": 1602,
+    "kick_frame": 1594,
+    "dist": 7.34,
+    "from": [
+     1.535,
+     20.319
+    ]
+   },
+   {
+    "type": "save",
+    "t": 84.45,
+    "frame": 1689,
+    "kick_frame": 1682,
+    "dist": 6.68,
+    "from": [
+     1.376,
+     19.673
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 111.55,
+    "frame": 2231,
+    "kick_frame": 2207,
+    "dist": 11.33,
+    "from": [
+     10.598,
+     19.025
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 24,
+    "frame": 480,
+    "kick_frame": 475,
+    "dist": 12.95,
+    "from": [
+     31.989,
+     6.175
+    ]
+   },
+   {
+    "type": "save",
+    "t": 68.35,
+    "frame": 1367,
+    "kick_frame": 1361,
+    "dist": 13.15,
+    "from": [
+     31.768,
+     6.154
+    ]
+   },
+   {
+    "type": "save",
+    "t": 102.25,
+    "frame": 2045,
+    "kick_frame": 2041,
+    "dist": 12.61,
+    "from": [
+     32.675,
+     5.754
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 2.8,
+    "frame": 56,
+    "unit": "t1u3",
+    "from": [
+     23.065,
+     14.044
+    ],
+    "dist": 22.07,
+    "goal_y": 14.04
+   },
+   {
+    "t": 14.85,
+    "frame": 297,
+    "unit": "t1u5",
+    "from": [
+     3.714,
+     22.148
+    ],
+    "dist": 8.78,
+    "goal_y": 13.8
+   },
+   {
+    "t": 15,
+    "frame": 300,
+    "unit": "t1u4",
+    "from": [
+     2.489,
+     20.334
+    ],
+    "dist": 7.17,
+    "goal_y": 13.32
+   },
+   {
+    "t": 37.05,
+    "frame": 741,
+    "unit": "t1u4",
+    "from": [
+     1.649,
+     20.027
+    ],
+    "dist": 6.18,
+    "goal_y": 13.88
+   },
+   {
+    "t": 37.1,
+    "frame": 742,
+    "unit": "t1u5",
+    "from": [
+     1.372,
+     19.534
+    ],
+    "dist": 6.18,
+    "goal_y": 13.36
+   },
+   {
+    "t": 46.45,
+    "frame": 929,
+    "unit": "t1u4",
+    "from": [
+     2.283,
+     22.656
+    ],
+    "dist": 12.22,
+    "goal_y": 10.51
+   },
+   {
+    "t": 84.05,
+    "frame": 1681,
+    "unit": "t1u5",
+    "from": [
+     2.041,
+     20.867
+    ],
+    "dist": 9.91,
+    "goal_y": 11.01
+   },
+   {
+    "t": 110.35,
+    "frame": 2207,
+    "unit": "t1u2",
+    "from": [
+     10.598,
+     19.025
+    ],
+    "dist": 10.5,
+    "goal_y": 14.75
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 23.75,
+    "frame": 475,
+    "unit": "t0u1",
+    "from": [
+     31.989,
+     6.175
+    ],
+    "dist": 13.47,
+    "goal_y": 13.94
+   },
+   {
+    "t": 68.05,
+    "frame": 1361,
+    "unit": "t0u1",
+    "from": [
+     31.768,
+     6.154
+    ],
+    "dist": 13.67,
+    "goal_y": 13.94
+   },
+   {
+    "t": 69.65,
+    "frame": 1393,
+    "unit": "t0u1",
+    "from": [
+     32.92,
+     7.492
+    ],
+    "dist": 10.54,
+    "goal_y": 10.55
+   },
+   {
+    "t": 91.05,
+    "frame": 1821,
+    "unit": "t0u3",
+    "from": [
+     26.204,
+     18.193
+    ],
+    "dist": 17.04,
+    "goal_y": 15.34
+   },
+   {
+    "t": 102.05,
+    "frame": 2041,
+    "unit": "t0u1",
+    "from": [
+     32.675,
+     5.754
+    ],
+    "dist": 11.43,
+    "goal_y": 10.65
+   },
+   {
+    "t": 103.55,
+    "frame": 2071,
+    "unit": "t0u3",
+    "from": [
+     30.822,
+     8.45
+    ],
+    "dist": 14.04,
+    "goal_y": 15.44
+   },
+   {
+    "t": 119.15,
+    "frame": 2383,
+    "unit": "t0u1",
+    "from": [
+     31.765,
+     5.636
+    ],
+    "dist": 12.94,
+    "goal_y": 12.05
+   }
+  ]
+ },
+ {
+  "id": "r2-g3",
+  "game": 3,
+  "seed": 5523,
+  "teamSize": 5,
+  "seat": 0,
+  "score_me": 1,
+  "score_opp": 0,
+  "winner": "deepseek-g1",
+  "duration": 5.92,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 19,
+  "kicks_opp": 28,
+  "poss_me": 109,
+  "poss_opp": 192,
+  "fouls_me": 3,
+  "fouls_opp": 0,
+  "saves_me": 2,
+  "saves_opp": 1,
+  "goals_me": 1,
+  "goals_opp": 0,
+  "on_target_me": 2,
+  "on_target_opp": 2,
+  "shots_me": 2,
+  "shots_opp": 8,
+  "goal_events": [
+   {
+    "t": 84.3,
+    "frame": 1686,
+    "team": "me",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1664,
+     "kick_t": 83.2,
+     "kicker": "t0u2",
+     "from": [
+      34.095,
+      6.808
+     ],
+     "dist": 10.85,
+     "shake": "setpiece"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 46.05,
+    "frame": 921,
+    "kick_frame": 898,
+    "dist": 13.74,
+    "from": [
+     34.397,
+     23.711
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 84.3,
+    "frame": 1686,
+    "kick_frame": 1664,
+    "dist": 10.85,
+    "from": [
+     34.095,
+     6.808
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 20.3,
+    "frame": 406,
+    "kick_frame": 401,
+    "dist": 12.99,
+    "from": [
+     12.262,
+     19.482
+    ]
+   },
+   {
+    "type": "save",
+    "t": 68.75,
+    "frame": 1375,
+    "kick_frame": 1370,
+    "dist": 12.56,
+    "from": [
+     11.75,
+     6.504
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 23.75,
+    "frame": 475,
+    "unit": "t0u2",
+    "from": [
+     20.848,
+     20.08
+    ],
+    "dist": 23.29,
+    "goal_y": 12.89
+   },
+   {
+    "t": 83.2,
+    "frame": 1664,
+    "unit": "t0u2",
+    "from": [
+     34.095,
+     6.808
+    ],
+    "dist": 9.75,
+    "goal_y": 10.77
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.4,
+    "frame": 148,
+    "unit": "t1u1",
+    "from": [
+     11.884,
+     6.808
+    ],
+    "dist": 13.84,
+    "goal_y": 15.35
+   },
+   {
+    "t": 20.05,
+    "frame": 401,
+    "unit": "t1u3",
+    "from": [
+     12.262,
+     19.482
+    ],
+    "dist": 12.55,
+    "goal_y": 13.94
+   },
+   {
+    "t": 36.5,
+    "frame": 730,
+    "unit": "t1u3",
+    "from": [
+     10.876,
+     19.347
+    ],
+    "dist": 13.15,
+    "goal_y": 10.66
+   },
+   {
+    "t": 38.15,
+    "frame": 763,
+    "unit": "t1u3",
+    "from": [
+     11.996,
+     17.794
+    ],
+    "dist": 13.12,
+    "goal_y": 10.64
+   },
+   {
+    "t": 68.5,
+    "frame": 1370,
+    "unit": "t1u1",
+    "from": [
+     11.75,
+     6.504
+    ],
+    "dist": 12.56,
+    "goal_y": 13.0
+   },
+   {
+    "t": 70.05,
+    "frame": 1401,
+    "unit": "t1u2",
+    "from": [
+     14.433,
+     8.603
+    ],
+    "dist": 14.14,
+    "goal_y": 13.0
+   },
+   {
+    "t": 92.6,
+    "frame": 1852,
+    "unit": "t1u1",
+    "from": [
+     12.084,
+     6.413
+    ],
+    "dist": 14.24,
+    "goal_y": 15.35
+   },
+   {
+    "t": 105.95,
+    "frame": 2119,
+    "unit": "t1u3",
+    "from": [
+     11.882,
+     16.695
+    ],
+    "dist": 12.33,
+    "goal_y": 10.9
+   }
+  ]
+ },
+ {
+  "id": "r2-g4",
+  "game": 4,
+  "seed": 5524,
+  "teamSize": 2,
+  "seat": 1,
+  "score_me": 0,
+  "score_opp": 1,
+  "winner": "sol",
+  "duration": 49.73,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 12,
+  "kicks_opp": 12,
+  "poss_me": 1101,
+  "poss_opp": 73,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 1,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 1,
+  "on_target_me": 0,
+  "on_target_opp": 2,
+  "shots_me": 7,
+  "shots_opp": 5,
+  "goal_events": [
+   {
+    "t": 10.3,
+    "frame": 206,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 168,
+     "kick_t": 8.4,
+     "kicker": "t0u1",
+     "from": [
+      31.449,
+      19.412
+     ],
+     "dist": 13.21,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 10.3,
+    "frame": 206,
+    "kick_frame": 168,
+    "dist": 13.21,
+    "from": [
+     31.449,
+     19.412
+    ]
+   },
+   {
+    "type": "save",
+    "t": 80.55,
+    "frame": 1611,
+    "kick_frame": 1600,
+    "dist": 13.88,
+    "from": [
+     30.969,
+     19.919
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 3.75,
+    "frame": 75,
+    "unit": "t1u1",
+    "from": [
+     21.909,
+     12.829
+    ],
+    "dist": 21.02,
+    "goal_y": 15.02
+   },
+   {
+    "t": 14.55,
+    "frame": 291,
+    "unit": "t1u1",
+    "from": [
+     21.529,
+     14.437
+    ],
+    "dist": 20.53,
+    "goal_y": 14.43
+   },
+   {
+    "t": 71.3,
+    "frame": 1426,
+    "unit": "t1u1",
+    "from": [
+     22.065,
+     5.889
+    ],
+    "dist": 23.06,
+    "goal_y": 15.26
+   },
+   {
+    "t": 93.1,
+    "frame": 1862,
+    "unit": "t1u1",
+    "from": [
+     22.791,
+     24.368
+    ],
+    "dist": 23.85,
+    "goal_y": 14.67
+   },
+   {
+    "t": 94.05,
+    "frame": 1881,
+    "unit": "t1u1",
+    "from": [
+     22.503,
+     22.953
+    ],
+    "dist": 23.53,
+    "goal_y": 13.39
+   },
+   {
+    "t": 95.05,
+    "frame": 1901,
+    "unit": "t1u1",
+    "from": [
+     20.795,
+     21.955
+    ],
+    "dist": 20.82,
+    "goal_y": 15.51
+   },
+   {
+    "t": 110.85,
+    "frame": 2217,
+    "unit": "t1u1",
+    "from": [
+     22.141,
+     5.24
+    ],
+    "dist": 23.14,
+    "goal_y": 14.65
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 8.4,
+    "frame": 168,
+    "unit": "t0u1",
+    "from": [
+     31.449,
+     19.412
+    ],
+    "dist": 14.49,
+    "goal_y": 10.67
+   },
+   {
+    "t": 80,
+    "frame": 1600,
+    "unit": "t0u1",
+    "from": [
+     30.969,
+     19.919
+    ],
+    "dist": 15.19,
+    "goal_y": 10.64
+   },
+   {
+    "t": 93.4,
+    "frame": 1868,
+    "unit": "t0u1",
+    "from": [
+     21.485,
+     23.289
+    ],
+    "dist": 23.32,
+    "goal_y": 14.29
+   },
+   {
+    "t": 102.35,
+    "frame": 2047,
+    "unit": "t0u1",
+    "from": [
+     40.952,
+     23.23
+    ],
+    "dist": 12.71,
+    "goal_y": 10.68
+   },
+   {
+    "t": 119.05,
+    "frame": 2381,
+    "unit": "t0u1",
+    "from": [
+     29.05,
+     19.415
+    ],
+    "dist": 16.48,
+    "goal_y": 10.65
+   }
+  ]
+ },
+ {
+  "id": "r2-g5",
+  "game": 5,
+  "seed": 5525,
+  "teamSize": 3,
+  "seat": 0,
+  "score_me": 0,
+  "score_opp": 0,
+  "winner": null,
+  "duration": 66.95,
+  "frames": 2801,
+  "windows": 140,
+  "kicks_me": 16,
+  "kicks_opp": 10,
+  "poss_me": 1462,
+  "poss_opp": 35,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 3,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 0,
+  "on_target_me": 0,
+  "on_target_opp": 3,
+  "shots_me": 2,
+  "shots_opp": 3,
+  "goal_events": [],
+  "shot_events_me": [],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 7.3,
+    "frame": 146,
+    "kick_frame": 141,
+    "dist": 12.55,
+    "from": [
+     12.127,
+     7.204
+    ]
+   },
+   {
+    "type": "save",
+    "t": 42.8,
+    "frame": 856,
+    "kick_frame": 845,
+    "dist": 15.18,
+    "from": [
+     13.985,
+     5.131
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 2.9,
+    "frame": 58,
+    "unit": "t0u1",
+    "from": [
+     20.904,
+     12.432
+    ],
+    "dist": 22.1,
+    "goal_y": 12.43
+   },
+   {
+    "t": 11.05,
+    "frame": 221,
+    "unit": "t0u1",
+    "from": [
+     20.272,
+     6.121
+    ],
+    "dist": 23.23,
+    "goal_y": 10.94
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.05,
+    "frame": 141,
+    "unit": "t1u1",
+    "from": [
+     12.127,
+     7.204
+    ],
+    "dist": 13.01,
+    "goal_y": 13.94
+   },
+   {
+    "t": 42.25,
+    "frame": 845,
+    "unit": "t1u1",
+    "from": [
+     13.985,
+     5.131
+    ],
+    "dist": 14.11,
+    "goal_y": 10.65
+   },
+   {
+    "t": 55.75,
+    "frame": 1115,
+    "unit": "t1u1",
+    "from": [
+     3.609,
+     4.303
+    ],
+    "dist": 11.68,
+    "goal_y": 15.69
+   }
+  ]
+ },
+ {
+  "id": "r2-g6",
+  "game": 6,
+  "seed": 5526,
+  "teamSize": 4,
+  "seat": 1,
+  "score_me": 0,
+  "score_opp": 3,
+  "winner": "sol",
+  "duration": 17.55,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 24,
+  "kicks_opp": 25,
+  "poss_me": 348,
+  "poss_opp": 182,
+  "fouls_me": 1,
+  "fouls_opp": 0,
+  "saves_me": 2,
+  "saves_opp": 1,
+  "goals_me": 0,
+  "goals_opp": 3,
+  "on_target_me": 1,
+  "on_target_opp": 5,
+  "shots_me": 6,
+  "shots_opp": 9,
+  "goal_events": [
+   {
+    "t": 83.1,
+    "frame": 1662,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1630,
+     "kick_t": 81.5,
+     "kicker": "t0u1",
+     "from": [
+      30.502,
+      13.237
+     ],
+     "dist": 12.5,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 105.35,
+    "frame": 2107,
+    "team": "opp",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 2069,
+     "kick_t": 103.45,
+     "kicker": "t0u2",
+     "from": [
+      30.73,
+      7.996
+     ],
+     "dist": 13.25,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 115.5,
+    "frame": 2310,
+    "team": "opp",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 2275,
+     "kick_t": 113.75,
+     "kicker": "t0u2",
+     "from": [
+      32.494,
+      6.55
+     ],
+     "dist": 12.33,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 96.1,
+    "frame": 1922,
+    "kick_frame": 1910,
+    "dist": 10.41,
+    "from": [
+     10.592,
+     17.046
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 8,
+    "frame": 160,
+    "kick_frame": 154,
+    "dist": 14.27,
+    "from": [
+     30.955,
+     5.346
+    ]
+   },
+   {
+    "type": "save",
+    "t": 68.3,
+    "frame": 1366,
+    "kick_frame": 1361,
+    "dist": 12.8,
+    "from": [
+     31.325,
+     7.752
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 83.1,
+    "frame": 1662,
+    "kick_frame": 1630,
+    "dist": 12.5,
+    "from": [
+     30.502,
+     13.237
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 105.35,
+    "frame": 2107,
+    "kick_frame": 2069,
+    "dist": 13.25,
+    "from": [
+     30.73,
+     7.996
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 115.5,
+    "frame": 2310,
+    "kick_frame": 2275,
+    "dist": 12.33,
+    "from": [
+     32.494,
+     6.55
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 23.5,
+    "frame": 470,
+    "unit": "t1u3",
+    "from": [
+     23.679,
+     21.606
+    ],
+    "dist": 23.85,
+    "goal_y": 14.23
+   },
+   {
+    "t": 29,
+    "frame": 580,
+    "unit": "t1u2",
+    "from": [
+     23.657,
+     9.634
+    ],
+    "dist": 23.16,
+    "goal_y": 14.45
+   },
+   {
+    "t": 41.1,
+    "frame": 822,
+    "unit": "t1u2",
+    "from": [
+     23.66,
+     22.355
+    ],
+    "dist": 23.83,
+    "goal_y": 14.98
+   },
+   {
+    "t": 55.45,
+    "frame": 1109,
+    "unit": "t1u3",
+    "from": [
+     22.38,
+     19.604
+    ],
+    "dist": 21.86,
+    "goal_y": 15.06
+   },
+   {
+    "t": 87.05,
+    "frame": 1741,
+    "unit": "t1u1",
+    "from": [
+     22.92,
+     12.934
+    ],
+    "dist": 22.04,
+    "goal_y": 15.24
+   },
+   {
+    "t": 95.5,
+    "frame": 1910,
+    "unit": "t1u3",
+    "from": [
+     10.592,
+     17.046
+    ],
+    "dist": 9.81,
+    "goal_y": 15.01
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.7,
+    "frame": 154,
+    "unit": "t0u1",
+    "from": [
+     30.955,
+     5.346
+    ],
+    "dist": 13.16,
+    "goal_y": 10.65
+   },
+   {
+    "t": 9.35,
+    "frame": 187,
+    "unit": "t0u3",
+    "from": [
+     23.572,
+     11.551
+    ],
+    "dist": 19.8,
+    "goal_y": 15.35
+   },
+   {
+    "t": 19.05,
+    "frame": 381,
+    "unit": "t0u2",
+    "from": [
+     29.548,
+     14.491
+    ],
+    "dist": 13.87,
+    "goal_y": 11.13
+   },
+   {
+    "t": 37.05,
+    "frame": 741,
+    "unit": "t0u1",
+    "from": [
+     28.601,
+     19.045
+    ],
+    "dist": 15.28,
+    "goal_y": 13.94
+   },
+   {
+    "t": 37.1,
+    "frame": 742,
+    "unit": "t0u2",
+    "from": [
+     29.866,
+     19.248
+    ],
+    "dist": 14.35,
+    "goal_y": 13.48
+   },
+   {
+    "t": 68.05,
+    "frame": 1361,
+    "unit": "t0u2",
+    "from": [
+     31.325,
+     7.752
+    ],
+    "dist": 12.61,
+    "goal_y": 12.52
+   },
+   {
+    "t": 81.5,
+    "frame": 1630,
+    "unit": "t0u1",
+    "from": [
+     30.502,
+     13.237
+    ],
+    "dist": 12.76,
+    "goal_y": 10.65
+   },
+   {
+    "t": 103.45,
+    "frame": 2069,
+    "unit": "t0u2",
+    "from": [
+     30.73,
+     7.996
+    ],
+    "dist": 14.33,
+    "goal_y": 15.4
+   },
+   {
+    "t": 113.75,
+    "frame": 2275,
+    "unit": "t0u2",
+    "from": [
+     32.494,
+     6.55
+    ],
+    "dist": 13.7,
+    "goal_y": 15.35
+   }
+  ]
+ },
+ {
+  "id": "r2-g7",
+  "game": 7,
+  "seed": 5527,
+  "teamSize": 1,
+  "seat": 0,
+  "score_me": 6,
+  "score_opp": 0,
+  "winner": "deepseek-g1",
+  "duration": 1.62,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 7,
+  "kicks_opp": 3,
+  "poss_me": 981,
+  "poss_opp": 33,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 0,
+  "goals_me": 6,
+  "goals_opp": 0,
+  "on_target_me": 6,
+  "on_target_opp": 0,
+  "shots_me": 7,
+  "shots_opp": 0,
+  "goal_events": [
+   {
+    "t": 7.4,
+    "frame": 148,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 74,
+     "kick_t": 3.7,
+     "kicker": "t0u0",
+     "from": [
+      22.748,
+      13.11
+     ],
+     "dist": 20.25,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 22.15,
+    "frame": 443,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 364,
+     "kick_t": 18.2,
+     "kicker": "t0u0",
+     "from": [
+      22.305,
+      10.851
+     ],
+     "dist": 20.81,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 35.2,
+    "frame": 704,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 625,
+     "kick_t": 31.25,
+     "kicker": "t0u0",
+     "from": [
+      22.976,
+      7.554
+     ],
+     "dist": 20.75,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 43.1,
+    "frame": 862,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     4,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 783,
+     "kick_t": 39.15,
+     "kicker": "t0u0",
+     "from": [
+      22.295,
+      12.702
+     ],
+     "dist": 20.71,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 73.3,
+    "frame": 1466,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     5,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1387,
+     "kick_t": 69.35,
+     "kicker": "t0u0",
+     "from": [
+      22.268,
+      11.009
+     ],
+     "dist": 20.83,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 85.35,
+    "frame": 1707,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     6,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1628,
+     "kick_t": 81.4,
+     "kicker": "t0u0",
+     "from": [
+      22.236,
+      10.972
+     ],
+     "dist": 20.86,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [],
+  "shot_rays_me": [
+   {
+    "t": 3.7,
+    "frame": 74,
+    "unit": "t0u0",
+    "from": [
+     22.748,
+     13.11
+    ],
+    "dist": 20.25,
+    "goal_y": 13.11
+   },
+   {
+    "t": 18.2,
+    "frame": 364,
+    "unit": "t0u0",
+    "from": [
+     22.305,
+     10.851
+    ],
+    "dist": 20.7,
+    "goal_y": 10.85
+   },
+   {
+    "t": 31.25,
+    "frame": 625,
+    "unit": "t0u0",
+    "from": [
+     22.976,
+     7.554
+    ],
+    "dist": 20.73,
+    "goal_y": 12.92
+   },
+   {
+    "t": 39.15,
+    "frame": 783,
+    "unit": "t0u0",
+    "from": [
+     22.295,
+     12.702
+    ],
+    "dist": 20.7,
+    "goal_y": 12.7
+   },
+   {
+    "t": 69.35,
+    "frame": 1387,
+    "unit": "t0u0",
+    "from": [
+     22.268,
+     11.009
+    ],
+    "dist": 20.73,
+    "goal_y": 11.01
+   },
+   {
+    "t": 81.4,
+    "frame": 1628,
+    "unit": "t0u0",
+    "from": [
+     22.236,
+     10.972
+    ],
+    "dist": 20.76,
+    "goal_y": 10.97
+   },
+   {
+    "t": 99.55,
+    "frame": 1991,
+    "unit": "t0u0",
+    "from": [
+     22.239,
+     14.783
+    ],
+    "dist": 20.76,
+    "goal_y": 14.78
+   }
+  ],
+  "shot_rays_opp": []
+ },
+ {
+  "id": "r2-g8",
+  "game": 8,
+  "seed": 5528,
+  "teamSize": 6,
+  "seat": 1,
+  "score_me": 0,
+  "score_opp": 3,
+  "winner": "sol",
+  "duration": 9.27,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 21,
+  "kicks_opp": 23,
+  "poss_me": 180,
+  "poss_opp": 232,
+  "fouls_me": 5,
+  "fouls_opp": 0,
+  "saves_me": 2,
+  "saves_opp": 5,
+  "goals_me": 0,
+  "goals_opp": 3,
+  "on_target_me": 5,
+  "on_target_opp": 5,
+  "shots_me": 4,
+  "shots_opp": 8,
+  "goal_events": [
+   {
+    "t": 41.25,
+    "frame": 825,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 785,
+     "kick_t": 39.25,
+     "kicker": "t0u1",
+     "from": [
+      31.964,
+      5.429
+     ],
+     "dist": 13.38,
+     "shake": "setpiece"
+    }
+   },
+   {
+    "t": 69.65,
+    "frame": 1393,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1352,
+     "kick_t": 67.6,
+     "kicker": "t0u1",
+     "from": [
+      30.783,
+      6.557
+     ],
+     "dist": 13.81,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 110.65,
+    "frame": 2213,
+    "team": "opp",
+    "scorer": "t0u3",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 2182,
+     "kick_t": 109.1,
+     "kicker": "t0u3",
+     "from": [
+      30.534,
+      16.204
+     ],
+     "dist": 12.87,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 14.2,
+    "frame": 284,
+    "kick_frame": 282,
+    "dist": 8.41,
+    "from": [
+     5.893,
+     19.846
+    ]
+   },
+   {
+    "type": "save",
+    "t": 24.35,
+    "frame": 487,
+    "kick_frame": 481,
+    "dist": 8.17,
+    "from": [
+     5.244,
+     6.018
+    ]
+   },
+   {
+    "type": "save",
+    "t": 30.35,
+    "frame": 607,
+    "kick_frame": 601,
+    "dist": 7.62,
+    "from": [
+     4.251,
+     19.893
+    ]
+   },
+   {
+    "type": "save",
+    "t": 57.4,
+    "frame": 1148,
+    "kick_frame": 1141,
+    "dist": 8.68,
+    "from": [
+     2.396,
+     21.568
+    ]
+   },
+   {
+    "type": "save",
+    "t": 97.05,
+    "frame": 1941,
+    "kick_frame": 1913,
+    "dist": 16.45,
+    "from": [
+     12.705,
+     24.552
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 7.4,
+    "frame": 148,
+    "kick_frame": 143,
+    "dist": 12.7,
+    "from": [
+     31.912,
+     6.804
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 41.25,
+    "frame": 825,
+    "kick_frame": 785,
+    "dist": 13.38,
+    "from": [
+     31.964,
+     5.429
+    ]
+   },
+   {
+    "type": "save",
+    "t": 51.25,
+    "frame": 1025,
+    "kick_frame": 1021,
+    "dist": 11.27,
+    "from": [
+     32.505,
+     8.903
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 110.65,
+    "frame": 2213,
+    "kick_frame": 2182,
+    "dist": 12.87,
+    "from": [
+     30.534,
+     16.204
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 14.1,
+    "frame": 282,
+    "unit": "t1u4",
+    "from": [
+     5.893,
+     19.846
+    ],
+    "dist": 6.58,
+    "goal_y": 15.44
+   },
+   {
+    "t": 24.05,
+    "frame": 481,
+    "unit": "t1u3",
+    "from": [
+     5.244,
+     6.018
+    ],
+    "dist": 10.43,
+    "goal_y": 15.54
+   },
+   {
+    "t": 30.05,
+    "frame": 601,
+    "unit": "t1u5",
+    "from": [
+     4.251,
+     19.893
+    ],
+    "dist": 5.53,
+    "goal_y": 15.42
+   },
+   {
+    "t": 57.05,
+    "frame": 1141,
+    "unit": "t1u4",
+    "from": [
+     2.396,
+     21.568
+    ],
+    "dist": 6.72,
+    "goal_y": 14.99
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.15,
+    "frame": 143,
+    "unit": "t0u1",
+    "from": [
+     31.912,
+     6.804
+    ],
+    "dist": 12.94,
+    "goal_y": 13.47
+   },
+   {
+    "t": 39.25,
+    "frame": 785,
+    "unit": "t0u1",
+    "from": [
+     31.964,
+     5.429
+    ],
+    "dist": 14.84,
+    "goal_y": 15.35
+   },
+   {
+    "t": 51.05,
+    "frame": 1021,
+    "unit": "t0u2",
+    "from": [
+     32.505,
+     8.903
+    ],
+    "dist": 10.64,
+    "goal_y": 10.65
+   },
+   {
+    "t": 53.05,
+    "frame": 1061,
+    "unit": "t0u3",
+    "from": [
+     30.001,
+     11.336
+    ],
+    "dist": 13.6,
+    "goal_y": 15.34
+   },
+   {
+    "t": 67.6,
+    "frame": 1352,
+    "unit": "t0u1",
+    "from": [
+     30.783,
+     6.557
+    ],
+    "dist": 15.04,
+    "goal_y": 15.33
+   },
+   {
+    "t": 90.05,
+    "frame": 1801,
+    "unit": "t0u2",
+    "from": [
+     27.637,
+     12.943
+    ],
+    "dist": 15.39,
+    "goal_y": 12.07
+   },
+   {
+    "t": 107.15,
+    "frame": 2143,
+    "unit": "t0u3",
+    "from": [
+     31.931,
+     16.476
+    ],
+    "dist": 12.51,
+    "goal_y": 10.64
+   },
+   {
+    "t": 109.1,
+    "frame": 2182,
+    "unit": "t0u3",
+    "from": [
+     30.534,
+     16.204
+    ],
+    "dist": 12.49,
+    "goal_y": 15.36
+   }
+  ]
+ },
+ {
+  "id": "r2-g9",
+  "game": 9,
+  "seed": 5529,
+  "teamSize": 5,
+  "seat": 0,
+  "score_me": 0,
+  "score_opp": 3,
+  "winner": "sol",
+  "duration": 5.76,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 19,
+  "kicks_opp": 22,
+  "poss_me": 67,
+  "poss_opp": 207,
+  "fouls_me": 7,
+  "fouls_opp": 0,
+  "saves_me": 1,
+  "saves_opp": 3,
+  "goals_me": 0,
+  "goals_opp": 3,
+  "on_target_me": 3,
+  "on_target_opp": 4,
+  "shots_me": 5,
+  "shots_opp": 5,
+  "goal_events": [
+   {
+    "t": 26.55,
+    "frame": 531,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 494,
+     "kick_t": 24.7,
+     "kicker": "t1u1",
+     "from": [
+      13.66,
+      17.222
+     ],
+     "dist": 13.35,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 55.15,
+    "frame": 1103,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 1041,
+     "kick_t": 52.05,
+     "kicker": "t1u1",
+     "from": [
+      16.728,
+      20.801
+     ],
+     "dist": 17.56,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 82.35,
+    "frame": 1647,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1601,
+     "kick_t": 80.05,
+     "kicker": "t1u1",
+     "from": [
+      16.457,
+      15.508
+     ],
+     "dist": 15.66,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 41.3,
+    "frame": 826,
+    "kick_frame": 821,
+    "dist": 8.85,
+    "from": [
+     40.26,
+     21.41
+    ]
+   },
+   {
+    "type": "save",
+    "t": 100.5,
+    "frame": 2010,
+    "kick_frame": 2001,
+    "dist": 8.69,
+    "from": [
+     38.148,
+     20.214
+    ]
+   },
+   {
+    "type": "save",
+    "t": 115.7,
+    "frame": 2314,
+    "kick_frame": 2310,
+    "dist": 6.63,
+    "from": [
+     41.898,
+     19.542
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 26.55,
+    "frame": 531,
+    "kick_frame": 494,
+    "dist": 13.35,
+    "from": [
+     13.66,
+     17.222
+    ]
+   },
+   {
+    "type": "save",
+    "t": 67.8,
+    "frame": 1356,
+    "kick_frame": 1351,
+    "dist": 12.39,
+    "from": [
+     11.962,
+     7.235
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 41.05,
+    "frame": 821,
+    "unit": "t0u4",
+    "from": [
+     40.26,
+     21.41
+    ],
+    "dist": 8.88,
+    "goal_y": 12.97
+   },
+   {
+    "t": 45.3,
+    "frame": 906,
+    "unit": "t0u2",
+    "from": [
+     23.968,
+     6.048
+    ],
+    "dist": 20.01,
+    "goal_y": 12.23
+   },
+   {
+    "t": 95.5,
+    "frame": 1910,
+    "unit": "t0u4",
+    "from": [
+     23.038,
+     23.04
+    ],
+    "dist": 23.06,
+    "goal_y": 11.5
+   },
+   {
+    "t": 100.05,
+    "frame": 2001,
+    "unit": "t0u2",
+    "from": [
+     38.148,
+     20.214
+    ],
+    "dist": 9.7,
+    "goal_y": 11.81
+   },
+   {
+    "t": 115.45,
+    "frame": 2309,
+    "unit": "t0u4",
+    "from": [
+     41.986,
+     20.616
+    ],
+    "dist": 9.69,
+    "goal_y": 10.98
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 24.7,
+    "frame": 494,
+    "unit": "t1u1",
+    "from": [
+     13.66,
+     17.222
+    ],
+    "dist": 14.26,
+    "goal_y": 10.65
+   },
+   {
+    "t": 52.05,
+    "frame": 1041,
+    "unit": "t1u1",
+    "from": [
+     16.728,
+     20.801
+    ],
+    "dist": 18.72,
+    "goal_y": 10.64
+   },
+   {
+    "t": 67.55,
+    "frame": 1351,
+    "unit": "t1u2",
+    "from": [
+     11.962,
+     7.235
+    ],
+    "dist": 13.61,
+    "goal_y": 15.3
+   },
+   {
+    "t": 78.55,
+    "frame": 1571,
+    "unit": "t1u3",
+    "from": [
+     13.937,
+     20.157
+    ],
+    "dist": 16.04,
+    "goal_y": 10.67
+   },
+   {
+    "t": 80.05,
+    "frame": 1601,
+    "unit": "t1u1",
+    "from": [
+     16.457,
+     15.508
+    ],
+    "dist": 16.2,
+    "goal_y": 10.65
+   }
+  ]
+ },
+ {
+  "id": "r2-g10",
+  "game": 10,
+  "seed": 5530,
+  "teamSize": 2,
+  "seat": 1,
+  "score_me": 0,
+  "score_opp": 3,
+  "winner": "sol",
+  "duration": 61.05,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 2,
+  "kicks_opp": 9,
+  "poss_me": 1352,
+  "poss_opp": 28,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 3,
+  "on_target_me": 0,
+  "on_target_opp": 3,
+  "shots_me": 1,
+  "shots_opp": 3,
+  "goal_events": [
+   {
+    "t": 10.05,
+    "frame": 201,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 162,
+     "kick_t": 8.1,
+     "kicker": "t0u1",
+     "from": [
+      31.078,
+      7.004
+     ],
+     "dist": 13.34,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 20.15,
+    "frame": 403,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 365,
+     "kick_t": 18.25,
+     "kicker": "t0u1",
+     "from": [
+      31.475,
+      6.894
+     ],
+     "dist": 13.04,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 30.75,
+    "frame": 615,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 580,
+     "kick_t": 29,
+     "kicker": "t0u1",
+     "from": [
+      32.651,
+      6.348
+     ],
+     "dist": 12.3,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 10.05,
+    "frame": 201,
+    "kick_frame": 162,
+    "dist": 13.34,
+    "from": [
+     31.078,
+     7.004
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 20.15,
+    "frame": 403,
+    "kick_frame": 365,
+    "dist": 13.04,
+    "from": [
+     31.475,
+     6.894
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 30.75,
+    "frame": 615,
+    "kick_frame": 580,
+    "dist": 12.3,
+    "from": [
+     32.651,
+     6.348
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 3.5,
+    "frame": 70,
+    "unit": "t1u1",
+    "from": [
+     21.96,
+     13.105
+    ],
+    "dist": 21.08,
+    "goal_y": 15.31
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 8.1,
+    "frame": 162,
+    "unit": "t0u1",
+    "from": [
+     31.078,
+     7.004
+    ],
+    "dist": 14.56,
+    "goal_y": 15.35
+   },
+   {
+    "t": 18.25,
+    "frame": 365,
+    "unit": "t0u1",
+    "from": [
+     31.475,
+     6.894
+    ],
+    "dist": 14.28,
+    "goal_y": 15.33
+   },
+   {
+    "t": 29,
+    "frame": 580,
+    "unit": "t0u1",
+    "from": [
+     32.651,
+     6.348
+    ],
+    "dist": 13.72,
+    "goal_y": 15.35
+   }
+  ]
+ },
+ {
+  "id": "r2-g11",
+  "game": 11,
+  "seed": 5531,
+  "teamSize": 3,
+  "seat": 0,
+  "score_me": 0,
+  "score_opp": 2,
+  "winner": "sol",
+  "duration": 59.47,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 8,
+  "kicks_opp": 13,
+  "poss_me": 1280,
+  "poss_opp": 53,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 2,
+  "on_target_me": 0,
+  "on_target_opp": 2,
+  "shots_me": 4,
+  "shots_opp": 3,
+  "goal_events": [
+   {
+    "t": 9.3,
+    "frame": 186,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 149,
+     "kick_t": 7.45,
+     "kicker": "t1u1",
+     "from": [
+      12.056,
+      19.352
+     ],
+     "dist": 12.75,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 79.75,
+    "frame": 1595,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 1561,
+     "kick_t": 78.05,
+     "kicker": "t1u1",
+     "from": [
+      14.147,
+      13.155
+     ],
+     "dist": 13.15,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 9.3,
+    "frame": 186,
+    "kick_frame": 149,
+    "dist": 12.75,
+    "from": [
+     12.056,
+     19.352
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 79.75,
+    "frame": 1595,
+    "kick_frame": 1561,
+    "dist": 13.15,
+    "from": [
+     14.147,
+     13.155
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 2.6,
+    "frame": 52,
+    "unit": "t0u1",
+    "from": [
+     20.837,
+     12.097
+    ],
+    "dist": 22.16,
+    "goal_y": 12.1
+   },
+   {
+    "t": 39.05,
+    "frame": 781,
+    "unit": "t0u1",
+    "from": [
+     21.183,
+     1.586
+    ],
+    "dist": 23.88,
+    "goal_y": 11.3
+   },
+   {
+    "t": 40.05,
+    "frame": 801,
+    "unit": "t0u1",
+    "from": [
+     21.636,
+     3.155
+    ],
+    "dist": 23.39,
+    "goal_y": 12.67
+   },
+   {
+    "t": 63.4,
+    "frame": 1268,
+    "unit": "t0u1",
+    "from": [
+     20.76,
+     13.433
+    ],
+    "dist": 22.24,
+    "goal_y": 13.43
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.45,
+    "frame": 149,
+    "unit": "t1u1",
+    "from": [
+     12.056,
+     19.352
+    ],
+    "dist": 14.07,
+    "goal_y": 10.65
+   },
+   {
+    "t": 49.4,
+    "frame": 988,
+    "unit": "t1u1",
+    "from": [
+     3.786,
+     2.422
+    ],
+    "dist": 13.23,
+    "goal_y": 15.35
+   },
+   {
+    "t": 78.05,
+    "frame": 1561,
+    "unit": "t1u1",
+    "from": [
+     14.147,
+     13.155
+    ],
+    "dist": 13.33,
+    "goal_y": 15.35
+   }
+  ]
+ },
+ {
+  "id": "r2-g12",
+  "game": 12,
+  "seed": 5532,
+  "teamSize": 4,
+  "seat": 1,
+  "score_me": 1,
+  "score_opp": 0,
+  "winner": "deepseek-g1",
+  "duration": 23.77,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 22,
+  "kicks_opp": 20,
+  "poss_me": 476,
+  "poss_opp": 125,
+  "fouls_me": 2,
+  "fouls_opp": 0,
+  "saves_me": 1,
+  "saves_opp": 3,
+  "goals_me": 1,
+  "goals_opp": 0,
+  "on_target_me": 4,
+  "on_target_opp": 1,
+  "shots_me": 8,
+  "shots_opp": 2,
+  "goal_events": [
+   {
+    "t": 91.95,
+    "frame": 1839,
+    "team": "me",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 1807,
+     "kick_t": 90.35,
+     "kicker": "t1u1",
+     "from": [
+      11.306,
+      7.847
+     ],
+     "dist": 11.52,
+     "shake": "setpiece"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 17.8,
+    "frame": 356,
+    "kick_frame": 320,
+    "dist": 21.17,
+    "from": [
+     20.652,
+     20.864
+    ]
+   },
+   {
+    "type": "save",
+    "t": 28.35,
+    "frame": 567,
+    "kick_frame": 532,
+    "dist": 20.91,
+    "from": [
+     19.45,
+     22.85
+    ]
+   },
+   {
+    "type": "save",
+    "t": 89.65,
+    "frame": 1793,
+    "kick_frame": 1784,
+    "dist": 10.57,
+    "from": [
+     8.881,
+     5.963
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 91.95,
+    "frame": 1839,
+    "kick_frame": 1807,
+    "dist": 11.52,
+    "from": [
+     11.306,
+     7.847
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 79.65,
+    "frame": 1593,
+    "kick_frame": 1590,
+    "dist": 9.03,
+    "from": [
+     39.234,
+     21.209
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 2.9,
+    "frame": 58,
+    "unit": "t1u1",
+    "from": [
+     23.274,
+     12.703
+    ],
+    "dist": 22.4,
+    "goal_y": 15.04
+   },
+   {
+    "t": 16,
+    "frame": 320,
+    "unit": "t1u3",
+    "from": [
+     20.652,
+     20.864
+    ],
+    "dist": 20.67,
+    "goal_y": 14.47
+   },
+   {
+    "t": 26.6,
+    "frame": 532,
+    "unit": "t1u3",
+    "from": [
+     19.45,
+     22.85
+    ],
+    "dist": 20.19,
+    "goal_y": 14.64
+   },
+   {
+    "t": 32.75,
+    "frame": 655,
+    "unit": "t1u2",
+    "from": [
+     22.92,
+     3.948
+    ],
+    "dist": 23.05,
+    "goal_y": 11.08
+   },
+   {
+    "t": 86.15,
+    "frame": 1723,
+    "unit": "t1u1",
+    "from": [
+     9.027,
+     6.148
+    ],
+    "dist": 11.99,
+    "goal_y": 15.06
+   },
+   {
+    "t": 89.2,
+    "frame": 1784,
+    "unit": "t1u2",
+    "from": [
+     8.881,
+     5.963
+    ],
+    "dist": 11.78,
+    "goal_y": 14.71
+   },
+   {
+    "t": 90.35,
+    "frame": 1807,
+    "unit": "t1u1",
+    "from": [
+     11.306,
+     7.847
+    ],
+    "dist": 12.74,
+    "goal_y": 15.34
+   },
+   {
+    "t": 105.3,
+    "frame": 2106,
+    "unit": "t1u3",
+    "from": [
+     24.878,
+     14.959
+    ],
+    "dist": 23.88,
+    "goal_y": 14.95
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 79.5,
+    "frame": 1590,
+    "unit": "t0u2",
+    "from": [
+     39.234,
+     21.209
+    ],
+    "dist": 11.2,
+    "goal_y": 10.66
+   },
+   {
+    "t": 83.05,
+    "frame": 1661,
+    "unit": "t0u3",
+    "from": [
+     28.36,
+     11.974
+    ],
+    "dist": 14.65,
+    "goal_y": 12.53
+   }
+  ]
+ },
+ {
+  "id": "r2-g13",
+  "game": 13,
+  "seed": 5533,
+  "teamSize": 1,
+  "seat": 0,
+  "score_me": 8,
+  "score_opp": 3,
+  "winner": "deepseek-g1",
+  "duration": 1.65,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 12,
+  "kicks_opp": 6,
+  "poss_me": 364,
+  "poss_opp": 59,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 0,
+  "goals_me": 8,
+  "goals_opp": 3,
+  "on_target_me": 8,
+  "on_target_opp": 3,
+  "shots_me": 12,
+  "shots_opp": 3,
+  "goal_events": [
+   {
+    "t": 9.05,
+    "frame": 181,
+    "team": "opp",
+    "scorer": "t1u0",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 81,
+     "kick_t": 4.05,
+     "kicker": "t1u0",
+     "from": [
+      23.262,
+      14.079
+     ],
+     "dist": 22.29,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 20.7,
+    "frame": 414,
+    "team": "opp",
+    "scorer": "t1u0",
+    "ownGoal": false,
+    "score": [
+     0,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 369,
+     "kick_t": 18.45,
+     "kicker": "t1u0",
+     "from": [
+      16.412,
+      19.232
+     ],
+     "dist": 16.62,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 29.4,
+    "frame": 588,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     1,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 509,
+     "kick_t": 25.45,
+     "kicker": "t0u0",
+     "from": [
+      22.256,
+      12.181
+     ],
+     "dist": 20.76,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 37.15,
+    "frame": 743,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     2,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 664,
+     "kick_t": 33.2,
+     "kicker": "t0u0",
+     "from": [
+      22.29,
+      12.889
+     ],
+     "dist": 20.71,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 50.3,
+    "frame": 1006,
+    "team": "opp",
+    "scorer": "t1u0",
+    "ownGoal": false,
+    "score": [
+     2,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 962,
+     "kick_t": 48.1,
+     "kicker": "t1u0",
+     "from": [
+      16.359,
+      7.164
+     ],
+     "dist": 16.43,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 57.7,
+    "frame": 1154,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     3,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1080,
+     "kick_t": 54,
+     "kicker": "t0u0",
+     "from": [
+      22.809,
+      13.112
+     ],
+     "dist": 20.19,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 68.3,
+    "frame": 1366,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     4,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1287,
+     "kick_t": 64.35,
+     "kicker": "t0u0",
+     "from": [
+      22.273,
+      13.077
+     ],
+     "dist": 20.73,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 76,
+    "frame": 1520,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     5,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1441,
+     "kick_t": 72.05,
+     "kicker": "t0u0",
+     "from": [
+      22.257,
+      12.649
+     ],
+     "dist": 20.75,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 89.1,
+    "frame": 1782,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     6,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1703,
+     "kick_t": 85.15,
+     "kicker": "t0u0",
+     "from": [
+      22.935,
+      9.773
+     ],
+     "dist": 20.32,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 97.05,
+    "frame": 1941,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     7,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1862,
+     "kick_t": 93.1,
+     "kicker": "t0u0",
+     "from": [
+      22.299,
+      12.763
+     ],
+     "dist": 20.7,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 104.8,
+    "frame": 2096,
+    "team": "me",
+    "scorer": "t0u0",
+    "ownGoal": false,
+    "score": [
+     8,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 2021,
+     "kick_t": 101.05,
+     "kicker": "t0u0",
+     "from": [
+      22.689,
+      12.337
+     ],
+     "dist": 20.32,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [],
+  "shot_rays_me": [
+   {
+    "t": 3.2,
+    "frame": 64,
+    "unit": "t0u0",
+    "from": [
+     22.854,
+     12.531
+    ],
+    "dist": 20.15,
+    "goal_y": 12.53
+   },
+   {
+    "t": 12.75,
+    "frame": 255,
+    "unit": "t0u0",
+    "from": [
+     22.28,
+     12.444
+    ],
+    "dist": 20.72,
+    "goal_y": 12.44
+   },
+   {
+    "t": 25.45,
+    "frame": 509,
+    "unit": "t0u0",
+    "from": [
+     22.256,
+     12.181
+    ],
+    "dist": 20.74,
+    "goal_y": 12.18
+   },
+   {
+    "t": 33.2,
+    "frame": 664,
+    "unit": "t0u0",
+    "from": [
+     22.29,
+     12.889
+    ],
+    "dist": 20.71,
+    "goal_y": 12.89
+   },
+   {
+    "t": 42.6,
+    "frame": 852,
+    "unit": "t0u0",
+    "from": [
+     22.237,
+     12.175
+    ],
+    "dist": 20.76,
+    "goal_y": 12.18
+   },
+   {
+    "t": 54,
+    "frame": 1080,
+    "unit": "t0u0",
+    "from": [
+     22.809,
+     13.112
+    ],
+    "dist": 20.19,
+    "goal_y": 13.11
+   },
+   {
+    "t": 64.35,
+    "frame": 1287,
+    "unit": "t0u0",
+    "from": [
+     22.273,
+     13.077
+    ],
+    "dist": 20.73,
+    "goal_y": 13.08
+   },
+   {
+    "t": 72.05,
+    "frame": 1441,
+    "unit": "t0u0",
+    "from": [
+     22.257,
+     12.649
+    ],
+    "dist": 20.74,
+    "goal_y": 12.65
+   },
+   {
+    "t": 85.15,
+    "frame": 1703,
+    "unit": "t0u0",
+    "from": [
+     22.935,
+     9.773
+    ],
+    "dist": 20.77,
+    "goal_y": 15.15
+   },
+   {
+    "t": 93.1,
+    "frame": 1862,
+    "unit": "t0u0",
+    "from": [
+     22.299,
+     12.763
+    ],
+    "dist": 20.7,
+    "goal_y": 12.76
+   },
+   {
+    "t": 101.05,
+    "frame": 2021,
+    "unit": "t0u0",
+    "from": [
+     22.689,
+     12.337
+    ],
+    "dist": 20.31,
+    "goal_y": 12.34
+   },
+   {
+    "t": 110.9,
+    "frame": 2218,
+    "unit": "t0u0",
+    "from": [
+     22.23,
+     11.406
+    ],
+    "dist": 20.77,
+    "goal_y": 11.41
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 4.05,
+    "frame": 81,
+    "unit": "t1u0",
+    "from": [
+     23.262,
+     14.079
+    ],
+    "dist": 22.3,
+    "goal_y": 15.34
+   },
+   {
+    "t": 18.45,
+    "frame": 369,
+    "unit": "t1u0",
+    "from": [
+     16.412,
+     19.232
+    ],
+    "dist": 15.89,
+    "goal_y": 15.35
+   },
+   {
+    "t": 48.1,
+    "frame": 962,
+    "unit": "t1u0",
+    "from": [
+     16.359,
+     7.164
+    ],
+    "dist": 15.75,
+    "goal_y": 10.66
+   }
+  ]
+ },
+ {
+  "id": "r2-g14",
+  "game": 14,
+  "seed": 5534,
+  "teamSize": 6,
+  "seat": 1,
+  "score_me": 1,
+  "score_opp": 5,
+  "winner": "sol",
+  "duration": 6.78,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 21,
+  "kicks_opp": 27,
+  "poss_me": 84,
+  "poss_opp": 197,
+  "fouls_me": 10,
+  "fouls_opp": 0,
+  "saves_me": 1,
+  "saves_opp": 2,
+  "goals_me": 1,
+  "goals_opp": 5,
+  "on_target_me": 3,
+  "on_target_opp": 6,
+  "shots_me": 3,
+  "shots_opp": 9,
+  "goal_events": [
+   {
+    "t": 48.4,
+    "frame": 968,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 903,
+     "kick_t": 45.15,
+     "kicker": "t0u1",
+     "from": [
+      23.861,
+      10.087
+     ],
+     "dist": 19.36,
+     "shake": "setpiece"
+    }
+   },
+   {
+    "t": 76.3,
+    "frame": 1526,
+    "team": "me",
+    "scorer": "t1u4",
+    "ownGoal": false,
+    "score": [
+     1,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 1512,
+     "kick_t": 75.6,
+     "kicker": "t1u4",
+     "from": [
+      1.71,
+      20.313
+     ],
+     "dist": 7.35,
+     "shake": "setpiece"
+    }
+   },
+   {
+    "t": 86.4,
+    "frame": 1728,
+    "team": "opp",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     2,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 1694,
+     "kick_t": 84.7,
+     "kicker": "t0u2",
+     "from": [
+      31.79,
+      8.068
+     ],
+     "dist": 12.25,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 99.35,
+    "frame": 1987,
+    "team": "opp",
+    "scorer": "t0u4",
+    "ownGoal": false,
+    "score": [
+     3,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 1925,
+     "kick_t": 96.25,
+     "kicker": "t0u4",
+     "from": [
+      24.235,
+      15.819
+     ],
+     "dist": 18.98,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 108.9,
+    "frame": 2178,
+    "team": "opp",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     4,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 2144,
+     "kick_t": 107.2,
+     "kicker": "t0u2",
+     "from": [
+      32.18,
+      7.439
+     ],
+     "dist": 12.17,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 119.7,
+    "frame": 2394,
+    "team": "opp",
+    "scorer": "t0u2",
+    "ownGoal": false,
+    "score": [
+     5,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 2364,
+     "kick_t": 118.2,
+     "kicker": "t0u2",
+     "from": [
+      32.578,
+      8.987
+     ],
+     "dist": 11.17,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 15,
+    "frame": 300,
+    "kick_frame": 273,
+    "dist": 11.45,
+    "from": [
+     9.067,
+     21.124
+    ]
+   },
+   {
+    "type": "save",
+    "t": 23.4,
+    "frame": 468,
+    "kick_frame": 461,
+    "dist": 10.81,
+    "from": [
+     9.086,
+     5.833
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 76.3,
+    "frame": 1526,
+    "kick_frame": 1512,
+    "dist": 7.35,
+    "from": [
+     1.71,
+     20.313
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 86.4,
+    "frame": 1728,
+    "kick_frame": 1694,
+    "dist": 12.25,
+    "from": [
+     31.79,
+     8.068
+    ]
+   },
+   {
+    "type": "save",
+    "t": 94.5,
+    "frame": 1890,
+    "kick_frame": 1880,
+    "dist": 14.88,
+    "from": [
+     30.094,
+     5.604
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 108.9,
+    "frame": 2178,
+    "kick_frame": 2144,
+    "dist": 12.17,
+    "from": [
+     32.18,
+     7.439
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 119.7,
+    "frame": 2394,
+    "kick_frame": 2364,
+    "dist": 11.17,
+    "from": [
+     32.578,
+     8.987
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 23.05,
+    "frame": 461,
+    "unit": "t1u3",
+    "from": [
+     9.086,
+     5.833
+    ],
+    "dist": 12.08,
+    "goal_y": 14.81
+   },
+   {
+    "t": 75.45,
+    "frame": 1509,
+    "unit": "t1u5",
+    "from": [
+     2.296,
+     22.66
+    ],
+    "dist": 12.34,
+    "goal_y": 10.39
+   },
+   {
+    "t": 75.6,
+    "frame": 1512,
+    "unit": "t1u4",
+    "from": [
+     1.71,
+     20.313
+    ],
+    "dist": 6.76,
+    "goal_y": 13.59
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.2,
+    "frame": 144,
+    "unit": "t0u1",
+    "from": [
+     30.18,
+     5.611
+    ],
+    "dist": 15.55,
+    "goal_y": 14.42
+   },
+   {
+    "t": 45.15,
+    "frame": 903,
+    "unit": "t0u1",
+    "from": [
+     23.861,
+     10.087
+    ],
+    "dist": 19.15,
+    "goal_y": 10.64
+   },
+   {
+    "t": 56.2,
+    "frame": 1124,
+    "unit": "t0u1",
+    "from": [
+     29.983,
+     5.387
+    ],
+    "dist": 14.04,
+    "goal_y": 10.65
+   },
+   {
+    "t": 58.55,
+    "frame": 1171,
+    "unit": "t0u5",
+    "from": [
+     23.839,
+     12.818
+    ],
+    "dist": 19.33,
+    "goal_y": 15.34
+   },
+   {
+    "t": 84.7,
+    "frame": 1694,
+    "unit": "t0u2",
+    "from": [
+     31.79,
+     8.068
+    ],
+    "dist": 13.36,
+    "goal_y": 15.33
+   },
+   {
+    "t": 94,
+    "frame": 1880,
+    "unit": "t0u1",
+    "from": [
+     30.094,
+     5.604
+    ],
+    "dist": 13.86,
+    "goal_y": 10.65
+   },
+   {
+    "t": 96.25,
+    "frame": 1925,
+    "unit": "t0u4",
+    "from": [
+     24.235,
+     15.819
+    ],
+    "dist": 18.77,
+    "goal_y": 15.35
+   },
+   {
+    "t": 107.2,
+    "frame": 2144,
+    "unit": "t0u2",
+    "from": [
+     32.18,
+     7.439
+    ],
+    "dist": 13.38,
+    "goal_y": 15.31
+   },
+   {
+    "t": 118.2,
+    "frame": 2364,
+    "unit": "t0u2",
+    "from": [
+     32.578,
+     8.987
+    ],
+    "dist": 12.21,
+    "goal_y": 15.35
+   }
+  ]
+ },
+ {
+  "id": "r2-g15",
+  "game": 15,
+  "seed": 5535,
+  "teamSize": 5,
+  "seat": 0,
+  "score_me": 0,
+  "score_opp": 2,
+  "winner": "sol",
+  "duration": 7.34,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 24,
+  "kicks_opp": 30,
+  "poss_me": 142,
+  "poss_opp": 185,
+  "fouls_me": 4,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 2,
+  "goals_me": 0,
+  "goals_opp": 2,
+  "on_target_me": 2,
+  "on_target_opp": 2,
+  "shots_me": 5,
+  "shots_opp": 7,
+  "goal_events": [
+   {
+    "t": 82.35,
+    "frame": 1647,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 1612,
+     "kick_t": 80.6,
+     "kicker": "t1u1",
+     "from": [
+      14.258,
+      14.264
+     ],
+     "dist": 13.32,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 92.05,
+    "frame": 1841,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 1805,
+     "kick_t": 90.25,
+     "kicker": "t1u1",
+     "from": [
+      12.022,
+      6.956
+     ],
+     "dist": 12.57,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 22.35,
+    "frame": 447,
+    "kick_frame": 419,
+    "dist": 12.58,
+    "from": [
+     33.663,
+     21.425
+    ]
+   },
+   {
+    "type": "save",
+    "t": 109.4,
+    "frame": 2188,
+    "kick_frame": 2179,
+    "dist": 10.07,
+    "from": [
+     40.42,
+     22.737
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 82.35,
+    "frame": 1647,
+    "kick_frame": 1612,
+    "dist": 13.32,
+    "from": [
+     14.258,
+     14.264
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 92.05,
+    "frame": 1841,
+    "kick_frame": 1805,
+    "dist": 12.57,
+    "from": [
+     12.022,
+     6.956
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 2.8,
+    "frame": 56,
+    "unit": "t0u2",
+    "from": [
+     21.696,
+     12.185
+    ],
+    "dist": 21.3,
+    "goal_y": 12.19
+   },
+   {
+    "t": 85.75,
+    "frame": 1715,
+    "unit": "t0u2",
+    "from": [
+     21.604,
+     13.299
+    ],
+    "dist": 21.4,
+    "goal_y": 13.3
+   },
+   {
+    "t": 95.25,
+    "frame": 1905,
+    "unit": "t0u2",
+    "from": [
+     21.02,
+     12.074
+    ],
+    "dist": 21.98,
+    "goal_y": 12.07
+   },
+   {
+    "t": 108.95,
+    "frame": 2179,
+    "unit": "t0u3",
+    "from": [
+     40.42,
+     22.737
+    ],
+    "dist": 12.39,
+    "goal_y": 10.62
+   },
+   {
+    "t": 115.75,
+    "frame": 2315,
+    "unit": "t0u1",
+    "from": [
+     40.129,
+     20.5
+    ],
+    "dist": 9.3,
+    "goal_y": 11.65
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.95,
+    "frame": 159,
+    "unit": "t1u1",
+    "from": [
+     12.582,
+     7.873
+    ],
+    "dist": 13.79,
+    "goal_y": 15.36
+   },
+   {
+    "t": 38.9,
+    "frame": 778,
+    "unit": "t1u3",
+    "from": [
+     11.205,
+     22.782
+    ],
+    "dist": 12.63,
+    "goal_y": 15.35
+   },
+   {
+    "t": 40.3,
+    "frame": 806,
+    "unit": "t1u3",
+    "from": [
+     14.298,
+     22.368
+    ],
+    "dist": 15.26,
+    "goal_y": 14.88
+   },
+   {
+    "t": 50.25,
+    "frame": 1005,
+    "unit": "t1u1",
+    "from": [
+     10.289,
+     4.693
+    ],
+    "dist": 14.13,
+    "goal_y": 15.34
+   },
+   {
+    "t": 68.3,
+    "frame": 1366,
+    "unit": "t1u3",
+    "from": [
+     14.617,
+     9.555
+    ],
+    "dist": 14.8,
+    "goal_y": 15.35
+   },
+   {
+    "t": 80.6,
+    "frame": 1612,
+    "unit": "t1u1",
+    "from": [
+     14.258,
+     14.264
+    ],
+    "dist": 13.74,
+    "goal_y": 10.64
+   },
+   {
+    "t": 90.25,
+    "frame": 1805,
+    "unit": "t1u1",
+    "from": [
+     12.022,
+     6.956
+    ],
+    "dist": 13.85,
+    "goal_y": 15.35
+   }
+  ]
+ },
+ {
+  "id": "r2-g16",
+  "game": 16,
+  "seed": 5536,
+  "teamSize": 2,
+  "seat": 1,
+  "score_me": 0,
+  "score_opp": 2,
+  "winner": "sol",
+  "duration": 46.19,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 9,
+  "kicks_opp": 14,
+  "poss_me": 994,
+  "poss_opp": 70,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 1,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 2,
+  "on_target_me": 0,
+  "on_target_opp": 3,
+  "shots_me": 6,
+  "shots_opp": 3,
+  "goal_events": [
+   {
+    "t": 10,
+    "frame": 200,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 165,
+     "kick_t": 8.25,
+     "kicker": "t0u1",
+     "from": [
+      32.319,
+      6.948
+     ],
+     "dist": 12.28,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 89.45,
+    "frame": 1789,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1745,
+     "kick_t": 87.25,
+     "kicker": "t0u1",
+     "from": [
+      33.945,
+      23.505
+     ],
+     "dist": 13.87,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 10,
+    "frame": 200,
+    "kick_frame": 165,
+    "dist": 12.28,
+    "from": [
+     32.319,
+     6.948
+    ]
+   },
+   {
+    "type": "save",
+    "t": 27.45,
+    "frame": 549,
+    "kick_frame": 510,
+    "dist": 23.56,
+    "from": [
+     21.766,
+     2.8
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 3.65,
+    "frame": 73,
+    "unit": "t1u1",
+    "from": [
+     23.152,
+     12.913
+    ],
+    "dist": 22.27,
+    "goal_y": 15.24
+   },
+   {
+    "t": 25.3,
+    "frame": 506,
+    "unit": "t1u1",
+    "from": [
+     22.773,
+     1.603
+    ],
+    "dist": 23.83,
+    "goal_y": 11.29
+   },
+   {
+    "t": 40.9,
+    "frame": 818,
+    "unit": "t1u1",
+    "from": [
+     22.789,
+     1.618
+    ],
+    "dist": 23.85,
+    "goal_y": 11.31
+   },
+   {
+    "t": 42.05,
+    "frame": 841,
+    "unit": "t1u1",
+    "from": [
+     22.496,
+     3.458
+    ],
+    "dist": 23.53,
+    "goal_y": 13.02
+   },
+   {
+    "t": 77.15,
+    "frame": 1543,
+    "unit": "t1u1",
+    "from": [
+     22.821,
+     1.606
+    ],
+    "dist": 23.88,
+    "goal_y": 11.31
+   },
+   {
+    "t": 78.2,
+    "frame": 1564,
+    "unit": "t1u1",
+    "from": [
+     22.844,
+     3.067
+    ],
+    "dist": 22.97,
+    "goal_y": 10.18
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 8.25,
+    "frame": 165,
+    "unit": "t0u1",
+    "from": [
+     32.319,
+     6.948
+    ],
+    "dist": 13.59,
+    "goal_y": 15.36
+   },
+   {
+    "t": 25.5,
+    "frame": 510,
+    "unit": "t0u1",
+    "from": [
+     21.766,
+     2.8
+    ],
+    "dist": 23.06,
+    "goal_y": 11.8
+   },
+   {
+    "t": 87.25,
+    "frame": 1745,
+    "unit": "t0u1",
+    "from": [
+     33.945,
+     23.505
+    ],
+    "dist": 15.72,
+    "goal_y": 10.65
+   }
+  ]
+ },
+ {
+  "id": "r2-g17",
+  "game": 17,
+  "seed": 5537,
+  "teamSize": 3,
+  "seat": 0,
+  "score_me": 0,
+  "score_opp": 3,
+  "winner": "sol",
+  "duration": 34.26,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 11,
+  "kicks_opp": 17,
+  "poss_me": 702,
+  "poss_opp": 26,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 2,
+  "goals_me": 0,
+  "goals_opp": 3,
+  "on_target_me": 2,
+  "on_target_opp": 3,
+  "shots_me": 4,
+  "shots_opp": 3,
+  "goal_events": [
+   {
+    "t": 28.5,
+    "frame": 570,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 541,
+     "kick_t": 27.05,
+     "kicker": "t1u1",
+     "from": [
+      10.847,
+      17.491
+     ],
+     "dist": 10.82,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 70.2,
+    "frame": 1404,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     2
+    ],
+    "last_kick": {
+     "kick_frame": 1368,
+     "kick_t": 68.4,
+     "kicker": "t1u1",
+     "from": [
+      12.142,
+      19.149
+     ],
+     "dist": 12.73,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 80.15,
+    "frame": 1603,
+    "team": "opp",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     0,
+     3
+    ],
+    "last_kick": {
+     "kick_frame": 1565,
+     "kick_t": 78.25,
+     "kicker": "t1u1",
+     "from": [
+      12.818,
+      18.876
+     ],
+     "dist": 13.2,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 4.4,
+    "frame": 88,
+    "kick_frame": 53,
+    "dist": 22.2,
+    "from": [
+     20.821,
+     12.097
+    ]
+   },
+   {
+    "type": "save",
+    "t": 85.2,
+    "frame": 1704,
+    "kick_frame": 1670,
+    "dist": 21.92,
+    "from": [
+     21.09,
+     12.209
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "goal",
+    "t": 28.5,
+    "frame": 570,
+    "kick_frame": 541,
+    "dist": 10.82,
+    "from": [
+     10.847,
+     17.491
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 70.2,
+    "frame": 1404,
+    "kick_frame": 1368,
+    "dist": 12.73,
+    "from": [
+     12.142,
+     19.149
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 80.15,
+    "frame": 1603,
+    "kick_frame": 1565,
+    "dist": 13.2,
+    "from": [
+     12.818,
+     18.876
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 2.65,
+    "frame": 53,
+    "unit": "t0u1",
+    "from": [
+     20.821,
+     12.097
+    ],
+    "dist": 22.18,
+    "goal_y": 12.1
+   },
+   {
+    "t": 16.65,
+    "frame": 333,
+    "unit": "t0u1",
+    "from": [
+     21.833,
+     6.089
+    ],
+    "dist": 21.64,
+    "goal_y": 10.58
+   },
+   {
+    "t": 63.95,
+    "frame": 1279,
+    "unit": "t0u1",
+    "from": [
+     21.766,
+     12.097
+    ],
+    "dist": 21.23,
+    "goal_y": 12.1
+   },
+   {
+    "t": 83.5,
+    "frame": 1670,
+    "unit": "t0u1",
+    "from": [
+     21.09,
+     12.209
+    ],
+    "dist": 21.91,
+    "goal_y": 12.21
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 27.05,
+    "frame": 541,
+    "unit": "t1u1",
+    "from": [
+     10.847,
+     17.491
+    ],
+    "dist": 12.03,
+    "goal_y": 10.59
+   },
+   {
+    "t": 68.4,
+    "frame": 1368,
+    "unit": "t1u1",
+    "from": [
+     12.142,
+     19.149
+    ],
+    "dist": 14.01,
+    "goal_y": 10.65
+   },
+   {
+    "t": 78.25,
+    "frame": 1565,
+    "unit": "t1u1",
+    "from": [
+     12.818,
+     18.876
+    ],
+    "dist": 14.39,
+    "goal_y": 10.66
+   }
+  ]
+ },
+ {
+  "id": "r2-g18",
+  "game": 18,
+  "seed": 5538,
+  "teamSize": 4,
+  "seat": 1,
+  "score_me": 0,
+  "score_opp": 4,
+  "winner": "sol",
+  "duration": 19.09,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 17,
+  "kicks_opp": 19,
+  "poss_me": 377,
+  "poss_opp": 87,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 3,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 4,
+  "on_target_me": 0,
+  "on_target_opp": 7,
+  "shots_me": 4,
+  "shots_opp": 8,
+  "goal_events": [
+   {
+    "t": 22.4,
+    "frame": 448,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 414,
+     "kick_t": 20.7,
+     "kicker": "t0u1",
+     "from": [
+      32.828,
+      8.516
+     ],
+     "dist": 11.12,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 34.95,
+    "frame": 699,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 662,
+     "kick_t": 33.1,
+     "kicker": "t0u1",
+     "from": [
+      30.755,
+      7.894
+     ],
+     "dist": 13.27,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 101,
+    "frame": 2020,
+    "team": "opp",
+    "scorer": "t0u3",
+    "ownGoal": false,
+    "score": [
+     3,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1965,
+     "kick_t": 98.25,
+     "kicker": "t0u3",
+     "from": [
+      25.498,
+      13.013
+     ],
+     "dist": 17.5,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 114.15,
+    "frame": 2283,
+    "team": "opp",
+    "scorer": "t0u3",
+    "ownGoal": false,
+    "score": [
+     4,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 2225,
+     "kick_t": 111.25,
+     "kicker": "t0u3",
+     "from": [
+      25.127,
+      11.986
+     ],
+     "dist": 17.9,
+     "shake": "open"
+    }
+   }
+  ],
+  "shot_events_me": [],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 7.65,
+    "frame": 153,
+    "kick_frame": 147,
+    "dist": 12.91,
+    "from": [
+     31.691,
+     6.774
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 22.4,
+    "frame": 448,
+    "kick_frame": 414,
+    "dist": 11.12,
+    "from": [
+     32.828,
+     8.516
+    ]
+   },
+   {
+    "type": "save",
+    "t": 30.55,
+    "frame": 611,
+    "kick_frame": 606,
+    "dist": 12.6,
+    "from": [
+     31.967,
+     6.917
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 34.95,
+    "frame": 699,
+    "kick_frame": 662,
+    "dist": 13.27,
+    "from": [
+     30.755,
+     7.894
+    ]
+   },
+   {
+    "type": "save",
+    "t": 43.95,
+    "frame": 879,
+    "kick_frame": 874,
+    "dist": 12.26,
+    "from": [
+     32.568,
+     6.565
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 38.85,
+    "frame": 777,
+    "unit": "t1u2",
+    "from": [
+     22.566,
+     14.05
+    ],
+    "dist": 21.57,
+    "goal_y": 14.04
+   },
+   {
+    "t": 49.75,
+    "frame": 995,
+    "unit": "t1u2",
+    "from": [
+     22.789,
+     1.611
+    ],
+    "dist": 23.85,
+    "goal_y": 11.3
+   },
+   {
+    "t": 51.05,
+    "frame": 1021,
+    "unit": "t1u2",
+    "from": [
+     21.863,
+     3.848
+    ],
+    "dist": 22.83,
+    "goal_y": 13.13
+   },
+   {
+    "t": 104.9,
+    "frame": 2098,
+    "unit": "t1u2",
+    "from": [
+     23.057,
+     12.553
+    ],
+    "dist": 22.18,
+    "goal_y": 14.87
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 7.35,
+    "frame": 147,
+    "unit": "t0u1",
+    "from": [
+     31.691,
+     6.774
+    ],
+    "dist": 13.15,
+    "goal_y": 13.48
+   },
+   {
+    "t": 20.7,
+    "frame": 414,
+    "unit": "t0u1",
+    "from": [
+     32.828,
+     8.516
+    ],
+    "dist": 12.38,
+    "goal_y": 15.57
+   },
+   {
+    "t": 30.3,
+    "frame": 606,
+    "unit": "t0u1",
+    "from": [
+     31.967,
+     6.917
+    ],
+    "dist": 12.38,
+    "goal_y": 12.54
+   },
+   {
+    "t": 33.1,
+    "frame": 662,
+    "unit": "t0u1",
+    "from": [
+     30.755,
+     7.894
+    ],
+    "dist": 14.09,
+    "goal_y": 14.87
+   },
+   {
+    "t": 43.7,
+    "frame": 874,
+    "unit": "t0u1",
+    "from": [
+     32.568,
+     6.565
+    ],
+    "dist": 12.77,
+    "goal_y": 13.93
+   },
+   {
+    "t": 82.5,
+    "frame": 1650,
+    "unit": "t0u3",
+    "from": [
+     41.685,
+     23.389
+    ],
+    "dist": 12.81,
+    "goal_y": 10.64
+   },
+   {
+    "t": 98.25,
+    "frame": 1965,
+    "unit": "t0u3",
+    "from": [
+     25.498,
+     13.013
+    ],
+    "dist": 17.66,
+    "goal_y": 15.35
+   },
+   {
+    "t": 111.25,
+    "frame": 2225,
+    "unit": "t0u3",
+    "from": [
+     25.127,
+     11.986
+    ],
+    "dist": 18.19,
+    "goal_y": 15.35
+   }
+  ]
+ },
+ {
+  "id": "r2-g19",
+  "game": 19,
+  "seed": 5539,
+  "teamSize": 1,
+  "seat": 0,
+  "score_me": 0,
+  "score_opp": 0,
+  "winner": null,
+  "duration": 1.75,
+  "frames": 2801,
+  "windows": 140,
+  "kicks_me": 2,
+  "kicks_opp": 3,
+  "poss_me": 2373,
+  "poss_opp": 35,
+  "fouls_me": 0,
+  "fouls_opp": 0,
+  "saves_me": 0,
+  "saves_opp": 0,
+  "goals_me": 0,
+  "goals_opp": 0,
+  "on_target_me": 0,
+  "on_target_opp": 0,
+  "shots_me": 2,
+  "shots_opp": 0,
+  "goal_events": [],
+  "shot_events_me": [],
+  "shot_events_opp": [],
+  "shot_rays_me": [
+   {
+    "t": 56.3,
+    "frame": 1126,
+    "unit": "t0u0",
+    "from": [
+     23.307,
+     24.348
+    ],
+    "dist": 22.09,
+    "goal_y": 14.34
+   },
+   {
+    "t": 58.7,
+    "frame": 1174,
+    "unit": "t0u0",
+    "from": [
+     24.717,
+     21.326
+    ],
+    "dist": 20.69,
+    "goal_y": 11.64
+   }
+  ],
+  "shot_rays_opp": []
+ },
+ {
+  "id": "r2-g20",
+  "game": 20,
+  "seed": 5540,
+  "teamSize": 6,
+  "seat": 1,
+  "score_me": 1,
+  "score_opp": 2,
+  "winner": "sol",
+  "duration": 8.69,
+  "frames": 2401,
+  "windows": 120,
+  "kicks_me": 27,
+  "kicks_opp": 27,
+  "poss_me": 157,
+  "poss_opp": 164,
+  "fouls_me": 13,
+  "fouls_opp": 0,
+  "saves_me": 2,
+  "saves_opp": 1,
+  "goals_me": 1,
+  "goals_opp": 2,
+  "on_target_me": 2,
+  "on_target_opp": 4,
+  "shots_me": 5,
+  "shots_opp": 9,
+  "goal_events": [
+   {
+    "t": 8.95,
+    "frame": 179,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     1,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 136,
+     "kick_t": 6.8,
+     "kicker": "t0u1",
+     "from": [
+      30.283,
+      6.445
+     ],
+     "dist": 14.31,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 69.5,
+    "frame": 1390,
+    "team": "opp",
+    "scorer": "t0u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     0
+    ],
+    "last_kick": {
+     "kick_frame": 1350,
+     "kick_t": 67.5,
+     "kicker": "t0u1",
+     "from": [
+      30.962,
+      6.674
+     ],
+     "dist": 13.6,
+     "shake": "open"
+    }
+   },
+   {
+    "t": 116.65,
+    "frame": 2333,
+    "team": "me",
+    "scorer": "t1u1",
+    "ownGoal": false,
+    "score": [
+     2,
+     1
+    ],
+    "last_kick": {
+     "kick_frame": 2313,
+     "kick_t": 115.65,
+     "kicker": "t1u1",
+     "from": [
+      3.777,
+      22.529
+     ],
+     "dist": 9.93,
+     "shake": "setpiece"
+    }
+   }
+  ],
+  "shot_events_me": [
+   {
+    "type": "save",
+    "t": 24.2,
+    "frame": 484,
+    "kick_frame": 465,
+    "dist": 15.25,
+    "from": [
+     12.96,
+     3.532
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 116.65,
+    "frame": 2333,
+    "kick_frame": 2313,
+    "dist": 9.93,
+    "from": [
+     3.777,
+     22.529
+    ]
+   }
+  ],
+  "shot_events_opp": [
+   {
+    "type": "save",
+    "t": 16.75,
+    "frame": 335,
+    "kick_frame": 329,
+    "dist": 13.6,
+    "from": [
+     30.907,
+     6.782
+    ]
+   },
+   {
+    "type": "goal",
+    "t": 69.5,
+    "frame": 1390,
+    "kick_frame": 1350,
+    "dist": 13.6,
+    "from": [
+     30.962,
+     6.674
+    ]
+   }
+  ],
+  "shot_rays_me": [
+   {
+    "t": 23.25,
+    "frame": 465,
+    "unit": "t1u4",
+    "from": [
+     12.96,
+     3.532
+    ],
+    "dist": 16.09,
+    "goal_y": 14.29
+   },
+   {
+    "t": 28.85,
+    "frame": 577,
+    "unit": "t1u2",
+    "from": [
+     23.064,
+     22.232
+    ],
+    "dist": 23.2,
+    "goal_y": 15.05
+   },
+   {
+    "t": 31.05,
+    "frame": 621,
+    "unit": "t1u2",
+    "from": [
+     18.987,
+     19.532
+    ],
+    "dist": 18.39,
+    "goal_y": 15.71
+   },
+   {
+    "t": 95.75,
+    "frame": 1915,
+    "unit": "t1u2",
+    "from": [
+     5.788,
+     19.919
+    ],
+    "dist": 6.44,
+    "goal_y": 15.61
+   },
+   {
+    "t": 115.65,
+    "frame": 2313,
+    "unit": "t1u1",
+    "from": [
+     3.777,
+     22.529
+    ],
+    "dist": 8.99,
+    "goal_y": 13.98
+   }
+  ],
+  "shot_rays_opp": [
+   {
+    "t": 6.8,
+    "frame": 136,
+    "unit": "t0u1",
+    "from": [
+     30.283,
+     6.445
+    ],
+    "dist": 15.52,
+    "goal_y": 15.33
+   },
+   {
+    "t": 16.45,
+    "frame": 329,
+    "unit": "t0u1",
+    "from": [
+     30.907,
+     6.782
+    ],
+    "dist": 14.81,
+    "goal_y": 15.32
+   },
+   {
+    "t": 18.05,
+    "frame": 361,
+    "unit": "t0u4",
+    "from": [
+     28.505,
+     11.512
+    ],
+    "dist": 14.78,
+    "goal_y": 14.41
+   },
+   {
+    "t": 35.4,
+    "frame": 708,
+    "unit": "t0u4",
+    "from": [
+     31.404,
+     18.969
+    ],
+    "dist": 14.27,
+    "goal_y": 10.66
+   },
+   {
+    "t": 45.8,
+    "frame": 916,
+    "unit": "t0u1",
+    "from": [
+     29.074,
+     11.915
+    ],
+    "dist": 13.98,
+    "goal_y": 10.64
+   },
+   {
+    "t": 48.05,
+    "frame": 961,
+    "unit": "t0u3",
+    "from": [
+     29.293,
+     14.23
+    ],
+    "dist": 13.71,
+    "goal_y": 14.41
+   },
+   {
+    "t": 59.45,
+    "frame": 1189,
+    "unit": "t0u4",
+    "from": [
+     30.468,
+     10.053
+    ],
+    "dist": 13.61,
+    "goal_y": 15.35
+   },
+   {
+    "t": 67.5,
+    "frame": 1350,
+    "unit": "t0u1",
+    "from": [
+     30.962,
+     6.674
+    ],
+    "dist": 14.83,
+    "goal_y": 15.34
+   },
+   {
+    "t": 76.05,
+    "frame": 1521,
+    "unit": "t0u1",
+    "from": [
+     27.638,
+     7.032
+    ],
+    "dist": 17.47,
+    "goal_y": 15.34
+   }
+  ]
+ }
+]

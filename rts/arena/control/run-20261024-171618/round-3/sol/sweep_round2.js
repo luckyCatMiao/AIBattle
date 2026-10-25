@@ -1,0 +1,8 @@
+const fs=require('fs'),sim=require('./rules.js');
+const src=fs.readFileSync('agent.js','utf8'), prev=require('./agent_v1.js').choose;
+function north(o){const p=o.players[o.yourPlayer],b=o.bases[p.id],army=o.units.filter(u=>u.owner===p.id&&u.type!=='worker');let money=p.credits;const c=[];if(o.now===0){c.push({type:'train',unit:'worker'});money-=50;}if(b.queue.length<2&&money>=160&&o.units.filter(u=>u.owner===p.id).length+b.queue.length<40){c.push({type:'train',unit:'tank'});money-=160;}if(p.level<2&&army.length>8&&money>=180+p.level*120)c.push({type:'upgrade'});const n=o.nodes[0].owner!==p.id?o.nodes[0]:[...o.nodes].sort((a,z)=>Math.hypot(a.x-b.x,a.y-b.y)-Math.hypot(z.x-b.x,z.y-b.y)).find(n=>n.owner!==p.id);const target=n||o.bases[1-p.id];c.push({type:'rally',x:target.x,y:target.y});if(army.length)c.push({type:'attackMove',units:army.map(u=>u.id),x:target.x,y:target.y});return {commands:c};}
+for(const penalty of [0,20,40,60,90,140]){
+ const tmp='./candidate_r2.js';fs.writeFileSync(tmp,src.replace('remaining<=0?90:0','remaining<=0?'+penalty+':0'));delete require.cache[require.resolve(tmp)];const choose=require(tmp).choose;
+ const results=[];for(const opp of [prev,north,require('./agent_round1.js').choose])for(const seat of [0,1]){const g=sim.createMatch({players:[{},{}]});g.status='playing';let errs=0;for(let t=0;t<600&&g.status==='playing';t++){const obs=[structuredClone(sim.snapshot(g,0)),structuredClone(sim.snapshot(g,1))];const a=obs.map((o,i)=>(i===seat?choose:opp)(o));for(let i=0;i<2;i++)for(const c of a[i].commands)try{sim.command(g,i,c)}catch(e){errs++}for(let k=0;k<20;k++)sim.step(g);}results.push([g.winner===seat,Math.round(g.now),errs]);}
+ console.log(penalty,JSON.stringify(results));
+}

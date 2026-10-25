@@ -1,0 +1,24 @@
+== r3-g1 seed=1031 our_seat=0
+final frame=4670 now=233.5 -> 233.50s simulated; wall=15.99s; windows=312
+
+-- late_push activation (roundFrame>=1580 and hp_ratio <= opp+2%) --
+R1: first qualifying window win105@f1590 (roundFrame 1590, 79.50s), hp 217 vs 851, meter 55 vs 68; active until round end f1674 = 4.20s
+    damage during: ours 0 (0 hits) vs opp 62 (1 hits)
+    our hits: 
+    opp hits: f1598 dmg62
+R2: not triggered (round 1312 frames = 65.60s; finish phase starts at frame 1580)
+R3: first qualifying window win304@f4575 (roundFrame 1589, 79.45s), hp 218 vs 492, meter 70 vs 68; active until round end f4670 = 4.75s
+    damage during: ours 0 (0 hits) vs opp 112 (1 hits)
+    our hits: 
+    opp hits: f4667 dmg112
+
+-- long repeated-move whiff runs (same move >=3 consecutive starts) --
+R1: 踩踏 x26 f844..1594 span=37.50s
+R2: 高踢 x9 f2038..2419 span=19.05s
+R3: 踩踏 x22 f3079..3709 span=31.50s
+total whiff-run span: 88.05s of 233.5s simulated = 37.7%
+
+-- per-round notes --
+R1 (112 windows): hold-recovery=29, hold-agg=26, blockair=10, atk=10, (empty)=9, approach=8, hold-range=3, blk=3, punish=3, walk-safe=2, blockpunish@125=1, counterpoke=1
+R2 (88 windows): hold-recovery=13, (empty)=9, hold-range=9, walk-safe=8, blk=8, blockair=7, hold-agg=7, blockproj=5, blk-multi=4, approach=3, respect-super-hold=2, atk=2
+R3 (112 windows): hold-recovery=26, hold-agg=21, approach=11, blockproj=7, atk=7, (empty)=5, blk=5, blk-multi=4, poke:lp=3, blockair=3, walk-safe=2, punish=2

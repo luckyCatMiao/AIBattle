@@ -1,0 +1,151 @@
+[
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "round1",
+    "seat": 0,
+    "score": [
+      9,
+      11
+    ],
+    "frames": 1212,
+    "windows": 122,
+    "maxMs": 34.73870000000001,
+    "hits": [
+      14,
+      15
+    ],
+    "smashes": [
+      10,
+      14
+    ],
+    "minStamina": [
+      27.100000000000005,
+      21.90000000000001
+    ],
+    "reasons": {
+      "落在对方半场": 20
+    },
+    "hitKinds": {
+      "1-smash": 14,
+      "0-smash": 10,
+      "1-lift": 1,
+      "0-clear": 1,
+      "0-lift": 3
+    },
+    "misses": 0,
+    "winner": 1,
+    "longestRally": 8
+  },
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "round1",
+    "seat": 1,
+    "score": [
+      11,
+      9
+    ],
+    "frames": 1353,
+    "windows": 136,
+    "maxMs": 34.62809999999996,
+    "hits": [
+      18,
+      18
+    ],
+    "smashes": [
+      16,
+      11
+    ],
+    "minStamina": [
+      27.100000000000005,
+      21.90000000000001
+    ],
+    "reasons": {
+      "落在对方半场": 20
+    },
+    "hitKinds": {
+      "1-smash": 11,
+      "0-smash": 16,
+      "0-lift": 2,
+      "1-clear": 2,
+      "1-lift": 5
+    },
+    "misses": 0,
+    "winner": 0,
+    "longestRally": 10
+  },
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "lift",
+    "seat": 0,
+    "score": [
+      11,
+      8
+    ],
+    "frames": 3862,
+    "windows": 387,
+    "maxMs": 37.648000000000025,
+    "hits": [
+      79,
+      71
+    ],
+    "smashes": [
+      79,
+      0
+    ],
+    "minStamina": [
+      27.100000000000005,
+      28.000000000000007
+    ],
+    "reasons": {
+      "落在对方半场": 11,
+      "落在自己半场": 8
+    },
+    "hitKinds": {
+      "1-lift": 71,
+      "0-smash": 79
+    },
+    "misses": 0,
+    "winner": 0,
+    "longestRally": 44
+  },
+  {
+    "offset": 0,
+    "initialStamina": "25",
+    "style": "lift",
+    "seat": 1,
+    "score": [
+      1,
+      11
+    ],
+    "frames": 1921,
+    "windows": 193,
+    "maxMs": 33.48120000000017,
+    "hits": [
+      32,
+      34
+    ],
+    "smashes": [
+      0,
+      31
+    ],
+    "minStamina": [
+      16.699999999999783,
+      11.599999999998388
+    ],
+    "reasons": {
+      "落在对方半场": 11,
+      "落在自己半场": 1
+    },
+    "hitKinds": {
+      "1-smash": 31,
+      "0-lift": 32,
+      "1-clear": 3
+    },
+    "misses": 0,
+    "winner": 1,
+    "longestRally": 12
+  }
+]
