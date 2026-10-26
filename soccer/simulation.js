@@ -437,10 +437,13 @@ function normalizeUnitInput(input) {
 }
 
 function normalizeFrame(frame, teamSize) {
-  if (!Array.isArray(frame) || frame.length !== teamSize) {
-    throw Error(`每一帧必须是 ${teamSize} 个单位的输入数组`);
+  // 允许少于 teamSize 个：红牌罚下后队伍人数变少，缺少的条目按中立输入补齐。
+  if (!Array.isArray(frame) || frame.length > teamSize) {
+    throw Error(`每一帧最多 ${teamSize} 个单位的输入数组`);
   }
-  return frame.map(normalizeUnitInput);
+  const out = frame.map(normalizeUnitInput);
+  while (out.length < teamSize) out.push({ dir: 'N', aim: null, kick: false });
+  return out;
 }
 
 function submitWindow(g, team, frames) {

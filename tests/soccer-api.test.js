@@ -51,7 +51,7 @@ test('创建本地对局，逐帧输入推进', async t => {
   const { match, seats, state } = created.data;
   assert.equal(seats.length, 1);
   assert.equal(state.units.length, 6);
-  assert.equal(state.ball.x, 22);
+  assert.ok(Math.abs(state.ball.x - 22) <= 1.3, '开球球位在中圈附近（有种子抖动）');
 
   const before = (await call(`/api/matches/${match}`)).data.units[0].x;
   const step = await call(`/api/matches/${match}/step`, { input: { dir: 'R', aim: 0, kick: false } }, seats[0].token);

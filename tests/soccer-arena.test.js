@@ -84,8 +84,12 @@ test('裁判创建完整球场视图并捕获逐物理帧', () => {
   assert.deepEqual(result.frames[result.frames.length - 1], result.state);
   const badDir = frames(n).map(f => f.map((u, i) => i === 0 ? { ...u, dir: 'X' } : u));
   assert.throws(() => action({ type: 'window', inputs: [frames(n), badDir] }), /非法方向/);
-  const wrongCount = Array.from({ length: FRAMES }, () => [{ dir: 'N' }]);
-  assert.throws(() => action({ type: 'window', inputs: [frames(n), wrongCount] }), new RegExp(`${n} 个单位`));
+  // 不足人数（红牌罚下后人数变少）按中立补齐；超过才报错
+  const shortCount = Array.from({ length: FRAMES }, () => [{ dir: 'N' }]);
+  const padded = action({ type: 'window', inputs: [frames(n), shortCount] });
+  assert.equal(padded.state.status, 'playing');
+  const tooMany = Array.from({ length: FRAMES }, () => Array.from({ length: n + 1 }, () => ({ dir: 'N' })));
+  assert.throws(() => action({ type: 'window', inputs: [frames(n), tooMany] }), new RegExp(`最多 ${n} 个单位`));
 });
 
 test('归档列出系列、返回 gzip 逐帧回放并可固定 run', async t => {

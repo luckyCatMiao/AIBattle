@@ -33,8 +33,8 @@ test('场地、球门与初始站位', () => {
   assert.equal(g.tiles[13 * W], EMPTY, '左球门开口');
   assert.equal(g.tiles[13 * W + W - 1], EMPTY, '右球门开口');
   assert.equal(g.tiles[4 * W], WALL, '球门以外的边墙');
-  assert.equal(g.ball.x, W / 2);
-  assert.equal(g.ball.y, H / 2);
+  assert.ok(Math.abs(g.ball.x - W / 2) <= 1.3, '开球球位在中圈附近（有种子抖动）');
+  assert.ok(Math.abs(g.ball.y - H / 2) <= 1.3);
   assert.equal(g.ball.owner, null);
 });
 
@@ -96,7 +96,7 @@ test('右门进球记给队伍 0，并重新开球', () => {
   u.held = { dir: 'N', aim: 0, kick: true };
   stepN(g, 30);
   assert.deepEqual(g.score, [1, 0]);
-  assert.equal(g.ball.x, W / 2, '进球后球回中圈');
+  assert.ok(Math.abs(g.ball.x - W / 2) <= 1.3, '进球后球回中圈');
   assert.ok(g.freeze > 0, '重新开球有冻结');
   assert.ok(g.events.some(e => e.type === 'goal'));
 });
@@ -203,16 +203,18 @@ test('持球移动明显慢于无球', () => {
   assert.ok(carrying - 22 < (free - 22) * 0.7, `持球应明显降速：无球 ${(free - 22).toFixed(2)} vs 持球 ${(carrying - 22).toFixed(2)}`);
 });
 
-test('进入对方禁区判犯规，任意球把犯规者移出', () => {
+test('进入对方禁区直接红牌罚下，中圈重新开球', () => {
   const g = make(5, 3);
   const u = unit(g, 0, 1);
   parkAll(g, [u]);
   u.x = 32; u.y = 13; u.facing = { x: 1, y: 0 };
   u.held = { dir: 'R', aim: null, kick: false };
   stepN(g, 30);
-  assert.ok(g.events.some(e => e.type === 'foul'), '应该判犯规');
-  assert.ok(g.stats[0].fouls >= 1);
-  assert.ok(!catalog.inPenaltyBox(1, u.x, u.y), '犯规者应被移出对方禁区');
+  assert.ok(g.events.some(e => e.type === 'card'), '应该出示红牌');
+  assert.ok(g.stats[0].fouls >= 1, '犯规计数');
+  assert.equal(g.units.filter(x => x.team === 0).length, 2, '犯规者被罚下，本队少一人');
+  assert.ok(!g.units.includes(u), '被罚下的球员不再在场上');
+  assert.ok(Math.abs(g.ball.x - W / 2) <= 1.3, '判罚后回中圈开球');
 });
 
 test('守门员在本方禁区没收射门', () => {
@@ -258,7 +260,11 @@ test('相同输入产生逐帧一致的比赛', () => {
 test('窗口格式校验', () => {
   const g = make();
   assert.throws(() => sim.submitWindow(g, 0, neutralWindow(g.teamSize).slice(0, 19)), /20 帧/);
-  assert.throws(() => sim.submitWindow(g, 0, Array.from({ length: FRAMES }, () => [{ dir: 'R' }])), /3 个单位/);
+  assert.throws(() => sim.submitWindow(g, 0, Array.from({ length: FRAMES }, () => [{ dir: 'R' }, { dir: 'N' }, { dir: 'N' }, { dir: 'N' }])), /最多 3 个单位/);
+  // 不足 3 个单位（例如红牌罚下后人数变少）按中立输入补齐，不报错
+  const short = sim.submitWindow(g, 0, Array.from({ length: FRAMES }, () => [{ dir: 'R' }]));
+  assert.equal(short[0].length, 3);
+  assert.deepEqual(short[0][1], { dir: 'N', aim: null, kick: false });
   assert.throws(() => sim.submitWindow(g, 0, Array.from({ length: FRAMES }, () => [{ dir: 'Z', aim: null }, { dir: 'N' }, { dir: 'N' }])), /非法方向/);
   assert.throws(() => sim.submitWindow(g, 0, Array.from({ length: FRAMES }, () => [{ dir: 'R', aim: 'X' }, { dir: 'N' }, { dir: 'N' }])), /aim/);
   const ok = sim.submitWindow(g, 0, Array.from({ length: FRAMES }, () => [{ dir: 'R', aim: 45.5, kick: true }, { dir: 'N', aim: 'U' }, { dir: 'N' }]));
