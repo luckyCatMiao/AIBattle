@@ -1,0 +1,3037 @@
+[
+ {
+  "id": "r2-g1",
+  "teamSize": 5,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.524169308366254,
+     3.626212257426232
+    ],
+    [
+     9.665996317518875,
+     10.228622023947537
+    ],
+    [
+     10.782615192467347,
+     13.261445628944784
+    ],
+    [
+     11.493723235791549,
+     18.377259846776724
+    ],
+    [
+     12.154659944819286,
+     20.052854241337627
+    ]
+   ],
+   "1": [
+    [
+     32.914266432402655,
+     6.041598948650062
+    ],
+    [
+     31.1982056631241,
+     9.989615560043603
+    ],
+    [
+     32.54828549711965,
+     12.62529700435698
+    ],
+    [
+     33.20438122120686,
+     17.360433265101165
+    ],
+    [
+     30.88879643450491,
+     21.59334820602089
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.55,
+    "first_owner_xy": [
+     20.91,
+     13.33
+    ],
+    "first_kick": [
+     "sol",
+     3.85,
+     "t1u1",
+     20.8,
+     13.6
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 11.75,
+     "scorer": "t1u3"
+    }
+   },
+   {
+    "ko_frame": 235,
+    "ko_t": 11.75,
+    "first_owner": "sol",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     22.27,
+     13.2
+    ],
+    "first_kick": [
+     "sol",
+     15.75,
+     "t1u1",
+     22.2,
+     12.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 11.75,
+     "scorer": "t1u3"
+    }
+   },
+   {
+    "ko_frame": 743,
+    "ko_t": 37.15,
+    "first_owner": "sol",
+    "first_owner_t": 4.05,
+    "first_owner_xy": [
+     21.11,
+     13.04
+    ],
+    "first_kick": [
+     "sol",
+     41.25,
+     "t1u1",
+     21.4,
+     12.2
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 37.15,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 1020,
+    "ko_t": 51.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.85,
+    "first_owner_xy": [
+     21.87,
+     13.54
+    ],
+    "first_kick": [
+     "sol",
+     54.9,
+     "t1u1",
+     22.3,
+     12.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 51,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     22.48,
+     13.55
+    ],
+    "first_kick": [
+     "sol",
+     63.7,
+     "t1u1",
+     22.9,
+     12.8
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g2",
+  "teamSize": 6,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     10.297230475815013,
+     4.26595990313217
+    ],
+    [
+     9.615964994532987,
+     6.840728939510882
+    ],
+    [
+     11.046243269229308,
+     10.785917832050472
+    ],
+    [
+     9.587597731268033,
+     13.821842841804028
+    ],
+    [
+     9.664457767503336,
+     18.273657409008592
+    ],
+    [
+     11.306933945743367,
+     22.934242396615446
+    ]
+   ],
+   "1": [
+    [
+     32.53343024314381,
+     1.6836728719063103
+    ],
+    [
+     32.29531376971863,
+     5.860744824633002
+    ],
+    [
+     31.987426166655496,
+     10.248256157618016
+    ],
+    [
+     33.288963046623394,
+     13.923384723253548
+    ],
+    [
+     32.664677530759946,
+     19.07509211683646
+    ],
+    [
+     33.41398112452589,
+     22.639505375176668
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.25,
+    "first_owner_xy": [
+     21.51,
+     13.95
+    ],
+    "first_kick": [
+     "sol",
+     3.55,
+     "t0u2",
+     21.6,
+     13.1
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 708,
+    "ko_t": 35.4,
+    "first_owner": "sol",
+    "first_owner_t": 4.2,
+    "first_owner_xy": [
+     22.51,
+     14.1
+    ],
+    "first_kick": [
+     "sol",
+     39.65,
+     "t0u2",
+     22.4,
+     14.1
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 35.4,
+     "scorer": "t0u3"
+    }
+   },
+   {
+    "ko_frame": 1114,
+    "ko_t": 55.7,
+    "first_owner": "sol",
+    "first_owner_t": 4.0,
+    "first_owner_xy": [
+     22.62,
+     12.4
+    ],
+    "first_kick": [
+     "sol",
+     64.05,
+     "t0u2",
+     22.1,
+     12.0
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 55.7,
+     "scorer": "t1u5"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.0,
+    "first_owner_xy": [
+     22.43,
+     12.74
+    ],
+    "first_kick": [
+     "sol",
+     64.05,
+     "t0u2",
+     22.1,
+     12.0
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g3",
+  "teamSize": 2,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     11.65914892591536,
+     7.574113183887675
+    ],
+    [
+     10.455614551436156,
+     15.519433186156675
+    ]
+   ],
+   "1": [
+    [
+     32.2323913583532,
+     7.9339667747262865
+    ],
+    [
+     30.75390519062057,
+     16.745621625101194
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.45,
+    "first_owner_xy": [
+     20.84,
+     14.09
+    ],
+    "first_kick": [
+     "sol",
+     4.5,
+     "t1u1",
+     21.2,
+     13.1
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.0,
+    "first_owner_xy": [
+     21.92,
+     12.07
+    ],
+    "first_kick": [
+     "sol",
+     64.05,
+     "t1u1",
+     22.3,
+     12.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 85.95,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 1719,
+    "ko_t": 85.95,
+    "first_owner": "sol",
+    "first_owner_t": 4.05,
+    "first_owner_xy": [
+     21.4,
+     12.97
+    ],
+    "first_kick": [
+     "sol",
+     90.1,
+     "t1u1",
+     21.7,
+     13.7
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 85.95,
+     "scorer": "t1u1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g4",
+  "teamSize": 4,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     9.641673064092174,
+     5.565211944747716
+    ],
+    [
+     10.120535110821947,
+     11.41354482062161
+    ],
+    [
+     10.400749103398994,
+     15.609539128374308
+    ],
+    [
+     11.825861164135858,
+     21.26243715826422
+    ]
+   ],
+   "1": [
+    [
+     31.919063668930903,
+     7.161731129977852
+    ],
+    [
+     32.217330302810296,
+     10.430489227175713
+    ],
+    [
+     30.789068571524695,
+     16.072221060749143
+    ],
+    [
+     33.46934738638811,
+     21.166531584225595
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.05,
+    "first_owner_xy": [
+     20.95,
+     12.18
+    ],
+    "first_kick": [
+     "sol",
+     3.3,
+     "t0u1",
+     20.9,
+     11.4
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.4,
+    "first_owner_xy": [
+     22.72,
+     12.1
+    ],
+    "first_kick": [
+     "sol",
+     64.5,
+     "t0u1",
+     22.5,
+     11.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 81.15,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1623,
+    "ko_t": 81.15,
+    "first_owner": "sol",
+    "first_owner_t": 4.1,
+    "first_owner_xy": [
+     22.38,
+     12.04
+    ],
+    "first_kick": [
+     "sol",
+     85.3,
+     "t0u1",
+     22.0,
+     11.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 81.15,
+     "scorer": "t0u1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g5",
+  "teamSize": 1,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.80339379911311,
+     12.77167266746983
+    ]
+   ],
+   "1": [
+    [
+     31.155024136183783,
+     14.258485230617225
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 2.95,
+    "first_owner_xy": [
+     22.67,
+     12.1
+    ],
+    "first_kick": [
+     "sol",
+     3.15,
+     "t1u0",
+     22.8,
+     11.9
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 18.05,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 361,
+    "ko_t": 18.05,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.85,
+    "first_owner_xy": [
+     21.06,
+     12.88
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     22.8,
+     "t0u0",
+     22.4,
+     13.4
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 18.05,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 534,
+    "ko_t": 26.7,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.53,
+     14.15
+    ],
+    "first_kick": [
+     "sol",
+     30.4,
+     "t1u0",
+     21.9,
+     14.9
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 26.7,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 1021,
+    "ko_t": 51.05,
+    "first_owner": "sol",
+    "first_owner_t": 3.8,
+    "first_owner_xy": [
+     22.41,
+     13.39
+    ],
+    "first_kick": [
+     "sol",
+     55,
+     "t1u0",
+     22.7,
+     14.2
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 51.05,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     22.2,
+     11.97
+    ],
+    "first_kick": [
+     "sol",
+     63.75,
+     "t1u0",
+     22.6,
+     11.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 69.15,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1383,
+    "ko_t": 69.15,
+    "first_owner": "sol",
+    "first_owner_t": 3.55,
+    "first_owner_xy": [
+     22.78,
+     13.8
+    ],
+    "first_kick": [
+     "sol",
+     73.05,
+     "t1u0",
+     22.6,
+     14.6
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 69.15,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1577,
+    "ko_t": 78.85,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.55,
+    "first_owner_xy": [
+     21.16,
+     12.65
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     83.15,
+     "t0u0",
+     22.2,
+     12.7
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 78.85,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1805,
+    "ko_t": 90.25,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     22.3,
+     13.27
+    ],
+    "first_kick": [
+     "sol",
+     94,
+     "t1u0",
+     22.6,
+     14.0
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 90.25,
+     "scorer": "t1u0"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g6",
+  "teamSize": 3,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     12.44863258767873,
+     6.866209857398644
+    ],
+    [
+     10.671090396586806,
+     14.450582571094856
+    ],
+    [
+     10.662355583161116,
+     19.13526517455466
+    ]
+   ],
+   "1": [
+    [
+     31.97287951549515,
+     5.98373348522
+    ],
+    [
+     32.68768973927945,
+     13.47147804335691
+    ],
+    [
+     31.698322579730302,
+     19.100229499628767
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.2,
+    "first_owner_xy": [
+     21.37,
+     13.35
+    ],
+    "first_kick": [
+     "sol",
+     3.3,
+     "t0u1",
+     21.1,
+     13.1
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 12.95,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 259,
+    "ko_t": 12.95,
+    "first_owner": "sol",
+    "first_owner_t": 4.4,
+    "first_owner_xy": [
+     22.47,
+     13.71
+    ],
+    "first_kick": [
+     "sol",
+     17.4,
+     "t0u1",
+     22.1,
+     14.3
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 12.95,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     20.91,
+     13.51
+    ],
+    "first_kick": [
+     "sol",
+     63.7,
+     "t0u1",
+     20.6,
+     13.2
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 88.35,
+     "scorer": "t0u2"
+    }
+   },
+   {
+    "ko_frame": 1767,
+    "ko_t": 88.35,
+    "first_owner": "sol",
+    "first_owner_t": 4.15,
+    "first_owner_xy": [
+     22.07,
+     12.8
+    ],
+    "first_kick": [
+     "sol",
+     93.05,
+     "t0u1",
+     21.1,
+     11.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 88.35,
+     "scorer": "t0u2"
+    }
+   },
+   {
+    "ko_frame": 2078,
+    "ko_t": 103.9,
+    "first_owner": "sol",
+    "first_owner_t": 3.8,
+    "first_owner_xy": [
+     21.02,
+     12.56
+    ],
+    "first_kick": [
+     "sol",
+     107.9,
+     "t0u1",
+     21.0,
+     12.3
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 103.9,
+     "scorer": "t0u2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g7",
+  "teamSize": 5,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.503241477301344,
+     4.728208938613534
+    ],
+    [
+     11.691749611170962,
+     8.229738264810294
+    ],
+    [
+     10.793437273008749,
+     11.885058806277812
+    ],
+    [
+     12.2177234927658,
+     16.904999910388142
+    ],
+    [
+     11.684042740380391,
+     19.950635589659214
+    ]
+   ],
+   "1": [
+    [
+     32.413081421749666,
+     5.061741781886667
+    ],
+    [
+     32.447698822943494,
+     9.591463937424123
+    ],
+    [
+     32.21864480734803,
+     14.4561548945494
+    ],
+    [
+     30.93405375792645,
+     16.539616441354156
+    ],
+    [
+     32.765248944284394,
+     21.70718890009448
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.2,
+    "first_owner_xy": [
+     22.25,
+     13.02
+    ],
+    "first_kick": [
+     "sol",
+     3.25,
+     "t1u3",
+     22.6,
+     12.7
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 26.95,
+     "scorer": "t1u3"
+    }
+   },
+   {
+    "ko_frame": 539,
+    "ko_t": 26.95,
+    "first_owner": "sol",
+    "first_owner_t": 3.9,
+    "first_owner_xy": [
+     22.12,
+     12.5
+    ],
+    "first_kick": [
+     "sol",
+     31.05,
+     "t1u3",
+     22.7,
+     12.5
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 26.95,
+     "scorer": "t1u3"
+    }
+   },
+   {
+    "ko_frame": 784,
+    "ko_t": 39.2,
+    "first_owner": "sol",
+    "first_owner_t": 6.35,
+    "first_owner_xy": [
+     20.83,
+     13.15
+    ],
+    "first_kick": [
+     "sol",
+     45.65,
+     "t1u3",
+     21.1,
+     13.1
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 39.2,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 1167,
+    "ko_t": 58.35,
+    "first_owner": "sol",
+    "first_owner_t": 8.25,
+    "first_owner_xy": [
+     21.1,
+     13.28
+    ],
+    "first_kick": [
+     "sol",
+     66.75,
+     "t1u3",
+     21.0,
+     14.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 58.35,
+     "scorer": "t1u2"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 6.6,
+    "first_owner_xy": [
+     21.1,
+     13.28
+    ],
+    "first_kick": [
+     "sol",
+     66.75,
+     "t1u3",
+     21.0,
+     14.4
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g8",
+  "teamSize": 6,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     10.234446982620284,
+     1.571949946694076
+    ],
+    [
+     9.69322487548925,
+     6.844077662099153
+    ],
+    [
+     11.078709510853514,
+     9.656757364049554
+    ],
+    [
+     11.759598502190784,
+     15.405063032638282
+    ],
+    [
+     11.252606154186651,
+     17.967001453973353
+    ],
+    [
+     9.8033789137844,
+     22.99467089632526
+    ]
+   ],
+   "1": [
+    [
+     33.281909722601995,
+     3.4892180040478706
+    ],
+    [
+     31.306391700403765,
+     8.35331849521026
+    ],
+    [
+     31.176443776814267,
+     10.785805686376989
+    ],
+    [
+     32.91832057596184,
+     14.264906805474311
+    ],
+    [
+     31.70858604623936,
+     17.896820491179824
+    ],
+    [
+     32.836285014869645,
+     23.022579814773053
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     23.1,
+     11.89
+    ],
+    "first_kick": [
+     "sol",
+     4.05,
+     "t0u2",
+     23.0,
+     12.0
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     21.64,
+     13.08
+    ],
+    "first_kick": [
+     "sol",
+     63.85,
+     "t0u3",
+     21.4,
+     12.8
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 2051,
+    "ko_t": 102.55,
+    "first_owner": "sol",
+    "first_owner_t": 3.35,
+    "first_owner_xy": [
+     20.87,
+     14.0
+    ],
+    "first_kick": [
+     "sol",
+     106.05,
+     "t0u3",
+     20.7,
+     13.7
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 102.55,
+     "scorer": "t1u4"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g9",
+  "teamSize": 2,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     11.596365432720631,
+     7.880103227449581
+    ],
+    [
+     10.532874432392418,
+     15.522781908744946
+    ]
+   ],
+   "1": [
+    [
+     32.264857599977404,
+     9.804806306725368
+    ],
+    [
+     32.92590596154332,
+     18.328841815935448
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 5.6,
+    "first_owner_xy": [
+     22.11,
+     13.85
+    ],
+    "first_kick": [
+     "sol",
+     5.65,
+     "t1u1",
+     22.5,
+     13.1
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 606,
+    "ko_t": 30.3,
+    "first_owner": "sol",
+    "first_owner_t": 4.55,
+    "first_owner_xy": [
+     23.11,
+     12.12
+    ],
+    "first_kick": [
+     "sol",
+     34.9,
+     "t1u1",
+     23.5,
+     11.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 30.3,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 6.6,
+    "first_owner_xy": [
+     22.0,
+     12.01
+    ],
+    "first_kick": [
+     "sol",
+     66.65,
+     "t1u1",
+     22.4,
+     12.8
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g10",
+  "teamSize": 4,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     9.639347749529406,
+     5.0209893537685275
+    ],
+    [
+     12.01228547678329,
+     11.191446625161916
+    ],
+    [
+     12.401951556792483,
+     17.123273925855756
+    ],
+    [
+     12.23963897046633,
+     18.765519387554377
+    ]
+   ],
+   "1": [
+    [
+     31.866772868437693,
+     6.817040168680251
+    ],
+    [
+     32.49497641273774,
+     9.321616208646446
+    ],
+    [
+     30.92790114483796,
+     16.361315324902534
+    ],
+    [
+     32.09938730974682,
+     21.36996023869142
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.0,
+    "first_owner_xy": [
+     22.62,
+     12.11
+    ],
+    "first_kick": [
+     "sol",
+     3.15,
+     "t0u1",
+     22.4,
+     11.3
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 29.25,
+     "scorer": "t0u2"
+    }
+   },
+   {
+    "ko_frame": 585,
+    "ko_t": 29.25,
+    "first_owner": "sol",
+    "first_owner_t": 3.4,
+    "first_owner_xy": [
+     21.29,
+     12.65
+    ],
+    "first_kick": [
+     "sol",
+     33.05,
+     "t0u1",
+     21.5,
+     11.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 29.25,
+     "scorer": "t0u2"
+    }
+   },
+   {
+    "ko_frame": 819,
+    "ko_t": 40.95,
+    "first_owner": "sol",
+    "first_owner_t": 3.5,
+    "first_owner_xy": [
+     21.47,
+     14.13
+    ],
+    "first_kick": [
+     "sol",
+     44.5,
+     "t0u1",
+     21.1,
+     13.3
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 40.95,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.75,
+    "first_owner_xy": [
+     23.13,
+     11.87
+    ],
+    "first_kick": [
+     "sol",
+     60,
+     "t0u1",
+     24.4,
+     5.3
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g11",
+  "teamSize": 1,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.810369742801413,
+     14.404340440407395
+    ]
+   ],
+   "1": [
+    [
+     31.479773038299754,
+     11.924779816996306
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 2.8,
+    "first_owner_xy": [
+     22.67,
+     13.27
+    ],
+    "first_kick": [
+     "sol",
+     2.85,
+     "t1u0",
+     22.8,
+     12.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 7.55,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 151,
+    "ko_t": 7.55,
+    "first_owner": "sol",
+    "first_owner_t": 3.6,
+    "first_owner_xy": [
+     22.47,
+     14.07
+    ],
+    "first_kick": [
+     "sol",
+     11.2,
+     "t1u0",
+     22.5,
+     13.7
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 7.55,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 315,
+    "ko_t": 15.75,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.65,
+     12.58
+    ],
+    "first_kick": [
+     "sol",
+     19.45,
+     "t1u0",
+     22.1,
+     11.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 15.75,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 497,
+    "ko_t": 24.85,
+    "first_owner": "sol",
+    "first_owner_t": 3.75,
+    "first_owner_xy": [
+     21.74,
+     13.65
+    ],
+    "first_kick": [
+     "sol",
+     28.65,
+     "t1u0",
+     22.1,
+     12.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 24.85,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 685,
+    "ko_t": 34.25,
+    "first_owner": "sol",
+    "first_owner_t": 3.85,
+    "first_owner_xy": [
+     21.86,
+     13.68
+    ],
+    "first_kick": [
+     "sol",
+     38.15,
+     "t1u0",
+     22.0,
+     13.2
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 34.25,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 856,
+    "ko_t": 42.8,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     21.27,
+     13.31
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     47.35,
+     "t0u0",
+     22.4,
+     13.7
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 42.8,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 1027,
+    "ko_t": 51.35,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.75,
+    "first_owner_xy": [
+     20.96,
+     12.87
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     55.9,
+     "t0u0",
+     22.2,
+     13.3
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 51.35,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 1198,
+    "ko_t": 59.9,
+    "first_owner": "sol",
+    "first_owner_t": 3.6,
+    "first_owner_xy": [
+     22.36,
+     13.2
+    ],
+    "first_kick": [
+     "sol",
+     63.55,
+     "t1u0",
+     22.4,
+     12.8
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 59.9,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.5,
+    "first_owner_xy": [
+     22.36,
+     13.2
+    ],
+    "first_kick": [
+     "sol",
+     63.55,
+     "t1u0",
+     22.4,
+     12.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 68,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1360,
+    "ko_t": 68.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.2,
+    "first_owner_xy": [
+     22.97,
+     12.46
+    ],
+    "first_kick": [
+     "sol",
+     71.25,
+     "t1u0",
+     23.2,
+     12.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 68,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1524,
+    "ko_t": 76.2,
+    "first_owner": "sol",
+    "first_owner_t": 3.75,
+    "first_owner_xy": [
+     22.39,
+     13.52
+    ],
+    "first_kick": [
+     "sol",
+     80,
+     "t1u0",
+     22.4,
+     13.1
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 76.2,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1689,
+    "ko_t": 84.45,
+    "first_owner": "sol",
+    "first_owner_t": 3.3,
+    "first_owner_xy": [
+     23.1,
+     13.47
+    ],
+    "first_kick": [
+     "sol",
+     87.8,
+     "t1u0",
+     23.2,
+     13.1
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 84.45,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1856,
+    "ko_t": 92.8,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     20.82,
+     12.79
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     97.3,
+     "t0u0",
+     22.1,
+     13.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 92.8,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 2027,
+    "ko_t": 101.35,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.79,
+     13.02
+    ],
+    "first_kick": [
+     "sol",
+     105.05,
+     "t1u0",
+     21.9,
+     12.7
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 101.35,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 2199,
+    "ko_t": 109.95,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     21.31,
+     13.37
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     114.4,
+     "t0u0",
+     22.3,
+     14.1
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 109.95,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 2367,
+    "ko_t": 118.35,
+    "first_owner": null,
+    "first_owner_t": null,
+    "first_owner_xy": null,
+    "first_kick": null,
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 118.35,
+     "scorer": "t0u0"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g12",
+  "teamSize": 3,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     12.46025916049257,
+     6.5873228122945875
+    ],
+    [
+     10.21233856678009,
+     12.561073548393324
+    ],
+    [
+     9.65634331619367,
+     17.566591187147424
+    ]
+   ],
+   "1": [
+    [
+     32.90399048384279,
+     6.468322338769212
+    ],
+    [
+     32.9491437417455,
+     12.194932849844918
+    ],
+    [
+     33.310092030093074,
+     18.644594592275098
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.05,
+    "first_owner_xy": [
+     20.82,
+     12.19
+    ],
+    "first_kick": [
+     "sol",
+     3.4,
+     "t0u1",
+     20.9,
+     12.0
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 13.1,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 262,
+    "ko_t": 13.1,
+    "first_owner": "sol",
+    "first_owner_t": 4.35,
+    "first_owner_xy": [
+     23.15,
+     12.9
+    ],
+    "first_kick": [
+     "sol",
+     18.05,
+     "t0u1",
+     22.0,
+     11.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 13.1,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.1,
+    "first_owner_xy": [
+     22.19,
+     13.87
+    ],
+    "first_kick": [
+     "sol",
+     64.15,
+     "t0u1",
+     21.8,
+     13.1
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 69.9,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1398,
+    "ko_t": 69.9,
+    "first_owner": "sol",
+    "first_owner_t": 4.0,
+    "first_owner_xy": [
+     22.04,
+     12.48
+    ],
+    "first_kick": [
+     "sol",
+     74.05,
+     "t0u1",
+     21.6,
+     13.3
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 69.9,
+     "scorer": "t0u1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g13",
+  "teamSize": 5,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.510217420989648,
+     6.3608767115511
+    ],
+    [
+     12.016498513286933,
+     8.896032851189375
+    ],
+    [
+     10.789829912828282,
+     13.34385441383347
+    ],
+    [
+     10.976390073774382,
+     18.39575322251767
+    ],
+    [
+     11.840915141860023,
+     20.98470847355202
+    ]
+   ],
+   "1": [
+    [
+     31.58014309196733,
+     5.388360837474465
+    ],
+    [
+     32.031201103003696,
+     8.72418114496395
+    ],
+    [
+     33.3285250372719,
+     13.845868931151927
+    ],
+    [
+     30.69082957901992,
+     16.813222049269825
+    ],
+    [
+     32.1397647743579,
+     19.66924200206995
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 2.9,
+    "first_owner_xy": [
+     22.6,
+     13.93
+    ],
+    "first_kick": [
+     "sol",
+     3.3,
+     "t1u3",
+     22.4,
+     13.7
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     22.17,
+     13.54
+    ],
+    "first_kick": [
+     "sol",
+     63.75,
+     "t1u3",
+     22.6,
+     13.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 89.05,
+     "scorer": "t1u2"
+    }
+   },
+   {
+    "ko_frame": 1781,
+    "ko_t": 89.05,
+    "first_owner": "sol",
+    "first_owner_t": 3.95,
+    "first_owner_xy": [
+     22.52,
+     12.31
+    ],
+    "first_kick": [
+     "sol",
+     93.1,
+     "t1u1",
+     22.7,
+     11.5
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 89.05,
+     "scorer": "t1u2"
+    }
+   },
+   {
+    "ko_frame": 2015,
+    "ko_t": 100.75,
+    "first_owner": "sol",
+    "first_owner_t": 9.5,
+    "first_owner_xy": [
+     21.41,
+     13.05
+    ],
+    "first_kick": [
+     "sol",
+     110.3,
+     "t1u3",
+     21.8,
+     13.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 100.75,
+     "scorer": "t1u2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g14",
+  "teamSize": 6,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     10.246073555434123,
+     4.2930629015900195
+    ],
+    [
+     12.234473045682535,
+     7.954568639397621
+    ],
+    [
+     10.072697243886068,
+     11.088083376642317
+    ],
+    [
+     9.690709470538422,
+     15.889651886187494
+    ],
+    [
+     11.514060156652704,
+     19.69045626046136
+    ],
+    [
+     11.415148364147171,
+     22.53903598897159
+    ]
+   ],
+   "1": [
+    [
+     32.587746856035665,
+     2.043746683280915
+    ],
+    [
+     32.15619208361022,
+     7.336175222881138
+    ],
+    [
+     32.77107014530338,
+     11.241815032903105
+    ],
+    [
+     32.875846959417686,
+     13.868328642100096
+    ],
+    [
+     31.44119558040984,
+     19.781685607042164
+    ],
+    [
+     31.943265775917098,
+     22.173862325958908
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.0,
+    "first_owner_xy": [
+     21.12,
+     12.9
+    ],
+    "first_kick": [
+     "sol",
+     3.75,
+     "t0u1",
+     21.7,
+     12.9
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 1032,
+    "ko_t": 51.6,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.62,
+     12.29
+    ],
+    "first_kick": [
+     "sol",
+     55.55,
+     "t0u1",
+     21.9,
+     11.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 51.6,
+     "scorer": "t0u4"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.45,
+    "first_owner_xy": [
+     21.1,
+     12.02
+    ],
+    "first_kick": [
+     "sol",
+     64,
+     "t0u1",
+     21.6,
+     11.2
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 74.2,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1484,
+    "ko_t": 74.2,
+    "first_owner": "sol",
+    "first_owner_t": 4.15,
+    "first_owner_xy": [
+     22.78,
+     13.16
+    ],
+    "first_kick": [
+     "sol",
+     78.4,
+     "t0u1",
+     22.4,
+     12.4
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 74.2,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1768,
+    "ko_t": 88.4,
+    "first_owner": "sol",
+    "first_owner_t": 3.85,
+    "first_owner_xy": [
+     22.22,
+     12.13
+    ],
+    "first_kick": [
+     "sol",
+     92.35,
+     "t0u1",
+     22.2,
+     11.7
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 88.4,
+     "scorer": "t0u3"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g15",
+  "teamSize": 2,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     11.598690747283399,
+     8.42432581842877
+    ],
+    [
+     11.641124066431075,
+     15.74488010420464
+    ]
+   ],
+   "1": [
+    [
+     33.263655146583915,
+     8.29107150924392
+    ],
+    [
+     32.51212815521285,
+     17.82575958664529
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 5.5,
+    "first_owner_xy": [
+     22.15,
+     14.12
+    ],
+    "first_kick": [
+     "sol",
+     5.55,
+     "t1u1",
+     22.5,
+     14.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 21.5,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 430,
+    "ko_t": 21.5,
+    "first_owner": "sol",
+    "first_owner_t": 4.25,
+    "first_owner_xy": [
+     22.89,
+     13.01
+    ],
+    "first_kick": [
+     "sol",
+     26.35,
+     "t1u1",
+     23.1,
+     12.5
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 21.5,
+     "scorer": "t1u1"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.4,
+    "first_owner_xy": [
+     21.89,
+     14.18
+    ],
+    "first_kick": [
+     "sol",
+     64.45,
+     "t1u1",
+     22.3,
+     15.0
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g16",
+  "teamSize": 4,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     9.64632369321771,
+     6.6536571267060935
+    ],
+    [
+     12.337034378899261,
+     8.857741211540997
+    ],
+    [
+     12.398344196612015,
+     15.582069533411413
+    ],
+    [
+     10.998305551474914,
+     20.256272699683905
+    ]
+   ],
+   "1": [
+    [
+     32.023645269917324,
+     4.851113052573055
+    ],
+    [
+     31.662038082955405,
+     9.648235264234245
+    ],
+    [
+     30.511403424898162,
+     15.494032532442361
+    ],
+    [
+     33.20926753967069,
+     20.759674275293946
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.2,
+    "first_owner_xy": [
+     22.43,
+     12.33
+    ],
+    "first_kick": [
+     "sol",
+     3.25,
+     "t0u1",
+     22.1,
+     11.5
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 813,
+    "ko_t": 40.65,
+    "first_owner": "sol",
+    "first_owner_t": 4.4,
+    "first_owner_xy": [
+     23.18,
+     13.42
+    ],
+    "first_kick": [
+     "sol",
+     45.1,
+     "t0u2",
+     22.8,
+     13.1
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 40.65,
+     "scorer": "t1u3"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.82,
+     12.64
+    ],
+    "first_kick": [
+     "sol",
+     64.05,
+     "t0u1",
+     21.1,
+     12.3
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g17",
+  "teamSize": 1,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.817345686489716,
+     13.037008213344961
+    ]
+   ],
+   "1": [
+    [
+     31.804521940415725,
+     12.591074403375387
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 2.95,
+    "first_owner_xy": [
+     22.66,
+     12.03
+    ],
+    "first_kick": [
+     "sol",
+     3.15,
+     "t1u0",
+     22.8,
+     11.8
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 8.6,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 172,
+    "ko_t": 8.6,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.48,
+     12.86
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     12.8,
+     "t0u0",
+     22.2,
+     13.5
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 8.6,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 336,
+    "ko_t": 16.8,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     21.78,
+     13.41
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     20.9,
+     "t0u0",
+     22.2,
+     13.8
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 16.8,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 498,
+    "ko_t": 24.9,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.5,
+    "first_owner_xy": [
+     21.07,
+     13.91
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     29.35,
+     "t0u0",
+     22.5,
+     13.7
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 24.9,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 729,
+    "ko_t": 36.45,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.53,
+     12.98
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     40.6,
+     "t0u0",
+     22.1,
+     13.6
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 36.45,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 892,
+    "ko_t": 44.6,
+    "first_owner": "sol",
+    "first_owner_t": 3.6,
+    "first_owner_xy": [
+     22.16,
+     12.82
+    ],
+    "first_kick": [
+     "sol",
+     48.25,
+     "t1u0",
+     22.6,
+     12.6
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 44.6,
+     "scorer": "t0u0"
+    }
+   },
+   {
+    "ko_frame": 1076,
+    "ko_t": 53.8,
+    "first_owner": "sol",
+    "first_owner_t": 3.25,
+    "first_owner_xy": [
+     23.17,
+     13.09
+    ],
+    "first_kick": [
+     "sol",
+     57.5,
+     "t1u0",
+     22.9,
+     12.6
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 53.8,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.65,
+    "first_owner_xy": [
+     21.3,
+     12.41
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     64.3,
+     "t0u0",
+     22.2,
+     12.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 70.85,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1417,
+    "ko_t": 70.85,
+    "first_owner": "sol",
+    "first_owner_t": 3.5,
+    "first_owner_xy": [
+     22.72,
+     14.1
+    ],
+    "first_kick": [
+     "sol",
+     74.55,
+     "t1u0",
+     22.6,
+     14.0
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 70.85,
+     "scorer": "t1u0"
+    }
+   },
+   {
+    "ko_frame": 1961,
+    "ko_t": 98.05,
+    "first_owner": "sol",
+    "first_owner_t": 3.35,
+    "first_owner_xy": [
+     23.02,
+     13.49
+    ],
+    "first_kick": [
+     "sol",
+     101.95,
+     "t1u0",
+     22.5,
+     12.7
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 98.05,
+     "scorer": "t0u0"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g18",
+  "teamSize": 3,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     12.462584475055337,
+     7.131545403273776
+    ],
+    [
+     11.320588200818747,
+     12.783171743853018
+    ],
+    [
+     10.655140862800181,
+     19.052856389665976
+    ]
+   ],
+   "1": [
+    [
+     32.49021267751232,
+     5.965240109479055
+    ],
+    [
+     33.00143454223871,
+     12.53962381114252
+    ],
+    [
+     33.03244592016563,
+     19.753467610804364
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.5,
+    "first_owner_xy": [
+     23.11,
+     11.96
+    ],
+    "first_kick": [
+     "sol",
+     4.55,
+     "t0u1",
+     22.7,
+     11.1
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.6,
+    "first_owner_xy": [
+     21.84,
+     12.74
+    ],
+    "first_kick": [
+     "sol",
+     63.65,
+     "t0u1",
+     21.5,
+     12.6
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 75.7,
+     "scorer": "t1u2"
+    }
+   },
+   {
+    "ko_frame": 1514,
+    "ko_t": 75.7,
+    "first_owner": "sol",
+    "first_owner_t": 4.75,
+    "first_owner_xy": [
+     22.93,
+     13.94
+    ],
+    "first_kick": [
+     "sol",
+     80.5,
+     "t0u1",
+     22.7,
+     14.3
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 75.7,
+     "scorer": "t1u2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r2-g19",
+  "teamSize": 5,
+  "seats": [
+   "deepseek-g1",
+   "sol"
+  ],
+  "our_team": 0,
+  "map_spawns": {
+   "0": [
+    [
+     10.50789210642688,
+     5.816654120571911
+    ],
+    [
+     10.908248879248276,
+     8.673934655729681
+    ],
+    [
+     9.79103236622177,
+     11.857589211314917
+    ],
+    [
+     11.390167880104855,
+     15.898835451807827
+    ],
+    [
+     11.788624341366813,
+     20.640017512254417
+    ]
+   ],
+   "1": [
+    [
+     31.857789201894775,
+     4.279487818945199
+    ],
+    [
+     32.17003367631696,
+     9.013275409117341
+    ],
+    [
+     31.95856496063061,
+     14.04929758561775
+    ],
+    [
+     32.771904305322096,
+     16.722020179964602
+    ],
+    [
+     33.34825949766673,
+     20.348557634744793
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.2,
+    "first_owner_xy": [
+     21.68,
+     13.62
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     3.25,
+     "t0u3",
+     21.2,
+     14.3
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 831,
+    "ko_t": 41.55,
+    "first_owner": "sol",
+    "first_owner_t": 6.75,
+    "first_owner_xy": [
+     21.35,
+     13.19
+    ],
+    "first_kick": [
+     "sol",
+     48.35,
+     "t1u2",
+     21.8,
+     13.9
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 41.55,
+     "scorer": "t1u2"
+    }
+   },
+   {
+    "ko_frame": 1187,
+    "ko_t": 59.35,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 4.2,
+    "first_owner_xy": [
+     20.94,
+     14.17
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     63.85,
+     "t0u3",
+     21.0,
+     14.5
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 59.35,
+     "scorer": "t0u4"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "deepseek-g1",
+    "first_owner_t": 3.55,
+    "first_owner_xy": [
+     20.94,
+     14.17
+    ],
+    "first_kick": [
+     "deepseek-g1",
+     63.85,
+     "t0u3",
+     21.0,
+     14.5
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 2220,
+    "ko_t": 111.0,
+    "first_owner": "sol",
+    "first_owner_t": 4.1,
+    "first_owner_xy": [
+     21.67,
+     12.01
+    ],
+    "first_kick": [
+     "sol",
+     115.15,
+     "t1u2",
+     22.1,
+     11.8
+    ],
+    "next_goal": null
+   }
+  ]
+ },
+ {
+  "id": "r2-g20",
+  "teamSize": 6,
+  "seats": [
+   "sol",
+   "deepseek-g1"
+  ],
+  "our_team": 1,
+  "map_spawns": {
+   "0": [
+    [
+     10.257700128247961,
+     4.014175856485963
+    ],
+    [
+     11.77572121587582,
+     6.0650596166960895
+    ],
+    [
+     12.066684976918623,
+     9.51940938923508
+    ],
+    [
+     10.621820438886061,
+     16.374240739736706
+    ],
+    [
+     11.775514159118757,
+     18.413911066949368
+    ],
+    [
+     10.026917814509943,
+     22.08340108161792
+    ]
+   ],
+   "1": [
+    [
+     31.893583989469334,
+     3.5982753625139594
+    ],
+    [
+     33.00599246681668,
+     6.3190319505520165
+    ],
+    [
+     31.3656965137925,
+     11.697824379429221
+    ],
+    [
+     32.83337334287353,
+     16.47175047872588
+    ],
+    [
+     31.17380511458032,
+     18.666550722904503
+    ],
+    [
+     31.05024653696455,
+     24.325144837144762
+    ]
+   ]
+  },
+  "kickoffs": [
+   {
+    "ko_frame": 0,
+    "ko_t": 0.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.1,
+    "first_owner_xy": [
+     21.54,
+     13.9
+    ],
+    "first_kick": [
+     "sol",
+     3.35,
+     "t0u2",
+     21.8,
+     13.6
+    ],
+    "next_goal": null
+   },
+   {
+    "ko_frame": 827,
+    "ko_t": 41.35,
+    "first_owner": "sol",
+    "first_owner_t": 3.7,
+    "first_owner_xy": [
+     21.61,
+     13.9
+    ],
+    "first_kick": [
+     "sol",
+     45.3,
+     "t0u2",
+     21.8,
+     13.6
+    ],
+    "next_goal": {
+     "team": "sol",
+     "t": 41.35,
+     "scorer": "t0u1"
+    }
+   },
+   {
+    "ko_frame": 1080,
+    "ko_t": 54.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.45,
+    "first_owner_xy": [
+     21.34,
+     12.43
+    ],
+    "first_kick": [
+     "sol",
+     58.25,
+     "t0u2",
+     22.3,
+     11.6
+    ],
+    "next_goal": {
+     "team": "deepseek-g1",
+     "t": 54,
+     "scorer": "t1u4"
+    }
+   },
+   {
+    "ko_frame": 1200,
+    "ko_t": 60.0,
+    "first_owner": "sol",
+    "first_owner_t": 3.75,
+    "first_owner_xy": [
+     22.49,
+     12.08
+    ],
+    "first_kick": [
+     "sol",
+     64,
+     "t0u2",
+     22.4,
+     11.3
+    ],
+    "next_goal": null
+   }
+  ]
+ }
+]

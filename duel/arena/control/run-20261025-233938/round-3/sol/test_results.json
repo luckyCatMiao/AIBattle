@@ -1,0 +1,106 @@
+[
+  {
+    "type": "rush",
+    "seat": 0,
+    "winner": 0,
+    "outcome": "win",
+    "seconds": 24.85,
+    "shots": [
+      20,
+      20
+    ],
+    "maxMS": 15.79,
+    "meanMS": 5.48
+  },
+  {
+    "type": "rush",
+    "seat": 1,
+    "winner": 1,
+    "outcome": "win",
+    "seconds": 16.15,
+    "shots": [
+      13,
+      13
+    ],
+    "maxMS": 8.01,
+    "meanMS": 4.88
+  },
+  {
+    "type": "kite",
+    "seat": 0,
+    "winner": null,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      51,
+      96
+    ],
+    "maxMS": 15.26,
+    "meanMS": 6.5
+  },
+  {
+    "type": "kite",
+    "seat": 1,
+    "winner": null,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      96,
+      53
+    ],
+    "maxMS": 10.28,
+    "meanMS": 6.45
+  },
+  {
+    "type": "orbit",
+    "seat": 0,
+    "winner": 0,
+    "outcome": "win",
+    "seconds": 1.2,
+    "shots": [
+      1,
+      1
+    ],
+    "maxMS": 6.79,
+    "meanMS": 4.71
+  },
+  {
+    "type": "orbit",
+    "seat": 1,
+    "winner": 1,
+    "outcome": "win",
+    "seconds": 6.9,
+    "shots": [
+      6,
+      5
+    ],
+    "maxMS": 7.19,
+    "meanMS": 4.61
+  },
+  {
+    "type": "self",
+    "seat": 0,
+    "winner": null,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      0,
+      0
+    ],
+    "maxMS": 8.05,
+    "meanMS": 4.53
+  },
+  {
+    "type": "self",
+    "seat": 1,
+    "winner": null,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      0,
+      0
+    ],
+    "maxMS": 7.95,
+    "meanMS": 4.53
+  }
+]

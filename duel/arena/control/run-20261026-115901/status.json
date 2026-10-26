@@ -1,0 +1,136 @@
+{
+  "run": "run-20261026-115901",
+  "phase": "比赛进行中",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "DeepSeek V4.1 Flash 被击中",
+      "duration": 26.5,
+      "scores": {
+        "deepseek-flash": 53,
+        "sol": 55
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 308,
+      "windows": 307,
+      "sha256": "1d838e1af1af0e3a330aa1c945b56bc9f9c447c6e6b4a83d642230ea366fc136"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "DeepSeek V4.1 Flash 被击中",
+      "duration": 21.43,
+      "scores": {
+        "deepseek-flash": 49,
+        "sol": 51
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 285,
+      "windows": 284,
+      "sha256": "35bc35f814c892e15c927e7eda56796da2d4e60c72d7cc2d293eaf82f58c9919"
+    }
+  ],
+  "results": [
+    {
+      "id": "r1-g1",
+      "round": 1,
+      "game": 1,
+      "seats": [
+        "deepseek-flash",
+        "sol"
+      ],
+      "winner": "sol",
+      "reason": "DeepSeek V4.1 Flash 被击中",
+      "duration": 26.5,
+      "scores": {
+        "deepseek-flash": 53,
+        "sol": 55
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 308,
+      "windows": 307,
+      "bullets": 108,
+      "shots": {
+        "deepseek-flash": 53,
+        "sol": 55
+      },
+      "sha256": "1d838e1af1af0e3a330aa1c945b56bc9f9c447c6e6b4a83d642230ea366fc136"
+    },
+    {
+      "id": "r1-g2",
+      "round": 1,
+      "game": 2,
+      "seats": [
+        "sol",
+        "deepseek-flash"
+      ],
+      "winner": "sol",
+      "reason": "DeepSeek V4.1 Flash 被击中",
+      "duration": 21.43,
+      "scores": {
+        "deepseek-flash": 49,
+        "sol": 51
+      },
+      "errors": {
+        "deepseek-flash": 0,
+        "sol": 0
+      },
+      "technicalFailure": null,
+      "frames": 285,
+      "windows": 284,
+      "bullets": 100,
+      "shots": {
+        "deepseek-flash": 49,
+        "sol": 51
+      },
+      "sha256": "35bc35f814c892e15c927e7eda56796da2d4e60c72d7cc2d293eaf82f58c9919"
+    }
+  ],
+  "ready": [
+    "deepseek-flash",
+    "sol"
+  ],
+  "setup_note": "双方从零开始，准备时间不设上限；双方操控完全相同角色，无选角差异；每轮交换座位打两局；每 3 帧（150 毫秒）同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 81484,
+  "port": 8819,
+  "completed": false,
+  "updated": "2026-10-26T11:59:51",
+  "game": 2,
+  "game_id": "r1-g2"
+}

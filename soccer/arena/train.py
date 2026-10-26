@@ -365,6 +365,11 @@ def bootstrap():
         if ARGS.incumbent and who != ARGS.incumbent:
             # 挑战者拿到一个黑盒练习入口：它只会启动对手的引擎进程，不暴露对手的文件。
             opponent_dir = (pathlib.Path(ARGS.from_run) / f'round-{ARGS.source_round}' / ARGS.incumbent).resolve()
+            # 对手源码（冻结版本）：允许挑战者阅读、分析、在自己的模拟里复现它。
+            opp_src = opponent_dir / 'agent.js'
+            if opp_src.exists():
+                (folder / 'opponent').mkdir(exist_ok=True)
+                shutil.copy(opp_src, folder / 'opponent' / 'sol_agent.js')
             template = (ROOT / 'practice_template.py').read_text(encoding='utf-8')
             (folder / 'practice.py').write_text(
                 template.replace('__TRAIN__', repr(str(ROOT / 'train.py')))
@@ -495,7 +500,7 @@ def prepare(who, iteration):
                   '交替座位、人数 1–6 轮换，打印每局比分、总胜率与回放目录（回放是你自己的比赛，可以分析）。'
                   '你可以反复「改 agent.py → 练习 → 看回放 → 再改」，练习次数不限。'
                   '目标是把实测胜率做到 **≥90%**（至少 10 局，建议 20 局以上且覆盖 1–6 人），确认达标后再把最终版本作为 entry.json 提交。'
-                  '对手的策略代码与工作区对你不可见，**禁止打开对手目录里的任何文件**，只能通过 practice.py 与它对局；除此之外的一切资料你都可以读：规则、引擎源码、裁判、你自己的练习回放，以及每轮官方对局回放（结束后会放进工作区的 matches/ 目录，r*-g*.json.gz 是逐物理帧存档，解压即可逐帧分析自己为什么丢球、为什么进不了球）。另：**禁止按进程名批量结束系统进程**（例如 taskkill /IM node.exe、killall），那会杀死裁判与观战服务、直接毁掉整场比赛；只允许结束你自己启动并且知道 PID 的进程。') if ARGS.incumbent else ''
+                  '**对手的源码已经给你了**：工作区 opponent/sol_agent.js 就是它在比赛里实际运行的程序（Node.js）。你可以逐行阅读它，也可以在 Python 里复现它的决策逻辑，用你自己的模拟器精确预测它在任意局面下的走位和射门，再设计针对性打法。除此之外的规则、引擎源码、裁判、你自己的练习回放、每轮官方对局回放（结束后放进工作区的 matches/ 目录，r*-g*.json.gz 是逐物理帧存档）也都可以读。另：**禁止按进程名批量结束系统进程**（例如 taskkill /IM node.exe、killall），那会杀死裁判与观战服务、直接毁掉整场比赛；只允许结束你自己启动并且知道 PID 的进程。') if ARGS.incumbent else ''
     incumbent_goal = (chr(10) * 2 + '【本轮目标】对手是**冻结的 ' + LABELS.get(ARGS.incumbent, ARGS.incumbent or '') + ' 策略**（它的代码与工作区对你不可见，禁止读取）。你的目标是在正式比赛中对它取得 **≥90% 的胜率**：用不同种子、不同座位反复自测，直到自测胜率稳定在 90% 以上再提交，并把实测胜率写进自测报告。') if ARGS.incumbent and who != ARGS.incumbent else ''
     prompt = f'''你是 {MODELS[who]}，参加「3V3 足球」竞技比赛的正式比赛，第 {iteration} 轮（共 {ARGS.rounds} 轮）。
 你通过 Claude Code CLI 运行，可以读写 /workspace 并执行命令。{resume_note}

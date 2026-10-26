@@ -1,0 +1,73 @@
+wrote D:\extraProj\AIBattle\soccer\arena\control\run-20261025-192049\workspaces\deepseek-g1\work\r1_summary.json
+
+=== per game ===
+r1-g1  1v1 seats=['deepseek-g1', 'sol'] score 2:3 frames=2409 sim=120.45s dur=7.58s kicks my/op=3/8 onT=3/3 goals=2/3
+r1-g2  3v3 seats=['sol', 'deepseek-g1'] score 0:1 frames=2401 sim=120.05s dur=6.43s kicks my/op=7/7 onT=3/1 goals=0/1
+r1-g3  5v5 seats=['deepseek-g1', 'sol'] score 0:0 frames=2801 sim=140.05s dur=14.49s kicks my/op=6/20 onT=3/8 goals=0/0
+r1-g4  6v6 seats=['sol', 'deepseek-g1'] score 0:0 frames=2801 sim=140.05s dur=11.6s kicks my/op=4/7 onT=2/4 goals=0/0
+r1-g5  2v2 seats=['deepseek-g1', 'sol'] score 0:0 frames=2801 sim=140.05s dur=7.25s kicks my/op=7/11 onT=6/4 goals=0/0
+r1-g6  4v4 seats=['sol', 'deepseek-g1'] score 0:0 frames=2801 sim=140.05s dur=12.21s kicks my/op=13/17 onT=4/3 goals=0/0
+r1-g7  1v1 seats=['deepseek-g1', 'sol'] score 9:2 frames=2401 sim=120.05s dur=3.21s kicks my/op=9/4 onT=9/2 goals=9/2
+r1-g8  3v3 seats=['sol', 'deepseek-g1'] score 0:0 frames=2801 sim=140.05s dur=6.76s kicks my/op=6/8 onT=2/1 goals=0/0
+r1-g9  5v5 seats=['deepseek-g1', 'sol'] score 0:0 frames=2801 sim=140.05s dur=8.95s kicks my/op=3/9 onT=1/3 goals=0/0
+r1-g10 6v6 seats=['sol', 'deepseek-g1'] score 0:0 frames=2801 sim=140.05s dur=10.38s kicks my/op=6/9 onT=2/3 goals=0/0
+r1-g11 2v2 seats=['deepseek-g1', 'sol'] score 0:2 frames=2401 sim=120.05s dur=4.6s kicks my/op=4/12 onT=3/4 goals=0/2
+r1-g12 4v4 seats=['sol', 'deepseek-g1'] score 0:0 frames=2801 sim=140.05s dur=6.28s kicks my/op=8/6 onT=3/0 goals=0/0
+r1-g13 1v1 seats=['deepseek-g1', 'sol'] score 4:3 frames=2401 sim=120.05s dur=5.99s kicks my/op=6/8 onT=6/3 goals=4/3
+r1-g14 3v3 seats=['sol', 'deepseek-g1'] score 1:0 frames=2401 sim=120.05s dur=8.35s kicks my/op=9/9 onT=3/3 goals=1/0
+r1-g15 5v5 seats=['deepseek-g1', 'sol'] score 0:1 frames=2401 sim=120.05s dur=9.8s kicks my/op=9/10 onT=2/5 goals=0/1
+r1-g16 6v6 seats=['sol', 'deepseek-g1'] score 1:0 frames=2401 sim=120.05s dur=10.09s kicks my/op=6/5 onT=5/1 goals=1/0
+r1-g17 2v2 seats=['deepseek-g1', 'sol'] score 0:1 frames=2401 sim=120.05s dur=4.63s kicks my/op=5/12 onT=4/4 goals=0/1
+r1-g18 4v4 seats=['sol', 'deepseek-g1'] score 0:0 frames=2801 sim=140.05s dur=9.21s kicks my/op=4/9 onT=1/3 goals=0/0
+r1-g19 1v1 seats=['deepseek-g1', 'sol'] score 4:2 frames=2401 sim=120.05s dur=6.16s kicks my/op=8/6 onT=8/2 goals=4/2
+r1-g20 3v3 seats=['sol', 'deepseek-g1'] score 0:1 frames=2401 sim=120.05s dur=4.82s kicks my/op=7/9 onT=2/4 goals=0/1
+
+=== goals detail ===
+r1-g1 ts 1
+   OPP t=7.80 f=156 t1u0 kick(t=4.05,x=21.29,y=14.29,dist=20.29,ang=177.0,unit=t1u0) flight=3.75 aim_y=15.36 onT=True
+   ME  t=70.15 f=1403 t0u0 kick(t=66.05,x=22,y=15.01,dist=21.0,ang=1.2,unit=t0u0) flight=4.1 aim_y=15.45 onT=True
+   OPP t=79.80 f=1596 t1u0 kick(t=78.45,x=11.96,y=6.93,dist=10.96,ang=161.3,unit=t1u0) flight=1.35 aim_y=10.64 onT=True
+   ME  t=111.50 f=2230 t0u0 kick(t=107.1,x=21.72,y=18.42,dist=21.28,ang=-7.9,unit=t0u0) flight=4.4 aim_y=15.47 onT=True
+   OPP t=120.40 f=2408 t1u0 kick(t=117.1,x=20.36,y=15.53,dist=19.36,ang=-179.6,unit=t1u0) flight=3.3 aim_y=15.38 onT=True
+r1-g2 ts 3
+   OPP t=16.00 f=320 t0u2 kick(t=14.25,x=31.62,y=18.03,dist=11.38,ang=-32.9,unit=t0u2) flight=1.75 aim_y=10.66 onT=True
+r1-g7 ts 1
+   ME  t=8.20 f=164 t0u0 kick(t=4.05,x=22.16,y=13.68,dist=20.84,ang=-8.5,unit=t0u0) flight=4.15 aim_y=10.57 onT=True
+   ME  t=17.05 f=341 t0u0 kick(t=13.05,x=22.46,y=13.71,dist=20.54,ang=-8.7,unit=t0u0) flight=4.0 aim_y=10.57 onT=True
+   ME  t=25.80 f=516 t0u0 kick(t=22.05,x=22.85,y=13.52,dist=20.15,ang=-8.4,unit=t0u0) flight=3.75 aim_y=10.56 onT=True
+   ME  t=34.90 f=698 t0u0 kick(t=31.05,x=22.53,y=11.61,dist=20.47,ang=-2.9,unit=t0u0) flight=3.85 aim_y=10.56 onT=True
+   ME  t=43.75 f=875 t0u0 kick(t=40.05,x=22.87,y=12.61,dist=20.13,ang=-5.8,unit=t0u0) flight=3.7 aim_y=10.55 onT=True
+   ME  t=68.80 f=1376 t0u0 kick(t=65.05,x=22.74,y=12.74,dist=20.26,ang=-6.1,unit=t0u0) flight=3.75 aim_y=10.56 onT=True
+   ME  t=79.25 f=1585 t0u0 kick(t=75.05,x=21.78,y=10.78,dist=21.22,ang=-0.6,unit=t0u0) flight=4.2 aim_y=10.55 onT=True
+   OPP t=89.20 f=1784 t1u0 kick(t=87.8,x=11.97,y=6.67,dist=10.97,ang=160.1,unit=t1u0) flight=1.4 aim_y=10.65 onT=True
+   OPP t=98.10 f=1962 t1u0 kick(t=94.05,x=21.67,y=13.57,dist=20.67,ang=-171.9,unit=t1u0) flight=4.05 aim_y=10.65 onT=True
+   ME  t=107.25 f=2145 t0u0 kick(t=103.05,x=21.83,y=11.18,dist=21.17,ang=-1.7,unit=t0u0) flight=4.2 aim_y=10.54 onT=True
+   ME  t=116.75 f=2335 t0u0 kick(t=113.05,x=22.73,y=10.93,dist=20.27,ang=-1.1,unit=t0u0) flight=3.7 aim_y=10.54 onT=True
+r1-g11 ts 2
+   OPP t=10.75 f=215 t1u1 kick(t=9.05,x=11.68,y=7.19,dist=10.68,ang=142.6,unit=t1u1) flight=1.7 aim_y=15.36 onT=True
+   OPP t=119.30 f=2386 t1u1 kick(t=117.4,x=12.96,y=18.73,dist=11.96,ang=-145.9,unit=t1u1) flight=1.9 aim_y=10.65 onT=True
+r1-g13 ts 1
+   ME  t=8.70 f=174 t0u0 kick(t=5.05,x=22.86,y=15.23,dist=20.14,ang=0.6,unit=t0u0) flight=3.65 aim_y=15.45 onT=True
+   OPP t=69.05 f=1381 t1u0 kick(t=67.5,x=13.14,y=18.97,dist=12.14,ang=-163.4,unit=t1u0) flight=1.55 aim_y=15.35 onT=True
+   ME  t=77.85 f=1557 t0u0 kick(t=74.05,x=22.87,y=14.21,dist=20.13,ang=-10.3,unit=t0u0) flight=3.8 aim_y=10.57 onT=True
+   OPP t=87.20 f=1744 t1u0 kick(t=85.7,x=12.59,y=19.54,dist=11.59,ang=-160.1,unit=t1u0) flight=1.5 aim_y=15.35 onT=True
+   ME  t=96.05 f=1921 t0u0 kick(t=92.05,x=22.59,y=14.54,dist=20.41,ang=-11.0,unit=t0u0) flight=4.0 aim_y=10.57 onT=True
+   OPP t=105.45 f=2109 t1u0 kick(t=104,x=12.28,y=19.49,dist=11.28,ang=-159.9,unit=t1u0) flight=1.45 aim_y=15.36 onT=True
+   ME  t=113.90 f=2278 t0u0 kick(t=110.05,x=22.47,y=14.79,dist=20.53,ang=1.8,unit=t0u0) flight=3.85 aim_y=15.45 onT=True
+r1-g14 ts 3
+   ME  t=107.70 f=2154 t1u2 kick(t=106.15,x=13.58,y=12.34,dist=12.58,ang=-171.9,unit=t1u2) flight=1.55 aim_y=10.56 onT=True
+r1-g15 ts 5
+   OPP t=75.80 f=1516 t1u1 kick(t=74.05,x=13.58,y=15.65,dist=12.58,ang=-158.3,unit=t1u1) flight=1.75 aim_y=10.64 onT=True
+r1-g16 ts 6
+   ME  t=114.60 f=2292 t1u3 kick(t=113.05,x=13.65,y=10.57,dist=12.65,ang=-179.9,unit=t1u3) flight=1.55 aim_y=10.55 onT=True
+r1-g17 ts 2
+   OPP t=72.75 f=1455 t1u1 kick(t=71.05,x=12.93,y=9.21,dist=11.93,ang=152.8,unit=t1u1) flight=1.7 aim_y=15.35 onT=True
+r1-g19 ts 1
+   OPP t=7.55 f=151 t1u0 kick(t=4.1,x=20.65,y=11.8,dist=19.65,ang=-176.5,unit=t1u0) flight=3.45 aim_y=10.61 onT=True
+   ME  t=68.45 f=1369 t0u0 kick(t=65.05,x=23.48,y=10.32,dist=19.52,ang=0.7,unit=t0u0) flight=3.4 aim_y=10.56 onT=True
+   ME  t=77.40 f=1548 t0u0 kick(t=73.05,x=21.92,y=14.38,dist=21.08,ang=-10.3,unit=t0u0) flight=4.35 aim_y=10.56 onT=True
+   ME  t=86.10 f=1722 t0u0 kick(t=82.05,x=22.34,y=14.14,dist=20.66,ang=-9.8,unit=t0u0) flight=4.05 aim_y=10.57 onT=True
+   ME  t=93.90 f=1878 t0u0 kick(t=91.1,x=25.18,y=14.28,dist=17.82,ang=3.7,unit=t0u0) flight=2.8 aim_y=15.44 onT=True
+   OPP t=118.30 f=2366 t1u0 kick(t=None,x=None,y=None,dist=None,ang=None,unit=None) flight=None aim_y=None onT=None
+r1-g20 ts 3
+   OPP t=12.45 f=249 t0u1 kick(t=11.05,x=32.6,y=9.68,dist=10.4,ang=28.6,unit=t0u1) flight=1.4 aim_y=15.35 onT=True

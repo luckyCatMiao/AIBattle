@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>无尽弹墙对决 · AIBATTLE DUEL</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>无尽弹墙对决 <small>RICOCHET DUEL</small></h1>
+    <div class="sub">20 Hz · 一枪致命 · 子弹永不消失 · 自己的子弹打不到自己</div>
+  </header>
+
+  <main>
+    <section class="board">
+      <canvas id="stage" width="720" height="540"></canvas>
+      <div class="hud">
+        <span id="hint">WASD 移动 · 方向键瞄准 · 空格开火</span>
+      </div>
+    </section>
+
+    <aside>
+      <div class="card" id="setupCard">
+        <h3>本地对战</h3>
+        <button id="newMatch">开新局</button>
+        <small>你（蓝）对阵练习电脑（橙）。子弹会一直反弹，越打越多。</small>
+      </div>
+
+      <div class="card" id="scoreCard">
+        <h3>对局状态</h3>
+        <div class="row"><span class="k">时间</span><span class="v" id="timeLeft">—</span></div>
+        <div class="row"><span class="k">场上子弹</span><span class="v" id="bulletCount">0</span></div>
+        <div class="row"><span class="k">结果</span><span class="v" id="result">—</span></div>
+      </div>
+
+      <div class="card" id="replayCard">
+        <h3>回放</h3>
+        <button id="play">播放</button>
+        <input type="range" id="seek" min="0" max="0" value="0">
+        <div class="speeds">
+          <button data-s="0.5">0.5×</button><button data-s="1" class="on">1×</button>
+          <button data-s="2">2×</button><button data-s="4">4×</button>
+        </div>
+        <small id="replayInfo">选择右侧系列与对局</small>
+      </div>
+
+      <div class="card" id="runsCard">
+        <h3>比赛系列</h3>
+        <div id="runs" class="runs"><small>加载中…</small></div>
+        <div id="games" class="games"></div>
+      </div>
+
+      <div class="card">
+        <h3>事件</h3>
+        <div id="log" class="log"></div>
+      </div>
+    </aside>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

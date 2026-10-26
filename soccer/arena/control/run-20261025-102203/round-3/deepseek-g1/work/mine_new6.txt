@@ -1,0 +1,60 @@
+games 6
+W/L/D 2 3 1
+
+## 每局摘要
+ts=1 seat=0 seed=19001 {'deepseek-g1': 3, 'sol': 1} | deepseek-g1 | our@(19.88,12.46)d23.13 kd=6.63 opp@(14.95,12.39)d13.96 kd=8.77 our@(19.58,16.9)d23.74 kd=4.81 our@(20.6,5.22)d23.71 kd=4.86
+ts=2 seat=1 seed=19002 {'deepseek-g1': 0, 'sol': 1} | sol | opp@(39.35,22.88)d10.54 kd=1.62
+ts=3 seat=0 seed=19003 {'deepseek-g1': 0, 'sol': 0} | None | 
+ts=4 seat=1 seed=19004 {'deepseek-g1': 0, 'sol': 1} | sol | opp@(30.66,14.04)d12.38 kd=1.98
+ts=5 seat=0 seed=19005 {'deepseek-g1': 1, 'sol': 0} | deepseek-g1 | our@(31.71,11.82)d11.36 kd=3.46
+ts=6 seat=1 seed=19006 {'deepseek-g1': 1, 'sol': 2} | sol | our@(9.85,20.76)d11.77 kd=4.43 opp@(32.08,9.35)d11.52 kd=1.36 opp@(39.98,23.52)d10.94 kd=0.99
+
+## 进球位置（按我方/对方）
+-- our n= 5
+   t=100.55 kick=[31.71, 11.82] ang=354.8 dist=11.36 def_keeper_depth=3.46 def_nearest=(2.4214344921967226, 4, 29.6, 13.1)
+   t=33.35  kick=[9.85, 20.76] ang=212.1 dist=11.77 def_keeper_depth=4.43 def_nearest=(7.210653021744979, 4, 17.1, 21.0)
+   t=27.75  kick=[19.88, 12.46] ang=359.4 dist=23.13 def_keeper_depth=6.63 def_nearest=None
+   t=115.2  kick=[20.6, 5.22] ang=16.8 dist=23.71 def_keeper_depth=4.86 def_nearest=None
+   t=86.7   kick=[19.58, 16.9] ang=355.7 dist=23.74 def_keeper_depth=4.81 def_nearest=None
+-- opp n= 5
+   t=36.05  kick=[39.35, 22.88] ang=295.9 dist=10.54 def_keeper_depth=1.62 def_nearest=(1.946114590665206, 1, 40.1, 21.1)
+   t=119.6  kick=[39.98, 23.52] ang=290.3 dist=10.94 def_keeper_depth=0.99 def_nearest=(2.521620510703385, 1, 39.2, 21.1)
+   t=100.6  kick=[32.08, 9.35] ang=28.8 dist=11.52 def_keeper_depth=1.36 def_nearest=(2.936809152805135, 3, 34.6, 10.9)
+   t=28.8   kick=[30.66, 14.04] ang=344.6 dist=12.38 def_keeper_depth=1.98 def_nearest=(2.680442687318647, 2, 32.9, 15.4)
+   t=47.9   kick=[14.95, 12.39] ang=168.0 dist=13.96 def_keeper_depth=8.77 def_nearest=None
+
+## 门将深度中位数（采样）
+  ts=1 seat=0 {'our': 9.18, 'opp': 24.23}
+  ts=2 seat=1 {'our': 1.4, 'opp': 2.56}
+  ts=3 seat=0 {'our': 1.43, 'opp': 2.61}
+  ts=4 seat=1 {'our': 1.54, 'opp': 2.52}
+  ts=5 seat=0 {'our': 1.53, 'opp': 2.63}
+  ts=6 seat=1 {'our': 1.39, 'opp': 2.68}
+
+## Sol 踢球统计
+  ts=1 seat=0 kicks=6 ray=6 deep=6 dists=[27.1, 27.4, 27.5, 28.1, 29.6]
+  ts=2 seat=1 kicks=14 ray=5 deep=9 dists=[30.5, 30.7, 30.8, 31.2, 39.6]
+  ts=3 seat=0 kicks=16 ray=3 deep=6 dists=[31.3, 31.8, 36.0]
+  ts=4 seat=1 kicks=16 ray=5 deep=13 dists=[29.7, 31.4, 40.4, 40.9]
+  ts=5 seat=0 kicks=17 ray=6 deep=11 dists=[30.5, 31.2, 31.6, 32.1, 33.0]
+  ts=6 seat=1 kicks=31 ray=8 deep=15 dists=[28.4, 28.7, 29.3, 30.5, 31.3, 31.4, 40.4]
+
+## 全局 Sol 射门（ray_goal）位置直方
+   x12-16 y12-16 d24-28: 4
+   x28-32 y12-16 d28-32: 4
+   x28-32 y04-08 d28-32: 3
+   x28-32 y08-12 d28-32: 3
+   x40-44 y00-04 d40-44: 3
+   x12-16 y12-16 d28-32: 2
+   x12-16 y16-20 d28-32: 2
+   x08-12 y04-08 d32-36: 2
+   x36-40 y20-24 d36-40: 1
+   x28-32 y16-20 d28-32: 1
+   x08-12 y20-24 d36-40: 1
+   x08-12 y16-20 d28-32: 1
+   x32-36 y12-16 d28-32: 1
+   x12-16 y04-08 d28-32: 1
+   x12-16 y08-12 d28-32: 1
+   x08-12 y08-12 d28-32: 1
+   x32-36 y08-12 d28-32: 1
+   x40-44 y20-24 d40-44: 1

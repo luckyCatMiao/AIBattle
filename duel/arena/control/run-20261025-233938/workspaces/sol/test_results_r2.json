@@ -1,0 +1,210 @@
+[
+  {
+    "type": "turret",
+    "seat": 0,
+    "outcome": "win",
+    "seconds": 110.1,
+    "shots": [
+      89,
+      88
+    ],
+    "minEnemyBulletDistance": 1.3742,
+    "maxMS": 11.67,
+    "meanMS": 6.17
+  },
+  {
+    "type": "turret",
+    "seat": 1,
+    "outcome": "win",
+    "seconds": 104.5,
+    "shots": [
+      84,
+      83
+    ],
+    "minEnemyBulletDistance": 1.4462,
+    "maxMS": 12.28,
+    "meanMS": 6.25
+  },
+  {
+    "type": "rush",
+    "seat": 0,
+    "outcome": "win",
+    "seconds": 37.55,
+    "shots": [
+      31,
+      30
+    ],
+    "minEnemyBulletDistance": 1.7196,
+    "maxMS": 9.58,
+    "meanMS": 5.22
+  },
+  {
+    "type": "rush",
+    "seat": 1,
+    "outcome": "win",
+    "seconds": 16.15,
+    "shots": [
+      13,
+      13
+    ],
+    "minEnemyBulletDistance": 1.6663,
+    "maxMS": 8.64,
+    "meanMS": 4.89
+  },
+  {
+    "type": "kite",
+    "seat": 0,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      97,
+      97
+    ],
+    "minEnemyBulletDistance": 1.095,
+    "maxMS": 16.97,
+    "meanMS": 6.61
+  },
+  {
+    "type": "kite",
+    "seat": 1,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      97,
+      96
+    ],
+    "minEnemyBulletDistance": 0.9166,
+    "maxMS": 12.98,
+    "meanMS": 6.52
+  },
+  {
+    "type": "wander",
+    "seat": 0,
+    "outcome": "win",
+    "seconds": 58.95,
+    "shots": [
+      48,
+      47
+    ],
+    "minEnemyBulletDistance": 1.4696,
+    "maxMS": 9.14,
+    "meanMS": 5.44
+  },
+  {
+    "type": "wander",
+    "seat": 1,
+    "outcome": "win",
+    "seconds": 57.6,
+    "shots": [
+      46,
+      46
+    ],
+    "minEnemyBulletDistance": 1.6135,
+    "maxMS": 8.79,
+    "meanMS": 5.41
+  },
+  {
+    "type": "orbit",
+    "seat": 0,
+    "outcome": "win",
+    "seconds": 8.8,
+    "shots": [
+      8,
+      7
+    ],
+    "minEnemyBulletDistance": 2.1332,
+    "maxMS": 7.42,
+    "meanMS": 4.53
+  },
+  {
+    "type": "orbit",
+    "seat": 1,
+    "outcome": "win",
+    "seconds": 16.1,
+    "shots": [
+      13,
+      13
+    ],
+    "minEnemyBulletDistance": 2.046,
+    "maxMS": 8,
+    "meanMS": 4.74
+  },
+  {
+    "type": "ambush",
+    "seat": 0,
+    "outcome": "win",
+    "seconds": 3.9,
+    "shots": [
+      4,
+      2
+    ],
+    "minEnemyBulletDistance": 2.147,
+    "maxMS": 8.37,
+    "meanMS": 4.42
+  },
+  {
+    "type": "ambush",
+    "seat": 1,
+    "outcome": "win",
+    "seconds": 4.2,
+    "shots": [
+      2,
+      4
+    ],
+    "minEnemyBulletDistance": 0.963,
+    "maxMS": 6.98,
+    "meanMS": 4.43
+  },
+  {
+    "type": "previous",
+    "seat": 0,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      97,
+      97
+    ],
+    "minEnemyBulletDistance": 0.9195,
+    "maxMS": 13.33,
+    "meanMS": 6.56
+  },
+  {
+    "type": "previous",
+    "seat": 1,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      97,
+      96
+    ],
+    "minEnemyBulletDistance": 0.7171,
+    "maxMS": 13.38,
+    "meanMS": 6.65
+  },
+  {
+    "type": "self",
+    "seat": 0,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      88,
+      88
+    ],
+    "minEnemyBulletDistance": 0.8955,
+    "maxMS": 11.65,
+    "meanMS": 6.37
+  },
+  {
+    "type": "self",
+    "seat": 1,
+    "outcome": "draw",
+    "seconds": 120.05,
+    "shots": [
+      88,
+      88
+    ],
+    "minEnemyBulletDistance": 0.9793,
+    "maxMS": 12.52,
+    "meanMS": 6.33
+  }
+]

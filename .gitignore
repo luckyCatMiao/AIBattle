@@ -77,3 +77,12 @@ Thumbs.db
 **/lab/**/*dump*.json
 # 练习赛目录（黑盒自测产生，不属于系列赛记录）
 **/arena/control/practice-*/
+
+# ==================== 选手工作区里的分析产物（可达上百 MB） ====================
+# 分析 JSON 是选手把回放导出来做统计的中间产物，源数据在 run 根目录的 r*-g*.json.gz。
+**/work/review_r*/
+**/work/**/*analysis*.json
+**/dev/res/
+# 手动做的回放实验目录与工作区暂存目录（一次性，不属于系列赛记录）
+**/arena/control/replay-*/
+**/arena/control/resume-*/

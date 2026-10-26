@@ -1,0 +1,490 @@
+total on-target kicks: 484
+Counter({(True, 'other'): 140, (False, 'other'): 99, (False, 'goal'): 77, (True, 'save'): 73, (False, 'save'): 55, (True, 'goal'): 40})
+
+--- OUR shots ---
+r2-g1.json.gz  n1 f 581 from( 23.0,  9.7) d=20.0 yc= 15.1 kp( 23.2, 13.5) kd=19.9 -> goal
+r2-g1.json.gz  n1 f 793 from( 23.0,  9.6) d=20.0 yc= 15.0 kp( 26.7, 13.6) kd=16.4 -> goal
+r2-g1.json.gz  n1 f1026 from( 22.9, 16.2) d=20.1 yc= 10.8 kp( 27.4, 12.0) kd=15.6 -> goal
+r2-g1.json.gz  n1 f1175 from( 22.3, 12.5) d=20.7 yc= 12.5 kp( 24.2, 13.5) kd=18.8 -> other
+r2-g1.json.gz  n1 f1343 from( 22.9,  9.0) d=20.1 yc= 14.4 kp( 26.5, 12.7) kd=16.6 -> goal
+r2-g1.json.gz  n1 f1574 from( 23.0,  7.9) d=20.0 yc= 13.3 kp( 24.9, 10.5) kd=18.3 -> goal
+r2-g10.json.gz n2 f  70 from( 22.0, 13.1) d=21.0 yc= 15.3 kp(  3.3, 13.0) kd= 3.3 -> other
+r2-g11.json.gz n3 f  52 from( 20.8, 12.1) d=22.2 yc= 12.1 kp( 40.1, 12.6) kd= 2.9 -> other
+r2-g11.json.gz n3 f 781 from( 21.2,  1.6) d=21.8 yc= 11.3 kp( 40.7, 10.8) kd= 2.3 -> other
+r2-g11.json.gz n3 f 801 from( 21.6,  3.2) d=21.4 yc= 12.7 kp( 40.7, 11.6) kd= 2.6 -> other
+r2-g11.json.gz n3 f1014 from(  3.5,  6.1) d=39.5 yc= 14.5 kp( 40.7, 10.9) kd= 4.3 -> other
+r2-g11.json.gz n3 f1268 from( 20.8, 13.4) d=22.2 yc= 13.4 kp( 40.6, 12.9) kd= 2.4 -> other
+r2-g12.json.gz n4 f  58 from( 23.3, 12.7) d=22.3 yc= 15.0 kp(  4.5, 12.5) kd= 4.3 -> other
+r2-g12.json.gz n4 f 320 from( 20.7, 20.9) d=19.7 yc= 14.5 kp(  3.3, 15.2) kd= 2.4 -> save
+r2-g12.json.gz n4 f 532 from( 19.4, 22.9) d=18.4 yc= 14.6 kp(  3.3, 15.1) kd= 2.4 -> save
+r2-g12.json.gz n4 f 655 from( 22.9,  3.9) d=21.9 yc= 11.1 kp(  3.3, 11.5) kd= 2.3 -> other
+r2-g12.json.gz n4 f 940 from( 34.6, 16.7) d=33.6 yc= 11.5 kp(  3.3, 13.4) kd= 3.0 -> other
+r2-g12.json.gz n4 f1723 from(  9.0,  6.1) d= 8.0 yc= 15.1 kp(  5.0,  9.8) kd= 6.6 -> save
+r2-g12.json.gz n4 f1784 from(  8.9,  6.0) d= 7.9 yc= 14.7 kp(  5.0,  9.8) kd= 6.3 -> save
+r2-g12.json.gz n4 f1807 from( 11.3,  7.8) d=10.3 yc= 15.3 kp(  4.7, 10.2) kd= 6.3 -> goal
+r2-g12.json.gz n4 f2106 from( 24.9, 15.0) d=23.9 yc= 14.9 kp(  3.3, 14.4) kd= 2.3 -> other
+r2-g13.json.gz n1 f  64 from( 22.9, 12.5) d=20.1 yc= 12.5 kp( 24.9, 13.0) kd=18.1 -> other
+r2-g13.json.gz n1 f 255 from( 22.3, 12.4) d=20.7 yc= 12.4 kp( 28.1, 14.3) kd=15.0 -> other
+r2-g13.json.gz n1 f 509 from( 22.3, 12.2) d=20.7 yc= 12.2 kp( 27.0, 14.0) kd=16.2 -> goal
+r2-g13.json.gz n1 f 664 from( 22.3, 12.9) d=20.7 yc= 12.9 kp( 28.0, 14.9) kd=15.1 -> goal
+r2-g13.json.gz n1 f 852 from( 22.2, 12.2) d=20.8 yc= 12.2 kp( 27.8, 10.8) kd=15.2 -> other
+r2-g13.json.gz n1 f1080 from( 22.8, 13.1) d=20.2 yc= 13.1 kp( 24.8, 14.2) kd=18.2 -> goal
+r2-g13.json.gz n1 f1287 from( 22.3, 13.1) d=20.7 yc= 13.1 kp( 27.2, 14.9) kd=15.9 -> goal
+r2-g13.json.gz n1 f1441 from( 22.3, 12.6) d=20.7 yc= 12.6 kp( 27.6, 14.7) kd=15.5 -> goal
+r2-g13.json.gz n1 f1703 from( 22.9,  9.8) d=20.1 yc= 15.2 kp( 27.7, 13.3) kd=15.5 -> goal
+r2-g13.json.gz n1 f1862 from( 22.3, 12.8) d=20.7 yc= 12.8 kp( 28.9, 14.9) kd=14.2 -> goal
+r2-g13.json.gz n1 f2021 from( 22.7, 12.3) d=20.3 yc= 12.3 kp( 24.4, 13.2) kd=18.6 -> goal
+r2-g13.json.gz n1 f2218 from( 22.2, 11.4) d=20.8 yc= 11.4 kp( 25.4, 12.1) kd=17.7 -> other
+r2-g14.json.gz n6 f 461 from(  9.1,  5.8) d= 8.1 yc= 14.8 kp(  4.8,  9.2) kd= 6.8 -> save
+r2-g14.json.gz n6 f1192 from( 33.1, 14.3) d=32.1 yc= 14.4 kp(  3.3, 12.9) kd= 2.8 -> other
+r2-g14.json.gz n6 f1509 from(  2.3, 22.7) d= 1.3 yc= 10.4 kp(  2.2, 16.0) kd= 5.7 -> goal
+r2-g14.json.gz n6 f1512 from(  1.7, 20.3) d= 0.7 yc= 13.6 kp(  2.0, 15.8) kd= 2.4 -> goal
+r2-g15.json.gz n5 f  56 from( 21.7, 12.2) d=21.3 yc= 12.2 kp( 38.3, 10.9) kd= 4.8 -> other
+r2-g15.json.gz n5 f 783 from( 11.6, 22.5) d=31.4 yc= 14.1 kp( 40.7, 15.3) kd= 2.6 -> other
+r2-g15.json.gz n5 f1715 from( 21.6, 13.3) d=21.4 yc= 13.3 kp( 38.3, 10.9) kd= 5.2 -> other
+r2-g15.json.gz n5 f1905 from( 21.0, 12.1) d=22.0 yc= 12.1 kp( 37.9, 10.5) kd= 5.3 -> other
+r2-g15.json.gz n5 f2179 from( 40.4, 22.7) d= 2.6 yc= 10.6 kp( 39.9, 17.2) kd= 7.3 -> save
+r2-g15.json.gz n5 f2315 from( 40.1, 20.5) d= 2.9 yc= 11.7 kp( 40.8, 16.2) kd= 5.1 -> other
+r2-g16.json.gz n2 f  73 from( 23.2, 12.9) d=22.2 yc= 15.2 kp(  3.2, 12.9) kd= 3.2 -> other
+r2-g16.json.gz n2 f 506 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.2, 11.4) kd= 2.2 -> other
+r2-g16.json.gz n2 f 818 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.4, 10.7) kd= 2.4 -> other
+r2-g16.json.gz n2 f 841 from( 22.5,  3.5) d=21.5 yc= 13.0 kp(  3.2, 11.7) kd= 2.6 -> other
+r2-g16.json.gz n2 f1543 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.3, 11.1) kd= 2.3 -> other
+r2-g17.json.gz n3 f  53 from( 20.8, 12.1) d=22.2 yc= 12.1 kp( 37.4, 11.5) kd= 5.6 -> save
+r2-g17.json.gz n3 f 333 from( 21.8,  6.1) d=21.2 yc= 10.6 kp( 40.7, 10.8) kd= 2.3 -> other
+r2-g17.json.gz n3 f1279 from( 21.8, 12.1) d=21.2 yc= 12.1 kp( 39.3, 12.3) kd= 3.7 -> other
+r2-g17.json.gz n3 f1670 from( 21.1, 12.2) d=21.9 yc= 12.2 kp( 37.6, 11.7) kd= 5.4 -> save
+r2-g18.json.gz n4 f 777 from( 22.6, 14.1) d=21.6 yc= 14.0 kp(  4.2, 12.7) kd= 3.5 -> other
+r2-g18.json.gz n4 f 995 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.3, 10.6) kd= 2.4 -> other
+r2-g18.json.gz n4 f1021 from( 21.9,  3.8) d=20.9 yc= 13.1 kp(  3.3, 11.5) kd= 2.8 -> other
+r2-g18.json.gz n4 f1199 from( 29.8, 12.1) d=28.8 yc= 13.3 kp(  3.3, 12.9) kd= 2.4 -> other
+r2-g18.json.gz n4 f2098 from( 23.1, 12.6) d=22.1 yc= 14.9 kp(  4.1, 12.5) kd= 3.9 -> other
+r2-g19.json.gz n1 f1126 from( 23.3, 24.3) d=19.7 yc= 14.3 kp( 24.8, 22.4) kd=19.9 -> other
+r2-g19.json.gz n1 f1174 from( 24.7, 21.3) d=18.3 yc= 11.6 kp( 22.9, 19.7) kd=21.7 -> other
+r2-g2.json.gz  n6 f  56 from( 23.1, 14.0) d=22.1 yc= 14.0 kp(  5.1,  8.9) kd= 6.6 -> other
+r2-g2.json.gz  n6 f 297 from(  3.7, 22.1) d= 2.7 yc= 13.8 kp(  3.1, 17.8) kd= 4.5 -> goal
+r2-g2.json.gz  n6 f 300 from(  2.5, 20.3) d= 1.5 yc= 13.3 kp(  3.4, 17.5) kd= 4.8 -> goal
+r2-g2.json.gz  n6 f 741 from(  1.6, 20.0) d= 0.6 yc= 13.9 kp(  2.5, 14.9) kd= 1.8 -> save
+r2-g2.json.gz  n6 f 742 from(  1.4, 19.5) d= 0.4 yc= 13.4 kp(  2.5, 15.0) kd= 2.3 -> save
+r2-g2.json.gz  n6 f 929 from(  2.3, 22.7) d= 1.3 yc= 10.5 kp(  1.8, 16.3) kd= 5.8 -> save
+r2-g2.json.gz  n6 f1681 from(  2.0, 20.9) d= 1.0 yc= 11.0 kp(  1.2, 15.4) kd= 4.4 -> save
+r2-g2.json.gz  n6 f2061 from( 35.0,  7.6) d=34.0 yc= 15.6 kp(  3.3, 12.4) kd= 3.9 -> goal
+r2-g2.json.gz  n6 f2207 from( 10.6, 19.0) d= 9.6 yc= 14.8 kp(  4.3, 15.4) kd= 3.3 -> goal
+r2-g20.json.gz n6 f 381 from( 32.1, 11.4) d=31.1 yc= 14.5 kp(  3.2, 14.3) kd= 2.3 -> save
+r2-g20.json.gz n6 f 465 from( 13.0,  3.5) d=12.0 yc= 14.3 kp(  3.4, 10.7) kd= 4.3 -> save
+r2-g20.json.gz n6 f 577 from( 23.1, 22.2) d=22.1 yc= 15.1 kp(  3.3, 14.3) kd= 2.4 -> other
+r2-g20.json.gz n6 f 621 from( 19.0, 19.5) d=18.0 yc= 15.7 kp(  3.3, 15.1) kd= 2.4 -> other
+r2-g20.json.gz n6 f 721 from( 32.2, 18.5) d=31.2 yc= 11.7 kp(  3.3, 13.4) kd= 2.9 -> other
+r2-g20.json.gz n6 f1915 from(  5.8, 19.9) d= 4.8 yc= 15.6 kp(  3.9, 17.6) kd= 3.6 -> other
+r2-g20.json.gz n6 f2313 from(  3.8, 22.5) d= 2.8 yc= 14.0 kp(  3.1, 15.0) kd= 2.3 -> goal
+r2-g3.json.gz  n5 f 475 from( 20.8, 20.1) d=22.2 yc= 12.9 kp( 40.7, 15.3) kd= 3.3 -> other
+r2-g3.json.gz  n5 f1664 from( 34.1,  6.8) d= 8.9 yc= 10.8 kp( 40.4, 10.6) kd= 2.6 -> goal
+r2-g4.json.gz  n2 f  75 from( 21.9, 12.8) d=20.9 yc= 15.0 kp(  3.3, 12.9) kd= 3.2 -> other
+r2-g4.json.gz  n2 f 291 from( 21.5, 14.4) d=20.5 yc= 14.4 kp(  3.3, 13.2) kd= 2.6 -> other
+r2-g4.json.gz  n2 f1426 from( 22.1,  5.9) d=21.1 yc= 15.3 kp(  3.3, 10.7) kd= 5.2 -> other
+r2-g4.json.gz  n2 f1862 from( 22.8, 24.4) d=21.8 yc= 14.7 kp(  3.3, 15.1) kd= 2.3 -> other
+r2-g4.json.gz  n2 f1881 from( 22.5, 23.0) d=21.5 yc= 13.4 kp(  3.3, 14.1) kd= 2.4 -> other
+r2-g4.json.gz  n2 f1901 from( 20.8, 22.0) d=19.8 yc= 15.5 kp(  3.3, 15.2) kd= 2.3 -> other
+r2-g4.json.gz  n2 f2217 from( 22.1,  5.2) d=21.1 yc= 14.6 kp(  3.3, 10.8) kd= 4.4 -> other
+r2-g5.json.gz  n3 f  58 from( 20.9, 12.4) d=22.1 yc= 12.4 kp( 38.9, 12.1) kd= 4.1 -> other
+r2-g5.json.gz  n3 f 221 from( 20.3,  6.1) d=22.7 yc= 10.9 kp( 40.7, 10.7) kd= 2.3 -> other
+r2-g5.json.gz  n3 f 557 from(  7.0,  8.1) d=36.0 yc= 11.4 kp( 40.7, 12.6) kd= 2.6 -> other
+r2-g5.json.gz  n3 f 566 from(  8.4,  8.4) d=34.6 yc= 14.8 kp( 40.7, 12.6) kd= 3.2 -> other
+r2-g6.json.gz  n4 f 208 from( 32.8, 13.6) d=31.8 yc= 10.3 kp(  3.3, 13.1) kd= 3.6 -> other
+r2-g6.json.gz  n4 f 470 from( 23.7, 21.6) d=22.7 yc= 14.2 kp(  3.3, 15.4) kd= 2.6 -> other
+r2-g6.json.gz  n4 f 580 from( 23.7,  9.6) d=22.7 yc= 14.5 kp(  3.4, 12.5) kd= 3.1 -> other
+r2-g6.json.gz  n4 f 822 from( 23.7, 22.4) d=22.7 yc= 15.0 kp(  3.3, 15.0) kd= 2.3 -> other
+r2-g6.json.gz  n4 f1109 from( 22.4, 19.6) d=21.4 yc= 15.1 kp(  3.3, 15.4) kd= 2.3 -> other
+r2-g6.json.gz  n4 f1741 from( 22.9, 12.9) d=21.9 yc= 15.2 kp(  3.8, 12.7) kd= 3.8 -> other
+r2-g6.json.gz  n4 f1910 from( 10.6, 17.0) d= 9.6 yc= 15.0 kp(  3.5, 13.5) kd= 3.0 -> save
+r2-g7.json.gz  n1 f  74 from( 22.7, 13.1) d=20.3 yc= 13.1 kp( 25.5, 12.8) kd=17.5 -> goal
+r2-g7.json.gz  n1 f 364 from( 22.3, 10.9) d=20.7 yc= 10.9 kp( 27.0, 14.6) kd=16.4 -> goal
+r2-g7.json.gz  n1 f 625 from( 23.0,  7.6) d=20.0 yc= 12.9 kp( 26.6, 11.4) kd=16.5 -> goal
+r2-g7.json.gz  n1 f 783 from( 22.3, 12.7) d=20.7 yc= 12.7 kp( 26.3, 14.2) kd=16.8 -> goal
+r2-g7.json.gz  n1 f1387 from( 22.3, 11.0) d=20.7 yc= 11.0 kp( 27.9, 14.5) kd=15.5 -> goal
+r2-g7.json.gz  n1 f1628 from( 22.2, 11.0) d=20.8 yc= 11.0 kp( 25.5, 13.7) kd=17.7 -> goal
+r2-g7.json.gz  n1 f1991 from( 22.2, 14.8) d=20.8 yc= 14.8 kp( 27.9, 14.3) kd=15.1 -> other
+r2-g8.json.gz  n6 f 282 from(  5.9, 19.8) d= 4.9 yc= 15.4 kp(  4.4, 18.3) kd= 4.5 -> save
+r2-g8.json.gz  n6 f 481 from(  5.2,  6.0) d= 4.2 yc= 15.5 kp(  3.9,  9.8) kd= 6.4 -> save
+r2-g8.json.gz  n6 f 601 from(  4.3, 19.9) d= 3.3 yc= 15.4 kp(  3.2, 15.7) kd= 2.3 -> save
+r2-g8.json.gz  n6 f1041 from( 35.0,  9.7) d=34.0 yc= 12.0 kp(  3.3, 12.8) kd= 2.4 -> save
+r2-g8.json.gz  n6 f1141 from(  2.4, 21.6) d= 1.4 yc= 15.0 kp(  2.0, 16.2) kd= 1.5 -> save
+r2-g9.json.gz  n5 f 821 from( 40.3, 21.4) d= 2.7 yc= 13.0 kp( 40.9, 17.4) kd= 4.9 -> save
+r2-g9.json.gz  n5 f 906 from( 24.0,  6.0) d=19.0 yc= 12.2 kp( 40.7, 11.7) kd= 2.3 -> other
+r2-g9.json.gz  n5 f1581 from( 11.2, 17.8) d=31.8 yc= 10.5 kp( 40.7, 15.2) kd= 5.2 -> other
+r2-g9.json.gz  n5 f1910 from( 23.0, 23.0) d=20.0 yc= 11.5 kp( 40.7, 15.2) kd= 4.3 -> save
+r2-g9.json.gz  n5 f2001 from( 38.1, 20.2) d= 4.9 yc= 11.8 kp( 40.3, 14.9) kd= 4.1 -> save
+r2-g9.json.gz  n5 f2309 from( 42.0, 20.6) d= 1.0 yc= 11.0 kp( 42.0, 16.2) kd= 5.3 -> save
+r3-g1.json.gz  n5 f  57 from( 21.0, 12.6) d=22.0 yc= 12.6 kp( 38.4, 11.9) kd= 4.6 -> other
+r3-g1.json.gz  n5 f 695 from( 21.4, 12.6) d=21.6 yc= 12.6 kp( 38.7, 12.2) kd= 4.4 -> other
+r3-g1.json.gz  n5 f 882 from( 33.3,  6.1) d= 9.7 yc= 10.4 kp( 40.7, 10.6) kd= 2.3 -> goal
+r3-g1.json.gz  n5 f1861 from( 42.1,  5.4) d= 0.9 yc= 14.2 kp( 42.0,  9.8) kd= 4.5 -> save
+r3-g1.json.gz  n5 f1941 from( 42.2,  5.6) d= 0.8 yc= 13.3 kp( 42.0,  9.8) kd= 3.6 -> save
+r3-g1.json.gz  n5 f2062 from( 39.0,  5.8) d= 4.0 yc= 11.3 kp( 40.4,  9.8) kd= 3.0 -> other
+r3-g1.json.gz  n5 f2501 from( 42.6,  6.5) d= 0.4 yc= 12.2 kp( 41.3, 10.3) kd= 2.5 -> other
+r3-g1.json.gz  n5 f2561 from( 42.2,  6.5) d= 0.8 yc= 14.5 kp( 41.1, 10.8) kd= 4.2 -> other
+r3-g10.json.gz n4 f 451 from( 34.0,  8.8) d=33.0 yc= 12.2 kp(  3.3, 11.9) kd= 2.3 -> other
+r3-g10.json.gz n4 f 480 from( 24.8,  9.8) d=23.8 yc= 12.3 kp(  3.3, 13.0) kd= 2.4 -> other
+r3-g10.json.gz n4 f 729 from( 23.6, 21.1) d=22.6 yc= 13.7 kp(  3.2, 14.2) kd= 2.3 -> other
+r3-g10.json.gz n4 f 871 from( 22.3,  5.1) d=21.3 yc= 14.6 kp(  3.3, 11.8) kd= 3.7 -> other
+r3-g10.json.gz n4 f 879 from( 21.7,  5.3) d=20.7 yc= 14.5 kp(  3.3, 10.7) kd= 4.5 -> other
+r3-g10.json.gz n4 f1497 from( 22.8, 24.4) d=21.8 yc= 14.7 kp(  3.3, 15.4) kd= 2.4 -> other
+r3-g10.json.gz n4 f1521 from( 22.0, 22.1) d=21.0 yc= 15.2 kp(  3.3, 14.3) kd= 2.5 -> other
+r3-g10.json.gz n4 f1824 from(  1.8,  5.5) d= 0.8 yc= 12.9 kp(  1.9,  9.7) kd= 3.3 -> save
+r3-g10.json.gz n4 f1965 from(  1.8,  6.0) d= 0.8 yc= 13.6 kp(  2.9,  9.5) kd= 4.5 -> save
+r3-g10.json.gz n4 f2001 from( 10.0, 10.3) d= 9.0 yc= 15.5 kp(  4.4, 10.3) kd= 6.3 -> goal
+r3-g11.json.gz n1 f1123 from( 23.6,  1.8) d=19.4 yc= 13.2 kp( 23.2,  3.9) kd=21.9 -> other
+r3-g11.json.gz n1 f2087 from( 23.3, 24.2) d=19.7 yc= 14.0 kp( 24.9, 22.1) kd=19.8 -> goal
+r3-g11.json.gz n1 f2137 from( 24.8, 21.0) d=18.2 yc= 11.1 kp( 22.7, 19.2) kd=21.9 -> goal
+r3-g12.json.gz n6 f  61 from( 22.9, 11.7) d=21.9 yc= 14.0 kp(  4.4, 10.3) kd= 5.0 -> other
+r3-g12.json.gz n6 f 643 from(  2.5, 22.0) d= 1.5 yc= 15.0 kp(  2.6, 16.7) kd= 2.3 -> other
+r3-g12.json.gz n6 f 951 from(  3.6, 22.8) d= 2.6 yc= 14.6 kp(  2.4, 16.4) kd= 2.2 -> save
+r3-g12.json.gz n6 f 976 from(  2.3, 22.7) d= 1.3 yc= 10.7 kp(  2.0, 17.4) kd= 6.7 -> save
+r3-g12.json.gz n6 f1081 from(  2.4, 20.6) d= 1.4 yc= 14.1 kp(  2.7, 14.6) kd= 1.8 -> save
+r3-g12.json.gz n6 f1530 from(  3.5, 22.8) d= 2.5 yc= 15.1 kp(  3.2, 16.7) kd= 2.7 -> save
+r3-g12.json.gz n6 f1533 from(  2.3, 20.4) d= 1.3 yc= 14.2 kp(  2.7, 16.6) kd= 2.9 -> save
+r3-g12.json.gz n6 f1965 from(  1.8, 19.9) d= 0.8 yc= 12.1 kp(  2.0, 16.2) kd= 4.2 -> save
+r3-g12.json.gz n6 f2033 from(  3.9, 22.7) d= 2.9 yc= 13.8 kp(  3.0, 16.7) kd= 3.5 -> save
+r3-g12.json.gz n6 f2036 from(  3.4, 20.0) d= 2.4 yc= 14.7 kp(  2.7, 16.4) kd= 2.4 -> save
+r3-g13.json.gz n5 f 280 from( 38.1, 19.7) d= 4.9 yc= 11.2 kp( 39.8, 18.1) kd= 7.6 -> save
+r3-g13.json.gz n5 f1636 from( 38.1, 19.7) d= 4.9 yc= 11.2 kp( 40.1, 17.5) kd= 7.0 -> save
+r3-g13.json.gz n5 f1701 from( 29.9, 15.4) d=13.1 yc= 11.1 kp( 40.7, 13.6) kd= 3.4 -> other
+r3-g13.json.gz n5 f2422 from( 38.5,  6.2) d= 4.5 yc= 11.2 kp( 38.9,  9.8) kd= 4.3 -> goal
+r3-g14.json.gz n2 f 312 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.2, 10.7) kd= 2.3 -> other
+r3-g14.json.gz n2 f 341 from( 21.7,  3.7) d=20.7 yc= 12.9 kp(  3.4, 11.9) kd= 2.5 -> other
+r3-g14.json.gz n2 f 361 from( 20.2,  4.8) d=19.2 yc= 13.4 kp(  3.4, 10.8) kd= 3.4 -> other
+r3-g14.json.gz n2 f1152 from( 21.8, 12.7) d=20.8 yc= 14.9 kp(  3.3, 12.9) kd= 3.0 -> other
+r3-g14.json.gz n2 f2169 from( 21.3,  6.0) d=20.3 yc= 15.0 kp(  3.3, 11.6) kd= 4.1 -> other
+r3-g15.json.gz n3 f 654 from( 21.2,  1.6) d=21.8 yc= 11.3 kp( 40.6, 10.7) kd= 2.5 -> other
+r3-g15.json.gz n3 f1615 from( 21.2,  1.6) d=21.8 yc= 11.3 kp( 40.7, 10.6) kd= 2.4 -> other
+r3-g15.json.gz n3 f2242 from( 21.2, 24.4) d=21.8 yc= 14.7 kp( 40.7, 15.0) kd= 2.3 -> other
+r3-g15.json.gz n3 f2261 from( 21.9, 22.7) d=21.1 yc= 13.3 kp( 40.7, 14.2) kd= 2.5 -> other
+r3-g15.json.gz n3 f2681 from( 21.2,  1.6) d=21.8 yc= 11.3 kp( 40.7, 10.8) kd= 2.4 -> other
+r3-g16.json.gz n4 f  63 from( 21.8, 14.1) d=20.8 yc= 14.1 kp(  3.9, 12.9) kd= 3.1 -> other
+r3-g16.json.gz n4 f 604 from( 22.6, 19.9) d=21.6 yc= 15.3 kp(  3.3, 15.1) kd= 2.3 -> other
+r3-g16.json.gz n4 f 764 from( 23.5, 12.9) d=22.5 yc= 15.3 kp(  3.3, 11.3) kd= 4.6 -> other
+r3-g16.json.gz n4 f1061 from( 24.7, 15.7) d=23.7 yc= 13.3 kp(  3.2, 13.3) kd= 2.2 -> other
+r3-g16.json.gz n4 f1279 from( 22.6, 13.7) d=21.6 yc= 13.7 kp(  3.3, 13.0) kd= 2.4 -> other
+r3-g16.json.gz n4 f1497 from( 19.8,  4.5) d=18.8 yc= 15.4 kp(  3.3, 10.8) kd= 5.1 -> save
+r3-g16.json.gz n4 f1570 from( 13.5,  3.1) d=12.5 yc= 14.4 kp(  3.3, 10.6) kd= 4.4 -> other
+r3-g16.json.gz n4 f1741 from( 32.0, 11.2) d=31.0 yc= 14.4 kp(  3.3, 12.2) kd= 3.2 -> goal
+r3-g16.json.gz n4 f1861 from(  9.5,  6.3) d= 8.5 yc= 14.0 kp(  5.0,  9.8) kd= 5.8 -> goal
+r3-g16.json.gz n4 f2188 from( 23.8, 11.4) d=22.8 yc= 13.8 kp(  3.3, 11.9) kd= 3.0 -> other
+r3-g16.json.gz n4 f2390 from( 23.4, 14.4) d=22.4 yc= 14.4 kp(  3.3, 13.4) kd= 2.5 -> other
+r3-g17.json.gz n1 f 382 from( 23.6,  1.8) d=19.4 yc= 13.3 kp( 23.0,  3.9) kd=22.1 -> goal
+r3-g17.json.gz n1 f 596 from( 22.3, 15.5) d=20.7 yc= 15.5 kp( 25.7, 14.7) kd=17.3 -> goal
+r3-g18.json.gz n6 f  81 from( 23.8, 12.5) d=22.8 yc= 14.9 kp(  3.6, 12.8) kd= 3.4 -> other
+r3-g18.json.gz n6 f 541 from( 23.6, 13.1) d=22.6 yc= 15.4 kp(  3.3, 10.8) kd= 5.1 -> other
+r3-g18.json.gz n6 f1681 from( 41.5, 20.8) d=40.5 yc= 14.4 kp(  3.3, 14.0) kd= 2.4 -> other
+r3-g18.json.gz n6 f2291 from( 21.1, 13.4) d=20.1 yc= 13.4 kp(  3.3, 12.4) kd= 2.6 -> save
+r3-g19.json.gz n5 f 134 from(  5.8, 21.4) d=37.2 yc= 13.5 kp( 40.6, 13.8) kd= 2.4 -> save
+r3-g19.json.gz n5 f 184 from( 13.7, 18.2) d=29.3 yc= 10.3 kp( 40.7, 13.6) kd= 4.0 -> save
+r3-g19.json.gz n5 f 237 from( 31.3, 13.2) d=11.7 yc= 13.2 kp( 40.7, 13.2) kd= 2.3 -> save
+r3-g19.json.gz n5 f 691 from( 22.1, 14.0) d=20.9 yc= 14.0 kp( 38.5, 12.2) kd= 4.9 -> other
+r3-g19.json.gz n5 f 878 from( 33.3,  6.0) d= 9.7 yc= 10.4 kp( 40.7, 10.7) kd= 2.3 -> save
+r3-g19.json.gz n5 f1070 from( 32.7, 15.9) d=10.3 yc= 11.3 kp( 40.7, 13.8) kd= 3.4 -> save
+r3-g19.json.gz n5 f1273 from( 21.3, 14.0) d=21.7 yc= 14.0 kp( 38.9, 12.3) kd= 4.5 -> other
+r3-g19.json.gz n5 f1481 from( 25.8, 15.8) d=17.2 yc= 10.2 kp( 40.7, 13.5) kd= 4.0 -> goal
+r3-g19.json.gz n5 f1619 from( 21.5, 12.6) d=21.5 yc= 12.6 kp( 38.8, 12.1) kd= 4.2 -> other
+r3-g19.json.gz n5 f2401 from( 41.8, 22.6) d= 1.2 yc= 11.4 kp( 41.8, 16.8) kd= 5.5 -> save
+r3-g19.json.gz n5 f2405 from( 41.7, 19.8) d= 1.3 yc= 13.6 kp( 42.2, 17.2) kd= 3.8 -> save
+r3-g19.json.gz n5 f2594 from( 40.1, 22.7) d= 2.9 yc= 13.8 kp( 40.5, 16.0) kd= 3.2 -> save
+r3-g19.json.gz n5 f2595 from( 40.2, 21.0) d= 2.8 yc= 12.3 kp( 40.7, 15.8) kd= 4.2 -> save
+r3-g19.json.gz n5 f2721 from( 42.7, 19.5) d= 0.3 yc= 12.4 kp( 41.2, 14.2) kd= 2.6 -> save
+r3-g2.json.gz  n2 f2239 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.3, 10.7) kd= 2.4 -> other
+r3-g20.json.gz n2 f 265 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.3, 11.0) kd= 2.3 -> other
+r3-g20.json.gz n2 f 490 from( 39.7, 18.8) d=38.7 yc= 14.8 kp(  3.2, 14.2) kd= 2.3 -> other
+r3-g3.json.gz  n3 f 271 from( 21.2,  1.6) d=21.8 yc= 11.3 kp( 40.7, 10.6) kd= 2.4 -> other
+r3-g3.json.gz  n3 f1556 from( 21.2,  1.6) d=21.8 yc= 11.3 kp( 40.7, 10.6) kd= 2.4 -> other
+r3-g3.json.gz  n3 f1970 from( 21.2, 24.4) d=21.8 yc= 14.7 kp( 40.7, 15.3) kd= 2.4 -> other
+r3-g3.json.gz  n3 f2251 from( 22.4,  6.3) d=20.6 yc= 10.6 kp( 40.7, 10.8) kd= 2.3 -> save
+r3-g4.json.gz  n4 f 372 from( 20.6, 19.7) d=19.6 yc= 15.6 kp(  3.3, 15.2) kd= 2.3 -> other
+r3-g4.json.gz  n4 f 554 from( 20.0, 19.7) d=19.0 yc= 15.7 kp(  3.3, 15.3) kd= 2.3 -> save
+r3-g4.json.gz  n4 f 704 from( 23.7, 12.9) d=22.7 yc= 15.2 kp(  3.3, 11.3) kd= 4.5 -> other
+r3-g5.json.gz  n1 f 114 from( 22.9, 16.8) d=20.1 yc= 11.4 kp( 26.3, 12.9) kd=16.7 -> goal
+r3-g5.json.gz  n1 f1314 from( 22.3, 15.1) d=20.7 yc= 15.1 kp( 28.9, 12.9) kd=14.2 -> other
+r3-g6.json.gz  n6 f 858 from(  3.8, 22.7) d= 2.8 yc= 14.2 kp(  3.0, 14.5) kd= 2.0 -> save
+r3-g6.json.gz  n6 f 921 from( 10.9, 16.3) d= 9.9 yc= 15.3 kp(  3.3, 12.5) kd= 3.7 -> save
+r3-g6.json.gz  n6 f1161 from(  5.8, 20.5) d= 4.8 yc= 15.3 kp(  4.3, 16.1) kd= 3.5 -> goal
+r3-g6.json.gz  n6 f1275 from( 23.3, 12.1) d=22.3 yc= 14.5 kp(  4.8,  9.4) kd= 6.4 -> other
+r3-g6.json.gz  n6 f1421 from( 33.7, 13.4) d=32.7 yc= 13.4 kp(  3.3, 13.0) kd= 2.3 -> other
+r3-g6.json.gz  n6 f2158 from( 22.9, 12.2) d=21.9 yc= 14.5 kp(  5.0,  8.7) kd= 7.1 -> other
+r3-g6.json.gz  n6 f2360 from( 22.3, 11.6) d=21.3 yc= 13.8 kp(  4.5, 10.0) kd= 5.1 -> other
+r3-g6.json.gz  n6 f2381 from( 23.1, 14.0) d=22.1 yc= 14.0 kp(  3.7, 13.0) kd= 2.9 -> other
+r3-g7.json.gz  n5 f  68 from( 21.2, 13.1) d=21.8 yc= 13.1 kp( 39.7, 12.1) kd= 3.4 -> other
+r3-g7.json.gz  n5 f 899 from( 10.1, 23.1) d=32.9 yc= 12.4 kp( 40.7, 14.0) kd= 2.8 -> other
+r3-g7.json.gz  n5 f1301 from( 21.4, 11.8) d=21.6 yc= 11.8 kp( 40.7, 12.6) kd= 2.5 -> other
+r3-g7.json.gz  n5 f1541 from( 38.2, 19.6) d= 4.8 yc= 11.2 kp( 39.8, 17.9) kd= 7.4 -> save
+r3-g7.json.gz  n5 f1707 from( 33.9,  7.0) d= 9.1 yc= 11.0 kp( 39.8, 10.7) kd= 3.2 -> other
+r3-g8.json.gz  n2 f  78 from( 23.1, 12.6) d=22.1 yc= 15.0 kp(  3.3, 12.9) kd= 3.1 -> other
+r3-g8.json.gz  n2 f 457 from( 20.7,  5.8) d=19.7 yc= 14.5 kp(  3.2, 10.7) kd= 4.4 -> save
+r3-g8.json.gz  n2 f1753 from( 22.8,  1.6) d=21.8 yc= 11.3 kp(  3.2, 10.6) kd= 2.4 -> other
+r3-g8.json.gz  n2 f2207 from( 23.9,  5.9) d=22.9 yc= 10.8 kp(  3.2, 10.7) kd= 2.2 -> other
+r3-g9.json.gz  n3 f  68 from( 21.0, 12.3) d=22.0 yc= 12.3 kp( 40.0, 12.5) kd= 3.0 -> other
+r3-g9.json.gz  n3 f 342 from( 21.0, 12.3) d=22.0 yc= 12.3 kp( 40.0, 12.5) kd= 3.0 -> other
+r3-g9.json.gz  n3 f 788 from( 21.6,  5.4) d=21.4 yc= 12.4 kp( 40.7, 11.0) kd= 2.6 -> other
+r3-g9.json.gz  n3 f1504 from( 20.3,  3.5) d=22.7 yc= 10.9 kp( 40.7, 11.4) kd= 2.4 -> other
+r1-g2.json.gz  n2 f 514 from( 34.9, 15.4) d=33.9 yc= 15.4 kp(  3.3, 13.6) kd= 2.9 -> other
+r1-g3.json.gz  n3 f 215 from( 27.1, 19.5) d=15.9 yc= 10.4 kp( 40.7, 15.3) kd= 5.4 -> save
+r1-g3.json.gz  n3 f1469 from( 20.7, 13.6) d=22.3 yc= 10.4 kp( 40.7, 13.2) kd= 3.6 -> other
+r1-g3.json.gz  n3 f1729 from( 31.0,  3.4) d=12.0 yc= 10.3 kp( 40.7, 10.6) kd= 2.3 -> other
+r1-g3.json.gz  n3 f1988 from(  4.5, 23.3) d=38.5 yc= 12.9 kp( 40.7, 15.2) kd= 3.2 -> other
+r1-g3.json.gz  n3 f2206 from( 17.8,  4.7) d=25.2 yc= 10.5 kp( 40.7, 10.6) kd= 2.3 -> other
+r1-g4.json.gz  n4 f 491 from( 34.4,  6.2) d=33.4 yc= 13.3 kp(  3.3, 12.2) kd= 2.5 -> other
+r1-g4.json.gz  n4 f 551 from( 19.7,  7.5) d=18.7 yc= 12.5 kp(  3.3, 10.6) kd= 2.9 -> other
+r1-g4.json.gz  n4 f 561 from( 18.8,  8.1) d=17.8 yc= 12.9 kp(  3.3, 10.8) kd= 3.1 -> other
+r1-g4.json.gz  n4 f1022 from( 31.0, 14.6) d=30.0 yc= 14.2 kp(  3.3, 13.1) kd= 2.5 -> other
+r1-g4.json.gz  n4 f1097 from( 24.0, 12.0) d=23.0 yc= 10.6 kp(  3.3, 10.6) kd= 2.3 -> other
+r1-g4.json.gz  n4 f1167 from( 17.0, 19.5) d=16.0 yc= 10.3 kp(  3.3, 15.2) kd= 5.4 -> other
+r1-g4.json.gz  n4 f2178 from( 13.8, 18.1) d=12.8 yc= 14.7 kp(  3.3, 14.6) kd= 2.3 -> save
+r1-g4.json.gz  n4 f2326 from( 33.1, 17.2) d=32.1 yc= 15.5 kp(  3.3, 13.7) kd= 2.9 -> other
+r1-g5.json.gz  n5 f 110 from( 26.7, 21.0) d=16.3 yc= 11.6 kp( 40.6, 15.1) kd= 4.3 -> save
+r1-g5.json.gz  n5 f 192 from( 32.0,  8.9) d=11.0 yc= 11.2 kp( 39.3, 13.2) kd= 4.2 -> save
+r1-g5.json.gz  n5 f 490 from( 38.5,  2.6) d= 4.5 yc= 10.4 kp( 40.1,  9.8) kd= 3.0 -> save
+r1-g5.json.gz  n5 f1158 from( 32.7, 20.0) d=10.3 yc= 10.7 kp( 40.6, 15.2) kd= 5.1 -> save
+r1-g5.json.gz  n5 f1317 from( 25.4, 21.5) d=17.6 yc= 11.4 kp( 40.6, 15.2) kd= 4.5 -> save
+r1-g5.json.gz  n5 f1793 from( 29.1, 22.5) d=13.9 yc= 12.4 kp( 40.7, 15.4) kd= 3.7 -> save
+r1-g5.json.gz  n5 f2326 from( 31.6, 11.5) d=11.4 yc= 13.9 kp( 40.7, 12.3) kd= 2.8 -> save
+r1-g6.json.gz  n6 f 253 from( 16.6, 21.6) d=15.6 yc= 10.3 kp(  3.4, 15.2) kd= 5.4 -> save
+r1-g6.json.gz  n6 f 393 from( 21.6, 13.4) d=20.6 yc= 13.4 kp(  3.3, 13.0) kd= 2.4 -> save
+r1-g6.json.gz  n6 f 412 from( 11.8, 13.1) d=10.8 yc= 12.0 kp(  4.1, 13.3) kd= 3.4 -> save
+r1-g6.json.gz  n6 f 578 from( 20.8, 11.7) d=19.8 yc= 11.7 kp(  3.3, 12.5) kd= 2.5 -> save
+r1-g6.json.gz  n6 f 596 from( 11.4, 12.3) d=10.4 yc= 14.6 kp(  4.3, 12.2) kd= 4.1 -> save
+r1-g6.json.gz  n6 f 791 from( 11.8, 13.9) d=10.8 yc= 15.0 kp(  3.2, 14.0) kd= 2.5 -> save
+r1-g6.json.gz  n6 f 980 from( 22.8, 15.1) d=21.8 yc= 10.4 kp(  3.4, 13.6) kd= 4.0 -> other
+r1-g6.json.gz  n6 f1538 from( 20.3, 12.2) d=19.3 yc= 12.2 kp(  3.4, 13.1) kd= 2.5 -> other
+r1-g6.json.gz  n6 f1894 from( 14.1, 19.7) d=13.1 yc= 12.1 kp(  3.4, 15.2) kd= 3.8 -> save
+r1-g6.json.gz  n6 f1930 from( 12.5, 12.2) d=11.5 yc= 12.2 kp(  4.3, 13.1) kd= 3.4 -> save
+
+--- THEIR shots ---
+r2-g10.json.gz n2 f 162 from( 31.1,  7.0) d=11.9 yc= 15.4 kp( 35.6,  8.6) kd=10.0 -> goal
+r2-g10.json.gz n2 f 365 from( 31.5,  6.9) d=11.5 yc= 15.3 kp( 35.7,  8.6) kd=10.0 -> goal
+r2-g10.json.gz n2 f 580 from( 32.7,  6.3) d=10.3 yc= 15.4 kp( 36.1,  7.8) kd=10.2 -> goal
+r2-g11.json.gz n3 f 149 from( 12.1, 19.4) d=11.1 yc= 10.7 kp(  8.2, 17.7) kd=10.1 -> goal
+r2-g11.json.gz n3 f 988 from(  3.8,  2.4) d= 2.8 yc= 15.4 kp(  2.6,  5.0) kd=10.5 -> other
+r2-g11.json.gz n3 f1561 from( 14.1, 13.2) d=13.1 yc= 15.4 kp(  9.6, 13.0) kd= 8.9 -> goal
+r2-g12.json.gz n4 f 568 from(  6.9, 17.0) d=36.1 yc= 15.6 kp( 32.1, 14.4) kd=11.0 -> other
+r2-g12.json.gz n4 f1590 from( 39.2, 21.2) d= 3.8 yc= 10.7 kp( 40.7, 19.1) kd= 8.7 -> save
+r2-g12.json.gz n4 f1661 from( 28.4, 12.0) d=14.6 yc= 12.5 kp( 34.4, 13.0) kd= 8.6 -> other
+r2-g13.json.gz n1 f  81 from( 23.3, 14.1) d=22.3 yc= 15.3 kp( 21.8, 12.8) kd=21.0 -> goal
+r2-g13.json.gz n1 f 369 from( 16.4, 19.2) d=15.4 yc= 15.4 kp( 16.4, 18.1) kd=15.6 -> goal
+r2-g13.json.gz n1 f 962 from( 16.4,  7.2) d=15.4 yc= 10.7 kp( 17.0,  8.3) kd=16.1 -> goal
+r2-g14.json.gz n6 f 144 from( 30.2,  5.6) d=12.8 yc= 14.4 kp( 34.2,  7.2) kd=11.4 -> other
+r2-g14.json.gz n6 f 903 from( 23.9, 10.1) d=19.1 yc= 10.6 kp( 33.2, 14.0) kd=10.4 -> goal
+r2-g14.json.gz n6 f1124 from( 30.0,  5.4) d=13.0 yc= 10.6 kp( 34.0,  7.2) kd= 9.6 -> other
+r2-g14.json.gz n6 f1171 from( 23.8, 12.8) d=19.2 yc= 15.3 kp( 32.8, 11.0) kd=11.1 -> other
+r2-g14.json.gz n6 f1694 from( 31.8,  8.1) d=11.2 yc= 15.3 kp( 36.0,  8.7) kd= 9.6 -> goal
+r2-g14.json.gz n6 f1880 from( 30.1,  5.6) d=12.9 yc= 10.7 kp( 34.0,  7.4) kd= 9.6 -> save
+r2-g14.json.gz n6 f1925 from( 24.2, 15.8) d=18.8 yc= 15.3 kp( 33.2, 12.6) kd=10.2 -> goal
+r2-g14.json.gz n6 f2144 from( 32.2,  7.4) d=10.8 yc= 15.3 kp( 35.5,  8.6) kd=10.0 -> goal
+r2-g14.json.gz n6 f2364 from( 32.6,  9.0) d=10.4 yc= 15.3 kp( 35.4,  8.5) kd=10.2 -> goal
+r2-g15.json.gz n5 f 159 from( 12.6,  7.9) d=11.6 yc= 15.4 kp(  9.0,  8.8) kd=10.3 -> other
+r2-g15.json.gz n5 f 778 from( 11.2, 22.8) d=10.2 yc= 15.3 kp(  8.1, 20.0) kd= 8.5 -> other
+r2-g15.json.gz n5 f 806 from( 14.3, 22.4) d=13.3 yc= 14.9 kp( 10.5, 18.4) kd=10.1 -> other
+r2-g15.json.gz n5 f1005 from( 10.3,  4.7) d= 9.3 yc= 15.3 kp(  6.0,  6.9) kd= 9.9 -> other
+r2-g15.json.gz n5 f1366 from( 14.6,  9.6) d=13.6 yc= 15.4 kp( 10.2,  9.3) kd=11.0 -> other
+r2-g15.json.gz n5 f1612 from( 14.3, 14.3) d=13.3 yc= 10.6 kp(  8.7, 16.7) kd= 9.8 -> goal
+r2-g15.json.gz n5 f1805 from( 12.0,  7.0) d=11.0 yc= 15.3 kp(  8.6,  8.3) kd=10.4 -> goal
+r2-g16.json.gz n2 f 165 from( 32.3,  6.9) d=10.7 yc= 15.4 kp( 35.8,  8.2) kd=10.1 -> goal
+r2-g16.json.gz n2 f 510 from( 21.8,  2.8) d=21.2 yc= 11.8 kp( 35.4,  9.2) kd= 8.1 -> save
+r2-g16.json.gz n2 f1745 from( 33.9, 23.5) d= 9.1 yc= 10.7 kp( 37.7, 19.8) kd=10.5 -> goal
+r2-g17.json.gz n3 f 541 from( 10.8, 17.5) d= 9.8 yc= 10.6 kp(  6.6, 16.9) kd= 8.4 -> goal
+r2-g17.json.gz n3 f1368 from( 12.1, 19.1) d=11.1 yc= 10.7 kp(  8.2, 17.6) kd=10.1 -> goal
+r2-g17.json.gz n3 f1565 from( 12.8, 18.9) d=11.8 yc= 10.7 kp(  8.5, 17.2) kd=10.0 -> goal
+r2-g18.json.gz n4 f 147 from( 31.7,  6.8) d=11.3 yc= 13.5 kp( 35.2,  8.2) kd= 9.4 -> save
+r2-g18.json.gz n4 f 414 from( 32.8,  8.5) d=10.2 yc= 15.6 kp( 36.7,  9.1) kd= 9.1 -> goal
+r2-g18.json.gz n4 f 606 from( 32.0,  6.9) d=11.0 yc= 12.5 kp( 35.4,  8.2) kd= 8.8 -> save
+r2-g18.json.gz n4 f 662 from( 30.8,  7.9) d=12.2 yc= 14.9 kp( 35.2,  7.7) kd=10.6 -> goal
+r2-g18.json.gz n4 f 874 from( 32.6,  6.6) d=10.4 yc= 13.9 kp( 35.9,  8.3) kd= 9.1 -> save
+r2-g18.json.gz n4 f1650 from( 41.7, 23.4) d= 1.3 yc= 10.6 kp( 42.6, 20.9) kd=10.3 -> other
+r2-g18.json.gz n4 f1965 from( 25.5, 13.0) d=17.5 yc= 15.4 kp( 34.8, 11.4) kd= 9.1 -> goal
+r2-g18.json.gz n4 f2225 from( 25.1, 12.0) d=17.9 yc= 15.3 kp( 33.3, 10.9) kd=10.6 -> goal
+r2-g19.json.gz n1 f1150 from( 24.8, 21.7) d=23.8 yc= 11.8 kp( 23.0, 22.0) kd=24.2 -> other
+r2-g2.json.gz  n6 f 475 from( 32.0,  6.2) d=11.0 yc= 13.9 kp( 35.4,  7.7) kd= 9.8 -> save
+r2-g2.json.gz  n6 f1361 from( 31.8,  6.2) d=11.2 yc= 13.9 kp( 35.3,  8.0) kd= 9.7 -> save
+r2-g2.json.gz  n6 f1393 from( 32.9,  7.5) d=10.1 yc= 10.6 kp( 35.8,  9.2) kd= 7.3 -> other
+r2-g2.json.gz  n6 f1821 from( 26.2, 18.2) d=16.8 yc= 15.3 kp( 32.5, 16.1) kd=10.6 -> goal
+r2-g2.json.gz  n6 f2041 from( 32.7,  5.8) d=10.3 yc= 10.7 kp( 35.4,  7.7) kd= 8.2 -> save
+r2-g2.json.gz  n6 f2071 from( 30.8,  8.4) d=12.2 yc= 15.4 kp( 35.2,  8.7) kd=10.4 -> other
+r2-g2.json.gz  n6 f2383 from( 31.8,  5.6) d=11.2 yc= 12.1 kp( 34.8,  7.6) kd= 9.3 -> other
+r2-g20.json.gz n6 f 136 from( 30.3,  6.4) d=12.7 yc= 15.3 kp( 34.8,  7.2) kd=11.5 -> goal
+r2-g20.json.gz n6 f 329 from( 30.9,  6.8) d=12.1 yc= 15.3 kp( 35.1,  7.7) kd=11.0 -> save
+r2-g20.json.gz n6 f 361 from( 28.5, 11.5) d=14.5 yc= 14.4 kp( 33.2, 11.2) kd=10.3 -> other
+r2-g20.json.gz n6 f 708 from( 31.4, 19.0) d=11.6 yc= 10.7 kp( 34.1, 18.0) kd=11.5 -> save
+r2-g20.json.gz n6 f 916 from( 29.1, 11.9) d=13.9 yc= 10.6 kp( 33.6, 15.3) kd=10.5 -> other
+r2-g20.json.gz n6 f 961 from( 29.3, 14.2) d=13.7 yc= 14.4 kp( 32.6, 13.6) kd=10.4 -> other
+r2-g20.json.gz n6 f1189 from( 30.5, 10.1) d=12.5 yc= 15.4 kp( 37.2,  9.9) kd= 8.0 -> other
+r2-g20.json.gz n6 f1350 from( 31.0,  6.7) d=12.0 yc= 15.3 kp( 35.2,  7.4) kd=11.1 -> goal
+r2-g20.json.gz n6 f1521 from( 27.6,  7.0) d=15.4 yc= 15.3 kp( 33.4,  7.6) kd=12.4 -> other
+r2-g3.json.gz  n5 f 148 from( 11.9,  6.8) d=10.9 yc= 15.4 kp(  8.6,  8.1) kd=10.5 -> other
+r2-g3.json.gz  n5 f 401 from( 12.3, 19.5) d=11.3 yc= 13.9 kp(  8.4, 18.5) kd= 8.7 -> save
+r2-g3.json.gz  n5 f 730 from( 10.9, 19.3) d= 9.9 yc= 10.7 kp(  6.9, 18.7) kd= 9.9 -> other
+r2-g3.json.gz  n5 f 763 from( 12.0, 17.8) d=11.0 yc= 10.6 kp(  8.6, 16.3) kd= 9.5 -> other
+r2-g3.json.gz  n5 f1370 from( 11.8,  6.5) d=10.8 yc= 13.0 kp(  8.5,  7.9) kd= 9.0 -> save
+r2-g3.json.gz  n5 f1401 from( 14.4,  8.6) d=13.4 yc= 13.0 kp(  9.6,  9.6) kd= 9.2 -> other
+r2-g3.json.gz  n5 f1546 from( 28.2, 22.5) d=27.2 yc= 11.2 kp( 11.3, 16.7) kd=11.8 -> other
+r2-g3.json.gz  n5 f1852 from( 12.1,  6.4) d=11.1 yc= 15.4 kp(  8.7,  7.8) kd=10.8 -> other
+r2-g3.json.gz  n5 f2119 from( 11.9, 16.7) d=10.9 yc= 10.9 kp(  9.3, 16.2) kd= 9.9 -> other
+r2-g3.json.gz  n5 f2242 from( 37.8, 18.3) d=36.8 yc= 12.6 kp( 11.9, 14.7) kd=11.0 -> other
+r2-g4.json.gz  n2 f 168 from( 31.4, 19.4) d=11.6 yc= 10.7 kp( 35.8, 17.6) kd=10.0 -> goal
+r2-g4.json.gz  n2 f1600 from( 31.0, 19.9) d=12.0 yc= 10.6 kp( 35.4, 17.1) kd= 9.9 -> save
+r2-g4.json.gz  n2 f1868 from( 21.5, 23.3) d=21.5 yc= 14.3 kp( 35.3, 16.9) kd= 8.1 -> other
+r2-g4.json.gz  n2 f2047 from( 41.0, 23.2) d= 2.0 yc= 10.7 kp( 42.0, 20.7) kd=10.1 -> other
+r2-g4.json.gz  n2 f2381 from( 29.1, 19.4) d=13.9 yc= 10.6 kp( 35.3, 16.9) kd= 9.9 -> other
+r2-g5.json.gz  n3 f 141 from( 12.1,  7.2) d=11.1 yc= 13.9 kp(  8.3,  8.6) kd= 9.1 -> save
+r2-g5.json.gz  n3 f 845 from( 14.0,  5.1) d=13.0 yc= 10.6 kp(  8.2,  8.4) kd= 7.6 -> save
+r2-g5.json.gz  n3 f1115 from(  3.6,  4.3) d= 2.6 yc= 15.7 kp(  2.6,  6.1) kd= 9.7 -> other
+r2-g6.json.gz  n4 f 154 from( 31.0,  5.3) d=12.0 yc= 10.7 kp( 34.5,  7.3) kd= 9.2 -> save
+r2-g6.json.gz  n4 f 187 from( 23.6, 11.6) d=19.4 yc= 15.3 kp( 32.7, 10.3) kd=11.4 -> other
+r2-g6.json.gz  n4 f 381 from( 29.5, 14.5) d=13.5 yc= 11.1 kp( 32.9, 14.5) kd=10.7 -> other
+r2-g6.json.gz  n4 f 741 from( 28.6, 19.0) d=14.4 yc= 13.9 kp( 33.2, 16.8) kd=10.2 -> other
+r2-g6.json.gz  n4 f 742 from( 29.9, 19.2) d=13.1 yc= 13.5 kp( 33.1, 16.9) kd=10.5 -> other
+r2-g6.json.gz  n4 f 881 from(  9.9, 17.6) d=33.1 yc= 11.0 kp( 32.0, 14.3) kd=11.5 -> other
+r2-g6.json.gz  n4 f1361 from( 31.3,  7.8) d=11.7 yc= 12.5 kp( 35.0,  8.2) kd= 9.1 -> save
+r2-g6.json.gz  n4 f1630 from( 30.5, 13.2) d=12.5 yc= 10.7 kp( 38.9, 16.4) kd= 7.1 -> goal
+r2-g6.json.gz  n4 f2069 from( 30.7,  8.0) d=12.3 yc= 15.4 kp( 35.6,  8.2) kd=10.4 -> goal
+r2-g6.json.gz  n4 f2275 from( 32.5,  6.5) d=10.5 yc= 15.3 kp( 35.8,  8.0) kd=10.3 -> goal
+r2-g8.json.gz  n6 f 143 from( 31.9,  6.8) d=11.1 yc= 13.5 kp( 35.3,  8.1) kd= 9.4 -> save
+r2-g8.json.gz  n6 f 785 from( 32.0,  5.4) d=11.0 yc= 15.3 kp( 35.4,  7.2) kd=11.2 -> goal
+r2-g8.json.gz  n6 f1021 from( 32.5,  8.9) d=10.5 yc= 10.7 kp( 35.4,  8.4) kd= 7.9 -> save
+r2-g8.json.gz  n6 f1061 from( 30.0, 11.3) d=13.0 yc= 15.3 kp( 34.0, 11.8) kd= 9.7 -> other
+r2-g8.json.gz  n6 f1149 from(  2.2, 17.0) d=40.8 yc= 10.8 kp( 32.0, 14.3) kd=11.5 -> other
+r2-g8.json.gz  n6 f1352 from( 30.8,  6.6) d=12.2 yc= 15.3 kp( 35.1,  7.3) kd=11.3 -> goal
+r2-g8.json.gz  n6 f1801 from( 27.6, 12.9) d=15.4 yc= 12.1 kp( 32.1, 13.4) kd=10.9 -> other
+r2-g8.json.gz  n6 f2143 from( 31.9, 16.5) d=11.1 yc= 10.6 kp( 35.3, 15.5) kd= 9.1 -> goal
+r2-g8.json.gz  n6 f2182 from( 30.5, 16.2) d=12.5 yc= 15.4 kp( 34.6, 14.8) kd= 8.4 -> goal
+r2-g9.json.gz  n5 f 494 from( 13.7, 17.2) d=12.7 yc= 10.7 kp(  7.1, 17.4) kd= 9.1 -> goal
+r2-g9.json.gz  n5 f1041 from( 16.7, 20.8) d=15.7 yc= 10.6 kp( 10.7, 18.2) kd=12.3 -> goal
+r2-g9.json.gz  n5 f1351 from( 12.0,  7.2) d=11.0 yc= 15.3 kp(  8.4,  8.2) kd=10.3 -> save
+r2-g9.json.gz  n5 f1571 from( 13.9, 20.2) d=12.9 yc= 10.7 kp(  9.7, 18.8) kd=11.9 -> goal
+r2-g9.json.gz  n5 f1601 from( 16.5, 15.5) d=15.5 yc= 10.6 kp( 11.5, 15.6) kd=11.6 -> goal
+r3-g1.json.gz  n5 f 143 from( 12.4,  7.1) d=11.4 yc= 13.5 kp(  8.9,  8.4) kd= 9.4 -> save
+r3-g1.json.gz  n5 f 216 from( 14.5, 13.4) d=13.5 yc= 15.4 kp( 11.8, 11.4) kd=11.5 -> other
+r3-g1.json.gz  n5 f 245 from( 11.6, 13.4) d=10.6 yc= 14.9 kp( 10.8, 12.3) kd=10.2 -> other
+r3-g1.json.gz  n5 f 587 from( 14.5, 15.0) d=13.5 yc= 10.6 kp(  6.3, 15.8) kd= 7.4 -> goal
+r3-g1.json.gz  n5 f 782 from( 12.6,  7.0) d=11.6 yc= 13.9 kp(  9.0,  8.4) kd= 9.7 -> save
+r3-g1.json.gz  n5 f1065 from( 12.4,  6.9) d=11.4 yc= 12.5 kp(  8.9,  8.2) kd= 9.0 -> save
+r3-g1.json.gz  n5 f1107 from( 18.8, 13.0) d=17.8 yc= 15.4 kp( 10.6, 10.1) kd=11.0 -> other
+r3-g1.json.gz  n5 f1112 from( 15.3, 13.2) d=14.3 yc= 15.3 kp( 11.2, 10.7) kd=11.2 -> other
+r3-g1.json.gz  n5 f1157 from( 12.1, 14.9) d=11.1 yc= 15.3 kp( 10.4, 12.5) kd= 9.8 -> other
+r3-g1.json.gz  n5 f1364 from( 13.0,  7.3) d=12.0 yc= 13.5 kp(  9.9,  8.3) kd=10.3 -> save
+r3-g1.json.gz  n5 f1421 from( 20.4, 12.2) d=19.4 yc= 14.1 kp( 12.0, 12.9) kd=11.1 -> other
+r3-g1.json.gz  n5 f1427 from( 16.3, 12.4) d=15.3 yc= 12.1 kp( 12.0, 12.6) kd=11.1 -> other
+r3-g1.json.gz  n5 f1708 from(  6.5, 22.8) d= 5.5 yc= 15.3 kp(  5.1, 20.3) kd= 6.4 -> other
+r3-g1.json.gz  n5 f2342 from( 40.6,  5.6) d=39.6 yc= 15.6 kp( 12.0, 11.3) kd=11.8 -> other
+r3-g10.json.gz n4 f 145 from( 32.0, 19.1) d=11.0 yc= 13.5 kp( 35.4, 17.7) kd= 8.7 -> save
+r3-g10.json.gz n4 f 263 from( 27.3, 20.1) d=15.7 yc= 10.6 kp( 34.0, 19.4) kd=12.5 -> other
+r3-g10.json.gz n4 f 440 from( 29.5,  6.1) d=13.5 yc= 15.3 kp( 33.6,  7.5) kd=12.2 -> save
+r3-g10.json.gz n4 f 781 from(  7.4, 15.6) d=35.6 yc= 15.2 kp( 32.0, 13.9) kd=11.1 -> other
+r3-g10.json.gz n4 f1373 from( 32.5, 19.2) d=10.5 yc= 12.9 kp( 35.8, 17.7) kd= 8.7 -> save
+r3-g10.json.gz n4 f1727 from( 23.9, 13.5) d=19.1 yc= 15.4 kp( 32.2, 12.3) kd=11.3 -> other
+r3-g10.json.gz n4 f2272 from( 26.2,  6.3) d=16.8 yc= 15.4 kp( 32.9,  8.6) kd=12.1 -> other
+r3-g10.json.gz n4 f2302 from( 27.6,  7.3) d=15.4 yc= 13.5 kp( 33.5,  9.1) kd=10.5 -> other
+r3-g11.json.gz n1 f2111 from( 24.9, 21.6) d=23.9 yc= 11.6 kp( 23.1, 21.6) kd=24.3 -> other
+r3-g12.json.gz n6 f1358 from( 30.6,  6.7) d=12.4 yc= 15.4 kp( 35.0,  7.4) kd=11.3 -> other
+r3-g12.json.gz n6 f1821 from( 32.5,  6.3) d=10.5 yc= 15.3 kp( 36.5,  7.9) kd= 9.9 -> save
+r3-g12.json.gz n6 f2318 from( 38.5,  3.3) d= 4.5 yc= 10.7 kp( 40.1,  5.7) kd= 5.7 -> save
+r3-g12.json.gz n6 f2344 from( 30.3,  9.2) d=12.7 yc= 15.4 kp( 38.0,  8.4) kd= 8.6 -> goal
+r3-g13.json.gz n5 f 153 from( 13.9,  8.2) d=12.9 yc= 15.2 kp( 10.2,  9.3) kd=10.9 -> other
+r3-g13.json.gz n5 f 283 from( 38.9, 18.0) d=37.9 yc= 13.5 kp( 11.8, 14.8) kd=10.9 -> other
+r3-g13.json.gz n5 f1362 from( 14.7,  9.2) d=13.7 yc= 15.4 kp(  9.8,  8.0) kd=11.5 -> other
+r3-g14.json.gz n2 f 324 from( 20.5,  3.0) d=22.5 yc= 12.4 kp( 35.1,  9.6) kd= 8.3 -> other
+r3-g14.json.gz n2 f 526 from( 41.2,  3.4) d= 1.8 yc= 15.4 kp( 42.2,  5.6) kd= 9.8 -> other
+r3-g14.json.gz n2 f 814 from( 33.1,  5.2) d= 9.9 yc= 15.3 kp( 36.5,  7.3) kd=10.3 -> goal
+r3-g14.json.gz n2 f1031 from( 32.6,  6.5) d=10.4 yc= 15.4 kp( 36.0,  7.9) kd=10.2 -> goal
+r3-g14.json.gz n2 f2329 from( 30.4, 18.7) d=12.6 yc= 10.7 kp( 35.2, 16.5) kd= 9.8 -> save
+r3-g15.json.gz n3 f2249 from( 22.6, 23.2) d=21.6 yc= 14.2 kp(  8.7, 16.8) kd= 8.1 -> other
+r3-g16.json.gz n4 f 172 from( 30.4,  6.3) d=12.6 yc= 15.3 kp( 34.3,  7.8) kd=11.5 -> other
+r3-g16.json.gz n4 f 426 from( 29.1, 21.9) d=13.9 yc= 12.5 kp( 33.8, 19.1) kd=11.3 -> other
+r3-g16.json.gz n4 f 923 from( 29.2, 22.3) d=13.8 yc= 15.4 kp( 34.0, 19.3) kd= 9.8 -> save
+r3-g16.json.gz n4 f1702 from( 28.4,  8.1) d=14.6 yc= 15.3 kp( 33.0,  9.5) kd=11.6 -> other
+r3-g16.json.gz n4 f1729 from( 28.8,  9.4) d=14.2 yc= 15.5 kp( 33.4, 10.0) kd=11.1 -> other
+r3-g16.json.gz n4 f2046 from( 31.5,  7.1) d=11.5 yc= 13.5 kp( 35.0,  8.4) kd= 9.5 -> save
+r3-g17.json.gz n1 f 165 from( 11.6,  7.4) d=10.6 yc= 15.4 kp( 11.0,  7.2) kd=12.9 -> other
+r3-g18.json.gz n6 f  62 from( 23.0, 12.5) d=20.0 yc= 12.5 kp( 32.0, 12.9) kd=11.0 -> other
+r3-g18.json.gz n6 f 261 from(  5.0, 18.9) d=38.0 yc= 11.7 kp( 32.2, 14.8) kd=11.3 -> other
+r3-g18.json.gz n6 f 382 from( 26.2,  7.0) d=16.8 yc= 15.4 kp( 32.8,  8.9) kd=12.0 -> goal
+r3-g18.json.gz n6 f 521 from( 22.7, 13.1) d=20.3 yc= 13.5 kp( 32.0, 13.2) kd=11.0 -> other
+r3-g18.json.gz n6 f 690 from( 26.6, 21.9) d=16.4 yc= 10.7 kp( 34.4, 18.5) kd=11.7 -> goal
+r3-g18.json.gz n6 f 697 from( 30.2, 19.2) d=12.8 yc= 10.7 kp( 33.4, 18.5) kd=12.4 -> goal
+r3-g18.json.gz n6 f 921 from( 30.0,  6.3) d=13.0 yc= 15.3 kp( 34.3,  8.3) kd=11.2 -> other
+r3-g18.json.gz n6 f1362 from( 28.0,  8.9) d=15.0 yc= 12.5 kp( 33.7,  9.7) kd= 9.7 -> other
+r3-g18.json.gz n6 f1665 from( 41.1, 23.6) d= 1.9 yc= 10.6 kp( 42.1, 21.1) kd=10.5 -> goal
+r3-g18.json.gz n6 f1704 from( 30.0, 21.9) d=13.0 yc= 14.9 kp( 38.9, 20.1) kd= 6.6 -> goal
+r3-g18.json.gz n6 f1741 from( 30.5, 15.6) d=12.5 yc= 10.6 kp( 34.9, 17.4) kd=10.5 -> goal
+r3-g18.json.gz n6 f1847 from( 22.4, 13.3) d=20.6 yc= 15.4 kp( 31.2, 11.4) kd=12.4 -> goal
+r3-g18.json.gz n6 f2090 from( 32.5,  6.4) d=10.5 yc= 15.4 kp( 35.8,  8.2) kd=10.1 -> goal
+r3-g19.json.gz n5 f 161 from( 15.2, 18.8) d=14.2 yc= 15.4 kp(  9.2, 18.1) kd= 8.6 -> other
+r3-g19.json.gz n5 f 549 from(  3.1,  4.5) d= 2.1 yc= 10.7 kp(  2.0,  6.4) kd= 4.3 -> save
+r3-g19.json.gz n5 f 586 from( 13.8, 10.3) d=12.8 yc= 15.4 kp(  5.1,  9.2) kd= 7.4 -> goal
+r3-g19.json.gz n5 f 789 from( 13.0,  6.3) d=12.0 yc= 10.7 kp(  9.3,  7.8) kd= 8.8 -> save
+r3-g19.json.gz n5 f1359 from( 13.9,  6.5) d=12.9 yc= 15.3 kp(  9.3,  7.5) kd=11.5 -> other
+r3-g19.json.gz n5 f1693 from( 16.3,  6.7) d=15.3 yc= 15.3 kp( 10.8,  8.2) kd=12.1 -> other
+r3-g19.json.gz n5 f1742 from( 20.7,  8.7) d=19.7 yc= 12.5 kp( 12.0, 12.8) kd=11.0 -> other
+r3-g2.json.gz  n2 f 153 from( 32.5,  6.4) d=10.5 yc= 12.5 kp( 35.9,  8.1) kd= 8.4 -> other
+r3-g2.json.gz  n2 f2410 from( 33.0, 23.1) d=10.0 yc= 10.6 kp( 37.2, 19.3) kd=10.4 -> save
+r3-g2.json.gz  n2 f2421 from( 33.0, 22.0) d=10.0 yc= 10.7 kp( 37.1, 19.2) kd=10.4 -> save
+r3-g20.json.gz n2 f 151 from( 31.5,  6.3) d=11.5 yc= 15.3 kp( 35.8,  8.3) kd=10.1 -> save
+r3-g20.json.gz n2 f 504 from( 33.1, 17.3) d= 9.9 yc= 10.6 kp( 38.7, 17.7) kd= 8.2 -> goal
+r3-g20.json.gz n2 f 705 from( 32.4,  7.1) d=10.6 yc= 15.3 kp( 35.7,  8.4) kd=10.1 -> goal
+r3-g20.json.gz n2 f 903 from( 31.9,  7.1) d=11.1 yc= 15.4 kp( 35.7,  8.6) kd=10.0 -> goal
+r3-g20.json.gz n2 f1105 from( 32.2,  6.9) d=10.8 yc= 15.4 kp( 35.8,  8.3) kd=10.1 -> goal
+r3-g3.json.gz  n3 f 155 from( 11.5,  6.5) d=10.5 yc= 12.1 kp(  8.1,  8.2) kd= 8.1 -> save
+r3-g3.json.gz  n3 f1365 from( 11.1,  7.0) d=10.1 yc= 12.5 kp(  8.1,  8.5) kd= 8.2 -> save
+r3-g3.json.gz  n3 f2169 from( 12.9,  8.5) d=11.9 yc= 10.6 kp(  9.0, 10.0) kd= 8.0 -> save
+r3-g3.json.gz  n3 f2391 from( 15.7, 17.3) d=14.7 yc= 10.7 kp(  9.2, 15.8) kd= 9.6 -> goal
+r3-g4.json.gz  n4 f 147 from( 31.9, 19.2) d=11.1 yc= 10.6 kp( 35.4, 17.8) kd=10.4 -> other
+r3-g4.json.gz  n4 f1585 from( 32.9, 22.6) d=10.1 yc= 10.7 kp( 38.3, 20.9) kd=11.3 -> goal
+r3-g4.json.gz  n4 f2069 from( 25.9, 18.3) d=17.1 yc= 10.7 kp( 32.6, 16.6) kd=12.0 -> other
+r3-g4.json.gz  n4 f2375 from( 30.2,  8.0) d=12.8 yc= 15.4 kp( 34.1,  9.5) kd=10.6 -> save
+r3-g6.json.gz  n6 f 151 from( 32.4,  6.4) d=10.6 yc= 12.5 kp( 35.6,  7.9) kd= 8.7 -> save
+r3-g6.json.gz  n6 f1360 from( 32.4,  6.4) d=10.6 yc= 10.7 kp( 35.4,  7.9) kd= 8.1 -> save
+r3-g6.json.gz  n6 f1410 from( 29.2, 13.2) d=13.8 yc= 12.1 kp( 32.1, 11.7) kd=10.9 -> save
+r3-g6.json.gz  n6 f1501 from( 33.3, 21.8) d= 9.7 yc= 13.0 kp( 34.9, 18.6) kd= 9.8 -> save
+r3-g6.json.gz  n6 f1547 from( 29.6, 20.4) d=13.4 yc= 15.2 kp( 34.0, 18.0) kd= 9.4 -> other
+r3-g6.json.gz  n6 f1783 from( 25.8,  8.8) d=17.2 yc= 15.3 kp( 33.0,  8.7) kd=12.0 -> goal
+r3-g6.json.gz  n6 f2001 from( 31.6,  6.3) d=11.4 yc= 15.3 kp( 35.1,  7.7) kd=11.0 -> save
+r3-g6.json.gz  n6 f2044 from( 24.9, 11.7) d=18.1 yc= 13.4 kp( 33.4, 11.0) kd= 9.9 -> goal
+r3-g6.json.gz  n6 f2050 from( 28.9, 12.7) d=14.1 yc= 15.4 kp( 32.7, 11.6) kd=10.9 -> goal
+r3-g6.json.gz  n6 f2241 from( 31.5,  6.2) d=11.5 yc= 15.3 kp( 34.9,  7.7) kd=11.1 -> goal
+r3-g7.json.gz  n5 f 171 from( 11.9,  7.8) d=10.9 yc= 15.4 kp(  8.3,  8.8) kd= 9.8 -> save
+r3-g7.json.gz  n5 f 429 from( 13.1, 10.3) d=12.1 yc= 15.3 kp( 11.0,  9.9) kd=11.4 -> other
+r3-g7.json.gz  n5 f 685 from( 12.8, 21.9) d=11.8 yc= 11.1 kp( 10.3, 18.0) kd=11.6 -> save
+r3-g7.json.gz  n5 f 801 from( 39.0, 18.5) d=38.0 yc= 13.6 kp( 11.9, 14.8) kd=10.9 -> other
+r3-g7.json.gz  n5 f 914 from( 16.6, 19.9) d=15.6 yc= 10.7 kp(  8.9, 19.1) kd=11.6 -> goal
+r3-g7.json.gz  n5 f1181 from( 11.5,  7.6) d=10.5 yc= 12.5 kp(  8.7,  9.7) kd= 8.2 -> save
+r3-g7.json.gz  n5 f1411 from( 11.8, 19.5) d=10.8 yc= 15.4 kp(  9.7, 18.4) kd= 9.2 -> save
+r3-g7.json.gz  n5 f2382 from( 39.6, 18.9) d=38.6 yc= 13.0 kp( 11.9, 14.9) kd=11.1 -> other
+r3-g8.json.gz  n2 f 165 from( 32.4, 19.1) d=10.6 yc= 10.7 kp( 35.8, 17.7) kd=10.1 -> goal
+r3-g8.json.gz  n2 f1926 from( 32.6, 23.2) d=10.4 yc= 10.7 kp( 37.2, 19.3) kd=10.4 -> goal
+r3-g9.json.gz  n3 f 163 from( 12.3,  7.2) d=11.3 yc= 13.5 kp(  8.5,  8.7) kd= 8.9 -> save
+r3-g9.json.gz  n3 f 221 from( 14.8,  4.4) d=13.8 yc= 10.7 kp(  8.8,  9.4) kd= 7.9 -> goal
+r3-g9.json.gz  n3 f 444 from( 12.4,  7.4) d=11.4 yc= 13.5 kp(  8.5,  8.8) kd= 8.8 -> goal
+r3-g9.json.gz  n3 f 936 from( 11.5, 22.0) d=10.5 yc= 10.7 kp(  7.3, 18.9) kd=10.3 -> goal
+r3-g9.json.gz  n3 f1368 from( 11.8,  7.1) d=10.8 yc= 15.3 kp(  8.2,  8.4) kd=10.0 -> other
+r3-g9.json.gz  n3 f1429 from( 15.4,  6.6) d=14.4 yc= 15.0 kp(  8.5,  8.7) kd= 9.8 -> other
+r3-g9.json.gz  n3 f2287 from(  4.9,  2.7) d= 3.9 yc= 15.4 kp(  3.2,  5.3) kd=10.3 -> other
+r1-g1.json.gz  n1 f  52 from( 23.0, 13.3) d=22.0 yc= 10.6 kp( 19.5, 13.8) kd=18.7 -> goal
+r1-g1.json.gz  n1 f 219 from( 21.7, 12.6) d=20.7 yc= 10.7 kp( 17.3, 13.5) kd=16.5 -> goal
+r1-g1.json.gz  n1 f 364 from( 22.7, 13.0) d=21.7 yc= 10.7 kp( 18.2, 13.9) kd=17.5 -> goal
+r1-g1.json.gz  n1 f1265 from( 22.5, 12.7) d=21.5 yc= 10.7 kp( 18.2, 13.5) kd=17.4 -> goal
+r1-g3.json.gz  n3 f 243 from( 37.3, 13.8) d=36.3 yc= 14.2 kp(  9.6, 13.3) kd= 8.7 -> other
+r1-g4.json.gz  n4 f 151 from( 32.0, 19.4) d=11.0 yc= 13.4 kp( 35.4, 17.9) kd= 8.9 -> save
+r1-g4.json.gz  n4 f 930 from( 31.5, 21.4) d=11.5 yc= 15.4 kp( 34.8, 19.6) kd= 9.2 -> save
+r1-g4.json.gz  n4 f1646 from( 30.9, 16.2) d=12.1 yc= 10.6 kp( 37.8, 16.8) kd= 8.1 -> goal
+r1-g4.json.gz  n4 f1841 from( 23.7, 10.6) d=19.3 yc= 15.3 kp( 33.3,  8.6) kd=11.8 -> goal
+r1-g4.json.gz  n4 f2101 from( 26.4,  3.8) d=16.6 yc= 10.6 kp( 33.5,  8.8) kd= 9.7 -> other
+r1-g4.json.gz  n4 f2315 from( 28.6, 19.4) d=14.4 yc= 10.6 kp( 33.2, 18.0) kd=12.3 -> other
+r1-g4.json.gz  n4 f2341 from( 28.7, 16.7) d=14.3 yc= 10.6 kp( 33.0, 16.0) kd=11.3 -> other
+r1-g5.json.gz  n5 f 140 from( 37.3, 15.0) d=36.3 yc= 10.3 kp( 11.9, 13.6) kd=11.4 -> other
+r1-g5.json.gz  n5 f 161 from( 30.2, 14.7) d=29.2 yc= 14.7 kp( 11.9, 13.6) kd=11.0 -> other
+r1-g5.json.gz  n5 f 645 from( 14.4,  6.3) d=13.4 yc= 15.3 kp( 10.0,  6.9) kd=12.4 -> goal
+r1-g5.json.gz  n5 f 854 from( 11.4,  6.5) d=10.4 yc= 15.4 kp(  8.1,  7.9) kd=10.3 -> other
+r1-g5.json.gz  n5 f1349 from( 36.6, 14.8) d=35.6 yc= 13.0 kp( 11.9, 13.7) kd=11.0 -> other
+r1-g5.json.gz  n5 f1641 from( 11.5,  6.8) d=10.5 yc= 10.6 kp(  8.6,  8.7) kd= 7.8 -> save
+r1-g5.json.gz  n5 f1702 from( 14.9, 13.0) d=13.9 yc= 15.3 kp( 11.5, 11.9) kd=11.1 -> other
+r1-g5.json.gz  n5 f2231 from(  2.6, 22.9) d= 1.6 yc= 10.6 kp(  1.7, 20.6) kd=10.0 -> other
+r1-g6.json.gz  n6 f 150 from( 32.3,  6.7) d=10.7 yc= 15.3 kp( 35.7,  8.1) kd=10.3 -> other
+r1-g6.json.gz  n6 f1821 from( 27.5, 19.3) d=15.5 yc= 10.7 kp( 32.9, 17.4) kd=12.1 -> other
+r1-g6.json.gz  n6 f2281 from( 39.5, 21.7) d= 3.5 yc= 10.6 kp( 40.1, 20.6) kd=10.4 -> goal
+r1-g6.json.gz  n6 f2329 from( 30.2, 13.3) d=12.8 yc= 12.5 kp( 37.7, 16.5) kd= 6.6 -> goal

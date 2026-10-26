@@ -1,0 +1,2962 @@
+{
+ "totals": {
+  "games": 20,
+  "wins": 2,
+  "draws": 2,
+  "losses": 16,
+  "gf": 8,
+  "ga": 40,
+  "kicks_d": 399,
+  "kicks_s": 414,
+  "on_d": 47,
+  "on_s": 112,
+  "att_d": 48,
+  "att_s": 122,
+  "saves_d": 27,
+  "saves_s": 22,
+  "pos_d": 1990,
+  "pos_s": 4857
+ },
+ "by_size": {
+  "3": {
+   "games": 4,
+   "W": 0,
+   "D": 1,
+   "L": 3,
+   "gf": 0,
+   "ga": 3,
+   "on_d": 2,
+   "on_s": 11,
+   "kicks_d": 53,
+   "kicks_s": 63
+  },
+  "6": {
+   "games": 4,
+   "W": 0,
+   "D": 0,
+   "L": 4,
+   "gf": 0,
+   "ga": 10,
+   "on_d": 10,
+   "on_s": 38,
+   "kicks_d": 95,
+   "kicks_s": 117
+  },
+  "4": {
+   "games": 3,
+   "W": 0,
+   "D": 0,
+   "L": 3,
+   "gf": 0,
+   "ga": 9,
+   "on_d": 7,
+   "on_s": 20,
+   "kicks_d": 57,
+   "kicks_s": 72
+  },
+  "2": {
+   "games": 3,
+   "W": 0,
+   "D": 0,
+   "L": 3,
+   "gf": 0,
+   "ga": 7,
+   "on_d": 6,
+   "on_s": 15,
+   "kicks_d": 96,
+   "kicks_s": 45
+  },
+  "5": {
+   "games": 3,
+   "W": 0,
+   "D": 0,
+   "L": 3,
+   "gf": 1,
+   "ga": 8,
+   "on_d": 10,
+   "on_s": 23,
+   "kicks_d": 65,
+   "kicks_s": 87
+  },
+  "1": {
+   "games": 3,
+   "W": 2,
+   "D": 1,
+   "L": 0,
+   "gf": 7,
+   "ga": 3,
+   "on_d": 12,
+   "on_s": 5,
+   "kicks_d": 33,
+   "kicks_s": 30
+  }
+ },
+ "by_seat": {
+  "0": {
+   "games": 10,
+   "W": 0,
+   "D": 1,
+   "L": 9,
+   "gf": 1,
+   "ga": 20
+  },
+  "1": {
+   "games": 10,
+   "W": 2,
+   "D": 1,
+   "L": 7,
+   "gf": 7,
+   "ga": 20
+  }
+ },
+ "games": [
+  {
+   "id": "r2-g1",
+   "teamSize": 3,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 1,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 12.7,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 12,
+    "shots_on": 0,
+    "shots_attempt": 0,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 165,
+    "on_shots": []
+   },
+   "sol": {
+    "kicks": 19,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 109,
+    "on_shots": [
+     {
+      "f": 1361,
+      "x": 11.513,
+      "y": 6.174,
+      "d": 11.43,
+      "ve": 5.92,
+      "yend": 10.651
+     },
+     {
+      "f": 1441,
+      "x": 11.891,
+      "y": 10.814,
+      "d": 11.8,
+      "ve": 5.75,
+      "yend": 15.349
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 1469,
+     "t": 73.45,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      1
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 73.45,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "r2-g2",
+   "teamSize": 6,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 3,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 15.77,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 17,
+    "shots_on": 1,
+    "shots_attempt": 1,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 74,
+    "on_shots": [
+     {
+      "f": 2376,
+      "x": 14.561,
+      "y": 21.034,
+      "d": 14.78,
+      "ve": 4.43,
+      "yend": 15.163
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 28,
+    "shots_on": 9,
+    "shots_attempt": 9,
+    "goals": 3,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 278,
+    "on_shots": [
+     {
+      "f": 221,
+      "x": 31.798,
+      "y": 11.281,
+      "d": 11.22,
+      "ve": 6.01,
+      "yend": 10.653
+     },
+     {
+      "f": 641,
+      "x": 31.868,
+      "y": 9.226,
+      "d": 11.22,
+      "ve": 6.01,
+      "yend": 10.647
+     },
+     {
+      "f": 908,
+      "x": 31.4,
+      "y": 14.211,
+      "d": 12.13,
+      "ve": 5.6,
+      "yend": 10.648
+     },
+     {
+      "f": 1508,
+      "x": 32.069,
+      "y": 9.167,
+      "d": 12.56,
+      "ve": 5.41,
+      "yend": 15.353
+     },
+     {
+      "f": 1541,
+      "x": 29.431,
+      "y": 15.809,
+      "d": 13.58,
+      "ve": 4.96,
+      "yend": 15.347
+     },
+     {
+      "f": 1821,
+      "x": 31.912,
+      "y": 15.758,
+      "d": 11.1,
+      "ve": 6.06,
+      "yend": 15.348
+     },
+     {
+      "f": 1881,
+      "x": 31.052,
+      "y": 10.296,
+      "d": 12.02,
+      "ve": 5.65,
+      "yend": 11.591
+     },
+     {
+      "f": 1883,
+      "x": 33.051,
+      "y": 10.301,
+      "d": 9.96,
+      "ve": 6.57,
+      "yend": 10.649
+     },
+     {
+      "f": 2307,
+      "x": 31.044,
+      "y": 9.685,
+      "d": 13.23,
+      "ve": 5.12,
+      "yend": 15.343
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 667,
+     "t": 33.35,
+     "team": "sol",
+     "scorer": "t0u2",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 937,
+     "t": 46.85,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "frame": 1576,
+     "t": 78.8,
+     "team": "sol",
+     "scorer": "t0u4",
+     "score": [
+      3,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 33.35,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "r2-g3",
+   "teamSize": 4,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 12.87,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 21,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 82,
+    "on_shots": [
+     {
+      "f": 268,
+      "x": 25.76,
+      "y": 20.834,
+      "d": 18.13,
+      "ve": 2.94,
+      "yend": 15.235
+     },
+     {
+      "f": 898,
+      "x": 24.589,
+      "y": 16.475,
+      "d": 18.45,
+      "ve": 2.79,
+      "yend": 15.203
+     },
+     {
+      "f": 2063,
+      "x": 21.34,
+      "y": 7.665,
+      "d": 21.86,
+      "ve": 1.27,
+      "yend": 10.629
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 29,
+    "shots_on": 8,
+    "shots_attempt": 9,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 383,
+    "on_shots": [
+     {
+      "f": 156,
+      "x": 14.999,
+      "y": 7.547,
+      "d": 16.03,
+      "ve": 3.87,
+      "yend": 15.352
+     },
+     {
+      "f": 531,
+      "x": 22.865,
+      "y": 22.339,
+      "d": 23.16,
+      "ve": 0.69,
+      "yend": 14.688
+     },
+     {
+      "f": 650,
+      "x": 13.285,
+      "y": 13.637,
+      "d": 12.64,
+      "ve": 5.37,
+      "yend": 10.649
+     },
+     {
+      "f": 721,
+      "x": 18.322,
+      "y": 7.846,
+      "d": 17.53,
+      "ve": 3.2,
+      "yend": 10.563
+     },
+     {
+      "f": 1461,
+      "x": 12.092,
+      "y": 24.031,
+      "d": 14.08,
+      "ve": 4.74,
+      "yend": 15.358
+     },
+     {
+      "f": 1541,
+      "x": 14.752,
+      "y": 15.964,
+      "d": 13.77,
+      "ve": 4.88,
+      "yend": 15.35
+     },
+     {
+      "f": 1780,
+      "x": 12.981,
+      "y": 8.657,
+      "d": 13.72,
+      "ve": 4.89,
+      "yend": 15.352
+     },
+     {
+      "f": 2253,
+      "x": 10.457,
+      "y": 4.781,
+      "d": 11.13,
+      "ve": 6.05,
+      "yend": 10.652
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 1576,
+     "t": 78.8,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 2279,
+     "t": 113.95,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      2
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 78.8,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "r2-g4",
+   "teamSize": 2,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 9.84,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 28,
+    "shots_on": 0,
+    "shots_attempt": 0,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 58,
+    "on_shots": []
+   },
+   "sol": {
+    "kicks": 13,
+    "shots_on": 4,
+    "shots_attempt": 5,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 251,
+    "on_shots": [
+     {
+      "f": 281,
+      "x": 33.248,
+      "y": 20.897,
+      "d": 11.22,
+      "ve": 6.01,
+      "yend": 15.352
+     },
+     {
+      "f": 381,
+      "x": 33.224,
+      "y": 18.419,
+      "d": 10.57,
+      "ve": 6.3,
+      "yend": 14.412
+     },
+     {
+      "f": 1127,
+      "x": 35.948,
+      "y": 2.94,
+      "d": 10.45,
+      "ve": 6.35,
+      "yend": 10.651
+     },
+     {
+      "f": 2157,
+      "x": 36.201,
+      "y": 3.229,
+      "d": 10.06,
+      "ve": 6.52,
+      "yend": 10.648
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 1151,
+     "t": 57.55,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 2180,
+     "t": 109,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      2,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 57.55,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "r2-g5",
+   "teamSize": 5,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 13.9,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 20,
+    "shots_on": 4,
+    "shots_attempt": 4,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 44,
+    "on_shots": [
+     {
+      "f": 501,
+      "x": 36.422,
+      "y": 2.729,
+      "d": 14.06,
+      "ve": 4.74,
+      "yend": 15.157
+     },
+     {
+      "f": 1392,
+      "x": 27.403,
+      "y": 3.961,
+      "d": 16.98,
+      "ve": 3.44,
+      "yend": 10.684
+     },
+     {
+      "f": 1792,
+      "x": 24.573,
+      "y": 20.63,
+      "d": 19.2,
+      "ve": 2.46,
+      "yend": 15.231
+     },
+     {
+      "f": 2214,
+      "x": 25.146,
+      "y": 17.595,
+      "d": 18.02,
+      "ve": 2.98,
+      "yend": 15.188
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 28,
+    "shots_on": 6,
+    "shots_attempt": 6,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 4,
+    "possession": 246,
+    "on_shots": [
+     {
+      "f": 221,
+      "x": 8.59,
+      "y": 4.902,
+      "d": 9.52,
+      "ve": 6.76,
+      "yend": 10.655
+     },
+     {
+      "f": 672,
+      "x": 12.135,
+      "y": 4.951,
+      "d": 12.6,
+      "ve": 5.39,
+      "yend": 10.856
+     },
+     {
+      "f": 827,
+      "x": 10.887,
+      "y": 18.883,
+      "d": 12.87,
+      "ve": 5.27,
+      "yend": 10.646
+     },
+     {
+      "f": 921,
+      "x": 14.228,
+      "y": 13.179,
+      "d": 13.4,
+      "ve": 5.04,
+      "yend": 15.349
+     },
+     {
+      "f": 922,
+      "x": 13.338,
+      "y": 13.605,
+      "d": 12.4,
+      "ve": 5.48,
+      "yend": 14.875
+     },
+     {
+      "f": 946,
+      "x": 12.911,
+      "y": 14.587,
+      "d": 11.94,
+      "ve": 5.69,
+      "yend": 15.357
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 242,
+     "t": 12.1,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 975,
+     "t": 48.75,
+     "team": "sol",
+     "scorer": "t1u3",
+     "score": [
+      0,
+      2
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 12.1,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    2,
+    0
+   ]
+  },
+  {
+   "id": "r2-g6",
+   "teamSize": 1,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 4,
+   "score_sol": 1,
+   "winner": "deepseek-g1",
+   "result": "W",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 3.94,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 12,
+    "shots_on": 8,
+    "shots_attempt": 8,
+    "goals": 4,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 30,
+    "on_shots": [
+     {
+      "f": 62,
+      "x": 21.888,
+      "y": 12.257,
+      "d": 20.95,
+      "ve": 1.68,
+      "yend": 10.654
+     },
+     {
+      "f": 438,
+      "x": 20.306,
+      "y": 2.249,
+      "d": 21.07,
+      "ve": 1.63,
+      "yend": 10.677
+     },
+     {
+      "f": 585,
+      "x": 22.821,
+      "y": 13.778,
+      "d": 22.04,
+      "ve": 1.19,
+      "yend": 10.667
+     },
+     {
+      "f": 754,
+      "x": 22.964,
+      "y": 12.694,
+      "d": 22.06,
+      "ve": 1.19,
+      "yend": 10.654
+     },
+     {
+      "f": 1127,
+      "x": 19.827,
+      "y": 2.544,
+      "d": 20.52,
+      "ve": 1.87,
+      "yend": 10.695
+     },
+     {
+      "f": 1432,
+      "x": 22.349,
+      "y": 13.777,
+      "d": 21.57,
+      "ve": 1.4,
+      "yend": 10.668
+     },
+     {
+      "f": 1590,
+      "x": 22.767,
+      "y": 12.042,
+      "d": 21.81,
+      "ve": 1.3,
+      "yend": 10.656
+     },
+     {
+      "f": 1996,
+      "x": 20.065,
+      "y": 2.784,
+      "d": 20.61,
+      "ve": 1.83,
+      "yend": 10.612
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 9,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 136,
+    "on_shots": [
+     {
+      "f": 81,
+      "x": 19.942,
+      "y": 11.483,
+      "d": 23.07,
+      "ve": 0.73,
+      "yend": 10.653
+     },
+     {
+      "f": 1281,
+      "x": 21.911,
+      "y": 13.652,
+      "d": 21.16,
+      "ve": 1.59,
+      "yend": 15.343
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 521,
+     "t": 26.05,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 680,
+     "t": 34,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "frame": 1365,
+     "t": 68.25,
+     "team": "sol",
+     "scorer": "t0u0",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "frame": 1521,
+     "t": 76.05,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      1,
+      3
+     ]
+    },
+    {
+     "frame": 2074,
+     "t": 103.7,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      1,
+      4
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 26.05,
+   "half_goals_deepseek": [
+    2,
+    2
+   ],
+   "half_goals_sol": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "r2-g7",
+   "teamSize": 3,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 1,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 11.74,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 12,
+    "shots_on": 0,
+    "shots_attempt": 0,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 189,
+    "on_shots": []
+   },
+   "sol": {
+    "kicks": 15,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 69,
+    "on_shots": [
+     {
+      "f": 140,
+      "x": 11.339,
+      "y": 7.365,
+      "d": 13.04,
+      "ve": 5.2,
+      "yend": 15.316
+     },
+     {
+      "f": 2181,
+      "x": 13.551,
+      "y": 22.143,
+      "d": 14.27,
+      "ve": 4.65,
+      "yend": 15.358
+     },
+     {
+      "f": 2371,
+      "x": 12.086,
+      "y": 6.766,
+      "d": 14.02,
+      "ve": 4.76,
+      "yend": 15.345
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 2219,
+     "t": 110.95,
+     "team": "sol",
+     "scorer": "t1u2",
+     "score": [
+      0,
+      1
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 110.95,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "r2-g8",
+   "teamSize": 6,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 3,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 18.72,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 30,
+    "shots_on": 4,
+    "shots_attempt": 4,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 124,
+    "on_shots": [
+     {
+      "f": 526,
+      "x": 16.804,
+      "y": 16.349,
+      "d": 15.85,
+      "ve": 3.95,
+      "yend": 15.2
+     },
+     {
+      "f": 1706,
+      "x": 23.585,
+      "y": 6.808,
+      "d": 23.74,
+      "ve": 0.44,
+      "yend": 14.132
+     },
+     {
+      "f": 1941,
+      "x": 20.238,
+      "y": 21.951,
+      "d": 20.37,
+      "ve": 1.94,
+      "yend": 15.241
+     },
+     {
+      "f": 1951,
+      "x": 14.777,
+      "y": 20.684,
+      "d": 14.82,
+      "ve": 4.41,
+      "yend": 15.236
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 31,
+    "shots_on": 11,
+    "shots_attempt": 12,
+    "goals": 3,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 313,
+    "on_shots": [
+     {
+      "f": 247,
+      "x": 31.759,
+      "y": 9,
+      "d": 12.91,
+      "ve": 5.26,
+      "yend": 15.347
+     },
+     {
+      "f": 401,
+      "x": 31.522,
+      "y": 10.412,
+      "d": 11.5,
+      "ve": 5.88,
+      "yend": 11.125
+     },
+     {
+      "f": 410,
+      "x": 31.069,
+      "y": 9.981,
+      "d": 13.14,
+      "ve": 5.15,
+      "yend": 15.482
+     },
+     {
+      "f": 411,
+      "x": 31.968,
+      "y": 11.158,
+      "d": 11.82,
+      "ve": 5.74,
+      "yend": 15.412
+     },
+     {
+      "f": 461,
+      "x": 32.124,
+      "y": 16.455,
+      "d": 10.93,
+      "ve": 6.14,
+      "yend": 15.353
+     },
+     {
+      "f": 872,
+      "x": 32.281,
+      "y": 5.875,
+      "d": 11.73,
+      "ve": 5.78,
+      "yend": 10.649
+     },
+     {
+      "f": 924,
+      "x": 31.652,
+      "y": 12.567,
+      "d": 11.51,
+      "ve": 5.88,
+      "yend": 10.654
+     },
+     {
+      "f": 1401,
+      "x": 30.176,
+      "y": 7.628,
+      "d": 13.17,
+      "ve": 5.14,
+      "yend": 10.644
+     },
+     {
+      "f": 1517,
+      "x": 22.594,
+      "y": 13.133,
+      "d": 20.41,
+      "ve": 1.92,
+      "yend": 13.133
+     },
+     {
+      "f": 1681,
+      "x": 30.427,
+      "y": 9.048,
+      "d": 12.68,
+      "ve": 5.36,
+      "yend": 10.653
+     },
+     {
+      "f": 2281,
+      "x": 31.857,
+      "y": 8.321,
+      "d": 11.38,
+      "ve": 5.94,
+      "yend": 10.649
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 951,
+     "t": 47.55,
+     "team": "sol",
+     "scorer": "t0u4",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 1434,
+     "t": 71.7,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "frame": 2308,
+     "t": 115.4,
+     "team": "sol",
+     "scorer": "t0u2",
+     "score": [
+      3,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 47.55,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "r2-g9",
+   "teamSize": 4,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 14.38,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 16,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 183,
+    "on_shots": [
+     {
+      "f": 738,
+      "x": 27.591,
+      "y": 3.829,
+      "d": 16.88,
+      "ve": 3.49,
+      "yend": 10.729
+     },
+     {
+      "f": 945,
+      "x": 24.934,
+      "y": 17.092,
+      "d": 19.17,
+      "ve": 2.47,
+      "yend": 10.681
+     },
+     {
+      "f": 1621,
+      "x": 21.587,
+      "y": 7.846,
+      "d": 21.6,
+      "ve": 1.39,
+      "yend": 10.645
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 22,
+    "shots_on": 5,
+    "shots_attempt": 6,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 300,
+    "on_shots": [
+     {
+      "f": 281,
+      "x": 12.908,
+      "y": 10.34,
+      "d": 11.91,
+      "ve": 5.7,
+      "yend": 10.645
+     },
+     {
+      "f": 282,
+      "x": 12.167,
+      "y": 10.763,
+      "d": 11.17,
+      "ve": 6.03,
+      "yend": 10.656
+     },
+     {
+      "f": 1814,
+      "x": 10.423,
+      "y": 4.698,
+      "d": 11.15,
+      "ve": 6.04,
+      "yend": 10.653
+     },
+     {
+      "f": 2026,
+      "x": 11.519,
+      "y": 7.657,
+      "d": 10.93,
+      "ve": 6.14,
+      "yend": 10.609
+     },
+     {
+      "f": 2101,
+      "x": 10.739,
+      "y": 13.107,
+      "d": 9.99,
+      "ve": 6.55,
+      "yend": 15.352
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 308,
+     "t": 15.4,
+     "team": "sol",
+     "scorer": "t1u2",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 1840,
+     "t": 92,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      2
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 15.4,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "r2-g10",
+   "teamSize": 2,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 3,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 10.13,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 30,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 90,
+    "on_shots": [
+     {
+      "f": 60,
+      "x": 22.793,
+      "y": 14.337,
+      "d": 22.1,
+      "ve": 1.17,
+      "yend": 10.672
+     },
+     {
+      "f": 204,
+      "x": 22.501,
+      "y": 5.514,
+      "d": 22.1,
+      "ve": 1.17,
+      "yend": 10.63
+     },
+     {
+      "f": 2020,
+      "x": 22.793,
+      "y": 14.337,
+      "d": 22.1,
+      "ve": 1.17,
+      "yend": 10.672
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 16,
+    "shots_on": 7,
+    "shots_attempt": 7,
+    "goals": 3,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 184,
+    "on_shots": [
+     {
+      "f": 630,
+      "x": 35.188,
+      "y": 4.516,
+      "d": 9.94,
+      "ve": 6.58,
+      "yend": 10.654
+     },
+     {
+      "f": 943,
+      "x": 33.258,
+      "y": 20.008,
+      "d": 11.09,
+      "ve": 6.06,
+      "yend": 14.699
+     },
+     {
+      "f": 1036,
+      "x": 33.197,
+      "y": 18.616,
+      "d": 12.67,
+      "ve": 5.36,
+      "yend": 10.591
+     },
+     {
+      "f": 1076,
+      "x": 33.249,
+      "y": 16.237,
+      "d": 11.3,
+      "ve": 5.97,
+      "yend": 10.524
+     },
+     {
+      "f": 1501,
+      "x": 33.19,
+      "y": 20.756,
+      "d": 11.2,
+      "ve": 6.02,
+      "yend": 15.346
+     },
+     {
+      "f": 1821,
+      "x": 33.233,
+      "y": 20.927,
+      "d": 11.74,
+      "ve": 5.78,
+      "yend": 14.416
+     },
+     {
+      "f": 1906,
+      "x": 32.048,
+      "y": 16.38,
+      "d": 12.36,
+      "ve": 5.5,
+      "yend": 10.65
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 652,
+     "t": 32.6,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 1527,
+     "t": 76.35,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "frame": 1936,
+     "t": 96.8,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      3,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 32.6,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "r2-g11",
+   "teamSize": 5,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 13.06,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 24,
+    "shots_on": 4,
+    "shots_attempt": 4,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 3,
+    "possession": 34,
+    "on_shots": [
+     {
+      "f": 606,
+      "x": 23.914,
+      "y": 15.579,
+      "d": 19.12,
+      "ve": 2.5,
+      "yend": 14.509
+     },
+     {
+      "f": 939,
+      "x": 24.416,
+      "y": 18.5,
+      "d": 18.87,
+      "ve": 2.6,
+      "yend": 15.214
+     },
+     {
+      "f": 1612,
+      "x": 26.535,
+      "y": 3.701,
+      "d": 17.88,
+      "ve": 3.04,
+      "yend": 10.682
+     },
+     {
+      "f": 2156,
+      "x": 31.844,
+      "y": 22.203,
+      "d": 13.18,
+      "ve": 5.13,
+      "yend": 15.178
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 30,
+    "shots_on": 7,
+    "shots_attempt": 8,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 4,
+    "possession": 402,
+    "on_shots": [
+     {
+      "f": 145,
+      "x": 17.256,
+      "y": 4.46,
+      "d": 19.64,
+      "ve": 2.26,
+      "yend": 15.476
+     },
+     {
+      "f": 184,
+      "x": 12.835,
+      "y": 7.979,
+      "d": 12.13,
+      "ve": 5.6,
+      "yend": 10.645
+     },
+     {
+      "f": 1115,
+      "x": 12.914,
+      "y": 19.039,
+      "d": 14.53,
+      "ve": 4.53,
+      "yend": 10.719
+     },
+     {
+      "f": 1172,
+      "x": 12.393,
+      "y": 11.381,
+      "d": 11.42,
+      "ve": 5.92,
+      "yend": 10.656
+     },
+     {
+      "f": 1381,
+      "x": 12.944,
+      "y": 6.944,
+      "d": 12.5,
+      "ve": 5.44,
+      "yend": 10.646
+     },
+     {
+      "f": 1969,
+      "x": 10.859,
+      "y": 7.93,
+      "d": 12.34,
+      "ve": 5.51,
+      "yend": 15.357
+     },
+     {
+      "f": 2032,
+      "x": 12.945,
+      "y": 10.639,
+      "d": 12.84,
+      "ve": 5.29,
+      "yend": 15.349
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 213,
+     "t": 10.65,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 1412,
+     "t": 70.6,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      2
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 10.65,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "r2-g12",
+   "teamSize": 1,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 1,
+   "score_sol": 1,
+   "winner": null,
+   "result": "D",
+   "frames": 2801,
+   "sim_seconds": 140.0,
+   "wall_seconds": 6.31,
+   "reason": "金球未分胜负，平局",
+   "deepseek": {
+    "kicks": 12,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 162,
+    "on_shots": [
+     {
+      "f": 64,
+      "x": 22.782,
+      "y": 14.22,
+      "d": 22.07,
+      "ve": 1.18,
+      "yend": 10.669
+     },
+     {
+      "f": 346,
+      "x": 14.097,
+      "y": 6.63,
+      "d": 15.66,
+      "ve": 4.03,
+      "yend": 15.222
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 11,
+    "shots_on": 1,
+    "shots_attempt": 1,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 261,
+    "on_shots": [
+     {
+      "f": 481,
+      "x": 22.89,
+      "y": 13.855,
+      "d": 20.17,
+      "ve": 2.03,
+      "yend": 15.346
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 390,
+     "t": 19.5,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 554,
+     "t": 27.7,
+     "team": "sol",
+     "scorer": "t0u0",
+     "score": [
+      1,
+      1
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 19.5,
+   "half_goals_deepseek": [
+    1,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    0
+   ]
+  },
+  {
+   "id": "r2-g13",
+   "teamSize": 3,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 0,
+   "winner": null,
+   "result": "D",
+   "frames": 2801,
+   "sim_seconds": 140.0,
+   "wall_seconds": 14.13,
+   "reason": "金球未分胜负，平局",
+   "deepseek": {
+    "kicks": 14,
+    "shots_on": 1,
+    "shots_attempt": 1,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 246,
+    "on_shots": [
+     {
+      "f": 2661,
+      "x": 36.037,
+      "y": 5.01,
+      "d": 12.23,
+      "ve": 5.56,
+      "yend": 15.062
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 18,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 231,
+    "on_shots": [
+     {
+      "f": 148,
+      "x": 11.384,
+      "y": 7.124,
+      "d": 10.97,
+      "ve": 6.12,
+      "yend": 10.653
+     },
+     {
+      "f": 1366,
+      "x": 11.397,
+      "y": 19.208,
+      "d": 11.09,
+      "ve": 6.07,
+      "yend": 15.347
+     },
+     {
+      "f": 1481,
+      "x": 14.009,
+      "y": 16.946,
+      "d": 13.11,
+      "ve": 5.17,
+      "yend": 15.356
+     }
+    ]
+   },
+   "goals": [],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": null,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "r2-g14",
+   "teamSize": 6,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 15.16,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 21,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 3,
+    "possession": 75,
+    "on_shots": [
+     {
+      "f": 460,
+      "x": 18.086,
+      "y": 19.364,
+      "d": 17.58,
+      "ve": 3.18,
+      "yend": 15.226
+     },
+     {
+      "f": 2267,
+      "x": 20.341,
+      "y": 17.252,
+      "d": 19.45,
+      "ve": 2.35,
+      "yend": 15.202
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 32,
+    "shots_on": 8,
+    "shots_attempt": 10,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 459,
+    "on_shots": [
+     {
+      "f": 759,
+      "x": 31.807,
+      "y": 8.764,
+      "d": 12.99,
+      "ve": 5.22,
+      "yend": 15.352
+     },
+     {
+      "f": 943,
+      "x": 33.207,
+      "y": 18.35,
+      "d": 12.45,
+      "ve": 5.46,
+      "yend": 10.655
+     },
+     {
+      "f": 983,
+      "x": 32.886,
+      "y": 15.576,
+      "d": 11.25,
+      "ve": 6.0,
+      "yend": 10.653
+     },
+     {
+      "f": 1022,
+      "x": 30.683,
+      "y": 11.043,
+      "d": 12.32,
+      "ve": 5.52,
+      "yend": 10.649
+     },
+     {
+      "f": 1147,
+      "x": 30.187,
+      "y": 10.074,
+      "d": 13.86,
+      "ve": 4.83,
+      "yend": 15.356
+     },
+     {
+      "f": 1162,
+      "x": 31.85,
+      "y": 10.939,
+      "d": 11.99,
+      "ve": 5.66,
+      "yend": 15.354
+     },
+     {
+      "f": 1590,
+      "x": 30.863,
+      "y": 18.483,
+      "d": 13.96,
+      "ve": 4.79,
+      "yend": 11.582
+     },
+     {
+      "f": 1641,
+      "x": 32.042,
+      "y": 10.948,
+      "d": 10.96,
+      "ve": 6.12,
+      "yend": 10.652
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 1191,
+     "t": 59.55,
+     "team": "sol",
+     "scorer": "t0u4",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 1666,
+     "t": 83.3,
+     "team": "sol",
+     "scorer": "t0u2",
+     "score": [
+      2,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 59.55,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "r2-g15",
+   "teamSize": 4,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 5,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 11.99,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 20,
+    "shots_on": 1,
+    "shots_attempt": 1,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 39,
+    "on_shots": [
+     {
+      "f": 2294,
+      "x": 31.321,
+      "y": 21.569,
+      "d": 13.32,
+      "ve": 5.08,
+      "yend": 15.174
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 21,
+    "shots_on": 7,
+    "shots_attempt": 7,
+    "goals": 5,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 224,
+    "on_shots": [
+     {
+      "f": 246,
+      "x": 12.605,
+      "y": 12.744,
+      "d": 11.89,
+      "ve": 5.71,
+      "yend": 15.346
+     },
+     {
+      "f": 952,
+      "x": 9.951,
+      "y": 21.129,
+      "d": 10.66,
+      "ve": 6.26,
+      "yend": 15.346
+     },
+     {
+      "f": 1141,
+      "x": 12.735,
+      "y": 7.742,
+      "d": 12.09,
+      "ve": 5.62,
+      "yend": 10.646
+     },
+     {
+      "f": 1480,
+      "x": 13.209,
+      "y": 11.388,
+      "d": 12.83,
+      "ve": 5.29,
+      "yend": 15.347
+     },
+     {
+      "f": 1789,
+      "x": 12.532,
+      "y": 12.53,
+      "d": 11.68,
+      "ve": 5.8,
+      "yend": 10.65
+     },
+     {
+      "f": 1821,
+      "x": 10.706,
+      "y": 11.957,
+      "d": 9.79,
+      "ve": 6.64,
+      "yend": 10.653
+     },
+     {
+      "f": 2021,
+      "x": 13.571,
+      "y": 9.197,
+      "d": 12.65,
+      "ve": 5.37,
+      "yend": 10.644
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 275,
+     "t": 13.75,
+     "team": "sol",
+     "scorer": "t1u3",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 976,
+     "t": 48.8,
+     "team": "sol",
+     "scorer": "t1u2",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "frame": 1170,
+     "t": 58.5,
+     "team": "sol",
+     "scorer": "t1u2",
+     "score": [
+      0,
+      3
+     ]
+    },
+    {
+     "frame": 1843,
+     "t": 92.15,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      4
+     ]
+    },
+    {
+     "frame": 2052,
+     "t": 102.6,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      5
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 13.75,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "r2-g16",
+   "teamSize": 2,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 10.79,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 38,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 6,
+    "possession": 69,
+    "on_shots": [
+     {
+      "f": 69,
+      "x": 22.948,
+      "y": 13.29,
+      "d": 22.11,
+      "ve": 1.16,
+      "yend": 10.653
+     },
+     {
+      "f": 207,
+      "x": 24.011,
+      "y": 20.334,
+      "d": 23.57,
+      "ve": 0.51,
+      "yend": 15.222
+     },
+     {
+      "f": 587,
+      "x": 22.897,
+      "y": 14.158,
+      "d": 22.18,
+      "ve": 1.13,
+      "yend": 10.656
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 16,
+    "shots_on": 4,
+    "shots_attempt": 4,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 135,
+    "on_shots": [
+     {
+      "f": 473,
+      "x": 35.231,
+      "y": 23.507,
+      "d": 11.27,
+      "ve": 5.99,
+      "yend": 15.346
+     },
+     {
+      "f": 881,
+      "x": 33.257,
+      "y": 6.57,
+      "d": 10.96,
+      "ve": 6.12,
+      "yend": 11.593
+     },
+     {
+      "f": 1501,
+      "x": 33.176,
+      "y": 19.183,
+      "d": 10.92,
+      "ve": 6.14,
+      "yend": 14.413
+     },
+     {
+      "f": 2108,
+      "x": 34.872,
+      "y": 22.224,
+      "d": 10.64,
+      "ve": 6.26,
+      "yend": 15.35
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 499,
+     "t": 24.95,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 2132,
+     "t": 106.6,
+     "team": "sol",
+     "scorer": "t0u1",
+     "score": [
+      2,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 24.95,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "r2-g17",
+   "teamSize": 5,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 1,
+   "score_sol": 4,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 13.96,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 21,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 40,
+    "on_shots": [
+     {
+      "f": 851,
+      "x": 31.887,
+      "y": 21.179,
+      "d": 12.64,
+      "ve": 5.38,
+      "yend": 15.166
+     },
+     {
+      "f": 2341,
+      "x": 32.759,
+      "y": 6.515,
+      "d": 11.68,
+      "ve": 5.8,
+      "yend": 12.136
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 29,
+    "shots_on": 10,
+    "shots_attempt": 13,
+    "goals": 4,
+    "own_goals": 0,
+    "saves": 1,
+    "possession": 258,
+    "on_shots": [
+     {
+      "f": 248,
+      "x": 8.894,
+      "y": 21.843,
+      "d": 11.85,
+      "ve": 5.73,
+      "yend": 13.008
+     },
+     {
+      "f": 321,
+      "x": 13.971,
+      "y": 18.362,
+      "d": 13.32,
+      "ve": 5.07,
+      "yend": 15.344
+     },
+     {
+      "f": 689,
+      "x": 14.172,
+      "y": 22.137,
+      "d": 17.02,
+      "ve": 3.43,
+      "yend": 11.363
+     },
+     {
+      "f": 697,
+      "x": 11.64,
+      "y": 20.284,
+      "d": 14.35,
+      "ve": 4.62,
+      "yend": 10.654
+     },
+     {
+      "f": 727,
+      "x": 14.026,
+      "y": 17.659,
+      "d": 14.58,
+      "ve": 4.51,
+      "yend": 11.114
+     },
+     {
+      "f": 730,
+      "x": 12.886,
+      "y": 17.286,
+      "d": 13.62,
+      "ve": 4.94,
+      "yend": 10.644
+     },
+     {
+      "f": 1462,
+      "x": 13.276,
+      "y": 10.874,
+      "d": 13.07,
+      "ve": 5.19,
+      "yend": 15.349
+     },
+     {
+      "f": 1681,
+      "x": 14.43,
+      "y": 6.952,
+      "d": 13.93,
+      "ve": 4.8,
+      "yend": 10.649
+     },
+     {
+      "f": 1685,
+      "x": 11.587,
+      "y": 7.609,
+      "d": 11.01,
+      "ve": 6.1,
+      "yend": 10.649
+     },
+     {
+      "f": 2041,
+      "x": 13.381,
+      "y": 10.515,
+      "d": 12.38,
+      "ve": 5.49,
+      "yend": 10.646
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 355,
+     "t": 17.75,
+     "team": "sol",
+     "scorer": "t1u3",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 1495,
+     "t": 74.75,
+     "team": "sol",
+     "scorer": "t1u3",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "frame": 1711,
+     "t": 85.55,
+     "team": "sol",
+     "scorer": "t1u1",
+     "score": [
+      0,
+      3
+     ]
+    },
+    {
+     "frame": 2071,
+     "t": 103.55,
+     "team": "sol",
+     "scorer": "t1u2",
+     "score": [
+      0,
+      4
+     ]
+    },
+    {
+     "frame": 2369,
+     "t": 118.45,
+     "team": "deepseek",
+     "scorer": "t0u4",
+     "score": [
+      1,
+      4
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 17.75,
+   "half_goals_deepseek": [
+    0,
+    1
+   ],
+   "half_goals_sol": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "r2-g18",
+   "teamSize": 1,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 2,
+   "score_sol": 1,
+   "winner": "deepseek-g1",
+   "result": "W",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 4.34,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 9,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 91,
+    "on_shots": [
+     {
+      "f": 66,
+      "x": 22.648,
+      "y": 12.488,
+      "d": 21.73,
+      "ve": 1.33,
+      "yend": 10.652
+     },
+     {
+      "f": 656,
+      "x": 20.412,
+      "y": 23.24,
+      "d": 20.99,
+      "ve": 1.66,
+      "yend": 15.247
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 10,
+    "shots_on": 2,
+    "shots_attempt": 2,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 182,
+    "on_shots": [
+     {
+      "f": 1281,
+      "x": 21.723,
+      "y": 12.847,
+      "d": 21.42,
+      "ve": 1.47,
+      "yend": 15.348
+     },
+     {
+      "f": 1461,
+      "x": 22.633,
+      "y": 12.416,
+      "d": 20.58,
+      "ve": 1.85,
+      "yend": 15.348
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 157,
+     "t": 7.85,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "frame": 738,
+     "t": 36.9,
+     "team": "deepseek",
+     "scorer": "t1u0",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "frame": 1368,
+     "t": 68.4,
+     "team": "sol",
+     "scorer": "t0u0",
+     "score": [
+      1,
+      2
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 7.85,
+   "half_goals_deepseek": [
+    2,
+    0
+   ],
+   "half_goals_sol": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "r2-g19",
+   "teamSize": 3,
+   "seats": [
+    "deepseek-g1",
+    "sol"
+   ],
+   "deepseek_team": 0,
+   "score_deepseek": 0,
+   "score_sol": 1,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 10.18,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 15,
+    "shots_on": 1,
+    "shots_attempt": 1,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 104,
+    "on_shots": [
+     {
+      "f": 61,
+      "x": 21.485,
+      "y": 14.051,
+      "d": 21.52,
+      "ve": 1.42,
+      "yend": 13.448
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 11,
+    "shots_on": 3,
+    "shots_attempt": 3,
+    "goals": 1,
+    "own_goals": 0,
+    "saves": 0,
+    "possession": 121,
+    "on_shots": [
+     {
+      "f": 1025,
+      "x": 12.858,
+      "y": 6.901,
+      "d": 12.44,
+      "ve": 5.47,
+      "yend": 10.655
+     },
+     {
+      "f": 1961,
+      "x": 13.851,
+      "y": 17.954,
+      "d": 13.11,
+      "ve": 5.17,
+      "yend": 15.354
+     },
+     {
+      "f": 2301,
+      "x": 11.473,
+      "y": 21.729,
+      "d": 12.26,
+      "ve": 5.55,
+      "yend": 15.357
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 1055,
+     "t": 52.75,
+     "team": "sol",
+     "scorer": "t1u2",
+     "score": [
+      0,
+      1
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 52.75,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    1,
+    0
+   ]
+  },
+  {
+   "id": "r2-g20",
+   "teamSize": 6,
+   "seats": [
+    "sol",
+    "deepseek-g1"
+   ],
+   "deepseek_team": 1,
+   "score_deepseek": 0,
+   "score_sol": 2,
+   "winner": "sol",
+   "result": "L",
+   "frames": 2401,
+   "sim_seconds": 120.0,
+   "wall_seconds": 16.84,
+   "reason": "常规时间结束",
+   "deepseek": {
+    "kicks": 27,
+    "shots_on": 3,
+    "shots_attempt": 4,
+    "goals": 0,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 91,
+    "on_shots": [
+     {
+      "f": 287,
+      "x": 18.857,
+      "y": 18.223,
+      "d": 18.11,
+      "ve": 2.94,
+      "yend": 15.22
+     },
+     {
+      "f": 615,
+      "x": 19.957,
+      "y": 17.393,
+      "d": 19.08,
+      "ve": 2.51,
+      "yend": 15.211
+     },
+     {
+      "f": 976,
+      "x": 22.991,
+      "y": 7.074,
+      "d": 22.33,
+      "ve": 1.06,
+      "yend": 10.976
+     }
+    ]
+   },
+   "sol": {
+    "kicks": 26,
+    "shots_on": 10,
+    "shots_attempt": 10,
+    "goals": 2,
+    "own_goals": 0,
+    "saves": 2,
+    "possession": 315,
+    "on_shots": [
+     {
+      "f": 691,
+      "x": 21.355,
+      "y": 11.24,
+      "d": 21.64,
+      "ve": 1.37,
+      "yend": 11.24
+     },
+     {
+      "f": 876,
+      "x": 31.924,
+      "y": 16.149,
+      "d": 12.37,
+      "ve": 5.5,
+      "yend": 10.648
+     },
+     {
+      "f": 943,
+      "x": 31.599,
+      "y": 8.881,
+      "d": 11.54,
+      "ve": 5.87,
+      "yend": 10.651
+     },
+     {
+      "f": 1473,
+      "x": 30.921,
+      "y": 10.873,
+      "d": 12.88,
+      "ve": 5.27,
+      "yend": 15.351
+     },
+     {
+      "f": 1541,
+      "x": 26.998,
+      "y": 17.097,
+      "d": 16.37,
+      "ve": 3.72,
+      "yend": 13.653
+     },
+     {
+      "f": 1561,
+      "x": 30.08,
+      "y": 17.272,
+      "d": 13.06,
+      "ve": 5.19,
+      "yend": 15.346
+     },
+     {
+      "f": 1621,
+      "x": 29.831,
+      "y": 11.148,
+      "d": 13.18,
+      "ve": 5.14,
+      "yend": 10.647
+     },
+     {
+      "f": 2178,
+      "x": 28.052,
+      "y": 11.982,
+      "d": 15.01,
+      "ve": 4.32,
+      "yend": 10.648
+     },
+     {
+      "f": 2179,
+      "x": 28.967,
+      "y": 11.871,
+      "d": 14.09,
+      "ve": 4.73,
+      "yend": 10.647
+     },
+     {
+      "f": 2221,
+      "x": 31.828,
+      "y": 14.666,
+      "d": 11.19,
+      "ve": 6.02,
+      "yend": 15.348
+     }
+    ]
+   },
+   "goals": [
+    {
+     "frame": 1654,
+     "t": 82.7,
+     "team": "sol",
+     "scorer": "t0u2",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "frame": 2247,
+     "t": 112.35,
+     "team": "sol",
+     "scorer": "t0u4",
+     "score": [
+      2,
+      0
+     ]
+    }
+   ],
+   "fouls": {
+    "deepseek": 0,
+    "sol": 0
+   },
+   "foul_events": 0,
+   "first_goal_t": 82.7,
+   "half_goals_deepseek": [
+    0,
+    0
+   ],
+   "half_goals_sol": [
+    0,
+    2
+   ]
+  }
+ ]
+}

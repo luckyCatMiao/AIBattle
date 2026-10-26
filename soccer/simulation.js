@@ -377,30 +377,19 @@ function tryPossession(g) {
 /* ============================ 主循环 ============================ */
 
 function commitFoul(g, u, boxTeam) {
-  const box = PENALTY_BOXES[boxTeam];
-  const spot = nearestOutsideBox(box, u.x, u.y, 0.9);
-  const b = g.ball;
-  // 犯规者被移到任意球点更外侧，并短暂僵直
-  const cx = (box.x1 + box.x2) / 2, cy = (box.y1 + box.y2) / 2;
-  let dx = spot.x - cx, dy = spot.y - cy;
-  const l = Math.hypot(dx, dy) || 1;
-  u.x = clamp(spot.x + dx / l * 1.3, rules.unitRadius, W - rules.unitRadius);
-  u.y = clamp(spot.y + dy / l * 1.3, rules.unitRadius, H - rules.unitRadius);
-  u.foulLock = Math.round(rules.foulLock * rules.hz);
-  u.stealLock = Math.max(u.stealLock, u.foulLock);
-  u.kickCd = Math.max(u.kickCd, u.foulLock);
-  // 任意球：球停在犯规点，短暂停后由被犯规方处理
-  b.owner = null; b.x = spot.x; b.y = spot.y; b.vx = 0; b.vy = 0;
-  b.lastTouch = null; b.lastTeam = null;
-  // 规则：任意球由被犯规方开球。被犯规方第一次触球前，犯规方不能抢。
-  g.freeKickTeam = 1 - u.team;
-  g.freeKickFrames = Math.round(2.0 * rules.hz);
-  g.freeze = Math.max(g.freeze, Math.round(rules.foulFreeze * rules.hz));
   g.stats[u.team].fouls = (g.stats[u.team].fouls || 0) + 1;
-  emit(g, 'foul', {
+  // 红牌：犯规者直接罚下（新规则，一张牌即下场）。
+  const idx = g.units.indexOf(u);
+  if (idx >= 0) g.units.splice(idx, 1);
+  const left = g.units.filter(x => x.team === u.team).length;
+  emit(g, 'card', {
     team: u.team, unit: u.id, box: boxTeam, x: round3(u.x), y: round3(u.y),
-    text: `犯规：${u.name} 进入对方禁区，${g.players[1 - u.team].name} 获得任意球`,
+    red: true, remaining: left,
+    text: `红牌：${u.name} 进入对方禁区被罚下（${g.players[u.team].name} 剩 ${left} 人）`,
   });
+  if (left === 0) { finish(g, 1 - u.team, '对手球员全部被罚下'); return; }
+  // 判罚后双方回到中圈重新开球。
+  kickoff(g, '犯规判罚 · 中圈重新开球', Math.round(rules.kickoffFreeze * rules.hz), 1 - u.team);
 }
 
 function checkFouls(g) {

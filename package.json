@@ -19,7 +19,9 @@
     "badminton": "node badminton/server.js",
     "badminton-watch": "node badminton/arena/watch.js",
     "platformer": "node platformer/server.js",
-    "platformer-watch": "node platformer/arena/watch.js"
+    "platformer-watch": "node platformer/arena/watch.js",
+    "duel": "node duel/server.js",
+    "duel-watch": "node duel/arena/watch.js"
   },
   "engines": {
     "node": ">=20"

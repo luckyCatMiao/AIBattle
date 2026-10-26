@@ -1,0 +1,23 @@
+{
+  "run": "run-20261026-102848",
+  "phase": "模型准备",
+  "models": {
+    "deepseek-flash": "deepseek-v4.1-flash",
+    "sol": "gpt-6.1-sol"
+  },
+  "labels": {
+    "deepseek-flash": "DeepSeek V4.1 Flash",
+    "sol": "GPT-6.1 Sol"
+  },
+  "reasoning_effort": "medium",
+  "round": 1,
+  "rounds": 3,
+  "games": [],
+  "results": [],
+  "ready": [],
+  "setup_note": "双方从零开始，准备时间不设上限；双方操控完全相同角色，无选角差异；每轮交换座位打两局；每 3 帧（150 毫秒）同步决策；本机直跑，赛前约定不读取对方工作区",
+  "pid": 34648,
+  "port": 8819,
+  "completed": false,
+  "updated": "2026-10-26T10:28:48"
+}

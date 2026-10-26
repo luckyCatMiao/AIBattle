@@ -1,0 +1,60 @@
+[
+  {
+    "id": "r1-g1",
+    "round": 1,
+    "game": 1,
+    "seats": [
+      "deepseek-flash",
+      "sol"
+    ],
+    "winner": "sol",
+    "reason": "DeepSeek V4.1 Flash 被击中",
+    "duration": 26.5,
+    "scores": {
+      "deepseek-flash": 53,
+      "sol": 55
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 308,
+    "windows": 307,
+    "bullets": 108,
+    "shots": {
+      "deepseek-flash": 53,
+      "sol": 55
+    },
+    "sha256": "1d838e1af1af0e3a330aa1c945b56bc9f9c447c6e6b4a83d642230ea366fc136"
+  },
+  {
+    "id": "r1-g2",
+    "round": 1,
+    "game": 2,
+    "seats": [
+      "sol",
+      "deepseek-flash"
+    ],
+    "winner": "sol",
+    "reason": "DeepSeek V4.1 Flash 被击中",
+    "duration": 21.43,
+    "scores": {
+      "deepseek-flash": 49,
+      "sol": 51
+    },
+    "errors": {
+      "deepseek-flash": 0,
+      "sol": 0
+    },
+    "technicalFailure": null,
+    "frames": 285,
+    "windows": 284,
+    "bullets": 100,
+    "shots": {
+      "deepseek-flash": 49,
+      "sol": 51
+    },
+    "sha256": "35bc35f814c892e15c927e7eda56796da2d4e60c72d7cc2d293eaf82f58c9919"
+  }
+]

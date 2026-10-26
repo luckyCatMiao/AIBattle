@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "D:\extraProj\AIBattle\soccer\arena\control\run-20261025-102203\workspaces\deepseek-g1\agent.py", line 1798, in main
+    import policy as _POL
+ModuleNotFoundError: No module named 'policy'
+Traceback (most recent call last):
+  File "D:\extraProj\AIBattle\soccer\arena\control\run-20261025-102203\workspaces\deepseek-g1\agent.py", line 1812, in main
+    d, aim, kick = f.get((me, i), ('N', None, False))
+                   ^^^^^
+AttributeError: 'list' object has no attribute 'get'

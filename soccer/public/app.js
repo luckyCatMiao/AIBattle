@@ -528,7 +528,7 @@
   function replayLog() {
     const st = replayState();
     if (!st) return [];
-    return stateEvents(st).filter(e => ['goal', 'half', 'golden', 'end', 'kickoff', 'tackle'].includes(e.type))
+    return stateEvents(st).filter(e => ['goal', 'card', 'half', 'golden', 'end', 'kickoff', 'tackle'].includes(e.type))
       .slice(-14).map(e => ({ t: e.t, text: e.text || e.type, type: e.type }));
   }
 

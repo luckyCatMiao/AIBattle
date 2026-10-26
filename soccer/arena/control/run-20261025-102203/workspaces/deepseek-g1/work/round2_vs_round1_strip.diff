@@ -1,0 +1,336 @@
+--- ../../round-1/deepseek-g1/agent.py	2026-10-25 01:32:22.086552300 +0800
++++ agent.py	2026-10-25 04:22:24.521574600 +0800
+@@ -9,6 +9,7 @@
+ import json
+ import math
+ import os
++import time
+ 
+ 
+ import math
+@@ -941,6 +942,10 @@
+     gx = OPP_GOAL_X[me]
+     atk = ATK[me]
+     cands = [
++        (gx - atk * 0.9, 5.0),
++        (gx - atk * 0.9, 21.0),
++        (gx - atk * 2.6, 4.6),
++        (gx - atk * 2.6, 21.4),
+         (gx - atk * 4.5, 4.5),
+         (gx - atk * 4.5, 21.5),
+         (gx - atk * 7.0, 4.0),
+@@ -1048,7 +1053,14 @@
+ 
+     if len(fielders) == 1:
+         u = fielders[0]
+-        roles[u.index] = ('carrier', None) if u.index == ci else ('chase', None)
++        if u.index == ci:
++            roles[u.index] = ('carrier', None)
++        elif ci == 0:
++            tx = clamp(k.x + ATK[me] * 17.0, 2.0, FIELD_W - 2.0)
++            ty = clamp(13.0 + (by - 13.0) * 0.5, 3.0, FIELD_H - 3.0)
++            roles[u.index] = ('striker', (tx, ty))
++        else:
++            roles[u.index] = ('chase', None)
+         return roles, my, opp, owner
+ 
+     n_str = 1 if len(fielders) <= 2 else 2
+@@ -1180,6 +1192,7 @@
+     gx = OPP_GOAL_X[me]
+     best = None
+     bx, by = u.x, u.y
++    press = min([hyp(o.x - bx, o.y - by) for o in opp] or [9.0])
+     for m in mates:
+         if m.index == u.index:
+             continue
+@@ -1207,9 +1220,15 @@
+                 continue
+             pot = shot_potential(px, py, opp, me)
+             prog = (px - bx) * ATK[me]
+-            if prog < 2.0 and pot < 0.15:
+-                continue
+-            sc = 1.5 + pot * 3.0 + prog * 0.18 + min(od, 3.0) * 0.3 - D * 0.02
++            if m.index == 0:
++                # reset to the unmarked keeper only under pressure
++                if press > 1.55:
++                    continue
++                sc = 2.1 - D * 0.005
++            else:
++                if prog < 2.0 and pot < 0.15:
++                    continue
++                sc = 1.5 + pot * 3.0 + prog * 0.18 + min(od, 3.0) * 0.3 - D * 0.02
+             if best is None or sc > best[0]:
+                 best = (sc, math.degrees(math.atan2(dy, dx)) % 360.0, m.index, px, py, D)
+     return best
+@@ -1277,6 +1296,106 @@
+     return sc
+ 
+ 
++def fly_path(bx, by, ang, maxf=140):
++    a = math.radians(ang)
++    vx, vy = KICKP * math.cos(a), KICKP * math.sin(a)
++    x, y = bx, by
++    path = []
++    for f in range(maxf):
++        for _ in range(4):
++            x += vx * DT / 4.0
++            y += vy * DT / 4.0
++            if in_goal_mouth(x, y):
++                if x <= 1.0:
++                    return path, f + 1, 1
++                if x >= W - 1.0:
++                    return path, f + 1, 0
++            if ball_hits_wall(x, y):
++                px, py = x - vx * DT / 4.0, y - vy * DT / 4.0
++                if ball_hits_wall(x, py):
++                    x = px
++                    vx = -vx * WALLR
++                if ball_hits_wall(px, y):
++                    y = py
++                    vy = -vy * WALLR
++                if ball_hits_wall(x, y):
++                    x, y = px, py
++                    vx = -vx * WALLR
++                    vy = -vy * WALLR
++        vx *= FRIC
++        vy *= FRIC
++        if abs(vx) + abs(vy) < 0.02:
++            vx = vy = 0.0
++        path.append((x, y))
++        if vx == 0.0 and vy == 0.0:
++            break
++    return path, None, -1
++
++
++RECV = {'idx': None, 'pos': None, 'frame': -999}
++T0 = {'t': time.time()}
++
++
++def budget_left(sec=2.0):
++    return (time.time() - T0['t']) < sec
++
++
++def best_through_pass(st, u, opp, mates, me):
++    best = None
++    gx = OPP_GOAL_X[me]
++    for ai in range(0, 60):
++        if ai % 5 == 0 and not budget_left(1.6):
++            break
++        ang = (ai * 6.0) % 360.0
++        a = math.radians(ang)
++        ox = u.x + math.cos(a) * KICK_OFF
++        oy = u.y + math.sin(a) * KICK_OFF
++        if ball_hits_wall(ox, oy):
++            ox, oy = u.x, u.y
++        path, gf, gt = fly_path(ox, oy, ang)
++        if gf is not None:
++            if gt == me:
++                return (500.0, ang, 0, 0.0)
++            continue
++        if not path:
++            continue
++        opp_f = None
++        mate_f = None
++        mate = None
++        lim = min(len(path), 60)
++        for f in range(lim):
++            bx, by = path[f]
++            t = (f + 1) / float(HZ)
++            if opp_f is None:
++                for o in opp:
++                    if hyp(o.x - bx, o.y - by) <= CR + SPD * t:
++                        opp_f = f
++                        break
++            if mate_f is None:
++                for m in mates:
++                    if hyp(m.x - bx, m.y - by) <= CR + SPD * t:
++                        mate_f = f
++                        mate = m
++                        break
++            if opp_f is not None and mate_f is not None:
++                break
++        if mate_f is None:
++            continue
++        if opp_f is not None and opp_f <= mate_f:
++            continue
++        bx, by = path[mate_f]
++        prog = (bx - u.x) * ATK[me]
++        if prog < 4.0:
++            continue
++        if in_box(1 - me, bx, by):
++            continue
++        sc = 6.0 + prog * 0.32 + (40 - mate_f) * 0.05
++        sc += (30.0 - hyp(gx - bx, 13.0 - by)) * 0.03
++        if best is None or sc > best[0]:
++            best = (sc, ang, mate.index, (bx, by))
++    return best
++
++
+ def carrier_cmd(st, u, opp, me, mates=None, mate_targets=None):
+     cmd = Cmd()
+     bx, by = st.bx, st.by
+@@ -1288,7 +1407,12 @@
+     if can_kick:
+         cands = []
+         sh = best_shot_at(u.x, u.y, opp, me)
+-        if sh is not None and sh[1] > SHOT_TH:
++        dgoal = hyp(gx - u.x, 13.0 - u.y)
++        kp = pick_keeper(opp, me)
++        keeper_out = False
++        if kp is not None:
++            keeper_out = hyp(kp.x - gx, kp.y - 13.0) > 4.2
++        if sh is not None and sh[1] > SHOT_TH and (dgoal < 14.5 or keeper_out):
+             cands.append((60.0 + sh[1], sh[2]))
+         ps = best_pass(st, u, opp, mates, me, mate_targets) if mates else None
+         if ps is not None:
+@@ -1300,8 +1424,18 @@
+                 bestk = (sc, float(ang))
+         if bestk is not None:
+             cands.append(bestk)
++        tp_sel = None
++        if mates:
++            tp = best_through_pass(st, u, opp, mates, me)
++            if tp is not None:
++                cands.append((tp[0], tp[1]))
++                tp_sel = tp
+         cands.sort(reverse=True)
+         if cands and cands[0][0] >= KICK_MIN:
++            if tp_sel is not None and abs((cands[0][1] - tp_sel[1] + 180.0) % 360.0 - 180.0) < 0.01:
++                RECV['idx'] = tp_sel[2]
++                RECV['pos'] = tp_sel[3]
++                RECV['frame'] = st.frame
+             cmd.aim = cands[0][1]
+             cmd.kick = True
+             _log({'f': st.frame, 'x': round(u.x, 1), 'y': round(u.y, 1),
+@@ -1349,21 +1483,33 @@
+     gx = OPP_GOAL_X[me]
+     ogx = MY_GOAL_X[me]
+     if owner is not None:
+-        dx, dy = bx - ogx, by - 13.0
++        dx, dy = ogx - bx, 13.0 - by
+         dd = hyp(dx, dy) or 1.0
+-        tx = bx - dx / dd * 0.42
+-        ty = by - dy / dd * 0.42
+-        tx, ty = safe_spot(me, tx, ty, 0.5)
+-        cmd.dir = move_dir(u, tx, ty, me)
++        D = hyp(bx - ogx, by - 13.0)
++        db = hyp(u.x - bx, u.y - by)
++        if db < 1.05:
++            tx, ty = bx, by            # in reach: tackle
++        else:
++            k = min(2.1, max(0.4, 0.30 * D))
++            tx = bx + dx / dd * k
++            ty = by + dy / dd * k
++        tx = clamp(tx, 0.7, FIELD_W - 0.7)
++        ty = clamp(ty, 0.9, FIELD_H - 0.9)
++        cmd.dir = move_dir(u, tx, ty, me, forbid_box=False)
+         cmd.aim = math.degrees(math.atan2(by - u.y, bx - u.x)) % 360.0
+         return cmd
+     path = ball_future(st, 45)
+     px, py = (path[min(len(path) - 1, 30)] if path else (bx, by))
+     o = opp[0] if opp else None
+-    od = hyp(o.x - bx, o.y - by) if o else 99
+-    md = hyp(u.x - bx, u.y - by)
+-    if od < md - 1.5 and hyp(bx - ogx, by - 13.0) < 20.0:
+-        tx, ty = keeper_target(st, me, bx, by)
++    our_t = intercept_time(u, path, 45) if path else 999
++    opp_t = intercept_time(o, path, 45) if (o is not None and path) else 999
++    if opp_t <= our_t + 3 and our_t > 12 and hyp(bx - ogx, by - 13.0) < 26.0:
++        # cannot win the race: hold the shot-line between ball and goal
++        dx, dy = ogx - bx, 13.0 - by
++        dd = hyp(dx, dy) or 1.0
++        k = min(3.0, max(1.0, 0.22 * hyp(bx - ogx, by - 13.0)))
++        tx = bx + dx / dd * k
++        ty = by + dy / dd * k
+         cmd.dir = move_dir(u, tx, ty, me, forbid_box=False)
+         cmd.aim = math.degrees(math.atan2(by - u.y, bx - u.x)) % 360.0
+         return cmd
+@@ -1384,9 +1530,13 @@
+     if theirs:
+         o = st.units[st.owner]
+         ogx = MY_GOAL_X[me]
+-        dx, dy = bx - ogx, by - 13.0
++        dx, dy = ogx - bx, 13.0 - by
+         dd = hyp(dx, dy) or 1.0
+-        tx, ty = bx - dx / dd * 0.40, by - dy / dd * 0.40
++        db = hyp(u.x - bx, u.y - by)
++        if db < 1.05:
++            tx, ty = bx, by
++        else:
++            tx, ty = bx + dx / dd * 2.0, by + dy / dd * 2.0
+         tx, ty = safe_spot(me, tx, ty, 0.45)
+         cmd.dir = move_dir(u, tx, ty, me)
+         cmd.aim = math.degrees(math.atan2(by - u.y, bx - u.x)) % 360.0
+@@ -1417,7 +1567,7 @@
+     ogx = MY_GOAL_X[me]
+     dx, dy = ogx - bx, 13.0 - by
+     dd = hyp(dx, dy) or 1.0
+-    off = 4.2
++    off = min(4.2, 0.45 * hyp(bx - ogx, by - 13.0))
+     tx, ty = bx + dx / dd * off, by + dy / dd * off
+     tx, ty = safe_spot(me, tx, ty, 0.45)
+     cmd.dir = move_dir(u, tx, ty, me)
+@@ -1434,7 +1584,7 @@
+     return Cmd(d, None, False)
+ 
+ 
+-def frame_commands(st, me):
++def frame_commands_impl(st, me):
+     n = st.n
+     my = [u for u in st.units if u.team == me]
+     opp = [u for u in st.units if u.team != me]
+@@ -1484,10 +1634,14 @@
+             if o is None:
+                 o = owner
+             if o is not None:
+-                # 从球门一侧贴近（挡射门通道）
+-                dx, dy = o.x - ogx, o.y - 13.0
++                # jockey on the ball-goal line, block the shot cone
++                dx, dy = ogx - o.x, 13.0 - o.y
+                 dd = hyp(dx, dy) or 1.0
+-                tx, ty = o.x - dx / dd * 0.40, o.y - dy / dd * 0.40
++                db = hyp(u.x - o.x, u.y - o.y)
++                if db < 1.05:
++                    tx, ty = o.x, o.y
++                else:
++                    tx, ty = o.x + dx / dd * 2.0, o.y + dy / dd * 2.0
+                 tx, ty = safe_spot(me, tx, ty, 0.45)
+                 cmd.dir = move_dir(u, tx, ty, me)
+                 cmd.aim = math.degrees(math.atan2(o.y - u.y, o.x - u.x)) % 360.0
+@@ -1536,7 +1690,27 @@
+     return [{"dir": "N", "aim": None, "kick": False} for _ in range(n)]
+ 
+ 
++def frame_commands(st, me):
++    cmds, my, opp, owner = frame_commands_impl(st, me)
++    if RECV['idx'] is not None and st.owner < 0 and st.lastTeam == me \
++            and st.frame - RECV['frame'] <= 45:
++        tx, ty = RECV['pos']
++        tx, ty = safe_spot(me, tx, ty, 0.35)
++        cmd = Cmd()
++        # find the designated unit
++        for u in my:
++            if u.index == RECV['idx']:
++                cmd.dir = move_dir(u, tx, ty, me)
++                cmd.aim = math.degrees(math.atan2(ty - u.y, tx - u.x)) % 360.0
++                cmds[u.index] = cmd
++                break
++    if st.owner >= 0:
++        RECV['idx'] = None
++    return cmds, my, opp, owner
++
++
+ def decide_window(s0, me, n):
++    T0['t'] = time.time()
+     frames = []
+     st = s0.clone()
+     for f in range(20):
+@@ -1600,6 +1774,8 @@
+                         deg = None
+                         if aim is not None:
+                             deg = round(math.degrees(math.atan2(aim[1], aim[0])) % 360.0, 2)
++                            if deg >= 360.0 or deg < 0.0:
++                                deg = 0.0
+                         row.append({"dir": d, "aim": deg, "kick": bool(kick)})
+                     out.append(row)
+             print(json.dumps({"inputs": out}), flush=True)
