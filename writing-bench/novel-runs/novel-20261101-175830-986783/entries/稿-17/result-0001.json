@@ -1,0 +1,123 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 162709,
+    "stop_reason": "end_turn",
+    "session_id": "aa1bf945-c516-46b0-a262-32a09fe584ba",
+    "total_cost_usd": 0.23356,
+    "usage": {
+      "input_tokens": 3595,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 10959,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-5.6-sol": {
+        "inputTokens": 3595,
+        "outputTokens": 10959,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.23356,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "双帝之战后的第十年，斗气大陆的天，被人从外面敲了三下。\n\n咚！\n\n第一声，分布在五域的三百六十座测气塔同时熄灭。\n\n这些高塔是炎盟战后所建，专门监测空间风暴，十年来从未失灵。\n\n咚！\n\n第二声，天地斗气逆流。\n\n中州无数正在突破的强者当场吐血，魔兽山脉万兽伏地，就连闭关多年的斗圣，也骇然发现体内斗气竟被一股力量死死压回气海。\n\n咚！\n\n第三声落下时，炎都上空，裂开了一道横贯千里的银色缝隙。\n\n帝炎广场上，百万人的欢呼戛然而止。\n\n今日原本是帝战十年祭。\n\n广场中央，一座万丈石碑直入云端。碑顶那道由炎帝亲手留下、十年未灭的火痕，忽然摇晃了一下。\n\n熄灭了。\n\n萧潇猛地抬头。\n\n她一身黑红劲装，长发束在脑后，手腕上缠着一条九彩小蛇。方才还懒洋洋的小蛇，此刻鳞片尽竖，对着天空不断吐信。\n\n“少盟主，退后！”\n\n数名炎盟长老同时掠出。\n\n话音未落，一块千丈青铜碑从裂缝中缓缓降下。\n\n碑上没有半点斗气波动，可它每下降一寸，整座炎都便下沉一分。城外山脉接连崩裂，广场上的斗尊强者成片跪倒，连抬头都做不到。\n\n下一刻，一道漠然声音自天外传来。\n\n“下位界域，斗气大陆。”\n\n“新帝离界，封界十年。”\n\n“今日期满。”\n\n青铜碑上，猩红文字一笔笔浮现。\n\n“三日之内，献位面之胎、帝火火种，以及萧炎直系血裔。”\n\n“可留此界七成生灵。”\n\n广场死寂。\n\n数息之后，一名白发老者怒喝道：“藏头露尾之辈，也敢在炎帝故土放肆！”\n\n他抬手祭出一道百丈斗气匹练。\n\n八星斗圣之威爆发，炎都上空瞬间风云倒卷。\n\n然而那道匹练还未触及青铜碑，便无声消散。\n\n不是被挡住。\n\n而是被直接抹去了。\n\n白发老者脸色一白，整条右臂猛然炸成血雾！\n\n“石老！”\n\n众人惊呼。\n\n天外那道声音没有丝毫波动。\n\n“下界斗圣，亦敢触犯天碑？”\n\n萧潇一步踏出，接住坠落的老者。\n\n她刚要开口，人群中忽然响起一声轻笑。\n\n“少盟主，天意已经说得很清楚了。”\n\n说话之人身披银袍，面容温和，胸口绣着四轮弯月。\n\n万轮宗宗主，罗通玄。\n\n这个宗门七年前才出现，却凭一门不修气旋、只凝“源轮”的新法迅速崛起。如今万轮宗门徒遍布中州，隐隐已有炎盟之下第一势力的声势。\n\n罗通玄看向萧潇，叹道：“用你一人，换大陆七成生灵，虽说残酷，却是最好的选择。”\n\n萧潇眯起眼。\n\n“你想把我交出去？”\n\n“不是我想，是众生需要。”\n\n罗通玄环视四周，声音陡然提高。\n\n“诸位，炎帝救过大陆不假，可我们总不能为了他的女儿，再让整个大陆陪葬一次！”\n\n人群顿时骚动。\n\n几名万轮宗长老悄然后退，堵住了广场出口。\n\n炎盟众强者刚要动手，青铜碑上的威压骤然加重。所有修炼传统斗气之人，气海都像被冻结一般，竟连一丝斗气都调动不了。\n\n唯有罗通玄周身银光暴涨。\n\n一道、两道、三道、四道！\n\n四轮银月自他背后升起，气息节节攀升，竟丝毫不受天碑压制。\n\n萧潇盯着那四道源轮，眼神彻底冷了下来。\n\n“难怪你的源轮法进展这么快。”\n\n“原来三年前，你就给天外当了狗。”\n\n罗通玄脸上的温和消失了。\n\n“我只是比你们更早看清天地。”\n\n“斗帝早已不是终点。萧炎能去的地方，我罗通玄迟早也能去！”\n\n他抬手一握，四道银轮瞬间合一，化作一只千丈巨手，对着萧潇当头抓下。\n\n“萧潇，别逼本宗主伤你。”\n\n巨手落下，空间层层粉碎。\n\n那股力量已远超寻常八星斗圣！\n\n炎盟众人目眦欲裂，却被天碑压得动弹不得。\n\n罗通玄嘴角刚刚扬起，便看见萧潇抬起了右手。\n\n只用两根手指。\n\n啪！\n\n千丈巨手停在她头顶三尺，再也无法落下。\n\n“新路没有错。”\n\n萧潇指尖微微用力，巨手表面顿时爬满裂纹。\n\n“错的是你跪着走，还以为自己登了天。”\n\n轰！\n\n巨手炸碎！\n\n罗通玄脸色大变，四道源轮疯狂旋转。他刚想后退，萧潇已经越过百丈距离，一掌按在了他的胸膛。\n\n没有惊天动地的斗气。\n\n只有一缕近乎透明的火苗。\n\n这火不在旧日异火榜上。\n\n它诞生于帝战后的第三年，源自大陆亿万户重新点亮的灶火，药老亲自为其取名——万家火。\n\n火苗入体，罗通玄背后的四道源轮瞬间凝固。\n\n“怎么可能？我的源轮不受斗气压制，你怎么可能——”\n\n“因为这不是我的火。”\n\n萧潇五指一扣。\n\n“是这座大陆的火。”\n\n砰！砰！砰！砰！\n\n四道源轮接连爆碎。\n\n罗通玄惨叫着砸入广场，浑身经脉寸寸断裂。方才还不可一世的万轮宗宗主，此刻像条死狗般趴在萧潇脚下。\n\n萧潇踩着他的脸，抬头望向天碑。\n\n“我父亲救下的大陆，不拿活人买命。”\n\n“三日之后，你若敢来，我就敢烧。”\n\n天外沉默片刻。\n\n紧接着，一只覆盖千里的金色眼眸，出现在裂缝之后。\n\n目光落下的刹那，萧潇腕上的九彩小蛇发出尖锐嘶鸣。她体内的帝血竟像被某种东西牵引，要强行破体而出！\n\n“帝血浓度九成。”\n\n金色眼眸中第一次有了情绪。\n\n那是贪婪。\n\n“钥匙果然在你身上。”\n\n一根金色手指穿过裂缝，向炎都按下。\n\n仅仅一根手指，却让方圆万里的空间全部凝固。炎都之外，大地成片塌陷，仿佛整个大陆都承受不住它的重量。\n\n萧潇咬破舌尖，九彩光芒冲天而起。\n\n透明火焰迎风暴涨，化作一条横亘长空的火焰巨蟒，一口咬住金色手指！\n\n嗤！\n\n青烟席卷千里。\n\n那根手指竟被硬生生烧出一道焦黑伤口！\n\n“滚回去！”\n\n萧潇一声厉喝，火焰巨蟒轰然自爆。\n\n金色手指被炸回裂缝，青铜天碑也随之崩开一道裂纹。\n\n无数碎片坠落。\n\n其中最大的一块，正好砸在罗通玄身上，将他连同那身银袍一起钉进地底。\n\n广场上先是一静，随即爆发出山呼海啸般的怒吼。\n\n“少盟主！”\n\n“炎盟不降！”\n\n“斗气大陆不降！”\n\n金色眼眸冷冷注视着萧潇。\n\n“三日后，太墟府真身降临。”\n\n“届时，此界无人生还。”\n\n银色裂缝骤然闭合。\n\n天地斗气恢复流动，萧潇却在转身的瞬间，猛地吐出一口鲜血。\n\n她藏在袖中的右手，五指已经尽数折断。\n\n仅仅一根跨界而来的手指，便险些逼出她全部底牌。\n\n若真身降临呢？\n\n“封锁消息，召集大陆议会。”\n\n萧潇擦去嘴角鲜血，声音依旧平静。\n\n“另外，把万轮宗所有分殿给我拔了。一个不留。”\n\n“是！”\n\n众人领命而去。\n\n萧潇没有停留，独自进入帝炎碑下方的密室。\n\n密室中央，悬着一枚漆黑火种。\n\n这是萧炎离开大陆前留下的最后一件东西。十年来，无论萧潇用什么办法，它都没有半点反应。\n\n可就在天碑降临后，黑色火种亮了。\n\n一张熟悉的面孔自火光中缓缓浮现。\n\n“潇潇。”\n\n听见这个声音，萧潇呼吸骤停。\n\n“爹？”\n\n火光中的萧炎满身鲜血，身后像是一片望不到尽头的黑色牢笼。\n\n“如果你能看见这段话，说明界门已经在第十年反开。”\n\n“记住，门外的东西能读取记忆、复制血脉，甚至拥有我们的气息。”\n\n“无论谁从那扇门回来，都不要相信。”\n\n画面剧烈闪烁。\n\n萧炎最后一句话断断续续传出。\n\n“真正的我们……十年前……根本没有穿过界门……”\n\n轰！\n\n密室大门突然被人撞开。\n\n一名炎盟护卫跌跌撞撞冲进来，脸上没有半点血色。\n\n“少盟主，旧界门开了！”\n\n“炎帝、美杜莎女王和薰儿小姐……回来了！”\n\n萧潇猛地抬头。\n\n炎都之外，三道人影正踏着火海缓步而来。\n\n最前方的黑衣男子肩扛重尺，抬眼望向密室，隔着千里与她对视。\n\n随后，他露出了萧潇记忆中最熟悉的笑容。\n\n“丫头，十年不见，怎么连爹都不叫了？”",
+    "ttft_ms": 10355,
+    "type": "result",
+    "duration_ms": 162771,
+    "uuid": "7a2d297d-1ba9-4734-92fa-d0d8005e26bf",
+    "ttft_stream_ms": 3635,
+    "time_to_request_ms": 62,
+    "time_to_request_phases_ms": {
+      "other": 8,
+      "system_prompt": 30,
+      "resume_other": 0,
+      "process_user_input": 2,
+      "input_attachments": 2,
+      "input_hooks": 2,
+      "transcript_persist": 2,
+      "tool_pool_refresh": 1,
+      "init_message": 3,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 1,
+      "autocompact": 0,
+      "query_setup": 0,
+      "model_gates": 1,
+      "tool_schema_build": 3,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 12,
+    "time_to_request_cpu_ms": 78,
+    "time_to_request_major_faults": 7054,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 267
+    },
+    "first_content_frame_ms": 3635,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 163.2
+}

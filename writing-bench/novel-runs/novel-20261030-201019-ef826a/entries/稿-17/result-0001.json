@@ -1,0 +1,135 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 147819,
+    "stop_reason": "end_turn",
+    "session_id": "6aa1f8f4-b191-4e4d-8291-815ec98a3d0e",
+    "total_cost_usd": 1.1775275,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 9603,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 21149,
+      "output_tokens_details": {
+        "thinking_tokens": 17253
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9603
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 4,
+          "output_tokens": 21148,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 9602,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 9602,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-fable-5-1": {
+        "inputTokens": 4,
+        "outputTokens": 21149,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 9603,
+        "webSearchRequests": 0,
+        "costUSD": 1.1775275,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 17253,
+        "canonicalModel": "claude-fable-5-1",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "《秤城旧账》\n\n一\n\n周德海死了三个月才被发现。在我们这一行，这算不上新闻，只算一种常见的收尾。\n\n整栋楼要拆了，我是最后一个上来的。楼道里堆着别人不要的东西，一张断腿的桌子，一盆干透的绿萝，谁家的婚纱照脸朝下扣在纸箱上。我爬楼梯，一层一层数，数到六楼，掏出钥匙。\n\n我戴两层手套，外层丁腈，内层棉的。不是为了干净，是怕手汗毁了纸。\n\n规矩有三样东西不能扔：药、钥匙、写了字的纸。\n\n药按日期排好，摆在餐桌左边，从最近的排到最远的，排到最后一天是三月十七号，之后就没有了。钥匙一把一把数进信封，数完在封面写数目，六把。纸归我。\n\n我坐在他生前坐的那把椅子上，一张一张看。水电单，保修卡，一张超市小票，背面写着：鸡蛋、盐、给小满打电话。\n\n小满是谁我不知道。干这行久了就明白，一个人一辈子留下的字，八成是写给别人的，一成是账单，还有一成是没送出去的。\n\n我把小票放进“待定”的盒子，抬头，看见墙角有一扇门。\n\n不是房门。这屋子我进门时量过，两室一厅，六十二平，四面墙我都敲过。可它就在墙角，齐我胸口高，木头的，门上钉着一块黄铜牌，牌上有三个数字。\n\n这栋楼我干了四天，一楼到六楼。没有七楼。\n\n我蹲下去看那块铜牌。数字底下还有一行更小的字，被摸得几乎平了，我用指腹蹭了蹭，蹭掉一层灰。\n\n那不是数字。那是我的名字。\n\n我推门。门没锁，也没响，合页上有油，这栋楼里唯一上过油的东西。\n\n里面是一间空房，比外面大得多，四面没有窗，墙是灰的。地上有一个圆，白粉画的，烧过，边缘发黑，像有人在里面放过一场火。\n\n空气很冷，是冬天早上铁栏杆那种冷。\n\n我蹲下去看那个圆。粉里掺了别的东西，细得像面粉，我捻了一点在指间，不烫也不凉。然后我看见了字。不是画上去的，是压在粉底下的，一层压一层，密得像账本。我干了十二年，见过账本的密，没见过这种密。\n\n中间有一行是汉字。林砚。\n\n后面跟着一个日期。我只看了一眼就不想看第二眼，因为那个日期比我出生早了四十一年。\n\n我伸手去碰那行字。指尖一麻。\n\n脚底下的圆亮了一下。不是光，是白，所有东西同时被抽走了颜色，包括我的手套，包括我的鞋，包括我自己。我听见很远的地方有人用很平的调子念一个数，像银行柜员念金额。\n\n然后地面从我脚底下塌下去，塌得一点也不响。\n\n二\n\n我落在一块石板上。\n\n太阳很大，晒得后颈发烫，石板却是冰的。我趴了大概十秒钟，先确认手指还在，再抬头。\n\n是个院子。四面石墙，墙头插着铁矛，矛尖上挂着小铜牌，风一过，响成一片很轻的雨。院里站着二十来个人，都穿长袍，袖口宽，正在看我。没人喊，也没人过来扶。\n\n我身下也是一个圆。白粉，边缘烧黑，比我刚才在屋里见的那个大两圈。\n\n有人在说话，一个字听不懂。然后忽然就听懂了，像有人在我耳朵里翻了一页词典，翻过去那一瞬，声音变成了意思。\n\n“越界者。活的。”一个瘦高个说。\n\n“记下来。”另一个说。\n\n走到我面前的是个女人，灰外套，袖口别着一排小铜计数器，走路时一颗都不响。她翻开册子，笔尖悬着。\n\n“姓名。”\n\n“林砚。”\n\n“职业。”\n\n我想了想。“收拾死人东西的。”\n\n笔停了一下。“归类为拾遗。”她翻页，“你欠账。越界通行，一次，全额未付。”\n\n“多少钱。”\n\n“这儿不欠钱。”她合上册子，“这儿欠东西。”\n\n笔尖点了点我脚下的圆。“你从那边过来，这个圆替你垫了一半。剩下一半，现在就得还。”\n\n“我身上没东西。”\n\n“你有。”她看着我，“你有名字。”\n\n我笑了一下，没笑出来。“名字也能当钱？”\n\n“名字是这儿最硬的东西。押出去，换东西回来。押多了赎不回来，人还在，名字没了。”她朝院子角落抬了抬下巴，眼睛没跟过去，“街上那种你眼睛总也落不上去的人，别看。”\n\n我偏偏看了。\n\n角落里蹲着一个人，灰扑扑的，抱着膝盖。我看得清清楚楚，看得见他左眼角有颗小痣，看得见他嘴唇在动。\n\n他说了一个词。院里没有一个人有反应。\n\n那个词是“林砚”。\n\n我把视线收回来，手心有点湿。“你叫什么。”\n\n“艾达·维尔。账房的核债人。”她把册子塞进怀里，“从今天起我跟着你。还清之前，你走到哪儿我跟到哪儿。你跑我不追，账会追。”\n\n“追上呢。”\n\n“你就变成角落里那个样子。然后没人记得你叫什么。”她顿了顿，“包括你自己。”\n\n出了院子是一条街。石板路，两边摊子挤得密，卖的东西我看不懂：玻璃瓶里装灰，铁盒里装指甲，成卷的头发用绳子扎好，标着价。\n\n艾达在一个摊子前买了半张饼。她没掏钱，从怀里摸出一枚薄铜片按在摊主手心。摊主捏了捏，收下。她袖口最左边那颗计数器“嗒”地跳了一下。\n\n“那是什么。”\n\n“热。”她说，“我买了三个月的热，饼是附送的。”\n\n她把饼掰了一半给我。是温的。\n\n我接过来，看见她按铜片的那根手指，指甲底下有一小块灰，像被烟熏过。\n\n“你的手。”\n\n“正常。”她把手缩进袖子，“欠着就得付利息。付不起利息，就付别的。”\n\n“我欠多少。”\n\n“一名。”\n\n“一名什么。”\n\n“一名。”她咬了口饼，没有再说下去。\n\n三\n\n“那个圆，”我说，“我想再看一眼。”\n\n“看什么。”\n\n“上面有字。”\n\n她停下来。“粉上没字。”\n\n“粉下面有。”我说，“我干的那行，看纸。纸记事，粉也记。”\n\n她盯着我看了很久，久到饼凉了。“你要是把它弄坏，赔的是命。”\n\n“我手很轻。”\n\n她转身往回走。\n\n院里的人已经散了，只剩两个穿黑短褂的执秤人守在门口。艾达过去说了句什么，他们退到墙边。\n\n我蹲下去，把手掌贴在圆的白粉上。\n\n粉底下的字一层压着一层。最上面是今天早上写的，笔迹很急，收不住；再往下是几个月前；再往下，年代一层一层往里退，像树的年轮。我一层一层往回翻，手指越往里越冷。\n\n翻到最底下一层，我停住了。\n\n那一层的字很稳，笔画收得住，是写惯了账的手。\n\n借方：林砚。\n\n贷方：林砚。\n\n同一个名字，写在一条线的两头。\n\n日期在我出生前四十一年。\n\n我收回手，指尖上沾着白粉，白粉底下透出一点红。不是血，是朱砂，四十年了还没褪。\n\n“怎么样。”艾达在我背后问。\n\n“这个圆不是今天画的。”\n\n“废话。这院子封了四十年。”\n\n“那这行字，”我说，“是我写的。”\n\n她没说话。我听见她把手伸进怀里，摸出册子，纸页翻动的声音。\n\n“你分得清借贷？”\n\n“我认得笔迹。”我说，“我签了十二年交接单。这个‘砚’字最后一横，我习惯往上挑一点。”\n\n她沉默了几秒，声音比刚才低了半度。“借方写的谁。贷方写的谁。”\n\n“都是林砚。”\n\n院子外面，钟响了。\n\n一声，很长，像有人拿铁锤敲一口埋在地底下的锅。\n\n墙边的两个执秤人同时抬头。街上有人在跑，脚步声很快地散开。\n\n“什么钟。”我问。\n\n“到期钟。”艾达合上册子，“一天敲一次。”\n\n她看着我。\n\n“敲给今天必须还清的那笔账。”\n\n钟还在响。我站起来，膝盖有点软。\n\n然后我看见，角落里那个人也站起来了。\n\n他往我这边走，走得很慢，像在水里走。院里的人都不看他，也没人拦他。他穿过那些长袍，一直走到我面前，停下，抬起头。\n\n他的眼睛清楚得很，清楚得不像一个被人忘掉的人。\n\n他伸出手，掌心朝上，像在等人找零。\n\n他说：\n\n“还我。”",
+    "ttft_ms": 110787,
+    "type": "result",
+    "duration_ms": 147895,
+    "uuid": "f8fd2b4e-60d6-4ebf-8ce5-6c6d480570a9",
+    "ttft_stream_ms": 4519,
+    "time_to_request_ms": 76,
+    "time_to_request_phases_ms": {
+      "other": 11,
+      "system_prompt": 36,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 2,
+      "transcript_persist": 3,
+      "tool_pool_refresh": 1,
+      "init_message": 4,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 1,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 5,
+      "message_normalization": 1,
+      "client_creation": 4,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 26,
+    "time_to_request_cpu_ms": 156,
+    "time_to_request_major_faults": 7025,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 286
+    },
+    "first_content_frame_ms": 4519,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 148.4
+}

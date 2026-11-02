@@ -1,0 +1,135 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 101587,
+    "stop_reason": "end_turn",
+    "session_id": "f4f69358-9e78-49f6-8ef3-da8d2227ca3b",
+    "total_cost_usd": 0.74704,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 9852,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 12477,
+      "output_tokens_details": {
+        "thinking_tokens": 8890
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 9852
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 4,
+          "output_tokens": 12476,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 9852,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 9852,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-fable-5-1": {
+        "inputTokens": 4,
+        "outputTokens": 12477,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 9852,
+        "webSearchRequests": 0,
+        "costUSD": 0.74704,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 8890,
+        "canonicalModel": "claude-fable-5-1",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "# 第一章 万火齐喑\n\n丹城，三千炉火，一息尽灭。\n\n不是“灭了”，是“没声”。九百年不熄的丹火齐齐一矮，像三千个人同时被按了头。长街上摆炉的、看火的、押丹的，全都僵在原地。\n\n“灭了？”\n\n“丹塔的九转还魂火也灭了！”\n\n丹城最中央那座白玉高台上，丹塔三长老霍然起立。他袖中本有一缕赤金火苗，此刻缩成一团，怎么催都不肯抬头。老头的脸色比那火还白。\n\n“万火齐喑……”他喃喃，“上一次这样，是双帝之战那天。”\n\n这句话像一块石头砸进水里。\n\n十年前那一日，中州的天裂开过。后来天下归了天府联盟，萧炎封了帝，听说又与两位夫人一同隐去。十年太平，太平得让年轻人都快忘了“怕”字怎么写。\n\n而今天，火灭了。\n\n就在满城哗然之际，东方天际，魔兽山脉的方向，升起了一缕白。\n\n不是火的红，不是丹的青。是白，干净得像谁用刀在天上划了一道口子，光从伤口里漏出来。\n\n“传令下去，”丹塔三长老一字一字道，“封锁东城门。凡出城者，格杀。”\n\n---\n\n“苏决！死人啦？添炭！”\n\n一脚踹在后腰上。\n\n苏决往前扑了半步，膝盖磕在青石板上，炭筐翻了，黑炭滚了一地。他没吭声，低头去捡。\n\n踹他的是柳承，丹城城主的小儿子，十七岁，二星大斗师。在这条街上，柳承踹谁，谁就得笑着说踹得好。\n\n“万丹会今天开炉，你那口破炉连火都生不起来，还敢占着东三号的位置？”柳承踩着炭筐，脚尖一碾，“滚。”\n\n苏决抬起头。\n\n他今年也十七。一星斗者，三年前测出来的，之后再没动过。父母死在双帝之战的余波里——那天中州塌了半边天，塌下来的东西压死了很多连斗者都不是的人。\n\n他是被丹塔的杂役从瓦砾里刨出来的。烧了十年火，添了十年炭，认得三百种药材，闻一鼻子就知道丹成没成。可他一辈子炼不出一颗丹。\n\n因为他没有火。\n\n“东三号是塔里分给我的。”苏决说。\n\n“你说什么？”\n\n“我说，位置是塔里分的。”苏决把最后一根炭捡起来，塞回筐里，站起身，“柳少爷要，去跟塔里说。”\n\n街上一下子静了。\n\n柳承笑了。他笑起来很好看，然后抬手就是一巴掌。\n\n斗气裹着掌风，二星大斗师的力道，打在普通人脸上，能打掉半边牙。\n\n苏决没躲。他也不想躲。这三年来他试过很多次，一星斗者在二星大斗师面前，躲与不躲没有区别。\n\n“啪。”\n\n他被打得倒退三步，嘴角裂了，血腥味漫上来。\n\n“再来。”柳承甩了甩手，“跪下，把炭一颗一颗捡进筐里，我让你明天还能站在这条街上。”\n\n苏决舔了舔嘴角的血。\n\n然后他忽然觉得奇怪——不疼。\n\n不是不疼，是疼得不对劲。像有人在他胸口点了一盏灯，热流顺着骨头往下淌，把所有的疼都烧没了。\n\n他低头看自己的手。\n\n掌心里不知何时多了一点白。\n\n那点白很小，只有米粒大，贴在掌纹里，不烫，也不亮。可就在它出现的那一息，长街两侧三千口死掉的丹炉，同时“嗡”了一声。\n\n不是复燃。\n\n是朝拜。\n\n青的、赤的、紫的、金的，三千炉火齐齐倒伏，火头全都弯向同一个方向——弯向那个满身炭灰、嘴角流血的少年。\n\n柳承脸上的笑僵住了。\n\n“你……你手里那是什么？”\n\n苏决也不知道。他只知道，那点白在他掌心里，像一只刚出生的小兽，怯生生地蹭了蹭他。\n\n然后它张开了嘴。\n\n---\n\n“轰——！”\n\n不是爆炸，是抽。\n\n以苏决为中心，三丈之内，所有斗气被抽空了。柳承身上那层淡青色的斗气甲胄像纸一样被撕开，一片片剥落，往苏决掌心里钻。\n\n“我的斗气！”柳承惨叫着后退，一屁股坐在地上。二星大斗师的修为，三息之内跌成一星斗者，还在掉。\n\n“妖物！”他嗓子都劈了，“杀了他！快杀了这个妖物！”\n\n城主府的护卫扑上来四个，都是斗师。刀还没落下，刀身上的斗气先没了。刀成了废铁，人成了软脚虾。\n\n苏决站着没动。\n\n他害怕，他是真的害怕。可掌心里那点白太安静了，安静得像在说：别怕。\n\n“够了。”\n\n一声冷喝，天塌下来一样压在长街上。\n\n丹塔三长老落在街心，灰袍无风自动。斗尊的气息一放开，半条街的青石板齐齐下陷三寸。\n\n老头盯着苏决的手，眼睛眯成一条缝。\n\n“小杂役。”他说，“把你手里的东西交出来。”\n\n苏决看着他。\n\n十年前，这个人来过他家。那天塌下来的东西压着父母的尸体，这个灰袍老头从天上落下来，看了一眼，说“救不活了”，然后走了。\n\n苏决记了十年。\n\n他把手往身后一藏。\n\n“不交。”\n\n丹塔三长老笑了，笑得像在看一只不知死活的蚂蚁。\n\n“你知道那是什么吗？”\n\n“不知道。”苏决说，“但我知道，它选了我。”\n\n“选你？”老头抬手，五指张开，斗气在掌心凝成一只灰白色的巨掌，“一星斗者的身子，撑不住它一炷香，就会被烧成灰。老夫是在救你。”\n\n巨掌压下。\n\n风压得苏决几乎跪倒。他的骨头在响，皮肉在裂，眼角渗出血来。\n\n然后，掌心那点白，动了。\n\n它没有变大，也没有爆开。\n\n它只是对着那只灰白色的斗气巨掌，轻轻吸了一口气。\n\n“嗤——”\n\n斗尊的一掌，没了。\n\n不是被打散，是被吃掉了。干干净净，连渣都没剩。\n\n丹塔三长老的手僵在半空，脸上的血色一寸一寸退下去。他活了三百二十年，见过斗圣，见过斗帝，也见过双帝之战那天的天崩。\n\n他从没见过斗气被“吃”。\n\n“你……”他声音发颤，“你到底是谁？”\n\n苏决低头看着自己的掌心。\n\n那点白长大了一点。米粒成了豆粒，豆粒中间浮出一个模糊的字，像火，又像别的什么。\n\n“异火榜二十三种，”老头盯着他的掌心，喉咙发干，“老夫全都识得。你这东西，不在榜上。”\n\n苏决抬起头：“那它在榜外？”\n\n丹塔三长老没有回答。\n\n他退了半步。三百二十年来，他第一次在一个十七岁的少年面前退半步。\n\n“榜外，”他终于开口，声音低得像怕被谁听见，“只有一样东西。那不是火，那是——”\n\n一个极轻的声音打断了他，在他脑子里响起来，像从很远很远的地方传来，又像贴着他的耳朵：\n\n“第十年了。”\n\n“终于有人，接得住我。”\n\n---\n\n同一刻。\n\n中州，天府，无名山巅。\n\n一间闭了十年的石室，门开了。灰落下来，落了薄薄一层。\n\n走出来的人抬手挡了挡太阳，十年没见过光，眼睛有些不适。他看上去三十出头，一身黑衣洗得发白，腕子上缠着一圈旧布。\n\n山下守着的两个护卫“扑通”跪下，声音都在抖：“盟……盟主！”\n\n那人没应。\n\n他抬起头，望向东方。丹城的方向，魔兽山脉的方向。\n\n他站了很久，久到风把他衣角吹干。\n\n然后他轻轻说了一句，像自言自语：\n\n“它醒了。”\n\n“当年那位前辈说过——它要是醒了，第一个要杀的人，是我。”",
+    "ttft_ms": 65145,
+    "type": "result",
+    "duration_ms": 101820,
+    "uuid": "8d114bde-a60d-4433-a804-0b297cc75f37",
+    "ttft_stream_ms": 4318,
+    "time_to_request_ms": 231,
+    "time_to_request_phases_ms": {
+      "other": 137,
+      "system_prompt": 58,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 5,
+      "input_hooks": 2,
+      "transcript_persist": 10,
+      "tool_pool_refresh": 1,
+      "init_message": 5,
+      "engine_pickup": 0,
+      "message_prep": 1,
+      "model_config_wait": 1,
+      "autocompact": 0,
+      "query_setup": 1,
+      "model_gates": 0,
+      "tool_schema_build": 4,
+      "message_normalization": 1,
+      "client_creation": 2,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 20,
+    "time_to_request_cpu_ms": 156,
+    "time_to_request_major_faults": 9123,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 3,
+      "cpu_ms": 0,
+      "major_faults": 361
+    },
+    "first_content_frame_ms": 4319,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 102.4
+}

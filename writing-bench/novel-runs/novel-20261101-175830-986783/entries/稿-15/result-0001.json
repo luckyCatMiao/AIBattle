@@ -1,0 +1,135 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 140508,
+    "stop_reason": "end_turn",
+    "session_id": "03423d01-aed6-4edc-84fa-1bc372a78768",
+    "total_cost_usd": 0.5359275,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 12522,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 18306,
+      "output_tokens_details": {
+        "thinking_tokens": 15196
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 12522
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 3,
+          "output_tokens": 18306,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 12522,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 12522,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-4-6": {
+        "inputTokens": 3,
+        "outputTokens": 18306,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 12522,
+        "webSearchRequests": 0,
+        "costUSD": 0.5359275,
+        "contextWindow": 200000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 15196,
+        "canonicalModel": "claude-opus-4-6",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "落霞城的规矩很简单：谁的火旺，谁就说话。\n\n城东万宝阁后院，十七口青铜药鼎一字排开。鼎底的火苗蔫头耷脑地舔着炉壁，青烟一缕缕往上飘，像一群快死的蛇。\n\n苏烬跪在第十七口鼎前，额头顶着青石板。\n\n“再说一遍。”头顶传来一个懒洋洋的声音。\n\n“弟子火候没控住，废了陈管事三钱赤阳草。”\n\n“三钱赤阳草。”那人笑了，“你知不知道现在一钱值多少？”\n\n苏烬知道。一钱赤阳草，八十块下品斗晶。十年前是八块。\n\n十年前双帝之战落幕，炎帝萧炎一人收尽天下奇火。从那以后，斗气大陆再没有第二种异火现世。\n\n没有异火，炼药师就只能烧兽火。兽火暴躁、浑浊、不听使唤，一炉丹药废掉七成是常事。药材价钱翻了十番，炼药师从大陆最风光的行当，变成了最烧钱的赌徒。\n\n赌徒最恨的，就是浪费药材的人。\n\n“拖出去。”赵元朗端着茶盏，眼皮都没抬，“腿打断，扔到城外喂魔兽。”\n\n两个护院上来架人。\n\n苏烬没动，抬起头。\n\n他今年十九岁，斗之气九段，卡了四年。整座落霞城都知道，万宝阁养了个废物药童。\n\n“赵公子，”他说，“那三钱赤阳草，不是我废的。”\n\n“哦？”\n\n“鼎里的火，是死火。”\n\n后院静了一瞬。\n\n赵元朗放下茶盏，笑了：“你再说一遍？”\n\n“兽火离体半个时辰就死。死火没温度，看着还在烧，其实是拿药性当柴。”苏烬指了指鼎底，“这火我添了三遍兽油都不旺，反倒越烧越青。青火焚药——赵公子要是不信，把这批兽火退给贩子，看他们敢不敢收。”\n\n他声音不大，一字一句。\n\n周围几个药童脸都白了。\n\n赵元朗的笑僵了一下，随即又松开：“说得漂亮。可这批火，是我亲自验的。”\n\n他起身走到鼎边，抬手往鼎里一探。\n\n青色的火苗“呼”地窜起半尺，照得他半张脸发青。\n\n“你看，旺得很。”\n\n苏烬看着那火，忽然觉得胸口发烫。\n\n不是害怕，是真烫——像有什么东西，在肋骨底下轻轻翻了个身。\n\n“赵公子，”他慢慢说，“您手别抖。”\n\n赵元朗的手确实在抖。\n\n不是他怕。是那青火在吸他的斗气。\n\n“这火——”\n\n“退！”\n\n苏烬一把撞开他，自己往前扑了半步，抬脚踹翻了第十七口鼎。\n\n“轰——”\n\n青铜鼎砸在青石地上，滚烫的药渣泼了一地。那团青火脱了鼎，在半空打了个旋，居然没灭，反倒张牙舞爪地朝最近的活物扑去。\n\n朝赵元朗。\n\n赵元朗是二星斗师。斗气外放，一层白光罩住全身。\n\n可那青火一沾上去，白光就像蜡一样化了。\n\n“救我！”他尖叫。\n\n没人敢动。\n\n苏烬动了。\n\n他自己都不知道为什么要动。大概是七年药童养出来的毛病——看见火失控，手比脑子快。\n\n他冲上去，一把抓住了那团火。\n\n所有人都以为会听见皮肉烧焦的声音。\n\n没有。\n\n青火在他掌心停了一息，像一条认出了主人的狗，忽然安静下来，然后“咻”地钻进他皮肤里，消失不见。\n\n苏烬站在原地，手心干干净净，连个红印都没有。\n\n七年。\n\n整整七年，他替人添火、洗鼎、扫地，吃最差的丹药，睡最冷的柴房。斗气一年一年往下掉，从九段掉到七段，全城人都说他这辈子完了。\n\n原来不是他完了。\n\n是他身体里那个东西，在吃。\n\n吃了七年，终于吃饱了。\n\n下一刻，一股热流从他丹田里炸开，顺着经脉横冲直撞。\n\n他浑身一颤。\n\n斗之气，九段。\n\n十段。\n\n“砰”的一声轻响，像是什么东西碎了。\n\n斗者。\n\n还没停。\n\n一星、二星、三星——\n\n斗师。\n\n赵元朗的眼睛瞪得滚圆。\n\n他修了整整十二年，才修到二星斗师。\n\n这个跪在地上、被全城人叫了四年废物的药童，在他眼前，三息之内，走完了他的十二年。\n\n“苏烬！”\n\n院门外传来一个苍老的声音。\n\n万宝阁阁主周伯庸拄着拐杖快步进来。他七十多岁，三星斗灵，在落霞城算一号人物。可他此刻的脸色，比见了鬼还难看。\n\n他死死盯着苏烬的胸口，看了很久，喉结动了动。\n\n“你吞了那团死火？”\n\n“我没吞。”苏烬说，“它自己进来的。”\n\n周伯庸闭上眼。\n\n再睁开时，他做了一件让全院人都傻掉的事。\n\n他拄着拐杖，慢慢弯下腰，对着一个药童，行了个礼。\n\n“周阁主！”赵元朗叫起来，“您疯了吗——”\n\n“闭嘴。”\n\n周伯庸没看他，只看着苏烬，声音发颤：“孩子，你知不知道，异火榜上一共二十三个名字？”\n\n苏烬一愣。\n\n“十年前，炎帝收尽天下奇火，榜上只剩四个还亮着。”周伯庸伸出四根手指，又慢慢收回去，“剩下十九个位置，空了整整十年。”\n\n他顿了顿。\n\n“那十九个位置，不是空的。它们在等。”\n\n“等什么？”\n\n周伯庸看着他。\n\n“等一个愿意坐进去的人。”\n\n苏烬低头看了看自己的掌心。那里什么都没有，可他分明感觉到，有什么东西正贴着他的心跳，一下，一下。\n\n“阁主，”他轻声问，“坐进去会怎样？”\n\n周伯庸沉默了很久。\n\n“会有人来杀你。”他说，“第一个来的，三天之内就到。”\n\n---\n\n三千里外，圣丹城。\n\n炼药师公会总部深处，有一面石碑。\n\n碑上一个字都没有，只有二十三个名字。\n\n守碑的老者擦了十年碑面，擦得碑石都薄了一层。他这辈子最后一个心愿，是死之前能看见第五个名字亮起来。\n\n那天夜里，他被一阵热浪烫醒。\n\n石碑上，第二十三个位置，正在发红。\n\n一个字从石头里渗出来，一笔一划。\n\n「余烬」。\n\n老者跪了下去，老泪纵横。\n\n同一时刻，大陆另一端，某座山峰上。\n\n一个正在闭目养神的男人睁开了眼。\n\n身边的女人问他：“怎么了？”\n\n男人望着落霞城的方向，沉默了很久。\n\n“有人，”他说，“把那把火点着了。”\n\n“要紧吗？”\n\n“要紧。”男人站起身，衣袍无风自动，“十年了，这大陆上终于又出了一件——我猜不到结局的事。”",
+    "ttft_ms": 116522,
+    "type": "result",
+    "duration_ms": 140571,
+    "uuid": "d142f852-9bda-4b8a-9547-89afcfd070e4",
+    "ttft_stream_ms": 4325,
+    "time_to_request_ms": 63,
+    "time_to_request_phases_ms": {
+      "other": 8,
+      "system_prompt": 30,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 2,
+      "transcript_persist": 2,
+      "tool_pool_refresh": 1,
+      "init_message": 4,
+      "engine_pickup": 0,
+      "message_prep": 1,
+      "model_config_wait": 0,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 4,
+      "message_normalization": 1,
+      "client_creation": 2,
+      "request_build": 3
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 13,
+    "time_to_request_cpu_ms": 109,
+    "time_to_request_major_faults": 7089,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 291
+    },
+    "first_content_frame_ms": 4325,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 141.1
+}

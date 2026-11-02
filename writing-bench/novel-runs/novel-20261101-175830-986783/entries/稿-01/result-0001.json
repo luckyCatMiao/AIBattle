@@ -1,0 +1,123 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 265477,
+    "stop_reason": "end_turn",
+    "session_id": "c828e176-efe4-420b-bc82-bb39e0b06c91",
+    "total_cost_usd": 0.173184,
+    "usage": {
+      "input_tokens": 126,
+      "cache_creation_input_tokens": 3840,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 7674,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 3840
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "kimi-k3": {
+        "inputTokens": 126,
+        "outputTokens": 7674,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 3840,
+        "webSearchRequests": 0,
+        "costUSD": 0.173184,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "第一章 渊底的心跳\n\n双帝之战结束后的第十年,中州的天,烧了三次。\n\n第一次是月初。那道横贯南域的万里深渊——世人叫它\"帝渊\"——在一个无风的夜里突然亮了。红光冲起八百里,七城惊醒,有人跪在长街上哭,说炎帝回来了。\n\n炎帝没有回来。十年前那一战之后,他携两位帝后破碎虚空,去了传说中的大千世界。斗气大陆从此只有他的传说,没有他的人。\n\n第二次,天府联盟派进帝渊探查的三名斗尊,一个都没有上来。联盟连夜封锁南域,对外只说了四个字——渊底有变。\n\n第三次,是今夜。\n\n……\n\n黑角域,枫城旧址,城西一间漏风的杂货铺。\n\n苏烬蹲在炉口,把最后一块火炭拨进灶膛。火苗蔫蔫地舔着锅底,像他这个人一样,没什么出息。\n\n\"十七岁,斗之气三段。\"街对面的醉汉又在笑他,\"苏烬啊苏烬,你这火属性的斗气是哑的吧?黑角域的狗都比你烧得旺。就你这样,还想考迦南学院?\"\n\n苏烬没吭声。\n\n他不是不努力。十年来,他吞进去的每一缕斗气,都会在丹田里凭空消失——那里盘踞着一粒黑黢黢的火种,不吃柴,不发光,只吃他的斗气。灰老说,这是娘胎里带出来的废火。\n\n废火养废人,很配。\n\n可今夜不一样。\n\n从月上中天起,那粒火种就在他丹田里发烫,烫得他指尖发颤。像是沉睡了十年的东西,忽然听见了什么动静,醒了。\n\n\"小烬。\"灰老从内屋出来,独臂提着一盏油灯,浑浊的眼睛望着中州的方向,\"今夜,别睡死。\"\n\n\"为什么?\"\n\n\"帝渊又亮了。\"灰老的声音压得很低,\"我方才用寻气盘看了一眼——满城的火,都在朝那边跪。\"\n\n苏烬心里咯噔一下。\n\n丹田里,那粒火种猛地一缩。\n\n真的,像跪。\n\n门,就是这时候碎的。\n\n五个人踏着碎木走进来,为首一人满脸刀疤,血色的斗气在体表凝成一层薄薄的甲。四星斗灵,血手佣兵团团长,厉屠。\n\n这半个月,黑角域的火属性天材地宝被人翻着倍地收。有人说,买主出手像当年的魂殿。也有人说,魂殿早就死绝了,是更邪门的东西。\n\n厉屠手里托着一面青铜罗盘,指针疯转,然后\"咔\"的一声,钉死。\n\n不是指向铺子里的货。\n\n是指向苏烬的胸口。\n\n\"哦?\"厉屠笑了,\"上头要的是活火。原来不是铺子……是这小子。\"\n\n\"挖出来,带回去。\"\n\n灰老一步跨出,独臂横拍,掌风竟将两名大斗师掀飞出去,撞塌了半面墙。\n\n\"七星斗王?\"厉屠眯眼,\"……不,是废了的斗王。\"\n\n他一掌推出,血色斗气如潮。灰老硬接,整个人倒飞进内屋,油灯落地,半边身子陷进碎木里,咳出一口血。\n\n\"灰老!\"\n\n苏烬扑上去,被厉屠反手掐住喉咙,整个人提离了地面。\n\n\"斗之气三段,也敢龇牙。\"厉屠另一只手抽出短刀,刀尖抵上苏烬的心口,\"让我看看,什么火,值得上头出十万金币。\"\n\n刀尖刺破皮肤。\n\n血珠渗出来的那一瞬间——\n\n一个声音,在苏烬丹田深处响起。\n\n不,不是响起。\n\n是烧起来的。\n\n\"吃了你十年,今夜,连本带利——还你。\"\n\n黑火,自他周身毛孔喷涌而出。\n\n厉屠的血色斗气铠甲,\"轰\"的一声自己燃了起来。不是被点燃,是那黑火扑上去,像饿极了的东西扑在肉上,顺着斗气,往他经脉里钻。\n\n\"什么鬼东西!\"厉屠惨叫,疯狂催动斗气想要压灭——可他催得越猛,火烧得越旺。他的斗气,成了柴。\n\n苏烬落地,抬起一根手指,点在刺来的短刀上。\n\n百炼精钢的刀身,像蜡一样,无声地化了。\n\n\"异……异火?!\"厉屠的瞳孔缩成针尖,\"不可能!异火榜上二十三种,没有黑色的火——!\"\n\n\"它说了。\"苏烬听见自己的声音,哑得不像人,\"它不是火。\"\n\n\"它是债。\"\n\n黑火一卷。\n\n四星斗灵,连一句完整的惨叫都没留下,化作一尊跪姿的焦黑塑像,保持着后退的姿势,定在原地。\n\n剩下四人转身就逃。黑火分作四缕,如锁链般追出门外——三缕追上,三声闷响,街面上多了三蓬灰。\n\n最后一缕,苏烬抬手,拦下了。\n\n\"留一个。\"他在心里对那火说,\"让他们带话。\"\n\n黑火在他指尖绕了一圈,竟真的收回,顺着手臂游回丹田。一个懒洋洋的声音响起:\n\n\"行。那就带一句——渊里的东西,我来收。\"\n\n苏烬一愣:\"什么意思?\"\n\n火种不答。它只是缓缓张开一道口子,把十年来吞下去的斗气,一两一两,连本带利地吐了出来。\n\n斗之气,四段。\n\n五段。\n\n六段。\n\n精纯得不讲道理的气流冲刷着干涸了十年的经脉,苏烬站在满地灰烬里,浑身发烫,像一块终于烧透了的炭。\n\n内屋里,灰老撑着断墙坐起来,死死盯着他,眼神复杂得像在看一件出土的古物。\n\n\"十年了,该告诉你了。\"老人咳着血,声音沙哑,\"你不是我从雪地里捡的。十年前,双帝之战刚打完,我在帝渊边上讨生活——我在渊沿捡到个七八岁的孩子,躺在一圈烧不着的草里,心口亮着一点黑火。\"\n\n\"那孩子是你。\"\n\n\"还有件事,我没跟任何人说过。\"灰老盯着他,\"帝渊封住的那一夜,有人看见,炎帝往渊底按了一缕火。\"\n\n\"那天夜里,全大陆的火,都跪了一次。\"\n\n\"第二次,就是今夜。\"\n\n苏烬低头,看着自己掌心游走的黑火,喉咙发干:\"你的意思是……我体内这东西,是炎帝留下的?\"\n\n\"我说不好。\"灰老摇头,\"我只知道两件事。第一,这东西在一个人身上种十年,不可能是随便种种的。第二——\"\n\n老人望向中州的方向,独臂微微发抖。\n\n\"今夜帝渊第三次亮,你的火第一次杀人。味道已经出去了。不管渊底压着的是什么,不管收火的是哪路人,他们都会顺着味道,找过来。\"\n\n与此同时,黑角域另一头。\n\n一间密室里,侥幸逃生的佣兵跪在地上,抖成一团。阴影里,一名黑袍人听完,指尖轻轻摩挲着一面寻火盘,盘上指针,死死钉向城西。\n\n\"黑色的火……\"黑袍人低笑出声,笑声里透着说不出的虔诚,\"找了十年,第一缕,终于找到了。\"\n\n\"传令下去——收网。\"\n\n而千里之外,中州南域。\n\n帝渊之底,黑暗最深处。\n\n一颗被万千火链钉穿了十年的心脏,今夜,第一次,跳出了声音。\n\n咚。\n\n一根锁链,崩断了。",
+    "ttft_ms": 211943,
+    "type": "result",
+    "duration_ms": 265702,
+    "uuid": "c852144b-86f3-4d41-904c-d0641d2fe70e",
+    "ttft_stream_ms": 3136,
+    "time_to_request_ms": 223,
+    "time_to_request_phases_ms": {
+      "other": 135,
+      "system_prompt": 52,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 5,
+      "input_hooks": 2,
+      "transcript_persist": 9,
+      "tool_pool_refresh": 1,
+      "init_message": 5,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 1,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 1,
+      "tool_schema_build": 3,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 14,
+    "time_to_request_cpu_ms": 141,
+    "time_to_request_major_faults": 9147,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 3,
+      "cpu_ms": 0,
+      "major_faults": 360
+    },
+    "first_content_frame_ms": 3136,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 266.3
+}

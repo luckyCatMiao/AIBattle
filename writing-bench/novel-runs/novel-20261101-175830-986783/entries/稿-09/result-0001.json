@@ -1,0 +1,135 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 153617,
+    "stop_reason": "end_turn",
+    "session_id": "943b9f69-5b18-450c-bf4b-dfdd8899bd76",
+    "total_cost_usd": 0.5977224999999999,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 7610,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 22006,
+      "output_tokens_details": {
+        "thinking_tokens": 17962
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 7610
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 22005,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 7610,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 7610,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-opus-4-8": {
+        "inputTokens": 2,
+        "outputTokens": 22006,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 7610,
+        "webSearchRequests": 0,
+        "costUSD": 0.5977224999999999,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 17962,
+        "canonicalModel": "claude-opus-4-8",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "# 第一章 空着的那一位\n\n斗气大陆的规矩，十年前就换过一遍了。\n\n那一年双帝一战，炎帝萧炎以帝炎焚尽魂殿，焚尽魂天帝，也顺手把这块大陆上最金贵的一张榜——异火榜，烧空了大半。帝炎出，万火低头。榜上二十三道异火，被收走的、自焚的、无主沉眠的，到今日还亮着名字的，只剩九道。炎帝自那一战后便再未现身，有人说他去了中州深处，有人说他早就不在这世上了。\n\n于是这十年，斗气大陆多了一门新行当：收火。\n\n谁家孩子身上带一缕“残火”，一夜之间就能从破落户变成万火会的座上宾。契书一张，金币一箱，够一家人吃十年。至于那火被收走之后，人是死是活，没人在乎。\n\n魂殿早成了坟，迦南学院成了大陆第一等的学府，星陨阁、丹塔、花宗三足鼎立。可这些大事，离黑岩城太远了。\n\n黑岩城只认一件事：火。\n\n万火台高三丈，嵌着三十六块赤炎石。凡人踩上去，石头是凉的；有火的人踩上去，石头会自己亮。十年一度的“火试”，今日开场。\n\n“下一个，苏野。”\n\n台下一阵哄笑。\n\n“苏家那个？他爹当年也是炼药师，后来欠了一屁股债跑了。”\n\n“他妹妹都快病死了，还来试火？不如去魔兽山脉外围捡尸，运气好还能捡颗魔核。”\n\n苏野没回头。他十七岁，大斗师初阶，一身洗得发白的青布衣，袖口磨出了毛边。\n\n这个境界，在黑岩城不算废物，可也不算什么。只有他自己知道，一年前他就该突破斗灵了。他没突破，是因为他把斗气全喂了袖子里那团火。\n\n黑的，冷的，一年前从妹妹苏小满心口里逼出来的火。\n\n也是那一年，小满开始掉境界。斗之气九段、八段、七段……如今只剩三段，人瘦得像一张纸，风大一点就要被吹走。城里的炼药师说了，是“残火入体”，火在吃她的斗气。药方开得出来，价钱开不出来。\n\n所以今天他必须站上这座台。\n\n“嗤。”折扇“啪”地一合，卫骁从人群里踱出来。十八岁，斗灵中期，黑岩城万火会分舵的少东家，一身锦袍，指甲修得比别人的脸还干净。\n\n“苏野，你斗气才大斗师，上台试什么？试你爹的债吗？”\n\n哄笑更响了。\n\n苏野抬眼：“卫少爷，火试的规矩，是斗气高的先上，还是火旺的先上？”\n\n“规矩？”卫骁笑了，“黑岩城的规矩，是我爹定的。”\n\n“那你爹定的规矩里，有没有一条，试火的时候，少东家不许在台下吠？”\n\n台下静了一瞬，随即炸开。\n\n卫骁的脸沉下去，折扇一指：“上去。我倒要看看，你能烧出个什么来。”\n\n苏野走上万火台。\n\n三十六块赤炎石，一块接一块，在他脚下亮起来。橙红，滚烫，像一条烧着的路。\n\n他站定，抬起手。\n\n台下有人小声嘀咕：“他连火种都没有吧？赤炎石是靠斗气温养的，一个大斗师，能点几块？”\n\n苏野没说话。\n\n他翻过掌心，摊开。\n\n那一瞬间，三十六块赤炎石，全灭了。\n\n不是熄灭，是被吸干了。三丈高的火光齐刷刷塌下去，像被谁一口吞进了肚子里。连台边十二盏长明灯，都“噗”地一声灭了。\n\n整个万火台，黑得像一口井。\n\n先是一片死寂，接着是尖叫。\n\n“虚火！是虚火！”\n\n“万火会三千金币一缕收的那种！”\n\n卫骁的眼睛一下子红了。他太清楚虚火值多少钱。十年来，万火会走遍大陆，收的就是这个。谁能收上来一缕，谁就能在会里往上爬一层。他爹爬了十年，才从执事爬到分舵主。\n\n而眼前这个破落户，身上有一整团。\n\n“苏野。”卫骁一步跨上台，声音都变了调，“把火交出来。万火会的规矩，凡黑岩城境内现世的异火残焰，一律归会中收管。你私藏一年，按律，废去斗气。”\n\n“律？”苏野慢慢收回手，掌心那一点黑，像一粒烧焦的种子，“卫少爷，你刚才不是说，黑岩城的规矩是你爹定的吗？”\n\n“现在我爹的规矩，就是要你的火。”\n\n卫骁动了。\n\n斗灵中期，斗气化罡，一掌拍下来，空气被压成一堵墙。苏野大斗师初阶，差着整整一个大境界，硬接一掌，整个人被拍得倒飞出去，撞在台边石柱上，闷哼一声，嘴角淌出血来。\n\n“交不交？”\n\n苏野抹了把嘴，笑了：“卫少爷，你知道虚火为什么叫虚火吗？”\n\n“什么？”\n\n“因为它不是烧人的。”苏野撑着石柱站起来，一步一步走回台中央，“它是吃人的。”\n\n他摊开手掌。\n\n那一粒黑色的火种，忽然“睁”开了。\n\n没人知道该怎么形容，火怎么会睁眼。可所有人都看见了，那团黑火里裂开一道竖着的缝，缝里没有光，只有更深的东西。\n\n卫骁的掌风还在半空，忽然散了。\n\n不是被挡开，是被抽走了。他周身那层凝实的罡气，像退潮一样往苏野掌心涌：一缕、两缕、三尺、五尺，十八年苦修的斗气，一息之间被抽走三成。\n\n卫骁的脸“唰”地白了，膝盖一软，“噗通”跪在台上。\n\n“你……你吞我斗气……”\n\n“我没吞。”苏野低头看着掌心，声音很轻，“它饿。”\n\n鸦雀无声。\n\n卫骁哆嗦着想爬起来，嗓子眼里挤出半句：“你敢动我……我爹是……”\n\n苏野抬脚，轻轻踩住了他的肩膀。\n\n“你爹定的规矩，不是让我把火交出来吗？”他低头看着卫骁，“现在火在我手里，你想怎么收？”\n\n就在这时，一个苍老的声音从人群后面传来：“让开。”\n\n人群自动分开一条道。\n\n灰袍老者走上台，须发皆白，手里捏着一枚黑玉令牌。他走得不快，可每走一步，万火台上熄灭的赤炎石就“啪”地亮一块：那种亮不是苏野那种吞，是他自己的斗气硬生生压出来的光。\n\n斗皇。\n\n“万火会黑岩城分舵长老，沈烛。”老者站定，盯着苏野掌心那团火，看了很久，久到苏野手心都出了汗。\n\n然后他做了一件所有人都没想到的事。\n\n他躬身，行了一礼。\n\n“十年了。”沈烛直起身，声音哑得厉害，“老夫走遍大陆十九个省，收了三万缕虚火，等的就是这一缕。”\n\n苏野后退半步：“什么意思？”\n\n“十年前，帝炎焚尽虚无吞炎。”沈烛的眼睛亮得吓人，“可虚无吞炎是从‘无’里生出来的火，烧不死，只能分。它把自己散成三万份，藏进三万个人的骨头里。万火会这十年收火、买火、抢火，收的从来就不是火。”\n\n他顿了顿。\n\n“是那三万份‘虚无’。”\n\n“只差最后一份。”沈烛盯着苏野的胸口，“母火。”\n\n苏野的呼吸停了一瞬。\n\n他低头看着自己掌心，忽然想明白了一件事：一年前他从妹妹心口逼出来的，明明只是一缕子火。是他用自己的斗气，一天一天，把它喂成了现在这个样子。\n\n他一直在养一头自己看不懂的东西。\n\n就在这时，天黑了。\n\n不是夜里那种黑，是整片天忽然被人蒙上一层墨。黑岩城上空，一张巨大的火榜虚影缓缓铺开，通体赤金，边缘烧着火焰，榜上九道名字亮着，十四个位置空着。\n\n异火榜。\n\n十年没动过一页的异火榜，今夜自己翻了。\n\n第九、第八、第七……那些还亮着的名字一个接一个暗下去，像被谁按住了头。十四个空位，一个接一个重新亮起，可亮出来的不是名字，是一团一团的黑。\n\n最后，第二位。\n\n那个空了十年的位置，缓缓浮出两个字。\n\n沈烛仰着头，浑身发抖。\n\n苏野也仰着头。\n\n他没去看那两个字。他看的是那两个字外面裹着的一层黑雾。黑雾的纹路一圈一圈，像烧焦的树根。\n\n和他掌心那团火，一模一样。\n\n榜上第二位，现出第一个字。\n\n苏。\n\n与此同时，城西，那间漏风的破屋里。\n\n躺在床上的苏小满睁开了眼睛。\n\n那双眼睛，全黑。\n\n她对着空无一人的屋子，轻轻地笑了一下，声音又软又甜，像在撒娇。\n\n“哥哥，我饿了。”",
+    "ttft_ms": 100429,
+    "type": "result",
+    "duration_ms": 153680,
+    "uuid": "11ab7603-8078-4136-9a94-bd9287a8f06e",
+    "ttft_stream_ms": 3938,
+    "time_to_request_ms": 62,
+    "time_to_request_phases_ms": {
+      "other": 8,
+      "system_prompt": 28,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 1,
+      "transcript_persist": 5,
+      "tool_pool_refresh": 0,
+      "init_message": 4,
+      "engine_pickup": 0,
+      "message_prep": 1,
+      "model_config_wait": 0,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 4,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 12,
+    "time_to_request_cpu_ms": 110,
+    "time_to_request_major_faults": 6930,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 313
+    },
+    "first_content_frame_ms": 3938,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 154.1
+}

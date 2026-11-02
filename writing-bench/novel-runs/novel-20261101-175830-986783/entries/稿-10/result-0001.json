@@ -1,0 +1,123 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 89492,
+    "stop_reason": "end_turn",
+    "session_id": "f19036bb-2567-4695-adaf-aa88227e8e8b",
+    "total_cost_usd": 0.120196,
+    "usage": {
+      "input_tokens": 3594,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 5291,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6-luna": {
+        "inputTokens": 3594,
+        "outputTokens": 5291,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.120196,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "斗帝历十年，九月初九，午时。\n\n斗气大陆所有火焰，在同一瞬间倒转。\n\n中州丹塔，万炉齐鸣，刚刚成形的七品丹药尽数炸碎；魔兽山脉深处，沉睡千年的火系魔兽同时睁眼；黑角域上空，更有一道横贯千里的黑金裂缝，将整片天空撕成两半！\n\n迦南学院，九声钟鸣。\n\n“不是敌袭！是帝潮！”\n\n广场上，数千名学员骇然抬头。\n\n只见学院中央那座高达百丈的黑色石碑，正喷出滚滚金焰。火焰没有落下，反而如长河倒卷，疯狂涌向天穹。\n\n这座碑名为镇源碑。\n\n双帝之战后，天地间多出了一种无法被斗气炼化的神秘力量。中州各大势力称其为“源息”，并在大陆九处修建镇源碑，等待传说中十年一次的源潮。\n\n今日，正好是第十年。\n\n“所有人退后！”\n\n半空中，一艘银色战舟碾碎云层，船首悬着“巡天”二字。数十道气息从战舟上爆发，最弱者都是斗王。\n\n为首的红袍男子一步踏出，空间顿时扭曲。\n\n迦南学院副院长叶重山脸色微变。\n\n“一星斗尊……洪烈，你们巡天司不是来观测源潮的吗？”\n\n“计划变了。”\n\n洪烈俯视广场，语气淡漠。\n\n“九碑同鸣，帝门将开。巡天司有令，自此刻起，迦南学院封院。镇源碑以及碑下三百里地域，全部由我司接管。”\n\n“放屁！”\n\n一名内院长老怒喝：“这里是迦南学院，不是你巡天司的矿场！”\n\n洪烈眼神一冷，袖袍轻挥。\n\n轰！\n\n那名拥有五星斗宗实力的长老如遭山岳撞击，护体斗气瞬间破碎，整个人横飞百丈，在广场上砸出一道深坑。\n\n全场死寂。\n\n“十年前，古族退隐，天府盟分立九府，迦南学院还能保持中立。”洪烈负手而立，“十年后的今日，大陆规矩早就变了。”\n\n叶重山一步挡在众学员之前，六星斗尊的气息毫无保留地爆发。\n\n“规矩再变，也轮不到你在学院伤人。”\n\n“叶副院长，你最好想清楚。”\n\n洪烈冷笑一声，取出一块银色令牌。\n\n令牌升空，化作九条巨大锁链，瞬间缠住镇源碑。锁链另一端，竟连接着战舟上的一座血色阵法。\n\n广场边缘，一个正在清扫石屑的黑衣少年忽然停下动作。\n\n他叫石烬，十七岁。\n\n十年前，学院长老在双帝战场边缘发现了他。那时他躺在一片被烧成琉璃的废墟里，没有父母，没有记忆，怀中只有一块写着“烬”字的焦木。\n\n他的经脉天生闭塞，十年苦修，体内仍没有一丝斗气。\n\n但此刻，镇源碑中却传来了一道只有他能听见的声音。\n\n咚！\n\n像是心跳。\n\n又像有人被困在碑中，敲了一下门。\n\n石烬抬起头，发现碑面上浮现出一行燃烧的小字。\n\n——不要让他们打开帝门。\n\n“石烬，你还愣着干什么？快走！”\n\n一名青衣少女从人群中冲出，抓住他的手腕。她叫叶灵，叶重山的孙女，也是学院这一届天赋最强的学员，十八岁便已踏入斗王。\n\n然而，她没能拉动石烬。\n\n石烬盯着那九条银色锁链，低声问：“那是什么阵法？”\n\n叶灵急道：“现在还问这个做什么？巡天司明显想抽走镇源碑里的源息，再不走——”\n\n她的话突然停住。\n\n镇源碑表面射出一道黑光，越过数千名学员，笔直落在石烬身上。\n\n嗡！\n\n碑顶金焰暴涨，天空中的黑金裂缝随之扩大。\n\n战舟上，一名白发老者霍然起身。\n\n“帝烬入体，万火不侵……找到了！”\n\n洪烈目光瞬间锁定石烬。\n\n“原来第九枚帝种一直藏在迦南学院。”\n\n叶重山神色骤变：“什么帝种？”\n\n洪烈根本没有回答。\n\n“拿下他，活取心脏！”\n\n两名银甲强者从战舟跃下，斗气双翼遮蔽日光。他们一左一右扑向石烬，掌中长枪同时刺出。\n\n“你们敢！”\n\n叶灵翻手唤出一条青色火蟒，却被其中一人随手震散。\n\n“区区一星斗王，滚开！”\n\n银甲强者一枪横扫，枪风撕裂地面。叶灵只来得及抬臂格挡，整个人便倒飞出去。\n\n枪尖随即刺向石烬胸膛。\n\n石烬没有躲。\n\n长枪刺破衣衫，正中他的心口。\n\n银甲强者面露喜色，可下一刻，他的笑容凝固了。\n\n那柄足以洞穿斗皇护体斗气的长枪，竟像刺中一座不可撼动的山岳，再难前进半寸。\n\n石烬抬手握住枪尖。\n\n“你刚才说，要取我的心脏？”\n\n银甲强者瞳孔骤缩：“你——”\n\n咔嚓！\n\n石烬五指合拢，由六阶玄铁铸成的长枪当场崩碎。\n\n没有斗气波动。\n\n没有斗技。\n\n仅凭肉身之力！\n\n另一名银甲强者怒吼着一掌拍来。石烬转身，同样一掌迎上。\n\n两掌相撞。\n\n砰！\n\n银甲强者整条右臂轰然炸开，惨叫着倒飞而出，直接撞穿了巡天战舟的船腹！\n\n广场上，所有人都呆住了。\n\n叶灵跌坐在地，怔怔看着那个相处了十年的少年。\n\n“你……不是不能修炼吗？”\n\n“我确实没有斗气。”\n\n石烬望着自己的手掌。\n\n一缕细小的黑金火苗，正从他指缝间缓缓升起。\n\n镇源碑内，第二声心跳随之响起。\n\n咚！\n\n方圆千丈的天地能量瞬间归零。\n\n数十名悬浮在空中的巡天司强者惊叫着坠落。他们体内的斗气像是被某种力量封死，连斗气双翼都无法维持。\n\n唯有石烬站在原地，黑发无风自扬。\n\n洪烈眼中的贪婪再也无法掩饰。\n\n“不靠斗气便能压制斗皇，这就是帝种之力！”\n\n他抬手一握，空间迅速凝固，化作一只百丈巨掌，朝石烬悍然压下。\n\n“给本尊跪下！”\n\n斗尊出手，天地震荡。\n\n叶重山刚要阻拦，镇源碑却猛地一颤。缠绕碑身的九条锁链竟同时转向，将他牢牢困住。\n\n“洪烈！”叶重山怒吼，“你敢在学院杀人，巡天司承担不起后果！”\n\n“只要得到帝种，一个迦南学院又算得了什么？”\n\n洪烈放声大笑，巨掌已压至石烬头顶。\n\n石烬身旁的青石寸寸粉碎，双腿却依旧笔直。\n\n他望着空中的洪烈，忽然问道：“斗尊，很强吗？”\n\n话音落下，他朝前踏出一步。\n\n轰！\n\n黑金火焰从地底冲天而起！\n\n斗尊凝聚的空间巨掌如同落入烈阳的冰雪，顷刻消融。洪烈甚至来不及后退，便被火柱正面轰中，护体斗气层层炸裂。\n\n“怎么可能！”\n\n洪烈吐血横飞。\n\n石烬脚掌再次落下，身影瞬间出现在百丈高空，一把扣住洪烈的脖颈，将他从天上硬生生砸回广场！\n\n轰隆！\n\n地面塌陷，裂缝蔓延。\n\n洪烈躺在坑底，满脸鲜血，眼中只剩惊恐。\n\n石烬踩住他的胸膛。\n\n“向她道歉。”\n\n洪烈咬牙道：“我是巡天司东南执令，你若敢动我——”\n\n啪！\n\n石烬一巴掌抽在他脸上。\n\n洪烈半边脸顿时血肉模糊。\n\n“道歉。”\n\n“你……”\n\n啪！\n\n第二巴掌落下，洪烈满口牙齿尽碎。\n\n石烬俯视着他，黑金火焰在眼底燃烧。\n\n“我不想问第三遍。”\n\n洪烈身体一颤，终于转头看向叶灵。\n\n“对……对不起。”\n\n数千名学员先是一静，随后爆发出震耳欲聋的欢呼。\n\n可就在这一刻，镇源碑突然传出一声巨响。\n\n碑身裂开了。\n\n一道古老卷轴从裂缝中飞出，落入石烬手中。\n\n卷轴之上没有斗气封印，只有一朵青色火莲。石烬的手掌刚碰到卷轴，火莲便自行绽放，化成数行龙飞凤舞的字迹。\n\n叶重山看到那字，脸色骤然惨白。\n\n“这是……萧炎大人的亲笔！”\n\n石烬迅速看向卷轴。\n\n“后来者，若你见到此信，说明帝战已过十年，九座镇源碑也已建成。”\n\n“记住，那不是镇压源息的碑，而是九把钥匙。”\n\n“碑开之日，帝门重现。”\n\n“无论从门中走出的是谁，都不要相信。”\n\n“哪怕那个人，与我一模一样。”\n\n最后一个字显现的刹那，天空骤然暗了下来。\n\n横贯千里的黑金裂缝缓缓张开，化作一扇顶天立地的古老门户。\n\n一只手，从门后探出。\n\n那只手掌中，跳动着绚丽无比的异火。\n\n随后，一名黑袍青年跨过门户。他背负黑尺，面容清秀，与遍布大陆的炎帝雕像一般无二。\n\n无数人仰望天空，激动得浑身发抖。\n\n“炎帝！”\n\n黑袍青年没有理会众生的呼喊。\n\n他隔着万丈虚空，目光径直落在石烬身上，嘴角缓缓掀起。\n\n“藏了十年。”\n\n“终于找到你了。”",
+    "ttft_ms": 12141,
+    "type": "result",
+    "duration_ms": 89553,
+    "uuid": "06b6ad0c-5b65-4241-9da5-57c975604583",
+    "ttft_stream_ms": 3800,
+    "time_to_request_ms": 62,
+    "time_to_request_phases_ms": {
+      "other": 9,
+      "system_prompt": 30,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 1,
+      "transcript_persist": 3,
+      "tool_pool_refresh": 0,
+      "init_message": 4,
+      "engine_pickup": 0,
+      "message_prep": 1,
+      "model_config_wait": 0,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 4,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 1
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 12,
+    "time_to_request_cpu_ms": 94,
+    "time_to_request_major_faults": 7034,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 274
+    },
+    "first_content_frame_ms": 3800,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 90.0
+}

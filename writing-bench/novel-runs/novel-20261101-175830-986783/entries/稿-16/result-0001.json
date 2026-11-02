@@ -1,0 +1,123 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 47016,
+    "stop_reason": "end_turn",
+    "session_id": "3bf558e8-5826-4f9f-9d5e-759370abe880",
+    "total_cost_usd": 0.064884,
+    "usage": {
+      "input_tokens": 3596,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 2525,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "gpt-6.1-terra": {
+        "inputTokens": 3596,
+        "outputTokens": 2525,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.064884,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "十年之期一到，中州一百零八座城，同时停了斗气。\n\n最先发现不对的是炼药师。\n\n丹鼎里的火焰齐齐熄灭，正在冲关的人经脉一空，连城中维持飞行的斗王也像下饺子似的往下掉。好在各城早有防御阵法，伤者不少，死者倒不多。\n\n唯独迦南学院上空，那道封闭了十年的空间裂缝，突然睁开了一只眼睛。\n\n“咚！”\n\n钟声响彻内院。\n\n演武场上，刚领到毕业令的韩野抬头，看见那只眼睛缓缓转动，盯住了自己。\n\n准确地说，是盯住了他手里的毕业令。\n\n“韩野！”身旁的少女一把拽住他，“你干什么了？”\n\n“我哪知道！”\n\n韩野话音未落，毕业令便烫得他手掌冒烟。他疼得一甩，令牌却没甩出去，反倒碎成了一团金光，钻进他的眉心。\n\n下一刻，他听见一个冰冷的声音。\n\n“帝战残界开启。持令者，可入。”\n\n韩野愣住了。\n\n十年前双帝之战留下的空间裂缝，大陆上共有十二道。各方强者查了十年，连门都找不到，今天居然被一块毕业令打开了？\n\n空中的眼睛猛然闭合，化作一扇漆黑石门。门上浮现出一行大字：\n\n**残界开启一刻钟后，吸尽方圆千里斗气。**\n\n演武场安静了一瞬，随即炸开。\n\n迦南学院建在山脉之中，方圆千里内不止有学院，还有数十座城镇。如今斗气突然消失，城中阵法都靠储存的能量支撑，若再被吸上一轮，山里的魔兽冲出来，后果不堪设想。\n\n“开启空间封锁！”院长的声音传遍全院，“所有长老随我入门，弟子立刻下山疏散！”\n\n数道身影冲天而起。\n\n然而院长刚碰到石门，便被一股巨力震退，袖袍寸寸碎裂。其余长老联手轰击，石门纹丝不动，反倒是学院后山的防御大阵被余波震得摇晃起来。\n\n院长脸色铁青：“只有持令者能进？”\n\n韩野眉心一烫，脑海中再次响起那个声音。\n\n“持令者，一人。”\n\n他刚要开口，学院之外忽然传来一声大笑。\n\n“既然长老们进不去，何必浪费力气？”\n\n一艘黑色巨舟撞破云层，船头站着一名灰袍老者。他身后百余名强者凌空而立，胸前皆佩着一枚银色锁印。\n\n院长沉声道：“锁灵盟？学院没有请你们来。”\n\n“老夫不是来做客的。”灰袍老者俯视演武场，“交出持令者，我锁灵盟入残界破阵。否则一刻钟后，这千里之地出了什么事，院长担待得起么？”\n\n“说得好听。”韩野身旁的少女咬牙，“上个月他们接管黑岩城的聚气阵，说是帮人恢复斗气，结果进阵修炼要先交一半家产！”\n\n灰袍老者似乎听见了，目光一扫。\n\n少女闷哼一声，双膝一软。韩野急忙扶住她，自己也被那股威压压得骨节作响。\n\n“斗宗？”院长上前一步，挡住威压，“在我迦南学院伤人，阁下未免太放肆了。”\n\n灰袍老者冷笑：“院长当年也是斗宗巅峰，可惜这十年天地斗气稀薄，你还能发挥几成实力？”\n\n他抬起手，掌心赫然嵌着一枚银锁。锁身亮起，四周稀薄的斗气竟源源不断地向他汇聚。\n\n“锁灵盟花了十年，才找到不受天地异变影响的修炼之法。如今中州各城求着与我们合作，迦南学院又能撑多久？”\n\n院长眼中闪过一丝惊色。\n\n便在这时，韩野眉心的金光再次亮起。\n\n灰袍老者的目光瞬间锁定他。\n\n“找到你了！”\n\n老者隔空一抓，韩野脚下的石板轰然碎裂。一只斗气巨手穿过人群，直奔他而来！\n\n院长挥袖拦截，两股力量相撞，巨手被打散大半，剩下的指影却仍抓住韩野肩膀，将他拖向空中。\n\n韩野疼得眼前发黑，死死攥住衣襟里的一枚玉佩。\n\n那是他父亲留下的东西。父亲曾是学院长老，十年前进入裂缝查探，再没回来。\n\n半个月前，玉佩突然发热，他才带着它来到学院，想请院长看看。院长尚未查出端倪，今日便出了这场大事。\n\n眼看巨舟越来越近，韩野一咬牙，将斗气灌入玉佩。\n\n玉佩没有反应。\n\n他又灌了一次，还是没有。\n\n灰袍老者狞笑道：“一个大斗师，也想在老夫手里挣扎？”\n\n韩野低头看了一眼玉佩，骂道：“爹，你再不管，我真要死了！”\n\n话音刚落，玉佩咔嚓一声裂开。\n\n一道青色火苗从裂缝中蹿出。\n\n火苗只有指尖大小，落在斗气巨手上，却像落进油锅。眨眼之间，整只手烧得干干净净！\n\n灰袍老者脸色骤变：“异火？！”\n\n韩野从半空坠落，还没来得及惨叫，火苗已绕到他脚下，托着他直冲巨舟。\n\n“等等，我没让你过去——”\n\n轰！\n\n韩野一头撞在船头，火苗贴着甲板一滚，整艘巨舟的防御光罩当场炸开。百余名锁灵盟强者纷纷后退，灰袍老者却怒极反笑，一掌拍向韩野。\n\n“小子，异火归我了！”\n\n韩野避无可避，下意识抬手。\n\n那缕火苗钻进他掌心，与灰袍老者硬碰一记。\n\n砰！\n\n韩野被震得倒飞出去，撞断三根船桅，砸进船舱。\n\n灰袍老者站在原地，衣袖尽碎，掌心那枚银锁上多了一道焦黑裂痕。\n\n他低头看着裂痕，脸色突然变了。\n\n“灭火！快灭火！”\n\n青焰顺着裂痕钻进银锁。老者拼命运转斗气压制，可那火偏偏烧得越发旺盛，转眼爬满他的手臂。\n\n他也是狠人，抬掌便要斩断手臂，青焰却先一步熄灭了。\n\n与此同时，银锁碎成粉末。\n\n灰袍老者身上的气息猛地跌落，从斗宗一路跌到斗王。原本被他吸来的斗气四散开来，连巨舟都失去了支撑，摇摇晃晃地向地面坠去。\n\n“盟主！”船上众人大乱。\n\n韩野灰头土脸地从船舱爬出来，摸了摸全身，发现除了疼，竟没少什么零件。\n\n掌心的火苗跳了跳。\n\n“原来你专烧那玩意儿？”他看向老者另一只手上戴的银色戒指，“那个也烧吗？”\n\n灰袍老者猛地把手藏到身后，转身就跑。\n\n韩野一愣：“还真有？”\n\n青焰倏地飞出，院长也在此时赶到，一掌封住老者退路。火苗撞上戒指，戒指应声而碎，里面藏着的数十枚银锁哗啦啦掉了一地。\n\n院长抬手将老者制住，低头一看，神情顿时凝重起来。\n\n每一枚银锁上，都刻着一座城池的名字。\n\n而迦南学院的名字，排在第一枚。\n\n“院长！”一名长老指着天空，“时间快到了！”\n\n石门上的字迹已由金转红。学院后山的阵法光芒迅速黯淡，远处山林中，魔兽的嘶吼声接连响起。\n\n韩野掌心的火苗忽然飞向石门，撞出一圈涟漪。门缝缓缓张开，露出一道仅容一人通过的缝隙。\n\n院长看向韩野：“里面凶险莫测，你若不愿去，我还有别的办法。”\n\n韩野望了望山下。那里有他的家，他娘还等着他拿毕业令回去。\n\n“您那办法要多久？”\n\n院长沉默了。\n\n“那还是我去吧。”韩野捡起裂开的玉佩，攥在手里，“万一能找到我爹呢。”\n\n他纵身跃入门缝。\n\n身后的石门轰然关闭，外界的喧闹瞬间消失。\n\n门内是一座巨大的黑色广场，地上刻满繁复的阵纹。十二根石柱围着广场，柱顶各有一道裂缝，正从不同方向吸入斗气。\n\n广场中央，一个浑身锁链的男人坐在阵眼之中。\n\n韩野看清那张脸，呼吸骤停。\n\n“爹？”\n\n男人抬起头，面容比他记忆中苍老许多。他看见韩野，先是一怔，随即厉声喝道：\n\n“别过来！把门关死！”\n\n韩野脚步一顿：“门已经关了。”\n\n“不是你身后的门。”男人盯着他眉心，声音发颤，“是你带进来的那道门！”\n\n韩野眉心的金光骤然亮起。\n\n他脑海中那个冰冷的声音，第三次响起。\n\n“持令者已入阵。”\n\n“第十三位帝战遗骸，即将苏醒。”",
+    "ttft_ms": 4090,
+    "type": "result",
+    "duration_ms": 47078,
+    "uuid": "e440e5fb-5bf9-424c-86aa-99da6f3656f2",
+    "ttft_stream_ms": 1846,
+    "time_to_request_ms": 62,
+    "time_to_request_phases_ms": {
+      "other": 8,
+      "system_prompt": 28,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 2,
+      "transcript_persist": 4,
+      "tool_pool_refresh": 1,
+      "init_message": 4,
+      "engine_pickup": 0,
+      "message_prep": 1,
+      "model_config_wait": 0,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 4,
+      "message_normalization": 0,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 12,
+    "time_to_request_cpu_ms": 109,
+    "time_to_request_major_faults": 6899,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 202
+    },
+    "first_content_frame_ms": 1846,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 47.5
+}

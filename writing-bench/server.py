@@ -68,10 +68,34 @@ class Handler(BaseHTTPRequestHandler):
                         bench.report(d)
                     return self.send((bench.run_path(d['id']) / 'REPORT.md').read_bytes(), mime='text/markdown; charset=utf-8')
                 return self.send({'error': 'Not found'}, 404)
-            name = {'/': 'index.html', '/app.js': 'app.js', '/style.css': 'style.css'}.get(path)
+            name = {'/': 'index.html', '/app.js': 'app.js', '/style.css': 'style.css',
+                    '/novel.js': 'novel.js', '/novel.css': 'novel.css'}.get(path)
             if name and (STATIC / name).is_file():
                 mime = {'.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css'}[Path(name).suffix]
                 return self.send((STATIC / name).read_bytes(), mime=mime + '; charset=utf-8')
+            if path in ('/novel', '/novel/', '/novel.html'):
+                return self.send((STATIC / 'novel.html').read_bytes(), mime='text/html; charset=utf-8')
+            if path == '/api/novel/runs':
+                import novel_bench
+                runs = []
+                for p in sorted(novel_bench.RUNS.glob('novel-*/run.json'), reverse=True):
+                    try:
+                        d = novel_bench.load(p.parent.name)
+                    except Exception:
+                        continue
+                    runs.append({'id': d['id'], 'title': d.get('title'), 'created_at': d.get('created_at'),
+                                 'state': d.get('state'),
+                                 'total': len(d['entries']),
+                                 'ready': sum(1 for e in d['entries'] if e.get('text'))})
+                return self.send(runs)
+            if path.startswith('/api/novel/runs/'):
+                import novel_bench
+                rest = path.removeprefix('/api/novel/runs/')
+                run_id = rest.split('/')[0]
+                d = novel_bench.load(run_id)
+                if rest == run_id:
+                    return self.send(d)
+                return self.send({'error': 'Not found'}, 404)
             return self.send({'error': 'Not found'}, 404)
         except FileNotFoundError:
             return self.send({'error': 'Not found'}, 404)

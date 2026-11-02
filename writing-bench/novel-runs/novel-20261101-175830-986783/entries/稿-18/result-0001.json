@@ -1,0 +1,135 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 128562,
+    "stop_reason": "end_turn",
+    "session_id": "d99fd985-daeb-429c-b0f4-1b30c9c03f6b",
+    "total_cost_usd": 0.177813,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 7626,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 15874,
+      "output_tokens_details": {
+        "thinking_tokens": 11577
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 7626
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 4,
+          "output_tokens": 15873,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 7626,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 7626,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-sonnet-5-5": {
+        "inputTokens": 4,
+        "outputTokens": 15874,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 7626,
+        "webSearchRequests": 0,
+        "costUSD": 0.177813,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 11577,
+        "canonicalModel": "claude-sonnet-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "# 第一章 退潮\n\n十年了。\n\n斗气大陆的人早已习惯抬头就看见那道疤：三千里长，横贯苍穹，边缘还烧着暗金色的余烬，像谁把天劈开之后懒得去缝。\n\n那是双帝之战留下的。\n\n炎帝萧炎与魂天帝在那一日打碎了半片天，也打出了一个新的大陆：魂殿成了史书上的一行小字，天府联盟的旗插遍三十六座主城，迦南学院的门槛被求学的少年踩低了三寸。\n\n有人说，这是斗气大陆最好的十年。\n\n黑石城的人不信。\n\n黑石城缩在魔兽山脉脚下，最气派的建筑是城中央那座三丈高的测气碑，据说是迦南学院淘汰下来的旧货，城主花了半副身家买回来充门面。十年前这块碑还能照出斗尊的影子，如今连斗王的斗气都测不准。\n\n不是碑坏了。\n\n是这世上，斗气正在变少。\n\n这半年坏消息一个接一个。迦南学院封了内院，对外只说是“闭门悟道”；青莲地心火所在的那座火山，熄了；天府联盟一个月内连跌三位斗尊，跌到斗宗，人就死了，死时经脉尽断，像被人从里面抽空。\n\n最惨的是炼药师。丹炉里的火要斗气喂，斗气一薄，三品丹药炼成一堆黑渣。黑石城唯一的三星炼药师韩叙，为此咳了三年血。\n\n今日是三年一度的测气日。\n\n碑前排了三百多人，从十三岁到三十岁，一个个把手按上去。碑面浮起的光晕一年比一年淡，淡得像隔夜的灯。\n\n“赵铎——斗之气……九段。”老执事眯着眼，声音发干，“不对。八段。昨夜还是九段。”\n\n人群里嗡地一声。\n\n穿锦袍的少年脸涨得通红，把手掌死死按在碑上，指节发白：“不可能！我三个月前就摸到斗者的门槛了！”\n\n“摸到门槛，和跨过去，是两回事。”老执事叹气，“孩子，不是你的错。整座城的斗气一夜退了三分。碑没错，是天地错了。”\n\n赵铎猛地回头，一眼就看见队伍末尾那个背着药篓的少年。\n\n“苏决。”他笑了，笑得很不好看，“轮到你了。让大伙看看，咱们黑石城十年不动的‘废物’，今天能测出几段？”\n\n人群哄笑起来。\n\n苏决十七岁，卡在斗之气九段整整十年。从七岁卡到十七岁，卡得全城人都认识他。别人家的孩子十岁破斗者，十二岁成大斗师；他每年测气日都把手按在这块碑上，碑面浮起的永远是最底下那一格，灰扑扑的，像一句懒得说完的话。\n\n“赵铎，闭嘴。”药铺里，一个咳嗽的老头拄着拐杖出来，“你小子去年偷我三株紫叶兰，账还没算。”\n\n“韩药师，您老还是先管管自己的肺吧。”赵铎嗤笑，“三星炼药师，咳了三年，斗气都快咳没了——”\n\n苏决把药篓放下，走过去，把手按在碑上。\n\n他没说话。他从来不多话。\n\n碑面亮起。\n\n第一格，斗之气一段。\n\n人群里有人笑出了声。\n\n第二格，二段。\n\n笑声小了点。\n\n第三格。第四格。第五格。\n\n光晕往上爬的速度忽然快了起来，像被人从底下狠狠推了一把。第六格、第七格、第八格，青石碑面开始发烫，热气扭曲了空气。\n\n“九段。”老执事念完，抬起头，“到顶了。苏决，你还是——”\n\n“等等。”\n\n少年的声音很轻。\n\n碑炸了。\n\n不是碎，是亮。那种十年没亮过的、正午太阳砸进井底的亮。光柱从碑心冲天而起，把半条街照得惨白。第一格到第九格被一口气烧穿，光晕撞在最顶上那道横线上，停了半息——\n\n然后破了。\n\n青石碑上，一个从未亮过的字浮了起来。\n\n斗者。\n\n死一般的安静。\n\n苏决没有停。他能感觉到，体内那堵卡了十年的墙不是被推倒的，是被“抽”开的，像有人在墙后开了一道口子，把外面所有的水都灌了进来。斗气粗暴、滚烫、不讲道理地冲进经脉。\n\n斗者一星。\n\n斗者三星。\n\n斗者五星——\n\n“停下来！”卫狰动了。\n\n他是天府联盟外派驻黑石城的镇守，斗王五星，在这座小城里就是天。可他一步跨出，脚下石板碎裂，人却在半空晃了一下。\n\n他的斗气，正在往外漏。\n\n“不可能……”卫狰脸色变了，“我的斗王境……”\n\n斗灵八星。\n\n就在这三步之间，他跌了一个大境界。\n\n而碑前那个少年，还在涨。\n\n斗师一星。\n\n苏决终于松开了手。\n\n碑面“咔”地裂成两半，光柱熄灭，热气散尽。他站在碎石中间，鼻血顺着下巴滴在青石上，眼前一片模糊。\n\n可他的眼睛很亮。\n\n因为他看见了一些别人看不见的东西。\n\n每一缕斗气，都拖着一根丝。\n\n细得几乎不存在。从人的丹田里、从地底、从空气里被抽出来，一根一根往天上飘，飘向那道三千里长的天痕。全城的斗气都在往上走，像退潮。\n\n而他刚才做的，是抓住最近的那一根，用力一攥。\n\n断了。\n\n断掉的那截斗气回头钻进他身体里，暖得像一口热汤。\n\n“抓住他！”卫狰捂着胸口，声音发抖，眼里却烧着贪婪，“这小子能吸斗气！他不是天才，他是怪物！把他带回天府，这是大功——”\n\n“卫镇守。”苏决抹了把鼻血，抬头，“您刚才说‘不可能’。”\n\n“什么？”\n\n“我说，您说‘不可能’。”少年往前走了一步，声音不大，却让整条街都听见了，“可这世上的斗气退了三成，您一个斗王跌成斗灵，这也叫‘不可能’。既然不可能的事，今天已经发生了两件——”\n\n他抬手，随手一挥。\n\n赵铎刚摸到腰间的长剑，整个人就飞了出去，撞塌半面墙，半天没爬起来。\n\n整条街的人，都没看清他是怎么出的手。\n\n“——那第三件，也就不必大惊小怪了。”\n\n“放肆！”卫狰暴喝，残存的斗灵斗气鼓荡，五指成爪抓来。他是从尸山血海里爬出来的老手，即便跌了境界，这一爪也有开碑裂石之威。\n\n苏决没躲。\n\n他反手一抓，又攥断了一根丝。\n\n这一次，攥的是卫狰身上那根。\n\n卫狰的斗气在半空断成两截，去势戛然而止，人像被抽了脊梁骨的麻袋一样跪了下去，双膝砸在碎碑上，鲜血淋漓。\n\n“你……到底是什么东西……”\n\n“苏决。”少年蹲下来，平视他，很认真地说，“黑石城，药铺学徒，斗之气九段，卡了十年。全城都知道。”\n\n他站起身，抬头望天。\n\n那道三千里长的天痕，正在“呼吸”。\n\n一明，一暗，像眼皮底下转动的眼球。\n\n“韩老头。”他忽然开口，“你说过，十年前炎帝打赢魂天帝那天，天上掉下来很多东西。落到地上，就再没人提了。”\n\n门口的咳嗽声停了。\n\n老药师浑浊的眼睛，忽然锐利起来：“你想说什么？”\n\n“我想说，”苏决摊开手，掌心浮起一缕黑色的火苗，细得像灯芯，安静得没有一丝温度，“我娘死那年，从天上掉下来的那颗‘星星’，钻进了我身体里。”\n\n“十年，我卡在九段。”\n\n“不是我不行。”\n\n“是它在吃。”\n\n韩叙的拐杖“当”地砸在地上。\n\n“异火榜二十三种，我一本一本翻给你听过。”老人的声音在抖，“没有黑的。”\n\n“对。”苏决说，“没有。”\n\n街口传来马蹄声。\n\n一队黑甲骑士踏碎了晨雾，甲胄上铸着一片燃烧的叶子——天府联盟执法队。为首的是个白裙女子，腰悬长剑，剑鞘上系着一枚暗红玉牌。\n\n她翻身下马，绕过还跪在地上的卫狰，径直走向苏决。\n\n然后，她做了一件让全城人下巴都掉下来的事。\n\n她跪了下去。\n\n单膝点地，剑尖朝下，额头几乎贴到少年的靴子。\n\n“天府执法队，秦漪。”她的声音在抖，“奉联盟大长老之命，带队十年，寻一件从天痕里掉下来的东西。”\n\n“找了十年。”\n\n“炎帝陛下临走之前，只留下一句话。”\n\n她抬起头，眼里全是血丝，一字一句地说：\n\n“若是找到了——”\n\n“不必上报。”\n\n“杀了他。”\n\n风停了。\n\n苏决愣了一下，随即笑了。\n\n“秦姑娘。”他抬起那只悬着黑火的右手，语气客气得不像话，“你说的‘陛下’，是炎帝萧炎？”\n\n“是。”\n\n“那他有没有说，”少年掌心那缕黑火忽然涨了三寸，火光照亮半条街，也照亮了天上那道正在缓缓睁开的裂痕，“万一……杀不掉呢？”\n\n秦漪的剑出鞘半寸。\n\n就在这一刻——\n\n三千里天痕，睁开了。\n\n那不是裂缝。\n\n那是一只眼睛。\n\n九天之上，有个声音落下来，穿过云层，穿过风，穿过黑石城每一个人的骨头里——\n\n“十年了。”\n\n“终于……找到你了。”",
+    "ttft_ms": 89473,
+    "type": "result",
+    "duration_ms": 128623,
+    "uuid": "04e58cf4-266b-4c9b-a3c3-df32013c9151",
+    "ttft_stream_ms": 3938,
+    "time_to_request_ms": 61,
+    "time_to_request_phases_ms": {
+      "other": 10,
+      "system_prompt": 29,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 1,
+      "transcript_persist": 2,
+      "tool_pool_refresh": 1,
+      "init_message": 3,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 1,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 3,
+      "message_normalization": 1,
+      "client_creation": 2,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 10,
+    "time_to_request_cpu_ms": 78,
+    "time_to_request_major_faults": 6890,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 16,
+      "major_faults": 293
+    },
+    "first_content_frame_ms": 3938,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 129.0
+}

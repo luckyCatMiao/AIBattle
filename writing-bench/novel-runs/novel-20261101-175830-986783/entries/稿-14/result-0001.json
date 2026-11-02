@@ -1,0 +1,123 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 329690,
+    "stop_reason": "end_turn",
+    "session_id": "4f9b0868-0ea8-45f4-8da9-3afeec74d4ee",
+    "total_cost_usd": 0.137008,
+    "usage": {
+      "input_tokens": 4129,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 12875,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "glm-5.3-flash": {
+        "inputTokens": 4129,
+        "outputTokens": 12875,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.137008,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-sonnet-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "第一章 帝血归渊\n\n双帝之战结束，整整十年。\n\n中州，帝陨渊。\n\n十年前的今天，萧炎在这道深渊之上以焚诀融尽异火，一拳烧穿了魂天帝的帝躯。天穹被烧出一个洞，十年过去，洞口早已愈合，只留下一道焦黑的“帝痕”横贯天际，像一道结了痂的伤疤。\n\n今天是十年大祭。\n\n炎盟十万弟子列阵渊边，中州大小势力的旗帜从山脚一直插到云端。丹塔来了三位巨头，花宗来了太上长老，连十年不曾南下的太虚古龙族，都派了一位龙将盘在云头，金瞳半阖。\n\n这是斗气大陆有史以来第一次，全大陆同时停下手里的事——连魔兽山脉深处的兽潮，都安静了三分。\n\n祭台最前排，站着一个白衣人。\n\n冰皇海波东。他鬓角终于有了霜色，仰头望着那道帝痕，眼底隐隐发红。\n\n“吉时到了。”炎盟盟主洛九幽踏上高台，声音里注入斗气，滚过百里山川，“十年前，炎帝陛下与诸君并肩，屠魂族，焚魂殿，还大陆一个太平。十年后的今天——”\n\n他顿了顿，声音沉了下去。\n\n“诸位都清楚，自帝陛去后，天地间的帝气一年薄过一年。卡在九星斗圣门槛上的老怪物，中州还有十七位。十七位，十年，无一人再进一步。”\n\n台下死一般地静。\n\n“所以今日大祭，祭的不是故人，”洛九幽一字一字道，“祭的是‘帝位’二字。”\n\n就在这一瞬间，天上的帝痕，裂了。\n\n不是比喻。那道焦黑的疤痕正中央，无声无息地绽开一线，紫金色的雷光从裂缝里渗出来，像天幕背后有什么东西在烧。\n\n万里无云，凭空起雷。\n\n下一刻，一道纤细的身影从裂缝里直直栽落，擦着紫金雷电，砸穿了祭台前的白玉广场。\n\n轰！\n\n碎石飞溅，烟尘冲起十丈。十万道目光死死钉在那处烟尘上，没有一个人出声。\n\n烟尘里，爬出来一个少女。\n\n十五六岁，浑身是伤，衣衫破得像从火场里逃出来的。她一手死死攥着半块烧焦的玉佩，手背上血肉模糊，另一只手撑着地，抬起头。\n\n“这里……是斗气大陆？”\n\n她声音哑得厉害，带着一种生硬的音调，像是很久很久没有说过人话了。\n\n“何人！”执法长老一马当先掠下高台，斗气锁链当空一抖，“十年大祭，冲撞祭台，拿下！”\n\n锁链落到一半，海波东抬了抬手。\n\n只是抬了抬手，那条玄铁锁链就在半空停住了，然后一寸一寸冻成冰，碎在风里。\n\n“让老夫看看。”海波东落到少女面前，俯下身。\n\n只看了一眼，他瞳孔猛地一缩。\n\n少女眉心处，有一点极淡的紫色火印，随着她的呼吸明明灭灭。那股气息他这辈子只在一个人身上见过——不，那人没有火印，那人只是每一次出手，眉宇间都是这股焚尽八荒的锋锐。\n\n“你……”老冰皇的声音第一次发颤，“你是谁的孩子？”\n\n少女怔怔看着他，忽然咧嘴笑了，一嘴白牙上全是血：\n\n“老爷爷，你是海波东吧？我娘给我看过你的画像。她还说，要是落到绝境，就去找冰皇海波东，他亲口说过，‘谁敢动萧家的人，先问过老夫这双拳头’。”\n\n海波东如遭雷击。\n\n“你娘……”\n\n“我娘叫彩鳞。”少女咬着牙，一个字一个字往外挤，“我爹叫萧炎。”\n\n“我叫萧潇。”\n\n两个字落地，全场十万人，鸦雀无声。\n\n紧接着，炸了。\n\n“帝女？！是帝女回来了！”\n\n“不可能！帝陛一家都在大千世界，怎么可能，”\n\n“雾隐卫听令，封场！”\n\n洛九幽脸色变了三次，最后落在一片铁青上。大袖一挥，数百名执法修士腾空而起，把广场围得水泄不通，围的不是外人，是这个遍体鳞伤的少女。\n\n“盟主？!”海波东怒喝。\n\n“海峡，稍安。”洛九幽压低声音，“十年了，帝气枯竭，十七位九星斗圣进无可进。她的出现，就是十万年来最大的一场变数。她是真帝女便罢，若不是呢？若身上带着大千世界的东西呢？总得验，总得问。”\n\n人群外，一个锦衣青年踱了过来，是洛九幽独子，洛辰。他踱到少女面前，居高临下，忽然伸脚，踩住了她那只攥着玉佩的手。\n\n“萧潇？”他笑了笑，“我爹十年如一日供着炎帝的牌位，可炎帝走的时候，可没把帝位留给你这么个野丫头。”\n\n少女手背被踩得血肉模糊，却一声不吭，只是抬起头看他。\n\n那眼神平静得可怕。\n\n洛辰心里没由来地一毛，面上却更狠，脚下碾了半分：“抬起头来，让本少看看，帝女长几个眼——”\n\n“够了。”海波东一步跨到，袖袍一拂，一股冰寒气劲直接把洛辰掀出去三丈。\n\n当夜，帝女被“请”入内城别院。斗气封锁，明为保护，实为软禁。\n\n变故起在三更。\n\n守夜的十二名炎盟执法修士，连一声闷哼都没来得及发出，就软软瘫倒。夜色里，七个戴白骨面具的黑袍人踏着尸身走进院子，为首者半张面具，声音像砂纸磨过棺木：\n\n“小家伙，别喊。”\n\n萧潇从榻上坐起来，眼睛在黑暗里亮得吓人。\n\n“十年前，魂帝陨落，帝血逆着空间乱流飞了十万八千里。”骨面人慢条斯理，“追了十年，追到大千世界，又追了回来。帝血这东西认主，认的不是你，是你身上那半缕炎帝骨血。交出来，给你个全尸。”\n\n“新魂殿？”萧潇忽然开口。\n\n骨面人一怔。\n\n“我爹烧了你们魂殿的时候，我才五岁。”少女慢慢站起来，浑身没有一丝斗气，却站得笔直，“我娘说，这种人不用怕，踩死就行。”\n\n“踩死就行？”骨面人笑出了声，五指一张，漆黑的魂气铺天盖地压了下来，“那老夫倒要看看，”\n\n他没能看到。\n\n因为就在魂气落下的同一瞬，萧潇咬破了舌尖，一口血喷在那半块焦玉上。\n\n玉，碎了。\n\n碎玉化作一道紫金色的火种，直接没入她眉心。\n\n刹那间：\n\n紫金色的火焰自少女体内冲天而起，柱一样贯穿夜空。没有温度，没有声息，只有一股浩瀚、古老、俯瞰众生的威压，如天倾，如渊开，碾过百里山川。\n\n帝威。\n\n方圆百里，上到九星斗圣，下到刚刚凝聚气旋的斗师，膝弯同时一软。\n\n十万修士，齐齐跪伏。\n\n高台之上，洛九幽双膝砸在地上，面皮贴着地砖，牙关咬得咯咯作响，一个字都吐不出来。而被掀飞了三丈的洛辰脸埋在尘土里，是全场跪得最标准的一个。\n\n夜空中，横贯天际十年的那道帝痕，重新亮了。\n\n紫金色的光顺着焦黑的纹路一路烧过去，像点燃了一根烧了十年的引线。整片中州，不，整片斗气大陆的修士，都在这一刻抬起了头。\n\n骨面祭司被帝威的边缘扫中，整条右臂齐根焦黑碎裂。他踉跄退出百里，却仰头大笑，笑声癫狂：\n\n“帝血认主！十年！殿主大人布了十年的局，成了！魂天帝大人的残魂，可以醒了！”\n\n而别院火光中央，萧潇立在冲天的紫金火柱里，泪流满面。\n\n碎玉消散前，她听见了一句话。极淡，极远，却熟悉到让她骨头发颤——那是十年没听过的、她爹的声音：\n\n“潇儿，别信炎盟。去迦南学院，山门底下压着的那件东西，替爹——”\n\n声音到这里，断了。\n\n火柱之内，少女缓缓攥紧了拳，竖瞳里紫金流转。她开口，声音不大，却清清楚楚传进每一个跪伏之人的耳朵里：\n\n“都起来。”\n\n“还有洛辰——方才踩我的那只脚，三日之内，自己到帝陨渊来，跪着还我。”\n\n消息传开不过半个时辰，中州已有人连夜动身。古族来了请帖，丹塔来了名帖，还有一封没有落款的信，信纸上只画着一朵黑色的火焰。\n\n而三天后，炎盟万宗大会，议题只有一个：\n\n如何处置“帝女”萧潇。\n\n天，快亮了。",
+    "ttft_ms": 304639,
+    "type": "result",
+    "duration_ms": 329752,
+    "uuid": "3fb61356-89b9-4a26-87d9-f2faee6d9f6a",
+    "ttft_stream_ms": 6793,
+    "time_to_request_ms": 61,
+    "time_to_request_phases_ms": {
+      "other": 8,
+      "system_prompt": 29,
+      "resume_other": 1,
+      "process_user_input": 0,
+      "input_attachments": 3,
+      "input_hooks": 1,
+      "transcript_persist": 3,
+      "tool_pool_refresh": 0,
+      "init_message": 4,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 0,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 1,
+      "tool_schema_build": 3,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 11,
+    "time_to_request_cpu_ms": 79,
+    "time_to_request_major_faults": 6924,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 231
+    },
+    "first_content_frame_ms": 6821,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 330.2
+}

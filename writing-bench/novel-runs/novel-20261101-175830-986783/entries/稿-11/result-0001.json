@@ -1,0 +1,123 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 249059,
+    "stop_reason": "end_turn",
+    "session_id": "dc6a482c-3fcb-4d4b-9f1b-41309cf6033c",
+    "total_cost_usd": 0.270712,
+    "usage": {
+      "input_tokens": 88,
+      "cache_creation_input_tokens": 3840,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 12558,
+      "output_tokens_details": {
+        "thinking_tokens": 11146
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 3840
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "kimi-k2.8-preview": {
+        "inputTokens": 88,
+        "outputTokens": 12558,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 3840,
+        "webSearchRequests": 0,
+        "costUSD": 0.270712,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 11146,
+        "canonicalModel": "claude-opus-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "第一章 帝火归位\n\n乌坦城的天，今夜亮如白昼。\n\n不是灯会，是火。\n\n萧家祠堂上空，悬着一盏青铜古灯。灯里那簇火苗十年不熄，也十年没有动过一丝。今夜，它忽然直起身来，像一个人，睁开了眼睛。\n\n下一瞬，火苗冲天而起，拖出百里长的光尾，在满城惊呼声中，一头扎向后山的柴房。\n\n柴房里，姜野正被人按着脑袋磕在地上。\n\n\"斗之气六段，也配给炎帝守灯？\"萧腾踩住他的后颈，居高临下，\"大祭的供品里少了两颗三阶魔核，全族就你今夜进过库房。跪下，认了。\"\n\n\"我说了，我没拿。\"姜野咬着牙，\"你要打就打——\"\n\n\"还嘴硬！\"旁边有跟班嗤笑，\"捡来的杂种，也想翻身？\"\n\n姜野今年十六岁。六岁那年，他被萧家老管事从雪地里捡回来，从此扫地、劈柴、擦灯座，一做就是十年。\n\n他也是这座城的笑话。\n\n十年前，双帝之战终结，魂殿一夜覆灭，萧炎成帝，又破开天门，一去不回。谁也没想到，那个从乌坦城走出去的少年，会把整座城抬成圣地。如今的乌坦城，客栈比米特尔拍卖行的分号还密，迦南学院在城外设了分院，连斗王强者都肯排队进萧家祠堂上一炷香。\n\n人人都在拜炎帝。\n\n只有姜野不拜。他只管擦灯。\n\n这十年，大陆也悄悄变了模样。丹塔把丹纹之术公之于众，炼药师的地位一涨再涨；一个自称\"天机阁\"的势力三个月里开遍十三座大城，号称无事不知、无宝不识。更有传言说，停滞千年的斗帝之路并非断绝，而是被人从另一头堵住了——这话是天机阁放出来的，没人信，也没人敢不信。\n\n\"我再问一遍。\"萧腾脚下加力，\"魔核，在哪儿？\"\n\n轰。\n\n柴房的屋顶没了。\n\n火光坠下，像一轮小太阳砸进院子。满院家丁连滚带爬地逃出去，萧腾僵在原地，眼睁睁看着那簇十年未动的帝炎悬到姜野头顶，缓缓地、亲昵地，蹭了蹭他的脸。\n\n然后一头钻进他心口。\n\n萧腾的呼吸瞬间粗重起来，贪念烧红了眼：\"帝炎认主……它认了你这个废物？！\"\n\n他嘶吼着扑上去，五指成爪，直抓姜野心口——\n\n一缕火苗从姜野衣襟里探出来，轻轻一舔。\n\n萧腾惨叫着倒飞出去，撞塌半面土墙。他瘫在瓦砾里，看着掌心那道焦黑的火痕，浑身发抖：\"我的斗气……我三星斗者的斗气呢？！\"\n\n一声轻响，从他体内传来，像有什么东西碎了。\n\n萧腾低头，眼泪当场下来。他五年苦修得来的斗气荡然无存，气息一路狂跌，跌回斗之气三段。\n\n满院死寂。\n\n那两颗\"失窃\"的魔核，正从他最信任的跟班袖口里滚出来，骨碌碌停在火光照亮的地方。\n\n再没人提\"认罪\"两个字。\n\n而柴房中央，姜野盘膝而坐，双目紧闭。帝炎在他经脉里横冲直撞，把十年积压在血肉深处的东西一层层冲开。\n\n斗者。\n\n斗师。\n\n大斗师！\n\n他的气息一路暴涨，院中青石寸寸崩裂，方圆十里的天地能量疯了似的朝这边灌。人群中不知谁哆嗦着喊出声：\"十六岁的大斗师……乌坦城第一人萧山，也不过斗灵啊！\"\n\n姜野站起身，下意识一握拳，掌心的空气竟被捏出一声爆鸣，把他自己都吓了一跳。\n\n\"斗之气入体即散……\"他内视经脉，声音发颤，\"原来不是我不能练。是有东西，吃了我十年的斗气。\"\n\n帝炎在他识海里翻了个身，传来一道懒洋洋的意识：\n\n【吃一分，还十分。小子，十年房租，今日一次结清。】\n\n脚步声、破空声由远及近。萧家族人举着火把涌进后院，为首的白发老者一照面，胡子都在抖。\n\n萧家大长老，萧山。斗灵，乌坦城如今的第一人。\n\n\"姜野。\"他死死盯着少年心口，\"把帝炎，交出来。\"\n\n院外已跪了满城的人。天降火柱，这样的动静早惊醒了整座乌坦城。有人狂喜，有人发抖，更多的人冲姜野连连磕头——帝炎十年未动，一动便认了这个杂役。在他们眼里，这就是炎帝的旨意。\n\n\"大长老。\"姜野睁开眼，\"火在谁身上，是它自己选的。\"\n\n\"放肆！\"萧山厉喝。斗灵威压如山砸下，他一步踏出，伸手便按向姜野心口——\n\n火苗再度探出，不烧他，只是轻轻一晃。\n\n萧山的斗气，凝固了。\n\n像一条大河被瞬间冻住。他僵在半空，冷汗涔涔，引以为傲的护体斗罡在那缕火苗前薄如纸片。他甚至\"听\"懂了火苗里透出的情绪——\n\n不耐烦。\n\n它嫌他吵。\n\n一息之后，火苗缩回。萧山踉跄落地，再看姜野的眼神彻底变了：那是看一座会走路的宝藏，一个烫手的灾祸。\n\n\"为什么……\"他涩声问，\"满城天才，满祠堂香火，为什么偏偏是你？\"\n\n帝炎替姜野答了。它从少年心口升起，悬上夜空，轰然展开，火幕铺过半个天穹，烧出两行大字。乌坦城万人仰头，尽数失声——\n\n【帝路重开，十年为期。】\n【再无一帝，大陆陪葬。】\n\n同一刻，迦南学院分院钟声大作，守夜导师冲出房门；千里外，中州丹塔九声钟响，无数闭关的老怪物睁开双眼；魂殿覆灭后散落大陆各处的残党，在同一夜齐齐抬头。\n\n萧山双腿一软，跪了。\n\n而帝炎落回姜野掌心，只对他一个人，说了今夜最后一句话：\n\n【十年里，满城的人都求过他。只有你，天天擦他的灯，却从没求过一件事。】\n【所以小子，记好了——从今夜起，全大陆的斗圣，都会来抢你。】\n\n城外夜空，数道遁光破空而至。\n\n第一批闻着味儿来的强者，已经到了。",
+    "ttft_ms": 231990,
+    "type": "result",
+    "duration_ms": 249126,
+    "uuid": "70409e16-a3d1-4ba2-ab46-e9fa8258234a",
+    "ttft_stream_ms": 2834,
+    "time_to_request_ms": 66,
+    "time_to_request_phases_ms": {
+      "other": 9,
+      "system_prompt": 32,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 4,
+      "input_hooks": 1,
+      "transcript_persist": 3,
+      "tool_pool_refresh": 0,
+      "init_message": 4,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 1,
+      "autocompact": 1,
+      "query_setup": 0,
+      "model_gates": 0,
+      "tool_schema_build": 3,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 16,
+    "time_to_request_cpu_ms": 94,
+    "time_to_request_major_faults": 7012,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 260
+    },
+    "first_content_frame_ms": 2834,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 249.6
+}

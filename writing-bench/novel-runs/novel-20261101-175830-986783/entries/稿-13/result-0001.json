@@ -1,0 +1,135 @@
+{
+  "exit_code": 0,
+  "result": {
+    "duration_api_ms": 128949,
+    "stop_reason": "end_turn",
+    "session_id": "5ea62abf-b60c-41a9-85fe-8e013f19a144",
+    "total_cost_usd": 0.007680025,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 7133,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 13576,
+      "output_tokens_details": {
+        "thinking_tokens": 10061
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 7133
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 4,
+          "output_tokens": 13576,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 7133,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 7133,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-haiku-5-5": {
+        "inputTokens": 4,
+        "outputTokens": 13576,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 7133,
+        "webSearchRequests": 0,
+        "costUSD": 0.007680025,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 10061,
+        "canonicalModel": "claude-haiku-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "第一章 天降异火\n\n黑石城的警钟三十年没响过。\n\n这一日，它响了九声。\n\n九声是最高一等的警讯，意味着城破、兽潮、灭顶之灾。\n\n林渡正在药铺后院碾一炉蛇涎散。钟声震得瓦灰簌簌落下，落进药碾，把半炉料糟蹋了个干净。他抬起头，天是红的。\n\n并非晚霞那种红。城北魔兽山脉那一线，像被谁用刀割开了一道口子，血正从天上往下淌。\n\n“兽潮——！”街面上有人嚎得破了音，“往南门跑！快跑啊！”\n\n林渡没跑。他放下药碾，闭上眼。\n\n灵魂力铺出去，像一层看不见的水，漫过街巷，漫过城墙，一直漫到二十里外的山脚。\n\n然后他愣住了。\n\n兽潮不是冲城里来的。\n\n那些魔兽，三阶的铁背狼、五阶的赤炎豹，甚至一头足有半个城门高的七阶紫金翼狮，全都在跑。它们从山脉深处往外逃，绕开黑石城，绕开官道，连头都不回。\n\n逃命的魔兽，是不会绕路的。\n\n它们在怕。怕身后的东西。\n\n“小渡！”老周从前面铺子里冲进来，一把攥住他胳膊，“发什么呆！收拾东西，走！”\n\n老周六十多了，背驼，手抖，一辈子就守着这间三间门面的回春堂。林渡是他十年前从城外捡回来的，捡回来的时候浑身是血，什么都不记得。\n\n“周伯，”林渡说，“山里出来的不是兽潮。”\n\n“什么？”\n\n“是有东西要出来了。”\n\n老周的脸白了一下，随即骂道：“管它是什么！斗皇来了也得跑！你一个卡了三年的二星大斗师，站这儿等死？”\n\n话音未落，天暗了。\n\n不是云遮日，是因为来人了。\n\n那人踏空而来，脚下并无斗气双翼，全凭斗气凝形，每一步落下，空气都“嗡”地一沉。他身后跟着十二道身影，各个脚下踏着斗气之翼。\n\n黑石城城主在城头跪了下去：“万兽斋……洪少主。”\n\n洪烈。万兽斋少斋主，二十七岁，斗皇。\n\n他落在城中央的钟楼上，钟楼“咔”地矮了三尺。\n\n“封锁四门。”他连眼皮都没抬，“一只耗子也不许出。”\n\n十二名斗王散开。整座城的空气骤然变得粘稠，街上跑着的人一个接一个扑倒在地，脸贴着地，喘不上气。\n\n林渡膝盖一软，也跪了。可他跪下去的一瞬间，脑子里那层看不见的水猛地一荡——他还能看，还能听，还能想。\n\n斗皇的威压压得住他的骨头，压不住他的灵魂。\n\n“洪少主！”城主膝行向前，“兽潮将至，还请少主庇护全城百姓——”\n\n“兽潮？”洪烈低头看了他一眼，笑了，“你们这破地方，也配让我万兽斋出动十二位斗王？”\n\n他抬手，指向北方天际。\n\n“三天前，中州观星台测出天象。火之法则异动，有异物自九天而降，落点就在这一带。”\n\n“我万兽斋要的，是那东西。”\n\n他顿了顿，声音不高，却压得满城死寂：\n\n“至于你们——谁挡路，谁死。”\n\n就在这时候，天裂了。\n\n不是比喻。北方的云层从中间撕开，一道赤金色的裂缝横贯百里，缝里淌出的不是光，是火。\n\n那火没有温度。落下来的一瞬间，屋顶、墙头，凭空结了一层霜。随后霜化成水，水化成汽。\n\n一股说不出的、古老到让人牙根发酸的气息，压了下来。\n\n洪烈的瞳孔猛地缩成一点。\n\n“异火……”他喃喃，“不对。异火榜二十三种，我个个都认得。这不是其中任何一种。”\n\n他身后一名斗王颤声道：“少主，那……那是什么？”\n\n洪烈没答。他的呼吸反而变粗了。\n\n一个不在榜上的异火。\n\n这意味着什么，在场只有他一个人懂——异火榜是天定的。二十三种，上古至今，一个不多，一个不少。榜外的火出现，等于天自己撕了自己写下的那一页。\n\n赤金色的火团穿过云层，越落越慢，像是在找什么。\n\n它没有落向城外的山脉。\n\n它落在了城里。\n\n落在回春堂的屋顶上。\n\n“轰——”\n\n半条街的瓦片被气浪掀飞。林渡被掀得倒飞出去，后背撞上药柜，一口血喷出来，正好喷在面前那团火上。\n\n火没灭。\n\n火把他那口血吸了进去，然后“呼”地涨高三尺，从屋顶烧穿下来，稳稳悬在院子中央。\n\n洪烈踏空而至，落在院墙上，居高临下。\n\n“让开。”他说。\n\n林渡抹了把嘴角的血，慢慢站起来，挡在火前。\n\n“凭什么。”\n\n“凭我是斗皇。”洪烈笑了，笑得很有耐心，“小子，你几星？”\n\n“二星大斗师。”\n\n“二星大斗师。”洪烈重复了一遍，像是听见了什么好笑的事，“你知道斗皇和大斗师之间，隔着几个境界吗？”\n\n“知道。”林渡说，“斗灵、斗王，两个大境界，六个小境界。”\n\n“知道还敢站这儿？”\n\n“我不是站这儿挡你。”林渡回头看了眼那团火，“我是站这儿等死。”\n\n“这条命是周伯捡的。他跑不动，我陪他。”\n\n院墙外，老周在喊：“小渡！你个王八蛋！你给我滚回来！”\n\n洪烈的笑淡了。\n\n“有种。”他抬手，掌心凝出一团青灰色的斗气，“可惜有种的人，死得最快。雷九，把火取来，人踩死。”\n\n“是。”\n\n一名红脸斗王应声落地，斗气之翼还在背后扇着，人已经欺到林渡面前。\n\n“小畜生，让开——”\n\n他伸手去抓。\n\n指尖刚碰到林渡肩头，碰到的却不是人，而是一层看不见的炽烈。\n\n“滋啦。”\n\n雷九整条手臂从指尖开始，像蜡一样化开，皮肉翻卷，露出底下焦黑的骨头。\n\n他甚至没有惨叫的机会，被一股巨力掀飞出去，砸塌了半面院墙，埋在瓦砾里咳嗽，咳出来的气都是白的。\n\n院子里死一般安静。\n\n洪烈的手僵在半空。\n\n“斗王……碰不得。”他缓缓收回手，重新打量林渡，眼神彻底变了，“那你呢？你敢碰？”\n\n“我试试。”林渡说。\n\n他回身，把手伸进了那团火里。\n\n赤金色的火“唰”地一收，像一件烧红的甲胄，从头到脚裹住了他。\n\n疼。\n\n疼得他几乎咬碎了牙。可他没有缩手，因为他感觉到了一件很奇怪的事。\n\n他的斗气，那团十四岁之后就再没长过、被整座黑石城叫作“废火”的东西，动了。\n\n它向来什么属性也没有，像一碗清水，谁见了都摇头，说这辈子当不了炼药师。\n\n此刻，那碗清水里落进了一滴油。\n\n整碗水，烧起来了。\n\n丹田里那层卡了他三年的壁障，“啵”地一声，像纸一样破了。\n\n三星。四星。五星。\n\n一口气冲到六星大斗师才停。\n\n火光内敛，露出他的皮肤。他没死，连衣服都没有烧破，只是站在那儿，喘着气，掌心里托着一颗豆大的火苗。\n\n洪烈盯着他，脸上那点从容一点点褪干净了。\n\n“它认你。”他声音发干，“一个二星废物……它认你。”\n\n“现在不是二星了。”林渡说。\n\n洪烈沉默了三息，忽然又笑了。\n\n“好。”他点头，“那就更得死。”\n\n斗气开始疯狂攀升，衣袍无风自鼓，钟楼上那口铜钟“嗡”地裂成两半。\n\n斗皇，全力。\n\n“洪烈！”城主在远处喊，“天府联盟有令，凡遇异宝现世，须先奏报——”\n\n“天府联盟？”洪烈扭头，“天府联盟管得了中州，管得了我万兽斋吗？”\n\n“十年了。那位大人走了十年，天府联盟早就是个空架子。”\n\n“这朵火，我万兽斋要了。”\n\n他踏出第一步，整座城的石板同时浮起三寸。\n\n也就在这一刻——\n\n中州，炼药师公会，万火殿。\n\n殿中那面三丈高的异火榜，忽然剧烈地抖了起来。\n\n守殿的两位长老同时睁眼。\n\n“怎么回事？！”\n\n榜上二十三个名字，一个接一个亮起，又一个接一个熄灭。整面玉壁开始龟裂，碎屑簌簌往下落。\n\n然后，在第二十三行之后，那一片本该永远空白的玉面上，凭空多出了一行字。\n\n没有名字。只有一团缓缓跳动的赤金色火焰虚影。\n\n为首的长老“扑通”一声跪了下去，嘴唇哆嗦着，念出了那行新刻上去的数字——\n\n“第……第二十四。”\n\n与此同时，黑石城，回春堂。\n\n林渡攥紧了拳头。\n\n掌心的火苗忽然散开，又重新聚合，在他手心里拼出一个字。\n\n那个字是“门”。\n\n一扇他这辈子从没见过的门。\n\n然后，火里传出一个声音。\n\n很轻，很远，像是隔着十万八千里传来的一声叹息。\n\n“第十年了……”\n\n“终于……有人把门，推开了。”",
+    "ttft_ms": 77172,
+    "type": "result",
+    "duration_ms": 129014,
+    "uuid": "041c114e-b0da-4ce2-8b16-d14d69744d58",
+    "ttft_stream_ms": 4624,
+    "time_to_request_ms": 64,
+    "time_to_request_phases_ms": {
+      "other": 9,
+      "system_prompt": 28,
+      "resume_other": 0,
+      "process_user_input": 1,
+      "input_attachments": 3,
+      "input_hooks": 2,
+      "transcript_persist": 5,
+      "tool_pool_refresh": 0,
+      "init_message": 4,
+      "engine_pickup": 1,
+      "message_prep": 0,
+      "model_config_wait": 1,
+      "autocompact": 0,
+      "query_setup": 1,
+      "model_gates": 0,
+      "tool_schema_build": 3,
+      "message_normalization": 1,
+      "client_creation": 3,
+      "request_build": 2
+    },
+    "turn_start_resume_kind": "none",
+    "process_turn_index": 0,
+    "time_to_request_loop_lag_ms": 14,
+    "time_to_request_cpu_ms": 110,
+    "time_to_request_major_faults": 7022,
+    "input_attachments_detail": {
+      "slowest_producer": "queued_commands",
+      "slowest_producer_ms": 2,
+      "cpu_ms": 0,
+      "major_faults": 254
+    },
+    "first_content_frame_ms": 4933,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "elapsed_seconds": 129.4
+}
